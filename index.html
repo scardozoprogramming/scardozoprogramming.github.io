@@ -367,6 +367,16 @@
             color: var(--accent);
             text-shadow: 0 0 2px rgba(0, 255, 102, 0.8), 0 0 5px rgba(0, 255, 102, 0.6), 0 0 10px rgba(0, 255, 102, 0.4), 0 0 20px rgba(0, 255, 102, 0.3), 0 0 1px rgba(0,0,0,0.5); /* subtle outline for readability */
         }
+
+        #langToggle {
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+            #langToggle:hover {
+                background: #111;
+            }
+
     </style>
 </head>
 <body>
@@ -392,6 +402,8 @@
                 <a href="#resume">Resume</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+            <button id="langToggle" class="cta" style="margin-left:10px;">Español</button> <!--Idioma español-->
 
             <button class="hamburger" aria-label="Open menu" id="menuBtn">☰</button>
         </header>
@@ -483,31 +495,31 @@
                             </div>
                         </article>
                         <!--
-                <article class="card">
-                    <img src="assets/Isometric.png" alt="Isometric RPG prototype screenshot" onerror="this.style.display='none'; document.getElementById('img2-placeholder').style.display='flex';">
-                    <div id="img2-placeholder" class="image-placeholder" style="display:none;">
-                        Isometric RPG Screenshot (assets/Isometric.png)
-                    </div>
-                    <h4>Isometric RPG Prototype</h4>
-                    <p class="muted">Exploration prototype focusing on camera and pathing systems.</p>
-                    <div class="links">
-                        <a href="h" target="_blank">Repo</a>
-                    </div>
-                </article>
+                        <article class="card">
+                            <img src="assets/Isometric.png" alt="Isometric RPG prototype screenshot" onerror="this.style.display='none'; document.getElementById('img2-placeholder').style.display='flex';">
+                            <div id="img2-placeholder" class="image-placeholder" style="display:none;">
+                                Isometric RPG Screenshot (assets/Isometric.png)
+                            </div>
+                            <h4>Isometric RPG Prototype</h4>
+                            <p class="muted">Exploration prototype focusing on camera and pathing systems.</p>
+                            <div class="links">
+                                <a href="h" target="_blank">Repo</a>
+                            </div>
+                        </article>
 
-                <article class="card">
-                    <img src="assets/RailShooter.gif" alt="Off The Rails VR game screenshot" onerror="this.style.display='none'; document.getElementById('img3-placeholder').style.display='flex';">
-                    <div id="img3-placeholder" class="image-placeholder" style="display:none;">
-                        Off The Rails Screenshot (assets/RailShooter.gif)
-                    </div>
-                    <h4>Cooming Soon!</h4>
-                    <p class="muted">Cooming Soon.</p>
-                    <div class="links">
-                        <a href="h" target="_blank">itch.io</a>
-                    </div>
+                        <article class="card">
+                            <img src="assets/RailShooter.gif" alt="Off The Rails VR game screenshot" onerror="this.style.display='none'; document.getElementById('img3-placeholder').style.display='flex';">
+                            <div id="img3-placeholder" class="image-placeholder" style="display:none;">
+                                Off The Rails Screenshot (assets/RailShooter.gif)
+                            </div>
+                            <h4>Cooming Soon!</h4>
+                            <p class="muted">Cooming Soon.</p>
+                            <div class="links">
+                                <a href="h" target="_blank">itch.io</a>
+                            </div>
 
-                </article>
-                -->
+                        </article>
+                        -->
                     </div>
                 </section>
 
@@ -643,5 +655,72 @@
             }
         });
     </script>
-</body>
+
+    <script>
+        const texts = {
+            en: {
+                home: "Home",
+                videos: "Videos",
+                projects: "Projects",
+                resume: "Resume",
+                contact: "Contact",
+                heroH2: "This is Santiago Cardozo Botero",
+                heroH1: "Game Developer focused on programming — UI, scoring systems, networking, and gameplay feel.",
+                heroP: "I build games, some on my own and others as part of a team. I focus on creating tools and prototypes with clean code, solid systems, and fun, engaging player interactions.",
+                selectedProjects: "Selected Projects",
+                resume: "Resume",
+                contactTitle: "Contact",
+                contactText: "Want to work together? I'm available for freelance and full-time opportunities.",
+                email: "Email"
+            },
+            es: {
+                home: "Inicio",
+                videos: "Videos",
+                projects: "Proyectos",
+                resume: "Currículum",
+                contact: "Contacto",
+                heroH2: "Soy Santiago Cardozo Botero",
+                heroH1: "Desarrollador de videojuegos enfocado en programación — UI, sistemas de puntuación, redes y jugabilidad.",
+                heroP: "Desarrollo videojuegos, algunos por mi cuenta y otros en equipo. Me enfoco en crear herramientas y prototipos con código limpio, sistemas sólidos y una jugabilidad divertida e inmersiva.",
+                selectedProjects: "Proyectos Destacados",
+                resume: "Currículum",
+                contactTitle: "Contacto",
+                contactText: "¿Quieres colaborar? Estoy disponible para trabajos freelance o de tiempo completo.",
+                email: "Correo electrónico"
+            }
+        };
+
+        let currentLang = "en";
+
+        document.getElementById("langToggle").addEventListener("click", () => {
+            currentLang = currentLang === "en" ? "es" : "en";
+            document.getElementById("langToggle").textContent = currentLang === "en" ? "Español" : "English";
+
+            // Menú de navegación
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks[0].textContent = texts[currentLang].home;
+            navLinks[1].textContent = texts[currentLang].videos;
+            navLinks[2].textContent = texts[currentLang].projects;
+            navLinks[3].textContent = texts[currentLang].resume;
+            navLinks[4].textContent = texts[currentLang].contact;
+
+            // Hero section
+            document.querySelector(".hero .intro h2").textContent = texts[currentLang].heroH2;
+            document.querySelector(".hero .intro h1").textContent = texts[currentLang].heroH1;
+            document.querySelector(".hero .intro p").textContent = texts[currentLang].heroP;
+
+            // Projects
+            document.querySelector("#projects h3").textContent = texts[currentLang].selectedProjects;
+
+            // Resume
+            document.querySelector("#resume h3").textContent = texts[currentLang].resume;
+
+            // Contact
+            document.querySelector("#contact h3").textContent = texts[currentLang].contactTitle;
+            document.querySelector("#contact .contact-card p.muted").textContent = texts[currentLang].contactText;
+            document.querySelector("#contact .contact-card p[style*='font-weight:700']").textContent = texts[currentLang].email;
+        });
+    </script>
+
+    </body>
 </html>
