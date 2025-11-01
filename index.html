@@ -674,13 +674,14 @@
                 availabilityText: "Open to programming roles and freelance opportunities.",
                 selectedProjects: "Selected Projects",
                 projectDescription: "Arcade — Unleash chaos, evolve, and conquer the world. Built with Unity. It was awarded “Best Game Voted by the Public” and “Best Game Voted by the Jury” at the Florida GameFest 2025.",
-                projectLink: "Coming soon on itch.io",
+                availableOn: "Available on itch.io",
                 resume: "Resume",
                 resumeText: "Check out my CV",
                 resumeButton: "Open CV",
                 contactTitle: "Contact",
                 contactText: "Want to work together? I'm available for freelance and full-time opportunities.",
-                email: "Email"
+                email: "Email",
+                social: "Social"
             },
             es: {
                 home: "Inicio",
@@ -697,13 +698,14 @@
                 availabilityText: "Abierto a roles de programación y oportunidades freelance.",
                 selectedProjects: "Proyectos Destacados",
                 projectDescription: "Arcade — Desata el caos, evoluciona y conquista el mundo. Desarrollado con Unity. Ganador de “Mejor Juego Votado por el Público” y “Mejor Juego Votado por el Jurado” en el Florida GameFest 2025.",
-                projectLink: "Próximamente en itch.io",
+                availableOn: "Disponible en itch.io",
                 resume: "Currículum",
                 resumeText: "Consulta mi CV",
                 resumeButton: "Abrir CV",
                 contactTitle: "Contacto",
                 contactText: "¿Quieres colaborar? Estoy disponible para trabajos freelance o de tiempo completo.",
-                email: "Correo electrónico"
+                email: "Correo electrónico",
+                social: "Redes Sociales"
             }
         };
 
@@ -723,12 +725,7 @@
 
             // 🔹 Header brand
             const brandDiv = document.querySelector(".brand div div");
-            if (brandDiv) {
-                const parts = brandDiv.innerHTML.split("<br>");
-                if (parts.length === 2) {
-                    brandDiv.innerHTML = `${texts[currentLang].brandRole1}<br>${texts[currentLang].brandRole2}`;
-                }
-            }
+            if (brandDiv) brandDiv.innerHTML = `${texts[currentLang].brandRole1}<br>${texts[currentLang].brandRole2}`;
 
             // 🔹 Hero section
             document.querySelector(".hero .intro h2").textContent = texts[currentLang].heroH2;
@@ -742,7 +739,10 @@
             // 🔹 Projects
             document.querySelector("#projects h3").textContent = texts[currentLang].selectedProjects;
             document.querySelector("#projects .card p").textContent = texts[currentLang].projectDescription;
-            document.querySelector("#projects .card .links a").textContent = texts[currentLang].projectLink;
+
+            // ✅ Traducción del botón "Available on itch.io"
+            const itchLink = document.querySelector("#projects .card a.cta");
+            if (itchLink) itchLink.textContent = texts[currentLang].availableOn;
 
             // 🔹 Resume
             document.querySelector("#resume h3").textContent = texts[currentLang].resume;
@@ -753,11 +753,14 @@
             document.querySelector("#contact h3").textContent = texts[currentLang].contactTitle;
             document.querySelector("#contact .contact-card p.muted").textContent = texts[currentLang].contactText;
             document.querySelector("#contact .contact-card p[style*='font-weight:700']").textContent = texts[currentLang].email;
+
+            // ✅ Traducción de "Social"
+            const contactCards = document.querySelectorAll("#contact .contact-card p[style*='font-weight:700']");
+            if (contactCards.length > 1) {
+                contactCards[1].textContent = texts[currentLang].social;
+            }
         });
     </script>
-
-
-
 
 </body>
 </html>
