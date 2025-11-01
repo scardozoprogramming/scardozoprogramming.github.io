@@ -142,8 +142,9 @@
         }
 
             .hero .intro h2 {
+                font-size: 30px;
                 color: var(--accent);
-                margin: 0 0 6px
+                margin: 2px 0 10px
             }
 
             .hero h1 {
@@ -664,16 +665,22 @@
                 projects: "Projects",
                 resume: "Resume",
                 contact: "Contact",
+                brandRole1: "Programmer",
+                brandRole2: "Game Developer",
                 heroH2: "This is Santiago Cardozo Botero",
                 heroH1: "Game Developer focused on programming — UI, scoring systems, networking, and gameplay feel.",
                 heroP: "I build games, some on my own and others as part of a team. I focus on creating tools and prototypes with clean code, solid systems, and fun, engaging player interactions.",
+                availabilityTitle: "Availability",
+                availabilityText: "Open to programming roles and freelance opportunities.",
                 selectedProjects: "Selected Projects",
+                projectDescription: "Arcade — Unleash chaos, evolve, and conquer the world. Built with Unity. It was awarded “Best Game Voted by the Public” and “Best Game Voted by the Jury” at the Florida GameFest 2025.",
+                projectLink: "Coming soon on itch.io",
                 resume: "Resume",
+                resumeText: "Check out my CV",
+                resumeButton: "Open CV",
                 contactTitle: "Contact",
                 contactText: "Want to work together? I'm available for freelance and full-time opportunities.",
                 email: "Email"
-                : "Availability"
-                :"Open to programming roles and freelance opportunities."
             },
             es: {
                 home: "Inicio",
@@ -681,15 +688,22 @@
                 projects: "Proyectos",
                 resume: "Currículum",
                 contact: "Contacto",
+                brandRole1: "Programador",
+                brandRole2: "Desarrollador de Videojuegos",
                 heroH2: "Soy Santiago Cardozo Botero",
                 heroH1: "Desarrollador de videojuegos enfocado en programación — UI, sistemas de puntuación, redes y jugabilidad.",
                 heroP: "Desarrollo videojuegos, algunos por mi cuenta y otros en equipo. Me enfoco en crear herramientas y prototipos con código limpio, sistemas sólidos y una jugabilidad divertida e inmersiva.",
+                availabilityTitle: "Disponibilidad",
+                availabilityText: "Abierto a roles de programación y oportunidades freelance.",
                 selectedProjects: "Proyectos Destacados",
+                projectDescription: "Arcade — Desata el caos, evoluciona y conquista el mundo. Desarrollado con Unity. Ganador de “Mejor Juego Votado por el Público” y “Mejor Juego Votado por el Jurado” en el Florida GameFest 2025.",
+                projectLink: "Próximamente en itch.io",
                 resume: "Currículum",
+                resumeText: "Consulta mi CV",
+                resumeButton: "Abrir CV",
                 contactTitle: "Contacto",
                 contactText: "¿Quieres colaborar? Estoy disponible para trabajos freelance o de tiempo completo.",
                 email: "Correo electrónico"
-
             }
         };
 
@@ -699,7 +713,7 @@
             currentLang = currentLang === "en" ? "es" : "en";
             document.getElementById("langToggle").textContent = currentLang === "en" ? "Español" : "English";
 
-            // Menú de navegación
+            // 🔹 Menú de navegación
             const navLinks = document.querySelectorAll("nav a");
             navLinks[0].textContent = texts[currentLang].home;
             navLinks[1].textContent = texts[currentLang].videos;
@@ -707,23 +721,43 @@
             navLinks[3].textContent = texts[currentLang].resume;
             navLinks[4].textContent = texts[currentLang].contact;
 
-            // Hero section
+            // 🔹 Header brand
+            const brandDiv = document.querySelector(".brand div div");
+            if (brandDiv) {
+                const parts = brandDiv.innerHTML.split("<br>");
+                if (parts.length === 2) {
+                    brandDiv.innerHTML = `${texts[currentLang].brandRole1}<br>${texts[currentLang].brandRole2}`;
+                }
+            }
+
+            // 🔹 Hero section
             document.querySelector(".hero .intro h2").textContent = texts[currentLang].heroH2;
             document.querySelector(".hero .intro h1").textContent = texts[currentLang].heroH1;
             document.querySelector(".hero .intro p").textContent = texts[currentLang].heroP;
 
-            // Projects
+            // 🔹 Availability
+            document.querySelectorAll(".meta .glow-green")[1].textContent = texts[currentLang].availabilityTitle;
+            document.querySelectorAll(".meta .muted")[1].textContent = texts[currentLang].availabilityText;
+
+            // 🔹 Projects
             document.querySelector("#projects h3").textContent = texts[currentLang].selectedProjects;
+            document.querySelector("#projects .card p").textContent = texts[currentLang].projectDescription;
+            document.querySelector("#projects .card .links a").textContent = texts[currentLang].projectLink;
 
-            // Resume
+            // 🔹 Resume
             document.querySelector("#resume h3").textContent = texts[currentLang].resume;
+            document.querySelector("#resume .resume-card p.muted").textContent = texts[currentLang].resumeText;
+            document.querySelector("#resume .resume-card .cta").textContent = texts[currentLang].resumeButton;
 
-            // Contact
+            // 🔹 Contact
             document.querySelector("#contact h3").textContent = texts[currentLang].contactTitle;
             document.querySelector("#contact .contact-card p.muted").textContent = texts[currentLang].contactText;
             document.querySelector("#contact .contact-card p[style*='font-weight:700']").textContent = texts[currentLang].email;
         });
     </script>
 
-    </body>
+
+
+
+</body>
 </html>
