@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Santiago Cardozo Botero — Game Programmer</title>
-    <meta name="description" content="Portfolio of Santiago Cardozo Botero — Game Programmer / Unity Developer" />
+    <meta name="description" content="Game Programming portfolio — Santiago Cardozo Botero" />
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -235,7 +235,6 @@
 </head>
 
 <body>
-
     <canvas id="binaryCanvas"></canvas>
 
     <div class="wrap">
@@ -245,7 +244,7 @@
                 <div class="logo">SCB</div>
                 <div>
                     <strong>Santiago Cardozo Botero</strong><br>
-                    <span class="muted" data-i18n="role">Game Programmer</span>
+                    <span class="muted" data-i18n="role">Junior Game Programmer (Generalist)</span>
                 </div>
             </div>
 
@@ -260,10 +259,10 @@
 
         <main id="home" class="hero">
             <div>
-                <h2 data-i18n="heroTitle">Game Programmer — Unity / C#</h2>
-                <h1 data-i18n="heroSubtitle">Building gameplay systems and combat logic</h1>
+                <h2 data-i18n="heroTitle">Game Programming Portfolio</h2>
+                <h1 data-i18n="heroSubtitle">University projects focused on gameplay systems and technical foundations</h1>
                 <p class="lead" data-i18n="heroText">
-                    I focus on gameplay systems, UI flow, and player feedback with clean and maintainable code.
+                    Portfolio showcasing academic and team-based projects in game programming, computer graphics and interactive systems.
                 </p>
             </div>
 
@@ -272,11 +271,11 @@
                 <div class="meta">
                     <div>
                         <strong data-i18n="skillsTitle">Skills</strong><br>
-                        <span class="muted">Unity, C#, Gameplay, UI, Systems</span>
-                    </div>
-                    <div>
-                        <strong data-i18n="availabilityTitle">Availability</strong><br>
-                        <span class="muted" data-i18n="availabilityText">Open to opportunities</span>
+                        <span class="muted" data-i18n="skillsText">
+                            Junior Game Programmer (Generalist) · Unity (2D/3D) · C# · Gameplay & UI Systems ·
+                            Basic Combat and Camera Logic · Computer Graphics Fundamentals ·
+                            Lighting & Shading Models · Audio Integration · Team-Based Projects
+                        </span>
                     </div>
                 </div>
             </aside>
@@ -294,7 +293,7 @@
                     </video>
                     <h4>LOBSTAR!</h4>
                     <p class="muted" data-i18n="lobstarDesc">
-                        Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury Award).
+                        Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).
                     </p>
                     <div class="actions">
                         <a class="cta" href="Videogames/Lobstar/lobstar.html" data-i18n="viewProject">View Project</a>
@@ -308,20 +307,20 @@
                     </video>
                     <h4>Smack That Rooster</h4>
                     <p class="muted" data-i18n="roosterDesc">
-                        Multiplayer combat game focused on chaotic fights and game feel.
+                        Multiplayer combat game focused on match flow, life systems and victory conditions.
                     </p>
                     <div class="actions">
                         <a class="cta" href="Videogames/SmackThatRooster/smackthatrooster.html" data-i18n="viewProject">View Project</a>
                     </div>
                 </article>
 
-                <!-- PROYECTO FINAL GRAFICOS -->
+                <!-- PROYECTO GRAFICOS -->
                 <article class="card">
                     <img src="Videogames/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
                          alt="Proyecto Final Gráficos por Computación">
                     <h4>Proyecto Final – Gráficos por Computación</h4>
                     <p class="muted" data-i18n="graphicsDesc">
-                        Final project focused on computer graphics techniques and real-time rendering.
+                        Final academic project exploring lighting, shading models and atmosphere in a 3D scene.
                     </p>
                     <div class="actions">
                         <a class="cta"
@@ -340,7 +339,6 @@
             <div class="contact-grid">
                 <div class="contact-card">
                     <p class="muted" data-i18n="contactText">
-                        Want to work together? I'm available for freelance and full-time opportunities.
                     </p>
                     <p><strong>Email</strong></p>
                     <a class="cta" href="mailto:santiagocardozobotero@gmail.com">
@@ -354,7 +352,6 @@
                         <a class="cta" href="https://github.com/scardozoprogramming" target="_blank">GitHub</a>
                         <a class="cta" href="https://www.linkedin.com/in/santiago-cardozo-botero-2b8802260/" target="_blank">LinkedIn</a>
                         <a class="cta" href="https://scardozogamer.itch.io/" target="_blank">Itch.io</a>
-                        <a class="cta" href="https://www.instagram.com/scardozogamer/" target="_blank">Instagram</a>
                     </div>
                 </div>
             </div>
@@ -406,59 +403,55 @@
         }, { threshold: .1 });
         document.querySelectorAll(".card").forEach(c => observer.observe(c));
 
-        /* Translations */
+        /* Language */
         const texts = {
             en: {
-                role: "Game Programmer",
+                role: "Junior Game Programmer (Generalist)",
                 navHome: "Home",
                 navProjects: "Projects",
                 navContact: "Contact",
-                heroTitle: "Game Programmer — Unity / C#",
-                heroSubtitle: "Building gameplay systems and combat logic",
-                heroText: "I focus on gameplay systems, UI flow, and player feedback with clean and maintainable code.",
+                heroTitle: "Game Programming Portfolio",
+                heroSubtitle: "University projects focused on gameplay systems and technical foundations",
+                heroText: "Portfolio showcasing academic and team-based projects in game programming, computer graphics and interactive systems.",
                 skillsTitle: "Skills",
-                availabilityTitle: "Availability",
-                availabilityText: "Open to opportunities",
+                skillsText: "Junior Game Programmer (Generalist) · Unity (2D/3D) · C# · Gameplay & UI Systems · Basic Combat and Camera Logic · Computer Graphics Fundamentals · Lighting & Shading Models · Audio Integration · Team-Based Projects",
                 projectsTitle: "Selected Projects",
-                lobstarDesc: "Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury Award).",
-                roosterDesc: "Multiplayer combat game focused on chaotic fights and game feel.",
-                graphicsDesc: "Final project focused on computer graphics techniques and real-time rendering.",
+                lobstarDesc: "Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).",
+                roosterDesc: "Multiplayer combat game focused on match flow, life systems and victory conditions.",
+                graphicsDesc: "Final academic project exploring lighting, shading models and atmosphere in a 3D scene.",
                 viewProject: "View Project",
                 contactTitle: "Contact",
-                contactText: "Want to work together? I'm available for freelance and full-time opportunities.",
                 social: "Social"
             },
             es: {
-                role: "Programador de Videojuegos",
+                role: "Programador de Videojuegos Junior (Generalista)",
                 navHome: "Inicio",
                 navProjects: "Proyectos",
                 navContact: "Contacto",
-                heroTitle: "Programador de Videojuegos — Unity / C#",
-                heroSubtitle: "Creando sistemas de gameplay y lógica de combate",
-                heroText: "Me enfoco en sistemas de gameplay, flujo de UI y feedback al jugador con código limpio y mantenible.",
+                heroTitle: "Portfolio de Programación de Videojuegos",
+                heroSubtitle: "Proyectos universitarios enfocados en sistemas de gameplay y fundamentos técnicos",
+                heroText: "Portfolio que muestra proyectos académicos y en equipo relacionados con programación de videojuegos, gráficos por computación y sistemas interactivos.",
                 skillsTitle: "Habilidades",
-                availabilityTitle: "Disponibilidad",
-                availabilityText: "Abierto a oportunidades",
+                skillsText: "Programador de Videojuegos Junior (Generalista) · Unity (2D/3D) · C# · Sistemas de Gameplay y UI · Lógica básica de Combate y Cámara · Fundamentos de Gráficos por Computación · Iluminación y Modelos de Sombreado · Integración de Audio · Trabajo en Proyectos en Equipo",
                 projectsTitle: "Proyectos Destacados",
-                lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 (Mejor Juego – Votación del Público y del Jurado).",
-                roosterDesc: "Juego de combate multijugador enfocado en peleas caóticas y game feel.",
-                graphicsDesc: "Proyecto final enfocado en técnicas de gráficos por computación y renderizado en tiempo real.",
+                lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 (Mejor Juego – Público y Jurado).",
+                roosterDesc: "Juego de combate multijugador enfocado en flujo de partida, sistema de vida y condiciones de victoria.",
+                graphicsDesc: "Proyecto final académico que explora iluminación, modelos de sombreado y atmósfera en una escena 3D.",
                 viewProject: "Ver Proyecto",
                 contactTitle: "Contacto",
-                contactText: "¿Quieres trabajar juntos? Estoy disponible para trabajos freelance y tiempo completo.",
                 social: "Redes"
             }
         };
 
         let lang = "en";
         const btn = document.getElementById("langToggle");
-        btn.addEventListener("click", () => {
+        btn.onclick = () => {
             lang = lang === "en" ? "es" : "en";
             btn.textContent = lang === "en" ? "Español" : "English";
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 el.textContent = texts[lang][el.dataset.i18n];
             });
-        });
+        };
     </script>
 
 </body>
