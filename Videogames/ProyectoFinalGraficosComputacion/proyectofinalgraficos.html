@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Proyecto Final — Gráficos por Computación</title>
+    <meta name="description" content="Final project in Computer Graphics — Santiago Cardozo Botero" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #000;
+            --accent: #00e676;
+            --muted: #888;
+            --border: #111;
+            --max: 1000px;
+            --panel: rgba(0,0,0,.55);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+            background: var(--bg);
+            color: #e6eef0;
+            line-height: 1.55;
+            overflow-x: hidden;
+        }
+
+        #binaryCanvas {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 28px;
+            position: relative;
+            z-index: 10;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+            background: #000;
+        }
+
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .cta {
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid #1a1a1a;
+            background: #000;
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        main {
+            padding: 40px 0 20px;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-align: center;
+            margin: 0 0 6px;
+            font-size: 32px;
+        }
+
+        .panel {
+            background: var(--panel);
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px;
+            margin-top: 18px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+        }
+
+        .gif-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+            .gif-grid img {
+                width: 100%;
+                border-radius: 12px;
+                border: 1px solid var(--border);
+                background: #000;
+            }
+
+        ul {
+            margin: 8px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .kbd {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: #000;
+            font-weight: 700;
+            font-size: 13px;
+            margin-right: 8px;
+            min-width: 28px;
+            text-align: center;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        @media (max-width:900px) {
+            .hero-img {
+                height: 260px;
+            }
+
+            .gif-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="binaryCanvas"></canvas>
+
+    <div class="wrap">
+
+        <header>
+            <div class="brand">
+                <div class="logo">SCB</div>
+                <div>
+                    <strong>Santiago Cardozo Botero</strong><br>
+                    <span class="muted" data-i18n="role">Game Programmer</span>
+                </div>
+            </div>
+
+            <div style="display:flex;gap:10px;">
+                <a class="cta" href="../../index.html" data-i18n="back">← Back</a>
+                <button id="langToggle" class="cta">Español</button>
+            </div>
+        </header>
+
+        <main>
+            <h1 data-i18n="title">Final Project — Computer Graphics</h1>
+            <p class="muted" style="text-align:center;" data-i18n="subtitle">
+                Advanced lighting & atmosphere in an interactive scene.
+            </p>
+
+            <!-- Screenshot -->
+            <div class="panel">
+                <h2 data-i18n="preview">Preview</h2>
+                <img class="hero-img" src="CapturaPantallaInicial.png" alt="Initial screenshot">
+            </div>
+
+            <!-- GIFs -->
+            <div class="panel">
+                <h2 data-i18n="gifsTitle">Interactive demonstrations</h2>
+                <div class="gif-grid">
+                    <img src="GrabacionParte1.gif" alt="Lighting and shading demonstration">
+                    <img src="GrabacionParte2.gif" alt="Toon and fog comparison">
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="panel">
+                <h2 data-i18n="scene">Scene</h2>
+                <p class="muted" data-i18n="sceneText">
+                    The project consists of a small 3D diorama scene with advanced lighting, fog, and multiple shading models.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h2 data-i18n="research">Research</h2>
+                <ul>
+                    <li data-i18n="r1">Gouraud vs Phong shading comparison.</li>
+                    <li data-i18n="r2">Blinn-Phong vs classic Phong lighting.</li>
+                    <li data-i18n="r3">Spotlight attenuation and fog effects.</li>
+                    <li data-i18n="r4">Flat vs smooth shading and Toon mode.</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2 data-i18n="controls">Controls</h2>
+                <p class="muted">
+                    <span class="kbd">1</span> Gouraud |
+                    <span class="kbd">2</span> Phong |
+                    <span class="kbd">3</span> Blinn-Phong |
+                    <span class="kbd">4</span> Spotlight |
+                    <span class="kbd">5</span> Fog |
+                    <span class="kbd">6</span> Toon |
+                    <span class="kbd">P</span> Projection
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            © <span id="year"></span> Santiago Cardozo Botero
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        /* Binary background */
+        const canvas = document.getElementById("binaryCanvas");
+        const ctx = canvas.getContext("2d");
+        function resize() { canvas.width = innerWidth; canvas.height = innerHeight; }
+        addEventListener("resize", resize); resize();
+
+        const bits = "01001000011001010110110001101100011011110101011101101111011100100110110001100100".split("");
+        const particles = [...Array(40)].map(() => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            s: (Math.random() * 1.5 + .5) * (Math.random() < .5 ? 1 : -1),
+            c: bits[Math.floor(Math.random() * bits.length)],
+            o: Math.random() * .6 + .2
+        }));
+
+        (function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = "bold 16px monospace";
+            ctx.fillStyle = "#00ff66";
+            ctx.shadowColor = "#00ff66";
+            ctx.shadowBlur = 8;
+            particles.forEach(p => {
+                ctx.globalAlpha = p.o;
+                ctx.fillText(p.c, p.x, p.y);
+                p.x += p.s;
+                if (p.x < -50 || p.x > canvas.width + 50) p.s *= -1;
+            });
+            ctx.globalAlpha = 1;
+            requestAnimationFrame(draw);
+        })();
+
+        /* Language */
+        const texts = {
+            en: {
+                role: "Game Programmer",
+                back: "← Back",
+                title: "Final Project — Computer Graphics",
+                subtitle: "Advanced lighting & atmosphere in an interactive scene.",
+                preview: "Preview",
+                gifsTitle: "Interactive demonstrations",
+                scene: "Scene",
+                sceneText: "The project consists of a small 3D diorama scene with advanced lighting, fog, and multiple shading models.",
+                research: "Research",
+                r1: "Gouraud vs Phong shading comparison.",
+                r2: "Blinn-Phong vs classic Phong lighting.",
+                r3: "Spotlight attenuation and fog effects.",
+                r4: "Flat vs smooth shading and Toon mode.",
+                controls: "Controls"
+            },
+            es: {
+                role: "Programador de Videojuegos",
+                back: "← Volver",
+                title: "Proyecto Final — Gráficos por Computación",
+                subtitle: "Iluminación avanzada y atmósfera en una escena interactiva.",
+                preview: "Vista previa",
+                gifsTitle: "Demostraciones interactivas",
+                scene: "Escena",
+                sceneText: "El proyecto consiste en un mini diorama 3D con iluminación avanzada, niebla y múltiples modelos de sombreado.",
+                research: "Investigación",
+                r1: "Comparación entre sombreado Gouraud y Phong.",
+                r2: "Blinn-Phong frente a Phong clásico.",
+                r3: "Atenuación del spotlight y efectos de niebla.",
+                r4: "Flat shading vs sombreado suave y modo Toon.",
+                controls: "Controles"
+            }
+        };
+
+        let lang = "en";
+        const btn = document.getElementById("langToggle");
+        btn.onclick = () => {
+            lang = lang === "en" ? "es" : "en";
+            btn.textContent = lang === "en" ? "Español" : "English";
+            document.querySelectorAll("[data-i18n]").forEach(e => {
+                e.textContent = texts[lang][e.dataset.i18n];
+            });
+        };
+    </script>
+
+</body>
+</html>

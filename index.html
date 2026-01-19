@@ -161,7 +161,7 @@
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
             gap: 18px;
         }
 
@@ -184,7 +184,8 @@
                 box-shadow: 0 8px 30px rgba(0,0,0,.6);
             }
 
-            .card video {
+            .card video,
+            .card img {
                 width: 100%;
                 height: 170px;
                 object-fit: cover;
@@ -314,6 +315,23 @@
                     </div>
                 </article>
 
+                <!-- PROYECTO FINAL GRAFICOS -->
+                <article class="card">
+                    <img src="Videogames/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
+                         alt="Proyecto Final Gráficos por Computación">
+                    <h4>Proyecto Final – Gráficos por Computación</h4>
+                    <p class="muted" data-i18n="graphicsDesc">
+                        Final project focused on computer graphics techniques and real-time rendering.
+                    </p>
+                    <div class="actions">
+                        <a class="cta"
+                           href="Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html"
+                           data-i18n="viewProject">
+                            View Project
+                        </a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -351,9 +369,9 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
 
+        /* Binary background */
         const canvas = document.getElementById("binaryCanvas");
         const ctx = canvas.getContext("2d");
-
         function resize() { canvas.width = innerWidth; canvas.height = innerHeight; }
         addEventListener("resize", resize); resize();
 
@@ -382,11 +400,13 @@
             requestAnimationFrame(draw);
         })();
 
+        /* Card reveal */
         const observer = new IntersectionObserver(e => {
             e.forEach(x => x.isIntersecting && x.target.classList.add("visible"));
         }, { threshold: .1 });
         document.querySelectorAll(".card").forEach(c => observer.observe(c));
 
+        /* Translations */
         const texts = {
             en: {
                 role: "Game Programmer",
@@ -400,8 +420,9 @@
                 availabilityTitle: "Availability",
                 availabilityText: "Open to opportunities",
                 projectsTitle: "Selected Projects",
-                lobstarDesc: "Award-winning arcade game developed in Unity.",
+                lobstarDesc: "Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury Award).",
                 roosterDesc: "Multiplayer combat game focused on chaotic fights and game feel.",
+                graphicsDesc: "Final project focused on computer graphics techniques and real-time rendering.",
                 viewProject: "View Project",
                 contactTitle: "Contact",
                 contactText: "Want to work together? I'm available for freelance and full-time opportunities.",
@@ -421,6 +442,7 @@
                 projectsTitle: "Proyectos Destacados",
                 lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 (Mejor Juego – Votación del Público y del Jurado).",
                 roosterDesc: "Juego de combate multijugador enfocado en peleas caóticas y game feel.",
+                graphicsDesc: "Proyecto final enfocado en técnicas de gráficos por computación y renderizado en tiempo real.",
                 viewProject: "Ver Proyecto",
                 contactTitle: "Contacto",
                 contactText: "¿Quieres trabajar juntos? Estoy disponible para trabajos freelance y tiempo completo.",
@@ -430,7 +452,6 @@
 
         let lang = "en";
         const btn = document.getElementById("langToggle");
-
         btn.addEventListener("click", () => {
             lang = lang === "en" ? "es" : "en";
             btn.textContent = lang === "en" ? "Español" : "English";
