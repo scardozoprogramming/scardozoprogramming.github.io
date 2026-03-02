@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>OSS Mask Protocol — Project</title>
+    <meta name="description" content="OSS Mask Protocol — Project page by Santiago Cardozo Botero" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #ff5a1f; /* naranja principal */
+            --accent-soft: #ff7a3c; /* naranja suave */
+            --muted: #a0a0a0;
+            --border: #1a1a1a;
+            --max: 1000px;
+            --panel: rgba(15,15,15,.75);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+            background: var(--bg);
+            color: #e6eef0;
+            line-height: 1.55;
+            overflow-x: hidden;
+        }
+
+        #binaryCanvas {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 28px;
+            position: relative;
+            z-index: 10;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+            background: #000;
+        }
+
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .cta {
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid #1a1a1a;
+            background: #000;
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+        
+        header .cta {
+            color: #00e676;
+        }
+
+        .cta:hover {
+                background: #0b0b0b;
+        }
+
+        main {
+            padding: 40px 0 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            color: var(--accent);
+            margin: 0 0 6px;
+            font-size: 36px;
+            letter-spacing: .5px;
+        }
+
+        .panel {
+            background: var(--panel);
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 900px;
+            height: 360px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            background: #000;
+            object-fit: cover;
+            display: block;
+            margin: 16px auto 0;
+        }
+
+        section {
+            margin-top: 18px;
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 12px;
+        }
+
+        @media(max-width:900px) {
+            video {
+                height: 260px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        ul {
+            margin: 8px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 6px 10px;
+            font-size: 13px;
+            color: var(--muted);
+            background: #000;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border-radius: 12px;
+            border: 1px solid #111;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="binaryCanvas"></canvas>
+
+    <div class="wrap">
+
+        <header>
+            <div class="brand">
+                <div class="logo">SCB</div>
+                <div>
+                    <strong>Santiago Cardozo Botero</strong><br>
+                    <span class="muted" data-i18n="role">Programmer & Producer</span>
+                </div>
+            </div>
+
+            <div style="display:flex;gap:10px;align-items:center;">
+                <a class="cta" href="../../index.html" data-i18n="back">← Back</a>
+                <button id="langToggle" class="cta" type="button">Español</button>
+            </div>
+        </header>
+
+        <main>
+                <!-- COVER IMAGE -->
+                <div style="text-align: center;margin-bottom:20px;">
+                    <img src="Ilustración_OSS MASK PROTOCOL.png"
+                         alt="OSS Mask Protocol Cover"
+                         style="width:40%; border-radius:16px; border:1px solid #111;">
+                </div>
+
+                <!-- TITLE -->
+                <div class="title">
+                    <h1>OSS MASK PROTOCOL</h1>
+                    <p class="muted">
+                        Programmer & Producer — 48h Game Jam — Unity — Team of 8
+                    </p>
+                </div>
+
+                <!-- MY ROLE -->
+                <section class="panel">
+                    <h2>My Role — Programmer & Producer</h2>
+                    <p class="muted">
+                        Developed during a 48-hour Game Jam, I worked as both Programmer and Producer,
+                        coordinating development while implementing core gameplay systems.
+                    </p>
+
+                    <div class="grid">
+
+                        <div class="panel" style="padding:16px;">
+                            <h2>Programming</h2>
+                            <ul>
+                                <li>Implemented Player Input System using Unity Input System.</li>
+                                <li>Developed core player interaction logic.</li>
+                                <li>Collaborated on NPC behavior system.</li>
+                            </ul>
+                        </div>
+
+                        <div class="panel" style="padding:16px;">
+                            <h2>Production & Delivery</h2>
+                            <ul>
+                                <li>Coordinated art, music, modeling and animation workflow.</li>
+                                <li>Managed task prioritization under 48h deadline.</li>
+                                <li>Produced final presentation and gameplay video.</li>
+                                <li>Prepared final build for submission.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- PROJECT CONTEXT -->
+                <section class="panel">
+                    <h2>Production Context</h2>
+                    <div class="tags">
+                        <span class="tag">48 Hours Development</span>
+                        <span class="tag">8 Team Members</span>
+                        <span class="tag">Unity Engine</span>
+                        <span class="tag">Cross-Discipline Coordination</span>
+                        <span class="tag">Game Jam</span>
+                    </div>
+                </section>
+
+                <!-- PRESENTATION PDF -->
+                <section class="panel">
+                    <h2>Project Presentation</h2>
+                    <p class="muted">
+                        Full presentation including narrative, UI design, sketches and team breakdown.
+                    </p>
+
+                    <a class="cta" href="OSS MASK PROTOCOL.pdf" target="_blank">
+                        View Full PDF
+                    </a>
+
+                    <iframe src="OSS MASK PROTOCOL.pdf"></iframe>
+                </section>
+        </main>
+
+        <footer>
+            © <span id="year"></span> Santiago Cardozo Botero
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const canvas = document.getElementById("binaryCanvas");
+        const ctx = canvas.getContext("2d");
+        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        window.addEventListener("resize", resize); resize();
+
+        const bits = "010011110101001101010011".split("");
+        const particles = [];
+        for (let i = 0; i < 40; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                s: (Math.random() * 1.5 + .5) * (Math.random() < .5 ? 1 : -1),
+                c: bits[Math.floor(Math.random() * bits.length)],
+                o: Math.random() * .6 + .2
+            });
+        }
+        (function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = "bold 16px monospace";
+            ctx.fillStyle = "#ff5a1f";
+            ctx.shadowColor = "#ff5a1f";
+            ctx.shadowBlur = 8;
+            particles.forEach(p => {
+                ctx.globalAlpha = p.o;
+                ctx.fillText(p.c, p.x, p.y);
+                p.x += p.s;
+                if (p.x < -50 || p.x > canvas.width + 50) p.s *= -1;
+            });
+            ctx.globalAlpha = 1;
+            requestAnimationFrame(draw);
+        })();
+    </script>
+
+</body>
+</html>

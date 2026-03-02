@@ -166,6 +166,7 @@
         }
 
         .card {
+            position: relative;
             border: 1px solid var(--border);
             border-radius: 14px;
             padding: 16px;
@@ -173,7 +174,6 @@
             opacity: 0;
             transform: translateY(14px);
         }
-
             .card.visible {
                 opacity: 1;
                 transform: none;
@@ -185,14 +185,26 @@
             }
 
             .card video,
-            .card img {
+            .card img:not(.engine-badge) {
                 width: 100%;
                 height: 170px;
-                object-fit: cover;
-                border-radius: 8px;
-                border: 1px solid var(--border);
-                background: #000;
+                object-fit: contain; 
+                object-position: center;
+                
             }
+
+        .engine-badge {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 30px;
+            height: auto;
+            opacity: .85;
+            pointer-events: none;
+            border: none !important;
+            border-radius: 0 !important;
+            background: none !important;
+        }
 
         .actions {
             display: flex;
@@ -298,6 +310,7 @@
                     <div class="actions">
                         <a class="cta" href="Videogames/Lobstar/lobstar.html" data-i18n="viewProject">View Project</a>
                     </div>
+                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </article>
 
                 <!-- SMACK THAT ROOSTER -->
@@ -312,6 +325,20 @@
                     <div class="actions">
                         <a class="cta" href="Videogames/SmackThatRooster/smackthatrooster.html" data-i18n="viewProject">View Project</a>
                     </div>
+                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
+                </article>
+
+                <!-- OSS MASK PROTOCOL -->
+                <article class="card">
+                    <img source src="Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png">
+                    <h4>OSS Mask Protocol</h4>
+                    <p class="muted">
+                        It is a platform game that was developed in gamejam 26 with the mask theme.
+                    </p>
+                    <div class="actions">
+                        <a class="cta" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html" data-i18n="viewProject">View Project</a>
+                    </div>
+                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </article>
 
                 <!-- PROYECTO GRAFICOS -->
@@ -418,6 +445,7 @@
                 projectsTitle: "Selected Projects",
                 lobstarDesc: "Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).",
                 roosterDesc: "Multiplayer combat game focused on match flow, life systems and victory conditions.",
+                ossmaskDesc: "It is a platform game that was developed in gamejam 26 with the mask theme.",
                 graphicsDesc: "Final academic project exploring lighting, shading models and atmosphere in a 3D scene.",
                 viewProject: "View Project",
                 contactTitle: "Contact",
@@ -436,6 +464,7 @@
                 projectsTitle: "Proyectos Destacados",
                 lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 (Mejor Juego – Público y Jurado).",
                 roosterDesc: "Juego de combate multijugador enfocado en flujo de partida, sistema de vida y condiciones de victoria.",
+                ossmaskDesc: "Es un juego de plataformas que se desarrolló en la gamejam 26 con la temática de máscaras.",
                 graphicsDesc: "Proyecto final académico que explora iluminación, modelos de sombreado y atmósfera en una escena 3D.",
                 viewProject: "Ver Proyecto",
                 contactTitle: "Contacto",
