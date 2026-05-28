@@ -124,7 +124,7 @@
         box-shadow: 0 0 18px rgba(255,159,69,.28);
     }
     /* === TYPOGRAPHY === */
-    .title { text-align:center; margin-bottom:20px; }
+    .title {text-align:center;margin-bottom:20px; }
     h1 {
         color: var(--accent);
         margin: 0 0 10px;
@@ -170,34 +170,132 @@
         color: #ffe1d6;
         background: rgba(255,75,62,.08);
     }
-    .cover-wrapper { text-align:center; margin-bottom:28px; }
-    .cover {
-        width: 45%;
-        max-width: 380px;
-        min-width: 220px;
+    /* === CARRUSEL COVER (NUEVO) === */
+    .cover-carousel {
+        margin: 40px;
+        max-width: 900px;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        perspective: 1400px;
+        -webkit-perspective: 1400px;
+    }
+    .carousel-viewport {
+        width: 100%;
+        max-width: 880px;
+        height: 100%;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-track {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* reducido para acercar las tarjetas laterales */
+        transition: transform 450ms cubic-bezier(.22,.9,.3,1);
+        transform-style: preserve-3d;
+        will-change: transform;
+        pointer-events: auto;
+    }
+    .carousel-card {
+        width: 320px;
+        max-width: 36%;
+        min-width: 160px;
+        height: 100%;
         border-radius: 18px;
+        overflow: hidden;
         border: 1px solid rgba(255,75,62,.45);
-        box-shadow: 0 0 40px rgba(255,75,62,.22);
+        box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 40px rgba(255,75,62,.12);
+        background: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.06));
+        flex-shrink: 0;
+        transform-origin: center center;
+        transition: transform 450ms cubic-bezier(.22,.9,.3,1), opacity 300ms ease, filter 300ms ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    video {
-        width:100%;
-        max-width:900px;
-        height:auto;
-        border-radius:18px;
-        border:1px solid rgba(255,75,62,.45);
-        background:black;
-        object-fit:cover;
+    .carousel-card img {
         display:block;
-        margin:12px auto 0;
-        box-shadow:0 0 40px rgba(255,75,62,.22);
-    }
-    iframe {
         width:100%;
-        height:650px;
-        border-radius:14px;
-        border:1px solid var(--border);
-        margin-top:16px;
-        background:#000;
+        height:100%;
+        object-fit:cover;
+        -webkit-user-drag: none;
+        user-select: none;
+    }
+    .carousel-card.center {
+        transform: translateZ(80px) scale(1.08) rotateY(0deg);
+        z-index: 30;
+        filter: none;
+    }
+    .carousel-card.left {
+        transform: translateX(-80px) translateZ(0px) scale(.96) rotateY(14deg);
+        z-index: 20;
+        filter: brightness(.92) saturate(.9);
+    }
+    .carousel-card.right {
+        transform: translateX(80px) translateZ(0px) scale(.96) rotateY(-14deg);
+        z-index: 20;
+        filter: brightness(.92) saturate(.9);
+    }
+    .carousel-card.hidden-left {
+        transform: translateX(-180px) translateZ(-40px) scale(.78) rotateY(18deg);
+        opacity: 0.0;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .carousel-card.hidden-right {
+        transform: translateX(180px) translateZ(-40px) scale(.78) rotateY(-18deg);
+        opacity: 0.0;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        width: var(--btn-w);
+        height: var(--btn-w);
+        border-radius: 12px;
+        background: rgba(7,20,31,.85);
+        color: var(--accent);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+        z-index: 80;
+        box-shadow: 0 10px 30px rgba(0,0,0,.5);
+        transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+    @media(max-width:900px) {
+        .carousel-card { width: 48%; max-width: 420px; }
+        .cover { width:80%; }
+        video { height:auto; }
+        .grid { grid-template-columns: 1fr; }
+    }
+    @media(max-width:600px) {
+        .wrap { padding:16px; }
+        header { flex-direction:column; align-items:stretch; }
+        header > div:last-child { width:100%; justify-content:space-between; }
+        .brand { align-items:flex-start; }
+        .cta { flex:1; text-align:center; }
+        h1 { font-size:28px; }
+        .subtitle { font-size:14px; }
+        .panel { padding:16px; }
+        .carousel-card { width: 70%; min-width: 220px; height: 260px; }
+        .carousel-btn { width:40px; height:40px; }
+        .cover { width:85%; min-width:0; }
+        .metric-card h3 { font-size:22px; }
+        .tools-grid { grid-template-columns: repeat(2, 1fr); }
+        iframe { height:420px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+        #lobstarCanvas { display:none; }
+        .carousel-track, .carousel-card { transition: none !important; transform: none !important; }
     }
     .metrics-grid {
         display:grid;
@@ -254,31 +352,47 @@
     .tool-card img { width:64px; height:64px; object-fit:contain; }
     .tool-card span { color:#d8ffe8; font-weight:600; font-size:14px; text-align:center; }
     .tool-card small { color:var(--muted); font-size:12px; margin-top:0; text-align:center; }
-    /* === RESPONSIVE === */
-    @media(max-width:900px) {
-        .tools-grid { grid-template-columns: repeat(2, 1fr); }
-        h1 { font-size:34px; }
-        .cover { width:80%; }
-        video { height:auto; }
-        .grid { grid-template-columns: 1fr; }
+    /* Separación entre cover y el panel del título */
+    .cover-carousel {
+      margin-bottom: 96px; /* espacio bajo el carrusel */
     }
-    @media(max-width:600px) {
-        .wrap { padding:16px; }
-        header { flex-direction:column; align-items:stretch; }
-        header > div:last-child { width:100%; justify-content:space-between; }
-        .brand { align-items:flex-start; }
-        .cta { flex:1; text-align:center; }
-        h1 { font-size:28px; }
-        .subtitle { font-size:14px; }
-        .panel { padding:16px; }
-        .cover { width:85%; min-width:0; }
-        .metric-card h3 { font-size:22px; }
-        .tools-grid { grid-template-columns: repeat(2, 1fr); }
-        iframe { height:420px; }
+    /* Asegura separación extra en el panel siguiente (solo el primer panel tras el carrusel) */
+    .cover-carousel + .panel {
+      margin-top: 18px; /* espacio sobre el panel que contiene el título */
     }
-    @media (prefers-reduced-motion: reduce) {
-        * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
-        #lobstarCanvas { display:none; }
+    /* Responsive: menos separación en pantallas pequeñas */
+    @media (max-width:600px) {
+      .cover-carousel { margin-bottom: 48px; }
+      .cover-carousel + .panel { margin-top: 12px; }
+    }
+    /* Hacer evidentes las tarjetas clicables */
+    .carousel-card[role="link"] {
+      cursor: pointer;
+      outline: none;
+    }
+    .carousel-card[role="link"]:hover {
+      transform: translateZ(90px) scale(1.06) rotateY(0deg); /* feedback al pasar el ratón */
+      box-shadow: 0 20px 50px rgba(0,0,0,.6);
+    }
+    .carousel-card[role="link"]:active {
+      transform: translateZ(70px) scale(1.04);
+    }
+    /* Centrar el tráiler horizontalmente y ajustar espaciado */
+    #Trailer_Lobstar {
+      display: block;
+      margin: 20px auto; /* 20px arriba/abajo, auto centra horizontalmente */
+      max-width: 900px;  /* coincide con el diseño existente */
+      width: 100%;
+    }
+    /* Asegurar centrado en su panel (fallback) */
+    section.panel > video {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    /* Ajuste móvil si quieres menos margen vertical */
+    @media (max-width:600px) {
+      #Trailer_Lobstar { margin: 12px auto; }
     }
 </style>
 </head>
@@ -294,8 +408,24 @@
   </div>
 </header>
 <main>
-  <div class="cover-wrapper"><img src="Lobstar-Poster.png" alt="LOBSTAR! Cover" class="cover"></div>
-  <div class="title"><h1>LOBSTAR!</h1><p class="subtitle" data-i18n="subtitle">Game Programmer — Arcade Action Game developed in Unity — UI, Camera, Feedback and Presentation Systems</p></div>
+  <!-- Carrusel 3D de covers: central grande + laterales rotadas -->
+  <div class="cover-carousel" aria-label="Carrusel de proyectos" role="region" aria-roledescription="carrusel">
+    <div class="carousel-viewport" id="carouselViewport" tabindex="0" aria-live="polite">
+      <div class="carousel-track" id="carouselTrack" aria-hidden="false">
+        <!-- Las tarjetas se generan dinámicamente desde JS -->
+        <div class="cover-wrapper"
+             data-prev="https://scardozoprogramming.github.io/Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html"
+             data-prev-img="../ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
+             data-current-img="Lobstar-Poster.png"
+             data-next="https://scardozoprogramming.github.io/Videogames/SmackThatRooster/smackthatrooster.html"
+             data-next-img="../SmackThatRooster/Smack That Rooster.png"
+             style="display:none" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+  <section class="panel">
+    <div class="title"><h1>LOBSTAR!</h1><p class="subtitle" data-i18n="subtitle">Game Programmer — Arcade Action Game developed in Unity — UI, Camera, Feedback and Presentation Systems</p></div>
+  </section>
   <section class="panel">
     <h2 data-i18n="trailer_h2">Gameplay Trailer</h2>
     <video id="Trailer_Lobstar" controls><source src="Lobstartrailer.mp4" type="video/mp4"><span data-i18n="video_fallback">Your browser does not support the video tag.</span></video>
@@ -373,7 +503,7 @@ en:{title:"LOBSTAR! | Game Programmer Portfolio Project",
     overview_h2:"Game Overview",
     overview_p:"LOBSTAR! is a fast-paced arcade action game developed in Unity. Players control a kaiju with one goal: to destroy the world. The game combines beat ’em up combat, arcade-style pacing and chaotic destruction-focused gameplay.",
     role_h2:"My Role — Game Programmer",
-    role_p:"I worked mainly as a Game Programmer, focusing on the early-game experience, UI flow, camera behavior, player feedback and presentation systems. My work included title screen animation, menu interactions, intro sequence implementation, camera transitions, sound feedback and custom typography integration.",
+    role_p:"I worked mainly as a <span class='highlight'>Game Programmer</span>, focusing on the early-game experience, UI flow, camera behavior, player feedback and presentation systems. My work included title screen animation, menu interactions, intro sequence implementation, camera transitions, sound feedback and custom typography integration.",
     ui_h2:"UI & Presentation Programming",
     ui_li1:"Designed and implemented the game’s custom typography for the title and UI presentation.",
     ui_li2:"Programmed the title screen movement, animation behavior and menu button interactions.",
@@ -477,5 +607,124 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
   if(L) L.addEventListener('click',()=>{const cur=document.documentElement.lang==='es'?'es':'en';apply(cur==='es'?'en':'es')});
   apply(localStorage.getItem('siteLang')||'en'); setYear();
 })();</script>
+<!-- Carrusel 3D con interacción: flechas, botones, drag y swipe -->
+<script>
+(function(){
+  const wrapper = document.querySelector('.cover-carousel');
+  if(!wrapper) return;
+  const legacy = document.querySelector('.cover-wrapper');
+  const prevUrl = legacy?.dataset.prev || null;
+  const prevImg = legacy?.dataset.prevImg || null;
+  const currentImg = legacy?.dataset.currentImg || (document.querySelector('.cover')?.getAttribute('src') || 'Lobstar-Poster.png');
+  const nextUrl = legacy?.dataset.next || null;
+  const nextImg = legacy?.dataset.nextImg || null;
+  const track = document.getElementById('carouselTrack');
+  const viewport = document.getElementById('carouselViewport');
+  const items = [
+    { id:'prev', img: prevImg || currentImg, url: prevUrl },
+    { id:'current', img: currentImg, url: null },
+    { id:'next', img: nextImg || currentImg, url: nextUrl }
+  ];
+  function navigateTo(url){
+    if(!url) return;
+    if(navigateTo.locked) return;
+    navigateTo.locked = true;
+    track.style.transition = 'transform 320ms cubic-bezier(.22,.9,.3,1)';
+    track.style.transform = url === nextUrl ? 'translateX(-36%)' : 'translateX(36%)';
+    const moveTimeout = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 260;
+    setTimeout(()=> { window.location.href = url; }, moveTimeout);
+  }
+  function createCard(item){
+    const card = document.createElement('div');
+    card.className = 'carousel-card';
+    card.dataset.id = item.id;
+    const img = document.createElement('img');
+    img.src = item.img;
+    img.alt = item.id === 'current' ? 'Cover del juego' : (item.id === 'prev' ? 'Proyecto anterior' : 'Proyecto siguiente');
+    card.appendChild(img);
+    if(item.url){
+      card.setAttribute('role','link');
+      card.setAttribute('tabindex','0');
+      card.setAttribute('aria-label', item.id === 'prev' ? 'Ir al proyecto anterior' : 'Ir al proyecto siguiente');
+      // Click izquierdo: detenemos propagación para que no active el listener del viewport
+      card.addEventListener('click', (e) => { 
+        // sólo respuesta a botón primario (click normal)
+        if(e.button === 0 || e.type === 'click') { 
+          e.stopPropagation();
+          navigateTo(item.url);
+        }
+      });
+      // touch: comportamiento estándar (tap = click)
+      card.addEventListener('touchstart', (e) => { e.stopPropagation(); }, { passive: true });
+    } else {
+      card.setAttribute('aria-hidden','true');
+    }
+    return card;
+  }
+  // render
+  track.innerHTML = '';
+  items.forEach(it => track.appendChild(createCard(it)));
+  function refreshPositions(){
+    const cards = Array.from(track.children);
+    cards.forEach(c => c.classList.remove('left','right','center','hidden-left','hidden-right'));
+    const [leftCard, centerCard, rightCard] = cards;
+    if(leftCard) leftCard.classList.add(leftCard.dataset.id === 'prev' ? 'left' : 'hidden-left');
+    if(centerCard) centerCard.classList.add('center');
+    if(rightCard) rightCard.classList.add(rightCard.dataset.id === 'next' ? 'right' : 'hidden-right');
+    track.style.transform = '';
+  }
+  refreshPositions();
+  // Click en viewport: izquierda -> prev, derecha -> next (click primario)
+  viewport.addEventListener('click', (e) => {
+    // aseguramos que no venga de un elemento interactivo distinto
+    if(e.defaultPrevented) return;
+    const rect = viewport.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    if(x < rect.width / 2) {
+      if(prevUrl) navigateTo(prevUrl);
+    } else {
+      if(nextUrl) navigateTo(nextUrl);
+    }
+  });
+  // Interacciones: rueda / drag / teclado (mantener comportamiento)
+  let lastWheel = 0;
+  wrapper.addEventListener('wheel', (e) => {
+    if(Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
+    const now = Date.now();
+    if(now - lastWheel < 200) return;
+    lastWheel = now;
+    if(e.deltaX > 30 && nextUrl) navigateTo(nextUrl);
+    else if(e.deltaX < -30 && prevUrl) navigateTo(prevUrl);
+  }, { passive: true });
+  let pointerDown = false, startX = 0, currentTranslate = 0, dragApplied = false;
+  viewport.addEventListener('pointerdown', (e) => { pointerDown = true; startX = e.clientX; track.style.transition = 'none'; viewport.setPointerCapture?.(e.pointerId); });
+  viewport.addEventListener('pointermove', (e) => {
+    if(!pointerDown) return;
+    const dx = e.clientX - startX;
+    currentTranslate = dx;
+    track.style.transform = `translateX(${dx * 0.15}px)`;
+    dragApplied = true;
+  });
+  viewport.addEventListener('pointerup', () => {
+    if(!pointerDown) return;
+    pointerDown = false;
+    track.style.transition = '';
+    const threshold = 80;
+    if(dragApplied){
+      if(currentTranslate < -threshold && nextUrl) navigateTo(nextUrl);
+      else if(currentTranslate > threshold && prevUrl) navigateTo(prevUrl);
+      else track.style.transform = '';
+    }
+    dragApplied = false; currentTranslate = 0;
+  });
+  viewport.addEventListener('pointercancel', ()=> { pointerDown = false; dragApplied = false; track.style.transform = ''; });
+  // teclado global
+  window.addEventListener('keydown', (e) => {
+    if(e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable)) return;
+    if((e.key === 'ArrowLeft' || e.key === 'PageUp') && prevUrl) navigateTo(prevUrl);
+    if((e.key === 'ArrowRight' || e.key === 'PageDown') && nextUrl) navigateTo(nextUrl);
+  });
+})();
+</script>
 </body>
 </html>
