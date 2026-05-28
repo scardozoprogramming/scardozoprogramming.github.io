@@ -477,137 +477,78 @@
 </main>
 <footer>© <span id="year"></span> Santiago Cardozo Botero</footer>
 </div>
-<script>/* minified JS: animations + i18n + year */
+
+<script>/* animations + i18n + year (simplified & safer application of translations) */
 (() => {
-  const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
-  const setYear=()=>{const y=$('#year'); if(y) y.textContent=new Date().getFullYear()};
+  const $ = s => document.querySelector(s), $$ = s => Array.from(document.querySelectorAll(s));
+  const setYear = () => { const y = $('#year'); if (y) y.textContent = new Date().getFullYear(); };
+
   const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if(!reduced){
-    const c = document.getElementById('lobstarCanvas'); if(c){
-      const ctx=c.getContext('2d'); const R=()=>{c.width=innerWidth;c.height=innerHeight}; addEventListener('resize',R); R();
-      const S=["★","✦","●","◆","▲","1UP","+100","COMBO","READY?","GO!","🦞"];
-      const P=Array.from({length:80},()=>({x:Math.random()*c.width,y:Math.random()*c.height,sx:(Math.random()-0.5)*0.5,sy:Math.random()*-0.35-0.05,size:Math.random()*28+14,t:S[(Math.random()*S.length)|0],o:Math.random()*0.45+0.15,col:Math.random()>0.5?"#ff4b3e":"#ff9f45"}));
-      (function d(){ctx.clearRect(0,0,c.width,c.height);ctx.textAlign='center';ctx.textBaseline='middle';P.forEach(p=>{ctx.globalAlpha=p.o;ctx.font=`bold ${p.size}px Inter, monospace`;ctx.fillStyle=p.col;ctx.shadowColor=p.col;ctx.shadowBlur=18;ctx.fillText(p.t,p.x,p.y);p.x+=p.sx;p.y+=p.sy;if(p.y<-40)p.y=c.height+40;if(p.x<-80)p.x=c.width+80;if(p.x>c.width+80)p.x=-80});ctx.globalAlpha=1;requestAnimationFrame(d)})();
+  if (!reduced) {
+    const c = document.getElementById('lobstarCanvas');
+    if (c) {
+      const ctx = c.getContext('2d');
+      const R = () => { c.width = innerWidth; c.height = innerHeight; };
+      addEventListener('resize', R); R();
+      const S = ["★","✦","●","◆","▲","1UP","+100","COMBO","READY?","GO!","🦞"];
+      const P = Array.from({ length: 80 }, () => ({
+        x: Math.random() * c.width,
+        y: Math.random() * c.height,
+        sx: (Math.random() - 0.5) * 0.5,
+        sy: Math.random() * -0.35 - 0.05,
+        size: Math.random() * 28 + 14,
+        t: S[(Math.random() * S.length) | 0],
+        o: Math.random() * 0.45 + 0.15,
+        col: Math.random() > 0.5 ? "#ff4b3e" : "#ff9f45"
+      }));
+      (function draw() {
+        ctx.clearRect(0, 0, c.width, c.height);
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        P.forEach(p => {
+          ctx.globalAlpha = p.o;
+          ctx.font = `bold ${p.size}px Inter, monospace`;
+          ctx.fillStyle = p.col;
+          ctx.shadowColor = p.col; ctx.shadowBlur = 18;
+          ctx.fillText(p.t, p.x, p.y);
+          p.x += p.sx; p.y += p.sy;
+          if (p.y < -40) p.y = c.height + 40;
+          if (p.x < -80) p.x = c.width + 80;
+          if (p.x > c.width + 80) p.x = -80;
+        });
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(draw);
+      })();
     }
   }
-  const T={
-en:{title:"LOBSTAR! | Game Programmer Portfolio Project",
-    meta_description:"Portfolio project by Santiago Cardozo Botero. A Unity arcade action game where I worked as Game Programmer, focusing on UI flow, camera behavior, player feedback and presentation.",
-    role_label:"Game Programmer",
-    back_link:"← Back",
-    itch_link:"Play on itch.io",
-    subtitle:"Game Programmer — Arcade Action Game developed in Unity — UI, Camera, Feedback and Presentation Systems",
-    trailer_h2:"Gameplay Trailer",
-    video_fallback:"Your browser does not support the video tag.",
-    playable_build_note:"Playable build on itch.io — button in the header",
-    overview_h2:"Game Overview",
-    overview_p:"LOBSTAR! is a fast-paced arcade action game developed in Unity. Players control a kaiju with one goal: to destroy the world. The game combines beat ’em up combat, arcade-style pacing and chaotic destruction-focused gameplay.",
-    role_h2:"My Role — Game Programmer",
-    role_p:"I worked mainly as a <span class='highlight'>Game Programmer</span>, focusing on the early-game experience, UI flow, camera behavior, player feedback and presentation systems. My work included title screen animation, menu interactions, intro sequence implementation, camera transitions, sound feedback and custom typography integration.",
-    ui_h2:"UI & Presentation Programming",
-    ui_li1:"Designed and implemented the game’s custom typography for the title and UI presentation.",
-    ui_li2:"Programmed the title screen movement, animation behavior and menu button interactions.",
-    ui_li3:"Implemented the game introduction flow leading into the comic sequence.",
-    camera_h2:"Camera, Audio & Feedback",
-    camera_li1:"Worked with another programmer on the camera system, including map view behavior and zoom transitions.",
-    camera_li2:"Integrated sound effects to improve player feedback and overall game feel.",
-    camera_li3:"Helped polish the presentation layer to make the game feel more responsive and arcade-like.",
-    gameplay_h2:"Core Gameplay",
-    gameplay_p:"LOBSTAR! is a fast-paced arcade action game where players control a destructive kaiju rampaging through the city. Gameplay focuses on responsive movement, beat ’em up combat, environmental destruction and exaggerated player feedback to create a chaotic and satisfying gameplay experience.",
-    pillars_h3:"Gameplay Pillars",
-    tag1:"Fast-Paced Combat",
-    tag2:"City Destruction",
-    tag3:"Arcade Action",
-    tag4:"Responsive Controls",
-    tag5:"Chaotic Gameplay",
-    tag6:"Strong Game Feel",
-    core_loop_h3:"Core Loop",
-    core_loop_p:"Move through the city, fight enemies, destroy buildings, gain momentum and survive increasingly chaotic encounters.",
-    production_h2:"Production Details",
-    metric1_h3:"9 Developers",
-    metric1_p:"Multidisciplinary Team",
-    metric2_h3:"Sep 2024 — May 2025",
-    metric2_p:"Academic Year Production",
-    metric3_h3:"Unity Engine",
-    metric3_p:"Game Development",
-    metric4_h3:"Game Programmer",
-    metric4_p:"Main Role",
-    production_p:"LOBSTAR! was developed as part of an academic year production by a multidisciplinary team of 9 developers. The project focused on fast-paced arcade gameplay, destruction systems, combat mechanics and collaborative iteration inside Unity using team-based production workflows.",
-    tooltag1:"Gameplay Programming",
-    tooltag2:"Combat Systems",
-    tooltag3:"Kaiju Gameplay",
-    tooltag4:"Destruction Design",
-    tooltag5:"Team Collaboration",
-    tooltag6:"Rapid Iteration",
-    tooltag7:"Unity Workflow",
-    tools_h2:"Tools & Pipeline",
-    canva_small:"Level Layout Planning"},
-es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
-    meta_description:"Proyecto de portafolio por Santiago Cardozo Botero. Un juego arcade desarrollado en Unity donde trabajé como Programador de Juegos, enfocado en flujo de UI, comportamiento de cámara, retroalimentación y presentación.",
-    role_label:"Programador de Juegos",
-    back_link:"← Volver",
-    itch_link:"Jugar en itch.io",
-    subtitle:"Programador de Juegos — Juego de Acción Arcade desarrollado en Unity — UI, Cámara, Retroalimentación y Sistemas de Presentación",
-    trailer_h2:"Tráiler de Jugabilidad",
-    video_fallback:"Tu navegador no soporta la etiqueta de video.",
-    playable_build_note:"Build jugable en itch.io — botón en el encabezado",
-    overview_h2:"Resumen del Juego",
-    overview_p:"LOBSTAR! es un juego de acción arcade de ritmo rápido desarrollado en Unity. Los jugadores controlan un kaiju con un objetivo: destruir el mundo. El juego combina combate tipo beat ’em up, ritmo arcade y jugabilidad centrada en la destrucción.",
-    role_h2:"Mi Rol — Programador de Juegos",
-    role_p:"Trabajé principalmente como Programador de Juegos, centrado en la experiencia temprana, el flujo de UI, el comportamiento de cámara, la retroalimentación al jugador y los sistemas de presentación. Mi trabajo incluyó animación de la pantalla de título, interacciones de menús, implementación de la secuencia de introducción, transiciones de cámara, retroalimentación de sonido e integración de tipografía personalizada.",
-    ui_h2:"Programación de UI y Presentación",
-    ui_li1:"Diseñé e implementé la tipografía personalizada del juego para el título y la presentación de la UI.",
-    ui_li2:"Programé el movimiento de la pantalla de título, el comportamiento de animación y las interacciones de los botones del menú.",
-    ui_li3:"Implementé el flujo de introducción del juego que conduce a la secuencia tipo cómic.",
-    camera_h2:"Cámara, Audio y Retroalimentación",
-    camera_li1:"Trabajé con otro programador en el sistema de cámara, incluyendo vista del mapa y transiciones de zoom.",
-    camera_li2:"Integré efectos de sonido para mejorar la retroalimentación al jugador y la sensación general del juego.",
-    camera_li3:"Ayudé a pulir la capa de presentación para que el juego se sintiera más responsivo y arcade.",
-    gameplay_h2:"Jugabilidad Principal",
-    gameplay_p:"LOBSTAR! es un juego arcade de ritmo rápido donde los jugadores controlan un kaiju destructivo que arrasa la ciudad. La jugabilidad se centra en movimiento responsivo, combate tipo beat ’em up, destrucción del entorno y retroalimentación exagerada al jugador para crear una experiencia caótica y satisfactoria.",
-    pillars_h3:"Pilares de Jugabilidad",
-    tag1:"Combate de Ritmo Rápido",
-    tag2:"Destrucción de la Ciudad",
-    tag3:"Acción Arcade",
-    tag4:"Controles Responsivos",
-    tag5:"Jugabilidad Caótica",
-    tag6:"Fuerte Sensación de Juego",
-    core_loop_h3:"Bucle Principal",
-    core_loop_p:"Muévete por la ciudad, lucha contra enemigos, destruye edificios, gana impulso y sobrevive a encuentros cada vez más caóticos.",
-    production_h2:"Detalles de Producción",
-    metric1_h3:"9 Desarrolladores",
-    metric1_p:"Equipo Multidisciplinario",
-    metric2_h3:"Sep 2024 — May 2025",
-    metric2_p:"Producción del Año Académico",
-    metric3_h3:"Motor Unity",
-    metric3_p:"Desarrollo de Juegos",
-    metric4_h3:"Programador de Juegos",
-    metric4_p:"Rol Principal",
-    production_p:"LOBSTAR! fue desarrollado como parte de una producción del año académico por un equipo multidisciplinario de 9 desarrolladores. El proyecto se centró en jugabilidad arcade de ritmo rápido, sistemas de destrucción, mecánicas de combate e iteración colaborativa dentro de Unity.",
-    tooltag1:"Programación de Jugabilidad",
-    tooltag2:"Sistemas de Combate",
-    tooltag3:"Jugabilidad Kaiju",
-    tooltag4:"Diseño de Destrucción",
-    tooltag5:"Colaboración en Equipo",
-    tooltag6:"Iteración Rápida",
-    tooltag7:"Flujo de Trabajo en Unity",
-    tools_h2:"Herramientas y Pipeline",
-    canva_small:"Planificación de Niveles"}
+
+  const T = {
+    en: { title: "LOBSTAR! | Game Programmer Portfolio Project", meta_description: "Portfolio project by Santiago Cardozo Botero. A Unity arcade action game where I worked as Game Programmer, focusing on UI flow, camera behavior, player feedback and presentation.", role_label: "Game Programmer", back_link: "← Back", itch_link: "Play on itch.io", subtitle: "Game Programmer — Arcade Action Game developed in Unity — UI, Camera, Feedback and Presentation Systems", trailer_h2: "Gameplay Trailer", video_fallback: "Your browser does not support the video tag.", playable_build_note: "Playable build on itch.io — button in the header", overview_h2: "Game Overview", overview_p: "LOBSTAR! is a fast-paced arcade action game developed in Unity. Players control a kaiju with one goal: to destroy the world. The game combines beat ’em up combat, arcade-style pacing and chaotic destruction-focused gameplay.", role_h2: "My Role — Game Programmer", role_p: "I worked mainly as a <span class='highlight'>Game Programmer</span>, focusing on the early-game experience, UI flow, camera behavior, player feedback and presentation systems. My work included title screen animation, menu interactions, intro sequence implementation, camera transitions, sound feedback and custom typography integration.", ui_h2: "UI & Presentation Programming", ui_li1: "Designed and implemented the game’s custom typography for the title and UI presentation.", ui_li2: "Programmed the title screen movement, animation behavior and menu button interactions.", ui_li3: "Implemented the game introduction flow leading into the comic sequence.", camera_h2: "Camera, Audio & Feedback", camera_li1: "Worked with another programmer on the camera system, including map view behavior and zoom transitions.", camera_li2: "Integrated sound effects to improve player feedback and overall game feel.", camera_li3: "Helped polish the presentation layer to make the game feel more responsive and arcade-like.", gameplay_h2: "Core Gameplay", gameplay_p: "LOBSTAR! is a fast-paced arcade action game where players control a destructive kaiju rampaging through the city. Gameplay focuses on responsive movement, beat ’em up combat, environmental destruction and exaggerated player feedback to create a chaotic and satisfying gameplay experience.", pillars_h3: "Gameplay Pillars", tag1: "Fast-Paced Combat", tag2: "City Destruction", tag3: "Arcade Action", tag4: "Responsive Controls", tag5: "Chaotic Gameplay", tag6: "Strong Game Feel", core_loop_h3: "Core Loop", core_loop_p: "Move through the city, fight enemies, destroy buildings, gain momentum and survive increasingly chaotic encounters.", production_h2: "Production Details", metric1_h3: "9 Developers", metric1_p: "Multidisciplinary Team", metric2_h3: "Sep 2024 — May 2025", metric2_p: "Academic Year Production", metric3_h3: "Unity Engine", metric3_p: "Game Development", metric4_h3: "Game Programmer", metric4_p: "Main Role", production_p: "LOBSTAR! was developed as part of an academic year production by a multidisciplinary team of 9 developers. The project focused on fast-paced arcade gameplay, destruction systems, combat mechanics and collaborative iteration inside Unity using team-based production workflows.", tooltag1: "Gameplay Programming", tooltag2: "Combat Systems", tooltag3: "Kaiju Gameplay", tooltag4: "Destruction Design", tooltag5: "Team Collaboration", tooltag6: "Rapid Iteration", tooltag7: "Unity Workflow", tools_h2: "Tools & Pipeline", canva_small: "Level Layout Planning" },
+    es: { title: "LOBSTAR! | Proyecto de Portafolio — Programador de Juegos", meta_description: "Proyecto de portafolio por Santiago Cardozo Botero. Un juego arcade desarrollado en Unity donde trabajé como Programador de Juegos, enfocado en flujo de UI, comportamiento de cámara, retroalimentación y presentación.", role_label: "Programador de Juegos", back_link: "← Volver", itch_link: "Jugar en itch.io", subtitle: "Programador de Juegos — Juego de Acción Arcade desarrollado en Unity — UI, Cámara, Retroalimentación y Sistemas de Presentación", trailer_h2: "Tráiler de Jugabilidad", video_fallback: "Tu navegador no soporta la etiqueta de video.", playable_build_note: "Build jugable en itch.io — botón en el encabezado", overview_h2: "Resumen del Juego", overview_p: "LOBSTAR! es un juego de acción arcade de ritmo rápido desarrollado en Unity. Los jugadores controlan un kaiju con un objetivo: destruir el mundo. El juego combina combate tipo beat ’em up, ritmo arcade y jugabilidad centrada en la destrucción.", role_h2: "Mi Rol — Programador de Juegos", role_p: "Trabajé principalmente como Programador de Juegos, centrado en la experiencia temprana, el flujo de UI, el comportamiento de cámara, la retroalimentación al jugador y los sistemas de presentación. Mi trabajo incluyó animación de la pantalla de título, interacciones de menús, implementación de la secuencia de introducción, transiciones de cámara, retroalimentación de sonido e integración de tipografía personalizada.", ui_h2: "Programación de UI y Presentación", ui_li1: "Diseñé e implementé la tipografía personalizada del juego para el título y la presentación de la UI.", ui_li2: "Programé el movimiento de la pantalla de título, el comportamiento de animación y las interacciones de los botones del menú.", ui_li3: "Implementé el flujo de introducción del juego que conduce a la secuencia tipo cómic.", camera_h2: "Cámara, Audio y Retroalimentación", camera_li1: "Trabajé con otro programador en el sistema de cámara, incluyendo vista del mapa y transiciones de zoom.", camera_li2: "Integré efectos de sonido para mejorar la retroalimentación al jugador y la sensación general del juego.", camera_li3: "Ayudé a pulir la capa de presentación para que el juego se sintiera más responsivo y arcade.", gameplay_h2: "Jugabilidad Principal", gameplay_p: "LOBSTAR! es un juego arcade de ritmo rápido donde los jugadores controlan un kaiju destructivo que arrasa la ciudad. La jugabilidad se centra en movimiento responsivo, combate tipo beat ’em up, destrucción del entorno y retroalimentación exagerada al jugador para crear una experiencia caótica y satisfactoria.", pillars_h3: "Pilares de Jugabilidad", tag1: "Combate de Ritmo Rápido", tag2: "Destrucción de la Ciudad", tag3: "Acción Arcade", tag4: "Controles Responsivos", tag5: "Jugabilidad Caótica", tag6: "Fuerte Sensación de Juego", core_loop_h3: "Bucle Principal", core_loop_p: "Muévete por la ciudad, lucha contra enemigos, destruye edificios, gana impulso y sobrevive a encuentros cada vez más caóticos.", production_h2: "Detalles de Producción", metric1_h3: "9 Desarrolladores", metric1_p: "Equipo Multidisciplinario", metric2_h3: "Sep 2024 — May 2025", metric2_p: "Producción del Año Académico", metric3_h3: "Motor Unity", metric3_p: "Desarrollo de Juegos", metric4_h3: "Programador de Juegos", metric4_p: "Rol Principal", production_p: "LOBSTAR! fue desarrollado como parte de una producción del año académico por un equipo multidisciplinario de 9 desarrolladores. El proyecto se centró en jugabilidad arcade de ritmo rápido, sistemas de destrucción, mecánicas de combate e iteración colaborativa dentro de Unity.", tooltag1: "Programación de Jugabilidad", tooltag2: "Sistemas de Combate", tooltag3: "Jugabilidad Kaiju", tooltag4: "Diseño de Destrucción", tooltag5: "Colaboración en Equipo", tooltag6: "Iteración Rápida", tooltag7: "Flujo de Trabajo en Unity", tools_h2: "Herramientas y Pipeline", canva_small: "Planificación de Niveles" }
   };
-  const L=document.getElementById('langToggle');
-  function apply(lang){
-    const m=T[lang]||T.en;
-    if(m.title)document.title=m.title;
-    const md=document.querySelector('meta[name="description"]'); if(md&&m.meta_description)md.setAttribute('content',m.meta_description);
-    document.documentElement.lang=(lang==='es'?'es':'en');
-    $$('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n'); if(k&&m[k]) el.textContent=m[k];});
-    if(L){L.textContent=(lang==='es'?'English':'Español');L.setAttribute('aria-label',lang==='es'?'Switch to English':'Cambiar a Español')}
-    localStorage.setItem('siteLang',lang);
+
+  const L = document.getElementById('langToggle');
+  function apply(lang) {
+    const m = T[lang] || T.en;
+    if (m.title) document.title = m.title;
+    const md = document.querySelector('meta[name="description"]'); if (md && m.meta_description) md.setAttribute('content', m.meta_description);
+    document.documentElement.lang = (lang === 'es' ? 'es' : 'en');
+    // Usar innerHTML para respetar etiquetas como <span class='highlight'> presentes en las traducciones.
+    $$('[data-i18n]').forEach(el => {
+      const k = el.getAttribute('data-i18n');
+      if (!k) return;
+      const txt = m[k];
+      if (typeof txt === 'string') el.innerHTML = txt;
+    });
+    if (L) { L.textContent = (lang === 'es' ? 'English' : 'Español'); L.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a Español'); }
+    localStorage.setItem('siteLang', lang);
   }
-  if(L) L.addEventListener('click',()=>{const cur=document.documentElement.lang==='es'?'es':'en';apply(cur==='es'?'en':'es')});
-  apply(localStorage.getItem('siteLang')||'en'); setYear();
-})();</script>
-<!-- Carrusel 3D con interacción: flechas, botones, drag y swipe -->
+  if (L) L.addEventListener('click', () => { const cur = document.documentElement.lang === 'es' ? 'es' : 'en'; apply(cur === 'es' ? 'en' : 'es'); });
+  apply(localStorage.getItem('siteLang') || 'en');
+  setYear();
+})();
+</script>
+
+<!-- Carrusel 3D con interacción simplificada -->
 <script>
 (function(){
   const wrapper = document.querySelector('.cover-carousel');
@@ -631,9 +572,10 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
     navigateTo.locked = true;
     track.style.transition = 'transform 320ms cubic-bezier(.22,.9,.3,1)';
     track.style.transform = url === nextUrl ? 'translateX(-36%)' : 'translateX(36%)';
-    const moveTimeout = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 260;
+    const moveTimeout = (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) ? 0 : 260;
     setTimeout(()=> { window.location.href = url; }, moveTimeout);
   }
+
   function createCard(item){
     const card = document.createElement('div');
     card.className = 'carousel-card';
@@ -646,15 +588,10 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
       card.setAttribute('role','link');
       card.setAttribute('tabindex','0');
       card.setAttribute('aria-label', item.id === 'prev' ? 'Ir al proyecto anterior' : 'Ir al proyecto siguiente');
-      // Click izquierdo: detenemos propagación para que no active el listener del viewport
-      card.addEventListener('click', (e) => { 
-        // sólo respuesta a botón primario (click normal)
-        if(e.button === 0 || e.type === 'click') { 
-          e.stopPropagation();
-          navigateTo(item.url);
-        }
-      });
-      // touch: comportamiento estándar (tap = click)
+      // click normal y tecla Enter (por tabindex)
+      card.addEventListener('click', (e) => { e.stopPropagation(); navigateTo(item.url); });
+      card.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigateTo(item.url); } });
+      // touch: evitar burbujeo en mobile
       card.addEventListener('touchstart', (e) => { e.stopPropagation(); }, { passive: true });
     } else {
       card.setAttribute('aria-hidden','true');
@@ -674,19 +611,17 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
     track.style.transform = '';
   }
   refreshPositions();
-  // Click en viewport: izquierda -> prev, derecha -> next (click primario)
+
+  // click en viewport decide prev/next
   viewport.addEventListener('click', (e) => {
-    // aseguramos que no venga de un elemento interactivo distinto
     if(e.defaultPrevented) return;
     const rect = viewport.getBoundingClientRect();
     const x = e.clientX - rect.left;
-    if(x < rect.width / 2) {
-      if(prevUrl) navigateTo(prevUrl);
-    } else {
-      if(nextUrl) navigateTo(nextUrl);
-    }
+    if(x < rect.width / 2) { if(prevUrl) navigateTo(prevUrl); }
+    else { if(nextUrl) navigateTo(nextUrl); }
   });
-  // Interacciones: rueda / drag / teclado (mantener comportamiento)
+
+  // wheel (simplificado y con debounce rápido)
   let lastWheel = 0;
   wrapper.addEventListener('wheel', (e) => {
     if(Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
@@ -696,6 +631,8 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
     if(e.deltaX > 30 && nextUrl) navigateTo(nextUrl);
     else if(e.deltaX < -30 && prevUrl) navigateTo(prevUrl);
   }, { passive: true });
+
+  // drag / swipe con pointer events
   let pointerDown = false, startX = 0, currentTranslate = 0, dragApplied = false;
   viewport.addEventListener('pointerdown', (e) => { pointerDown = true; startX = e.clientX; track.style.transition = 'none'; viewport.setPointerCapture?.(e.pointerId); });
   viewport.addEventListener('pointermove', (e) => {
@@ -705,7 +642,7 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
     track.style.transform = `translateX(${dx * 0.15}px)`;
     dragApplied = true;
   });
-  viewport.addEventListener('pointerup', () => {
+  function endDrag(){
     if(!pointerDown) return;
     pointerDown = false;
     track.style.transition = '';
@@ -716,9 +653,11 @@ es:{title:"LOBSTAR! | Proyecto de Portafolio — Programador de Juegos",
       else track.style.transform = '';
     }
     dragApplied = false; currentTranslate = 0;
-  });
-  viewport.addEventListener('pointercancel', ()=> { pointerDown = false; dragApplied = false; track.style.transform = ''; });
-  // teclado global
+  }
+  viewport.addEventListener('pointerup', endDrag);
+  viewport.addEventListener('pointercancel', endDrag);
+
+  // teclado global (flechas / page up/down)
   window.addEventListener('keydown', (e) => {
     if(e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable)) return;
     if((e.key === 'ArrowLeft' || e.key === 'PageUp') && prevUrl) navigateTo(prevUrl);
