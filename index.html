@@ -16,15 +16,8 @@
             --border: #111;
             --max: 1100px;
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-        }
-
+        * {box-sizing: border-box;}
+        html, body {height: 100%;}
         body {
             margin: 0;
             font-family: Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
@@ -33,7 +26,6 @@
             line-height: 1.5;
             overflow-x: hidden;
         }
-
         #binaryCanvas {
             position: fixed;
             inset: 0;
@@ -43,7 +35,6 @@
             pointer-events: none;
             opacity: .5;
         }
-
         .wrap {
             max-width: var(--max);
             margin: 0 auto;
@@ -51,7 +42,6 @@
             position: relative;
             z-index: 10;
         }
-
         header {
             display: flex;
             justify-content: space-between;
@@ -63,13 +53,7 @@
             padding: 12px;
             background: #000;
         }
-
-        .brand {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
+        .brand {display: flex; gap: 12px; align-items: center;}
         .logo {
             width: 44px;
             height: 44px;
@@ -80,22 +64,9 @@
             justify-content: center;
             font-weight: 800;
         }
-
-        nav {
-            display: flex;
-            gap: 18px;
-        }
-
-            nav a {
-                color: var(--muted);
-                text-decoration: none;
-                font-weight: 600;
-            }
-
-                nav a:hover {
-                    color: var(--accent);
-                }
-
+        nav {display: flex; gap: 18px;}
+            nav a {color: var(--muted); text-decoration: none; font-weight: 600;}
+            nav a:hover {color: var(--accent);}
         .cta {
             padding: 8px 12px;
             border-radius: 10px;
@@ -109,7 +80,6 @@
             align-items: center;
             gap: 8px;
         }
-
         .hero {
             display: grid;
             grid-template-columns: 1fr 420px;
@@ -117,82 +87,28 @@
             align-items: center;
             padding: 56px 0;
         }
-
-            .hero h2 {
-                color: var(--accent);
-                margin-bottom: 8px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-                margin: 0 0 12px;
-            }
-
-        .lead {
-            color: var(--muted);
-        }
-
-        .profile-card {
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 12px;
-        }
-
-            .profile-card img {
-                width: 100%;
-                border-radius: 10px;
-            }
-
-        .meta {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-            gap: 16px;
-        }
-
-        section {
-            padding: 46px 0;
-        }
-
-        h3 {
-            color: var(--accent);
-            margin-bottom: 14px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 18px;
-        }
-
+            .hero h2 {color: var(--accent); margin-bottom: 8px;}
+            .hero h1 {font-size: 32px; margin: 0 0 12px;}
+        .lead {color: var(--muted);}
+        .profile-card {border: 1px solid var(--border); border-radius: 14px; padding: 12px;}
+        .profile-card img { width: 100%; border-radius: 10px;}
+        .meta {display: flex; justify-content: space-between; margin-top: 10px; gap: 16px;}
+        section {padding: 46px 0;}
+        h3 { color: var(--accent); margin-bottom: 14px;}
+        .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px;}
         .card {
             position: relative;
             border: 1px solid var(--border);
             border-radius: 14px;
             padding: 16px;
             transition: .25s;
-            opacity: 0;
-            transform: translateY(14px);
+            opacity: 1;
+            transform: none;
         }
-            .card.visible {
-                opacity: 1;
-                transform: none;
-            }
-
-            .card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 8px 30px rgba(0,0,0,.6);
-            }
-
+            .card.visible { opacity: 1; transform: none;}
+            .card:hover { transform: translateY(-6px); box-shadow: 0 8px 30px rgba(0,0,0,.6);}
             .card video,
-            .card img:not(.engine-badge) {
-                width: 100%;
-                height: 170px;
-                object-fit: contain; 
-                object-position: center;
-                
-            }
-
+            .card img:not(.engine-badge) {width: 100%; height: 170px; object-fit: contain; object-position: center;}
         .engine-badge {
             position: absolute;
             right: 10px;
@@ -205,52 +121,21 @@
             border-radius: 0 !important;
             background: none !important;
         }
-
-        .actions {
-            display: flex;
-            gap: 10px;
-            margin-top: 12px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-        }
-
-        .contact-card {
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 18px;
-        }
-
-        footer {
-            padding: 40px 0;
-            color: var(--muted);
-            text-align: center;
-        }
-
+        .actions {display: flex; gap: 10px; margin-top: 12px;}
+        .contact-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 18px;}
+        .contact-card {border: 1px solid var(--border); border-radius: 14px; padding: 18px;}
+        footer {padding: 40px 0; color: var(--muted); text-align: center;}
         @media (max-width:900px) {
-            .hero {
-                grid-template-columns: 1fr;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
+            .hero {grid-template-columns: 1fr;}
+            .cards {grid-template-columns: 1fr;}
+            .contact-grid {grid-template-columns: 1fr;}
         }
+        .muted {color: var(--muted);}
     </style>
 </head>
-
 <body>
     <canvas id="binaryCanvas"></canvas>
-
     <div class="wrap">
-
         <header>
             <div class="brand">
                 <div class="logo">SCB</div>
@@ -259,16 +144,13 @@
                     <span class="muted" data-i18n="role">Junior Game Programmer (Generalist)</span>
                 </div>
             </div>
-
             <nav>
                 <a href="#home" data-i18n="navHome">Home</a>
                 <a href="#projects" data-i18n="navProjects">Projects</a>
                 <a href="#contact" data-i18n="navContact">Contact</a>
             </nav>
-
             <button id="langToggle" class="cta">Español</button>
         </header>
-
         <main id="home" class="hero">
             <div>
                 <h2 data-i18n="heroTitle">Game Programming Portfolio</h2>
@@ -277,7 +159,6 @@
                     Portfolio showcasing academic and team-based projects in game programming, computer graphics and interactive systems.
                 </p>
             </div>
-
             <aside class="profile-card">
                 <img src="Picture/FotoSantiagoCardozoBotero.jpeg" alt="Santiago Cardozo Botero">
                 <div class="meta">
@@ -292,45 +173,38 @@
                 </div>
             </aside>
         </main>
-
         <section id="projects">
             <h3 data-i18n="projectsTitle">Selected Projects</h3>
-
             <div class="cards">
-
                 <!-- LOBSTAR -->
                 <article class="card">
-                    <img source src="Videogames/Lobstar/Lobstar Poster.png">
+                    <img src="Videogames/Lobstar/Lobstar Poster.png">
                     <h4>LOBSTAR!</h4>
                     <p class="muted" data-i18n="lobstarDesc">
-                        Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).
+                        It is an Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).
                     </p>
                     <div class="actions">
                         <a class="cta" href="Videogames/Lobstar/lobstar.html" data-i18n="viewProject">View Project</a>
                     </div>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </article>
-
                 <!-- SMACK THAT ROOSTER -->
                 <article class="card">
-                    <video controls>
-                        <source src="Videogames/SmackThatRooster/SmackThatRoosterGameplay.mp4" type="video/mp4">
-                    </video>
+                    <img src="Videogames/SmackThatRooster/Smack That Rooster.png">
                     <h4>Smack That Rooster</h4>
                     <p class="muted" data-i18n="roosterDesc">
-                        Multiplayer combat game focused on match flow, life systems and victory conditions.
+                        It is a Multiplayer combat game focused on match flow, life systems and victory conditions.
                     </p>
                     <div class="actions">
                         <a class="cta" href="Videogames/SmackThatRooster/smackthatrooster.html" data-i18n="viewProject">View Project</a>
                     </div>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </article>
-
                 <!-- OSS MASK PROTOCOL -->
                 <article class="card">
-                    <img source src="Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png">
+                    <img src="Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png">
                     <h4>OSS Mask Protocol</h4>
-                    <p class="muted">
+                    <p class="muted" data-i18n="ossmaskDesc">
                         It is a platform game that was developed in gamejam 26 with the mask theme.
                     </p>
                     <div class="actions">
@@ -338,20 +212,18 @@
                     </div>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </article>
-
                 <!-- Boo Im Inside Your Wall -->
                 <article class="card">
-                    <img source src="Videogames/BooImInsideYourWall/Poster_Boo.png">
+                    <img src="Videogames/BooImInsideYourWall/Poster_Boo.png">
                     <h4>Boo Im Inside Your Wall</h4>
                     <p class="muted" data-i18n="BooImInsideYourWallDesc">
-                        Boo! I’m Inside Your Walls es un juego de sigilo y puzles donde controlas a Bunyo, un pequeño fantasma que debe infiltrarse en hogares y aterrorizar a sus residentes sin ser detectado.
+                        It is a stealth and puzzle game where you control Bunyo, a little ghost who must sneak into homes and terrorize their residents without being detected.
                     </p>
                     <div class="actions">
                         <a class="cta" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html" data-i18n="viewProject">View Project</a>
                     </div>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </article>
-
                 <!-- PROYECTO GRAFICOS -->
                 <article class="card">
                     <img src="Videogames/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
@@ -368,10 +240,8 @@
                         </a>
                     </div>
                 </article>
-
             </div>
         </section>
-
         <section id="contact">
             <h3 data-i18n="contactTitle">Contact</h3>
             <div class="contact-grid">
@@ -383,7 +253,6 @@
                         santiagocardozobotero@gmail.com
                     </a>
                 </div>
-
                 <div class="contact-card">
                     <p><strong data-i18n="social">Social</strong></p>
                     <div style="display:flex;flex-direction:column;gap:10px;">
@@ -394,22 +263,17 @@
                 </div>
             </div>
         </section>
-
         <footer>
             © <span id="year"></span> Santiago Cardozo Botero
         </footer>
-
     </div>
-
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-
         /* Binary background */
         const canvas = document.getElementById("binaryCanvas");
         const ctx = canvas.getContext("2d");
         function resize() { canvas.width = innerWidth; canvas.height = innerHeight; }
         addEventListener("resize", resize); resize();
-
         const bits = "01001000011001010110110001101100011011110101011101101111011100100110110001100100".split("");
         const particles = [...Array(40)].map(() => ({
             x: Math.random() * canvas.width,
@@ -418,7 +282,6 @@
             c: bits[Math.floor(Math.random() * bits.length)],
             o: Math.random() * .6 + .2
         }));
-
         (function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.font = "bold 16px monospace";
@@ -434,17 +297,25 @@
             ctx.globalAlpha = 1;
             requestAnimationFrame(draw);
         })();
-
         /* Card reveal */
-        const observer = new IntersectionObserver(e => {
-            e.forEach(x => x.isIntersecting && x.target.classList.add("visible"));
-        }, { threshold: .1 });
-        document.querySelectorAll(".card").forEach(c => observer.observe(c));
+        const cards = document.querySelectorAll(".card");
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.1 });
 
+            cards.forEach(card => observer.observe(card));
+        } else {
+            cards.forEach(card => card.classList.add("visible"));
+        }
         /* Language */
         const texts = {
             en: {
-                role: "Junior Game Programmer (Generalist)",
+                role: "Game Developer (Programmer)",
                 navHome: "Home",
                 navProjects: "Projects",
                 navContact: "Contact",
@@ -452,18 +323,19 @@
                 heroSubtitle: "University projects focused on gameplay systems and technical foundations",
                 heroText: "Portfolio showcasing academic and team-based projects in game programming, computer graphics and interactive systems.",
                 skillsTitle: "Skills",
-                skillsText: "Junior Game Programmer (Generalist) · Unity (2D/3D) · C# · Gameplay & UI Systems · Basic Combat and Camera Logic · Computer Graphics Fundamentals · Lighting & Shading Models · Audio Integration · Team-Based Projects",
+                skillsText: "Game Developer (Programmer) · Unity (2D/3D) · C# · Gameplay & UI Systems · Basic Combat and Camera Logic · Computer Graphics Fundamentals · Lighting & Shading Models · Audio Integration · Team-Based Projects",
                 projectsTitle: "Selected Projects",
-                lobstarDesc: "Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).",
-                roosterDesc: "Multiplayer combat game focused on match flow, life systems and victory conditions.",
+                lobstarDesc: "It is an Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).",
+                roosterDesc: "It is a Multiplayer combat game focused on match flow, life systems and victory conditions.",
                 ossmaskDesc: "It is a platform game that was developed in gamejam 26 with the mask theme.",
+                BooImInsideYourWallDesc: "It is a stealth and puzzle game where you control Bunyo, a little ghost who must sneak into homes and terrorize their residents without being detected."
                 graphicsDesc: "Final academic project exploring lighting, shading models and atmosphere in a 3D scene.",
                 viewProject: "View Project",
                 contactTitle: "Contact",
                 social: "Social"
             },
             es: {
-                role: "Programador de Videojuegos Junior (Generalista)",
+                role: "Desarrollador de Videojuegos (Programador)",
                 navHome: "Inicio",
                 navProjects: "Proyectos",
                 navContact: "Contacto",
@@ -471,18 +343,18 @@
                 heroSubtitle: "Proyectos universitarios enfocados en sistemas de gameplay y fundamentos técnicos",
                 heroText: "Portfolio que muestra proyectos académicos y en equipo relacionados con programación de videojuegos, gráficos por computación y sistemas interactivos.",
                 skillsTitle: "Habilidades",
-                skillsText: "Programador de Videojuegos Junior (Generalista) · Unity (2D/3D) · C# · Sistemas de Gameplay y UI · Lógica básica de Combate y Cámara · Fundamentos de Gráficos por Computación · Iluminación y Modelos de Sombreado · Integración de Audio · Trabajo en Proyectos en Equipo",
+                skillsText: "Desarrollador de Videojuegos (Programador) · Unity (2D/3D) · C# · Sistemas de Gameplay y UI · Lógica básica de Combate y Cámara · Fundamentos de Gráficos por Computación · Iluminación y Modelos de Sombreado · Integración de Audio · Trabajo en Proyectos en Equipo",
                 projectsTitle: "Proyectos Destacados",
-                lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 (Mejor Juego – Público y Jurado).",
-                roosterDesc: "Juego de combate multijugador enfocado en flujo de partida, sistema de vida y condiciones de victoria.",
+                lobstarDesc: "Es un Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 (Mejor Juego – Público y Jurado).",
+                roosterDesc: "Es un Juego de combate multijugador enfocado en flujo de partida, sistema de vida y condiciones de victoria.",
                 ossmaskDesc: "Es un juego de plataformas que se desarrolló en la gamejam 26 con la temática de máscaras.",
+                BooImInsideYourWallDesc: "Es un juego de sigilo y puzles donde controlas a Bunyo, un pequeño fantasma que debe infiltrarse en hogares y aterrorizar a sus residentes sin ser detectado."
                 graphicsDesc: "Proyecto final académico que explora iluminación, modelos de sombreado y atmósfera en una escena 3D.",
                 viewProject: "Ver Proyecto",
                 contactTitle: "Contacto",
                 social: "Redes"
             }
         };
-
         let lang = "en";
         const btn = document.getElementById("langToggle");
         btn.onclick = () => {
@@ -493,6 +365,5 @@
             });
         };
     </script>
-
 </body>
 </html>
