@@ -214,6 +214,7 @@ li { margin: 8px 0; }
     gap: 10px;
     transition: transform 450ms cubic-bezier(.22,.9,.3,1);
     transform-style: preserve-3d;
+    will-change: transform;
 }
 .carousel-card {
     width: 320px;
@@ -226,7 +227,9 @@ li { margin: 8px 0; }
     box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 40px rgba(255,204,51,.12);
     background: #000;
     flex-shrink: 0;
-    transition: transform 450ms cubic-bezier(.22,.9,.3,1), opacity 300ms ease, filter 300ms ease;
+    transition: transform 450ms cubic-bezier(.22,.9,.3,1),
+                opacity 300ms ease,
+                filter 300ms ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,18 +243,18 @@ li { margin: 8px 0; }
     -webkit-user-drag: none;
 }
 .carousel-card.center {
-    transform: translateZ(80px) scale(1.08);
-    z-index: 30;
+  transform: translateZ(80px) scale(1.08) rotateY(0deg);
+  z-index: 30;
 }
 .carousel-card.left {
-    transform: translateX(-80px) scale(.96) rotateY(14deg);
-    z-index: 20;
-    filter: brightness(.9) saturate(.9);
+  transform: translateX(-80px) translateZ(0px) scale(.96) rotateY(14deg);
+  z-index: 20;
+  filter: brightness(.92) saturate(.9);
 }
 .carousel-card.right {
-    transform: translateX(80px) scale(.96) rotateY(-14deg);
-    z-index: 20;
-    filter: brightness(.9) saturate(.9);
+  transform: translateX(80px) translateZ(0px) scale(.96) rotateY(-14deg);
+  z-index: 20;
+  filter: brightness(.92) saturate(.9);
 }
 .carousel-card[role="link"] {
     cursor: pointer;
@@ -370,7 +373,7 @@ li { margin: 8px 0; }
                     data-current-img="SmackThatRooster.PNG"
                     data-next="https://scardozoprogramming.github.io/Videogames/OSSMaskProtocol/ossmaskprotocol.html"
                     data-next-img="../OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png"
-                    style="display:none" aria-hidden="true">
+                    style="display:none">
                 </div>
             </div>
         </div>
@@ -668,66 +671,213 @@ li { margin: 8px 0; }
 </script>
 <script>
 (function(){
-    const legacy = document.querySelector('.cover-wrapper');
-    const track = document.getElementById('carouselTrack');
-    const viewport = document.getElementById('carouselViewport');
-    if (!legacy || !track || !viewport) return;
-    const prevUrl = legacy.dataset.prev;
-    const prevImg = legacy.dataset.prevImg;
-    const currentImg = legacy.dataset.currentImg;
-    const nextUrl = legacy.dataset.next;
-    const nextImg = legacy.dataset.nextImg;
-    const items = [
-        { id:'prev', img: prevImg, url: prevUrl },
-        { id:'current', img: currentImg, url: null },
-        { id:'next', img: nextImg, url: nextUrl }
-    ];
-    function navigateTo(url) {
-        if (!url || navigateTo.locked) return;
-        navigateTo.locked = true;
-        window.location.href = url;
-    }
-    function createCard(item) {
-        const card = document.createElement('div');
-        card.className = 'carousel-card';
-        card.dataset.id = item.id;
-        const img = document.createElement('img');
-        img.src = item.img;
-        img.alt = item.id === 'current' ? 'Smack That Rooster cover' : 'Portfolio project cover';
-        card.appendChild(img);
-        if (item.url) {
-            card.setAttribute('role', 'link');
-            card.setAttribute('tabindex', '0');
-            card.addEventListener('click', e => {
-                e.stopPropagation();
-                navigateTo(item.url);
-            });
-            card.addEventListener('keydown', e => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    navigateTo(item.url);
-                }
-            });
-        }
-        return card;
-    }
-    track.innerHTML = '';
-    items.forEach(item => track.appendChild(createCard(item)));
-    const cards = Array.from(track.children);
-    if (cards[0]) cards[0].classList.add('left');
-    if (cards[1]) cards[1].classList.add('center');
-    if (cards[2]) cards[2].classList.add('right');
-    viewport.addEventListener('click', e => {
-        const rect = viewport.getBoundingClientRect();
-        const x = e.clientX - rect.left;
+  const wrapper = document.querySelector('.cover-carousel');
+  if (!wrapper) return;
 
-        if (x < rect.width / 2) navigateTo(prevUrl);
-        else navigateTo(nextUrl);
+  const legacy = document.querySelector('.cover-wrapper');
+  const track = document.getElementById('carouselTrack');
+  const viewport = document.getElementById('carouselViewport');
+
+  if (!legacy || !track || !viewport) return;
+
+  const prevUrl = legacy.dataset.prev || null;
+  const prevImg = legacy.dataset.prevImg || null;
+  const currentImg = legacy.dataset.currentImg || 'SmackThatRooster.PNG';
+  const nextUrl = legacy.dataset.next || null;
+  const nextImg = legacy.dataset.nextImg || null;
+
+  const items = [
+    { id: 'prev', img: prevImg || currentImg, url: prevUrl },
+    { id: 'current', img: currentImg, url: null },
+    { id: 'next', img: nextImg || currentImg, url: nextUrl }
+  ];
+
+  function navigateTo(url, direction) {
+    if (!url || navigateTo.locked) return;
+
+    navigateTo.locked = true;
+
+    track.style.transition = 'transform 320ms cubic-bezier(.22,.9,.3,1)';
+    track.style.transform = direction === 'next'
+      ? 'translateX(-36%)'
+      : 'translateX(36%)';
+
+    const reduced = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    setTimeout(() => {
+      window.location.href = url;
+    }, reduced ? 0 : 260);
+  }
+
+  function createCard(item) {
+    const card = document.createElement('div');
+    card.className = 'carousel-card';
+    card.dataset.id = item.id;
+
+    const img = document.createElement('img');
+    img.src = item.img;
+    img.alt =
+      item.id === 'current'
+        ? 'Smack That Rooster cover'
+        : item.id === 'prev'
+          ? 'Previous project'
+          : 'Next project';
+
+    card.appendChild(img);
+
+    if (item.url) {
+      card.setAttribute('role', 'link');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute(
+        'aria-label',
+        item.id === 'prev' ? 'Go to previous project' : 'Go to next project'
+      );
+
+      card.addEventListener('click', e => {
+        e.stopPropagation();
+        navigateTo(item.url, item.id === 'next' ? 'next' : 'prev');
+      });
+
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          navigateTo(item.url, item.id === 'next' ? 'next' : 'prev');
+        }
+      });
+
+      card.addEventListener('touchstart', e => {
+        e.stopPropagation();
+      }, { passive: true });
+    } else {
+      card.setAttribute('aria-hidden', 'true');
+    }
+
+    return card;
+  }
+
+  track.innerHTML = '';
+  items.forEach(item => track.appendChild(createCard(item)));
+
+  function refreshPositions() {
+    const cards = Array.from(track.children);
+
+    cards.forEach(card => {
+      card.classList.remove(
+        'left',
+        'center',
+        'right',
+        'hidden-left',
+        'hidden-right'
+      );
     });
-    window.addEventListener('keydown', e => {
-        if (e.key === 'ArrowLeft') navigateTo(prevUrl);
-        if (e.key === 'ArrowRight') navigateTo(nextUrl);
-    });
+
+    const [leftCard, centerCard, rightCard] = cards;
+
+    if (leftCard) leftCard.classList.add('left');
+    if (centerCard) centerCard.classList.add('center');
+    if (rightCard) rightCard.classList.add('right');
+
+    track.style.transform = '';
+  }
+
+  refreshPositions();
+
+  viewport.addEventListener('click', e => {
+    if (e.defaultPrevented) return;
+
+    const rect = viewport.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+
+    if (x < rect.width / 2 && prevUrl) {
+      navigateTo(prevUrl, 'prev');
+    } else if (nextUrl) {
+      navigateTo(nextUrl, 'next');
+    }
+  });
+
+  let lastWheel = 0;
+
+  wrapper.addEventListener('wheel', e => {
+    if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
+
+    const now = Date.now();
+    if (now - lastWheel < 200) return;
+
+    lastWheel = now;
+
+    if (e.deltaX > 30 && nextUrl) {
+      navigateTo(nextUrl, 'next');
+    } else if (e.deltaX < -30 && prevUrl) {
+      navigateTo(prevUrl, 'prev');
+    }
+  }, { passive: true });
+
+  let pointerDown = false;
+  let startX = 0;
+  let currentTranslate = 0;
+  let dragApplied = false;
+
+  viewport.addEventListener('pointerdown', e => {
+    pointerDown = true;
+    startX = e.clientX;
+    track.style.transition = 'none';
+    viewport.setPointerCapture?.(e.pointerId);
+  });
+
+  viewport.addEventListener('pointermove', e => {
+    if (!pointerDown) return;
+
+    const dx = e.clientX - startX;
+    currentTranslate = dx;
+    dragApplied = true;
+
+    track.style.transform = `translateX(${dx * 0.15}px)`;
+  });
+
+  function endDrag() {
+    if (!pointerDown) return;
+
+    pointerDown = false;
+    track.style.transition = '';
+
+    const threshold = 80;
+
+    if (dragApplied) {
+      if (currentTranslate < -threshold && nextUrl) {
+        navigateTo(nextUrl, 'next');
+      } else if (currentTranslate > threshold && prevUrl) {
+        navigateTo(prevUrl, 'prev');
+      } else {
+        track.style.transform = '';
+      }
+    }
+
+    dragApplied = false;
+    currentTranslate = 0;
+  }
+
+  viewport.addEventListener('pointerup', endDrag);
+  viewport.addEventListener('pointercancel', endDrag);
+
+  window.addEventListener('keydown', e => {
+    if (
+      e.target &&
+      (
+        e.target.tagName === 'INPUT' ||
+        e.target.tagName === 'TEXTAREA' ||
+        e.target.isContentEditable
+      )
+    ) return;
+
+    if ((e.key === 'ArrowLeft' || e.key === 'PageUp') && prevUrl) {
+      navigateTo(prevUrl, 'prev');
+    }
+
+    if ((e.key === 'ArrowRight' || e.key === 'PageDown') && nextUrl) {
+      navigateTo(nextUrl, 'next');
+    }
+  });
 })();
 </script>
 </body>
