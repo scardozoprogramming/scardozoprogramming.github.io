@@ -1,374 +1,202 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title data-i18n="title">LOBSTAR! | Game Programmer Portfolio Project</title>
-<meta name="description" data-i18n="meta_description" content="Portfolio project by Santiago Cardozo Botero. A Unity arcade action game where I worked as Game Programmer, focusing on UI flow, camera behavior, player feedback and presentation.">
-<meta property="og:title" content="LOBSTAR!">
-<meta property="og:description" content="Unity arcade action game portfolio project by Santiago Cardozo Botero.">
-<meta property="og:image" content="lobstar-poster.PNG">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<style>
-    :root{--bg:#03131f;--accent:#ff4b3e;--accent-soft:#ff9f45;--secondary:#38d6ff;--muted:#b9d9e6;--border:rgba(59,27,34,.45);--max:1000px;--panel:rgba(7,20,31,.88);--glow:#ff4b3e}
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:radial-gradient(circle at 20% 18%,rgba(255,75,62,.22),transparent 30%),radial-gradient(circle at 82% 12%,rgba(56,214,255,.12),transparent 26%),radial-gradient(circle at 50% 90%,rgba(255,159,69,.10),transparent 35%),linear-gradient(180deg,#06283d 0%,#03131f 55%,#01070c 100%);color:#f3fbff;line-height:1.55;overflow-x:hidden}
-    img,video,iframe{max-width:100%}
-    #lobstarCanvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.45}
-    .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:28px;position:relative;z-index:10}
-    main{padding:44px 0 20px}
-    section{margin-top:22px}
-    footer{padding:42px 0;text-align:center;color:var(--muted)}
-    header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--border);border-radius:16px;padding:14px;background:#07141f;backdrop-filter:blur(8px);box-shadow:0 0 30px rgba(255,75,62,.06),inset 0 0 20px rgba(255,255,255,.01)}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:48px;height:48px;border-radius:12px;border:1px solid rgba(255,75,62,.45);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);background:#07141f;box-shadow:0 0 12px rgba(255,75,62,.12)}
-    .nav-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .cta{padding:10px 14px;border-radius:12px;border:1px solid rgba(255,75,62,.45);background:#07141f;color:var(--accent);font-weight:700;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.25s ease}
-    .cta:hover{transform:translateY(-2px);background:#102536;box-shadow:0 0 18px rgba(255,159,69,.28)}
-    .title{text-align:center;margin-bottom:20px}
-    h1{color:var(--accent);margin:0 0 10px;font-size:44px;line-height:1.05;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 12px rgba(255,75,62,.18)}
-    h2{color:var(--accent);margin:0 0 12px;font-size:20px}
-    h3{color:var(--accent);margin:12px 0 8px;font-size:16px;font-weight:700;text-shadow:0 0 10px rgba(255,75,62,.10)}
-    .subtitle{font-size:16px;color:var(--muted)}
-    .muted{color:var(--muted)}
-    .highlight{color:var(--accent-soft);font-weight:600}
-    ul{margin:8px 0 0 18px;padding:0}
-    li{margin:8px 0}
-    .panel{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:22px;backdrop-filter:blur(5px);box-shadow:0 0 20px rgba(0,0,0,.3),inset 0 0 10px rgba(255,255,255,.01)}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
-    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-    .tag{border:1px solid rgba(255,75,62,.45);border-radius:999px;padding:8px 12px;font-size:13px;color:#ffe1d6;background:rgba(255,75,62,.08)}
-    .cover-carousel{--card-width:clamp(240px,30vw,320px);--side-offset:clamp(72px,9vw,120px);--hidden-offset:clamp(150px,18vw,220px);--nav-shift-prev:clamp(80px,14vw,160px);--nav-shift-next:clamp(-160px,-14vw,-80px);--center-z:80px;--center-scale:1.08;--side-z:0px;--side-scale:.96;--side-rotate:14deg;--hidden-z:-40px;--hidden-scale:.78;--hidden-rotate:18deg;width:100%;max-width:1400px;height:360px;margin:40px auto 96px;display:flex;align-items:center;justify-content:center;position:relative;perspective:1400px;-webkit-perspective:1400px}
-    .cover-carousel+.panel{margin-top:18px}
-    .carousel-viewport{width:100%;max-width:1400px;height:100%;overflow:visible;position:relative}
-    .carousel-track{width:100%;height:100%;position:relative;display:block;transition:transform 450ms cubic-bezier(.22,.9,.3,1);transform-style:preserve-3d;will-change:transform;pointer-events:auto}
-    .carousel-card{position:absolute;top:50%;left:50%;width:var(--card-width);height:100%;max-width:none;min-width:0;margin:0;border-radius:18px;overflow:hidden;border:1px solid rgba(255,75,62,.45);box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 40px rgba(255,75,62,.12);background:#07141f;transform-origin:center center;transition:transform 450ms cubic-bezier(.22,.9,.3,1),opacity 300ms ease,filter 300ms ease;display:flex;align-items:center;justify-content:center}
-    .carousel-card img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#07141f;-webkit-user-drag:none;user-select:none}
-    .carousel-card.center{transform:translate(-50%,-50%) translateZ(var(--center-z)) scale(var(--center-scale)) rotateY(0deg);z-index:30;opacity:1;filter:none}
-    .carousel-card.left{transform:translate(calc(-50% - var(--side-offset)),-50%) translateZ(var(--side-z)) scale(var(--side-scale)) rotateY(var(--side-rotate));z-index:20;filter:brightness(.92) saturate(.9)}
-    .carousel-card.right{transform:translate(calc(-50% + var(--side-offset)),-50%) translateZ(var(--side-z)) scale(var(--side-scale)) rotateY(calc(var(--side-rotate) * -1));z-index:20;filter:brightness(.92) saturate(.9)}
-    .carousel-card.hidden-left{transform:translate(calc(-50% - var(--hidden-offset)),-50%) translateZ(var(--hidden-z)) scale(var(--hidden-scale)) rotateY(var(--hidden-rotate));opacity:0;z-index:10;pointer-events:none}
-    .carousel-card.hidden-right{transform:translate(calc(-50% + var(--hidden-offset)),-50%) translateZ(var(--hidden-z)) scale(var(--hidden-scale)) rotateY(calc(var(--hidden-rotate) * -1));opacity:0;z-index:10;pointer-events:none}
-    .carousel-card[role="link"]{cursor:pointer;outline:none}
-    .carousel-card[role="link"]:hover{box-shadow:0 20px 50px rgba(0,0,0,.6),0 0 40px rgba(255,75,62,.18)}
-    .carousel-card[role="link"]:active{filter:brightness(1.05)}
-    .carousel-card.is-moving-front{z-index:999!important;opacity:1!important;filter:none!important}
-    .carousel-card.left.is-moving-front,.carousel-card.right.is-moving-front{transform:translate(-50%,-50%) translateZ(90px) scale(1.08) rotateY(0deg)!important}
-    .carousel-card.center.is-moving-back{z-index:5!important;opacity:.7!important;transform:translate(-50%,-50%) translateZ(-50px) scale(.82)!important}
-    @media (min-width:1100px){.cover-carousel{--card-width:380px;--side-offset:260px;--hidden-offset:500px;max-width:1500px;width:100%}.carousel-viewport{max-width:1500px;width:100%}}
-    .metrics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:18px;margin-bottom:20px}
-    .metric-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,75,62,.45);border-radius:18px;padding:22px;text-align:center;transition:.25s ease;box-shadow:inset 0 0 10px rgba(255,255,255,.01)}
-    .metric-card:hover{transform:translateY(-4px);box-shadow:0 0 20px rgba(255,75,62,.22);background:rgba(255,75,62,.06)}
-    .metric-card h3{margin:0;font-size:28px;color:var(--accent);text-shadow:0 0 12px rgba(255,159,69,.28)}
-    .metric-card p{margin-top:8px;color:var(--muted);font-size:14px;font-weight:500}
-    .production-description{margin-top:10px}
-    .tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
-    .tool-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,75,62,.45);border-radius:16px;padding:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:.25s ease}
-    .tool-card:hover{transform:translateY(-4px);box-shadow:0 0 20px rgba(255,75,62,.22);background:rgba(255,75,62,.06)}
-    .tool-card img{width:64px;height:64px;object-fit:contain}
-    .tool-card span{color:#d8ffe8;font-weight:600;font-size:14px;text-align:center}
-    .tool-card small{color:var(--muted);font-size:12px;margin-top:0;text-align:center}
-    #Trailer_Lobstar{display:block;margin:20px auto;max-width:900px;width:100%}
-    section.panel>video{margin-left:auto;margin-right:auto;display:block}
-    @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}#lobstarCanvas{display:none}.carousel-track,.carousel-card{transition:none!important;transform:none!important}}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}.cover{width:80%}video{height:auto}}
-    @media (max-width:900px),(max-width:1100px) and (hover:none) and (pointer:coarse){.cover-carousel{--card-width:clamp(220px,58vw,360px);--side-offset:clamp(56px,15vw,150px);--hidden-offset:clamp(130px,28vw,220px);--nav-shift-prev:clamp(70px,20vw,150px);--nav-shift-next:clamp(-150px,-20vw,-70px);--center-z:60px;--center-scale:1;--side-z:-40px;--side-scale:.82;--side-rotate:10deg;max-width:100%;height:clamp(300px,62vw,420px);min-height:unset;margin:24px auto 64px;padding:0;perspective:1000px;-webkit-perspective:1000px}.carousel-viewport{max-width:100%}.carousel-card{height:auto;aspect-ratio:4/5}.carousel-card img{object-fit:contain;object-position:center;background:#07141f}.carousel-card.left,.carousel-card.right{opacity:.88;filter:brightness(.82) saturate(.9)}}
-    @media (max-width:600px){.wrap{padding:16px}header{flex-direction:column;align-items:stretch}header>div:last-child{width:100%;justify-content:space-between}.brand{align-items:flex-start}.cta{flex:1;text-align:center}h1{font-size:28px}.subtitle{font-size:14px}.panel{padding:16px}.cover-carousel{--card-width:clamp(220px,76vw,300px);--side-offset:clamp(42px,12vw,88px);--hidden-offset:clamp(100px,30vw,160px);--nav-shift-prev:clamp(45px,18vw,90px);--nav-shift-next:clamp(-90px,-18vw,-45px);--side-z:-45px;--side-scale:.76;--side-rotate:8deg;height:clamp(270px,86vw,340px);margin:20px auto 56px}.cover-carousel+.panel{margin-top:12px}.metric-card h3{font-size:22px}.tools-grid{grid-template-columns:repeat(2,1fr)}iframe{height:420px}#Trailer_Lobstar{margin:12px auto}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title">LOBSTAR! | Game Programmer Portfolio Project</title>
+
+  <meta name="description" data-i18n-content="meta_description" content="Unity arcade action game portfolio project.">
+  <meta property="og:title" content="LOBSTAR!">
+  <meta property="og:description" content="Unity arcade action game portfolio project by Santiago Cardozo Botero.">
+  <meta property="og:image" content="lobstar-poster.PNG">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<canvas id="lobstarCanvas" aria-hidden="true"></canvas>
-<div class="wrap">
-<header aria-label="Project navigation">
-  <div class="brand"><div class="logo">SCB</div><div><strong>Santiago Cardozo Botero</strong><br><span class="muted" data-i18n="role_label">Game Programmer</span></div></div>
-  <div class="nav-actions">
-    <a class="cta" href="../../index.html" aria-label="Back to portfolio homepage" data-i18n="back_link">← Back</a>
-    <a class="cta" id="itchBtn" href="https://theflash48.github.io/Lobstar/" target="_blank" rel="noopener" data-i18n="itch_link">Play on itch.io</a>
-    <button class="cta" id="langToggle" aria-label="Change language">Español</button>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <canvas id="lobstarCanvas" aria-hidden="true"></canvas>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">
+        <span class="logo">SCB</span>
+        <span>
+          <strong>Santiago Cardozo Botero</strong>
+          <small data-i18n="role_label">Game Programmer</small>
+        </span>
+      </a>
+
+      <nav class="nav-actions">
+        <a class="btn" href="../../index.html" data-i18n="back_link">← Back</a>
+        <a class="btn" href="#Trailer_Lobstar" data-i18n="trailer_link">Trailer</a>
+        <a class="btn" href="#play">Play</a>
+        <button class="btn btn-primary" id="langToggle">Español</button>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="hero panel">
+        <div>
+          <span class="eyebrow" data-i18n="hero_badge">Unity Arcade Action Project</span>
+          <h1>LOB<span>STAR!</span></h1>
+          <p class="subtitle" data-i18n="subtitle"></p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="#Trailer_Lobstar" data-i18n="hero_cta_trailer">Watch Trailer</a>
+            <a class="btn" href="#role" data-i18n="hero_cta_role">See My Role</a>
+          </div>
+        </div>
+
+        <div class="stats">
+          <article class="card"><strong>9</strong><span data-i18n="hero_stat1_p"></span></article>
+          <article class="card"><strong>Unity</strong><span data-i18n="hero_stat2_p"></span></article>
+          <article class="card"><strong>2024–2025</strong><span data-i18n="hero_stat3_p"></span></article>
+        </div>
+      </section>
+
+      <section class="carousel" data-carousel>
+          <button 
+            class="carousel-card side" 
+            data-url="https://scardozoprogramming.github.io/Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html"
+            aria-label="Previous project">
+            <img src="../ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png" alt="Previous project">
+          </button>
+
+          <article class="carousel-card active">
+            <img src="lobstar-poster.PNG" alt="LOBSTAR! cover">
+          </article>
+
+          <button 
+            class="carousel-card side" 
+            data-url="https://scardozoprogramming.github.io/Videogames/SmackThatRooster/smackthatrooster.html"
+            aria-label="Next project">
+            <img src="../SmackThatRooster/SmackThatRooster.PNG" alt="Next project">
+          </button>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="trailer_h2"></h2>
+        <div class="video-shell">
+          <video id="Trailer_Lobstar" controls>
+            <source src="Lobstartrailer.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+      
+      <section class="panel" id="play">
+          <span class="kicker" data-i18n="play_kicker">Playable Build</span>
+
+          <h2 data-i18n="play_h2">
+            Play LOBSTAR!
+          </h2>
+
+          <div class="play-button-wrap">
+            <a
+              class="btn btn-primary play-button"
+              href="https://theflash48.github.io/Lobstar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="play_button">
+              ▶ Play Now
+            </a>
+          </div>
+      </section> 
+
+      <section class="panel" id="overview">
+        <h2 data-i18n="overview_h2"></h2>
+        <p class="muted" data-i18n="overview_p"></p>
+      </section>
+
+      <section class="panel" id="role">
+        <span class="kicker" data-i18n="role_kicker"></span>
+        <h2 data-i18n="role_h2"></h2>
+        <p class="muted" data-i18n="role_p"></p>
+
+        <div class="grid grid-4">
+          <article class="card contribution">
+            <span>01</span>
+            <h3 data-i18n="contribution1_h"></h3>
+            <p class="muted" data-i18n="contribution1_p"></p>
+          </article>
+
+          <article class="card contribution">
+            <span>02</span>
+            <h3 data-i18n="contribution2_h"></h3>
+            <p class="muted" data-i18n="contribution2_p"></p>
+          </article>
+
+          <article class="card contribution">
+            <span>03</span>
+            <h3 data-i18n="contribution3_h"></h3>
+            <p class="muted" data-i18n="contribution3_p"></p>
+          </article>
+
+          <article class="card contribution">
+            <span>04</span>
+            <h3 data-i18n="contribution4_h"></h3>
+            <p class="muted" data-i18n="contribution4_p"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="technical">
+        <span class="kicker" data-i18n="technical_kicker"></span>
+        <h2 data-i18n="technical_h2"></h2>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3 data-i18n="tech_ui_h2"></h3>
+            <ul>
+              <li data-i18n="tech_ui_li1"></li>
+              <li data-i18n="tech_ui_li2"></li>
+              <li data-i18n="tech_ui_li3"></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="tech_feedback_h2"></h3>
+            <ul>
+              <li data-i18n="tech_feedback_li1"></li>
+              <li data-i18n="tech_feedback_li2"></li>
+              <li data-i18n="tech_feedback_li3"></li>
+            </ul>
+          </article>
+
+          <article class="card">
+              <h3 data-i18n="tech_gameplay_h2"></h3>
+              <ul>
+                <li data-i18n="tech_gameplay_li1"></li>
+                <li data-i18n="tech_gameplay_li2"></li>
+                <li data-i18n="tech_gameplay_li3"></li>
+              </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="tools">
+        <h2 data-i18n="tools_h2"></h2>
+
+        <div class="grid tools-grid">
+          <article class="card tool"><img src="Unity Logo.png" alt="Unity"><strong>Unity</strong></article>
+          <article class="card tool"><img src="Visual Studio Logo.png" alt="Visual Studio"><strong>Visual Studio</strong></article>
+          <article class="card tool"><img src="GitHub Logo.png" alt="GitHub"><strong>GitHub</strong></article>
+          <article class="card tool"><img src="Git LFS Logo.png" alt="Git LFS"><strong>Git LFS</strong></article>
+          <article class="card tool"><img src="Canva Logo.png" alt="Canva"><strong>Canva</strong><small data-i18n="canva_small"></small></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Santiago Cardozo Botero</footer>
   </div>
-</header>
-<main>
-  <!-- Carrusel 3D de covers: central grande + laterales rotadas -->
-  <div class="cover-carousel" aria-label="Carrusel de proyectos" role="region" aria-roledescription="carrusel">
-    <div class="carousel-viewport" id="carouselViewport" tabindex="0" aria-live="polite">
-      <div class="carousel-track" id="carouselTrack" aria-hidden="false">
-        <!-- Las tarjetas se generan dinámicamente desde JS -->
-        <div class="cover-wrapper"
-             data-prev="https://scardozoprogramming.github.io/Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html"
-             data-prev-img="../ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
-             data-current-img="lobstar-poster.PNG" alt="LOBSTAR!"
-             data-next="https://scardozoprogramming.github.io/Videogames/SmackThatRooster/smackthatrooster.html"
-             data-next-img="../SmackThatRooster/SmackThatRooster.PNG"
-             style="display:none" aria-hidden="true"></div>
-      </div>
-    </div>
-  </div>
-  <section class="panel">
-    <div class="title"><h1>LOBSTAR!</h1><p class="subtitle" data-i18n="subtitle">Game Programmer — Arcade Action Game developed in Unity — UI, Camera, Feedback and Presentation Systems</p></div>
-  </section>
-  <section class="panel">
-    <h2 data-i18n="trailer_h2">Gameplay Trailer</h2>
-    <video id="Trailer_Lobstar" controls><source src="Lobstartrailer.mp4" type="video/mp4"><span data-i18n="video_fallback">Your browser does not support the video tag.</span></video>
-    <p class="muted" style="text-align:center;margin-top:12px;" data-i18n="playable_build_note">Playable build on itch.io — button in the header</p>
-  </section>
-  <section class="panel">
-    <h2 data-i18n="overview_h2">Game Overview</h2>
-    <p class="muted" data-i18n="overview_p"><span class="highlight">LOBSTAR!</span> is a fast-paced arcade action game developed in Unity. Players control a kaiju with one goal: <span class="highlight">to destroy the world.</span> The game combines beat ’em up combat, arcade-style pacing and chaotic destruction-focused gameplay.</p>
-  </section>
-  <section class="panel">
-    <h2 data-i18n="role_h2">My Role — Game Programmer</h2>
-    <p class="muted" data-i18n="role_p">I worked mainly as a <span class="highlight">Game Programmer</span>, focusing on the early-game experience, UI flow, camera behavior, player feedback and presentation systems. My work included title screen animation, menu interactions, intro sequence implementation, camera transitions, sound feedback and custom typography integration.</p>
-    <div class="grid">
-      <div class="panel sub-panel"><h2 data-i18n="ui_h2">UI & Presentation Programming</h2><ul><li data-i18n="ui_li1">Designed and implemented the game’s <span class="highlight">custom typography</span> for the title and UI presentation.</li><li data-i18n="ui_li2">Programmed the title screen movement, animation behavior and menu button interactions.</li><li data-i18n="ui_li3">Implemented the game introduction flow leading into the comic sequence.</li></ul></div>
-      <div class="panel sub-panel"><h2 data-i18n="camera_h2">Camera, Audio & Feedback</h2><ul><li data-i18n="camera_li1">Worked with another programmer on the <span class="highlight">camera system</span>, including map view behavior and zoom transitions.</li><li data-i18n="camera_li2">Integrated sound effects to improve player feedback and overall game feel.</li><li data-i18n="camera_li3">Helped polish the presentation layer to make the game feel more responsive and arcade-like.</li></ul></div>
-    </div>
-  </section>
-  <section class="panel">
-    <h2 data-i18n="gameplay_h2">Core Gameplay</h2>
-    <p class="muted" data-i18n="gameplay_p">LOBSTAR! is a fast-paced arcade action game where players control a destructive kaiju rampaging through the city. Gameplay focuses on responsive movement, beat ’em up combat, environmental destruction and exaggerated player feedback to create a chaotic and satisfying gameplay experience.</p>
-    <h3 data-i18n="pillars_h3">Gameplay Pillars</h3>
-    <div class="tags">
-      <span class="tag" data-i18n="tag1">Fast-Paced Combat</span><span class="tag" data-i18n="tag2">City Destruction</span><span class="tag" data-i18n="tag3">Arcade Action</span><span class="tag" data-i18n="tag4">Responsive Controls</span><span class="tag" data-i18n="tag5">Chaotic Gameplay</span><span class="tag" data-i18n="tag6">Strong Game Feel</span>
-    </div>
-    <h3 data-i18n="core_loop_h3">Core Loop</h3>
-    <p class="muted" data-i18n="core_loop_p">Move through the city, fight enemies, destroy buildings, gain momentum and survive increasingly chaotic encounters.</p>
-  </section>
-  <section class="panel">
-    <h2 data-i18n="production_h2">Production Details</h2>
-    <div class="metrics-grid">
-      <div class="metric-card"><h3 data-i18n="metric1_h3">9 Developers</h3><p data-i18n="metric1_p">Multidisciplinary Team</p></div>
-      <div class="metric-card"><h3 data-i18n="metric2_h3">Sep 2024 — May 2025</h3><p data-i18n="metric2_p">Academic Year Production</p></div>
-      <div class="metric-card"><h3 data-i18n="metric3_h3">Unity Engine</h3><p data-i18n="metric3_p">Game Development</p></div>
-      <div class="metric-card"><h3 data-i18n="metric4_h3">Game Programmer</h3><p data-i18n="metric4_p">Main Role</p></div>
-    </div>
-    <div class="production-description"><p class="muted" data-i18n="production_p">LOBSTAR! was developed as part of an academic year production by a multidisciplinary team of <span class="highlight">9 developers</span>. The project focused on fast-paced arcade gameplay, destruction systems, combat mechanics and collaborative iteration inside Unity using team-based production workflows.</p></div>
-    <div class="tags"><span class="tag" data-i18n="tooltag1">Gameplay Programming</span><span class="tag" data-i18n="tooltag2">Combat Systems</span><span class="tag" data-i18n="tooltag3">Kaiju Gameplay</span><span class="tag" data-i18n="tooltag4">Destruction Design</span><span class="tag" data-i18n="tooltag5">Team Collaboration</span><span class="tag" data-i18n="tooltag6">Rapid Iteration</span><span class="tag" data-i18n="tooltag7">Unity Workflow</span></div>
-  </section>
-  <section class="panel">
-    <h2 data-i18n="tools_h2">Tools & Pipeline</h2>
-    <div class="tools-grid">
-      <div class="tool-card"><img src="Unity Logo.png" alt="Unity" loading="lazy"><span>Unity</span></div>
-      <div class="tool-card"><img src="Visual Studio Logo.png" alt="Visual Studio" loading="lazy"><span>Visual Studio</span></div>
-      <div class="tool-card"><img src="GitHub Logo.png" alt="GitHub" loading="lazy"><span>GitHub</span></div>
-      <div class="tool-card"><img src="Git LFS Logo.png" alt="Git LFS" loading="lazy"><span>Git LFS</span></div>
-      <div class="tool-card"><img src="Canva Logo.png" alt="Canva" loading="lazy"><span>Canva</span><small data-i18n="canva_small">Level Layout Planning</small></div>
-    </div>
-  </section>
-</main>
-<footer>© <span id="year"></span> Santiago Cardozo Botero</footer>
-</div>
 
-<script>/* animations + i18n + year (simplified & safer application of translations) */
-(() => {
-  const $ = s => document.querySelector(s), $$ = s => Array.from(document.querySelectorAll(s));
-  const setYear = () => { const y = $('#year'); if (y) y.textContent = new Date().getFullYear(); };
-
-  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reduced) {
-    const c = document.getElementById('lobstarCanvas');
-    if (c) {
-      const ctx = c.getContext('2d');
-      const R = () => { c.width = innerWidth; c.height = innerHeight; };
-      addEventListener('resize', R); R();
-      const S = ["★","✦","●","◆","▲","1UP","+100","COMBO","READY?","GO!","🦞"];
-      const P = Array.from({ length: 80 }, () => ({
-        x: Math.random() * c.width,
-        y: Math.random() * c.height,
-        sx: (Math.random() - 0.5) * 0.5,
-        sy: Math.random() * -0.35 - 0.05,
-        size: Math.random() * 28 + 14,
-        t: S[(Math.random() * S.length) | 0],
-        o: Math.random() * 0.45 + 0.15,
-        col: Math.random() > 0.5 ? "#ff4b3e" : "#ff9f45"
-      }));
-      (function draw() {
-        ctx.clearRect(0, 0, c.width, c.height);
-        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        P.forEach(p => {
-          ctx.globalAlpha = p.o;
-          ctx.font = `bold ${p.size}px Inter, monospace`;
-          ctx.fillStyle = p.col;
-          ctx.shadowColor = p.col; ctx.shadowBlur = 18;
-          ctx.fillText(p.t, p.x, p.y);
-          p.x += p.sx; p.y += p.sy;
-          if (p.y < -40) p.y = c.height + 40;
-          if (p.x < -80) p.x = c.width + 80;
-          if (p.x > c.width + 80) p.x = -80;
-        });
-        ctx.globalAlpha = 1;
-        requestAnimationFrame(draw);
-      })();
-    }
-  }
-
-  const T = {
-    en: { title: "LOBSTAR! | Game Programmer Portfolio Project", meta_description: "Portfolio project by Santiago Cardozo Botero. A Unity arcade action game where I worked as Game Programmer, focusing on UI flow, camera behavior, player feedback and presentation.", role_label: "Game Programmer", back_link: "← Back", itch_link: "Play on itch.io", subtitle: "Game Programmer — Arcade Action Game developed in Unity — UI, Camera, Feedback and Presentation Systems", trailer_h2: "Gameplay Trailer", video_fallback: "Your browser does not support the video tag.", playable_build_note: "Playable build on itch.io — button in the header", overview_h2: "Game Overview", overview_p: "LOBSTAR! is a fast-paced arcade action game developed in Unity. Players control a kaiju with one goal: to destroy the world. The game combines beat ’em up combat, arcade-style pacing and chaotic destruction-focused gameplay.", role_h2: "My Role — Game Programmer", role_p: "I worked mainly as a <span class='highlight'>Game Programmer</span>, focusing on the early-game experience, UI flow, camera behavior, player feedback and presentation systems. My work included title screen animation, menu interactions, intro sequence implementation, camera transitions, sound feedback and custom typography integration.", ui_h2: "UI & Presentation Programming", ui_li1: "Designed and implemented the game’s custom typography for the title and UI presentation.", ui_li2: "Programmed the title screen movement, animation behavior and menu button interactions.", ui_li3: "Implemented the game introduction flow leading into the comic sequence.", camera_h2: "Camera, Audio & Feedback", camera_li1: "Worked with another programmer on the camera system, including map view behavior and zoom transitions.", camera_li2: "Integrated sound effects to improve player feedback and overall game feel.", camera_li3: "Helped polish the presentation layer to make the game feel more responsive and arcade-like.", gameplay_h2: "Core Gameplay", gameplay_p: "LOBSTAR! is a fast-paced arcade action game where players control a destructive kaiju rampaging through the city. Gameplay focuses on responsive movement, beat ’em up combat, environmental destruction and exaggerated player feedback to create a chaotic and satisfying gameplay experience.", pillars_h3: "Gameplay Pillars", tag1: "Fast-Paced Combat", tag2: "City Destruction", tag3: "Arcade Action", tag4: "Responsive Controls", tag5: "Chaotic Gameplay", tag6: "Strong Game Feel", core_loop_h3: "Core Loop", core_loop_p: "Move through the city, fight enemies, destroy buildings, gain momentum and survive increasingly chaotic encounters.", production_h2: "Production Details", metric1_h3: "9 Developers", metric1_p: "Multidisciplinary Team", metric2_h3: "Sep 2024 — May 2025", metric2_p: "Academic Year Production", metric3_h3: "Unity Engine", metric3_p: "Game Development", metric4_h3: "Game Programmer", metric4_p: "Main Role", production_p: "LOBSTAR! was developed as part of an academic year production by a multidisciplinary team of 9 developers. The project focused on fast-paced arcade gameplay, destruction systems, combat mechanics and collaborative iteration inside Unity using team-based production workflows.", tooltag1: "Gameplay Programming", tooltag2: "Combat Systems", tooltag3: "Kaiju Gameplay", tooltag4: "Destruction Design", tooltag5: "Team Collaboration", tooltag6: "Rapid Iteration", tooltag7: "Unity Workflow", tools_h2: "Tools & Pipeline", canva_small: "Level Layout Planning" },
-    es: { title: "LOBSTAR! | Proyecto de Portafolio — Programador de Juegos", meta_description: "Proyecto de portafolio por Santiago Cardozo Botero. Un juego arcade desarrollado en Unity donde trabajé como Programador de Juegos, enfocado en flujo de UI, comportamiento de cámara, retroalimentación y presentación.", role_label: "Programador de Juegos", back_link: "← Volver", itch_link: "Jugar en itch.io", subtitle: "Programador de Juegos — Juego de Acción Arcade desarrollado en Unity — UI, Cámara, Retroalimentación y Sistemas de Presentación", trailer_h2: "Tráiler de Jugabilidad", video_fallback: "Tu navegador no soporta la etiqueta de video.", playable_build_note: "Build jugable en itch.io — botón en el encabezado", overview_h2: "Resumen del Juego", overview_p: "LOBSTAR! es un juego de acción arcade de ritmo rápido desarrollado en Unity. Los jugadores controlan un kaiju con un objetivo: destruir el mundo. El juego combina combate tipo beat ’em up, ritmo arcade y jugabilidad centrada en la destrucción.", role_h2: "Mi Rol — Programador de Juegos", role_p: "Trabajé principalmente como Programador de Juegos, centrado en la experiencia temprana, el flujo de UI, el comportamiento de cámara, la retroalimentación al jugador y los sistemas de presentación. Mi trabajo incluyó animación de la pantalla de título, interacciones de menús, implementación de la secuencia de introducción, transiciones de cámara, retroalimentación de sonido e integración de tipografía personalizada.", ui_h2: "Programación de UI y Presentación", ui_li1: "Diseñé e implementé la tipografía personalizada del juego para el título y la presentación de la UI.", ui_li2: "Programé el movimiento de la pantalla de título, el comportamiento de animación y las interacciones de los botones del menú.", ui_li3: "Implementé el flujo de introducción del juego que conduce a la secuencia tipo cómic.", camera_h2: "Cámara, Audio y Retroalimentación", camera_li1: "Trabajé con otro programador en el sistema de cámara, incluyendo vista del mapa y transiciones de zoom.", camera_li2: "Integré efectos de sonido para mejorar la retroalimentación al jugador y la sensación general del juego.", camera_li3: "Ayudé a pulir la capa de presentación para que el juego se sintiera más responsivo y arcade.", gameplay_h2: "Jugabilidad Principal", gameplay_p: "LOBSTAR! es un juego arcade de ritmo rápido donde los jugadores controlan un kaiju destructivo que arrasa la ciudad. La jugabilidad se centra en movimiento responsivo, combate tipo beat ’em up, destrucción del entorno y retroalimentación exagerada al jugador para crear una experiencia caótica y satisfactoria.", pillars_h3: "Pilares de Jugabilidad", tag1: "Combate de Ritmo Rápido", tag2: "Destrucción de la Ciudad", tag3: "Acción Arcade", tag4: "Controles Responsivos", tag5: "Jugabilidad Caótica", tag6: "Fuerte Sensación de Juego", core_loop_h3: "Bucle Principal", core_loop_p: "Muévete por la ciudad, lucha contra enemigos, destruye edificios, gana impulso y sobrevive a encuentros cada vez más caóticos.", production_h2: "Detalles de Producción", metric1_h3: "9 Desarrolladores", metric1_p: "Equipo Multidisciplinario", metric2_h3: "Sep 2024 — May 2025", metric2_p: "Producción del Año Académico", metric3_h3: "Motor Unity", metric3_p: "Desarrollo de Juegos", metric4_h3: "Programador de Juegos", metric4_p: "Rol Principal", production_p: "LOBSTAR! fue desarrollado como parte de una producción del año académico por un equipo multidisciplinario de 9 desarrolladores. El proyecto se centró en jugabilidad arcade de ritmo rápido, sistemas de destrucción, mecánicas de combate e iteración colaborativa dentro de Unity.", tooltag1: "Programación de Jugabilidad", tooltag2: "Sistemas de Combate", tooltag3: "Jugabilidad Kaiju", tooltag4: "Diseño de Destrucción", tooltag5: "Colaboración en Equipo", tooltag6: "Iteración Rápida", tooltag7: "Flujo de Trabajo en Unity", tools_h2: "Herramientas y Pipeline", canva_small: "Planificación de Niveles" }
-  };
-
-  const L = document.getElementById('langToggle');
-  function apply(lang) {
-    const m = T[lang] || T.en;
-    if (m.title) document.title = m.title;
-    const md = document.querySelector('meta[name="description"]'); if (md && m.meta_description) md.setAttribute('content', m.meta_description);
-    document.documentElement.lang = (lang === 'es' ? 'es' : 'en');
-    // Usar innerHTML para respetar etiquetas como <span class='highlight'> presentes en las traducciones.
-    $$('[data-i18n]').forEach(el => {
-      const k = el.getAttribute('data-i18n');
-      if (!k) return;
-      const txt = m[k];
-      if (typeof txt === 'string') el.innerHTML = txt;
-    });
-    if (L) { L.textContent = (lang === 'es' ? 'English' : 'Español'); L.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a Español'); }
-    localStorage.setItem('siteLang', lang);
-  }
-  if (L) L.addEventListener('click', () => { const cur = document.documentElement.lang === 'es' ? 'es' : 'en'; apply(cur === 'es' ? 'en' : 'es'); });
-  apply(localStorage.getItem('siteLang') || 'en');
-  setYear();
-})();
-</script>
-
-<!-- Carrusel 3D con interacción simplificada -->
-<script>
-(function(){
-  const wrapper = document.querySelector('.cover-carousel');
-  if(!wrapper) return;
-  const legacy = document.querySelector('.cover-wrapper');
-  const prevUrl = legacy?.dataset.prev || null;
-  const prevImg = legacy?.dataset.prevImg || null;
-  const currentImg = legacy?.dataset.currentImg || (document.querySelector('.cover')?.getAttribute('src') || 'lobstar-poster.PNG');
-  const nextUrl = legacy?.dataset.next || null;
-  const nextImg = legacy?.dataset.nextImg || null;
-  const track = document.getElementById('carouselTrack');
-  const viewport = document.getElementById('carouselViewport');
-  const items = [
-    { id:'prev', img: prevImg || currentImg, url: prevUrl },
-    { id:'current', img: currentImg, url: null },
-    { id:'next', img: nextImg || currentImg, url: nextUrl }
-  ];
-  function navigateTo(url){
-    if(!url) return;
-    if(navigateTo.locked) return;
-    navigateTo.locked = true;
-    const cards = Array.from(track.children);
-    const leftCard = cards[0];
-    const centerCard = cards[1];
-    const rightCard = cards[2];
-    if(url === nextUrl && rightCard){
-        rightCard.classList.add('is-moving-front');
-    }
-    if(url === prevUrl && leftCard){
-        leftCard.classList.add('is-moving-front');
-    }
-    if(centerCard){
-        centerCard.classList.add('is-moving-back');
-    }
-    track.style.transition = 'transform 320ms cubic-bezier(.22,.9,.3,1)';
-    track.style.transform =
-        url === nextUrl
-            ? 'translateX(var(--nav-shift-next))'
-            : 'translateX(var(--nav-shift-prev))';
-    const moveTimeout =
-        window.matchMedia &&
-        window.matchMedia('(prefers-reduced-motion: reduce)').matches
-            ? 0
-            : 260;
-    setTimeout(() => {
-        window.location.href = url;
-    }, moveTimeout);
-  }
-  function createCard(item){
-    const card = document.createElement('div');
-    card.className = 'carousel-card';
-    card.dataset.id = item.id;
-    const img = document.createElement('img');
-    img.src = item.img;
-    img.alt = item.id === 'current' ? 'Cover del juego' : (item.id === 'prev' ? 'Proyecto anterior' : 'Proyecto siguiente');
-    card.appendChild(img);
-    if(item.url){
-      card.setAttribute('role','link');
-      card.setAttribute('tabindex','0');
-      card.setAttribute('aria-label', item.id === 'prev' ? 'Ir al proyecto anterior' : 'Ir al proyecto siguiente');
-      // click normal y tecla Enter (por tabindex)
-      card.addEventListener('click', (e) => { e.stopPropagation(); navigateTo(item.url); });
-      card.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigateTo(item.url); } });
-      // touch: evitar burbujeo en mobile
-      card.addEventListener('touchstart', (e) => { e.stopPropagation(); }, { passive: true });
-    } else {
-      card.setAttribute('aria-hidden','true');
-    }
-    return card;
-  }
-  // render
-  track.innerHTML = '';
-  items.forEach(it => track.appendChild(createCard(it)));
-  function refreshPositions(){
-    const cards = Array.from(track.children);
-    cards.forEach(c => c.classList.remove('left','right','center','hidden-left','hidden-right'));
-    const [leftCard, centerCard, rightCard] = cards;
-    if(leftCard) leftCard.classList.add(leftCard.dataset.id === 'prev' ? 'left' : 'hidden-left');
-    if(centerCard) centerCard.classList.add('center');
-    if(rightCard) rightCard.classList.add(rightCard.dataset.id === 'next' ? 'right' : 'hidden-right');
-    track.style.transform = '';
-  }
-  refreshPositions();
-
-  // click en viewport decide prev/next
-  viewport.addEventListener('click', (e) => {
-    if(e.defaultPrevented) return;
-    const rect = viewport.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    if(x < rect.width / 2) { if(prevUrl) navigateTo(prevUrl); }
-    else { if(nextUrl) navigateTo(nextUrl); }
-  });
-
-  // wheel (simplificado y con debounce rápido)
-  let lastWheel = 0;
-  wrapper.addEventListener('wheel', (e) => {
-    if(Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
-    const now = Date.now();
-    if(now - lastWheel < 200) return;
-    lastWheel = now;
-    if(e.deltaX > 30 && nextUrl) navigateTo(nextUrl);
-    else if(e.deltaX < -30 && prevUrl) navigateTo(prevUrl);
-  }, { passive: true });
-
-  // drag / swipe con pointer events
-  let pointerDown = false, startX = 0, currentTranslate = 0, dragApplied = false;
-  viewport.addEventListener('pointerdown', (e) => { pointerDown = true; startX = e.clientX; track.style.transition = 'none'; viewport.setPointerCapture?.(e.pointerId); });
-  viewport.addEventListener('pointermove', (e) => {
-    if(!pointerDown) return;
-    const dx = e.clientX - startX;
-    currentTranslate = dx;
-    track.style.transform = `translateX(${dx * 0.15}px)`;
-    dragApplied = true;
-  });
-  function endDrag(){
-    if(!pointerDown) return;
-    pointerDown = false;
-    track.style.transition = '';
-    const threshold = 80;
-    if(dragApplied){
-      if(currentTranslate < -threshold && nextUrl) navigateTo(nextUrl);
-      else if(currentTranslate > threshold && prevUrl) navigateTo(prevUrl);
-      else track.style.transform = '';
-    }
-    dragApplied = false; currentTranslate = 0;
-  }
-  viewport.addEventListener('pointerup', endDrag);
-  viewport.addEventListener('pointercancel', endDrag);
-
-  // teclado global (flechas / page up/down)
-  window.addEventListener('keydown', (e) => {
-    if(e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable)) return;
-    if((e.key === 'ArrowLeft' || e.key === 'PageUp') && prevUrl) navigateTo(prevUrl);
-    if((e.key === 'ArrowRight' || e.key === 'PageDown') && nextUrl) navigateTo(nextUrl);
-  });
-})();
-</script>
+  <script src="js/i18n.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
