@@ -32,6 +32,12 @@
     overview_p:
       "LOBSTAR! is an arcade action game project created in Unity. The project focuses on dynamic gameplay, clear player feedback and a polished presentation suitable for a game programming portfolio.",
 
+    overview_fact1_h: "Arcade Action",
+    overview_fact1_p: "Game genre",
+
+    overview_fact2_h: "Award Winner",
+    overview_fact2_p: "Florida GameFest 2025",
+
     role_kicker: "My contribution",
     role_h2: "My Role in the Project",
     role_p:
@@ -115,6 +121,12 @@
     overview_p:
       "LOBSTAR! es un proyecto de videojuego arcade de acción creado en Unity. El proyecto se enfoca en jugabilidad dinámica, retroalimentación clara para el jugador y una presentación pulida para portafolio.",
 
+    overview_fact1_h: "Arcade de Acción",
+    overview_fact1_p: "Género del juego",
+
+    overview_fact2_h: "Juego Ganador",
+    overview_fact2_p: "Florida GameFest 2025",
+    
     role_kicker: "Mi contribución",
     role_h2: "Mi Rol en el Proyecto",
     role_p:

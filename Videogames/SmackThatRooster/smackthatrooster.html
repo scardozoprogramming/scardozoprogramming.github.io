@@ -1,888 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title data-i18n="title">Smack That Rooster | Game Programmer Portfolio Project</title>
-<meta name="description" data-i18n="meta_description" content="Portfolio project by Santiago Cardozo Botero. A multiplayer combat game focused on chaotic fights, match logic, player health, victory conditions and game feel.">
-<meta property="og:title" content="Smack That Rooster">
-<meta property="og:description" content="Multiplayer combat game portfolio project by Santiago Cardozo Botero.">
-<meta property="og:image" content="SmackThatRooster.PNG">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<style>
-:root {
-    --bg: #090604;
-    --accent: #ffcc33;
-    --accent-soft: #ff5a2f;
-    --secondary: #00e676;
-    --muted: #ffdca8;
-    --border: rgba(255,204,51,.35);
-    --max: 1000px;
-    --panel: rgba(20, 10, 4, .88);
-    --glow: #ffcc33;
-}
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
-    margin: 0;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-    background:
-        radial-gradient(circle at 20% 18%, rgba(255,90,47,.22), transparent 30%),
-        radial-gradient(circle at 82% 12%, rgba(255,204,51,.14), transparent 26%),
-        radial-gradient(circle at 50% 90%, rgba(0,230,118,.08), transparent 35%),
-        linear-gradient(180deg, #1b0c05 0%, #090604 55%, #020101 100%);
-    color: #fff8e6;
-    line-height: 1.55;
-    overflow-x: hidden;
-}
-img, video, iframe { max-width: 100%; }
-#roosterCanvas {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    opacity: .42;
-}
-.wrap {
-    width: 100%;
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 28px;
-    position: relative;
-    z-index: 10;
-}
-main { padding: 44px 0 20px; }
-section { margin-top: 22px; }
-footer {
-    padding: 42px 0;
-    text-align: center;
-    color: var(--muted);
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 14px;
-    background: #120803;
-    backdrop-filter: blur(8px);
-    box-shadow:
-        0 0 30px rgba(255,204,51,.06),
-        inset 0 0 20px rgba(255,255,255,.01);
-}
-.brand { display:flex; gap:12px; align-items:center; }
-.logo {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,204,51,.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    color: var(--accent);
-    background: #090604;
-    box-shadow: 0 0 12px rgba(255,204,51,.16);
-}
-.nav-actions {
-    display:flex;
-    gap:10px;
-    align-items:center;
-    flex-wrap:wrap;
-}
-.cta {
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,204,51,.45);
-    background: #090604;
-    color: var(--accent);
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    transition: .25s ease;
-}
-.cta:hover {
-    transform: translateY(-2px);
-    background: #1c0e05;
-    box-shadow: 0 0 18px rgba(255,204,51,.28);
-}
-.title {
-    text-align:center;
-    margin-bottom:20px;
-}
-h1 {
-    color: var(--accent);
-    margin: 0 0 10px;
-    font-size: 44px;
-    line-height: 1.05;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 0 0 12px rgba(255,204,51,.22);
-}
-h2 {
-    color: var(--accent);
-    margin: 0 0 12px;
-    font-size: 20px;
-}
-h3 {
-    color: var(--accent);
-    margin: 12px 0 8px;
-    font-size: 16px;
-    font-weight: 700;
-}
-.subtitle { font-size:16px; color:var(--muted); }
-.muted { color: var(--muted); }
-.highlight { color: var(--accent-soft); font-weight:600; }
-ul { margin: 8px 0 0 18px; padding: 0; }
-li { margin: 8px 0; }
-.panel {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 22px;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 20px rgba(0,0,0,.3), inset 0 0 10px rgba(255,255,255,.01);
-}
-.grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
-    margin-top:16px;
-}
-.tags {
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:12px;
-}
-.tag {
-    border: 1px solid rgba(255,204,51,.45);
-    border-radius: 999px;
-    padding: 8px 12px;
-    font-size: 13px;
-    color: #fff0bd;
-    background: rgba(255,204,51,.08);
-}
-#Gameplay_SmackThatRooster {
-    display: block;
-    margin: 20px auto;
-    max-width: 900px;
-    width: 100%;
-    height: 420px;
-    border-radius: 18px;
-    border: 1px solid var(--border);
-    background: #000;
-    object-fit: cover;
-}
-.cover-carousel {
-    margin: 40px;
-    margin-bottom: 96px;
-    max-width: 900px;
-    height: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    perspective: 1400px;
-}
-.carousel-viewport {
-    width: 100%;
-    max-width: 880px;
-    height: 100%;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel-track {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: transform 450ms cubic-bezier(.22,.9,.3,1);
-    transform-style: preserve-3d;
-    will-change: transform;
-}
-.carousel-card {
-    width: 320px;
-    max-width: 36%;
-    min-width: 160px;
-    height: 100%;
-    border-radius: 18px;
-    overflow: hidden;
-    border: 1px solid rgba(255,90,31,.45);
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.45),
-        0 0 40px rgba(255,90,31,.16);
-    background: #000;
-    flex-shrink: 0;
-    transform-origin: center center;
-    transition: transform 450ms cubic-bezier(.22,.9,.3,1), opacity 300ms ease, filter 300ms ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel-card img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-.carousel-card.center {
-    transform: translateZ(80px) scale(1.08) rotateY(0deg);
-    z-index: 30;
-}
-.carousel-card.left {
-    transform: translateX(-80px) translateZ(0px) scale(.96) rotateY(14deg);
-    z-index: 20;
-    filter: brightness(.9) saturate(.9);
-}
-.carousel-card.right {
-    transform: translateX(80px) translateZ(0px) scale(.96) rotateY(-14deg);
-    z-index: 20;
-    filter: brightness(.9) saturate(.9);
-}
-.carousel-card[role="link"] {
-    cursor: pointer;
-}
-.carousel-card[role="link"]:hover {
-    transform: translateZ(90px) scale(1.06) rotateY(0deg);
-    box-shadow: 0 20px 50px rgba(0,0,0,.6);
-}
-.metrics-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap:16px;
-    margin-top:18px;
-    margin-bottom:20px;
-}
-.metric-card {
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(255,204,51,.45);
-    border-radius:18px;
-    padding:22px;
-    text-align:center;
-    transition:.25s ease;
-}
-.metric-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 20px rgba(255,204,51,.22);
-    background: rgba(255,204,51,.06);
-}
-.metric-card h3 {
-    margin:0;
-    font-size:26px;
-    color:var(--accent);
-}
-.metric-card p {
-    margin-top:8px;
-    color:var(--muted);
-    font-size:14px;
-    font-weight:500;
-}
-.tools-grid {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:16px;
-    margin-top:18px;
-}
-.tool-card {
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(255,204,51,.45);
-    border-radius: 16px;
-    padding: 18px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:12px;
-    transition:.25s ease;
-}
-.tool-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 20px rgba(255,204,51,.22);
-    background: rgba(255,204,51,.06);
-}
-.tool-card img {
-    width:64px;
-    height:64px;
-    object-fit:contain;
-}
-.tool-card span {
-    color:#fff0bd;
-    font-weight:600;
-    font-size:14px;
-    text-align:center;
-}
-@media(max-width:900px) {
-    .grid { grid-template-columns: 1fr; }
-    #Gameplay_SmackThatRooster { height:auto; }
-}
-@media(max-width:600px) {
-    .wrap { padding:16px; }
-    header { flex-direction:column; align-items:stretch; }
-    .nav-actions { width:100%; justify-content:space-between; }
-    .cta { flex:1; text-align:center; }
-    h1 { font-size:28px; }
-    .subtitle { font-size:14px; }
-    .panel { padding:16px; }
-    .cover-carousel { margin: 24px 0 48px; height:260px; }
-    .carousel-card { width:70%; max-width:70%; min-width:220px; }
-    .tools-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (prefers-reduced-motion: reduce) {
-    * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
-    #roosterCanvas { display:none; }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title">Smack That Rooster | Game Programmer Portfolio Project</title>
+
+  <meta 
+    name="description" 
+    data-i18n-content="meta_description" 
+    content="Multiplayer combat game portfolio project by Santiago Cardozo Botero.">
+
+  <meta property="og:title" content="Smack That Rooster">
+  <meta property="og:description" content="Multiplayer combat game portfolio project by Santiago Cardozo Botero.">
+  <meta property="og:image" content="SmackThatRooster.PNG">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" 
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<canvas id="roosterCanvas" aria-hidden="true"></canvas>
-<div class="wrap">
-<header aria-label="Project navigation">
-    <div class="brand">
-        <div class="logo">SCB</div>
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <canvas id="projectCanvas" aria-hidden="true"></canvas>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">
+        <span class="logo">SCB</span>
+        <span>
+          <strong>Santiago Cardozo Botero</strong>
+          <small data-i18n="role_label">Game Programmer</small>
+        </span>
+      </a>
+
+      <nav class="nav-actions">
+        <a class="btn" href="../../index.html" data-i18n="back_link">← Back</a>
+        <a class="btn" href="#Trailer_SmackThatRooster" data-i18n="trailer_link">Gameplay</a>
+        <a class="btn" href="#role" data-i18n="role_link">Role</a>
+        <button class="btn btn-primary" id="langToggle">Español</button>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="hero panel">
         <div>
-            <strong>Santiago Cardozo Botero</strong><br>
-            <span class="muted" data-i18n="role_label">Game Programmer</span>
+          <span class="eyebrow" data-i18n="hero_badge">Unity Multiplayer Combat Project</span>
+          <h1>Smack That <span>Rooster</span></h1>
+          <p class="subtitle" data-i18n="subtitle"></p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="#Trailer_SmackThatRooster" data-i18n="hero_cta_trailer">Watch Gameplay</a>
+            <a class="btn" href="#role" data-i18n="hero_cta_role">See My Role</a>
+          </div>
         </div>
-    </div>
-    <div class="nav-actions">
-        <a class="cta" href="../../index.html" aria-label="Back to portfolio homepage" data-i18n="back_link">← Back</a>
-        <button class="cta" id="langToggle" aria-label="Change language">Español</button>
-    </div>
-</header>
-<main>
-    <div class="cover-carousel" aria-label="Project carousel" role="region" aria-roledescription="carousel">
-        <div class="carousel-viewport" id="carouselViewport" tabindex="0" aria-live="polite">
-            <div class="carousel-track" id="carouselTrack">
-                <div class="cover-wrapper"
-                    data-prev="https://scardozoprogramming.github.io/Videogames/Lobstar/lobstar.html"
-                    data-prev-img="../Lobstar/lobstar-poster.PNG"
-                    data-current-img="SmackThatRooster.PNG"
-                    data-next="https://scardozoprogramming.github.io/Videogames/OSSMaskProtocol/ossmaskprotocol.html"
-                    data-next-img="../OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png"
-                    style="display:none">
-                </div>
-            </div>
+
+        <div class="stats">
+          <article class="card">
+            <strong>3</strong>
+            <span data-i18n="hero_stat1_p"></span>
+          </article>
+
+          <article class="card">
+            <strong>Unity</strong>
+            <span data-i18n="hero_stat2_p"></span>
+          </article>
+
+          <article class="card">
+            <strong>Sep 2025 – Jan 2026</strong>
+            <span data-i18n="hero_stat3_p"></span>
+          </article>
         </div>
-    </div>
-    <section class="panel">
-        <div class="title">
-            <h1>Smack That Rooster</h1>
-            <p class="subtitle" data-i18n="subtitle">
-                Game Programmer — Multiplayer Combat Game — Health, Match Flow, Victory Conditions and Game Feel
-            </p>
-        </div>
-    </section>
-    <section class="panel">
-        <h2 data-i18n="trailer_h2">Gameplay</h2>
-        <video id="Gameplay_SmackThatRooster" controls>
+      </section>
+
+      <section class="carousel" data-carousel>
+        <button 
+          class="carousel-card side" 
+          data-url="https://scardozoprogramming.github.io/Videogames/Lobstar/lobstar.html"
+          aria-label="Previous project">
+          <img src="../Lobstar/lobstar-poster.PNG" alt="Previous project">
+        </button>
+
+        <article class="carousel-card active">
+          <img src="SmackThatRooster.PNG" alt="Smack That Rooster cover">
+        </article>
+
+        <button 
+          class="carousel-card side" 
+          data-url="https://scardozoprogramming.github.io/Videogames/OSSMaskProtocol/ossmaskprotocol.html"
+          aria-label="Next project">
+          <img src="../OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png" alt="Next project">
+        </button>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="trailer_h2"></h2>
+
+        <div class="video-shell">
+          <video id="Trailer_SmackThatRooster" controls>
             <source src="SmackThatRoosterGameplay.mp4" type="video/mp4">
-            <span data-i18n="video_fallback">Your browser does not support the video tag.</span>
-        </video>
-    </section>
-    <section class="panel">
-        <h2 data-i18n="overview_h2">Game Overview</h2>
-        <p class="muted" data-i18n="overview_p">
-            <span class="highlight">Smack That Rooster</span> is a chaotic multiplayer combat game focused on quick matches, direct confrontation and arcade-style game feel. Players fight each other in fast-paced rounds where health management, timing and match flow define the experience.
-        </p>
-    </section>
-    <section class="panel">
-        <h2 data-i18n="role_h2">My Role — Game Programmer</h2>
-        <p class="muted" data-i18n="role_p">
-            I worked mainly as a <span class="highlight">Game Programmer</span>, focusing on player health, match timer logic, victory conditions, game data handling and the end-of-match flow. I also contributed to UI and visual presentation elements related to match results.
-        </p>
-        <div class="grid">
-            <div class="panel sub-panel">
-                <h2 data-i18n="systems_h2">Gameplay Systems Programming</h2>
-                <ul>
-                    <li data-i18n="systems_li1">Designed and implemented the player health system.</li>
-                    <li data-i18n="systems_li2">Built the match timer and round flow logic.</li>
-                    <li data-i18n="systems_li3">Implemented victory conditions and end-of-match behavior.</li>
-                </ul>
-            </div>
-            <div class="panel sub-panel">
-                <h2 data-i18n="ui_h2">Game Data, UI & Feedback</h2>
-                <ul>
-                    <li data-i18n="ui_li1">Handled player and match state data during gameplay.</li>
-                    <li data-i18n="ui_li2">Created logic for the end-of-game screen and result flow.</li>
-                    <li data-i18n="ui_li3">Contributed to UI and visual elements related to match results.</li>
-                </ul>
-            </div>
+          </video>
         </div>
-    </section>
-    <section class="panel">
-        <h2 data-i18n="gameplay_h2">Core Gameplay</h2>
-        <p class="muted" data-i18n="gameplay_p">
-            Smack That Rooster is built around short, chaotic multiplayer fights. Players enter a match, attack each other, manage their health, survive the timer and compete to trigger the victory condition.
-        </p>
-        <h3 data-i18n="pillars_h3">Gameplay Pillars</h3>
+      </section>
+
+      <section class="panel" id="overview">
+          <h2 data-i18n="overview_h2"></h2>
+          <p class="muted" data-i18n="overview_p"></p>
+
+          <div class="overview-facts">
+            <article class="card overview-fact">
+              <strong data-i18n="overview_fact1_h"></strong>
+              <span data-i18n="overview_fact1_p"></span>
+            </article>
+
+            <article class="card overview-fact">
+              <strong data-i18n="overview_fact2_h"></strong>
+              <span data-i18n="overview_fact2_p"></span>
+            </article>
+          </div>
+      </section>
+
+      <section class="panel" id="role">
+        <span class="kicker" data-i18n="role_kicker"></span>
+        <h2 data-i18n="role_h2"></h2>
+        <p class="muted" data-i18n="role_p"></p>
+
+        <div class="grid grid-4">
+          <article class="card contribution">
+            <span>01</span>
+            <h3 data-i18n="contribution1_h"></h3>
+            <p class="muted" data-i18n="contribution1_p"></p>
+          </article>
+
+          <article class="card contribution">
+            <span>02</span>
+            <h3 data-i18n="contribution2_h"></h3>
+            <p class="muted" data-i18n="contribution2_p"></p>
+          </article>
+
+          <article class="card contribution">
+            <span>03</span>
+            <h3 data-i18n="contribution3_h"></h3>
+            <p class="muted" data-i18n="contribution3_p"></p>
+          </article>
+
+          <article class="card contribution">
+            <span>04</span>
+            <h3 data-i18n="contribution4_h"></h3>
+            <p class="muted" data-i18n="contribution4_p"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="technical">
+        <span class="kicker" data-i18n="technical_kicker"></span>
+        <h2 data-i18n="technical_h2"></h2>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3 data-i18n="tech_gameplay_h2"></h3>
+            <ul>
+              <li data-i18n="tech_gameplay_li1"></li>
+              <li data-i18n="tech_gameplay_li2"></li>
+              <li data-i18n="tech_gameplay_li3"></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="tech_match_h2"></h3>
+            <ul>
+              <li data-i18n="tech_match_li1"></li>
+              <li data-i18n="tech_match_li2"></li>
+              <li data-i18n="tech_match_li3"></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="tech_ui_h2"></h3>
+            <ul>
+              <li data-i18n="tech_ui_li1"></li>
+              <li data-i18n="tech_ui_li2"></li>
+              <li data-i18n="tech_ui_li3"></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="gameplay">
+        <h2 data-i18n="gameplay_h2"></h2>
+        <p class="muted" data-i18n="gameplay_p"></p>
+
         <div class="tags">
-            <span class="tag" data-i18n="tag1">Chaotic Multiplayer</span>
-            <span class="tag" data-i18n="tag2">Fast Matches</span>
-            <span class="tag" data-i18n="tag3">Arcade Combat</span>
-            <span class="tag" data-i18n="tag4">Clear Win Conditions</span>
-            <span class="tag" data-i18n="tag5">Readable UI Feedback</span>
-            <span class="tag" data-i18n="tag6">Strong Game Feel</span>
+          <span class="tag" data-i18n="tag1"></span>
+          <span class="tag" data-i18n="tag2"></span>
+          <span class="tag" data-i18n="tag3"></span>
+          <span class="tag" data-i18n="tag4"></span>
+          <span class="tag" data-i18n="tag5"></span>
+          <span class="tag" data-i18n="tag6"></span>
         </div>
-        <h3 data-i18n="core_loop_h3">Core Loop</h3>
-        <p class="muted" data-i18n="core_loop_p">
-            Enter the arena, fight other players, reduce their health, survive the match timer and secure victory through the end-game condition.
-        </p>
-    </section>
-    <section class="panel">
-        <h2 data-i18n="production_h2">Production Details</h2>
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <h3 data-i18n="metric1_h3">Multiplayer</h3>
-                <p data-i18n="metric1_p">Combat Game</p>
-            </div>
-            <div class="metric-card">
-                <h3 data-i18n="metric2_h3">Unity Engine</h3>
-                <p data-i18n="metric2_p">Game Development</p>
-            </div>
-            <div class="metric-card">
-                <h3 data-i18n="metric3_h3">Game Programmer</h3>
-                <p data-i18n="metric3_p">Main Role</p>
-            </div>
-            <div class="metric-card">
-                <h3 data-i18n="metric4_h3">Combat Systems</h3>
-                <p data-i18n="metric4_p">Main Focus</p>
-            </div>
+      </section>
+
+      <section class="panel" id="tools">
+        <h2 data-i18n="tools_h2"></h2>
+
+        <div class="grid tools-grid">
+          <article class="card tool">
+            <img src="Unity Logo.png" alt="Unity">
+            <strong>Unity</strong>
+          </article>
+
+          <article class="card tool">
+            <img src="Visual Studio Logo.png" alt="Visual Studio">
+            <strong>Visual Studio</strong>
+          </article>
+
+          <article class="card tool">
+            <img src="GitHub Logo.png" alt="GitHub">
+            <strong>GitHub</strong>
+          </article>
         </div>
-        <p class="muted" data-i18n="production_p">
-            The project focused on implementing the core systems required for a complete multiplayer combat loop: player health, round timing, game state tracking, victory logic and final result presentation.
-        </p>
-        <div class="tags">
-            <span class="tag" data-i18n="tooltag1">Gameplay Programming</span>
-            <span class="tag" data-i18n="tooltag2">Health System</span>
-            <span class="tag" data-i18n="tooltag3">Match Timer</span>
-            <span class="tag" data-i18n="tooltag4">Victory Logic</span>
-            <span class="tag" data-i18n="tooltag5">Game State Management</span>
-            <span class="tag" data-i18n="tooltag6">UI Flow</span>
-        </div>
-    </section>
-    <section class="panel">
-        <h2 data-i18n="tools_h2">Tools & Pipeline</h2>
-        <div class="tools-grid">
-            <div class="tool-card">
-                <img src="Unity Logo.png" alt="Unity" loading="lazy">
-                <span>Unity</span>
-            </div>
-            <div class="tool-card">
-                <img src="Visual Studio Logo.png" alt="Visual Studio" loading="lazy">
-                <span>Visual Studio</span>
-            </div>
-            <div class="tool-card">
-                <img src="GitHub Logo.png" alt="GitHub" loading="lazy">
-                <span>GitHub</span>
-            </div>
-        </div>
-    </section>
-</main>
-<footer>© <span id="year"></span> Santiago Cardozo Botero</footer>
-</div>
-<script>
-(() => {
-    const $ = s => document.querySelector(s);
-    const $$ = s => Array.from(document.querySelectorAll(s));
-    const year = $('#year');
-    if (year) year.textContent = new Date().getFullYear();
-    const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!reduced) {
-        const c = document.getElementById('roosterCanvas');
-        const ctx = c.getContext('2d');
-        function resize() {
-            c.width = innerWidth;
-            c.height = innerHeight;
-        }
-        addEventListener('resize', resize);
-        resize();
-        const symbols = ["🐓", "★", "✦", "POW!", "SMACK!", "KO!", "1P", "2P", "VS", "!", "●"];
-        const particles = Array.from({ length: 70 }, () => ({
-            x: Math.random() * c.width,
-            y: Math.random() * c.height,
-            sx: (Math.random() - 0.5) * 0.6,
-            sy: Math.random() * -0.35 - 0.05,
-            size: Math.random() * 24 + 14,
-            text: symbols[(Math.random() * symbols.length) | 0],
-            opacity: Math.random() * 0.45 + 0.15,
-            color: Math.random() > 0.5 ? "#ffcc33" : "#ff5a2f"
-        }));
-        function draw() {
-            ctx.clearRect(0, 0, c.width, c.height);
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            particles.forEach(p => {
-                ctx.globalAlpha = p.opacity;
-                ctx.font = `bold ${p.size}px Inter, monospace`;
-                ctx.fillStyle = p.color;
-                ctx.shadowColor = p.color;
-                ctx.shadowBlur = 18;
-                ctx.fillText(p.text, p.x, p.y);
-                p.x += p.sx;
-                p.y += p.sy;
-                if (p.y < -40) p.y = c.height + 40;
-                if (p.x < -80) p.x = c.width + 80;
-                if (p.x > c.width + 80) p.x = -80;
-            });
-            ctx.globalAlpha = 1;
-            requestAnimationFrame(draw);
-        }
-        draw();
-    }
-    const T = {
-        en: {
-            title: "Smack That Rooster | Game Programmer Portfolio Project",
-            meta_description: "Portfolio project by Santiago Cardozo Botero. A multiplayer combat game focused on chaotic fights, match logic, player health, victory conditions and game feel.",
-            role_label: "Game Programmer",
-            back_link: "← Back",
-            subtitle: "Game Programmer — Multiplayer Combat Game — Health, Match Flow, Victory Conditions and Game Feel",
-            trailer_h2: "Gameplay",
-            video_fallback: "Your browser does not support the video tag.",
-            overview_h2: "Game Overview",
-            overview_p: "<span class='highlight'>Smack That Rooster</span> is a chaotic multiplayer combat game focused on quick matches, direct confrontation and arcade-style game feel. Players fight each other in fast-paced rounds where health management, timing and match flow define the experience.",
-            role_h2: "My Role — Game Programmer",
-            role_p: "I worked mainly as a <span class='highlight'>Game Programmer</span>, focusing on player health, match timer logic, victory conditions, game data handling and the end-of-match flow. I also contributed to UI and visual presentation elements related to match results.",
-            systems_h2: "Gameplay Systems Programming",
-            systems_li1: "Designed and implemented the player health system.",
-            systems_li2: "Built the match timer and round flow logic.",
-            systems_li3: "Implemented victory conditions and end-of-match behavior.",
-            ui_h2: "Game Data, UI & Feedback",
-            ui_li1: "Handled player and match state data during gameplay.",
-            ui_li2: "Created logic for the end-of-game screen and result flow.",
-            ui_li3: "Contributed to UI and visual elements related to match results.",
-            gameplay_h2: "Core Gameplay",
-            gameplay_p: "Smack That Rooster is built around short, chaotic multiplayer fights. Players enter a match, attack each other, manage their health, survive the timer and compete to trigger the victory condition.",
-            pillars_h3: "Gameplay Pillars",
-            tag1: "Chaotic Multiplayer",
-            tag2: "Fast Matches",
-            tag3: "Arcade Combat",
-            tag4: "Clear Win Conditions",
-            tag5: "Readable UI Feedback",
-            tag6: "Strong Game Feel",
-            core_loop_h3: "Core Loop",
-            core_loop_p: "Enter the arena, fight other players, reduce their health, survive the match timer and secure victory through the end-game condition.",
-            production_h2: "Production Details",
-            metric1_h3: "Multiplayer",
-            metric1_p: "Combat Game",
-            metric2_h3: "Unity Engine",
-            metric2_p: "Game Development",
-            metric3_h3: "Game Programmer",
-            metric3_p: "Main Role",
-            metric4_h3: "Combat Systems",
-            metric4_p: "Main Focus",
-            production_p: "The project focused on implementing the core systems required for a complete multiplayer combat loop: player health, round timing, game state tracking, victory logic and final result presentation.",
-            tooltag1: "Gameplay Programming",
-            tooltag2: "Health System",
-            tooltag3: "Match Timer",
-            tooltag4: "Victory Logic",
-            tooltag5: "Game State Management",
-            tooltag6: "UI Flow",
-            tools_h2: "Tools & Pipeline"
-        },
-        es: {
-            title: "Smack That Rooster | Proyecto de Portafolio — Programador de Juegos",
-            meta_description: "Proyecto de portafolio por Santiago Cardozo Botero. Juego de combate multijugador centrado en peleas caóticas, lógica de partida, vida del jugador, condiciones de victoria y game feel.",
-            role_label: "Programador de Juegos",
-            back_link: "← Volver",
-            subtitle: "Programador de Juegos — Juego de Combate Multijugador — Vida, Flujo de Partida, Victoria y Game Feel",
-            trailer_h2: "Gameplay",
-            video_fallback: "Tu navegador no soporta la etiqueta de video.",
-            overview_h2: "Resumen del Juego",
-            overview_p: "<span class='highlight'>Smack That Rooster</span> es un juego de combate multijugador caótico centrado en partidas rápidas, confrontación directa y sensación arcade. Los jugadores luchan en rondas rápidas donde la gestión de vida, el tiempo y el flujo de partida definen la experiencia.",
-            role_h2: "Mi Rol — Programador de Juegos",
-            role_p: "Trabajé principalmente como <span class='highlight'>Programador de Juegos</span>, enfocándome en la vida de los jugadores, la lógica del temporizador, las condiciones de victoria, el manejo de datos y el flujo de final de partida. También contribuí a elementos de UI y presentación visual relacionados con los resultados.",
-            systems_h2: "Programación de Sistemas de Gameplay",
-            systems_li1: "Diseñé e implementé el sistema de vida de los jugadores.",
-            systems_li2: "Desarrollé el temporizador de partida y la lógica de rondas.",
-            systems_li3: "Implementé las condiciones de victoria y el comportamiento de fin de partida.",
-            ui_h2: "Datos del Juego, UI y Feedback",
-            ui_li1: "Gestioné datos del estado de jugadores y partida durante el gameplay.",
-            ui_li2: "Creé la lógica de la pantalla de final de partida y el flujo de resultados.",
-            ui_li3: "Contribuí a elementos de UI y visuales relacionados con los resultados.",
-            gameplay_h2: "Jugabilidad Principal",
-            gameplay_p: "Smack That Rooster se basa en combates multijugador cortos y caóticos. Los jugadores entran a la arena, se atacan entre sí, gestionan su vida, sobreviven al temporizador y compiten por activar la condición de victoria.",
-            pillars_h3: "Pilares de Jugabilidad",
-            tag1: "Multijugador Caótico",
-            tag2: "Partidas Rápidas",
-            tag3: "Combate Arcade",
-            tag4: "Condiciones de Victoria Claras",
-            tag5: "Feedback de UI Legible",
-            tag6: "Fuerte Game Feel",
-            core_loop_h3: "Bucle Principal",
-            core_loop_p: "Entra a la arena, pelea contra otros jugadores, reduce su vida, sobrevive al temporizador y asegura la victoria mediante la condición de final de partida.",
-            production_h2: "Detalles de Producción",
-            metric1_h3: "Multijugador",
-            metric1_p: "Juego de Combate",
-            metric2_h3: "Motor Unity",
-            metric2_p: "Desarrollo de Juegos",
-            metric3_h3: "Programador de Juegos",
-            metric3_p: "Rol Principal",
-            metric4_h3: "Sistemas de Combate",
-            metric4_p: "Foco Principal",
-            production_p: "El proyecto se centró en implementar los sistemas principales necesarios para un bucle completo de combate multijugador: vida del jugador, temporizador de rondas, seguimiento del estado de partida, lógica de victoria y presentación de resultados.",
-            tooltag1: "Programación de Gameplay",
-            tooltag2: "Sistema de Vida",
-            tooltag3: "Temporizador de Partida",
-            tooltag4: "Lógica de Victoria",
-            tooltag5: "Gestión de Estado del Juego",
-            tooltag6: "Flujo de UI",
-            tools_h2: "Herramientas y Pipeline"
-        }
-    };
-    const L = document.getElementById('langToggle');
-    function apply(lang) {
-        const m = T[lang] || T.en;
-        document.title = m.title;
-        document.documentElement.lang = lang;
-        const md = document.querySelector('meta[name="description"]');
-        if (md) md.setAttribute('content', m.meta_description);
-        $$('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (m[key]) el.innerHTML = m[key];
-        });
-        if (L) {
-            L.textContent = lang === 'es' ? 'English' : 'Español';
-            L.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a Español');
-        }
-        localStorage.setItem('siteLang', lang);
-    }
-    if (L) {
-        L.addEventListener('click', () => {
-            const current = document.documentElement.lang === 'es' ? 'es' : 'en';
-            apply(current === 'es' ? 'en' : 'es');
-        });
-    }
-    apply(localStorage.getItem('siteLang') || 'en');
-})();
-</script>
-<script>
-(function(){
-  const wrapper = document.querySelector('.cover-carousel');
-  if (!wrapper) return;
+      </section>
+    </main>
 
-  const legacy = document.querySelector('.cover-wrapper');
-  const track = document.getElementById('carouselTrack');
-  const viewport = document.getElementById('carouselViewport');
+    <footer>© <span id="year"></span> Santiago Cardozo Botero</footer>
+  </div>
 
-  if (!legacy || !track || !viewport) return;
-
-  const prevUrl = legacy.dataset.prev || null;
-  const prevImg = legacy.dataset.prevImg || null;
-  const currentImg = legacy.dataset.currentImg || 'SmackThatRooster.PNG';
-  const nextUrl = legacy.dataset.next || null;
-  const nextImg = legacy.dataset.nextImg || null;
-
-  const items = [
-    { id: 'prev', img: prevImg || currentImg, url: prevUrl },
-    { id: 'current', img: currentImg, url: null },
-    { id: 'next', img: nextImg || currentImg, url: nextUrl }
-  ];
-
-  function navigateTo(url, direction) {
-    if (!url || navigateTo.locked) return;
-
-    navigateTo.locked = true;
-
-    track.style.transition = 'transform 320ms cubic-bezier(.22,.9,.3,1)';
-    track.style.transform = direction === 'next'
-      ? 'translateX(-36%)'
-      : 'translateX(36%)';
-
-    const reduced = window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    setTimeout(() => {
-      window.location.href = url;
-    }, reduced ? 0 : 260);
-  }
-
-  function createCard(item) {
-    const card = document.createElement('div');
-    card.className = 'carousel-card';
-    card.dataset.id = item.id;
-
-    const img = document.createElement('img');
-    img.src = item.img;
-    img.alt =
-      item.id === 'current'
-        ? 'Smack That Rooster cover'
-        : item.id === 'prev'
-          ? 'Previous project'
-          : 'Next project';
-
-    card.appendChild(img);
-
-    if (item.url) {
-      card.setAttribute('role', 'link');
-      card.setAttribute('tabindex', '0');
-      card.setAttribute(
-        'aria-label',
-        item.id === 'prev' ? 'Go to previous project' : 'Go to next project'
-      );
-
-      card.addEventListener('click', e => {
-        e.stopPropagation();
-        navigateTo(item.url, item.id === 'next' ? 'next' : 'prev');
-      });
-
-      card.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          navigateTo(item.url, item.id === 'next' ? 'next' : 'prev');
-        }
-      });
-
-      card.addEventListener('touchstart', e => {
-        e.stopPropagation();
-      }, { passive: true });
-    } else {
-      card.setAttribute('aria-hidden', 'true');
-    }
-
-    return card;
-  }
-
-  track.innerHTML = '';
-  items.forEach(item => track.appendChild(createCard(item)));
-
-  function refreshPositions() {
-    const cards = Array.from(track.children);
-
-    cards.forEach(card => {
-      card.classList.remove(
-        'left',
-        'center',
-        'right',
-        'hidden-left',
-        'hidden-right'
-      );
-    });
-
-    const [leftCard, centerCard, rightCard] = cards;
-
-    if (leftCard) leftCard.classList.add('left');
-    if (centerCard) centerCard.classList.add('center');
-    if (rightCard) rightCard.classList.add('right');
-
-    track.style.transform = '';
-  }
-
-  refreshPositions();
-
-  viewport.addEventListener('click', e => {
-    if (e.defaultPrevented) return;
-
-    const rect = viewport.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-
-    if (x < rect.width / 2 && prevUrl) {
-      navigateTo(prevUrl, 'prev');
-    } else if (nextUrl) {
-      navigateTo(nextUrl, 'next');
-    }
-  });
-
-  let lastWheel = 0;
-
-  wrapper.addEventListener('wheel', e => {
-    if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) return;
-
-    const now = Date.now();
-    if (now - lastWheel < 200) return;
-
-    lastWheel = now;
-
-    if (e.deltaX > 30 && nextUrl) {
-      navigateTo(nextUrl, 'next');
-    } else if (e.deltaX < -30 && prevUrl) {
-      navigateTo(prevUrl, 'prev');
-    }
-  }, { passive: true });
-
-  let pointerDown = false;
-  let startX = 0;
-  let currentTranslate = 0;
-  let dragApplied = false;
-
-  viewport.addEventListener('pointerdown', e => {
-    pointerDown = true;
-    startX = e.clientX;
-    track.style.transition = 'none';
-    viewport.setPointerCapture?.(e.pointerId);
-  });
-
-  viewport.addEventListener('pointermove', e => {
-    if (!pointerDown) return;
-
-    const dx = e.clientX - startX;
-    currentTranslate = dx;
-    dragApplied = true;
-
-    track.style.transform = `translateX(${dx * 0.15}px)`;
-  });
-
-  function endDrag() {
-    if (!pointerDown) return;
-
-    pointerDown = false;
-    track.style.transition = '';
-
-    const threshold = 80;
-
-    if (dragApplied) {
-      if (currentTranslate < -threshold && nextUrl) {
-        navigateTo(nextUrl, 'next');
-      } else if (currentTranslate > threshold && prevUrl) {
-        navigateTo(prevUrl, 'prev');
-      } else {
-        track.style.transform = '';
-      }
-    }
-
-    dragApplied = false;
-    currentTranslate = 0;
-  }
-
-  viewport.addEventListener('pointerup', endDrag);
-  viewport.addEventListener('pointercancel', endDrag);
-
-  window.addEventListener('keydown', e => {
-    if (
-      e.target &&
-      (
-        e.target.tagName === 'INPUT' ||
-        e.target.tagName === 'TEXTAREA' ||
-        e.target.isContentEditable
-      )
-    ) return;
-
-    if ((e.key === 'ArrowLeft' || e.key === 'PageUp') && prevUrl) {
-      navigateTo(prevUrl, 'prev');
-    }
-
-    if ((e.key === 'ArrowRight' || e.key === 'PageDown') && nextUrl) {
-      navigateTo(nextUrl, 'next');
-    }
-  });
-})();
-</script>
+  <script src="js/i18n.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
