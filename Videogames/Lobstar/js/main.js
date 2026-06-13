@@ -1,65 +1,101 @@
-﻿const year = document.getElementById("year");
+﻿(() => {
+  updateCurrentYear();
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (!reducedMotion) {
-  initBackgroundCanvas();
-}
-
-function initBackgroundCanvas() {
-  const canvas = document.getElementById("lobstarCanvas");
-  if (!canvas) return;
-
-  const ctx = canvas.getContext("2d");
-  const symbols = ["★", "✦", "●", "◆", "▲", "1UP", "+100", "COMBO", "READY?", "GO!", "🦞"];
-
-  const resize = () => {
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
-  };
-
-  resize();
-  addEventListener("resize", resize);
-
-  const particles = Array.from({ length: 80 }, () => ({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    vx: (Math.random() - .5) * .5,
-    vy: Math.random() * -.35 - .05,
-    size: Math.random() * 28 + 14,
-    text: symbols[Math.floor(Math.random() * symbols.length)],
-    opacity: Math.random() * .45 + .15,
-    color: Math.random() > .5 ? "#ff4b3e" : "#ff9f45"
-  }));
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-
-    particles.forEach(p => {
-      ctx.globalAlpha = p.opacity;
-      ctx.font = `bold ${p.size}px Inter, monospace`;
-      ctx.fillStyle = p.color;
-      ctx.shadowColor = p.color;
-      ctx.shadowBlur = 18;
-      ctx.fillText(p.text, p.x, p.y);
-
-      p.x += p.vx;
-      p.y += p.vy;
-
-      if (p.y < -40) p.y = canvas.height + 40;
-      if (p.x < -80) p.x = canvas.width + 80;
-      if (p.x > canvas.width + 80) p.x = -80;
-    });
-
-    ctx.globalAlpha = 1;
-    requestAnimationFrame(draw);
+  if (!prefersReducedMotion) {
+    initBackgroundCanvas();
   }
 
-  draw();
-}
+  function updateCurrentYear() {
+    const year = document.getElementById("year");
+
+    if (year) {
+      year.textContent = new Date().getFullYear();
+    }
+  }
+
+  function initBackgroundCanvas() {
+    const canvas = document.getElementById("lobstarCanvas");
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const symbols = [
+      "★",
+      "✦",
+      "●",
+      "◆",
+      "▲",
+      "1UP",
+      "+100",
+      "COMBO",
+      "READY?",
+      "GO!",
+      "🦞"
+    ];
+
+    const particles = Array.from({ length: 80 }, createParticle);
+
+    function resizeCanvas() {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      canvas.width = Math.floor(width * ratio);
+      canvas.height = Math.floor(height * ratio);
+
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function createParticle() {
+      return {
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: Math.random() * -0.35 - 0.05,
+        size: Math.random() * 28 + 14,
+        text: symbols[Math.floor(Math.random() * symbols.length)],
+        opacity: Math.random() * 0.45 + 0.15,
+        color: Math.random() > 0.5 ? "#ff4b3e" : "#ff9f45"
+      };
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+
+      particles.forEach((particle) => {
+        ctx.globalAlpha = particle.opacity;
+        ctx.font = `bold ${particle.size}px Inter, monospace`;
+        ctx.fillStyle = particle.color;
+        ctx.shadowColor = particle.color;
+        ctx.shadowBlur = 18;
+        ctx.fillText(particle.text, particle.x, particle.y);
+
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+
+        if (particle.y < -40) particle.y = window.innerHeight + 40;
+        if (particle.x < -80) particle.x = window.innerWidth + 80;
+        if (particle.x > window.innerWidth + 80) particle.x = -80;
+      });
+
+      ctx.globalAlpha = 1;
+      ctx.shadowBlur = 0;
+
+      requestAnimationFrame(draw);
+    }
+
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+    draw();
+  }
+})();

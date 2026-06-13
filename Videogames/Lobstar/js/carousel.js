@@ -1,14 +1,18 @@
-const carousel = document.querySelector("[data-carousel]");
+(() => {
+  const carousel = document.querySelector("[data-carousel]");
+  if (!carousel) return;
 
-if (carousel) {
+  const ANIMATION_DURATION = 520;
+
   const previousCard = carousel.querySelector(".carousel-card.side:first-child");
   const nextCard = carousel.querySelector(".carousel-card.side:last-child");
-
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
   let isAnimating = false;
 
-  function goToProject(card, direction) {
+  function navigateToProject(card, direction) {
     if (!card || isAnimating) return;
 
     const url = card.dataset.url;
@@ -16,44 +20,51 @@ if (carousel) {
 
     isAnimating = true;
 
-    if (reducedMotion) {
-      window.location.href = url;
+    if (prefersReducedMotion) {
+      window.location.assign(url);
       return;
     }
 
     carousel.classList.remove("go-left", "go-right");
 
-    // Reinicia la animación si el usuario intenta repetirla rápido
+    // Reinicia la animación si el usuario intenta repetirla rápido.
     void carousel.offsetWidth;
 
-    if (direction === "left") {
-      carousel.classList.add("go-left");
-    }
+    carousel.classList.add(direction === "left" ? "go-left" : "go-right");
 
-    if (direction === "right") {
-      carousel.classList.add("go-right");
-    }
+    window.setTimeout(() => {
+      window.location.assign(url);
+    }, ANIMATION_DURATION);
+  }
 
-    setTimeout(() => {
-      window.location.href = url;
-    }, 520);
+  function isTypingElement(element) {
+    return (
+      element instanceof HTMLInputElement ||
+      element instanceof HTMLTextAreaElement ||
+      element instanceof HTMLSelectElement ||
+      element?.isContentEditable
+    );
   }
 
   previousCard?.addEventListener("click", () => {
-    goToProject(previousCard, "right");
+    navigateToProject(previousCard, "right");
   });
 
   nextCard?.addEventListener("click", () => {
-    goToProject(nextCard, "left");
+    navigateToProject(nextCard, "left");
   });
 
-  window.addEventListener("keydown", event => {
+  window.addEventListener("keydown", (event) => {
+    if (event.defaultPrevented || isTypingElement(event.target)) return;
+
     if (event.key === "ArrowLeft") {
-      goToProject(previousCard, "right");
+      event.preventDefault();
+      navigateToProject(previousCard, "right");
     }
 
     if (event.key === "ArrowRight") {
-      goToProject(nextCard, "left");
+      event.preventDefault();
+      navigateToProject(nextCard, "left");
     }
   });
-}
+})();
