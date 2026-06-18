@@ -21,8 +21,8 @@
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const symbols = ["POW!", "SMACK!", "KO!", "1P", "2P", "VS", "HIT", "!"];
-    const particles = Array.from({ length: 75 }, createParticle);
+    const symbols = ["0", "1", "GLSL", "FOG", "PHONG", "LIGHT", "3D", "MATRIX"];
+    const particles = Array.from({ length: 72 }, createParticle);
 
     function resizeCanvas() {
       const ratio = Math.min(window.devicePixelRatio || 1, 2);
@@ -40,12 +40,12 @@
       return {
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
-        vx: (Math.random() - 0.5) * 0.6,
-        vy: Math.random() * -0.35 - 0.05,
-        size: Math.random() * 26 + 14,
+        vx: (Math.random() - 0.5) * 0.52,
+        vy: Math.random() * -0.20 - 0.03,
+        size: Math.random() * 18 + 12,
         text: symbols[Math.floor(Math.random() * symbols.length)],
-        opacity: Math.random() * 0.45 + 0.15,
-        color: Math.random() > 0.5 ? "#ffcc33" : "#ff5a2f"
+        opacity: Math.random() * 0.40 + 0.12,
+        color: Math.random() > 0.5 ? "#00e676" : "#38d6ff"
       };
     }
 
@@ -59,15 +59,15 @@
         ctx.font = `bold ${particle.size}px Inter, monospace`;
         ctx.fillStyle = particle.color;
         ctx.shadowColor = particle.color;
-        ctx.shadowBlur = 18;
+        ctx.shadowBlur = 14;
         ctx.fillText(particle.text, particle.x, particle.y);
 
         particle.x += particle.vx;
         particle.y += particle.vy;
 
         if (particle.y < -40) particle.y = window.innerHeight + 40;
-        if (particle.x < -80) particle.x = window.innerWidth + 80;
-        if (particle.x > window.innerWidth + 80) particle.x = -80;
+        if (particle.x < -100) particle.x = window.innerWidth + 100;
+        if (particle.x > window.innerWidth + 100) particle.x = -100;
       });
 
       ctx.globalAlpha = 1;

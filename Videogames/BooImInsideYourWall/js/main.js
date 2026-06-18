@@ -21,8 +21,8 @@
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const symbols = ["POW!", "SMACK!", "KO!", "1P", "2P", "VS", "HIT", "!"];
-    const particles = Array.from({ length: 75 }, createParticle);
+    const symbols = ["BOO", "HIDE", "RUN", "FEAR", "SPIRIT", "!", "?", "..." ];
+    const particles = Array.from({ length: 78 }, createParticle);
 
     function resizeCanvas() {
       const ratio = Math.min(window.devicePixelRatio || 1, 2);
@@ -40,12 +40,12 @@
       return {
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
-        vx: (Math.random() - 0.5) * 0.6,
-        vy: Math.random() * -0.35 - 0.05,
+        vx: (Math.random() - 0.5) * 0.42,
+        vy: Math.random() * -0.28 - 0.05,
         size: Math.random() * 26 + 14,
         text: symbols[Math.floor(Math.random() * symbols.length)],
-        opacity: Math.random() * 0.45 + 0.15,
-        color: Math.random() > 0.5 ? "#ffcc33" : "#ff5a2f"
+        opacity: Math.random() * 0.42 + 0.12,
+        color: Math.random() > 0.5 ? "#ff3157" : "#e97b82"
       };
     }
 
