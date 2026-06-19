@@ -7,7 +7,17 @@
 
   const DEFAULT_LANGUAGE = "en";
   const STORAGE_KEY = "language";
-  let currentLang = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANGUAGE;
+  const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
+  const LANGUAGE_VERSION = "english-default-v2";
+
+  if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
+    localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
+    localStorage.setItem(LANGUAGE_VERSION_KEY, LANGUAGE_VERSION);
+  }
+
+  let currentLang = translations[localStorage.getItem(STORAGE_KEY)]
+    ? localStorage.getItem(STORAGE_KEY)
+    : DEFAULT_LANGUAGE;
 
   function getDictionary() {
     return translations[currentLang] || translations[DEFAULT_LANGUAGE];

@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Santiago Cardozo Botero — Game Developer Portfolio</title>
-    <meta name="description" content="Game developer portfolio by Santiago Cardozo Botero, featuring Unity, C#, gameplay systems, game design and interactive projects." />
+    <title>Santiago Cardozo Botero — Game, Web & Interactive Developer Portfolio</title>
+    <meta
+        name="description"
+        data-i18n-content="metaDescription"
+        content="Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics and interactive systems." />
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -277,7 +280,7 @@
 
         h3 {
             color: var(--accent);
-            margin-bottom: 22px;
+            margin-bottom: 12px;
             font-size: 28px;
         }
 
@@ -394,6 +397,58 @@
             font-weight: 800;
         }
 
+        .projects-intro {
+            max-width: 680px;
+            margin: 0 0 18px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .category-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0 0 24px;
+        }
+
+        .category-filter,
+        .project-category {
+            display: inline-flex;
+            width: fit-content;
+            align-items: center;
+            border: 1px solid rgba(0,230,118,.34);
+            border-radius: 999px;
+            padding: 7px 10px;
+            background: rgba(0,230,118,.08);
+            color: #c7ffdf;
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .category-filter {
+            appearance: none;
+            font: inherit;
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .category-filter:hover,
+        .category-filter.is-active {
+            border-color: rgba(0, 230, 118, .75);
+            background: var(--accent);
+            color: #001b10;
+            box-shadow: 0 0 24px rgba(0, 230, 118, .25);
+        }
+
+        .card.is-hidden {
+            display: none;
+        }
+
+        .project-category {
+            margin-top: 14px;
+        }
+
         .project-link {
             color: var(--accent);
             font-size: 13px;
@@ -481,6 +536,11 @@
                 grid-template-columns: 1fr;
             }
 
+            .category-filter {
+                flex: 1 1 calc(50% - 8px);
+                justify-content: center;
+            }
+
             .hero-actions {
                 flex-direction: column;
             }
@@ -503,7 +563,7 @@
                 <div class="logo">SCB</div>
                 <div>
                     <strong>Santiago Cardozo Botero</strong><br>
-                    <span class="muted" data-i18n="role">Game Developer</span>
+                    <span class="muted" data-i18n="role">Game & Web Developer</span>
                 </div>
             </div>
             <nav>
@@ -515,10 +575,10 @@
         </header>
         <main id="home" class="hero">
             <div>
-                <h2 data-i18n="heroTitle">Game Developer Portfolio</h2>
-                <h1 data-i18n="heroSubtitle">Creating interactive games, gameplay systems and technical prototypes</h1>
+                <h2 data-i18n="heroTitle">Game, Web & Interactive Developer Portfolio</h2>
+                <h1 data-i18n="heroSubtitle">Building games, websites and interactive technical systems</h1>
                 <p class="lead" data-i18n="heroText">
-                    A portfolio of academic, collaborative and personal projects exploring game development through Unity, C#, gameplay mechanics, game design and interactive systems.
+                    A portfolio of academic, collaborative, professional and personal projects across game development, web development, computer graphics and interactive systems.
                 </p>
                 <div class="hero-actions">
                     <a class="cta" href="#projects" data-i18n="heroPrimaryCta">View Projects</a>
@@ -526,16 +586,16 @@
                 </div>
                 <div class="hero-proof" aria-label="Portfolio proof points">
                     <div class="proof-stat">
-                        <strong>Unity + C#</strong>
-                        <span data-i18n="proofSystems">Gameplay systems, UI and interaction logic</span>
+                        <strong>Games + Web</strong>
+                        <span data-i18n="proofSystems">Gameplay systems, web interfaces and interaction logic</span>
                     </div>
                     <div class="proof-stat">
-                        <strong>5 Projects</strong>
-                        <span data-i18n="proofProjects">Playable games, prototypes and graphics work</span>
+                        <strong>6 Projects</strong>
+                        <span data-i18n="proofProjects">Games, websites, prototypes and graphics work</span>
                     </div>
                     <div class="proof-stat">
-                        <strong>Team Work</strong>
-                        <span data-i18n="proofTeam">Academic, jam and collaborative productions</span>
+                        <strong>Professional + Academic</strong>
+                        <span data-i18n="proofTeam">Company, academic, jam and collaborative productions</span>
                     </div>
                 </div>
             </div>
@@ -545,21 +605,46 @@
                     <div>
                         <strong data-i18n="skillsTitle">Skills</strong><br>
                         <span class="muted" data-i18n="skillsText">
-                            Game Development · Unity (2D/3D) · C# · Gameplay Systems · Game Design ·
-                            UI Systems · Camera & Combat Logic · Computer Graphics Fundamentals ·
-                            Lighting & Shading Models · Audio Integration · Collaborative and Personal Projects
+                            Game Development · Web Development · Unity (2D/3D) · C# · JavaScript · HTML/CSS ·
+                            Gameplay Systems · UI Systems · Responsive Interfaces · Computer Graphics ·
+                            Lighting & Shading Models · Collaborative and Professional Projects
                         </span>
                     </div>
                 </div>
             </aside>
         </main>
         <section id="projects">
-            <h3 data-i18n="projectsTitle">Selected Projects</h3>
+            <h3 data-i18n="projectsTitle">Selected Work</h3>
+            <p class="projects-intro" data-i18n="projectsIntro">
+                Game projects, web work and technical graphics demos grouped by discipline for a clearer overview.
+            </p>
+            <div class="category-bar" aria-label="Portfolio filters" data-i18n-aria-label="projectFiltersLabel">
+                <button class="category-filter is-active" type="button" data-filter="all" data-i18n="filterAll" aria-controls="projectGrid" aria-pressed="true">All Work</button>
+                <button class="category-filter" type="button" data-filter="game" data-i18n="categoryGames" aria-controls="projectGrid" aria-pressed="false">Game Development</button>
+                <button class="category-filter" type="button" data-filter="web" data-i18n="categoryWeb" aria-controls="projectGrid" aria-pressed="false">Web Development</button>
+                <button class="category-filter" type="button" data-filter="graphics" data-i18n="categoryGraphics" aria-controls="projectGrid" aria-pressed="false">Computer Graphics</button>
+            </div>
 
-            <div class="cards">
+            <div class="cards" id="projectGrid">
 
-                <a class="card" href="Videogames/Lobstar/lobstar.html">
+                <a class="card" href="Websites/Okiyama/okiyama.html" data-categories="web">
+                    <img src="Websites/Okiyama/assets/hero-okiyama.jpg" alt="Okiyama website project" loading="lazy" decoding="async">
+                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
+                    <span class="featured-label" data-i18n="professionalProject">Professional Project</span>
+                    <h4>Okiyama Website</h4>
+                    <p class="muted" data-i18n="okiyamaDesc">
+                        Company website and online shop experience built with responsive pages, product catalog, cart flow and front-end interaction logic.
+                    </p>
+                    <div class="project-tags">
+                        <span data-i18n="okiyamaRole">Role: Web development + UI implementation</span>
+                        <span data-i18n="okiyamaProof">Evidence: case study + website assets</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+                </a>
+
+                <a class="card" href="Videogames/Lobstar/lobstar.html" data-categories="game">
                     <img src="Videogames/Lobstar/lobstar-poster.PNG" alt="LOBSTAR!" loading="lazy" decoding="async">
+                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <span class="featured-label" data-i18n="featuredProject">Featured Project</span>
                     <h4>LOBSTAR!</h4>
                     <p class="muted" data-i18n="lobstarDesc">
@@ -573,8 +658,9 @@
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
-                <a class="card" href="Videogames/SmackThatRooster/smackthatrooster.html">
+                <a class="card" href="Videogames/SmackThatRooster/smackthatrooster.html" data-categories="game">
                     <img src="Videogames/SmackThatRooster/SmackThatRooster.PNG" alt="Smack That Rooster" loading="lazy" decoding="async">
+                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <h4>Smack That Rooster</h4>
                     <p class="muted" data-i18n="roosterDesc">
                         It is a Multiplayer combat game focused on match flow, life systems and victory conditions.
@@ -587,8 +673,9 @@
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
-                <a class="card" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html">
+                <a class="card" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html" data-categories="game">
                     <img src="./Videogames/BooImInsideYourWall/Poster_Boo.png" alt="BOO! I'm Inside Your Walls" loading="lazy" decoding="async">
+                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <h4>BOO! I'm Inside Your Walls</h4>
                     <p class="muted" data-i18n="BooImInsideYourWallDesc">
                         It is a stealth and puzzle game where you control Bunyo, a little ghost who must sneak into homes and terrorize their residents without being detected.
@@ -601,8 +688,9 @@
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
-                <a class="card" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html">
+                <a class="card" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html" data-categories="game">
                     <img src="./Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png" alt="OSS Mask Protocol" loading="lazy" decoding="async">
+                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <h4>OSS Mask Protocol</h4>
                     <p class="muted" data-i18n="ossmaskDesc">
                         It is a platform game that was developed in gamejam 26 with the mask theme.
@@ -615,9 +703,10 @@
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
-                <a class="card" href="Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html">
+                <a class="card" href="Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html" data-categories="graphics">
                     <img src="./Videogames/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
                          alt="Computer Graphics Final Project" loading="lazy" decoding="async">
+                    <span class="project-category" data-i18n="categoryGraphics">Computer Graphics</span>
                     <h4>Computer Graphics Final Project</h4>
                     <p class="muted" data-i18n="graphicsDesc">
                         Final academic project exploring lighting, shading models and atmosphere in a 3D scene.
@@ -701,34 +790,69 @@
         } else {
             cards.forEach(card => card.classList.add("visible"));
         }
+
+        const categoryFilters = document.querySelectorAll(".category-filter");
+        function applyProjectFilter(filter) {
+            cards.forEach(card => {
+                const categories = (card.dataset.categories || "").split(" ");
+                const isVisible = filter === "all" || categories.includes(filter);
+                card.classList.toggle("is-hidden", !isVisible);
+            });
+
+            categoryFilters.forEach(button => {
+                const isActive = button.dataset.filter === filter;
+                button.classList.toggle("is-active", isActive);
+                button.setAttribute("aria-pressed", isActive ? "true" : "false");
+            });
+        }
+
+        categoryFilters.forEach(button => {
+            button.addEventListener("click", () => {
+                applyProjectFilter(button.dataset.filter || "all");
+            });
+        });
+
         /* Language */
         const texts = {
             en: {
-                role: "Game Developer",
+                title: "Santiago Cardozo Botero — Game, Web & Interactive Developer Portfolio",
+                metaDescription: "Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics and interactive systems.",
+                role: "Game & Web Developer",
                 navHome: "Home",
                 navProjects: "Projects",
                 navContact: "Contact",
 
-                heroTitle: "Game Developer Portfolio",
-                heroSubtitle: "Creating interactive games, gameplay systems and technical prototypes",
-                heroText: "A portfolio of academic, collaborative and personal projects exploring game development through Unity, C#, gameplay mechanics, game design and interactive systems.",
+                heroTitle: "Game, Web & Interactive Developer Portfolio",
+                heroSubtitle: "Building games, websites and interactive technical systems",
+                heroText: "A portfolio of academic, collaborative, professional and personal projects across game development, web development, computer graphics and interactive systems.",
                 heroPrimaryCta: "View Projects",
                 heroSecondaryCta: "Contact Me",
-                proofSystems: "Gameplay systems, UI and interaction logic",
-                proofProjects: "Playable games, prototypes and graphics work",
-                proofTeam: "Academic, jam and collaborative productions",
+                proofSystems: "Gameplay systems, web interfaces and interaction logic",
+                proofProjects: "Games, websites, prototypes and graphics work",
+                proofTeam: "Company, academic, jam and collaborative productions",
 
                 skillsTitle: "Skills",
-                skillsText: "Game Development · Unity (2D/3D) · C# · Gameplay Systems · Game Design · UI Systems · Camera & Combat Logic · Computer Graphics Fundamentals · Lighting & Shading Models · Audio Integration · Collaborative and Personal Projects",
+                skillsText: "Game Development · Web Development · Unity (2D/3D) · C# · JavaScript · HTML/CSS · Gameplay Systems · UI Systems · Responsive Interfaces · Computer Graphics · Lighting & Shading Models · Collaborative and Professional Projects",
 
-                projectsTitle: "Selected Projects",
+                projectsTitle: "Selected Work",
+                projectsIntro: "Game projects, web work and technical graphics demos grouped by discipline for a clearer overview.",
+                projectFiltersLabel: "Portfolio filters",
+                filterAll: "All Work",
+                categoryGames: "Game Development",
+                categoryWeb: "Web Development",
+                categoryGraphics: "Computer Graphics",
+                categoryInteractive: "Interactive Systems",
 
                 featuredProject: "Featured Project",
+                professionalProject: "Professional Project",
+                okiyamaDesc: "Company website and online shop experience built with responsive pages, product catalog, cart flow and front-end interaction logic.",
                 lobstarDesc: "Arcade action game built with Unity. Winner at Florida GameFest 2025 for Best Game – Public Vote and Jury.",
                 roosterDesc: "Multiplayer combat game focused on match flow, health systems, player interaction and victory conditions.",
                 ossmaskDesc: "Platform game developed during Game Jam 26, built around the theme of masks.",
                 BooImInsideYourWallDesc: "Stealth and puzzle game where you control Bunyo, a small ghost who sneaks into homes and scares residents without being detected.",
                 graphicsDesc: "Academic 3D graphics project exploring lighting, shading models, atmosphere and scene presentation.",
+                okiyamaRole: "Role: Web development + UI implementation",
+                okiyamaProof: "Evidence: case study + website assets",
                 lobstarRole: "Role: Gameplay/UI programming",
                 lobstarProof: "Evidence: trailer + playable build",
                 roosterRole: "Role: Health, timer and results flow",
@@ -748,31 +872,44 @@
             },
 
             es: {
-                role: "Desarrollador de Videojuegos",
+                title: "Santiago Cardozo Botero — Portafolio de Desarrollo Web, Videojuegos y Sistemas Interactivos",
+                metaDescription: "Portafolio de Santiago Cardozo Botero con desarrollo de videojuegos, proyectos web, Unity, C#, JavaScript, gráficos por computadora y sistemas interactivos.",
+                role: "Desarrollador Web y de Videojuegos",
                 navHome: "Inicio",
                 navProjects: "Proyectos",
                 navContact: "Contacto",
 
-                heroTitle: "Portafolio de Desarrollo de Videojuegos",
-                heroSubtitle: "Creando juegos interactivos, sistemas de gameplay y prototipos técnicos",
-                heroText: "Portafolio con proyectos académicos, colaborativos y personales que exploran el desarrollo de videojuegos con Unity, C#, mecánicas de gameplay, game design y sistemas interactivos.",
+                heroTitle: "Portafolio de Desarrollo Web, Videojuegos y Sistemas Interactivos",
+                heroSubtitle: "Creando juegos, sitios web y sistemas técnicos interactivos",
+                heroText: "Portafolio con proyectos académicos, colaborativos, profesionales y personales en desarrollo de videojuegos, desarrollo web, gráficos por computadora y sistemas interactivos.",
                 heroPrimaryCta: "Ver Proyectos",
                 heroSecondaryCta: "Contactarme",
-                proofSystems: "Sistemas de gameplay, UI y lógica de interacción",
-                proofProjects: "Juegos jugables, prototipos y trabajo gráfico",
-                proofTeam: "Producciones académicas, jams y colaborativas",
+                proofSystems: "Sistemas de gameplay, interfaces web y lógica de interacción",
+                proofProjects: "Juegos, sitios web, prototipos y trabajo gráfico",
+                proofTeam: "Producciones de empresa, académicas, jams y colaborativas",
 
                 skillsTitle: "Habilidades",
-                skillsText: "Desarrollo de Videojuegos · Unity (2D/3D) · C# · Sistemas de Gameplay · Game Design · Sistemas de UI · Lógica de Cámara y Combate · Fundamentos de Gráficos por Computación · Iluminación y Modelos de Sombreado · Integración de Audio · Proyectos Colaborativos y Personales",
+                skillsText: "Desarrollo de Videojuegos · Desarrollo Web · Unity (2D/3D) · C# · JavaScript · HTML/CSS · Sistemas de Gameplay · Sistemas de UI · Interfaces Responsivas · Gráficos por Computación · Iluminación y Modelos de Sombreado · Proyectos Colaborativos y Profesionales",
 
-                projectsTitle: "Proyectos Destacados",
+                projectsTitle: "Trabajos Seleccionados",
+                projectsIntro: "Proyectos de videojuegos, trabajo web y demos técnicas de gráficos agrupados por disciplina para una vista más clara.",
+                projectFiltersLabel: "Filtros del portafolio",
+                filterAll: "Todo",
+                categoryGames: "Desarrollo de Videojuegos",
+                categoryWeb: "Desarrollo Web",
+                categoryGraphics: "Gráficos por Computación",
+                categoryInteractive: "Sistemas Interactivos",
 
                 featuredProject: "Proyecto Destacado",
+                professionalProject: "Proyecto Profesional",
+                okiyamaDesc: "Sitio web corporativo y experiencia de tienda online con páginas responsivas, catálogo de productos, flujo de carrito y lógica de interacción front-end.",
                 lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 como Mejor Juego por Voto del Público y Jurado.",
                 roosterDesc: "Juego de combate multijugador enfocado en flujo de partida, sistemas de vida, interacción entre jugadores y condiciones de victoria.",
                 ossmaskDesc: "Juego de plataformas desarrollado durante la GameJam 26, construido alrededor de la temática de máscaras.",
                 BooImInsideYourWallDesc: "Juego de sigilo y puzles donde controlas a Bunyo, un pequeño fantasma que se infiltra en hogares y asusta residentes sin ser detectado.",
                 graphicsDesc: "Proyecto académico de gráficos 3D que explora iluminación, modelos de sombreado, atmósfera y presentación de escena.",
+                okiyamaRole: "Rol: Desarrollo web + implementación UI",
+                okiyamaProof: "Evidencia: caso de estudio + assets del sitio",
                 lobstarRole: "Rol: Programación de gameplay/UI",
                 lobstarProof: "Evidencia: tráiler + build jugable",
                 roosterRole: "Rol: Vida, temporizador y resultados",
@@ -791,15 +928,59 @@
                 social: "Redes"
             }
         };
-        let lang = "en";
+        const DEFAULT_LANGUAGE = "en";
+        const STORAGE_KEY = "language";
+        const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
+        const LANGUAGE_VERSION = "english-default-v2";
         const btn = document.getElementById("langToggle");
+
+        if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
+            localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
+            localStorage.setItem(LANGUAGE_VERSION_KEY, LANGUAGE_VERSION);
+        }
+
+        let lang = texts[localStorage.getItem(STORAGE_KEY)] ? localStorage.getItem(STORAGE_KEY) : DEFAULT_LANGUAGE;
+
+        function applyLanguage() {
+            const dictionary = texts[lang] || texts[DEFAULT_LANGUAGE];
+            document.documentElement.lang = lang;
+            document.title = dictionary.title;
+
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.dataset.i18n;
+                if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                    el.textContent = dictionary[key];
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-content]").forEach(el => {
+                const key = el.dataset.i18nContent;
+                if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                    el.setAttribute("content", dictionary[key]);
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+                const key = el.dataset.i18nAriaLabel;
+                if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                    el.setAttribute("aria-label", dictionary[key]);
+                }
+            });
+
+            btn.textContent = lang === "en" ? "Español" : "English";
+            btn.setAttribute(
+                "aria-label",
+                lang === "en" ? "Cambiar idioma a español" : "Change language to English"
+            );
+        }
+
         btn.onclick = () => {
             lang = lang === "en" ? "es" : "en";
-            btn.textContent = lang === "en" ? "Español" : "English";
-            document.querySelectorAll("[data-i18n]").forEach(el => {
-                el.textContent = texts[lang][el.dataset.i18n];
-            });
+            localStorage.setItem(STORAGE_KEY, lang);
+            applyLanguage();
         };
+
+        applyLanguage();
     </script>
 </body>
 </html>

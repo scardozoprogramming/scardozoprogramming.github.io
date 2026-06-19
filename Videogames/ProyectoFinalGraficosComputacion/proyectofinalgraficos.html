@@ -57,11 +57,14 @@
           </div>
         </div>
 
-        <div class="stats">
-          <article class="card"><strong>3D</strong><span data-i18n="hero_stat1_p"></span></article>
-          <article class="card"><strong>JS</strong><span data-i18n="hero_stat2_p"></span></article>
-          <article class="card"><strong>Lighting</strong><span data-i18n="hero_stat3_p"></span></article>
-        </div>
+        <aside class="technical-hero-media">
+          <img src="CapturaPantallaInicial.png" alt="Computer graphics scene preview" loading="eager" decoding="async">
+          <div class="stats">
+            <article class="card"><strong>3D</strong><span data-i18n="hero_stat1_p"></span></article>
+            <article class="card"><strong>JS</strong><span data-i18n="hero_stat2_p"></span></article>
+            <article class="card"><strong>Lighting</strong><span data-i18n="hero_stat3_p"></span></article>
+          </div>
+        </aside>
       </section>
 
       <section class="panel project-info" id="project-info">
@@ -88,32 +91,38 @@
         </div>
       </section>
 
-      <section class="carousel" data-carousel aria-label="Other portfolio projects">
-        <button
-          class="carousel-card side"
-          type="button"
-          data-url="https://scardozoprogramming.github.io/Videogames/BooImInsideYourWall/BooImInsideYourWall.html"
-          aria-label="Open previous project">
-          <img src="../BooImInsideYourWall/Poster_Boo.png" alt="Preview of previous project">
-        </button>
+      <section class="panel technical-showcase" id="case-study">
+        <div class="showcase-copy">
+          <span class="kicker" data-i18n="case_kicker"></span>
+          <h2 data-i18n="case_h2"></h2>
+          <p class="muted" data-i18n="case_p"></p>
 
-        <article class="carousel-card active" aria-label="Current project: Final Project Computer Graphics">
-          <img src="CapturaPantallaInicial.png" alt="Computer graphics project screenshot">
-        </article>
+          <div class="case-steps">
+            <article class="case-step">
+              <strong data-i18n="case_problem_h"></strong>
+              <span data-i18n="case_problem_p"></span>
+            </article>
+            <article class="case-step">
+              <strong data-i18n="case_solution_h"></strong>
+              <span data-i18n="case_solution_p"></span>
+            </article>
+            <article class="case-step">
+              <strong data-i18n="case_result_h"></strong>
+              <span data-i18n="case_result_p"></span>
+            </article>
+          </div>
+        </div>
 
-        <button
-          class="carousel-card side"
-          type="button"
-          data-url="https://scardozoprogramming.github.io/Videogames/Lobstar/lobstar.html"
-          aria-label="Open next project">
-          <img src="../Lobstar/lobstar-poster.PNG" alt="Preview of next project">
-        </button>
-      </section>
-
-      <section class="panel media-panel">
-        <h2 data-i18n="preview_h2"></h2>
-        <img class="feature-image" src="CapturaPantallaInicial.png" alt="Initial screenshot of the computer graphics project" loading="lazy" decoding="async">
-        <p class="muted media-caption" data-i18n="preview_caption"></p>
+        <figure class="browser-mock scene-mock">
+          <div class="browser-bar">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-title" data-i18n="preview_h2"></span>
+          </div>
+          <img class="feature-image" src="CapturaPantallaInicial.png" alt="Initial screenshot of the computer graphics project" loading="lazy" decoding="async">
+          <figcaption data-i18n="preview_caption"></figcaption>
+        </figure>
       </section>
 
       <section class="panel" id="demo">
@@ -279,7 +288,6 @@
 
   <script src="../shared/project-data.js"></script>
   <script src="../shared/i18n.js"></script>
-  <script src="../shared/carousel.js"></script>
   <script src="../shared/project.js"></script>
 </body>
 </html>

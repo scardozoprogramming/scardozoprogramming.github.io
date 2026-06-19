@@ -1,33 +1,238 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ProyectFinalSantiagoCardozo - Iluminación y Atmósfera</title>
+    <title>Computer Graphics Demo - Lighting and Atmosphere</title>
+    <meta
+        name="description"
+        content="Interactive WebGL demo exploring Gouraud, Phong, Blinn-Phong, spotlight, fog and toon shading."
+        data-i18n-content="metaDescription" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --bg: #050607;
+            --panel: rgba(8, 16, 14, .88);
+            --panel-2: rgba(255, 255, 255, .055);
+            --text: #e9fff4;
+            --muted: #a9c6ba;
+            --muted-2: #78998c;
+            --accent: #00e676;
+            --accent-2: #38d6ff;
+            --border: rgba(0, 230, 118, .24);
+            --shadow: 0 24px 70px rgba(0, 0, 0, .45);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            background: #111;
-            color: #eee;
-            font-family: system-ui, Arial, sans-serif;
+            min-height: 100vh;
+            background:
+                linear-gradient(135deg, rgba(0, 230, 118, .12), transparent 34%),
+                linear-gradient(225deg, rgba(56, 214, 255, .12), transparent 42%),
+                linear-gradient(180deg, #050607 0%, #090f0d 56%, #030403 100%);
+            color: var(--text);
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                linear-gradient(rgba(0, 230, 118, .035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(56, 214, 255, .03) 1px, transparent 1px);
+            background-size: 42px 42px;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), transparent 86%);
         }
 
         #wrap {
-            display: flex;
-            gap: 16px;
-            padding: 16px;
-            align-items: flex-start;
+            width: min(100% - 32px, 1440px);
+            margin: 0 auto;
+            padding: 24px 0 28px;
         }
 
-        canvas {
-            border: 1px solid #444;
-            background: #000;
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .logo {
+            display: grid;
+            width: 44px;
+            height: 44px;
+            place-items: center;
+            border: 1px solid rgba(0, 230, 118, .5);
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(0, 230, 118, .25), rgba(56, 214, 255, .14));
+            color: var(--accent);
+            box-shadow: 0 0 28px rgba(0, 230, 118, .13);
+        }
+
+        .back-link {
+            display: inline-flex;
+            min-height: 42px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 0 16px;
+            background: rgba(255, 255, 255, .055);
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .back-link:hover {
+            border-color: rgba(0, 230, 118, .58);
+            color: var(--accent);
+            box-shadow: 0 0 22px rgba(0, 230, 118, .16);
+        }
+
+        .top-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .lang-toggle {
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .stage-card,
+        #panel {
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            background: var(--panel);
+            box-shadow: var(--shadow);
+        }
+
+        .stage-card {
+            min-width: 0;
+            padding: 14px;
+        }
+
+        .canvas-frame {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 230, 118, .28);
+            border-radius: 18px;
+            background: #020403;
+            box-shadow:
+                inset 0 0 34px rgba(0, 230, 118, .08),
+                0 0 42px rgba(56, 214, 255, .10);
+        }
+
+        .canvas-frame::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(120deg, rgba(0, 230, 118, .10), transparent 36%),
+                linear-gradient(300deg, rgba(56, 214, 255, .12), transparent 42%);
+            mix-blend-mode: screen;
+            opacity: .58;
+        }
+
+        #glcanvas {
+            display: block;
+            width: 100%;
+            height: clamp(420px, calc(100vh - 190px), 780px);
+            background: #020403;
+            outline: none;
+            image-rendering: auto;
+            touch-action: none;
+        }
+
+        #glcanvas:focus-visible {
+            box-shadow: inset 0 0 0 2px var(--accent);
+        }
+
+        #hud {
+            margin-top: 12px;
+            min-height: 44px;
+            border: 1px solid rgba(0, 230, 118, .22);
+            border-radius: 14px;
+            padding: 12px 14px;
+            background: rgba(0, 0, 0, .28);
+            color: #c7ffdf;
+            overflow-wrap: anywhere;
         }
 
         #panel {
-            max-width: 460px;
-            line-height: 1.4;
+            padding: 24px;
+            align-self: stretch;
+        }
+
+        .kicker {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin-bottom: 12px;
+            font-size: clamp(28px, 4vw, 46px);
+            line-height: 1;
+        }
+
+        h1 .plain {
+            color: var(--text);
+        }
+
+        h1 .accent {
+            color: var(--accent);
+        }
+
+        h2 {
+            margin: 28px 0 12px;
+            font-size: 16px;
+        }
+
+        p {
+            color: var(--muted);
         }
 
         .mono {
@@ -35,50 +240,159 @@
         }
 
         .hint {
-            color: #bbb;
+            color: var(--muted-2);
             font-size: 14px;
         }
 
-        ul {
-            margin-top: 6px;
+        .control-grid {
+            display: grid;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .control-grid li {
+            display: grid;
+            grid-template-columns: 76px 1fr;
+            gap: 10px;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, .09);
+            border-radius: 12px;
+            padding: 9px 10px;
+            background: var(--panel-2);
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        kbd {
+            display: inline-flex;
+            min-height: 28px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 230, 118, .42);
+            border-radius: 8px;
+            background: rgba(0, 230, 118, .10);
+            color: #c7ffdf;
+            font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        }
+
+        .note {
+            margin-top: 20px;
+            border-left: 3px solid var(--accent);
+            padding: 12px 0 12px 14px;
+            background: linear-gradient(90deg, rgba(0, 230, 118, .08), transparent);
+        }
+
+        @media (max-width: 1100px) {
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #glcanvas {
+                height: clamp(360px, 62vh, 620px);
+            }
+        }
+
+        @media (max-width: 680px) {
+            #wrap {
+                width: min(100% - 20px, 1440px);
+                padding-top: 14px;
+            }
+
+            .topbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .top-actions {
+                justify-content: flex-start;
+            }
+
+            .stage-card,
+            #panel {
+                border-radius: 16px;
+            }
+
+            .stage-card {
+                padding: 10px;
+            }
+
+            #glcanvas {
+                height: 360px;
+            }
+
+            #panel {
+                padding: 18px;
+            }
+
+            .control-grid li {
+                grid-template-columns: 68px 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
     <div id="wrap">
-        <div>
-            <canvas id="glcanvas" width="620" height="620"></canvas>
-            <div id="hud" class="mono hint"></div>
-        </div>
+        <header class="topbar">
+            <a class="brand" href="../../index.html">
+                <span class="logo">SCB</span>
+                <span>Santiago Cardozo Botero</span>
+            </a>
 
-        <div id="panel">
-            <h2>Proyecto Final - Iluminación avanzada + atmósfera</h2>
-            <p>
-                Mini diorama 3D para comparar Gouraud, Phong y Blinn-Phong, con spotlight, fog y toon.
-                Incluye cámara orbital y traslación por ejes.
-            </p>
+            <div class="top-actions">
+                <button class="back-link lang-toggle" id="langToggle" type="button">Español</button>
+                <a class="back-link" href="proyectofinalgraficos.html" data-i18n="backProject">Back to project</a>
+            </div>
+        </header>
 
-            <h3>Controles</h3>
-            <ul class="mono">
-                <li>1 → Gouraud</li>
-                <li>2 → Phong (fragment)</li>
-                <li>3 → Blinn-Phong (fragment)</li>
-                <li>4 → Spotlight ON / OFF</li>
-                <li>5 → Fog ON / OFF</li>
-                <li>6 → Toon ON / OFF</li>
-                <li>P → Perspectiva / Ortográfica</li>
-                <li>Ratón (arrastrar) → Orbitar</li>
-                <li>Rueda → Zoom</li>
-                <li>W/S/A/D → mover cámara en X/Z</li>
-                <li>Q/E → subir/bajar (Y)</li>
-                <li>Shift + WASD/QE → movimiento más rápido</li>
-            </ul>
+        <div class="demo-grid">
+            <section class="stage-card" aria-label="Interactive WebGL scene" data-i18n-aria-label="sceneLabel">
+                <div class="canvas-frame">
+                    <canvas
+                        id="glcanvas"
+                        width="1280"
+                        height="820"
+                        tabindex="0"
+                        aria-label="Interactive 3D computer graphics scene"
+                        data-i18n-aria-label="canvasLabel"></canvas>
+                </div>
+                <div id="hud" class="mono hint" aria-live="polite"></div>
+            </section>
 
-            <p class="hint">
-                Nota: Para la demo, la diferencia entre Phong (2) y Blinn (3) está exagerada en el especular
-                (shininess distinto) para que se aprecie claramente.
-            </p>
+            <aside id="panel">
+                <p class="kicker" data-i18n="kicker">Interactive WebGL Demo</p>
+                <h1>
+                    <span class="plain" data-i18n="titleMain">Lighting, Shading</span>
+                    <span class="accent" data-i18n="titleAccent">and Atmosphere</span>
+                </h1>
+                <p data-i18n="intro">
+                    Mini 3D diorama for comparing Gouraud, Phong and Blinn-Phong shading with spotlight,
+                    fog and toon rendering. The scene includes an orbital camera and axis-based movement.
+                </p>
+
+                <h2 data-i18n="controlsTitle">Controls</h2>
+                <ul class="control-grid">
+                    <li><kbd>1</kbd><span data-i18n="controlGouraud">Gouraud shading</span></li>
+                    <li><kbd>2</kbd><span data-i18n="controlPhong">Phong shading</span></li>
+                    <li><kbd>3</kbd><span data-i18n="controlBlinn">Blinn-Phong shading</span></li>
+                    <li><kbd>4</kbd><span data-i18n="controlSpotlight">Spotlight on / off</span></li>
+                    <li><kbd>5</kbd><span data-i18n="controlFog">Fog on / off</span></li>
+                    <li><kbd>6</kbd><span data-i18n="controlToon">Toon rendering on / off</span></li>
+                    <li><kbd>P</kbd><span data-i18n="controlProjection">Perspective / orthographic projection</span></li>
+                    <li><kbd>Drag</kbd><span data-i18n="controlDrag">Orbit camera</span></li>
+                    <li><kbd>Wheel</kbd><span data-i18n="controlWheel">Zoom camera</span></li>
+                    <li><kbd>WASD</kbd><span data-i18n="controlWASD">Move camera on X/Z axes</span></li>
+                    <li><kbd>Q / E</kbd><span data-i18n="controlQE">Move camera up / down</span></li>
+                    <li><kbd>Shift</kbd><span data-i18n="controlShift">Faster camera movement</span></li>
+                </ul>
+
+                <p class="hint note" data-i18n="note">
+                    The Phong and Blinn-Phong specular values are intentionally exaggerated so the visual
+                    difference is easier to read in a portfolio demo.
+                </p>
+            </aside>
         </div>
     </div>
 
@@ -267,6 +581,167 @@
 
           gl_FragColor = vec4(color, 1.0);
         }
+    </script>
+
+    <script>
+        (() => {
+            const texts = {
+                en: {
+                    title: "Computer Graphics Demo - Lighting and Atmosphere",
+                    metaDescription: "Interactive WebGL demo exploring Gouraud, Phong, Blinn-Phong, spotlight, fog and toon shading.",
+                    backProject: "Back to project",
+                    sceneLabel: "Interactive WebGL scene",
+                    canvasLabel: "Interactive 3D computer graphics scene",
+                    kicker: "Interactive WebGL Demo",
+                    titleMain: "Lighting, Shading",
+                    titleAccent: "and Atmosphere",
+                    intro: "Mini 3D diorama for comparing Gouraud, Phong and Blinn-Phong shading with spotlight, fog and toon rendering. The scene includes an orbital camera and axis-based movement.",
+                    controlsTitle: "Controls",
+                    controlGouraud: "Gouraud shading",
+                    controlPhong: "Phong shading",
+                    controlBlinn: "Blinn-Phong shading",
+                    controlSpotlight: "Spotlight on / off",
+                    controlFog: "Fog on / off",
+                    controlToon: "Toon rendering on / off",
+                    controlProjection: "Perspective / orthographic projection",
+                    controlDrag: "Orbit camera",
+                    controlWheel: "Zoom camera",
+                    controlWASD: "Move camera on X/Z axes",
+                    controlQE: "Move camera up / down",
+                    controlShift: "Faster camera movement",
+                    note: "The Phong and Blinn-Phong specular values are intentionally exaggerated so the visual difference is easier to read in a portfolio demo.",
+                    webglUnavailable: "WebGL is not available in this browser.",
+                    hudMode: "Mode",
+                    hudSpotlight: "Spotlight",
+                    hudFog: "Fog",
+                    hudToon: "Toon",
+                    hudProjection: "Projection",
+                    hudOffset: "Offset",
+                    hudPerspective: "Perspective",
+                    hudOrthographic: "Orthographic",
+                    hudOn: "on",
+                    hudOff: "off"
+                },
+                es: {
+                    title: "Demo de Graficos por Computacion - Iluminacion y Atmosfera",
+                    metaDescription: "Demo interactiva WebGL que explora sombreado Gouraud, Phong, Blinn-Phong, luz focal, niebla y renderizado toon.",
+                    backProject: "Volver al proyecto",
+                    sceneLabel: "Escena WebGL interactiva",
+                    canvasLabel: "Escena 3D interactiva de graficos por computacion",
+                    kicker: "Demo WebGL Interactiva",
+                    titleMain: "Iluminacion, Sombreado",
+                    titleAccent: "y Atmosfera",
+                    intro: "Mini diorama 3D para comparar sombreado Gouraud, Phong y Blinn-Phong con luz focal, niebla y renderizado toon. La escena incluye una camara orbital y movimiento basado en ejes.",
+                    controlsTitle: "Controles",
+                    controlGouraud: "Sombreado Gouraud",
+                    controlPhong: "Sombreado Phong",
+                    controlBlinn: "Sombreado Blinn-Phong",
+                    controlSpotlight: "Luz focal activar / desactivar",
+                    controlFog: "Niebla activar / desactivar",
+                    controlToon: "Renderizado toon activar / desactivar",
+                    controlProjection: "Proyeccion perspectiva / ortografica",
+                    controlDrag: "Orbitar camara",
+                    controlWheel: "Zoom de camara",
+                    controlWASD: "Mover camara en ejes X/Z",
+                    controlQE: "Mover camara arriba / abajo",
+                    controlShift: "Movimiento de camara mas rapido",
+                    note: "Los valores especulares de Phong y Blinn-Phong estan exagerados intencionalmente para que la diferencia visual sea mas facil de leer en una demo de portafolio.",
+                    webglUnavailable: "WebGL no esta disponible en este navegador.",
+                    hudMode: "Modo",
+                    hudSpotlight: "Luz focal",
+                    hudFog: "Niebla",
+                    hudToon: "Toon",
+                    hudProjection: "Proyeccion",
+                    hudOffset: "Desplazamiento",
+                    hudPerspective: "Perspectiva",
+                    hudOrthographic: "Ortografica",
+                    hudOn: "activo",
+                    hudOff: "inactivo"
+                }
+            };
+
+            const DEFAULT_LANGUAGE = "en";
+            const STORAGE_KEY = "language";
+            const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
+            const LANGUAGE_VERSION = "english-default-v2";
+
+            if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
+                localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
+                localStorage.setItem(LANGUAGE_VERSION_KEY, LANGUAGE_VERSION);
+            }
+
+            let currentLang = texts[localStorage.getItem(STORAGE_KEY)]
+                ? localStorage.getItem(STORAGE_KEY)
+                : DEFAULT_LANGUAGE;
+
+            function getDictionary() {
+                return texts[currentLang] || texts[DEFAULT_LANGUAGE];
+            }
+
+            function getText(key) {
+                const dictionary = getDictionary();
+                return Object.prototype.hasOwnProperty.call(dictionary, key)
+                    ? dictionary[key]
+                    : texts[DEFAULT_LANGUAGE][key];
+            }
+
+            function applyLanguage() {
+                const dictionary = getDictionary();
+                document.documentElement.lang = currentLang;
+
+                if (dictionary.title) {
+                    document.title = dictionary.title;
+                }
+
+                document.querySelectorAll("[data-i18n]").forEach((element) => {
+                    const key = element.dataset.i18n;
+                    if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                        element.textContent = dictionary[key];
+                    }
+                });
+
+                document.querySelectorAll("[data-i18n-content]").forEach((element) => {
+                    const key = element.dataset.i18nContent;
+                    if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                        element.setAttribute("content", dictionary[key]);
+                    }
+                });
+
+                document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+                    const key = element.dataset.i18nAriaLabel;
+                    if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                        element.setAttribute("aria-label", dictionary[key]);
+                    }
+                });
+
+                const langButton = document.getElementById("langToggle");
+                if (langButton) {
+                    langButton.textContent = currentLang === "en" ? "Español" : "English";
+                    langButton.setAttribute(
+                        "aria-label",
+                        currentLang === "en" ? "Change language to Spanish" : "Cambiar idioma a ingles"
+                    );
+                }
+
+                window.dispatchEvent(new CustomEvent("portfolio-language-change", {
+                    detail: { language: currentLang }
+                }));
+            }
+
+            function toggleLanguage() {
+                currentLang = currentLang === "en" ? "es" : "en";
+                localStorage.setItem(STORAGE_KEY, currentLang);
+                applyLanguage();
+            }
+
+            window.portfolioDemoI18n = {
+                getLanguage: () => currentLang,
+                getText
+            };
+
+            applyLanguage();
+            document.getElementById("langToggle")?.addEventListener("click", toggleLanguage);
+        })();
     </script>
 
     <script src="ProyectFinalSantiagoCardozo.js"></script>

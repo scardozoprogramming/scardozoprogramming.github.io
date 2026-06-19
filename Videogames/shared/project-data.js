@@ -1255,7 +1255,7 @@ window.portfolioProjectData = {
             "Computer graphics portfolio project exploring lighting, shading models, fog and interactive scene presentation.",
     
           skip_link: "Skip to content",
-          role_label: "Game Programmer",
+          role_label: "Graphics Programmer",
           back_link: "← Back",
           demo_link: "Demo",
           gallery_link: "Gallery",
@@ -1285,6 +1285,20 @@ window.portfolioProjectData = {
           preview_h2: "Scene Preview",
           preview_caption:
             "Initial scene view used to frame the lighting, shading and atmosphere comparisons.",
+
+          case_kicker: "Technical Case Study",
+          case_h2: "Rendering-Focused Portfolio Format",
+          case_p:
+            "Because this is not a game project, the page is structured around the technical problem, implementation approach and visual evidence behind the graphics demo.",
+          case_problem_h: "Problem",
+          case_problem_p:
+            "A carousel made the project feel like a game showcase instead of a computer graphics study.",
+          case_solution_h: "Solution",
+          case_solution_p:
+            "The page now presents the scene as a technical artifact with a clear preview, rendering topics, demo access and implementation notes.",
+          case_result_h: "Result",
+          case_result_p:
+            "The project reads more like a graphics programming case study, closer to the professional format used for Okiyama.",
     
           demo_kicker: "Interactive Demo",
           demo_h2: "Open the Computer Graphics Scene",
@@ -1383,7 +1397,7 @@ window.portfolioProjectData = {
             "Proyecto de gráficos por computación que explora iluminación, modelos de sombreado, niebla y presentación de escena interactiva.",
     
           skip_link: "Saltar al contenido",
-          role_label: "Programador de Videojuegos",
+          role_label: "Programador de Gráficos",
           back_link: "← Volver",
           demo_link: "Demo",
           gallery_link: "Galería",
@@ -1413,6 +1427,20 @@ window.portfolioProjectData = {
           preview_h2: "Vista Previa de la Escena",
           preview_caption:
             "Vista inicial de la escena usada para contextualizar comparaciones de iluminación, sombreado y atmósfera.",
+
+          case_kicker: "Caso Técnico",
+          case_h2: "Formato Enfocado en Renderizado",
+          case_p:
+            "Como este no es un proyecto de videojuego, la página se estructura alrededor del problema técnico, la implementación y la evidencia visual de la demo de gráficos.",
+          case_problem_h: "Problema",
+          case_problem_p:
+            "El carrusel hacía que el proyecto se sintiera como una muestra de videojuego en lugar de un estudio de gráficos por computación.",
+          case_solution_h: "Solución",
+          case_solution_p:
+            "La página ahora presenta la escena como un artefacto técnico con vista previa clara, temas de renderizado, acceso a la demo y notas de implementación.",
+          case_result_h: "Resultado",
+          case_result_p:
+            "El proyecto se lee más como un caso de estudio de programación gráfica, cercano al formato profesional usado en Okiyama.",
     
           demo_kicker: "Demo Interactiva",
           demo_h2: "Abrir la Escena de Gráficos",

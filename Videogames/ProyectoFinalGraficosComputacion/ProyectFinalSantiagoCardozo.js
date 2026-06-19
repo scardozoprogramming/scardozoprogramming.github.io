@@ -12,12 +12,34 @@
 (function () {
     const canvas = document.getElementById("glcanvas");
     const hud = document.getElementById("hud");
-    const gl = canvas.getContext("webgl");
-    if (!gl) { alert("WebGL no disponible"); return; }
+    const i18n = window.portfolioDemoI18n;
+
+    function text(key, fallback) {
+        return i18n?.getText?.(key) || fallback;
+    }
+
+    const gl = canvas.getContext("webgl", {
+        antialias: true,
+        alpha: false,
+        powerPreference: "high-performance"
+    });
+    if (!gl) { alert(text("webglUnavailable", "WebGL is not available in this browser.")); return; }
 
     gl.enable(gl.DEPTH_TEST);
     gl.depthFunc(gl.LEQUAL);
     gl.clearColor(0.03, 0.03, 0.05, 1.0);
+
+    function resizeCanvasToDisplaySize() {
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        const rect = canvas.getBoundingClientRect();
+        const width = Math.max(1, Math.floor(rect.width * ratio));
+        const height = Math.max(1, Math.floor(rect.height * ratio));
+
+        if (canvas.width !== width || canvas.height !== height) {
+            canvas.width = width;
+            canvas.height = height;
+        }
+    }
 
     // ============================================================
     // Mini Math (vec3/mat4/mat3)
@@ -368,9 +390,16 @@
     // Traslación en ejes
     const camOffset = vec3.from(0, 0, 0);
 
-    canvas.addEventListener("mousedown", (e) => { dragging = true; lastX = e.clientX; lastY = e.clientY; });
-    window.addEventListener("mouseup", () => dragging = false);
-    window.addEventListener("mousemove", (e) => {
+    canvas.addEventListener("pointerdown", (e) => {
+        dragging = true;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        canvas.focus();
+        canvas.setPointerCapture?.(e.pointerId);
+    });
+
+    window.addEventListener("pointerup", () => dragging = false);
+    window.addEventListener("pointermove", (e) => {
         if (!dragging) return;
         const dx = (e.clientX - lastX) * 0.01;
         const dy = (e.clientY - lastY) * 0.01;
@@ -446,7 +475,7 @@
         const up = vec3.from(0, 1, 0);
         mat4.lookAt(V, eye, center, up);
 
-        const aspect = canvas.width / canvas.height;
+        const aspect = gl.drawingBufferWidth / gl.drawingBufferHeight;
         if (usePerspective) {
             mat4.perspective(P, 45 * Math.PI / 180, aspect, 0.1, 120.0);
         } else {
@@ -535,7 +564,8 @@
     // Render loop
     // ============================================================
     function draw() {
-        gl.viewport(0, 0, canvas.width, canvas.height);
+        resizeCanvasToDisplaySize();
+        gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
         updateCameraAndProjection();
@@ -558,8 +588,18 @@
         }
 
         const modeName = (renderMode === 1) ? "Gouraud" : (renderMode === 2) ? "Phong" : "Blinn-Phong";
+        const projectionName = usePerspective
+            ? text("hudPerspective", "Perspective")
+            : text("hudOrthographic", "Orthographic");
+        const toggleLabel = (value) => value ? text("hudOn", "on") : text("hudOff", "off");
+
         hud.textContent =
-            `Modo:${modeName} | Spot:${useSpot} | Fog:${useFog} | Toon:${useToon} | Proj:${usePerspective ? "Persp" : "Ortho"} | Offset: (${camOffset[0].toFixed(1)},${camOffset[1].toFixed(1)},${camOffset[2].toFixed(1)})`;
+            `${text("hudMode", "Mode")}: ${modeName} | ` +
+            `${text("hudSpotlight", "Spotlight")}: ${toggleLabel(useSpot)} | ` +
+            `${text("hudFog", "Fog")}: ${toggleLabel(useFog)} | ` +
+            `${text("hudToon", "Toon")}: ${toggleLabel(useToon)} | ` +
+            `${text("hudProjection", "Projection")}: ${projectionName} | ` +
+            `${text("hudOffset", "Offset")}: (${camOffset[0].toFixed(1)},${camOffset[1].toFixed(1)},${camOffset[2].toFixed(1)})`;
 
         requestAnimationFrame(draw);
     }
