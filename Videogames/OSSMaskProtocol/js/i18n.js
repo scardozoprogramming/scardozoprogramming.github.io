@@ -22,6 +22,17 @@
       hero_stat2_p: "Team members",
       hero_stat3_p: "Game engine",
 
+      info_kicker: "Quick read",
+      info_h2: "Project Info",
+      info1_h: "Role",
+      info1_p: "Programmer & Producer",
+      info2_h: "Engine",
+      info2_p: "Unity",
+      info3_h: "Team",
+      info3_p: "8 members",
+      info4_h: "Duration",
+      info4_p: "48-hour game jam",
+
       play_kicker: "Playable Build",
       play_h2: "Play OSS Mask Protocol",
       play_button: "Play on itch.io",
@@ -34,6 +45,37 @@
       overview_fact1_p: "Development window",
       overview_fact2_h: "Game Jam",
       overview_fact2_p: "Production format",
+
+      proof_kicker: "Portfolio evidence",
+      proof_h2: "Technical Proof",
+      proof_p:
+        "This project is strongest when it communicates speed, scope control and your mixed programming/production responsibility.",
+      proof1_h: "Playable Build",
+      proof1_p:
+        "The itch.io link gives evaluators direct access to the delivered game jam prototype.",
+      proof2_h: "Production Evidence",
+      proof2_p:
+        "The page explains coordination work across art, music, modeling, animation and final delivery.",
+      proof3_h: "Presentation Artifact",
+      proof3_p:
+        "The embedded PDF works as supporting documentation for concept, UI, sketches and team structure.",
+
+      timeline_kicker: "Production",
+      timeline_h2: "48-Hour Timeline",
+      timeline_p:
+        "For a game jam project, the production story matters. This timeline shows how the work moved from concept to delivery.",
+      timeline1_h: "Concept",
+      timeline1_p:
+        "The team aligned on the theme, playable idea and minimum viable scope for the jam.",
+      timeline2_h: "Prototype",
+      timeline2_p:
+        "Programming focused on core input, player interaction and basic NPC behavior support.",
+      timeline3_h: "Integration",
+      timeline3_p:
+        "Production work kept art, music, modeling and animation moving toward a playable build.",
+      timeline4_h: "Delivery",
+      timeline4_p:
+        "Final work focused on presentation material, build preparation and submission readiness.",
 
       role_kicker: "My contribution",
       role_h2: "My Role in the Project",
@@ -86,6 +128,8 @@
       presentation_p:
         "Full presentation including narrative, UI design, sketches and team breakdown.",
       pdf_link: "View Full PDF",
+      presentation_caption:
+        "Embedded production document used as supporting evidence for concept, UI, sketches and team responsibilities.",
 
       tools_h2: "Tools Used"
     },
@@ -112,6 +156,17 @@
       hero_stat2_p: "Integrantes del equipo",
       hero_stat3_p: "Motor del juego",
 
+      info_kicker: "Lectura rápida",
+      info_h2: "Ficha del Proyecto",
+      info1_h: "Rol",
+      info1_p: "Programador & Productor",
+      info2_h: "Motor",
+      info2_p: "Unity",
+      info3_h: "Equipo",
+      info3_p: "8 integrantes",
+      info4_h: "Duración",
+      info4_p: "Game jam de 48 horas",
+
       play_kicker: "Versión Jugable",
       play_h2: "Juega OSS Mask Protocol",
       play_button: "Jugar en itch.io",
@@ -124,6 +179,37 @@
       overview_fact1_p: "Ventana de desarrollo",
       overview_fact2_h: "Game Jam",
       overview_fact2_p: "Formato de producción",
+
+      proof_kicker: "Evidencia de portafolio",
+      proof_h2: "Prueba Técnica",
+      proof_p:
+        "Este proyecto se vuelve más fuerte cuando comunica velocidad, control de alcance y tu responsabilidad mixta como programador/productor.",
+      proof1_h: "Build Jugable",
+      proof1_p:
+        "El enlace de itch.io da acceso directo al prototipo entregado durante la game jam.",
+      proof2_h: "Evidencia de Producción",
+      proof2_p:
+        "La página explica coordinación entre arte, música, modelado, animación y entrega final.",
+      proof3_h: "Artefacto de Presentación",
+      proof3_p:
+        "El PDF incrustado funciona como documentación de concepto, UI, bocetos y estructura de equipo.",
+
+      timeline_kicker: "Producción",
+      timeline_h2: "Timeline de 48 Horas",
+      timeline_p:
+        "Para un proyecto de game jam, la historia de producción importa. Este timeline muestra cómo el trabajo avanzó desde concepto hasta entrega.",
+      timeline1_h: "Concepto",
+      timeline1_p:
+        "El equipo alineó la temática, la idea jugable y el alcance mínimo viable para la jam.",
+      timeline2_h: "Prototipo",
+      timeline2_p:
+        "La programación se enfocó en input principal, interacción del jugador y apoyo al comportamiento de NPCs.",
+      timeline3_h: "Integración",
+      timeline3_p:
+        "El trabajo de producción mantuvo arte, música, modelado y animación avanzando hacia una build jugable.",
+      timeline4_h: "Entrega",
+      timeline4_p:
+        "El tramo final se enfocó en material de presentación, preparación de build y entrega.",
 
       role_kicker: "Mi contribución",
       role_h2: "Mi Rol en el Proyecto",
@@ -176,6 +262,8 @@
       presentation_p:
         "Presentación completa con narrativa, diseño de UI, bocetos y desglose del equipo.",
       pdf_link: "Ver PDF Completo",
+      presentation_caption:
+        "Documento de producción incrustado como evidencia de concepto, UI, bocetos y responsabilidades del equipo.",
 
       tools_h2: "Herramientas Usadas"
     }

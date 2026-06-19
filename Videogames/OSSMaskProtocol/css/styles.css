@@ -553,6 +553,15 @@ iframe {
   background: #000;
 }
 
+.media-caption {
+  max-width: 900px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .tools-grid {
   grid-template-columns: repeat(6, 1fr);
 }

@@ -22,7 +22,20 @@
       hero_stat2_p: "Implementation",
       hero_stat3_p: "Main focus",
 
+      info_kicker: "Quick read",
+      info_h2: "Project Info",
+      info1_h: "Role",
+      info1_p: "Graphics Programmer",
+      info2_h: "Tech",
+      info2_p: "JavaScript / WebGL / GLSL",
+      info3_h: "Type",
+      info3_p: "Academic technical prototype",
+      info4_h: "Focus",
+      info4_p: "Lighting, shading and fog",
+
       preview_h2: "Scene Preview",
+      preview_caption:
+        "Initial scene view used to frame the lighting, shading and atmosphere comparisons.",
 
       demo_kicker: "Interactive Demo",
       demo_h2: "Open the Computer Graphics Scene",
@@ -38,6 +51,37 @@
       overview_fact1_p: "Core technical topic",
       overview_fact2_h: "Shading",
       overview_fact2_p: "Main comparison",
+
+      proof_kicker: "Portfolio evidence",
+      proof_h2: "Technical Proof",
+      proof_p:
+        "This project works best as a technical artifact, so the page makes the rendering topics and interactive demo explicit.",
+      proof1_h: "Interactive Demo",
+      proof1_p:
+        "The demo link preserves the original scene where evaluators can inspect rendering modes and controls.",
+      proof2_h: "Rendering Comparisons",
+      proof2_p:
+        "The page identifies the lighting and shading comparisons: Gouraud, Phong, Blinn-Phong, flat, smooth and toon.",
+      proof3_h: "Visual Evidence",
+      proof3_p:
+        "GIF captures show the project in motion without requiring the viewer to open the full demo first.",
+
+      render_kicker: "Rendering concepts",
+      render_h2: "Rendering Comparisons",
+      render_p:
+        "This section makes the graphics project easier to evaluate by naming each visual comparison explicitly.",
+      render1_h: "Gouraud vs Phong",
+      render1_p:
+        "Compares vertex-based and fragment-based shading to show differences in highlight smoothness and precision.",
+      render2_h: "Phong vs Blinn-Phong",
+      render2_p:
+        "Highlights how specular response changes between classic Phong and Blinn-Phong lighting.",
+      render3_h: "Fog and Spotlight",
+      render3_p:
+        "Shows how atmospheric depth and spotlight attenuation affect scene readability and mood.",
+      render4_h: "Flat, Smooth and Toon",
+      render4_p:
+        "Demonstrates how different surface styles change the same 3D scene's visual language.",
 
       role_kicker: "My contribution",
       role_h2: "My Role in the Project",
@@ -76,6 +120,10 @@
       tech_scene_li3: "GIF captures prepared to show interaction and visual states.",
 
       gallery_h2: "Interactive Demonstrations",
+      gallery_caption1:
+        "Lighting and shading changes shown in motion for easier visual comparison.",
+      gallery_caption2:
+        "Toon, fog and surface-style comparisons captured from the interactive scene.",
       controls_h2: "Controls",
       tools_h2: "Tools Used"
     },
@@ -102,7 +150,20 @@
       hero_stat2_p: "Implementación",
       hero_stat3_p: "Enfoque principal",
 
+      info_kicker: "Lectura rápida",
+      info_h2: "Ficha del Proyecto",
+      info1_h: "Rol",
+      info1_p: "Programador de Gráficos",
+      info2_h: "Tecnología",
+      info2_p: "JavaScript / WebGL / GLSL",
+      info3_h: "Tipo",
+      info3_p: "Prototipo técnico académico",
+      info4_h: "Enfoque",
+      info4_p: "Iluminación, sombreado y niebla",
+
       preview_h2: "Vista Previa de la Escena",
+      preview_caption:
+        "Vista inicial de la escena usada para contextualizar comparaciones de iluminación, sombreado y atmósfera.",
 
       demo_kicker: "Demo Interactiva",
       demo_h2: "Abrir la Escena de Gráficos",
@@ -118,6 +179,37 @@
       overview_fact1_p: "Tema técnico central",
       overview_fact2_h: "Sombreado",
       overview_fact2_p: "Comparación principal",
+
+      proof_kicker: "Evidencia de portafolio",
+      proof_h2: "Prueba Técnica",
+      proof_p:
+        "Este proyecto funciona mejor como artefacto técnico, así que la página hace explícitos los temas de renderizado y la demo interactiva.",
+      proof1_h: "Demo Interactiva",
+      proof1_p:
+        "El enlace a la demo conserva la escena original para inspeccionar modos de renderizado y controles.",
+      proof2_h: "Comparaciones de Render",
+      proof2_p:
+        "La página identifica las comparaciones de iluminación y sombreado: Gouraud, Phong, Blinn-Phong, flat, smooth y toon.",
+      proof3_h: "Evidencia Visual",
+      proof3_p:
+        "Los GIFs muestran el proyecto en movimiento sin obligar al visitante a abrir la demo completa primero.",
+
+      render_kicker: "Conceptos de render",
+      render_h2: "Comparaciones de Renderizado",
+      render_p:
+        "Esta sección hace que el proyecto de gráficos sea más fácil de evaluar al nombrar explícitamente cada comparación visual.",
+      render1_h: "Gouraud vs Phong",
+      render1_p:
+        "Compara sombreado por vértice y por fragmento para mostrar diferencias en suavidad y precisión de brillos.",
+      render2_h: "Phong vs Blinn-Phong",
+      render2_p:
+        "Destaca cómo cambia la respuesta especular entre Phong clásico y Blinn-Phong.",
+      render3_h: "Niebla y Spotlight",
+      render3_p:
+        "Muestra cómo la profundidad atmosférica y la atenuación del spotlight afectan legibilidad y ambiente.",
+      render4_h: "Flat, Smooth y Toon",
+      render4_p:
+        "Demuestra cómo distintos estilos de superficie cambian el lenguaje visual de la misma escena 3D.",
 
       role_kicker: "Mi contribución",
       role_h2: "Mi Rol en el Proyecto",
@@ -156,6 +248,10 @@
       tech_scene_li3: "GIFs preparados para mostrar interacción y estados visuales.",
 
       gallery_h2: "Demostraciones Interactivas",
+      gallery_caption1:
+        "Cambios de iluminación y sombreado mostrados en movimiento para una comparación visual más clara.",
+      gallery_caption2:
+        "Comparaciones de toon, niebla y estilos de superficie capturadas desde la escena interactiva.",
       controls_h2: "Controles",
       tools_h2: "Herramientas Usadas"
     }

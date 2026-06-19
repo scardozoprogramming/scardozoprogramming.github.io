@@ -22,7 +22,20 @@
       hero_stat2_p: "Game engine",
       hero_stat3_p: "Academic production",
 
+      info_kicker: "Quick read",
+      info_h2: "Project Info",
+      info1_h: "Role",
+      info1_p: "Gameplay Programmer & Game Designer",
+      info2_h: "Engine",
+      info2_p: "Unity",
+      info3_h: "Team",
+      info3_p: "9 members",
+      info4_h: "Focus",
+      info4_p: "Abilities, stealth and level design",
+
       trailer_h2: "Gameplay Trailer",
+      trailer_caption:
+        "Gameplay trailer showing the stealth premise, house navigation and scare-focused interaction loop.",
       playable_note: "Full playable build coming soon on itch.io.",
 
       play_kicker: "Playable Build",
@@ -37,6 +50,40 @@
       overview_fact1_p: "Game genre",
       overview_fact2_h: "Possession",
       overview_fact2_p: "Core mechanic",
+
+      proof_kicker: "Portfolio evidence",
+      proof_h2: "Technical Proof",
+      proof_p:
+        "These points make the page easier to evaluate by separating the trailer from the concrete systems I helped build.",
+      proof1_h: "Ability Systems",
+      proof1_p:
+        "The page calls out the player abilities I programmed, including teleportation, invisibility and NPC X-ray vision.",
+      proof2_h: "Level Design Evidence",
+      proof2_p:
+        "The project explains my work on house layouts, room distribution and ability progression across levels.",
+      proof3_h: "Unity Integration",
+      proof3_p:
+        "The technical breakdown shows scene organization, prefab integration and physics consistency work.",
+
+      abilities_kicker: "Gameplay design",
+      abilities_h2: "Ability Breakdown",
+      abilities_p:
+        "These abilities are the clearest way to show how programming and design support the stealth loop.",
+      ability1_h: "Super Speed",
+      ability1_p:
+        "A movement ability that supports fast repositioning and creates timing decisions during short stealth sessions.",
+      ability2_h: "Teleportation",
+      ability2_p:
+        "A traversal ability that changes how players plan routes, escape danger and move between rooms.",
+      ability3_h: "NPC X-Ray Vision",
+      ability3_p:
+        "An information ability that helps players read resident positions and avoid being surprised.",
+      ability4_h: "Telepathy",
+      ability4_p:
+        "A design tool for reading or influencing resident behavior while keeping the player focused on stealth planning.",
+      ability5_h: "Invisibility",
+      ability5_p:
+        "A risk-control ability that supports escape, repositioning and safer interaction with scare opportunities.",
 
       role_kicker: "My contribution",
       role_h2: "My Role in the Project",
@@ -117,7 +164,20 @@
       hero_stat2_p: "Motor del juego",
       hero_stat3_p: "Producción académica",
 
+      info_kicker: "Lectura rápida",
+      info_h2: "Ficha del Proyecto",
+      info1_h: "Rol",
+      info1_p: "Programador de Gameplay & Diseñador de Juego",
+      info2_h: "Motor",
+      info2_p: "Unity",
+      info3_h: "Equipo",
+      info3_p: "9 integrantes",
+      info4_h: "Enfoque",
+      info4_p: "Habilidades, sigilo y diseño de niveles",
+
       trailer_h2: "Tráiler de Gameplay",
+      trailer_caption:
+        "Tráiler de gameplay que muestra la premisa de sigilo, navegación por casas y loop de interacción basado en sustos.",
       playable_note: "La versión jugable completa estará próximamente en itch.io.",
 
       play_kicker: "Versión Jugable",
@@ -132,6 +192,40 @@
       overview_fact1_p: "Género del juego",
       overview_fact2_h: "Posesión",
       overview_fact2_p: "Mecánica central",
+
+      proof_kicker: "Evidencia de portafolio",
+      proof_h2: "Prueba Técnica",
+      proof_p:
+        "Estos puntos hacen que la página sea más fácil de evaluar, separando el tráiler de los sistemas concretos en los que trabajé.",
+      proof1_h: "Sistemas de Habilidades",
+      proof1_p:
+        "La página destaca las habilidades que programé, incluyendo teleportación, invisibilidad y visión de rayos X para NPCs.",
+      proof2_h: "Evidencia de Level Design",
+      proof2_p:
+        "El proyecto explica mi trabajo en layouts de casas, distribución de habitaciones y progresión de habilidades.",
+      proof3_h: "Integración en Unity",
+      proof3_p:
+        "El breakdown técnico muestra organización de escenas, integración de prefabs y consistencia de físicas.",
+
+      abilities_kicker: "Diseño de gameplay",
+      abilities_h2: "Breakdown de Habilidades",
+      abilities_p:
+        "Estas habilidades son la forma más clara de mostrar cómo programación y diseño apoyan el loop de sigilo.",
+      ability1_h: "Super Velocidad",
+      ability1_p:
+        "Habilidad de movimiento que permite reposicionamiento rápido y crea decisiones de timing en sesiones cortas de sigilo.",
+      ability2_h: "Teleportación",
+      ability2_p:
+        "Habilidad de recorrido que cambia cómo el jugador planea rutas, escapa del peligro y se mueve entre habitaciones.",
+      ability3_h: "Visión Rayos X para NPCs",
+      ability3_p:
+        "Habilidad de información que ayuda a leer posiciones de residentes y evitar sorpresas.",
+      ability4_h: "Telepatía",
+      ability4_p:
+        "Herramienta de diseño para leer o influir comportamiento de residentes manteniendo el foco en la planificación de sigilo.",
+      ability5_h: "Invisibilidad",
+      ability5_p:
+        "Habilidad de control de riesgo que apoya escape, reposicionamiento e interacción más segura con oportunidades de susto.",
 
       role_kicker: "Mi contribución",
       role_h2: "Mi Rol en el Proyecto",

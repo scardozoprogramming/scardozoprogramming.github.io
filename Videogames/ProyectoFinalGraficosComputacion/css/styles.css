@@ -505,6 +505,26 @@ h3 {
   margin-top: 18px;
 }
 
+.media-caption {
+  max-width: 900px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.media-item {
+  margin: 0;
+}
+
+.media-item figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .play-button-wrap {
   display: flex;
   justify-content: center;

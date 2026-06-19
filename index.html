@@ -174,7 +174,7 @@
         }
 
         .hero h1 {
-            font-size: clamp(36px, 6vw, 64px);
+            font-size: clamp(30px, 4.4vw, 48px);
             line-height: 1.04;
             margin: 0 0 18px;
             max-width: 760px;
@@ -194,6 +194,41 @@
             color: var(--muted);
             font-size: 18px;
             max-width: 650px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .hero-proof {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 28px;
+            max-width: 720px;
+        }
+
+        .proof-stat {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 14px;
+            background: rgba(255,255,255,.035);
+        }
+
+        .proof-stat strong {
+            display: block;
+            color: var(--accent);
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .proof-stat span {
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 700;
         }
 
         /* PERFIL */
@@ -221,6 +256,18 @@
             margin-top: 14px;
             gap: 16px;
             padding: 10px;
+        }
+
+        .meta strong[data-i18n="skillsTitle"] {
+            display: inline-block;
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .meta [data-i18n="skillsText"] {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.65;
         }
 
         /* SECCIONES */
@@ -317,6 +364,54 @@
             min-height: 92px;
         }
 
+        .featured-card {
+            grid-column: span 2;
+        }
+
+        .featured-card img:not(.engine-badge) {
+            height: 260px;
+        }
+
+        .featured-card p {
+            min-height: auto;
+        }
+
+        .featured-label {
+            display: inline-flex;
+            margin-top: 14px;
+            border: 1px solid rgba(0,230,118,.36);
+            border-radius: 999px;
+            padding: 6px 10px;
+            background: rgba(0,230,118,.10);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 14px 0 28px;
+        }
+
+        .project-tags span {
+            border: 1px solid rgba(0,230,118,.26);
+            border-radius: 999px;
+            padding: 6px 9px;
+            background: rgba(0,230,118,.06);
+            color: #c7ffdf;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .project-link {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 900;
+        }
+
         .engine-badge {
             position: absolute;
             right: 14px;
@@ -361,6 +456,10 @@
                 padding-top: 58px;
             }
 
+            .hero-proof {
+                grid-template-columns: 1fr;
+            }
+
             .cards {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -394,8 +493,20 @@
                 grid-template-columns: 1fr;
             }
 
+            .featured-card {
+                grid-column: span 1;
+            }
+
+            .featured-card img:not(.engine-badge) {
+                height: 190px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
             .hero h1 {
-                font-size: 34px;
+                font-size: 30px;
             }
 
             .card p {
@@ -429,6 +540,24 @@
                 <p class="lead" data-i18n="heroText">
                     A portfolio of academic, collaborative and personal projects exploring game development through Unity, C#, gameplay mechanics, game design and interactive systems.
                 </p>
+                <div class="hero-actions">
+                    <a class="cta" href="#projects" data-i18n="heroPrimaryCta">View Projects</a>
+                    <a class="cta" href="#contact" data-i18n="heroSecondaryCta">Contact Me</a>
+                </div>
+                <div class="hero-proof" aria-label="Portfolio proof points">
+                    <div class="proof-stat">
+                        <strong>Unity + C#</strong>
+                        <span data-i18n="proofSystems">Gameplay systems, UI and interaction logic</span>
+                    </div>
+                    <div class="proof-stat">
+                        <strong>5 Projects</strong>
+                        <span data-i18n="proofProjects">Playable games, prototypes and graphics work</span>
+                    </div>
+                    <div class="proof-stat">
+                        <strong>Team Work</strong>
+                        <span data-i18n="proofTeam">Academic, jam and collaborative productions</span>
+                    </div>
+                </div>
             </div>
             <aside class="profile-card">
                 <img src="Picture/FotoSantiagoCardozoBotero.jpeg" alt="Santiago Cardozo Botero">
@@ -449,49 +578,75 @@
 
             <div class="cards">
 
-                <a class="card" href="Videogames/Lobstar/lobstar.html">
-                    <img src="Videogames/Lobstar/lobstar-poster.PNG" alt="LOBSTAR!">
+                <a class="card featured-card" href="Videogames/Lobstar/lobstar.html">
+                    <img src="Videogames/Lobstar/lobstar-poster.PNG" alt="LOBSTAR!" loading="lazy" decoding="async">
+                    <span class="featured-label" data-i18n="featuredProject">Featured Project</span>
                     <h4>LOBSTAR!</h4>
                     <p class="muted" data-i18n="lobstarDesc">
                         It is an Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).
                     </p>
+                    <div class="project-tags">
+                        <span data-i18n="lobstarRole">Role: Gameplay/UI programming</span>
+                        <span data-i18n="lobstarProof">Evidence: trailer + playable build</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
                 <a class="card" href="Videogames/SmackThatRooster/smackthatrooster.html">
-                    <img src="Videogames/SmackThatRooster/SmackThatRooster.PNG" alt="SMACK THAT ROOSTER!">
+                    <img src="Videogames/SmackThatRooster/SmackThatRooster.PNG" alt="Smack That Rooster" loading="lazy" decoding="async">
                     <h4>Smack That Rooster</h4>
                     <p class="muted" data-i18n="roosterDesc">
                         It is a Multiplayer combat game focused on match flow, life systems and victory conditions.
                     </p>
-                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
-                </a>
-
-                <a class="card" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html">
-                    <img src="./Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png" alt="OSS Mask Protocol">
-                    <h4>OSS Mask Protocol</h4>
-                    <p class="muted" data-i18n="ossmaskDesc">
-                        It is a platform game that was developed in gamejam 26 with the mask theme.
-                    </p>
+                    <div class="project-tags">
+                        <span data-i18n="roosterRole">Role: Health, timer and results flow</span>
+                        <span data-i18n="roosterProof">Evidence: gameplay video + systems breakdown</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
                 <a class="card" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html">
-                    <img src="./Videogames/BooImInsideYourWall/Poster_Boo.png" alt="Boo Im Inside Your Wall">
-                    <h4>Boo Im Inside Your Wall</h4>
+                    <img src="./Videogames/BooImInsideYourWall/Poster_Boo.png" alt="BOO! I'm Inside Your Walls" loading="lazy" decoding="async">
+                    <h4>BOO! I'm Inside Your Walls</h4>
                     <p class="muted" data-i18n="BooImInsideYourWallDesc">
                         It is a stealth and puzzle game where you control Bunyo, a little ghost who must sneak into homes and terrorize their residents without being detected.
                     </p>
+                    <div class="project-tags">
+                        <span data-i18n="booRole">Role: Player abilities + level design</span>
+                        <span data-i18n="booProof">Evidence: trailer + ability breakdown</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
+                </a>
+
+                <a class="card" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html">
+                    <img src="./Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png" alt="OSS Mask Protocol" loading="lazy" decoding="async">
+                    <h4>OSS Mask Protocol</h4>
+                    <p class="muted" data-i18n="ossmaskDesc">
+                        It is a platform game that was developed in gamejam 26 with the mask theme.
+                    </p>
+                    <div class="project-tags">
+                        <span data-i18n="ossRole">Role: Programmer + producer</span>
+                        <span data-i18n="ossProof">Evidence: itch.io build + PDF</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
                 <a class="card" href="Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html">
                     <img src="./Videogames/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
-                         alt="Proyecto Final Gráficos por Computación">
-                    <h4>Proyecto Final – Gráficos por Computación</h4>
+                         alt="Computer Graphics Final Project" loading="lazy" decoding="async">
+                    <h4>Computer Graphics Final Project</h4>
                     <p class="muted" data-i18n="graphicsDesc">
                         Final academic project exploring lighting, shading models and atmosphere in a 3D scene.
                     </p>
+                    <div class="project-tags">
+                        <span data-i18n="graphicsRole">Role: Lighting and shader presentation</span>
+                        <span data-i18n="graphicsProof">Evidence: interactive demo + GIFs</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
                 </a>
 
             </div>
@@ -510,9 +665,9 @@
                 <div class="contact-card">
                     <p><strong data-i18n="social">Social</strong></p>
                     <div style="display:flex;flex-direction:column;gap:10px;">
-                        <a class="cta" href="https://github.com/scardozoprogramming" target="_blank">GitHub</a>
-                        <a class="cta" href="https://www.linkedin.com/in/santiago-cardozo-botero-2b8802260/" target="_blank">LinkedIn</a>
-                        <a class="cta" href="https://scardozogamer.itch.io/" target="_blank">Itch.io</a>
+                        <a class="cta" href="https://github.com/scardozoprogramming" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="cta" href="https://www.linkedin.com/in/santiago-cardozo-botero-2b8802260/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a class="cta" href="https://scardozogamer.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
                     </div>
                 </div>
             </div>
@@ -577,20 +732,38 @@
                 heroTitle: "Game Developer Portfolio",
                 heroSubtitle: "Creating interactive games, gameplay systems and technical prototypes",
                 heroText: "A portfolio of academic, collaborative and personal projects exploring game development through Unity, C#, gameplay mechanics, game design and interactive systems.",
+                heroPrimaryCta: "View Projects",
+                heroSecondaryCta: "Contact Me",
+                proofSystems: "Gameplay systems, UI and interaction logic",
+                proofProjects: "Playable games, prototypes and graphics work",
+                proofTeam: "Academic, jam and collaborative productions",
 
                 skillsTitle: "Skills",
                 skillsText: "Game Development · Unity (2D/3D) · C# · Gameplay Systems · Game Design · UI Systems · Camera & Combat Logic · Computer Graphics Fundamentals · Lighting & Shading Models · Audio Integration · Collaborative and Personal Projects",
 
                 projectsTitle: "Selected Projects",
 
+                featuredProject: "Featured Project",
                 lobstarDesc: "Arcade action game built with Unity. Winner at Florida GameFest 2025 for Best Game – Public Vote and Jury.",
                 roosterDesc: "Multiplayer combat game focused on match flow, health systems, player interaction and victory conditions.",
-                ossmaskDesc: "Platform game developed during GameJam 26, built around the theme of masks.",
+                ossmaskDesc: "Platform game developed during Game Jam 26, built around the theme of masks.",
                 BooImInsideYourWallDesc: "Stealth and puzzle game where you control Bunyo, a small ghost who sneaks into homes and scares residents without being detected.",
                 graphicsDesc: "Academic 3D graphics project exploring lighting, shading models, atmosphere and scene presentation.",
+                lobstarRole: "Role: Gameplay/UI programming",
+                lobstarProof: "Evidence: trailer + playable build",
+                roosterRole: "Role: Health, timer and results flow",
+                roosterProof: "Evidence: gameplay video + systems breakdown",
+                booRole: "Role: Player abilities + level design",
+                booProof: "Evidence: trailer + ability breakdown",
+                ossRole: "Role: Programmer + producer",
+                ossProof: "Evidence: itch.io build + PDF",
+                graphicsRole: "Role: Lighting and shader presentation",
+                graphicsProof: "Evidence: interactive demo + GIFs",
 
+                viewCaseStudy: "View case study",
                 viewProject: "View Project",
                 contactTitle: "Contact",
+                contactText: "For opportunities, collaborations or feedback, the fastest path is email or LinkedIn.",
                 social: "Social"
             },
 
@@ -603,20 +776,38 @@
                 heroTitle: "Portafolio de Desarrollo de Videojuegos",
                 heroSubtitle: "Creando juegos interactivos, sistemas de gameplay y prototipos técnicos",
                 heroText: "Portafolio con proyectos académicos, colaborativos y personales que exploran el desarrollo de videojuegos con Unity, C#, mecánicas de gameplay, game design y sistemas interactivos.",
+                heroPrimaryCta: "Ver Proyectos",
+                heroSecondaryCta: "Contactarme",
+                proofSystems: "Sistemas de gameplay, UI y lógica de interacción",
+                proofProjects: "Juegos jugables, prototipos y trabajo gráfico",
+                proofTeam: "Producciones académicas, jams y colaborativas",
 
                 skillsTitle: "Habilidades",
                 skillsText: "Desarrollo de Videojuegos · Unity (2D/3D) · C# · Sistemas de Gameplay · Game Design · Sistemas de UI · Lógica de Cámara y Combate · Fundamentos de Gráficos por Computación · Iluminación y Modelos de Sombreado · Integración de Audio · Proyectos Colaborativos y Personales",
 
                 projectsTitle: "Proyectos Destacados",
 
+                featuredProject: "Proyecto Destacado",
                 lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 como Mejor Juego por Voto del Público y Jurado.",
                 roosterDesc: "Juego de combate multijugador enfocado en flujo de partida, sistemas de vida, interacción entre jugadores y condiciones de victoria.",
                 ossmaskDesc: "Juego de plataformas desarrollado durante la GameJam 26, construido alrededor de la temática de máscaras.",
                 BooImInsideYourWallDesc: "Juego de sigilo y puzles donde controlas a Bunyo, un pequeño fantasma que se infiltra en hogares y asusta residentes sin ser detectado.",
                 graphicsDesc: "Proyecto académico de gráficos 3D que explora iluminación, modelos de sombreado, atmósfera y presentación de escena.",
+                lobstarRole: "Rol: Programación de gameplay/UI",
+                lobstarProof: "Evidencia: tráiler + build jugable",
+                roosterRole: "Rol: Vida, temporizador y resultados",
+                roosterProof: "Evidencia: video de gameplay + breakdown",
+                booRole: "Rol: Habilidades del jugador + level design",
+                booProof: "Evidencia: tráiler + desglose de habilidades",
+                ossRole: "Rol: Programador + productor",
+                ossProof: "Evidencia: build en itch.io + PDF",
+                graphicsRole: "Rol: Iluminación y presentación de shaders",
+                graphicsProof: "Evidencia: demo interactiva + GIFs",
 
+                viewCaseStudy: "Ver caso de estudio",
                 viewProject: "Ver Proyecto",
                 contactTitle: "Contacto",
+                contactText: "Para oportunidades, colaboraciones o feedback, lo más directo es email o LinkedIn.",
                 social: "Redes"
             }
         };

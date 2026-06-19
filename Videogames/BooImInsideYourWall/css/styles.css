@@ -503,6 +503,15 @@ iframe {
   padding: 10px;
 }
 
+.media-caption {
+  max-width: 900px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .video-shell video {
   width: min(100%, 900px);
   margin-inline: auto;

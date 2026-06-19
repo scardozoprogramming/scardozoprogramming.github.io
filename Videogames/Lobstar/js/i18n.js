@@ -22,11 +22,30 @@
       hero_stat2_p: "Game engine",
       hero_stat3_p: "Development period",
 
+      info_kicker: "Quick read",
+      info_h2: "Project Info",
+      info1_h: "Role",
+      info1_p: "Game Programmer",
+      info2_h: "Engine",
+      info2_p: "Unity",
+      info3_h: "Team",
+      info3_p: "9 members",
+      info4_h: "Result",
+      info4_p: "Florida GameFest winner",
+
       trailer_h2: "Gameplay Trailer",
+      trailer_caption:
+        "Trailer showing the arcade loop, player feedback and polished presentation used for the final project showcase.",
 
       play_kicker: "Playable Build",
       play_h2: "Play LOBSTAR!",
       play_button: "▶ Play Now",
+
+      doc_kicker: "Documentation",
+      doc_h2: "Project PDF",
+      doc_p:
+        "Supporting project document with additional context about the game, production and presentation material.",
+      doc_button: "View Project PDF",
 
       overview_h2: "Project Overview",
       overview_p:
@@ -37,6 +56,34 @@
 
       overview_fact2_h: "Award Winner",
       overview_fact2_p: "Florida GameFest 2025",
+
+      proof_kicker: "Portfolio evidence",
+      proof_h2: "Technical Proof",
+      proof_p:
+        "A quick read of the concrete evidence behind the project: what to watch, what to play and what systems connect to my contribution.",
+      proof1_h: "Playable Build",
+      proof1_p:
+        "The project includes a playable web build, so the game feel and interaction loop can be tested directly.",
+      proof2_h: "Gameplay/UI Work",
+      proof2_p:
+        "The project page highlights my work on gameplay behavior, interface systems and Unity integration.",
+      proof3_h: "Award Context",
+      proof3_p:
+        "The Florida GameFest result gives the project external validation beyond the classroom or portfolio page.",
+
+      award_kicker: "Result",
+      award_h2: "Award Context",
+      award_p:
+        "LOBSTAR! is the project I would present first because it combines playable work, team production and external recognition.",
+      award1_h: "Public Vote",
+      award1_p:
+        "The public vote result helps show that the project connected with players, not only with its development team.",
+      award2_h: "Jury Recognition",
+      award2_p:
+        "The jury result adds a stronger signal that the game was evaluated positively in a formal event context.",
+      award3_h: "Portfolio Value",
+      award3_p:
+        "For a recruiter or professor, this makes LOBSTAR! a strong opening project because it has both proof and outcome.",
 
       role_kicker: "My contribution",
       role_h2: "My Role in the Project",
@@ -107,11 +154,30 @@
       hero_stat2_p: "Motor del juego",
       hero_stat3_p: "Periodo de desarrollo",
 
+      info_kicker: "Lectura rápida",
+      info_h2: "Ficha del Proyecto",
+      info1_h: "Rol",
+      info1_p: "Programador de Videojuegos",
+      info2_h: "Motor",
+      info2_p: "Unity",
+      info3_h: "Equipo",
+      info3_p: "9 integrantes",
+      info4_h: "Resultado",
+      info4_p: "Ganador en Florida GameFest",
+
       trailer_h2: "Tráiler de Gameplay",
+      trailer_caption:
+        "Tráiler que muestra el loop arcade, feedback del jugador y presentación pulida usada para la muestra final del proyecto.",
 
       play_kicker: "Versión Jugable",
       play_h2: "Juega LOBSTAR!",
       play_button: "▶ Jugar Ahora",
+
+      doc_kicker: "Documentación",
+      doc_h2: "PDF del Proyecto",
+      doc_p:
+        "Documento de apoyo con contexto adicional sobre el juego, producción y material de presentación.",
+      doc_button: "Ver PDF del Proyecto",
 
       overview_h2: "Resumen del Proyecto",
       overview_p:
@@ -122,6 +188,34 @@
 
       overview_fact2_h: "Juego Ganador",
       overview_fact2_p: "Florida GameFest 2025",
+
+      proof_kicker: "Evidencia de portafolio",
+      proof_h2: "Prueba Técnica",
+      proof_p:
+        "Una lectura rápida de la evidencia concreta del proyecto: qué ver, qué jugar y qué sistemas se conectan con mi contribución.",
+      proof1_h: "Build Jugable",
+      proof1_p:
+        "El proyecto incluye una build web jugable, así que el game feel y el loop de interacción se pueden probar directamente.",
+      proof2_h: "Gameplay/UI",
+      proof2_p:
+        "La página destaca mi trabajo en comportamiento de gameplay, sistemas de interfaz e integración en Unity.",
+      proof3_h: "Validación Externa",
+      proof3_p:
+        "El resultado en Florida GameFest le da al proyecto validación externa más allá del aula o del portafolio.",
+
+      award_kicker: "Resultado",
+      award_h2: "Contexto del Premio",
+      award_p:
+        "LOBSTAR! es el proyecto que presentaría primero porque combina trabajo jugable, producción en equipo y reconocimiento externo.",
+      award1_h: "Voto del Público",
+      award1_p:
+        "El resultado por voto del público ayuda a mostrar que el proyecto conectó con jugadores, no solo con el equipo de desarrollo.",
+      award2_h: "Reconocimiento del Jurado",
+      award2_p:
+        "El resultado del jurado añade una señal más fuerte de que el juego fue evaluado positivamente en un evento formal.",
+      award3_h: "Valor de Portafolio",
+      award3_p:
+        "Para un recruiter o profesor, esto hace que LOBSTAR! sea un proyecto inicial fuerte porque tiene evidencia y resultado.",
 
       role_kicker: "Mi contribución",
       role_h2: "Mi Rol en el Proyecto",

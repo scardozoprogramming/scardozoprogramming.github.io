@@ -22,7 +22,26 @@
       hero_stat2_p: "Game engine",
       hero_stat3_p: "Development period",
 
+      info_kicker: "Quick read",
+      info_h2: "Project Info",
+      info1_h: "Role",
+      info1_p: "Game Programmer",
+      info2_h: "Engine",
+      info2_p: "Unity",
+      info3_h: "Team",
+      info3_p: "3 members",
+      info4_h: "Focus",
+      info4_p: "Health, timer and victory logic",
+
       trailer_h2: "Gameplay Video",
+      trailer_caption:
+        "Gameplay video focused on readable multiplayer combat, match pacing and end-of-round feedback.",
+
+      doc_kicker: "Documentation",
+      doc_h2: "Project PDF",
+      doc_p:
+        "Supporting project document with additional context about the combat prototype and production work.",
+      doc_button: "View Project PDF",
 
       overview_h2: "Project Overview",
       overview_p:
@@ -32,6 +51,43 @@
       overview_fact1_p: "Game mode",
       overview_fact2_h: "Combat",
       overview_fact2_p: "Main focus",
+
+      proof_kicker: "Portfolio evidence",
+      proof_h2: "Technical Proof",
+      proof_p:
+        "This page now separates the gameplay video from the specific systems that demonstrate my programming contribution.",
+      proof1_h: "Match Systems",
+      proof1_p:
+        "The project highlights health, timer and victory-condition logic as concrete gameplay systems.",
+      proof2_h: "Results Flow",
+      proof2_p:
+        "The breakdown explains how gameplay data connects to UI feedback and end-of-match presentation.",
+      proof3_h: "Readable Combat",
+      proof3_p:
+        "The technical cards show how player feedback, state logic and match flow support the arcade combat loop.",
+
+      flow_kicker: "System flow",
+      flow_h2: "Match Flow Breakdown",
+      flow_p:
+        "This breakdown turns the project from a combat video into a readable gameplay-systems case study.",
+      flow1_h: "Start Match",
+      flow1_p:
+        "Round setup initializes match state, players and the systems that track combat progress.",
+      flow2_h: "Timer",
+      flow2_p:
+        "Timer logic creates pressure and defines the round structure for short multiplayer sessions.",
+      flow3_h: "Combat",
+      flow3_p:
+        "Players fight through direct interactions where damage and state feedback need to remain readable.",
+      flow4_h: "Health",
+      flow4_p:
+        "Health logic tracks player state and connects combat events to the match condition.",
+      flow5_h: "Victory",
+      flow5_p:
+        "Victory conditions evaluate player state and determine when the match should end.",
+      flow6_h: "Results",
+      flow6_p:
+        "Result flow connects gameplay data to UI feedback and final match presentation.",
 
       role_kicker: "My contribution",
       role_h2: "My Role in the Project",
@@ -105,7 +161,26 @@
       hero_stat2_p: "Motor del juego",
       hero_stat3_p: "Periodo de desarrollo",
 
+      info_kicker: "Lectura rápida",
+      info_h2: "Ficha del Proyecto",
+      info1_h: "Rol",
+      info1_p: "Programador de Videojuegos",
+      info2_h: "Motor",
+      info2_p: "Unity",
+      info3_h: "Equipo",
+      info3_p: "3 integrantes",
+      info4_h: "Enfoque",
+      info4_p: "Vida, temporizador y lógica de victoria",
+
       trailer_h2: "Video de Gameplay",
+      trailer_caption:
+        "Video de gameplay enfocado en combate multijugador legible, ritmo de partida y feedback de final de ronda.",
+
+      doc_kicker: "Documentación",
+      doc_h2: "PDF del Proyecto",
+      doc_p:
+        "Documento de apoyo con contexto adicional sobre el prototipo de combate y el trabajo de producción.",
+      doc_button: "Ver PDF del Proyecto",
 
       overview_h2: "Resumen del Proyecto",
       overview_p:
@@ -115,6 +190,43 @@
       overview_fact1_p: "Modo de juego",
       overview_fact2_h: "Combate",
       overview_fact2_p: "Enfoque principal",
+
+      proof_kicker: "Evidencia de portafolio",
+      proof_h2: "Prueba Técnica",
+      proof_p:
+        "Esta página ahora separa el video de gameplay de los sistemas específicos que demuestran mi contribución como programador.",
+      proof1_h: "Sistemas de Partida",
+      proof1_p:
+        "El proyecto destaca vida, temporizador y condiciones de victoria como sistemas concretos de gameplay.",
+      proof2_h: "Flujo de Resultados",
+      proof2_p:
+        "El breakdown explica cómo los datos de gameplay se conectan con feedback de UI y presentación de final de partida.",
+      proof3_h: "Combate Legible",
+      proof3_p:
+        "Las tarjetas técnicas muestran cómo el feedback, la lógica de estados y el flujo de partida sostienen el loop arcade.",
+
+      flow_kicker: "Flujo del sistema",
+      flow_h2: "Breakdown del Flujo de Partida",
+      flow_p:
+        "Este breakdown convierte el proyecto de un video de combate en un caso de estudio legible de sistemas de gameplay.",
+      flow1_h: "Inicio de Partida",
+      flow1_p:
+        "La preparación de ronda inicializa el estado de partida, jugadores y sistemas que siguen el progreso del combate.",
+      flow2_h: "Temporizador",
+      flow2_p:
+        "La lógica del temporizador crea presión y define la estructura de rondas para sesiones multijugador cortas.",
+      flow3_h: "Combate",
+      flow3_p:
+        "Los jugadores pelean mediante interacciones directas donde daño y feedback de estado deben mantenerse legibles.",
+      flow4_h: "Vida",
+      flow4_p:
+        "La lógica de vida registra el estado del jugador y conecta eventos de combate con la condición de partida.",
+      flow5_h: "Victoria",
+      flow5_p:
+        "Las condiciones de victoria evalúan el estado de los jugadores y determinan cuándo termina la partida.",
+      flow6_h: "Resultados",
+      flow6_p:
+        "El flujo de resultados conecta datos de gameplay con feedback de UI y presentación final.",
 
       role_kicker: "Mi contribución",
       role_h2: "Mi Rol en el Proyecto",
