@@ -1,0 +1,225 @@
+:root {
+  --bg: #050607;
+  --panel: rgba(10, 18, 16, .88);
+  --card: rgba(255, 255, 255, .055);
+  --text: #e9fff4;
+  --muted: #b8d6c8;
+  --muted-2: #7fa38f;
+  --border: color-mix(in srgb, var(--accent) 24%, transparent);
+  --theme-glow: color-mix(in srgb, var(--accent) 18%, transparent);
+  --theme-glow-strong: color-mix(in srgb, var(--accent) 34%, transparent);
+  --theme-glow-soft: color-mix(in srgb, var(--accent-2) 12%, transparent);
+  --theme-chip: color-mix(in srgb, var(--accent) 10%, transparent);
+  --theme-chip-border: color-mix(in srgb, var(--accent) 42%, transparent);
+  --shadow: 0 18px 45px rgba(0, 0, 0, .34);
+}
+
+body {
+  background:
+    linear-gradient(135deg, var(--theme-glow), transparent 36%),
+    linear-gradient(225deg, var(--theme-glow-soft), transparent 40%),
+    linear-gradient(180deg, #050607 0%, #090f0d 56%, #030403 100%) !important;
+  color: var(--text);
+}
+
+body::before {
+  background:
+    linear-gradient(color-mix(in srgb, var(--accent) 4%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--accent-2) 4%, transparent) 1px, transparent 1px);
+}
+
+body::after {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .38) 100%);
+}
+
+.site-header,
+.panel,
+.card,
+.tool,
+.overview-fact,
+.stat-card,
+.stats .card,
+.carousel-card,
+.video-shell,
+.feature-image,
+.media-grid img,
+iframe {
+  border-color: var(--border);
+}
+
+.site-header,
+.site-header.scrolled,
+.panel {
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.panel::before {
+  background:
+    linear-gradient(135deg, rgba(0, 230, 118, .12), transparent 42%),
+    linear-gradient(225deg, rgba(0, 188, 212, .09), transparent 44%);
+}
+
+.logo {
+  border-color: color-mix(in srgb, var(--accent) 52%, transparent);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 28%, transparent), color-mix(in srgb, var(--accent-2) 14%, transparent));
+  color: var(--accent);
+}
+
+.nav a,
+.lang-toggle button,
+.btn,
+.carousel-btn {
+  border-color: color-mix(in srgb, var(--accent) 20%, transparent);
+  background: rgba(255, 255, 255, .055);
+  color: var(--text);
+}
+
+.nav a:hover,
+.lang-toggle button:hover,
+.lang-toggle button.active,
+.btn:hover,
+.carousel-btn:hover {
+  border-color: color-mix(in srgb, var(--accent) 58%, transparent);
+  background: var(--theme-chip);
+  color: var(--accent);
+  box-shadow: 0 0 22px var(--theme-glow);
+}
+
+.btn-primary {
+  border-color: color-mix(in srgb, var(--accent) 68%, transparent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #001b10;
+}
+
+.btn-primary:hover {
+  color: #001b10;
+  box-shadow: 0 14px 34px var(--theme-glow-strong);
+}
+
+.eyebrow,
+.kicker,
+h1 span,
+.highlight,
+.stats .card strong,
+.overview-fact strong,
+.project-meta strong,
+.timeline strong,
+.tool strong,
+.carousel-caption strong,
+.lead strong {
+  color: var(--accent);
+}
+
+h2::after,
+.section-title::after {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.card,
+.tool,
+.overview-fact,
+.stat-card,
+.stats .card {
+  background: var(--card);
+}
+
+.card:hover,
+.tool:hover,
+.overview-fact:hover,
+.stat-card:hover,
+.stats .card:hover {
+  border-color: color-mix(in srgb, var(--accent) 56%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  box-shadow: 0 20px 38px rgba(0, 0, 0, .28), 0 0 26px var(--theme-glow);
+}
+
+.carousel-card,
+.video-shell,
+.feature-image,
+iframe {
+  background: #07100d;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, .32);
+}
+
+.carousel-card {
+  position: relative;
+  transition:
+    transform .35s ease,
+    opacity .35s ease,
+    border-color .22s ease,
+    box-shadow .22s ease,
+    background .22s ease,
+    filter .22s ease;
+}
+
+.carousel-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.carousel-card:hover,
+.carousel-card:focus-visible {
+  border-color: color-mix(in srgb, var(--accent) 78%, transparent);
+  background: color-mix(in srgb, var(--accent) 9%, #07100d);
+  box-shadow:
+    0 20px 42px rgba(0, 0, 0, .34),
+    0 0 18px color-mix(in srgb, var(--accent) 28%, transparent),
+    0 0 38px color-mix(in srgb, var(--accent-2) 18%, transparent);
+}
+
+.carousel-card:hover::after,
+.carousel-card:focus-visible::after {
+  opacity: 1;
+  border-color: color-mix(in srgb, var(--accent) 72%, transparent);
+  box-shadow:
+    inset 0 0 18px color-mix(in srgb, var(--accent) 18%, transparent),
+    inset 0 0 34px color-mix(in srgb, var(--accent-2) 12%, transparent),
+    0 0 18px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.carousel-card:hover img,
+.carousel-card:focus-visible img {
+  filter: saturate(1.08) brightness(1.04);
+}
+
+.carousel-card img,
+.media-grid img {
+  background: #07100d;
+}
+
+.tag,
+.control-list span,
+.tech-list span {
+  border-color: var(--theme-chip-border);
+  background: var(--theme-chip);
+  color: #c7ffdf;
+}
+
+.contribution span,
+.timeline-step span,
+.badge {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #001b10;
+}
+
+.muted,
+.subtle,
+.caption,
+figcaption,
+footer {
+  color: var(--muted-2);
+}
+
+h2,
+h3,
+.card h3,
+.tool h3 {
+  color: var(--text);
+}
