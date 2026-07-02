@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Volley Beach Santi: organizador de torneos y marcador de voley playa con aviso de cambio de lado."
+    />
+    <title>Torneo y marcador · Volley Beach Santi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#inicio" aria-label="Volley Beach Santi">
+        <span class="brand-mark">VB</span>
+        <span>Volley Beach Santi</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#torneo" data-i18n="nav.tournament">Torneo</a>
+        <a href="#marcador" data-i18n="nav.scoreboard">Marcador</a>
+      </nav>
+
+      <label class="language-switch">
+        <span data-i18n="language.label">Idioma</span>
+        <select class="language-select" aria-label="Idioma">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="it">IT</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+        </select>
+      </label>
+    </header>
+
+    <main>
+      <section id="torneo" class="section tournament-section" aria-labelledby="tournament-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="tournament.eyebrow">Organizador de torneo</p>
+          <h2 id="tournament-title" data-i18n="tournament.title">Grupos, cruces y final</h2>
+          <p data-i18n="tournament.description">
+            Define los equipos, genera una fase de grupos y simula las
+            eliminatorias hasta tener campeón.
+          </p>
+        </div>
+
+        <div class="tournament-layout">
+          <article class="tournament-panel tournament-setup">
+            <div class="panel-heading">
+              <span class="system-tag" data-i18n="tournament.config">Configuración</span>
+              <h3 data-i18n="tournament.create">Crear torneo</h3>
+            </div>
+
+            <div class="tournament-form">
+              <label>
+                <span data-i18n="tournament.teams">Equipos</span>
+                <input id="tournamentTeamCount" type="number" min="4" max="32" value="8" />
+              </label>
+              <label>
+                <span data-i18n="tournament.format">Formato</span>
+                <select id="tournamentFormat">
+                  <option value="double">Todos a doble eliminación</option>
+                  <option value="gold-silver">Oro y plata por ligas de 4</option>
+                </select>
+              </label>
+              <button class="button secondary-dark" id="buildTeamFields" type="button" data-i18n="tournament.defineTeams">Definir equipos</button>
+            </div>
+
+            <div class="team-inputs" id="teamInputs" aria-label="Nombre de los equipos"></div>
+
+            <div class="tournament-actions" aria-label="Acciones del torneo">
+              <button class="button primary" id="generateTournament" type="button" data-i18n="tournament.generateGroups">Generar grupos</button>
+              <button class="button secondary-dark" id="simulateGroups" type="button" data-i18n="tournament.simulateGroups">Simular grupos</button>
+              <button class="button secondary-dark" id="buildBracket" type="button" data-i18n="tournament.buildBracket">Crear eliminatorias</button>
+              <button class="button secondary-dark" id="simulateBracket" type="button" data-i18n="tournament.simulateBracket">Simular eliminatorias</button>
+              <button class="button ghost" id="resetTournament" type="button" data-i18n="common.reset">Reiniciar</button>
+            </div>
+
+            <p class="tournament-status" id="tournamentStatus" aria-live="polite">
+              Empieza definiendo los equipos del torneo.
+            </p>
+          </article>
+
+          <article class="tournament-panel group-panel">
+            <div class="panel-heading">
+              <span class="system-tag" data-i18n="tournament.phase1">Fase 1</span>
+              <h3 data-i18n="tournament.groups">Fase de grupos</h3>
+            </div>
+            <div class="group-stage" id="groupStage" aria-live="polite"></div>
+          </article>
+
+          <article class="tournament-panel bracket-panel">
+            <div class="panel-heading">
+              <span class="system-tag" data-i18n="tournament.finalPhase">Fase final</span>
+              <h3 data-i18n="tournament.knockout">Eliminatorias</h3>
+            </div>
+            <div class="bracket-stage" id="knockoutStage" aria-live="polite"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="marcador" class="section scoreboard-section" aria-labelledby="scoreboard-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="scoreboard.eyebrow">Anotación del partido</p>
+          <h2 id="scoreboard-title" data-i18n="scoreboard.title">Marcador con cambio de lado</h2>
+          <p data-i18n="scoreboard.description">
+            Suma o resta puntos durante el partido. Cuando el total llega a un
+            múltiplo de 7, aparece el aviso para cambiar de lado.
+          </p>
+        </div>
+
+        <div class="scoreboard-layout">
+          <article class="scoreboard-card live-score-card">
+            <div class="score-team-name-row">
+              <label>
+                <span data-i18n="scoreboard.team1">Equipo 1</span>
+                <input id="scoreTeamA" type="text" value="Equipo Santi" maxlength="32" />
+              </label>
+              <label>
+                <span data-i18n="scoreboard.team2">Equipo 2</span>
+                <input id="scoreTeamB" type="text" value="Rivales" maxlength="32" />
+              </label>
+            </div>
+
+            <div class="score-display" aria-live="polite">
+              <div class="score-side" id="scoreSideA">Lado izquierda</div>
+              <div class="score-team">
+                <span id="scoreNameA">Equipo Santi</span>
+                <strong id="scoreA">0</strong>
+                <div class="score-buttons">
+                  <button class="score-control minus" type="button" data-team="0" data-delta="-1" aria-label="Restar punto al equipo 1">−</button>
+                  <button class="score-control plus" type="button" data-team="0" data-delta="1" aria-label="Sumar punto al equipo 1">+</button>
+                </div>
+              </div>
+
+              <div class="score-divider">:</div>
+
+              <div class="score-team">
+                <span id="scoreNameB">Rivales</span>
+                <strong id="scoreB">0</strong>
+                <div class="score-buttons">
+                  <button class="score-control minus" type="button" data-team="1" data-delta="-1" aria-label="Restar punto al equipo 2">−</button>
+                  <button class="score-control plus" type="button" data-team="1" data-delta="1" aria-label="Sumar punto al equipo 2">+</button>
+                </div>
+              </div>
+              <div class="score-side" id="scoreSideB">Lado derecha</div>
+            </div>
+
+            <div class="side-change-notice" id="sideChangeNotice" aria-live="assertive"></div>
+
+            <div class="score-actions">
+              <button class="button primary" id="confirmSideChange" type="button" data-i18n="scoreboard.confirmSide">Confirmar cambio de lado</button>
+              <button class="button ghost" id="resetScoreboard" type="button" data-i18n="scoreboard.reset">Reiniciar marcador</button>
+            </div>
+          </article>
+
+          <article class="scoreboard-card match-summary-card">
+            <div class="panel-heading">
+              <span class="system-tag" data-i18n="scoreboard.control">Control</span>
+              <h3 data-i18n="scoreboard.summary">Resumen del partido</h3>
+            </div>
+            <div class="match-summary" id="matchSummary" aria-live="polite"></div>
+            <div class="score-log" id="scoreLog" aria-label="Historial de puntos"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Volley Beach Santi · Torneos, cruces y marcador de voley playa.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

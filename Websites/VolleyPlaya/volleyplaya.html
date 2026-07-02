@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volley Beach Santi | Web Development Portfolio Project</title>
+  <meta
+    name="description"
+    data-i18n-content="metaDescription"
+    content="Web development portfolio project for Volley Beach Santi, a responsive beach volleyball training app with animated systems, tournament tools and scoreboard logic.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #04100d;
+      --panel: rgba(6, 20, 18, .88);
+      --card: rgba(255, 255, 255, .055);
+      --text: #eafff5;
+      --muted: #a6c7ba;
+      --accent: #00e676;
+      --accent-2: #32d8ff;
+      --accent-3: #ffcf4a;
+      --border: rgba(0, 230, 118, .22);
+      --shadow: 0 24px 70px rgba(0, 0, 0, .34);
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(0, 230, 118, .16), transparent 34%),
+        linear-gradient(225deg, rgba(50, 216, 255, .13), transparent 38%),
+        linear-gradient(180deg, #071512 0%, #04100d 58%, #010504 100%);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .72), transparent 86%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+      padding: 24px 0 42px;
+    }
+
+    .site-header,
+    .panel,
+    .metric,
+    .scope-list li,
+    .flow-list li,
+    .tech-card,
+    .browser-mock {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 16px;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px;
+      border-radius: 18px;
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      place-items: center;
+      border: 1px solid rgba(0, 230, 118, .48);
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(0, 230, 118, .28), rgba(50, 216, 255, .14));
+      color: var(--accent);
+    }
+
+    .nav-actions,
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(0, 230, 118, .34);
+      border-radius: 14px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, .055);
+      color: var(--text);
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+      transition: .22s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 230, 118, .68);
+      color: var(--accent);
+      box-shadow: 0 0 24px rgba(0, 230, 118, .18);
+    }
+
+    .btn-primary {
+      border-color: rgba(0, 230, 118, .70);
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #03120d;
+    }
+
+    .btn-primary:hover {
+      color: #03120d;
+      box-shadow: 0 16px 38px rgba(0, 230, 118, .28);
+    }
+
+    main {
+      padding-top: 28px;
+    }
+
+    section {
+      margin-top: 22px;
+      scroll-margin-top: 110px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .panel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      padding: clamp(24px, 4vw, 42px);
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(0, 230, 118, .10), transparent 45%),
+        linear-gradient(225deg, rgba(50, 216, 255, .10), transparent 46%);
+    }
+
+    .panel > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .95;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 span,
+    .metric strong,
+    .flow-list strong,
+    .scope-list strong,
+    .tech-card strong {
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.1;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 3px;
+      margin-top: 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+
+    .hero p,
+    .muted,
+    li,
+    figcaption {
+      color: var(--muted);
+    }
+
+    .hero-media {
+      display: grid;
+      gap: 12px;
+      padding: 14px;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 20px;
+      background: #03120d;
+    }
+
+    .stats,
+    .metrics,
+    .grid,
+    .showcase-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 24px;
+    }
+
+    .stat,
+    .metric {
+      border-radius: 16px;
+      padding: 16px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .stat strong,
+    .metric strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .metrics {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 22px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .scope-list,
+    .flow-list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .scope-list li,
+    .flow-list li {
+      border-radius: 16px;
+      padding: 15px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .scope-list strong,
+    .flow-list strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tech-card {
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .showcase-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 18px;
+    }
+
+    .browser-mock {
+      overflow: hidden;
+      border-radius: 18px;
+      background: rgba(0, 0, 0, .28);
+    }
+
+    .browser-bar {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      padding: 11px 13px;
+      background: rgba(0, 0, 0, .30);
+    }
+
+    .browser-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: .82;
+    }
+
+    .browser-title {
+      margin-left: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .mock-body {
+      padding: 16px;
+    }
+
+    .mock-hero {
+      min-height: 210px;
+      display: grid;
+      align-content: end;
+      border-radius: 14px;
+      padding: 18px;
+      background:
+        linear-gradient(180deg, transparent, rgba(0, 0, 0, .72)),
+        url("site/assets/hero-beach-volley.png") center / cover;
+    }
+
+    .mock-hero strong,
+    .mock-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .mock-card {
+      min-height: 210px;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 14px;
+      padding: 18px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .mini-court {
+      position: relative;
+      height: 118px;
+      margin-top: 14px;
+      border: 2px solid rgba(255, 255, 255, .34);
+      background:
+        linear-gradient(90deg, transparent calc(50% - 1px), rgba(255,255,255,.55) calc(50% - 1px), rgba(255,255,255,.55) calc(50% + 1px), transparent calc(50% + 1px)),
+        rgba(0, 230, 118, .10);
+    }
+
+    .mini-court span {
+      position: absolute;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent-3);
+      color: #241500;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .mini-court span:nth-child(1) { left: 18%; top: 56%; }
+    .mini-court span:nth-child(2) { left: 37%; top: 28%; }
+    .mini-court span:nth-child(3) { right: 22%; top: 34%; background: var(--accent-2); color: #03120d; }
+
+    .status-panel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    footer {
+      padding: 42px 0 14px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .hero,
+      .two-column,
+      .grid,
+      .showcase-grid,
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .site-header {
+        position: relative;
+        top: 0;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .wrap {
+        width: min(100% - 20px, var(--max));
+      }
+
+      .nav-actions,
+      .btn-row,
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">VB</span>
+        <span>Volley Beach Santi</span>
+      </a>
+
+      <nav class="nav-actions" aria-label="Project navigation">
+        <a class="btn" href="../../index.html" data-i18n="backPortfolio">Back to portfolio</a>
+        <a class="btn" href="#case-study" data-i18n="readCaseStudy">Read case study</a>
+        <a class="btn" href="site/index.html" data-i18n="openPrototype">Open prototype</a>
+        <button class="btn btn-primary" id="langToggle" type="button">Español</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="panel">
+          <p class="eyebrow" data-i18n="heroEyebrow">Web Development Project</p>
+          <h1>Volley Beach <span>Santi</span></h1>
+          <p data-i18n="heroText">
+            A responsive beach volleyball training web app with animated 2v2 systems,
+            tactical calls, movement references, tournament generation and scoreboard logic.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="site/index.html" data-i18n="openTraining">Open training app</a>
+            <a class="btn" href="site/torneo.html" data-i18n="openTournament">Open tournament tools</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong data-i18n="statRoleTitle">Role</strong>
+              <span data-i18n="statRoleText">Web Developer</span>
+            </div>
+            <div class="stat">
+              <strong data-i18n="statStackTitle">Stack</strong>
+              <span>HTML · CSS · JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel hero-media">
+          <img src="site/assets/hero-beach-volley.png" alt="Volley Beach Santi visual training interface">
+        </aside>
+      </section>
+
+      <section class="panel" id="case-study">
+        <p class="eyebrow" data-i18n="overviewEyebrow">Project Overview</p>
+        <h2 data-i18n="overviewTitle">Interactive Training and Match Tools</h2>
+        <p class="muted" data-i18n="overviewText">
+          The project combines a visual training guide for beach volleyball 2v2 with practical tournament and scoreboard tools.
+          It focuses on turning tactical knowledge into an interactive web experience.
+        </p>
+        <div class="metrics">
+          <div class="metric">
+            <strong>2</strong>
+            <span data-i18n="metricPages">Core pages</span>
+          </div>
+          <div class="metric">
+            <strong>5</strong>
+            <span data-i18n="metricLanguages">Language options</span>
+          </div>
+          <div class="metric">
+            <strong>2v2</strong>
+            <span data-i18n="metricSystems">Training systems</span>
+          </div>
+          <div class="metric">
+            <strong data-i18n="metricTools">Tools</strong>
+            <span data-i18n="metricScoreboard">Tournament + scoreboard</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="two-column">
+        <article class="panel">
+          <p class="eyebrow" data-i18n="scopeEyebrow">Scope</p>
+          <h2 data-i18n="scopeTitle">What I Built</h2>
+          <ul class="scope-list">
+            <li>
+              <strong data-i18n="scope1Title">Animated training systems</strong>
+              <span data-i18n="scope1Text">Interactive court sequences for blocking signals, defense roles and setting calls.</span>
+            </li>
+            <li>
+              <strong data-i18n="scope2Title">Movement and call references</strong>
+              <span data-i18n="scope2Text">Structured callbook, movement phases and tactical descriptions for players.</span>
+            </li>
+            <li>
+              <strong data-i18n="scope3Title">Tournament organizer</strong>
+              <span data-i18n="scope3Text">Team setup, group generation, standings and knockout bracket simulation.</span>
+            </li>
+            <li>
+              <strong data-i18n="scope4Title">Match scoreboard</strong>
+              <span data-i18n="scope4Text">Live score controls with side-change reminders every seven total points.</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <p class="eyebrow" data-i18n="caseEyebrow">Case Study</p>
+          <h2 data-i18n="caseTitle">Problem, Solution, Result</h2>
+          <ul class="flow-list">
+            <li>
+              <strong data-i18n="problemTitle">Problem</strong>
+              <span data-i18n="problemText">Beach volleyball tactics are difficult to explain with static notes because positioning changes quickly during each rally.</span>
+            </li>
+            <li>
+              <strong data-i18n="solutionTitle">Solution</strong>
+              <span data-i18n="solutionText">I built an interactive web app with animated court diagrams, language support, tournament generation and scoreboard behavior.</span>
+            </li>
+            <li>
+              <strong data-i18n="resultTitle">Result</strong>
+              <span data-i18n="resultText">The project became a self-contained training and match-management tool that can be opened directly in the browser.</span>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel" id="technical">
+        <p class="eyebrow" data-i18n="technicalEyebrow">Technical Work</p>
+        <h2 data-i18n="technicalTitle">Front-End Implementation</h2>
+        <div class="grid">
+          <article class="tech-card">
+            <strong data-i18n="tech1Title">Stateful interactions</strong>
+            <p class="muted" data-i18n="tech1Text">JavaScript controls update animation steps, selected modes, tournament state and scoreboard state.</p>
+          </article>
+          <article class="tech-card">
+            <strong data-i18n="tech2Title">Responsive UI</strong>
+            <p class="muted" data-i18n="tech2Text">Layouts adapt training diagrams, controls and tournament panels across desktop and mobile screens.</p>
+          </article>
+          <article class="tech-card">
+            <strong data-i18n="tech3Title">Multilingual content</strong>
+            <p class="muted" data-i18n="tech3Text">The app includes a language selector for Spanish, English, Italian, French and German content.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <p class="eyebrow" data-i18n="evidenceEyebrow">Interface Evidence</p>
+        <h2 data-i18n="evidenceTitle">Training Flow Preview</h2>
+        <div class="showcase-grid">
+          <article class="browser-mock">
+            <div class="browser-bar">
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-title" data-i18n="mockTrainingTitle">Training / Animated Court</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-hero">
+                <strong>Volley Beach Santi</strong>
+                <span data-i18n="mockTrainingText">Animated 2v2 positioning, calls and movement references.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="browser-mock">
+            <div class="browser-bar">
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-dot"></span>
+              <span class="browser-title" data-i18n="mockToolsTitle">Tournament / Scoreboard</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-card">
+                <strong data-i18n="mockToolsHeading">Match Tools</strong>
+                <span data-i18n="mockToolsText">Groups, brackets, score controls and side-change reminders.</span>
+                <div class="mini-court" aria-hidden="true">
+                  <span>A</span>
+                  <span>B</span>
+                  <span>R</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel status-panel">
+        <div>
+          <p class="eyebrow" data-i18n="statusEyebrow">Prototype Links</p>
+          <h2 data-i18n="statusTitle">Open the Working Project</h2>
+          <p class="muted" data-i18n="statusText">
+            The copied prototype is included inside the portfolio so the training app and tournament tools can be reviewed directly.
+          </p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="site/index.html" data-i18n="openTraining">Open training app</a>
+          <a class="btn" href="site/torneo.html" data-i18n="openTournament">Open tournament tools</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Santiago Cardozo Botero</footer>
+  </div>
+
+  <script>
+    const texts = {
+      en: {
+        title: "Volley Beach Santi | Web Development Portfolio Project",
+        metaDescription: "Web development portfolio project for Volley Beach Santi, a responsive beach volleyball training app with animated systems, tournament tools and scoreboard logic.",
+        backPortfolio: "Back to portfolio",
+        readCaseStudy: "Read case study",
+        openPrototype: "Open prototype",
+        heroEyebrow: "Web Development Project",
+        heroText: "A responsive beach volleyball training web app with animated 2v2 systems, tactical calls, movement references, tournament generation and scoreboard logic.",
+        openTraining: "Open training app",
+        openTournament: "Open tournament tools",
+        statRoleTitle: "Role",
+        statRoleText: "Web Developer",
+        statStackTitle: "Stack",
+        overviewEyebrow: "Project Overview",
+        overviewTitle: "Interactive Training and Match Tools",
+        overviewText: "The project combines a visual training guide for beach volleyball 2v2 with practical tournament and scoreboard tools. It focuses on turning tactical knowledge into an interactive web experience.",
+        metricPages: "Core pages",
+        metricLanguages: "Language options",
+        metricSystems: "Training systems",
+        metricTools: "Tools",
+        metricScoreboard: "Tournament + scoreboard",
+        scopeEyebrow: "Scope",
+        scopeTitle: "What I Built",
+        scope1Title: "Animated training systems",
+        scope1Text: "Interactive court sequences for blocking signals, defense roles and setting calls.",
+        scope2Title: "Movement and call references",
+        scope2Text: "Structured callbook, movement phases and tactical descriptions for players.",
+        scope3Title: "Tournament organizer",
+        scope3Text: "Team setup, group generation, standings and knockout bracket simulation.",
+        scope4Title: "Match scoreboard",
+        scope4Text: "Live score controls with side-change reminders every seven total points.",
+        caseEyebrow: "Case Study",
+        caseTitle: "Problem, Solution, Result",
+        problemTitle: "Problem",
+        problemText: "Beach volleyball tactics are difficult to explain with static notes because positioning changes quickly during each rally.",
+        solutionTitle: "Solution",
+        solutionText: "I built an interactive web app with animated court diagrams, language support, tournament generation and scoreboard behavior.",
+        resultTitle: "Result",
+        resultText: "The project became a self-contained training and match-management tool that can be opened directly in the browser.",
+        technicalEyebrow: "Technical Work",
+        technicalTitle: "Front-End Implementation",
+        tech1Title: "Stateful interactions",
+        tech1Text: "JavaScript controls update animation steps, selected modes, tournament state and scoreboard state.",
+        tech2Title: "Responsive UI",
+        tech2Text: "Layouts adapt training diagrams, controls and tournament panels across desktop and mobile screens.",
+        tech3Title: "Multilingual content",
+        tech3Text: "The app includes a language selector for Spanish, English, Italian, French and German content.",
+        evidenceEyebrow: "Interface Evidence",
+        evidenceTitle: "Training Flow Preview",
+        mockTrainingTitle: "Training / Animated Court",
+        mockTrainingText: "Animated 2v2 positioning, calls and movement references.",
+        mockToolsTitle: "Tournament / Scoreboard",
+        mockToolsHeading: "Match Tools",
+        mockToolsText: "Groups, brackets, score controls and side-change reminders.",
+        statusEyebrow: "Prototype Links",
+        statusTitle: "Open the Working Project",
+        statusText: "The copied prototype is included inside the portfolio so the training app and tournament tools can be reviewed directly."
+      },
+      es: {
+        title: "Volley Beach Santi | Proyecto de Portafolio de Desarrollo Web",
+        metaDescription: "Proyecto de desarrollo web para Volley Beach Santi, una app responsiva de entrenamiento de voley playa con sistemas animados, herramientas de torneo y lógica de marcador.",
+        backPortfolio: "Volver al portafolio",
+        readCaseStudy: "Ver caso de estudio",
+        openPrototype: "Abrir prototipo",
+        heroEyebrow: "Proyecto de Desarrollo Web",
+        heroText: "App web responsiva de entrenamiento de voley playa con sistemas 2v2 animados, llamadas tácticas, referencias de movimiento, generación de torneos y lógica de marcador.",
+        openTraining: "Abrir app de entrenamiento",
+        openTournament: "Abrir herramientas de torneo",
+        statRoleTitle: "Rol",
+        statRoleText: "Desarrollador Web",
+        statStackTitle: "Tecnologías",
+        overviewEyebrow: "Resumen del Proyecto",
+        overviewTitle: "Entrenamiento Interactivo y Herramientas de Partido",
+        overviewText: "El proyecto combina una guía visual de entrenamiento para voley playa 2v2 con herramientas prácticas de torneo y marcador. Se enfoca en convertir conocimiento táctico en una experiencia web interactiva.",
+        metricPages: "Páginas principales",
+        metricLanguages: "Opciones de idioma",
+        metricSystems: "Sistemas de entrenamiento",
+        metricTools: "Herramientas",
+        metricScoreboard: "Torneo + marcador",
+        scopeEyebrow: "Alcance",
+        scopeTitle: "Qué Construí",
+        scope1Title: "Sistemas de entrenamiento animados",
+        scope1Text: "Secuencias interactivas de pista para señales de bloqueo, roles de defensa y llamadas de colocación.",
+        scope2Title: "Referencias de movimiento y llamadas",
+        scope2Text: "Callbook estructurado, fases de movimiento y descripciones tácticas para jugadores.",
+        scope3Title: "Organizador de torneo",
+        scope3Text: "Configuración de equipos, generación de grupos, clasificación y simulación de eliminatorias.",
+        scope4Title: "Marcador de partido",
+        scope4Text: "Controles de marcador en vivo con recordatorios de cambio de lado cada siete puntos totales.",
+        caseEyebrow: "Caso de Estudio",
+        caseTitle: "Problema, Solución, Resultado",
+        problemTitle: "Problema",
+        problemText: "Las tácticas de voley playa son difíciles de explicar con notas estáticas porque el posicionamiento cambia rápido durante cada rally.",
+        solutionTitle: "Solución",
+        solutionText: "Construí una app web interactiva con diagramas animados de pista, soporte de idiomas, generación de torneos y comportamiento de marcador.",
+        resultTitle: "Resultado",
+        resultText: "El proyecto se convirtió en una herramienta autónoma de entrenamiento y gestión de partidos que se puede abrir directamente en el navegador.",
+        technicalEyebrow: "Trabajo Técnico",
+        technicalTitle: "Implementación Front-End",
+        tech1Title: "Interacciones con estado",
+        tech1Text: "Los controles de JavaScript actualizan pasos de animación, modos seleccionados, estado del torneo y estado del marcador.",
+        tech2Title: "UI responsiva",
+        tech2Text: "Los layouts adaptan diagramas de entrenamiento, controles y paneles de torneo en desktop y móvil.",
+        tech3Title: "Contenido multilingüe",
+        tech3Text: "La app incluye selector de idioma para contenido en español, inglés, italiano, francés y alemán.",
+        evidenceEyebrow: "Evidencia de Interfaz",
+        evidenceTitle: "Vista del Flujo de Entrenamiento",
+        mockTrainingTitle: "Entrenamiento / Pista Animada",
+        mockTrainingText: "Posicionamiento 2v2 animado, llamadas y referencias de movimiento.",
+        mockToolsTitle: "Torneo / Marcador",
+        mockToolsHeading: "Herramientas de Partido",
+        mockToolsText: "Grupos, eliminatorias, controles de puntuación y recordatorios de cambio de lado.",
+        statusEyebrow: "Enlaces del Prototipo",
+        statusTitle: "Abrir el Proyecto Funcional",
+        statusText: "El prototipo copiado está incluido dentro del portafolio para revisar directamente la app de entrenamiento y las herramientas de torneo."
+      }
+    };
+
+    const DEFAULT_LANGUAGE = "en";
+    const STORAGE_KEY = "language";
+    const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
+    const LANGUAGE_VERSION = "english-default-v2";
+    const langToggle = document.getElementById("langToggle");
+
+    if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
+      localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
+      localStorage.setItem(LANGUAGE_VERSION_KEY, LANGUAGE_VERSION);
+    }
+
+    let currentLang = texts[localStorage.getItem(STORAGE_KEY)] ? localStorage.getItem(STORAGE_KEY) : DEFAULT_LANGUAGE;
+
+    function applyTranslations() {
+      const dictionary = texts[currentLang] || texts[DEFAULT_LANGUAGE];
+      document.documentElement.lang = currentLang;
+      document.title = dictionary.title;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-content]").forEach((element) => {
+        const key = element.dataset.i18nContent;
+        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+          element.setAttribute("content", dictionary[key]);
+        }
+      });
+
+      if (langToggle) {
+        langToggle.textContent = currentLang === "en" ? "Español" : "English";
+        langToggle.setAttribute(
+          "aria-label",
+          currentLang === "en" ? "Change language to Spanish" : "Cambiar idioma a ingles"
+        );
+      }
+    }
+
+    langToggle?.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "es" : "en";
+      localStorage.setItem(STORAGE_KEY, currentLang);
+      applyTranslations();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    applyTranslations();
+  </script>
+</body>
+</html>

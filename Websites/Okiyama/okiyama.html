@@ -335,6 +335,56 @@
       gap: 18px;
     }
 
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .comparison-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(0, 0, 0, .28);
+    }
+
+    .comparison-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #020403;
+    }
+
+    .comparison-content {
+      padding: 16px;
+    }
+
+    .comparison-label {
+      display: inline-flex;
+      margin-bottom: 10px;
+      border: 1px solid rgba(0, 230, 118, .34);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: rgba(0, 230, 118, .08);
+      color: #c7ffdf;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .comparison-content p,
+    .comparison-note {
+      margin: 0;
+    }
+
+    .comparison-note {
+      margin-top: 16px;
+      color: var(--muted-2);
+      font-size: 14px;
+    }
+
     .browser-mock {
       overflow: hidden;
       border: 1px solid var(--border);
@@ -479,6 +529,7 @@
       .media-grid,
       .grid,
       .two-column,
+      .comparison-grid,
       .showcase-grid,
       .metrics {
         grid-template-columns: 1fr;
@@ -519,6 +570,7 @@
       </a>
       <div class="header-actions">
         <a class="btn" href="../../index.html#projects" data-i18n="backPortfolio">Back to portfolio</a>
+        <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
         <button class="btn" id="langToggle" type="button">Español</button>
       </div>
     </header>
@@ -535,6 +587,8 @@
           <div class="btn-row">
             <a class="btn" href="#case-study" data-i18n="readCaseStudy">Read case study</a>
             <a class="btn" href="#technical" data-i18n="technicalWork">Technical work</a>
+            <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
+            <a class="btn" href="site/tienda-online.html" data-i18n="openShop">Open shop</a>
           </div>
           <div class="stats">
             <div class="stat">
@@ -604,11 +658,11 @@
             </li>
             <li>
               <strong data-i18n="scope2Title">Online shop structure</strong>
-              <span data-i18n="scope2Text">Product cards, product detail pages, price display, calls to action and WhatsApp contact path.</span>
+              <span data-i18n="scope2Text">Product cards, product detail pages, price display, calls to action and a direct WhatsApp customer-service path.</span>
             </li>
             <li>
               <strong data-i18n="scope3Title">Cart and checkout preparation</strong>
-              <span data-i18n="scope3Text">Local cart storage, quantity controls, totals and form structure prepared for payment integration.</span>
+              <span data-i18n="scope3Text">Local cart storage, quantity controls, totals, cost and discount calculation and form structure prepared for payment-button integration.</span>
             </li>
             <li>
               <strong data-i18n="scope4Title">Compliance and trust pages</strong>
@@ -623,15 +677,15 @@
           <ul class="flow-list">
             <li>
               <strong data-i18n="problemTitle">Problem</strong>
-              <span data-i18n="problemText">Okiyama needed a clearer digital presence for presenting products and guiding users toward purchase or contact.</span>
+              <span data-i18n="problemText">Okiyama already had a website, but the experience needed clearer visual structure, stronger brand consistency and a better purchase path. The previous version did not include payment-button integration, cost and discount calculation, a complete cart flow or direct customer-service support through WhatsApp.</span>
             </li>
             <li>
               <strong data-i18n="solutionTitle">Solution</strong>
-              <span data-i18n="solutionText">I built a responsive website with product information, shop pages, a cart flow and front-end interaction logic.</span>
+              <span data-i18n="solutionText">I worked on the maintenance and redesign by aligning the interface with the company color palette, simplifying sections that were previously split across too many tabs, adding the cart flow, preparing the payment-button integration, building cost and discount logic and connecting customer support through WhatsApp.</span>
             </li>
             <li>
               <strong data-i18n="resultTitle">Result</strong>
-              <span data-i18n="resultText">The project became a structured web experience prepared for browsing, product comparison and checkout integration.</span>
+              <span data-i18n="resultText">The improved version is clearer, more organized and easier to navigate, with a simplified structure, stronger visual consistency and purchasing features prepared before the official publication of the maintenance update.</span>
             </li>
           </ul>
         </article>
@@ -644,24 +698,51 @@
         </article>
         <article class="card">
           <h3 data-i18n="tech2Title">Product & Shop Flow</h3>
-          <p data-i18n="tech2Text">Product cards, detail pages, prices, add-to-cart actions and a cart summary prepared for checkout.</p>
+          <p data-i18n="tech2Text">Product cards, detail pages, prices, add-to-cart actions and a cart summary prepared for purchase decisions.</p>
         </article>
         <article class="card">
           <h3 data-i18n="tech3Title">Front-End Logic</h3>
-          <p data-i18n="tech3Text">JavaScript for cart storage, quantity updates, contact form feedback, cookie banner and UI state.</p>
+          <p data-i18n="tech3Text">JavaScript for cart storage, quantity updates, cost and discount calculations, contact form feedback, cookie banner and UI state.</p>
         </article>
         <article class="card">
           <h3 data-i18n="tech4Title">Cart State</h3>
           <p data-i18n="tech4Text">Cart data is stored with localStorage so products and quantities persist across the browsing flow.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="tech5Title">Checkout Preparation</h3>
-          <p data-i18n="tech5Text">The payment section is structured for Openpay integration while keeping the current form behavior transparent.</p>
+          <h3 data-i18n="tech5Title">Payment Preparation</h3>
+          <p data-i18n="tech5Text">The payment-button area is prepared for integration while keeping the current cart and checkout behavior transparent.</p>
         </article>
         <article class="card">
           <h3 data-i18n="tech6Title">Accessible UI Patterns</h3>
           <p data-i18n="tech6Text">Skip links, semantic sections, ARIA labels and readable button states support a clearer user experience.</p>
         </article>
+      </section>
+
+      <section class="panel hero-copy">
+        <p class="eyebrow" data-i18n="comparisonEyebrow">Before / After Evidence</p>
+        <h2 data-i18n="comparisonTitle">Redesign Reference</h2>
+        <p data-i18n="comparisonIntro">
+          I used the previous public website only as visual reference to document the maintenance work, without turning it into a portfolio link.
+        </p>
+        <div class="comparison-grid">
+          <article class="comparison-card">
+            <img src="assets/okiyama-before-reference.png" alt="Previous Okiyama public website reference screenshot">
+            <div class="comparison-content">
+              <span class="comparison-label" data-i18n="beforeLabel">Before Reference</span>
+              <p data-i18n="beforeCaption">The previous experience had many navigation entries, weaker brand consistency and no complete purchase flow visible from the main path.</p>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <img src="assets/okiyama-after-improved.png" alt="Improved Okiyama maintenance version screenshot">
+            <div class="comparison-content">
+              <span class="comparison-label" data-i18n="afterLabel">Improved Version</span>
+              <p data-i18n="afterCaption">The improved version uses a clearer structure, company palette, stronger product focus, direct contact, cart flow and purchase-preparation features.</p>
+            </div>
+          </article>
+        </div>
+        <p class="comparison-note" data-i18n="comparisonNote">
+          The previous domain is intentionally not linked here; it was used only as reference material for the before/after comparison.
+        </p>
       </section>
 
       <section class="panel hero-copy">
@@ -741,12 +822,17 @@
 
       <section class="panel hero-copy">
         <p class="eyebrow" data-i18n="statusEyebrow">Professional Note</p>
-        <h2 data-i18n="statusTitle">Implementation Status</h2>
+        <h2 data-i18n="statusTitle">Maintenance in Progress</h2>
         <p data-i18n="statusText">
-          The cart and checkout interface are prepared for payment integration. The current implementation
-          focuses on the front-end structure, product flow and user interface needed before connecting the
-          final payment provider.
+          This project is currently in maintenance before the official publication of the improved version.
+          The working website, shop and cart flow are included here so the updated experience can be reviewed
+          directly from the case study.
         </p>
+        <div class="btn-row">
+          <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
+          <a class="btn" href="site/tienda-online.html" data-i18n="openShop">Open shop</a>
+          <a class="btn" href="site/cart.html" data-i18n="openCart">Open cart</a>
+        </div>
       </section>
     </main>
 
@@ -760,6 +846,9 @@
         title: "Okiyama Website | Web Development Portfolio Project",
         metaDescription: "Professional web development portfolio project for Okiyama, featuring responsive pages, product catalog, cart flow and health-product presentation.",
         backPortfolio: "Back to portfolio",
+        openWebsite: "Open website",
+        openShop: "Open shop",
+        openCart: "Open cart",
         heroEyebrow: "Professional Web Development Project",
         heroTitle: "Okiyama Website",
         heroText: "Company website and online shop experience for Okiyama, focused on presenting health-related products clearly, guiding users to product information and supporting a cart-based purchase flow.",
@@ -788,31 +877,39 @@
         scope1Title: "Landing and brand pages",
         scope1Text: "Home, company information and product-focused sections for a healthcare-oriented brand.",
         scope2Title: "Online shop structure",
-        scope2Text: "Product cards, product detail pages, price display, calls to action and WhatsApp contact path.",
+        scope2Text: "Product cards, product detail pages, price display, calls to action and a direct WhatsApp customer-service path.",
         scope3Title: "Cart and checkout preparation",
-        scope3Text: "Local cart storage, quantity controls, totals and form structure prepared for payment integration.",
+        scope3Text: "Local cart storage, quantity controls, totals, cost and discount calculation and form structure prepared for payment-button integration.",
         scope4Title: "Compliance and trust pages",
         scope4Text: "Legal/privacy pages, cookie banner and clear information architecture for user confidence.",
         caseEyebrow: "Case Study",
         caseTitle: "Problem, Solution, Result",
         problemTitle: "Problem",
-        problemText: "Okiyama needed a clearer digital presence for presenting products and guiding users toward purchase or contact.",
+        problemText: "Okiyama already had a website, but the experience needed clearer visual structure, stronger brand consistency and a better purchase path. The previous version did not include payment-button integration, cost and discount calculation, a complete cart flow or direct customer-service support through WhatsApp.",
         solutionTitle: "Solution",
-        solutionText: "I built a responsive website with product information, shop pages, a cart flow and front-end interaction logic.",
+        solutionText: "I worked on the maintenance and redesign by aligning the interface with the company color palette, simplifying sections that were previously split across too many tabs, adding the cart flow, preparing the payment-button integration, building cost and discount logic and connecting customer support through WhatsApp.",
         resultTitle: "Result",
-        resultText: "The project became a structured web experience prepared for browsing, product comparison and checkout integration.",
+        resultText: "The improved version is clearer, more organized and easier to navigate, with a simplified structure, stronger visual consistency and purchasing features prepared before the official publication of the maintenance update.",
         tech1Title: "Responsive Navigation",
         tech1Text: "Mobile menu behavior, sticky header states and clear access to home, company pages, shop and cart.",
         tech2Title: "Product & Shop Flow",
-        tech2Text: "Product cards, detail pages, prices, add-to-cart actions and a cart summary prepared for checkout.",
+        tech2Text: "Product cards, detail pages, prices, add-to-cart actions and a cart summary prepared for purchase decisions.",
         tech3Title: "Front-End Logic",
-        tech3Text: "JavaScript for cart storage, quantity updates, contact form feedback, cookie banner and UI state.",
+        tech3Text: "JavaScript for cart storage, quantity updates, cost and discount calculations, contact form feedback, cookie banner and UI state.",
         tech4Title: "Cart State",
         tech4Text: "Cart data is stored with localStorage so products and quantities persist across the browsing flow.",
-        tech5Title: "Checkout Preparation",
-        tech5Text: "The payment section is structured for Openpay integration while keeping the current form behavior transparent.",
+        tech5Title: "Payment Preparation",
+        tech5Text: "The payment-button area is prepared for integration while keeping the current cart and checkout behavior transparent.",
         tech6Title: "Accessible UI Patterns",
         tech6Text: "Skip links, semantic sections, ARIA labels and readable button states support a clearer user experience.",
+        comparisonEyebrow: "Before / After Evidence",
+        comparisonTitle: "Redesign Reference",
+        comparisonIntro: "I used the previous public website only as visual reference to document the maintenance work, without turning it into a portfolio link.",
+        beforeLabel: "Before Reference",
+        beforeCaption: "The previous experience had many navigation entries, weaker brand consistency and no complete purchase flow visible from the main path.",
+        afterLabel: "Improved Version",
+        afterCaption: "The improved version uses a clearer structure, company palette, stronger product focus, direct contact, cart flow and purchase-preparation features.",
+        comparisonNote: "The previous domain is intentionally not linked here; it was used only as reference material for the before/after comparison.",
         evidenceEyebrow: "Interface Evidence",
         evidenceTitle: "Website Flow Preview",
         mockHomeTitle: "Home / Brand Landing",
@@ -823,13 +920,16 @@
         mockCartText: "Quantity controls, totals and a payment-ready form layout.",
         mockProductTitle: "Product Information",
         statusEyebrow: "Professional Note",
-        statusTitle: "Implementation Status",
-        statusText: "The cart and checkout interface are prepared for payment integration. The current implementation focuses on the front-end structure, product flow and user interface needed before connecting the final payment provider."
+        statusTitle: "Maintenance in Progress",
+        statusText: "This project is currently in maintenance before the official publication of the improved version. The working website, shop and cart flow are included here so the updated experience can be reviewed directly from the case study."
       },
       es: {
         title: "Sitio Web Okiyama | Proyecto de Portafolio de Desarrollo Web",
         metaDescription: "Proyecto profesional de desarrollo web para Okiyama, con páginas responsivas, catálogo de productos, flujo de carrito y presentación de productos de salud.",
         backPortfolio: "Volver al portafolio",
+        openWebsite: "Abrir sitio",
+        openShop: "Abrir tienda",
+        openCart: "Abrir carrito",
         heroEyebrow: "Proyecto Profesional de Desarrollo Web",
         heroTitle: "Sitio Web Okiyama",
         heroText: "Sitio web corporativo y experiencia de tienda online para Okiyama, enfocado en presentar productos relacionados con la salud de forma clara, guiar a los usuarios hacia información de producto y apoyar un flujo de compra con carrito.",
@@ -858,31 +958,39 @@
         scope1Title: "Landing y páginas de marca",
         scope1Text: "Inicio, información de empresa y secciones enfocadas en producto para una marca orientada al cuidado de la salud.",
         scope2Title: "Estructura de tienda online",
-        scope2Text: "Tarjetas de producto, páginas de detalle, visualización de precios, llamadas a la acción y ruta de contacto por WhatsApp.",
+        scope2Text: "Tarjetas de producto, páginas de detalle, visualización de precios, llamadas a la acción y ruta directa de servicio al cliente por WhatsApp.",
         scope3Title: "Preparación de carrito y checkout",
-        scope3Text: "Carrito con almacenamiento local, controles de cantidad, totales y estructura de formulario preparada para integración de pago.",
+        scope3Text: "Carrito con almacenamiento local, controles de cantidad, totales, cálculo de costos y descuentos y estructura de formulario preparada para integración del botón de pago.",
         scope4Title: "Páginas de confianza y cumplimiento",
         scope4Text: "Páginas legales/privacidad, banner de cookies y arquitectura de información clara para generar confianza.",
         caseEyebrow: "Caso de Estudio",
         caseTitle: "Problema, Solución, Resultado",
         problemTitle: "Problema",
-        problemText: "Okiyama necesitaba una presencia digital más clara para presentar productos y guiar a los usuarios hacia compra o contacto.",
+        problemText: "Okiyama ya tenía una página, pero la experiencia necesitaba una estructura visual más clara, mayor consistencia con la marca y un mejor camino hacia la compra. La versión anterior no tenía integración del botón de pago, cálculo de costos y descuentos, flujo completo de carrito ni acceso directo a servicio al cliente por WhatsApp.",
         solutionTitle: "Solución",
-        solutionText: "Construí un sitio web responsivo con información de producto, páginas de tienda, flujo de carrito y lógica de interacción front-end.",
+        solutionText: "Trabajé en el mantenimiento y rediseño alineando la interfaz con la paleta de color de la empresa, simplificando secciones que antes estaban separadas en muchas pestañas, agregando el flujo de carrito, preparando la integración del botón de pago, desarrollando la lógica de costos y descuentos y conectando atención al cliente por WhatsApp.",
         resultTitle: "Resultado",
-        resultText: "El proyecto se convirtió en una experiencia web estructurada, preparada para navegación, comparación de productos e integración de checkout.",
+        resultText: "La versión mejorada queda más clara, precisa, organizada y fácil de navegar, con una estructura simplificada, mayor uniformidad visual y funciones de compra preparadas antes de la publicación oficial de estos cambios.",
         tech1Title: "Navegación Responsiva",
         tech1Text: "Comportamiento de menú móvil, estados de header fijo y acceso claro a inicio, páginas de empresa, tienda y carrito.",
         tech2Title: "Flujo de Producto y Tienda",
-        tech2Text: "Tarjetas de producto, páginas de detalle, precios, acciones de añadir al carrito y resumen preparado para checkout.",
+        tech2Text: "Tarjetas de producto, páginas de detalle, precios, acciones de añadir al carrito y resumen preparado para decisiones de compra.",
         tech3Title: "Lógica Front-End",
-        tech3Text: "JavaScript para almacenamiento del carrito, actualización de cantidades, feedback de formularios, banner de cookies y estados de UI.",
+        tech3Text: "JavaScript para almacenamiento del carrito, actualización de cantidades, cálculo de costos y descuentos, feedback de formularios, banner de cookies y estados de UI.",
         tech4Title: "Estado del Carrito",
         tech4Text: "Los datos del carrito se almacenan con localStorage para mantener productos y cantidades durante la navegación.",
-        tech5Title: "Preparación de Checkout",
-        tech5Text: "La sección de pago está estructurada para integración con Openpay, manteniendo transparente el comportamiento actual del formulario.",
+        tech5Title: "Preparación de Pago",
+        tech5Text: "El área del botón de pago está preparada para integración, manteniendo claro el comportamiento actual del carrito y checkout.",
         tech6Title: "Patrones de UI Accesibles",
         tech6Text: "Skip links, secciones semánticas, etiquetas ARIA y estados legibles de botones apoyan una experiencia de usuario más clara.",
+        comparisonEyebrow: "Evidencia Antes / Después",
+        comparisonTitle: "Referencia del Rediseño",
+        comparisonIntro: "Usé la página pública anterior solo como referencia visual para documentar el trabajo de mantenimiento, sin convertirla en un enlace del portafolio.",
+        beforeLabel: "Referencia Anterior",
+        beforeCaption: "La experiencia anterior tenía muchas entradas de navegación, menor consistencia visual con la marca y no mostraba un flujo completo de compra desde el camino principal.",
+        afterLabel: "Versión Mejorada",
+        afterCaption: "La versión mejorada utiliza una estructura más clara, paleta de la empresa, mayor enfoque de producto, contacto directo, flujo de carrito y funciones preparadas para compra.",
+        comparisonNote: "El dominio anterior no está enlazado intencionalmente aquí; se usó solo como material de referencia para la comparación antes/después.",
         evidenceEyebrow: "Evidencia de Interfaz",
         evidenceTitle: "Preview del Flujo del Sitio",
         mockHomeTitle: "Inicio / Landing de Marca",
@@ -893,8 +1001,8 @@
         mockCartText: "Controles de cantidad, totales y diseño de formulario listo para pago.",
         mockProductTitle: "Información de Producto",
         statusEyebrow: "Nota Profesional",
-        statusTitle: "Estado de Implementación",
-        statusText: "La interfaz de carrito y checkout está preparada para integración de pago. La implementación actual se enfoca en la estructura front-end, el flujo de producto y la interfaz necesaria antes de conectar el proveedor de pago final."
+        statusTitle: "Mantenimiento en Progreso",
+        statusText: "Este proyecto está en mantenimiento antes de la publicación oficial de la versión mejorada. El sitio funcional, la tienda y el flujo de carrito están incluidos aquí para revisar la experiencia actualizada directamente desde este caso de estudio."
       }
     };
 

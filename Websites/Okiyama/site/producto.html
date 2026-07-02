@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Detalle de producto Turmgel de Okiyama." />
+    <title>Producto Turmgel :: Okiyama.com</title>
+    <link rel="icon" href="assets/favicon-okiyama.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Okiyama inicio"><img src="assets/logo-okiyama.jpg" width="490" height="375" alt="Okiyama" decoding="async" fetchpriority="high" /></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+        <nav class="site-nav" id="menu-principal" aria-label="Menú principal" data-menu>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="tienda-online.html">Tienda Online</a></li>
+          </ul>
+        </nav>
+        <div class="language-list header-language" aria-label="Idiomas"><strong>Idiomas</strong><div class="language-actions"><button type="button" data-language-button="es" aria-pressed="true">ES</button><button type="button" data-language-button="en" lang="en" aria-pressed="false">EN</button></div></div>
+        <a class="cart-link" href="cart.html" aria-label="Ir a la cesta"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M6 6h15l-2 8H8L6 3H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><circle cx="9.5" cy="19" r="1.5" fill="currentColor" /><circle cx="17.5" cy="19" r="1.5" fill="currentColor" /></svg><span>Cesta</span><strong data-cart-count aria-live="polite">0</strong></a>
+      </div>
+    </header>
+
+    <main id="contenido" data-product-detail></main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div><img src="assets/logo-okiyama.jpg" width="490" height="375" alt="Okiyama" loading="lazy" decoding="async" /><p>Av. José María Izazaga 50 Oficina 103 A, Colonia Centro, México.</p></div>
+        <nav aria-label="Enlaces secundarios"><a href="index.html">Inicio</a><a href="sobre-nosotros.html#contacto">Contacto</a><a href="aviso-legal.html">Aviso legal y privacidad</a><a href="#" data-cookie-open>Cookies</a></nav>
+      </div>
+    </footer>
+    <section class="cookie-banner" data-cookie-banner role="region" aria-label="Aviso de cookies"><p>Utilizamos cookies para permitir un correcto funcionamiento y seguro en nuestra página web, y para ofrecer la mejor experiencia posible.</p><div class="cookie-actions"><button type="button">Aceptar todo</button><button type="button">Aceptar solo lo necesario</button></div></section>
+    <script src="script.js"></script>
+  </body>
+</html>
