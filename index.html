@@ -206,6 +206,27 @@
             margin-top: 24px;
         }
 
+        .hero-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .hero-stack span,
+        .contact-focus span {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid rgba(0,230,118,.30);
+            border-radius: 999px;
+            padding: 7px 10px;
+            background: rgba(0,230,118,.07);
+            color: #c7ffdf;
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
         .hero-proof {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -296,13 +317,16 @@
         /* PROYECTOS */
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-auto-rows: 1fr;
             gap: 22px;
+            align-items: stretch;
         }
 
         .card {
             position: relative;
-            display: block;
+            display: flex;
+            flex-direction: column;
             color: inherit;
             text-decoration: none;
             border: 1px solid var(--border);
@@ -364,7 +388,8 @@
         }
 
         .card p {
-            min-height: 92px;
+            min-height: 68px;
+            margin-bottom: 0;
         }
 
         .featured-label {
@@ -384,7 +409,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin: 14px 0 28px;
+            margin: 14px 0 20px;
         }
 
         .project-tags span {
@@ -395,6 +420,7 @@
             color: #c7ffdf;
             font-size: 12px;
             font-weight: 800;
+            line-height: 1.25;
         }
 
         .projects-intro {
@@ -431,6 +457,18 @@
             font: inherit;
             cursor: pointer;
             transition: .25s;
+            gap: 8px;
+        }
+
+        .category-filter strong {
+            display: inline-grid;
+            min-width: 22px;
+            height: 22px;
+            place-items: center;
+            border-radius: 999px;
+            background: rgba(255,255,255,.10);
+            color: inherit;
+            font-size: 11px;
         }
 
         .category-filter:hover,
@@ -450,9 +488,71 @@
         }
 
         .project-link {
+            margin-top: auto;
             color: var(--accent);
             font-size: 13px;
             font-weight: 900;
+        }
+
+        .profile-section {
+            padding-top: 18px;
+        }
+
+        .profile-intro {
+            max-width: 760px;
+            margin: 0 0 20px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        .capability-card {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 18px;
+            background:
+                linear-gradient(180deg, rgba(0,230,118,.07), transparent 52%),
+                var(--card);
+            box-shadow: 0 16px 40px rgba(0,0,0,.22);
+            transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+        }
+
+        .capability-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 230, 118, .52);
+            box-shadow: 0 18px 42px rgba(0,0,0,.28), 0 0 28px rgba(0, 230, 118, .15);
+        }
+
+        .capability-card h4 {
+            margin-top: 10px;
+        }
+
+        .capability-label {
+            display: inline-flex;
+            width: fit-content;
+            border: 1px solid rgba(0,230,118,.34);
+            border-radius: 999px;
+            padding: 6px 9px;
+            background: rgba(0,230,118,.08);
+            color: #c7ffdf;
+            font-size: 11px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .capability-proof {
+            margin: 12px 0 0;
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 700;
         }
 
         .engine-badge {
@@ -486,6 +586,13 @@
             word-break: break-word;
         }
 
+        .contact-focus {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
         footer {
             padding: 42px 0;
             color: var(--muted);
@@ -505,6 +612,10 @@
 
             .cards {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .capability-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
             .profile-card {
@@ -532,6 +643,7 @@
             }
 
             .cards,
+            .capability-grid,
             .contact-grid {
                 grid-template-columns: 1fr;
             }
@@ -568,6 +680,7 @@
             </div>
             <nav>
                 <a href="#home" data-i18n="navHome">Home</a>
+                <a href="#profile" data-i18n="navProfile">Profile</a>
                 <a href="#projects" data-i18n="navProjects">Projects</a>
                 <a href="#contact" data-i18n="navContact">Contact</a>
             </nav>
@@ -575,11 +688,19 @@
         </header>
         <main id="home" class="hero">
             <div>
-                <h2 data-i18n="heroTitle">Game, Web & Interactive Developer Portfolio</h2>
-                <h1 data-i18n="heroSubtitle">Building games, websites and interactive technical systems</h1>
+                <h2 data-i18n="heroTitle">Game, Web & Interactive Systems Portfolio</h2>
+                <h1 data-i18n="heroSubtitle">Building playable, usable and polished interactive projects</h1>
                 <p class="lead" data-i18n="heroText">
-                    A portfolio of academic, collaborative, professional and personal projects across game development, web development, computer graphics and interactive systems.
+                    A focused portfolio across Unity games, responsive websites, technical graphics and browser-based tools.
                 </p>
+                <div class="hero-stack" aria-label="Core stack">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>JavaScript</span>
+                    <span>HTML/CSS</span>
+                    <span data-i18n="stackUiSystems">UI Systems</span>
+                    <span data-i18n="stackInteractive">Interactive Tools</span>
+                </div>
                 <div class="hero-actions">
                     <a class="cta" href="#projects" data-i18n="heroPrimaryCta">View Projects</a>
                     <a class="cta" href="#contact" data-i18n="heroSecondaryCta">Contact Me</a>
@@ -587,15 +708,15 @@
                 <div class="hero-proof" aria-label="Portfolio proof points">
                     <div class="proof-stat">
                         <strong>Games + Web</strong>
-                        <span data-i18n="proofSystems">Gameplay systems, web interfaces and interaction logic</span>
+                        <span data-i18n="proofSystems">Gameplay, UI and interaction logic</span>
                     </div>
                     <div class="proof-stat">
                         <strong>7 Projects</strong>
-                        <span data-i18n="proofProjects">Games, websites, prototypes and graphics work</span>
+                        <span data-i18n="proofProjects">Games, websites and technical demos</span>
                     </div>
                     <div class="proof-stat">
                         <strong>Professional + Academic</strong>
-                        <span data-i18n="proofTeam">Company, academic, jam and collaborative productions</span>
+                        <span data-i18n="proofTeam">Company, academic and team projects</span>
                     </div>
                 </div>
             </div>
@@ -605,24 +726,64 @@
                     <div>
                         <strong data-i18n="skillsTitle">Skills</strong><br>
                         <span class="muted" data-i18n="skillsText">
-                            Game Development · Web Development · Unity (2D/3D) · C# · JavaScript · HTML/CSS ·
-                            Gameplay Systems · UI Systems · Responsive Interfaces · Computer Graphics ·
-                            Lighting & Shading Models · Collaborative and Professional Projects
+                            Unity · C# · JavaScript · HTML/CSS · Gameplay Systems · UI Systems ·
+                            Responsive Web · Computer Graphics
                         </span>
                     </div>
                 </div>
             </aside>
         </main>
+        <section id="profile" class="profile-section">
+            <h3 data-i18n="profileTitle">Developer Profile</h3>
+            <p class="profile-intro" data-i18n="profileIntro">
+                I build interactive systems across Unity and the web, combining gameplay logic, responsive interfaces
+                and technical prototypes with clear visual presentation.
+            </p>
+            <div class="capability-grid">
+                <article class="capability-card">
+                    <span class="capability-label" data-i18n="capabilityGameLabel">Game Systems</span>
+                    <h4 data-i18n="capabilityGameTitle">Gameplay Logic</h4>
+                    <p class="muted" data-i18n="capabilityGameText">
+                        Unity, C#, player feedback, UI behavior, combat states and match-flow systems.
+                    </p>
+                    <p class="capability-proof" data-i18n="capabilityGameProof">Evidence: LOBSTAR!, Smack That Rooster, Boo and OSS Mask Protocol.</p>
+                </article>
+                <article class="capability-card">
+                    <span class="capability-label" data-i18n="capabilityWebLabel">Web Interfaces</span>
+                    <h4 data-i18n="capabilityWebTitle">Front-End Implementation</h4>
+                    <p class="muted" data-i18n="capabilityWebText">
+                        Responsive layouts, JavaScript state, multilingual pages, product flows and UI polish.
+                    </p>
+                    <p class="capability-proof" data-i18n="capabilityWebProof">Evidence: Okiyama and Volley Beach Santi.</p>
+                </article>
+                <article class="capability-card">
+                    <span class="capability-label" data-i18n="capabilityToolsLabel">Interactive Tools</span>
+                    <h4 data-i18n="capabilityToolsTitle">Useful Prototypes</h4>
+                    <p class="muted" data-i18n="capabilityToolsText">
+                        Browser tools, animated systems, scoreboards, cart flows and user-facing interactions.
+                    </p>
+                    <p class="capability-proof" data-i18n="capabilityToolsProof">Evidence: Volley tools, Okiyama cart flow and project case studies.</p>
+                </article>
+                <article class="capability-card">
+                    <span class="capability-label" data-i18n="capabilityGraphicsLabel">Technical Graphics</span>
+                    <h4 data-i18n="capabilityGraphicsTitle">Visual Systems</h4>
+                    <p class="muted" data-i18n="capabilityGraphicsText">
+                        Lighting, shading models, atmosphere, scene presentation and render-mode controls.
+                    </p>
+                    <p class="capability-proof" data-i18n="capabilityGraphicsProof">Evidence: Computer Graphics Final Project.</p>
+                </article>
+            </div>
+        </section>
         <section id="projects">
             <h3 data-i18n="projectsTitle">Selected Work</h3>
             <p class="projects-intro" data-i18n="projectsIntro">
-                Game projects, web work and technical graphics demos grouped by discipline for a clearer overview.
+                Projects grouped by discipline so the work is easier to scan.
             </p>
             <div class="category-bar" aria-label="Portfolio filters" data-i18n-aria-label="projectFiltersLabel">
-                <button class="category-filter is-active" type="button" data-filter="all" data-i18n="filterAll" aria-controls="projectGrid" aria-pressed="true">All Work</button>
-                <button class="category-filter" type="button" data-filter="game" data-i18n="categoryGames" aria-controls="projectGrid" aria-pressed="false">Game Development</button>
-                <button class="category-filter" type="button" data-filter="web" data-i18n="categoryWeb" aria-controls="projectGrid" aria-pressed="false">Web Development</button>
-                <button class="category-filter" type="button" data-filter="graphics" data-i18n="categoryGraphics" aria-controls="projectGrid" aria-pressed="false">Computer Graphics</button>
+                <button class="category-filter is-active" type="button" data-filter="all" aria-controls="projectGrid" aria-pressed="true"><span data-i18n="filterAll">All Work</span> <strong>7</strong></button>
+                <button class="category-filter" type="button" data-filter="game" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryGames">Game Development</span> <strong>4</strong></button>
+                <button class="category-filter" type="button" data-filter="web" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryWeb">Web Development</span> <strong>2</strong></button>
+                <button class="category-filter" type="button" data-filter="graphics" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryGraphics">Computer Graphics</span> <strong>1</strong></button>
             </div>
 
             <div class="cards" id="projectGrid">
@@ -633,11 +794,11 @@
                     <span class="featured-label" data-i18n="professionalProject">Professional Project</span>
                     <h4>Okiyama Website</h4>
                     <p class="muted" data-i18n="okiyamaDesc">
-                        Company website and online shop experience built with responsive pages, product catalog, cart flow and front-end interaction logic.
+                        Responsive company website with shop flow, cart logic, payment prep and WhatsApp support.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="okiyamaRole">Role: Web development + UI implementation</span>
-                        <span data-i18n="okiyamaProof">Evidence: case study + website assets</span>
+                        <span data-i18n="okiyamaRole">Built: UI, cart and payment preparation</span>
+                        <span data-i18n="okiyamaProof">Evidence: case study + before/after reference</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
                 </a>
@@ -648,10 +809,10 @@
                     <span class="featured-label" data-i18n="interactiveWebProject">Interactive Web Project</span>
                     <h4>Volley Beach Santi</h4>
                     <p class="muted" data-i18n="volleyDesc">
-                        Responsive beach volleyball training web app with animated 2v2 systems, tournament tools and scoreboard logic.
+                        Interactive training app with animations, tournament tools and live scoreboard logic.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="volleyRole">Role: Web development + interaction systems</span>
+                        <span data-i18n="volleyRole">Built: animated tools and scoreboard logic</span>
                         <span data-i18n="volleyProof">Evidence: working prototype + tournament tools</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
@@ -663,10 +824,10 @@
                     <span class="featured-label" data-i18n="featuredProject">Featured Project</span>
                     <h4>LOBSTAR!</h4>
                     <p class="muted" data-i18n="lobstarDesc">
-                        It is an Arcade action game built with Unity. Award winner at Florida GameFest 2025 (Best Game – Public Vote & Jury).
+                        Award-winning Unity arcade game with gameplay, UI and feedback systems.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="lobstarRole">Role: Gameplay/UI programming</span>
+                        <span data-i18n="lobstarRole">Built: gameplay, UI and feedback systems</span>
                         <span data-i18n="lobstarProof">Evidence: trailer + playable build</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
@@ -678,10 +839,10 @@
                     <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <h4>Smack That Rooster</h4>
                     <p class="muted" data-i18n="roosterDesc">
-                        It is a Multiplayer combat game focused on match flow, life systems and victory conditions.
+                        Multiplayer combat prototype with health, timer, match flow and victory logic.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="roosterRole">Role: Health, timer and results flow</span>
+                        <span data-i18n="roosterRole">Built: health, timer and results flow</span>
                         <span data-i18n="roosterProof">Evidence: gameplay video + systems breakdown</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
@@ -693,10 +854,10 @@
                     <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <h4>BOO! I'm Inside Your Walls</h4>
                     <p class="muted" data-i18n="BooImInsideYourWallDesc">
-                        It is a stealth and puzzle game where you control Bunyo, a little ghost who must sneak into homes and terrorize their residents without being detected.
+                        Stealth puzzle project with ghost abilities, level pacing and clear player goals.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="booRole">Role: Player abilities + level design</span>
+                        <span data-i18n="booRole">Built: player abilities + level pacing</span>
                         <span data-i18n="booProof">Evidence: trailer + ability breakdown</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
@@ -708,26 +869,26 @@
                     <span class="project-category" data-i18n="categoryGames">Game Development</span>
                     <h4>OSS Mask Protocol</h4>
                     <p class="muted" data-i18n="ossmaskDesc">
-                        It is a platform game that was developed in gamejam 26 with the mask theme.
+                        Game jam platformer built around mask mechanics and fast production delivery.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="ossRole">Role: Programmer + producer</span>
+                        <span data-i18n="ossRole">Built: jam systems + production support</span>
                         <span data-i18n="ossProof">Evidence: itch.io build + PDF</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
                     <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
                 </a>
 
-                <a class="card" href="Videogames/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html" data-categories="graphics">
-                    <img src="./Videogames/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
+                <a class="card" href="Websites/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html" data-categories="graphics">
+                    <img src="./Websites/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
                          alt="Computer Graphics Final Project" loading="lazy" decoding="async">
                     <span class="project-category" data-i18n="categoryGraphics">Computer Graphics</span>
                     <h4>Computer Graphics Final Project</h4>
                     <p class="muted" data-i18n="graphicsDesc">
-                        Final academic project exploring lighting, shading models and atmosphere in a 3D scene.
+                        Interactive graphics demo for lighting, shaders, fog and render modes.
                     </p>
                     <div class="project-tags">
-                        <span data-i18n="graphicsRole">Role: Lighting and shader presentation</span>
+                        <span data-i18n="graphicsRole">Built: lighting, shaders and render controls</span>
                         <span data-i18n="graphicsProof">Evidence: interactive demo + GIFs</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
@@ -740,7 +901,13 @@
             <div class="contact-grid">
                 <div class="contact-card">
                     <p class="muted" data-i18n="contactText">
+                        Available for opportunities where interactive systems, clear interfaces and reliable implementation matter.
                     </p>
+                    <div class="contact-focus" aria-label="Professional focus">
+                        <span data-i18n="focusGameplay">Gameplay Systems</span>
+                        <span data-i18n="focusFrontend">Front-End UI</span>
+                        <span data-i18n="focusInteractive">Interactive Tools</span>
+                    </div>
                     <p><strong>Email</strong></p>
                     <a class="cta" href="mailto:santiagocardozobotero@gmail.com">
                         santiagocardozobotero@gmail.com
@@ -834,23 +1001,45 @@
                 metaDescription: "Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics and interactive systems.",
                 role: "Game & Web Developer",
                 navHome: "Home",
+                navProfile: "Profile",
                 navProjects: "Projects",
                 navContact: "Contact",
 
-                heroTitle: "Game, Web & Interactive Developer Portfolio",
-                heroSubtitle: "Building games, websites and interactive technical systems",
-                heroText: "A portfolio of academic, collaborative, professional and personal projects across game development, web development, computer graphics and interactive systems.",
+                heroTitle: "Game, Web & Interactive Systems Portfolio",
+                heroSubtitle: "Building playable, usable and polished interactive projects",
+                heroText: "A focused portfolio across Unity games, responsive websites, technical graphics and browser-based tools.",
                 heroPrimaryCta: "View Projects",
                 heroSecondaryCta: "Contact Me",
-                proofSystems: "Gameplay systems, web interfaces and interaction logic",
-                proofProjects: "Games, websites, prototypes and graphics work",
-                proofTeam: "Company, academic, jam and collaborative productions",
+                stackUiSystems: "UI Systems",
+                stackInteractive: "Interactive Tools",
+                proofSystems: "Gameplay, UI and interaction logic",
+                proofProjects: "Games, websites and technical demos",
+                proofTeam: "Company, academic and team projects",
 
                 skillsTitle: "Skills",
-                skillsText: "Game Development · Web Development · Unity (2D/3D) · C# · JavaScript · HTML/CSS · Gameplay Systems · UI Systems · Responsive Interfaces · Computer Graphics · Lighting & Shading Models · Collaborative and Professional Projects",
+                skillsText: "Unity · C# · JavaScript · HTML/CSS · Gameplay Systems · UI Systems · Responsive Web · Computer Graphics",
+
+                profileTitle: "Developer Profile",
+                profileIntro: "I build interactive systems across Unity and the web, combining gameplay logic, responsive interfaces and technical prototypes with clear visual presentation.",
+                capabilityGameLabel: "Game Systems",
+                capabilityGameTitle: "Gameplay Logic",
+                capabilityGameText: "Unity, C#, player feedback, UI behavior, combat states and match-flow systems.",
+                capabilityGameProof: "Evidence: LOBSTAR!, Smack That Rooster, Boo and OSS Mask Protocol.",
+                capabilityWebLabel: "Web Interfaces",
+                capabilityWebTitle: "Front-End Implementation",
+                capabilityWebText: "Responsive layouts, JavaScript state, multilingual pages, product flows and UI polish.",
+                capabilityWebProof: "Evidence: Okiyama and Volley Beach Santi.",
+                capabilityToolsLabel: "Interactive Tools",
+                capabilityToolsTitle: "Useful Prototypes",
+                capabilityToolsText: "Browser tools, animated systems, scoreboards, cart flows and user-facing interactions.",
+                capabilityToolsProof: "Evidence: Volley tools, Okiyama cart flow and project case studies.",
+                capabilityGraphicsLabel: "Technical Graphics",
+                capabilityGraphicsTitle: "Visual Systems",
+                capabilityGraphicsText: "Lighting, shading models, atmosphere, scene presentation and render-mode controls.",
+                capabilityGraphicsProof: "Evidence: Computer Graphics Final Project.",
 
                 projectsTitle: "Selected Work",
-                projectsIntro: "Game projects, web work and technical graphics demos grouped by discipline for a clearer overview.",
+                projectsIntro: "Projects grouped by discipline so the work is easier to scan.",
                 projectFiltersLabel: "Portfolio filters",
                 filterAll: "All Work",
                 categoryGames: "Game Development",
@@ -861,32 +1050,35 @@
                 featuredProject: "Featured Project",
                 professionalProject: "Professional Project",
                 interactiveWebProject: "Interactive Web Project",
-                okiyamaDesc: "Company website and online shop experience built with responsive pages, product catalog, cart flow and front-end interaction logic.",
-                volleyDesc: "Responsive beach volleyball training web app with animated 2v2 systems, tournament tools and scoreboard logic.",
-                lobstarDesc: "Arcade action game built with Unity. Winner at Florida GameFest 2025 for Best Game – Public Vote and Jury.",
-                roosterDesc: "Multiplayer combat game focused on match flow, health systems, player interaction and victory conditions.",
-                ossmaskDesc: "Platform game developed during Game Jam 26, built around the theme of masks.",
-                BooImInsideYourWallDesc: "Stealth and puzzle game where you control Bunyo, a small ghost who sneaks into homes and scares residents without being detected.",
-                graphicsDesc: "Academic 3D graphics project exploring lighting, shading models, atmosphere and scene presentation.",
-                okiyamaRole: "Role: Web development + UI implementation",
-                okiyamaProof: "Evidence: case study + working website",
-                volleyRole: "Role: Web development + interaction systems",
+                okiyamaDesc: "Responsive company website with shop flow, cart logic, payment prep and WhatsApp support.",
+                volleyDesc: "Interactive training app with animations, tournament tools and live scoreboard logic.",
+                lobstarDesc: "Award-winning Unity arcade game with gameplay, UI and feedback systems.",
+                roosterDesc: "Multiplayer combat prototype with health, timer, match flow and victory logic.",
+                ossmaskDesc: "Game jam platformer built around mask mechanics and fast production delivery.",
+                BooImInsideYourWallDesc: "Stealth puzzle project with ghost abilities, level pacing and clear player goals.",
+                graphicsDesc: "Interactive graphics demo for lighting, shaders, fog and render modes.",
+                okiyamaRole: "Built: UI, cart and payment preparation",
+                okiyamaProof: "Evidence: case study + before/after reference",
+                volleyRole: "Built: animated tools and scoreboard logic",
                 volleyProof: "Evidence: working prototype + tournament tools",
-                lobstarRole: "Role: Gameplay/UI programming",
+                lobstarRole: "Built: gameplay, UI and feedback systems",
                 lobstarProof: "Evidence: trailer + playable build",
-                roosterRole: "Role: Health, timer and results flow",
+                roosterRole: "Built: health, timer and results flow",
                 roosterProof: "Evidence: gameplay video + systems breakdown",
-                booRole: "Role: Player abilities + level design",
+                booRole: "Built: player abilities + level pacing",
                 booProof: "Evidence: trailer + ability breakdown",
-                ossRole: "Role: Programmer + producer",
+                ossRole: "Built: jam systems + production support",
                 ossProof: "Evidence: itch.io build + PDF",
-                graphicsRole: "Role: Lighting and shader presentation",
+                graphicsRole: "Built: lighting, shaders and render controls",
                 graphicsProof: "Evidence: interactive demo + GIFs",
 
                 viewCaseStudy: "View case study",
                 viewProject: "View Project",
                 contactTitle: "Contact",
-                contactText: "For opportunities, collaborations or feedback, the fastest path is email or LinkedIn.",
+                contactText: "Available for opportunities where interactive systems, clear interfaces and reliable implementation matter.",
+                focusGameplay: "Gameplay Systems",
+                focusFrontend: "Front-End UI",
+                focusInteractive: "Interactive Tools",
                 social: "Social"
             },
 
@@ -895,23 +1087,45 @@
                 metaDescription: "Portafolio de Santiago Cardozo Botero con desarrollo de videojuegos, proyectos web, Unity, C#, JavaScript, gráficos por computadora y sistemas interactivos.",
                 role: "Desarrollador Web y de Videojuegos",
                 navHome: "Inicio",
+                navProfile: "Perfil",
                 navProjects: "Proyectos",
                 navContact: "Contacto",
 
-                heroTitle: "Portafolio de Desarrollo Web, Videojuegos y Sistemas Interactivos",
-                heroSubtitle: "Creando juegos, sitios web y sistemas técnicos interactivos",
-                heroText: "Portafolio con proyectos académicos, colaborativos, profesionales y personales en desarrollo de videojuegos, desarrollo web, gráficos por computadora y sistemas interactivos.",
+                heroTitle: "Portafolio de Juegos, Web y Sistemas Interactivos",
+                heroSubtitle: "Creando proyectos interactivos jugables, claros y pulidos",
+                heroText: "Portafolio enfocado en juegos con Unity, sitios web responsivos, gráficos técnicos y herramientas en navegador.",
                 heroPrimaryCta: "Ver Proyectos",
                 heroSecondaryCta: "Contactarme",
-                proofSystems: "Sistemas de gameplay, interfaces web y lógica de interacción",
-                proofProjects: "Juegos, sitios web, prototipos y trabajo gráfico",
-                proofTeam: "Producciones de empresa, académicas, jams y colaborativas",
+                stackUiSystems: "Sistemas de UI",
+                stackInteractive: "Herramientas Interactivas",
+                proofSystems: "Gameplay, UI y lógica de interacción",
+                proofProjects: "Juegos, sitios web y demos técnicas",
+                proofTeam: "Proyectos de empresa, académicos y en equipo",
 
                 skillsTitle: "Habilidades",
-                skillsText: "Desarrollo de Videojuegos · Desarrollo Web · Unity (2D/3D) · C# · JavaScript · HTML/CSS · Sistemas de Gameplay · Sistemas de UI · Interfaces Responsivas · Gráficos por Computación · Iluminación y Modelos de Sombreado · Proyectos Colaborativos y Profesionales",
+                skillsText: "Unity · C# · JavaScript · HTML/CSS · Sistemas de Gameplay · Sistemas de UI · Web Responsiva · Gráficos por Computación",
+
+                profileTitle: "Perfil de Desarrollador",
+                profileIntro: "Construyo sistemas interactivos entre Unity y la web, combinando lógica de gameplay, interfaces responsivas y prototipos técnicos con presentación visual clara.",
+                capabilityGameLabel: "Sistemas de Juego",
+                capabilityGameTitle: "Lógica de Gameplay",
+                capabilityGameText: "Unity, C#, feedback del jugador, comportamiento de UI, estados de combate y flujo de partida.",
+                capabilityGameProof: "Evidencia: LOBSTAR!, Smack That Rooster, Boo y OSS Mask Protocol.",
+                capabilityWebLabel: "Interfaces Web",
+                capabilityWebTitle: "Implementación Front-End",
+                capabilityWebText: "Layouts responsivos, estado con JavaScript, páginas multidioma, flujos de producto y pulido de UI.",
+                capabilityWebProof: "Evidencia: Okiyama y Volley Beach Santi.",
+                capabilityToolsLabel: "Herramientas Interactivas",
+                capabilityToolsTitle: "Prototipos Útiles",
+                capabilityToolsText: "Herramientas en navegador, sistemas animados, marcadores, carritos e interacciones de usuario.",
+                capabilityToolsProof: "Evidencia: herramientas de Volley, carrito de Okiyama y casos de estudio.",
+                capabilityGraphicsLabel: "Gráficos Técnicos",
+                capabilityGraphicsTitle: "Sistemas Visuales",
+                capabilityGraphicsText: "Iluminación, modelos de sombreado, atmósfera, presentación de escena y controles de renderizado.",
+                capabilityGraphicsProof: "Evidencia: Computer Graphics Final Project.",
 
                 projectsTitle: "Trabajos Seleccionados",
-                projectsIntro: "Proyectos de videojuegos, trabajo web y demos técnicas de gráficos agrupados por disciplina para una vista más clara.",
+                projectsIntro: "Proyectos agrupados por disciplina para revisar el trabajo con más claridad.",
                 projectFiltersLabel: "Filtros del portafolio",
                 filterAll: "Todo",
                 categoryGames: "Desarrollo de Videojuegos",
@@ -922,39 +1136,42 @@
                 featuredProject: "Proyecto Destacado",
                 professionalProject: "Proyecto Profesional",
                 interactiveWebProject: "Proyecto Web Interactivo",
-                okiyamaDesc: "Sitio web corporativo y experiencia de tienda online con páginas responsivas, catálogo de productos, flujo de carrito y lógica de interacción front-end.",
-                volleyDesc: "App web responsiva de entrenamiento de voley playa con sistemas 2v2 animados, herramientas de torneo y lógica de marcador.",
-                lobstarDesc: "Juego de acción arcade desarrollado con Unity. Ganador en Florida GameFest 2025 como Mejor Juego por Voto del Público y Jurado.",
-                roosterDesc: "Juego de combate multijugador enfocado en flujo de partida, sistemas de vida, interacción entre jugadores y condiciones de victoria.",
-                ossmaskDesc: "Juego de plataformas desarrollado durante la GameJam 26, construido alrededor de la temática de máscaras.",
-                BooImInsideYourWallDesc: "Juego de sigilo y puzles donde controlas a Bunyo, un pequeño fantasma que se infiltra en hogares y asusta residentes sin ser detectado.",
-                graphicsDesc: "Proyecto académico de gráficos 3D que explora iluminación, modelos de sombreado, atmósfera y presentación de escena.",
-                okiyamaRole: "Rol: Desarrollo web + implementación UI",
-                okiyamaProof: "Evidencia: caso de estudio + sitio funcional",
-                volleyRole: "Rol: Desarrollo web + sistemas de interacción",
+                okiyamaDesc: "Sitio corporativo responsivo con tienda, carrito, preparación de pago y soporte por WhatsApp.",
+                volleyDesc: "App de entrenamiento con animaciones, torneo y lógica de marcador en vivo.",
+                lobstarDesc: "Juego arcade premiado en Unity con gameplay, UI y sistemas de feedback.",
+                roosterDesc: "Prototipo de combate multijugador con vida, temporizador, flujo y victoria.",
+                ossmaskDesc: "Platformer de game jam con mecánicas de máscaras y entrega rápida.",
+                BooImInsideYourWallDesc: "Proyecto de sigilo y puzles con habilidades, ritmo y objetivos claros.",
+                graphicsDesc: "Demo gráfica interactiva con iluminación, shaders, niebla y modos de render.",
+                okiyamaRole: "Construí: UI, carrito y preparación de pago",
+                okiyamaProof: "Evidencia: caso de estudio + referencia antes/después",
+                volleyRole: "Construí: herramientas animadas y marcador",
                 volleyProof: "Evidencia: prototipo funcional + herramientas de torneo",
-                lobstarRole: "Rol: Programación de gameplay/UI",
+                lobstarRole: "Construí: gameplay, UI y feedback",
                 lobstarProof: "Evidencia: tráiler + build jugable",
-                roosterRole: "Rol: Vida, temporizador y resultados",
+                roosterRole: "Construí: vida, temporizador y resultados",
                 roosterProof: "Evidencia: video de gameplay + breakdown",
-                booRole: "Rol: Habilidades del jugador + level design",
+                booRole: "Construí: habilidades y ritmo de nivel",
                 booProof: "Evidencia: tráiler + desglose de habilidades",
-                ossRole: "Rol: Programador + productor",
+                ossRole: "Construí: sistemas de jam + apoyo de producción",
                 ossProof: "Evidencia: build en itch.io + PDF",
-                graphicsRole: "Rol: Iluminación y presentación de shaders",
+                graphicsRole: "Construí: iluminación, shaders y controles",
                 graphicsProof: "Evidencia: demo interactiva + GIFs",
 
                 viewCaseStudy: "Ver caso de estudio",
                 viewProject: "Ver Proyecto",
                 contactTitle: "Contacto",
-                contactText: "Para oportunidades, colaboraciones o feedback, lo más directo es email o LinkedIn.",
+                contactText: "Disponible para oportunidades donde importen sistemas interactivos, interfaces claras e implementación confiable.",
+                focusGameplay: "Sistemas de Gameplay",
+                focusFrontend: "UI Front-End",
+                focusInteractive: "Herramientas Interactivas",
                 social: "Redes"
             }
         };
         const DEFAULT_LANGUAGE = "en";
         const STORAGE_KEY = "language";
         const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
-        const LANGUAGE_VERSION = "english-default-v2";
+        const LANGUAGE_VERSION = "english-default-v3";
         const btn = document.getElementById("langToggle");
 
         if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {

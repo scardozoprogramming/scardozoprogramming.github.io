@@ -524,6 +524,79 @@
       text-align: center;
     }
 
+    html {
+      color-scheme: dark;
+    }
+
+    h1,
+    h2,
+    h3,
+    .eyebrow,
+    .btn,
+    .tag,
+    .comparison-label {
+      letter-spacing: 0;
+    }
+
+    .btn:focus-visible,
+    .brand:focus-visible,
+    .comparison-card:focus-within,
+    .browser-mock:focus-within {
+      outline: 3px solid var(--accent-2);
+      outline-offset: 4px;
+    }
+
+    .panel,
+    .stat,
+    .metric,
+    .card,
+    .comparison-card,
+    .browser-mock,
+    .flow-list li,
+    .scope-list li {
+      transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease, background .24s ease;
+    }
+
+    .stat:hover,
+    .metric:hover,
+    .card:hover,
+    .comparison-card:hover,
+    .browser-mock:hover,
+    .flow-list li:hover,
+    .scope-list li:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 230, 118, .52);
+      background: rgba(0, 230, 118, .075);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, .28), 0 0 24px rgba(0, 230, 118, .14);
+    }
+
+    .hero .panel {
+      border-color: rgba(0, 230, 118, .34);
+    }
+
+    .grid,
+    .metrics,
+    .showcase-grid,
+    .comparison-grid {
+      align-items: stretch;
+    }
+
+    .card,
+    .metric,
+    .browser-mock,
+    .comparison-card {
+      min-height: 100%;
+    }
+
+    .comparison-card img {
+      border-bottom: 1px solid rgba(0, 230, 118, .18);
+    }
+
+    footer {
+      border-top: 1px solid rgba(0, 230, 118, .18);
+      margin-top: 34px;
+    }
+
     @media (max-width: 920px) {
       .hero,
       .media-grid,
@@ -581,8 +654,8 @@
           <p class="eyebrow" data-i18n="heroEyebrow">Professional Web Development Project</p>
           <h1 data-i18n="heroTitle">Okiyama Website</h1>
           <p data-i18n="heroText">
-            Company website and online shop experience for Okiyama, focused on presenting health-related
-            products clearly, guiding users to product information and supporting a cart-based purchase flow.
+            Improved company website and shop flow for Okiyama, focused on product clarity, cart logic,
+            payment-button preparation and WhatsApp support.
           </p>
           <div class="btn-row">
             <a class="btn" href="#case-study" data-i18n="readCaseStudy">Read case study</a>
@@ -623,9 +696,8 @@
         <p class="eyebrow" data-i18n="overviewEyebrow">Project Overview</p>
         <h2 data-i18n="overviewTitle">Business-Focused Web Experience</h2>
         <p data-i18n="overviewText">
-          The project includes a public-facing landing page, company information, product pages,
-          an online shop, a cart interface and supporting legal/privacy pages. The work balances brand
-          presentation with practical e-commerce interactions.
+          A responsive business site with product pages, online shop structure, cart state, legal pages
+          and a clearer visual system aligned with the company palette.
         </p>
         <div class="metrics">
           <div class="metric">
@@ -677,15 +749,15 @@
           <ul class="flow-list">
             <li>
               <strong data-i18n="problemTitle">Problem</strong>
-              <span data-i18n="problemText">Okiyama already had a website, but the experience needed clearer visual structure, stronger brand consistency and a better purchase path. The previous version did not include payment-button integration, cost and discount calculation, a complete cart flow or direct customer-service support through WhatsApp.</span>
+              <span data-i18n="problemText">Okiyama already had a website, but the visual structure and purchase path were not ready: no payment button, cost and discount calculation, complete cart flow or direct WhatsApp support.</span>
             </li>
             <li>
               <strong data-i18n="solutionTitle">Solution</strong>
-              <span data-i18n="solutionText">I worked on the maintenance and redesign by aligning the interface with the company color palette, simplifying sections that were previously split across too many tabs, adding the cart flow, preparing the payment-button integration, building cost and discount logic and connecting customer support through WhatsApp.</span>
+              <span data-i18n="solutionText">I simplified the navigation, aligned the UI with the company palette, built cart logic with totals and discounts, prepared payment-button integration and connected customer support through WhatsApp.</span>
             </li>
             <li>
               <strong data-i18n="resultTitle">Result</strong>
-              <span data-i18n="resultText">The improved version is clearer, more organized and easier to navigate, with a simplified structure, stronger visual consistency and purchasing features prepared before the official publication of the maintenance update.</span>
+              <span data-i18n="resultText">The maintenance version is cleaner, more consistent and easier to review before the official update, with before/after evidence kept as reference only.</span>
             </li>
           </ul>
         </article>
@@ -824,9 +896,8 @@
         <p class="eyebrow" data-i18n="statusEyebrow">Professional Note</p>
         <h2 data-i18n="statusTitle">Maintenance in Progress</h2>
         <p data-i18n="statusText">
-          This project is currently in maintenance before the official publication of the improved version.
-          The working website, shop and cart flow are included here so the updated experience can be reviewed
-          directly from the case study.
+          This maintenance version is included so the improved website, shop and cart flow can be reviewed
+          before official publication.
         </p>
         <div class="btn-row">
           <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
@@ -851,7 +922,7 @@
         openCart: "Open cart",
         heroEyebrow: "Professional Web Development Project",
         heroTitle: "Okiyama Website",
-        heroText: "Company website and online shop experience for Okiyama, focused on presenting health-related products clearly, guiding users to product information and supporting a cart-based purchase flow.",
+        heroText: "Improved company website and shop flow for Okiyama, focused on product clarity, cart logic, payment-button preparation and WhatsApp support.",
         readCaseStudy: "Read case study",
         technicalWork: "Technical work",
         statRoleTitle: "Role",
@@ -866,7 +937,7 @@
         tagHealthcare: "Healthcare Brand",
         overviewEyebrow: "Project Overview",
         overviewTitle: "Business-Focused Web Experience",
-        overviewText: "The project includes a public-facing landing page, company information, product pages, an online shop, a cart interface and supporting legal/privacy pages. The work balances brand presentation with practical e-commerce interactions.",
+        overviewText: "A responsive business site with product pages, online shop structure, cart state, legal pages and a clearer visual system aligned with the company palette.",
         metricPages: "Public pages",
         metricProducts: "Product presentations",
         metricCart: "Cart flow",
@@ -885,11 +956,11 @@
         caseEyebrow: "Case Study",
         caseTitle: "Problem, Solution, Result",
         problemTitle: "Problem",
-        problemText: "Okiyama already had a website, but the experience needed clearer visual structure, stronger brand consistency and a better purchase path. The previous version did not include payment-button integration, cost and discount calculation, a complete cart flow or direct customer-service support through WhatsApp.",
+        problemText: "Okiyama already had a website, but the visual structure and purchase path were not ready: no payment button, cost and discount calculation, complete cart flow or direct WhatsApp support.",
         solutionTitle: "Solution",
-        solutionText: "I worked on the maintenance and redesign by aligning the interface with the company color palette, simplifying sections that were previously split across too many tabs, adding the cart flow, preparing the payment-button integration, building cost and discount logic and connecting customer support through WhatsApp.",
+        solutionText: "I simplified the navigation, aligned the UI with the company palette, built cart logic with totals and discounts, prepared payment-button integration and connected customer support through WhatsApp.",
         resultTitle: "Result",
-        resultText: "The improved version is clearer, more organized and easier to navigate, with a simplified structure, stronger visual consistency and purchasing features prepared before the official publication of the maintenance update.",
+        resultText: "The maintenance version is cleaner, more consistent and easier to review before the official update, with before/after evidence kept as reference only.",
         tech1Title: "Responsive Navigation",
         tech1Text: "Mobile menu behavior, sticky header states and clear access to home, company pages, shop and cart.",
         tech2Title: "Product & Shop Flow",
@@ -921,7 +992,7 @@
         mockProductTitle: "Product Information",
         statusEyebrow: "Professional Note",
         statusTitle: "Maintenance in Progress",
-        statusText: "This project is currently in maintenance before the official publication of the improved version. The working website, shop and cart flow are included here so the updated experience can be reviewed directly from the case study."
+        statusText: "This maintenance version is included so the improved website, shop and cart flow can be reviewed before official publication."
       },
       es: {
         title: "Sitio Web Okiyama | Proyecto de Portafolio de Desarrollo Web",
@@ -932,7 +1003,7 @@
         openCart: "Abrir carrito",
         heroEyebrow: "Proyecto Profesional de Desarrollo Web",
         heroTitle: "Sitio Web Okiyama",
-        heroText: "Sitio web corporativo y experiencia de tienda online para Okiyama, enfocado en presentar productos relacionados con la salud de forma clara, guiar a los usuarios hacia información de producto y apoyar un flujo de compra con carrito.",
+        heroText: "Versión mejorada del sitio y flujo de tienda de Okiyama, enfocada en claridad de producto, carrito, preparación de pago y soporte por WhatsApp.",
         readCaseStudy: "Ver caso de estudio",
         technicalWork: "Trabajo técnico",
         statRoleTitle: "Rol",
@@ -947,7 +1018,7 @@
         tagHealthcare: "Marca de Salud",
         overviewEyebrow: "Resumen del Proyecto",
         overviewTitle: "Experiencia Web Enfocada en Negocio",
-        overviewText: "El proyecto incluye una landing page pública, información de la empresa, páginas de producto, tienda online, interfaz de carrito y páginas legales/privacidad. El trabajo equilibra presentación de marca con interacciones prácticas de comercio electrónico.",
+        overviewText: "Sitio de negocio responsivo con páginas de producto, estructura de tienda, estado de carrito, páginas legales y un sistema visual alineado con la paleta de la empresa.",
         metricPages: "Páginas públicas",
         metricProducts: "Presentaciones de producto",
         metricCart: "Flujo de carrito",
@@ -966,11 +1037,11 @@
         caseEyebrow: "Caso de Estudio",
         caseTitle: "Problema, Solución, Resultado",
         problemTitle: "Problema",
-        problemText: "Okiyama ya tenía una página, pero la experiencia necesitaba una estructura visual más clara, mayor consistencia con la marca y un mejor camino hacia la compra. La versión anterior no tenía integración del botón de pago, cálculo de costos y descuentos, flujo completo de carrito ni acceso directo a servicio al cliente por WhatsApp.",
+        problemText: "Okiyama ya tenía una página, pero la estructura visual y el camino de compra no estaban listos: faltaba botón de pago, cálculo de costos y descuentos, carrito completo y soporte directo por WhatsApp.",
         solutionTitle: "Solución",
-        solutionText: "Trabajé en el mantenimiento y rediseño alineando la interfaz con la paleta de color de la empresa, simplificando secciones que antes estaban separadas en muchas pestañas, agregando el flujo de carrito, preparando la integración del botón de pago, desarrollando la lógica de costos y descuentos y conectando atención al cliente por WhatsApp.",
+        solutionText: "Simplifiqué la navegación, alineé la UI con la paleta de la empresa, construí el carrito con totales y descuentos, preparé la integración del botón de pago y conecté soporte por WhatsApp.",
         resultTitle: "Resultado",
-        resultText: "La versión mejorada queda más clara, precisa, organizada y fácil de navegar, con una estructura simplificada, mayor uniformidad visual y funciones de compra preparadas antes de la publicación oficial de estos cambios.",
+        resultText: "La versión de mantenimiento queda más limpia, consistente y fácil de revisar antes de la actualización oficial, con evidencia antes/después usada solo como referencia.",
         tech1Title: "Navegación Responsiva",
         tech1Text: "Comportamiento de menú móvil, estados de header fijo y acceso claro a inicio, páginas de empresa, tienda y carrito.",
         tech2Title: "Flujo de Producto y Tienda",
@@ -1002,14 +1073,14 @@
         mockProductTitle: "Información de Producto",
         statusEyebrow: "Nota Profesional",
         statusTitle: "Mantenimiento en Progreso",
-        statusText: "Este proyecto está en mantenimiento antes de la publicación oficial de la versión mejorada. El sitio funcional, la tienda y el flujo de carrito están incluidos aquí para revisar la experiencia actualizada directamente desde este caso de estudio."
+        statusText: "Esta versión de mantenimiento se incluye para revisar el sitio mejorado, la tienda y el flujo de carrito antes de la publicación oficial."
       }
     };
 
     const DEFAULT_LANGUAGE = "en";
     const STORAGE_KEY = "language";
     const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
-    const LANGUAGE_VERSION = "english-default-v2";
+    const LANGUAGE_VERSION = "english-default-v3";
     const langToggle = document.getElementById("langToggle");
 
     if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {

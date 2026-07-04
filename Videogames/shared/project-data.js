@@ -91,7 +91,7 @@ window.portfolioProjectData = {
           proof_kicker: "Portfolio evidence",
           proof_h2: "Technical Proof",
           proof_p:
-            "A quick read of the concrete evidence behind the project: what to watch, what to play and what systems connect to my contribution.",
+            "Concrete evidence of the playable build, gameplay systems and Unity work behind the project.",
           proof1_h: "Playable Build",
           proof1_p:
             "The project includes a playable web build, so the game feel and interaction loop can be tested directly.",
@@ -105,7 +105,7 @@ window.portfolioProjectData = {
           award_kicker: "Result",
           award_h2: "Award Context",
           award_p:
-            "LOBSTAR! is the project I would present first because it combines playable work, team production and external recognition.",
+            "LOBSTAR! combines playable work, team production and external recognition.",
           award1_h: "Public Vote",
           award1_p:
             "The public vote result helps show that the project connected with players, not only with its development team.",
@@ -114,7 +114,7 @@ window.portfolioProjectData = {
             "The jury result adds a stronger signal that the game was evaluated positively in a formal event context.",
           award3_h: "Portfolio Value",
           award3_p:
-            "For a recruiter or professor, this makes LOBSTAR! a strong opening project because it has both proof and outcome.",
+            "This makes LOBSTAR! a strong opening project because it has both proof and outcome.",
     
           role_kicker: "My contribution",
           role_h2: "My Role in the Project",
@@ -223,7 +223,7 @@ window.portfolioProjectData = {
           proof_kicker: "Evidencia de portafolio",
           proof_h2: "Prueba Técnica",
           proof_p:
-            "Una lectura rápida de la evidencia concreta del proyecto: qué ver, qué jugar y qué sistemas se conectan con mi contribución.",
+            "Evidencia concreta de la build jugable, los sistemas de gameplay y el trabajo en Unity del proyecto.",
           proof1_h: "Build Jugable",
           proof1_p:
             "El proyecto incluye una build web jugable, así que el game feel y el loop de interacción se pueden probar directamente.",
@@ -237,7 +237,7 @@ window.portfolioProjectData = {
           award_kicker: "Resultado",
           award_h2: "Contexto del Premio",
           award_p:
-            "LOBSTAR! es el proyecto que presentaría primero porque combina trabajo jugable, producción en equipo y reconocimiento externo.",
+            "LOBSTAR! combina trabajo jugable, producción en equipo y reconocimiento externo.",
           award1_h: "Voto del Público",
           award1_p:
             "El resultado por voto del público ayuda a mostrar que el proyecto conectó con jugadores, no solo con el equipo de desarrollo.",
@@ -246,7 +246,7 @@ window.portfolioProjectData = {
             "El resultado del jurado añade una señal más fuerte de que el juego fue evaluado positivamente en un evento formal.",
           award3_h: "Valor de Portafolio",
           award3_p:
-            "Para un recruiter o profesor, esto hace que LOBSTAR! sea un proyecto inicial fuerte porque tiene evidencia y resultado.",
+            "Esto hace que LOBSTAR! sea un proyecto inicial fuerte porque tiene evidencia y resultado.",
     
           role_kicker: "Mi contribución",
           role_h2: "Mi Rol en el Proyecto",
@@ -383,7 +383,7 @@ window.portfolioProjectData = {
           proof_kicker: "Portfolio evidence",
           proof_h2: "Technical Proof",
           proof_p:
-            "This page now separates the gameplay video from the specific systems that demonstrate my programming contribution.",
+            "The project highlights the match systems behind the gameplay video: health, timer, victory logic and results flow.",
           proof1_h: "Match Systems",
           proof1_p:
             "The project highlights health, timer and victory-condition logic as concrete gameplay systems.",
@@ -397,7 +397,7 @@ window.portfolioProjectData = {
           flow_kicker: "System flow",
           flow_h2: "Match Flow Breakdown",
           flow_p:
-            "This breakdown turns the project from a combat video into a readable gameplay-systems case study.",
+            "A compact look at how the match starts, progresses and resolves.",
           flow1_h: "Start Match",
           flow1_p:
             "Round setup initializes match state, players and the systems that track combat progress.",
@@ -420,7 +420,7 @@ window.portfolioProjectData = {
           role_kicker: "My contribution",
           role_h2: "My Role in the Project",
           role_p:
-            "As a game programmer, I worked on player health, match timer logic, victory conditions, game data handling and the end-of-match flow. I also contributed to UI and visual presentation elements related to match results.",
+            "I worked on player health, match timer logic, victory conditions, game data handling, UI feedback and the end-of-match flow.",
     
           contribution1_h: "Player Health System",
           contribution1_p:
@@ -522,7 +522,7 @@ window.portfolioProjectData = {
           proof_kicker: "Evidencia de portafolio",
           proof_h2: "Prueba Técnica",
           proof_p:
-            "Esta página ahora separa el video de gameplay de los sistemas específicos que demuestran mi contribución como programador.",
+            "El proyecto destaca los sistemas detrás del video: vida, temporizador, lógica de victoria y flujo de resultados.",
           proof1_h: "Sistemas de Partida",
           proof1_p:
             "El proyecto destaca vida, temporizador y condiciones de victoria como sistemas concretos de gameplay.",
@@ -536,7 +536,7 @@ window.portfolioProjectData = {
           flow_kicker: "Flujo del sistema",
           flow_h2: "Breakdown del Flujo de Partida",
           flow_p:
-            "Este breakdown convierte el proyecto de un video de combate en un caso de estudio legible de sistemas de gameplay.",
+            "Una mirada compacta a cómo la partida inicia, progresa y termina.",
           flow1_h: "Inicio de Partida",
           flow1_p:
             "La preparación de ronda inicializa el estado de partida, jugadores y sistemas que siguen el progreso del combate.",
@@ -559,7 +559,7 @@ window.portfolioProjectData = {
           role_kicker: "Mi contribución",
           role_h2: "Mi Rol en el Proyecto",
           role_p:
-            "Como programador de videojuegos, trabajé en la vida de los jugadores, la lógica del temporizador, las condiciones de victoria, el manejo de datos del juego y el flujo de final de partida. También contribuí a elementos de UI y presentación visual relacionados con los resultados.",
+            "Trabajé en vida de jugadores, temporizador, condiciones de victoria, manejo de datos, feedback de UI y flujo de final de partida.",
     
           contribution1_h: "Sistema de Vida",
           contribution1_p:
@@ -690,7 +690,7 @@ window.portfolioProjectData = {
           proof_kicker: "Portfolio evidence",
           proof_h2: "Technical Proof",
           proof_p:
-            "These points make the page easier to evaluate by separating the trailer from the concrete systems I helped build.",
+            "The project shows the concrete systems behind the trailer: abilities, stealth pacing, level layout and Unity integration.",
           proof1_h: "Ability Systems",
           proof1_p:
             "The page calls out the player abilities I programmed, including teleportation, invisibility and NPC X-ray vision.",
@@ -724,7 +724,7 @@ window.portfolioProjectData = {
           role_kicker: "My contribution",
           role_h2: "My Role in the Project",
           role_p:
-            "I worked mainly as Gameplay Programmer, Game Designer and Unity Integration Support, focusing on player abilities, gameplay systems, level layouts and scene organization inside Unity.",
+            "I focused on player abilities, gameplay systems, level layouts and Unity scene organization.",
     
           contribution1_h: "Player Abilities",
           contribution1_p:
@@ -832,7 +832,7 @@ window.portfolioProjectData = {
           proof_kicker: "Evidencia de portafolio",
           proof_h2: "Prueba Técnica",
           proof_p:
-            "Estos puntos hacen que la página sea más fácil de evaluar, separando el tráiler de los sistemas concretos en los que trabajé.",
+            "El proyecto muestra los sistemas detrás del tráiler: habilidades, ritmo de sigilo, diseño de niveles e integración en Unity.",
           proof1_h: "Sistemas de Habilidades",
           proof1_p:
             "La página destaca las habilidades que programé, incluyendo teleportación, invisibilidad y visión de rayos X para NPCs.",
@@ -866,7 +866,7 @@ window.portfolioProjectData = {
           role_kicker: "Mi contribución",
           role_h2: "Mi Rol en el Proyecto",
           role_p:
-            "Trabajé principalmente como Programador de Gameplay, Diseñador de Juego y soporte de integración en Unity, enfocándome en habilidades del jugador, sistemas de gameplay, layouts de niveles y organización de escenas.",
+            "Me enfoqué en habilidades del jugador, sistemas de gameplay, diseño de niveles y organización de escenas en Unity.",
     
           contribution1_h: "Habilidades del Jugador",
           contribution1_p:
@@ -1000,7 +1000,7 @@ window.portfolioProjectData = {
           proof_kicker: "Portfolio evidence",
           proof_h2: "Technical Proof",
           proof_p:
-            "This project is strongest when it communicates speed, scope control and your mixed programming/production responsibility.",
+            "The project highlights fast prototyping, scope control and a combined programming/production role.",
           proof1_h: "Playable Build",
           proof1_p:
             "The itch.io link gives evaluators direct access to the delivered game jam prototype.",
@@ -1014,7 +1014,7 @@ window.portfolioProjectData = {
           timeline_kicker: "Production",
           timeline_h2: "48-Hour Timeline",
           timeline_p:
-            "For a game jam project, the production story matters. This timeline shows how the work moved from concept to delivery.",
+            "A quick production timeline from concept to playable delivery.",
           timeline1_h: "Concept",
           timeline1_p:
             "The team aligned on the theme, playable idea and minimum viable scope for the jam.",
@@ -1031,7 +1031,7 @@ window.portfolioProjectData = {
           role_kicker: "My contribution",
           role_h2: "My Role in the Project",
           role_p:
-            "I worked as both programmer and producer, coordinating development while implementing core gameplay systems, player input, interaction logic, NPC support, task prioritization and final delivery.",
+            "I coordinated development while implementing player input, interaction logic, NPC support, priorities and final delivery.",
     
           contribution1_h: "Player Input",
           contribution1_p:
@@ -1134,7 +1134,7 @@ window.portfolioProjectData = {
           proof_kicker: "Evidencia de portafolio",
           proof_h2: "Prueba Técnica",
           proof_p:
-            "Este proyecto se vuelve más fuerte cuando comunica velocidad, control de alcance y tu responsabilidad mixta como programador/productor.",
+            "El proyecto destaca prototipado rápido, control de alcance y un rol combinado de programación/producción.",
           proof1_h: "Build Jugable",
           proof1_p:
             "El enlace de itch.io da acceso directo al prototipo entregado durante la game jam.",
@@ -1148,7 +1148,7 @@ window.portfolioProjectData = {
           timeline_kicker: "Producción",
           timeline_h2: "Timeline de 48 Horas",
           timeline_p:
-            "Para un proyecto de game jam, la historia de producción importa. Este timeline muestra cómo el trabajo avanzó desde concepto hasta entrega.",
+            "Timeline rápido de producción desde concepto hasta entrega jugable.",
           timeline1_h: "Concepto",
           timeline1_p:
             "El equipo alineó la temática, la idea jugable y el alcance mínimo viable para la jam.",
@@ -1165,7 +1165,7 @@ window.portfolioProjectData = {
           role_kicker: "Mi contribución",
           role_h2: "Mi Rol en el Proyecto",
           role_p:
-            "Trabajé como programador y productor, coordinando el desarrollo mientras implementaba sistemas principales de gameplay, input del jugador, lógica de interacción, apoyo a NPCs, priorización de tareas y entrega final.",
+            "Coordiné el desarrollo mientras implementaba input, lógica de interacción, apoyo a NPCs, prioridades y entrega final.",
     
           contribution1_h: "Input del Jugador",
           contribution1_p:
@@ -1289,7 +1289,7 @@ window.portfolioProjectData = {
           case_kicker: "Technical Case Study",
           case_h2: "Rendering-Focused Portfolio Format",
           case_p:
-            "Because this is not a game project, the page is structured around the technical problem, implementation approach and visual evidence behind the graphics demo.",
+            "A technical case study focused on rendering concepts, implementation notes and visual evidence.",
           case_problem_h: "Problem",
           case_problem_p:
             "A carousel made the project feel like a game showcase instead of a computer graphics study.",
@@ -1318,7 +1318,7 @@ window.portfolioProjectData = {
           proof_kicker: "Portfolio evidence",
           proof_h2: "Technical Proof",
           proof_p:
-            "This project works best as a technical artifact, so the page makes the rendering topics and interactive demo explicit.",
+            "The project presents the rendering topics, interactive demo and GIF evidence in one clear flow.",
           proof1_h: "Interactive Demo",
           proof1_p:
             "The demo link preserves the original scene where evaluators can inspect rendering modes and controls.",
@@ -1332,7 +1332,7 @@ window.portfolioProjectData = {
           render_kicker: "Rendering concepts",
           render_h2: "Rendering Comparisons",
           render_p:
-            "This section makes the graphics project easier to evaluate by naming each visual comparison explicitly.",
+            "Named visual comparisons make the graphics work easier to review.",
           render1_h: "Gouraud vs Phong",
           render1_p:
             "Compares vertex-based and fragment-based shading to show differences in highlight smoothness and precision.",
@@ -1431,7 +1431,7 @@ window.portfolioProjectData = {
           case_kicker: "Caso Técnico",
           case_h2: "Formato Enfocado en Renderizado",
           case_p:
-            "Como este no es un proyecto de videojuego, la página se estructura alrededor del problema técnico, la implementación y la evidencia visual de la demo de gráficos.",
+            "Caso técnico enfocado en conceptos de renderizado, notas de implementación y evidencia visual.",
           case_problem_h: "Problema",
           case_problem_p:
             "El carrusel hacía que el proyecto se sintiera como una muestra de videojuego en lugar de un estudio de gráficos por computación.",
@@ -1460,7 +1460,7 @@ window.portfolioProjectData = {
           proof_kicker: "Evidencia de portafolio",
           proof_h2: "Prueba Técnica",
           proof_p:
-            "Este proyecto funciona mejor como artefacto técnico, así que la página hace explícitos los temas de renderizado y la demo interactiva.",
+            "El proyecto presenta temas de renderizado, demo interactiva y evidencia en GIF en un flujo claro.",
           proof1_h: "Demo Interactiva",
           proof1_p:
             "El enlace a la demo conserva la escena original para inspeccionar modos de renderizado y controles.",
@@ -1474,7 +1474,7 @@ window.portfolioProjectData = {
           render_kicker: "Conceptos de render",
           render_h2: "Comparaciones de Renderizado",
           render_p:
-            "Esta sección hace que el proyecto de gráficos sea más fácil de evaluar al nombrar explícitamente cada comparación visual.",
+            "Las comparaciones visuales nombradas hacen que el trabajo gráfico sea más fácil de revisar.",
           render1_h: "Gouraud vs Phong",
           render1_p:
             "Compara sombreado por vértice y por fragmento para mostrar diferencias en suavidad y precisión de brillos.",

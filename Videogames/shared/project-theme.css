@@ -223,3 +223,159 @@ h3,
 .tool h3 {
   color: var(--text);
 }
+
+/* Final portfolio polish */
+html {
+  color-scheme: dark;
+}
+
+h1,
+h2,
+h3,
+.eyebrow,
+.kicker,
+.btn,
+.tag,
+.badge {
+  letter-spacing: 0;
+}
+
+.wrap {
+  padding-bottom: 52px;
+}
+
+.site-header {
+  border-color: color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+.brand strong {
+  letter-spacing: 0;
+}
+
+.brand small {
+  color: var(--muted);
+}
+
+.hero.panel {
+  min-height: min(720px, calc(100vh - 120px));
+  align-items: center;
+  border-color: color-mix(in srgb, var(--accent) 36%, transparent);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, .38),
+    0 0 42px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.hero .actions {
+  margin-top: 22px;
+}
+
+.subtitle,
+.muted {
+  max-width: 78ch;
+}
+
+.panel {
+  transition: border-color .24s ease, box-shadow .24s ease, background .24s ease;
+}
+
+.panel:hover {
+  border-color: color-mix(in srgb, var(--accent) 38%, transparent);
+}
+
+.project-info .grid,
+.overview-facts,
+.grid-3,
+.grid-4 {
+  align-items: stretch;
+}
+
+.overview-fact,
+.contribution,
+.tool,
+.card {
+  min-height: 100%;
+}
+
+.card h3,
+.tool strong {
+  line-height: 1.2;
+}
+
+.tech-list,
+.control-list {
+  padding-left: 18px;
+}
+
+.tech-list li,
+.control-list li {
+  margin: 9px 0;
+}
+
+.video-shell video,
+.video-shell iframe,
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media-caption,
+figcaption {
+  max-width: 82ch;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.feature-image,
+.media-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tools-grid .tool {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.tools-grid .tool img {
+  width: min(76px, 42%);
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel {
+  max-width: 100%;
+}
+
+.carousel-card.active {
+  border-color: color-mix(in srgb, var(--accent) 46%, transparent);
+}
+
+footer {
+  border-top: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  margin-top: 32px;
+}
+
+@media (max-width: 760px) {
+  .hero.panel {
+    min-height: auto;
+  }
+
+  .site-header {
+    position: relative;
+    top: 0;
+  }
+
+  .nav-actions,
+  .actions {
+    width: 100%;
+  }
+
+  .nav-actions .btn,
+  .actions .btn {
+    flex: 1 1 160px;
+  }
+}

@@ -8,7 +8,7 @@
   const DEFAULT_LANGUAGE = "en";
   const STORAGE_KEY = "language";
   const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
-  const LANGUAGE_VERSION = "english-default-v2";
+  const LANGUAGE_VERSION = "english-default-v3";
 
   if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
     localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
