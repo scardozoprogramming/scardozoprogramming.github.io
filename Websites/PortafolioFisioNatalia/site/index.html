@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Volley Beach Santi: guia visual para aprender posicionamiento, comunicacion y sistemas 2-2 de voley playa."
+    />
+    <title>Volley Beach Santi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Volley Beach Santi">
+        <span class="brand-mark">VB</span>
+        <span>Volley Beach Santi</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="torneo.html#torneo" data-i18n="nav.tournament">Torneo</a>
+        <a href="torneo.html#marcador" data-i18n="nav.scoreboard">Marcador</a>
+      </nav>
+
+      <label class="language-switch">
+        <span data-i18n="language.label">Idioma</span>
+        <select class="language-select" aria-label="Idioma">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="it">IT</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+        </select>
+      </label>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Guía visual de voley playa</p>
+          <h1 id="hero-title">Volley Beach Santi</h1>
+          <p>
+            Comunicación, señales y movimientos de pareja para entrenar la
+            pista como un sistema de alto rendimiento.
+          </p>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button primary" href="#colocacion">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 5h16v14H4z" />
+                <path d="M12 5v14" />
+                <path d="M4 12h16" />
+              </svg>
+              Entrenar colocación
+            </a>
+          </div>
+        </div>
+        <div class="hero-strip" aria-label="Bloques de contenido">
+          <span>8 x 16 pista real</span>
+          <span>Solo 2-2</span>
+          <span>Señales visuales</span>
+          <span>Zonas de cobertura</span>
+        </div>
+      </section>
+
+      <section id="senal" class="section signal-section" aria-labelledby="signal-title">
+        <div class="section-heading">
+          <p class="eyebrow">Secuencia animada 2-2</p>
+          <h2 id="signal-title">Del saque al bloqueo-defensa</h2>
+          <p>
+            Mira una jugada a la vez: saque, recepción rival, colocación,
+            ataque y reparto final de bloqueo-defensa.
+          </p>
+        </div>
+
+        <div class="signal-controls" id="signalControls" aria-label="Elegir señal de bloqueo"></div>
+
+        <div class="signal-demo-layout">
+          <div class="signal-court-card">
+            <div class="signal-court" id="signalCourt" data-mode="linea" aria-label="Animación completa de bloqueo y defensa">
+              <div class="signal-boundary"></div>
+              <div class="signal-net"></div>
+              <svg class="signal-trails" id="signalTrails" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+              <div class="court-side own-side">Tu pareja</div>
+              <div class="court-side opponent-side">Rivales</div>
+              <div class="signal-zone block-zone"><span id="blockZoneLabel">Zona del bloqueador</span></div>
+              <div class="signal-zone defense-zone"><span id="defenseZoneLabel">Zona del defensor</span></div>
+              <div class="signal-zone support-zone"><span id="supportZoneLabel">Zona corta</span></div>
+              <div class="demo-player blocker" title="Bloqueador de tu pareja"><span>B</span><small>Bloqueador</small></div>
+              <div class="demo-player defender" title="Defensor y sacador de tu pareja"><span>D</span><small>Defensor</small></div>
+              <div class="demo-player attacker" title="Receptor y atacante rival"><span>A</span><small>Atacante</small></div>
+              <div class="demo-player setter" title="Receptor y colocador rival"><span>C</span><small>Colocador</small></div>
+              <div class="demo-ball" aria-hidden="true"></div>
+              <div class="signal-badge" id="signalBadge">1-1: bloqueo línea</div>
+            </div>
+            <div class="phase-caption" id="phaseCaption" aria-live="polite"></div>
+
+            <div class="animation-toolbar" aria-label="Controles de animación">
+              <button class="icon-control" id="signalRestart" type="button" title="Volver al inicio" aria-label="Volver al inicio">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+              </button>
+              <button class="icon-control" id="signalPrevious" type="button" title="Paso anterior" aria-label="Paso anterior">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m15 18-6-6 6-6"></path>
+                </svg>
+              </button>
+              <button class="play-control" id="signalPlay" type="button" aria-label="Pausar animación">
+                <svg class="pause-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M9 5v14M15 5v14"></path>
+                </svg>
+                <svg class="play-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m8 5 11 7-11 7z"></path>
+                </svg>
+                <span id="signalPlayLabel">Pausar</span>
+              </button>
+              <button class="icon-control" id="signalNext" type="button" title="Paso siguiente" aria-label="Paso siguiente">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+              <span class="step-counter" id="signalStepCounter">1 / 6</span>
+            </div>
+
+            <div class="phase-timeline" id="signalTimeline" aria-label="Pasos de la jugada"></div>
+
+            <div class="coverage-legend" aria-label="Leyenda de cobertura">
+              <span><i class="legend-square block"></i> Bloqueador</span>
+              <span><i class="legend-square defense"></i> Defensor</span>
+              <span><i class="legend-square support"></i> Corta compartida</span>
+              <span><i class="legend-square rival"></i> Rival</span>
+            </div>
+          </div>
+
+          <article class="signal-info" id="signalInfo" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="colocacion" class="section setting-section" aria-labelledby="setting-title">
+        <div class="section-heading">
+          <p class="eyebrow">Ataque desde recepción</p>
+          <h2 id="setting-title">Contigo, abierta y atrás</h2>
+          <p>
+            Cada llamada muestra al colocador, el destino del pase y la carrera
+            del atacante desde la recepción.
+          </p>
+        </div>
+
+        <div class="signal-controls" id="settingControls" aria-label="Elegir llamada de colocación"></div>
+
+        <div class="setting-demo-layout">
+          <div class="setting-court-card">
+            <div class="setting-court" id="settingCourt" data-mode="contigo" aria-label="Animación de recepción, colocación y ataque">
+              <div class="setting-boundary"></div>
+              <div class="setting-net"></div>
+              <svg class="setting-trails" id="settingTrails" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+              <div class="court-side own-side">Tu pareja</div>
+              <div class="court-side opponent-side">Rivales</div>
+              <div class="setting-zone reception-zone"><span>Recepción</span></div>
+              <div class="setting-zone set-window-zone"><span>Ventana del colocador</span></div>
+              <div class="setting-zone attack-target-zone"><span id="settingTargetLabel">Punto de ataque</span></div>
+              <div class="setting-player attack-player" title="Receptor que después ataca">
+                <span>A</span><small>Receptor / atacante</small>
+              </div>
+              <div class="setting-player set-player" title="Compañero que coloca">
+                <span>C</span><small>Colocador</small>
+                <i class="player-facing" id="setterFacing" aria-hidden="true"></i>
+              </div>
+              <div class="setting-player rival-server" title="Sacador rival"><span>S</span><small>Sacador</small></div>
+              <div class="setting-player rival-blocker" title="Bloqueador rival"><span>B</span><small>Bloqueador</small></div>
+              <div class="setting-ball" aria-hidden="true"></div>
+              <div class="setting-badge" id="settingBadge">CONTIGO</div>
+            </div>
+
+            <div class="phase-caption" id="settingPhaseCaption" aria-live="polite"></div>
+
+            <div class="animation-toolbar" aria-label="Controles de animación de colocación">
+              <button class="icon-control" id="settingRestart" type="button" title="Volver al inicio" aria-label="Volver al inicio">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+              </button>
+              <button class="icon-control" id="settingPrevious" type="button" title="Paso anterior" aria-label="Paso anterior">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m15 18-6-6 6-6"></path>
+                </svg>
+              </button>
+              <button class="play-control" id="settingPlay" type="button" aria-label="Pausar animación">
+                <svg class="pause-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M9 5v14M15 5v14"></path>
+                </svg>
+                <svg class="play-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m8 5 11 7-11 7z"></path>
+                </svg>
+                <span id="settingPlayLabel">Pausar</span>
+              </button>
+              <button class="icon-control" id="settingNext" type="button" title="Paso siguiente" aria-label="Paso siguiente">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+              <span class="step-counter" id="settingStepCounter">1 / 6</span>
+            </div>
+
+            <div class="phase-timeline" id="settingTimeline" aria-label="Pasos de recepción y ataque"></div>
+
+            <div class="coverage-legend" aria-label="Leyenda">
+              <span><i class="legend-square attack"></i> Receptor / atacante</span>
+              <span><i class="legend-square setter"></i> Colocador</span>
+              <span><i class="legend-square receive"></i> Zona de recepción</span>
+              <span><i class="legend-square set-window"></i> Ventana de colocación</span>
+              <span><i class="legend-square target"></i> Destino del pase</span>
+              <span><i class="legend-square rival"></i> Rival</span>
+            </div>
+          </div>
+
+          <article class="setting-info" id="settingInfo" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="pistas" class="section cues-section" aria-labelledby="cues-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="cues.eyebrow">Código de pista</p>
+          <h2 id="cues-title" data-i18n="cues.title">Palabras de pista</h2>
+          <p data-i18n="cues.description">
+            Llamadas cortas para decidir rápido quién toca, qué zona cubre cada
+            jugador y cómo se construye el ataque.
+          </p>
+        </div>
+
+        <div class="callout-layout">
+          <div>
+            <h3 data-i18n="cues.current">Palabras de pista · lista actual</h3>
+            <div class="call-chip-list" id="callChips"></div>
+          </div>
+          <div class="signal-board">
+            <h3 data-i18n="cues.ritual">Ritual de 5 segundos</h3>
+            <ol>
+              <li data-i18n="cues.ritual1">Mirada al compañero.</li>
+              <li data-i18n="cues.ritual2">Señal de bloqueo o defensa.</li>
+              <li data-i18n="cues.ritual3">Objetivo de saque.</li>
+              <li data-i18n="cues.ritual4">Confirmación verbal.</li>
+              <li data-i18n="cues.ritual5">Respirar y jugar.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="callbook-grid" id="callbookGrid" aria-label="Diccionario de llamadas"></div>
+      </section>
+
+      <section id="movimientos" class="section movement-section" aria-labelledby="movement-title">
+        <div class="section-heading">
+          <p class="eyebrow">Mapa de movimientos</p>
+          <h2 id="movement-title">Desde dónde salgo y a dónde tengo que ir</h2>
+          <p>
+            La clave no es correr más: es salir desde una base útil, reconocer
+            el disparador correcto y llegar al destino que complementa al
+            compañero.
+          </p>
+        </div>
+
+        <div class="scenario-tabs" id="movementTabs" role="tablist" aria-label="Fases de movimiento"></div>
+        <div class="movement-layout">
+          <article class="movement-detail" id="movementDetail" aria-live="polite"></article>
+          <div class="movement-table" id="movementTable" aria-live="polite"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>Volley Beach Santi · Base visual para aprender, entrenar y compartir voley playa.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
