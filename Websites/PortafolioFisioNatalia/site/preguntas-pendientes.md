@@ -2,17 +2,16 @@
 
 Este archivo conserva la información que falta por definir. No aparece en la página pública.
 
-## Servicios y atención
+## Información profesional por completar
 
-- ¿Qué servicios puede ofrecer actualmente con seguridad profesional?
-- ¿Atenderá de forma presencial, domiciliaria, virtual o en consultorio?
-- ¿En qué zonas puede atender y cuánto dura cada sesión?
-- ¿Cómo se agenda y se consulta la disponibilidad?
-- ¿Qué servicios prefiere no ofrecer hasta completar una certificación?
+- ¿Desea publicar el número de la tarjeta profesional o mantenerlo privado?
+- ¿Desde qué fecha puede iniciar un nuevo empleo?
+- ¿Puede desplazarse a Bogotá u otros municipios cercanos a Chía?
+- ¿Busca jornada completa, media jornada o cualquiera de las dos?
 
 ## Experiencia y evidencias
 
-- ¿Qué logros concretos quiere destacar de cada práctica?
+- ¿Cuántos bebés o pacientes evaluó aproximadamente en sus prácticas y proyectos?
 - ¿Qué documentos, presentaciones o proyectos pueden publicarse?
 - ¿Cuenta con testimonios autorizados de docentes o supervisores?
 - ¿Todas las fotografías y videos tienen permiso de publicación?
@@ -30,9 +29,7 @@ Este archivo conserva la información que falta por definir. No aparece en la p�
 - ¿Qué información de pacientes o instituciones debe permanecer privada?
 - ¿Se cuenta con autorización expresa para cada imagen donde aparecen menores?
 
-## Objetivo de publicación
+## Publicación
 
-- ¿El objetivo principal es buscar empleo, conseguir pacientes o establecer contactos profesionales?
-- ¿Cuál debe ser la acción principal: WhatsApp, correo, LinkedIn o descarga de la hoja de vida?
-- ¿La página se publicará en español únicamente o también en inglés?
+- ¿La página se publicará únicamente en español o también en inglés?
 - ¿Desea mantener GitHub Pages o utilizar un dominio propio?
