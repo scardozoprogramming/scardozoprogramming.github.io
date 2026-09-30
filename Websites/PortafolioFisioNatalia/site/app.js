@@ -1,21 +1,28 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 const navLinks = [...document.querySelectorAll(".main-nav a")];
+const navLabel = navToggle?.querySelector(".sr-only");
 const year = document.querySelector("#year");
 
 if (year) year.textContent = new Date().getFullYear();
+
+const closeMenu = () => {
+  navToggle?.setAttribute("aria-expanded", "false");
+  mainNav?.classList.remove("is-open");
+  if (navLabel) navLabel.textContent = "Abrir menú";
+};
 
 navToggle?.addEventListener("click", () => {
   const open = navToggle.getAttribute("aria-expanded") === "true";
   navToggle.setAttribute("aria-expanded", String(!open));
   mainNav?.classList.toggle("is-open", !open);
+  if (navLabel) navLabel.textContent = open ? "Abrir menú" : "Cerrar menú";
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navToggle?.setAttribute("aria-expanded", "false");
-    mainNav?.classList.remove("is-open");
-  });
+navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu();
 });
 
 const sections = navLinks
