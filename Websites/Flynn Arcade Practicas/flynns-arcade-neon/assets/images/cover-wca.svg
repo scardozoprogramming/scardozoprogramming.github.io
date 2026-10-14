@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506" role="img" aria-label="What Comes After artwork">
+  <rect width="900" height="506" fill="#071426"/>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd7a8"/><stop offset=".55" stop-color="#28d7ff"/><stop offset="1" stop-color="#7557ff"/></linearGradient></defs>
+  <rect width="900" height="506" fill="url(#g)"/>
+  <path d="M0 370c150-70 295-82 435-35 145 48 300 40 465-58v229H0z" fill="#071426" opacity=".78"/>
+  <path d="M80 320h740" stroke="#f1fbff" stroke-width="6" opacity=".8"/>
+  <circle cx="430" cy="282" r="34" fill="#020611"/>
+  <path d="M430 316v72m-35 0h70" stroke="#020611" stroke-width="14" stroke-linecap="round"/>
+  <text x="48" y="72" fill="#020611" font-family="Courier New, monospace" font-size="38" font-weight="700">WHAT COMES AFTER</text>
+</svg>

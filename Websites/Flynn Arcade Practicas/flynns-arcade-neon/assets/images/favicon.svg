@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flynn's Arcade">
+  <rect width="64" height="64" rx="10" fill="#020611"/>
+  <path d="M12 44 26 10h26L40 24h12L22 56l9-24H18z" fill="#ff2dbd"/>
+  <path d="M17 46 31 13h16L35 28h12L26 50l6-20H22z" fill="#00e5ff" opacity=".92"/>
+</svg>

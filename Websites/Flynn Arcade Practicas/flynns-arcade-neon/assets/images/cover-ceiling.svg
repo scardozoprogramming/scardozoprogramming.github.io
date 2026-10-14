@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506" role="img" aria-label="Looking Up I See Only A Ceiling artwork">
+  <rect width="900" height="506" fill="#d9e7ff"/>
+  <path d="M0 0h900v230H0z" fill="#f7fbff"/>
+  <path d="M150 0h44v506h-44zM704 0h44v506h-44z" fill="#b9c3d4"/>
+  <path d="M0 390h900v116H0z" fill="#343b48"/>
+  <circle cx="448" cy="300" r="32" fill="#020611"/>
+  <path d="M448 332v88m-46-8h92" stroke="#020611" stroke-width="16" stroke-linecap="round"/>
+  <text x="44" y="82" fill="#142033" font-family="Courier New, monospace" font-size="34" font-weight="700">LOOKING UP</text>
+  <text x="44" y="126" fill="#142033" font-family="Courier New, monospace" font-size="28" font-weight="700">I SEE ONLY A CEILING</text>
+</svg>

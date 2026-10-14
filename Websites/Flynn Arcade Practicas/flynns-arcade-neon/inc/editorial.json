@@ -1,0 +1,51 @@
+{
+  "hero_copy": ["We develop our own games", "and publish independent titles.", "Smart, simple and elegantly designed."],
+  "spotlights": [
+    {"title":"We Love Indies.","summary":"Meet the independent creators behind our arcade games and narrative adventures."},
+    {"title":"Radin Games","summary":"Retro arcade games inspired by cabinets and 8-bit computers."},
+    {"title":"Fahmitsu","summary":"The Jakarta-based developer behind What Comes After works across game and narrative design."},
+    {"title":"Pixel Games","summary":"Sebastian's Luxembourg studio creates classic arcade experiences for modern machines."}
+  ],
+  "studios": [
+    {"name":"Radin Games","detail":"Eternum Ex, Galacticon"},
+    {"name":"Fahmitsu, Rolling Glory Jam","detail":"What Comes After"},
+    {"name":"Pablo Navarro, RAWRLAB Games","detail":"Explosive Dinosaurs"},
+    {"name":"Jeremy Fryc, Stardust Team","detail":"Dexter Stardust"},
+    {"name":"Sebastian, Pixel Games","detail":"Donut Dodo, Cash Cow DX"},
+    {"name":"Xavi, Hiulit","detail":"Murtop"},
+    {"name":"Soufiane, Tacsou","detail":"Colored Effects"},
+    {"name":"Andrea, Der Mondhase","detail":"8-Colors Star Guardians +"},
+    {"name":"Andrea Tarondo, silver978","detail":"Looking Up I See Only A Ceiling"},
+    {"name":"Joel Potter, Studio Primitive","detail":"Attack of the Karens"},
+    {"name":"David Langlois, Vidvad Games","detail":"Goliath Depot"},
+    {"name":"May Oswald, Maybell Soft","detail":"Satryn DX"},
+    {"name":"Luke Orsie, Crashable Studios","detail":"Sentry City"},
+    {"name":"Enzo Brown, Slain Mascot","detail":"Super Spy Raccoon"},
+    {"name":"Jose, Catcade Games","detail":"Freddy Farmer"},
+    {"name":"Magnus Fredriksson, Bortbyting","detail":"Flora & Fang: Guardians of the vampire garden"}
+  ],
+  "about": [
+    {"title":"Description","paragraphs":["Flynn's Arcade develops original games and publishes titles by other creators. The company focuses on accessible, carefully designed games that give players an enjoyable experience."]},
+    {"title":"Early History","paragraphs":["The project began at the Autonomous University of Barcelona, where Juan Peralta taught and supervised video-game degree projects. With Felipe Lumbreras and student Xavier Alsina, the team explored an augmented-reality mobile game inspired by board games.","Developers and artists came together to create OUTSIDERS, a prototype combining tabletop strategy and video games with augmented reality. During that project, Juan met designer Francisco Raya."]},
+    {"title":"After That","paragraphs":["After completing the OUTSIDERS demo, team members moved on to different projects. Juan and Francisco continued developing new ideas, leading to Flynn's Arcade and further game projects."]}
+  ],
+  "press": [
+    {"title":"Cash Cow DX","outlet":"Tech Gaming","date":"Sep. 30","platform":"Nintendo Switch"},
+    {"title":"Satryn DX","outlet":"Video Chums","date":"Jul. 25","platform":"Nintendo Switch"},
+    {"title":"Goliath Depot","outlet":"Tech Gaming","date":"Jun. 2","platform":"Nintendo Switch"},
+    {"title":"8-Colors Star Guardians +","outlet":"Siliconera","date":"Jan. 7","platform":"Nintendo Switch"},
+    {"title":"Colored Effects","outlet":"Indie Gamer Chick","date":"Nov. 26","platform":"Nintendo Switch"},
+    {"title":"Sentry City","outlet":"TouchArcade","date":"Oct. 10","platform":"Nintendo Switch"},
+    {"title":"Murtop","outlet":"Tech Gaming","date":"May 20","platform":"Nintendo Switch"},
+    {"title":"Papertris","outlet":"Finger Guns","date":"Mar. 20","platform":"Nintendo Switch"},
+    {"title":"Donut Dodo","outlet":"Pure Nintendo","date":"Nov. 29","platform":"Nintendo Switch"},
+    {"title":"A Winding Path","outlet":"Games Freezer","date":"Oct. 30","platform":"Nintendo Switch"},
+    {"title":"Galacticon","outlet":"Mid-Life Gamer Geek","date":"May 22","platform":"Nintendo Switch"},
+    {"title":"Dexter Stardust","outlet":"Pure Nintendo","date":"Mar. 15","platform":"Nintendo Switch"},
+    {"title":"What Comes After","outlet":"Los Angeles Times","date":"Dec. 16","platform":""},
+    {"title":"Lambs on the Road","outlet":"Pure Nintendo","date":"Aug. 18","platform":"Nintendo Switch"},
+    {"title":"Eternum Ex","outlet":"Nintenderos","date":"Nov. 28","platform":""}
+  ],
+  "newsletter_copy":"Get updates about our game releases and more.",
+  "contact_email":"press@flynnsarcades.com"
+}

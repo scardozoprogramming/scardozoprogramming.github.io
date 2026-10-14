@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506" role="img" aria-label="Cash Cow DX artwork">
+  <rect width="900" height="506" fill="#06210f"/>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#83ff7a"/><stop offset=".45" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff2dbd"/></linearGradient></defs>
+  <rect width="900" height="506" fill="url(#g)"/>
+  <circle cx="450" cy="256" r="132" fill="#fff05a" stroke="#020611" stroke-width="18"/>
+  <text x="408" y="306" fill="#020611" font-family="Courier New, monospace" font-size="134" font-weight="700">$</text>
+  <path d="M0 410h900v96H0z" fill="#020611" opacity=".7"/>
+  <text x="52" y="76" fill="#020611" font-family="Courier New, monospace" font-size="44" font-weight="700">CASH COW DX</text>
+</svg>

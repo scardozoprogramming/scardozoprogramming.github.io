@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506" role="img" aria-label="Eternum Ex artwork">
+  <rect width="900" height="506" fill="#090612"/>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090612"/><stop offset=".55" stop-color="#47205f"/><stop offset="1" stop-color="#ff2dbd"/></linearGradient></defs>
+  <rect width="900" height="506" fill="url(#g)"/>
+  <path d="M0 390l80-90 75 65 70-120 115 150 120-230 118 190 78-86 244 128v109H0z" fill="#020611" opacity=".82"/>
+  <path d="M620 145l44 84 92 13-66 64 16 91-86-44-82 44 15-91-66-64 91-13z" fill="#00e5ff" opacity=".8"/>
+  <text x="52" y="76" fill="#f1fbff" font-family="Courier New, monospace" font-size="44" font-weight="700">ETERNUM EX</text>
+</svg>

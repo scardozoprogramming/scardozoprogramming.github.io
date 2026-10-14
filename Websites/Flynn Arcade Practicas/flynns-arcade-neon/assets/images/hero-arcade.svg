@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" role="img" aria-label="Neon arcade city">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050817"/>
+      <stop offset=".45" stop-color="#10215a"/>
+      <stop offset="1" stop-color="#ff2dbd"/>
+    </linearGradient>
+    <linearGradient id="cab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b2b5d"/>
+      <stop offset="1" stop-color="#040812"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="760" fill="url(#sky)"/>
+  <circle cx="1120" cy="210" r="165" fill="#ff4ed8" opacity=".85"/>
+  <g opacity=".9">
+    <rect x="760" y="150" width="86" height="360" fill="#081329"/>
+    <rect x="875" y="100" width="118" height="410" fill="#0a1734"/>
+    <rect x="1025" y="70" width="98" height="440" fill="#0d1d42"/>
+    <rect x="1165" y="130" width="150" height="380" fill="#081329"/>
+    <rect x="1365" y="185" width="84" height="325" fill="#0a1734"/>
+  </g>
+  <g fill="#00e5ff" opacity=".7">
+    <path d="M725 510h780v12H725z"/>
+    <path d="M740 550h720v8H740z"/>
+    <path d="M780 590h650v6H780z"/>
+  </g>
+  <g filter="url(#glow)">
+    <rect x="145" y="270" width="140" height="280" rx="10" fill="url(#cab)" stroke="#00e5ff" stroke-width="5"/>
+    <rect x="175" y="305" width="82" height="95" fill="#071426" stroke="#ff2dbd" stroke-width="4"/>
+    <rect x="185" y="320" width="62" height="55" fill="#00e5ff" opacity=".8"/>
+    <rect x="350" y="230" width="155" height="320" rx="10" fill="url(#cab)" stroke="#ff2dbd" stroke-width="5"/>
+    <rect x="383" y="270" width="90" height="112" fill="#071426" stroke="#00e5ff" stroke-width="4"/>
+    <circle cx="428" cy="326" r="36" fill="#ff2dbd" opacity=".8"/>
+    <rect x="565" y="292" width="125" height="260" rx="10" fill="url(#cab)" stroke="#00e5ff" stroke-width="5"/>
+    <rect x="590" y="325" width="75" height="90" fill="#071426" stroke="#ff2dbd" stroke-width="4"/>
+  </g>
+  <path d="M0 612c240-72 500-80 770-24 260 54 548 42 830-50v222H0z" fill="#020611" opacity=".72"/>
+  <text x="1010" y="620" fill="#00e5ff" font-family="Courier New, monospace" font-size="48" font-weight="700" filter="url(#glow)">PLAY DREAM REPEAT</text>
+</svg>
