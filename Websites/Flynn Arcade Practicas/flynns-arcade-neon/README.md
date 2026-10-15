@@ -1,50 +1,66 @@
-# Flynn's Arcade Neon
+# Flynn's Arcade Neon 2.4
 
-Tema WordPress en PHP, HTML, CSS y JavaScript. La portada sigue la estructura de la imagen facilitada: cabecera, portada arcade, seis juegos, bloque indie junto a newsletter y pie de pagina.
+Adaptacion independiente de la estructura de la web original de Flynn's Arcade, con la paleta oscura, cyan y magenta de la referencia visual. Se utiliza el logo autentico del estudio y la imagen del nino facilitada por el usuario.
 
-## Vista previa
+## Abrir la entrega
 
-Abrir `preview.html` directamente en el navegador. Todos los recursos son locales; no requiere servidor, instalacion de paquetes ni conexion a la web de referencia.
+Abrir `preview.html` o `index.html` directamente en el navegador. No requiere servidor ni conexion a la web original. Los menus llevan a paginas reales:
 
-La vista previa se genera a partir de las mismas plantillas PHP del tema, evitando mantener dos versiones del contenido.
+- Inicio: portada con la imagen del nino, destacados y catalogo.
+- Games (`games.html`): pagina independiente dedicada al catalogo, con filtros, buscador y Load more, sin portada ni destacados.
+- Indies: los 16 creadores y estudios con sus logos, imagenes y juegos.
+- About: logo centrado, las seis fotos originales ampliables, Description, Early history y After that en tres columnas, y Projects con tarjetas de Eternum Ex y Lambs on the Road como en la ultima referencia del usuario. Los textos de historia se conservan completos, sin resumir.
+- Press: 15 menciones de prensa, cuatro presskits descargables y destacados.
+- Cada juego tiene una ficha local propia con descripcion y plataformas.
 
-## Instalar en WordPress
+El pie conserva el orden del original: Find us everywhere, Better news y Send prayers. Las redes y resenas pueden abrir paginas externas, pero no son necesarias para que la web cargue o funcione. No se enlaza al sitio original. El correo de contacto abre el programa de correo configurado mediante un enlace mailto.
 
-1. Ir a Apariencia > Temas > Anadir nuevo > Subir tema.
-2. Subir `flynns-arcade-neon-wordpress-theme.zip` y activar.
-3. La plantilla `front-page.php` muestra la portada.
+## WordPress
 
-## Contenido y estructura
+Subir `flynns-arcade-neon-wordpress-theme.zip` desde Apariencia > Temas > Anadir nuevo > Subir tema y activar.
 
-- `inc/catalog.json`: catalogo real de 32 juegos, conservando el orden de la web original. Los seis primeros aparecen en la portada; todos aparecen en el catalogo completo.
-- `inc/editorial.json`: informacion de la empresa, 16 creadores y estudios, 15 menciones de prensa, textos del spotlight y contacto.
-- `inc/content.php`: lectura de los datos y categorias del buscador.
-- `inc/template-tags.php`: componentes compartidos, logos, iconos y tarjetas.
-- `front-page.php`, `header.php`, `footer.php`: estructura de la pagina.
-- `style.css`: estilos y adaptacion a ordenador, tableta y movil.
-- `assets/js/theme.js`: navegacion movil, ventanas de contenido, filtros, buscador y controles del spotlight.
+La misma estructura PHP genera la vista previa y el tema. La navegacion WordPress utiliza parametros propios de consulta, compatibles tambien con instalaciones sin enlaces permanentes personalizados. No crea ni modifica paginas, entradas o datos existentes al activar el tema.
 
-Los enlaces Games e Indies llevan a sus bloques de portada. About y Press muestran informacion local. View All Games abre el catalogo completo; cada tarjeta permite consultar su descripcion.
+## Archivos principales
 
-## Recursos visuales
+- `front-page.php`: seleccion de pagina.
+- `templates/`: Inicio, Games, catalogo compartido, Indies, About, Press y fichas de juegos.
+- `inc/catalog.json`: los 32 juegos en el orden de la web original.
+- `inc/editorial.json`: estudios, historia, prensa y contacto.
+- `inc/site.json`: portada, destacados, redes y textos comunes.
+- `inc/structure.json`: correspondencia de imagenes locales y referencias a resenas.
+- `inc/template-tags.php`: cabecera visual, navegacion, tarjetas, plataformas y destacados compartidos.
+- `style.css`: presentacion responsive; tres columnas en ordenador, dos en tableta y una en movil.
+- `assets/js/theme.js`: menu movil, filtros, buscador, Load more y destacados.
 
-`assets/images/reference-art.png` es la imagen facilitada por el usuario, conservada sin modificar. La escena arcade, el bloque indie y las marcas mantienen su aspecto. Los textos, botones, tarjetas y formularios de la pagina son elementos HTML reales.
+## Imagenes y fuentes
 
-`assets/images/games/` contiene las imagenes reales de los 32 juegos, descargadas desde la web original. Las tarjetas ya no utilizan ilustraciones de concepto como si fueran arte de los juegos. Todos los archivos se sirven localmente.
+Todos los recursos visuales y tipograficos se incluyen localmente. El logo proviene del recurso publico de la web original. `assets/images/hero-arcade-kid.png` es una copia sin alterar del archivo proporcionado por el usuario. Los retratos y banners usan, cuando estan disponibles, los tamanos web publicados por el propio sitio.
 
-Las tipografias Press Start 2P y Barlow se distribuyen localmente con sus licencias OFL. Los iconos de herramientas proceden de Lucide, con licencia incluida. Las siluetas Nintendo Switch, PlayStation y Xbox proceden de Simple Icons 11.14.0; su licencia se incluye junto a los recursos. PC utiliza una silueta de monitor.
+Todas las paginas, incluidas las fichas de juegos, comparten un fondo pixel-art de maquinas arcade y ciudad nocturna en `assets/images/backgrounds/`. La imagen es propia de esta propuesta y se ha creado con la herramienta integrada de generacion de imagenes. Se sirve en WebP, con un recorte mas ligero para movil. Las capas oscuras protegen la lectura y las tarjetas siguen siendo opacas. No hay animaciones ni dependencias remotas. El PNG original, el prompt y la procedencia se conservan en `docs/fondo-arcade.md` y `docs/assets/`, fuera del tema instalable.
 
-## Suscripcion
+Las seis fotos de About se incluyen en su orden original en `assets/images/about/`. La galeria admite ampliar fotos, avanzar, retroceder y cerrar con Escape; no utiliza servicios externos. Las ilustraciones anteriores de Projects permanecen guardadas en WebP; las tarjetas actuales utilizan las mismas portadas locales que el catalogo.
 
-El formulario conserva el diseno de la referencia. La integracion con un proveedor de newsletter queda pendiente. La vista previa comunica que las suscripciones aun no estan abiertas; no guarda ni envia direcciones de correo. Los simbolos de redes no contienen enlaces ficticios. El icono de correo abre la informacion de prensa local.
+La galeria utiliza el azul cyan de la paleta. Al pasar el cursor o enfocar una foto se recupera su color original; las ampliaciones se muestran sin filtro. Los tres encabezados de historia tienen texto y borde rosa con esquinas rectas. Los proyectos muestran portada, titulo, generos y plataformas en dos columnas en escritorio y una en movil, reutilizando el componente del catalogo.
 
-## Herramientas de desarrollo
+Projects utiliza un bloque centrado de hasta 820 px, con tarjetas medianas de unos 400 px de ancho en escritorio y un interior mas compacto. No se altera el tamano de las tarjetas de Games.
 
-En la carpeta superior se incluyen:
+Los iconos de herramientas proceden de Lucide; los de plataformas y redes, de Simple Icons. Switch, Xbox, PlayStation y PC comparten el mismo magenta. Los circulos de redes miden 44 px en la cabecera y 56 px en el pie. Las tipografias locales son Barlow y Press Start 2P. Se incluyen sus licencias.
 
-- `tools/render-preview.php`: ejecutar `php tools/render-preview.php` desde la carpeta del proyecto para regenerar `preview.html` tras editar las plantillas o el catalogo.
-- `tools/check-preview.cjs`: comprobacion de la presentacion y las interacciones con Playwright. Las capturas se guardan en `checks/`.
-- `tools/build-icons.cjs`: exportacion de los iconos utilizados desde Lucide.
-- `docs/content-source.md`: procedencia y criterios de adaptacion del contenido.
+## Presskits y suscripcion
 
-Las herramientas JavaScript usan las dependencias del entorno local de Codex indicado en sus importaciones. No son necesarias para utilizar la vista previa ni instalar el tema en WordPress.
+Los cuatro ZIP de `downloads/` son kits locales basicos preparados con las imagenes publicas, el logo y la informacion de contacto. No son una copia de las carpetas de Google Drive del sitio original y no dependen de ellas.
+
+La newsletter conserva el formulario y la presentacion. Su proveedor de correo sigue pendiente de configurar. La vista previa no guarda ni envia direcciones, y comunica que las suscripciones no estan abiertas.
+
+## Regenerar y comprobar
+
+En la carpeta superior del proyecto:
+
+- `php tools/render-preview.php`: regenera las cinco paginas y las 32 fichas a partir de las plantillas WordPress.
+- `tools/build-presskits.ps1`: reconstruye los cuatro ZIP locales.
+- `node tools/check-preview.cjs`: revisa navegacion, recursos, filtros, paginacion y distribucion en varias pantallas, bloqueando las conexiones HTTP externas.
+- `node tools/capture-about-reference.cjs`: consulta la pagina de referencia y guarda las fotos e ilustraciones y una copia de verificacion en `checks/`; solo es necesario para revisar de nuevo la fuente, no para utilizar la web.
+- `docs/estructura-y-entrega.md`: comparacion de estructura para la entrega al instructor.
+
+Las herramientas JavaScript utilizan las dependencias del entorno local de Codex indicadas en sus importaciones. No hacen falta para abrir las paginas o instalar el tema.

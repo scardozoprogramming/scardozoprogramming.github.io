@@ -42,7 +42,21 @@ function flynns_arcade_neon_assets(): void {
 add_action('wp_enqueue_scripts', 'flynns_arcade_neon_assets');
 
 function flynns_arcade_neon_favicon(): void {
-    echo '<link rel="icon" type="image/svg+xml" href="' . esc_url(get_template_directory_uri() . '/assets/images/favicon.svg') . '">' . "\n";
+    echo '<link rel="icon" href="' . esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['favicon'])) . '">' . "\n";
 }
 add_action('wp_head', 'flynns_arcade_neon_favicon');
+
+function flynns_arcade_neon_query_vars(array $vars): array {
+    $vars[] = 'flynns_view';
+    $vars[] = 'flynns_game';
+    return $vars;
+}
+add_filter('query_vars', 'flynns_arcade_neon_query_vars');
+
+function flynns_arcade_neon_document_title(string $title): string {
+    $view = flynns_arcade_neon_view();
+    if ('game' === $view) return flynns_arcade_neon_current_game()['title'] . " | Flynn's Arcade";
+    return ('home' === $view ? 'Inicio' : ucfirst($view)) . " | Flynn's Arcade";
+}
+add_filter('pre_get_document_title', 'flynns_arcade_neon_document_title');
 

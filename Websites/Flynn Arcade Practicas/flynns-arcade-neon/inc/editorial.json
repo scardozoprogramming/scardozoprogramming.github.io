@@ -1,11 +1,4 @@
 {
-  "hero_copy": ["We develop our own games", "and publish independent titles.", "Smart, simple and elegantly designed."],
-  "spotlights": [
-    {"title":"We Love Indies.","summary":"Meet the independent creators behind our arcade games and narrative adventures."},
-    {"title":"Radin Games","summary":"Retro arcade games inspired by cabinets and 8-bit computers."},
-    {"title":"Fahmitsu","summary":"The Jakarta-based developer behind What Comes After works across game and narrative design."},
-    {"title":"Pixel Games","summary":"Sebastian's Luxembourg studio creates classic arcade experiences for modern machines."}
-  ],
   "studios": [
     {"name":"Radin Games","detail":"Eternum Ex, Galacticon"},
     {"name":"Fahmitsu, Rolling Glory Jam","detail":"What Comes After"},
@@ -25,9 +18,9 @@
     {"name":"Magnus Fredriksson, Bortbyting","detail":"Flora & Fang: Guardians of the vampire garden"}
   ],
   "about": [
-    {"title":"Description","paragraphs":["Flynn's Arcade develops original games and publishes titles by other creators. The company focuses on accessible, carefully designed games that give players an enjoyable experience."]},
-    {"title":"Early History","paragraphs":["The project began at the Autonomous University of Barcelona, where Juan Peralta taught and supervised video-game degree projects. With Felipe Lumbreras and student Xavier Alsina, the team explored an augmented-reality mobile game inspired by board games.","Developers and artists came together to create OUTSIDERS, a prototype combining tabletop strategy and video games with augmented reality. During that project, Juan met designer Francisco Raya."]},
-    {"title":"After That","paragraphs":["After completing the OUTSIDERS demo, team members moved on to different projects. Juan and Francisco continued developing new ideas, leading to Flynn's Arcade and further game projects."]}
+    {"title":"Description","paragraphs":["We love creating games and that is what we try to do everyday. Flynn\u2019s Arcades is a company that develop its own games meanwhile we publish third party games.","The games we produce are smart, simple and elegantly designed. Our objective is to make people spend a good time with our products creating an enjoyable video game experience."]},
+    {"title":"Early history","paragraphs":["Everything began at the Autonomic University of Barcelona several years ago. Juan Peralta, Flynn\u2019s Arcades CEO, was teaching at this university. Juan used to direct different final degree projects all related with video games. One day Felipe Lumbreras and me proposed to Xavier Alsina (one of our pupils) to develop a total different Augmented Reality mobile game to reinvent the concept of board games. This is how we began to look for collaborators and after a month, we were a group of developers and artists developing OUTSIDERS.","Outsiders is a DEMO of combination of board games like Warhhamer and video games like Xcom, all combined with Augmented Reality (AR). During this project Juan Peralta met Francisco Raya, one of the designers."]},
+    {"title":"After that","paragraphs":["After the Outsiders DEMO was finished some people found new jobs like Juan Gonzalez and Luis Estanyol now working at FX Animation and others like Francisco and me decided to work in new projects.","This is how Flynn\u2019s Arcades became truth and our last projects also. Now Francisco and me are trying to create new projects and an incredible experience for the users."]}
   ],
   "press": [
     {"title":"Cash Cow DX","outlet":"Tech Gaming","date":"Sep. 30","platform":"Nintendo Switch"},
@@ -46,6 +39,5 @@
     {"title":"Lambs on the Road","outlet":"Pure Nintendo","date":"Aug. 18","platform":"Nintendo Switch"},
     {"title":"Eternum Ex","outlet":"Nintenderos","date":"Nov. 28","platform":""}
   ],
-  "newsletter_copy":"Get updates about our game releases and more.",
   "contact_email":"press@flynnsarcades.com"
 }
