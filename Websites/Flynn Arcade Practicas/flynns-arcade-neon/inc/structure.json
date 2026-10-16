@@ -1,5 +1,5 @@
 {
-    "logo": "brand/flynns-logo-original.png",
+    "logo": "brand/flynns-publishing-pixel.png",
     "studios": [
         {
             "name": "Radin Games",
@@ -194,7 +194,6 @@
         }
     ],
     "favicon": "brand/favicon-original.png",
-    "about_image": "brand/about-original.png",
     "about_gallery": [
         {"image":"about/gallery-01.jpg","alt":"Playing Eternum on an arcade cabinet"},
         {"image":"about/gallery-02.jpg","alt":"At the studio with Flynn's Arcade on the screens"},

@@ -25,9 +25,9 @@ function wp_body_open() {}
 function wp_head() {
     $view = flynns_arcade_neon_view();
     $title = 'game' === $view ? flynns_arcade_neon_current_game()['title'] : ('home' === $view ? 'Inicio' : ucfirst($view));
-    echo '<title>' . esc_html($title) . ' | Flynn\'s Arcade</title><link rel="stylesheet" href="style.css?v=2.4.0"><link rel="icon" href="' . esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['favicon'])) . '">';
+    echo '<title>' . esc_html($title) . ' | Flynn\'s Arcade</title><link rel="stylesheet" href="style.css?v=2.5.1"><link rel="icon" href="' . esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['favicon'])) . '">';
 }
-function wp_footer() { echo '<script src="assets/js/theme.js?v=2.4.0"></script>'; }
+function wp_footer() { echo '<script src="assets/js/theme.js?v=2.5.1"></script>'; }
 function get_header() { require FLYNNS_THEME . '/header.php'; }
 function get_footer() { require FLYNNS_THEME . '/footer.php'; }
 require FLYNNS_THEME . '/inc/content.php';

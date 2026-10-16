@@ -1,75 +1,128 @@
-{
-  "result": "REVIEW",
-  "results": [
-    {
-      "width": 1440,
-      "file": "about.html",
-      "selector": ".about-story p",
-      "minimumContrast": 6.23,
-      "pass": true
-    },
-    {
-      "width": 1440,
-      "file": "indies.html",
-      "selector": ".studio-description p",
-      "minimumContrast": 6.05,
-      "pass": true
-    },
-    {
-      "width": 1440,
-      "file": "indies.html",
-      "selector": ".studio-games",
-      "minimumContrast": 2.91,
-      "pass": false
-    },
-    {
-      "width": 1440,
-      "file": "press.html",
-      "selector": ".press-copy > p:not(.eyebrow)",
-      "minimumContrast": 10.07,
-      "pass": true
-    },
-    {
-      "width": 1440,
-      "file": "game-eternum-ex.html",
-      "selector": ".game-detail-copy > p:not(.eyebrow)",
-      "minimumContrast": 5.73,
-      "pass": true
-    },
-    {
-      "width": 390,
-      "file": "about.html",
-      "selector": ".about-story p",
-      "minimumContrast": 6.37,
-      "pass": true
-    },
-    {
-      "width": 390,
-      "file": "indies.html",
-      "selector": ".studio-description p",
-      "minimumContrast": 8.5,
-      "pass": true
-    },
-    {
-      "width": 390,
-      "file": "indies.html",
-      "selector": ".studio-games",
-      "minimumContrast": 4.79,
-      "pass": true
-    },
-    {
-      "width": 390,
-      "file": "press.html",
-      "selector": ".press-copy > p:not(.eyebrow)",
-      "minimumContrast": 8.64,
-      "pass": true
-    },
-    {
-      "width": 390,
-      "file": "game-eternum-ex.html",
-      "selector": ".game-detail-copy > p:not(.eyebrow)",
-      "minimumContrast": 6.61,
-      "pass": true
-    }
-  ]
-}
+[
+  {
+    "width": 1440,
+    "file": "preview.html",
+    "selector": ".featured-game-description",
+    "ratio": 9.6,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "about.html",
+    "selector": ".about-story p",
+    "ratio": 4.66,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "about.html",
+    "selector": ".about-story h2",
+    "ratio": 5.2,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "indies.html",
+    "selector": ".studio-description p",
+    "ratio": 5.83,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "indies.html",
+    "selector": ".studio-games",
+    "ratio": 5.11,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "press.html",
+    "selector": ".press-copy > p:not(.eyebrow)",
+    "ratio": 9.89,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "press.html",
+    "selector": ".presskit-download",
+    "ratio": 18.47,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "press.html",
+    "selector": ".social-band p",
+    "ratio": 10.05,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "game-eternum-ex.html",
+    "selector": ".game-detail-copy > p:not(.eyebrow)",
+    "ratio": 5.67,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "preview.html",
+    "selector": ".featured-game-description",
+    "ratio": 9.94,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "about.html",
+    "selector": ".about-story p",
+    "ratio": 6.49,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "about.html",
+    "selector": ".about-story h2",
+    "ratio": 5.17,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "indies.html",
+    "selector": ".studio-description p",
+    "ratio": 6.46,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "indies.html",
+    "selector": ".studio-games",
+    "ratio": 5.21,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "press.html",
+    "selector": ".press-copy > p:not(.eyebrow)",
+    "ratio": 6.46,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "press.html",
+    "selector": ".presskit-download",
+    "ratio": 18.47,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "press.html",
+    "selector": ".social-band p",
+    "ratio": 9.77,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "game-eternum-ex.html",
+    "selector": ".game-detail-copy > p:not(.eyebrow)",
+    "ratio": 6.48,
+    "pass": true
+  }
+]

@@ -2,9 +2,11 @@ const { chromium } = require('C:/Users/santi/.cache/codex-runtimes/codex-primary
 const fs = require('node:fs');
 const path = require('node:path');
 const sharp = require('C:/Users/santi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const { createHash } = require('node:crypto');
 const { pathToFileURL } = require('node:url');
 const theme = path.resolve(__dirname, '../flynns-arcade-neon');
 const catalog = JSON.parse(fs.readFileSync(path.join(theme, 'inc/catalog.json'), 'utf8'));
+const structure = JSON.parse(fs.readFileSync(path.join(theme, 'inc/structure.json'), 'utf8'));
 const aboutProjects = ['Eternum Ex', 'Lambs on the Road'].map((title) => catalog.find((game) => game.title === title));
 const checksRoot = path.resolve(__dirname, '../checks');
 const checks = path.join(checksRoot, 'preview-' + Date.now());
@@ -40,7 +42,7 @@ let browser;
       });
       const result = await page.evaluate(({ name, file, width }) => {
         const overflow = Array.from(document.querySelectorAll('body *')).filter((el) => {
-          if (!(el instanceof HTMLElement) || !el.getClientRects().length || el.classList.contains('screen-reader-text')) return false;
+          if (!(el instanceof HTMLElement) || !el.getClientRects().length || el.classList.contains('screen-reader-text') || el.matches('.publisher-logo img')) return false;
           const r = el.getBoundingClientRect();
           return r.right > width + 1 || r.left < -1;
         }).map((el) => el.className || el.tagName);
@@ -62,7 +64,37 @@ let browser;
       assert(result.footerCircles.length === 9 && result.footerCircles.every((size) => size === 56), 'Footer social circles should be 56px.');
       assert(result.headerCircles.every((size) => size === 44), 'Header social circles should be 44px.');
       assert(!result.headerOverlap, `Header items overlap at ${width}px.`);
+      const logos = await page.locator('.publisher-logo').evaluateAll((frames) => frames.map((frame) => {
+        const image = frame.querySelector('img');
+        const crop = frame.getBoundingClientRect();
+        const source = image.getBoundingClientRect();
+        const scale = source.width / image.naturalWidth;
+        return { path: image.getAttribute('src'), clipped: getComputedStyle(frame).overflow === 'hidden', native: [image.naturalWidth, image.naturalHeight], undistorted: Math.abs(source.width / source.height - 1.6) < .001, left: (crop.left - source.left) / scale, top: (crop.top - source.top) / scale, width: crop.width / scale, height: crop.height / scale };
+      }));
+      assert(logos.length === (file === 'about.html' ? 2 : 1) && logos.every((logo) => logo.path === `assets/images/${structure.logo}` && logo.clipped && logo.undistorted && Math.abs(logo.left - 500) < .1 && Math.abs(logo.top - 330) < .1 && Math.abs(logo.width - 650) < .1 && Math.abs(logo.height - 318) < .1), 'All publisher logos should use the same undistorted, non-destructive crop of the supplied PNG.');
+      assert(await page.locator('.brand').evaluate((brand) => brand.offsetWidth) === (width <= 600 ? 150 : 170), 'Header logo size should stay unchanged.');
       assert(await page.locator('a.contact-email').getAttribute('href') === 'mailto:press@flynnsarcades.com', 'Contact should open the configured mail application.');
+      assert(await page.locator('.social-band').evaluate((band) => getComputedStyle(band).backgroundColor) === 'rgba(0, 0, 0, 0.65)', 'The social band should have a translucent black background.');
+      if (file === 'preview.html') {
+        const banner = await page.locator('.hero-image').boundingBox();
+        const featured = await page.locator('.featured-game').boundingBox();
+        assert(Math.abs(banner.x) < 1 && Math.abs(banner.width - width) < 1 && Math.abs(banner.width / banner.height - 3) < .01, 'The panoramic banner should fill the viewport width and retain its complete 3:1 composition without cropping.');
+        assert(await page.locator('.hero-image').evaluate((image) => image.naturalWidth === 2172 && image.naturalHeight === 724 && getComputedStyle(image).objectFit === 'contain'), 'The complete panoramic artwork should be decoded and displayed without distortion.');
+        assert(await page.locator('.hero h1, .hero p, .hero a').count() === 0, 'Game text and controls should be outside the child artwork.');
+        assert(featured.y >= banner.y + banner.height, 'The featured game should follow the image in a separate section.');
+        assert(await page.locator('.featured-game-image').getAttribute('src') === 'assets/images/games/the-last-cat-in-the-universe.jpg', 'The featured game should use its own cover artwork.');
+      }
+      if (file === 'press.html') {
+        const buttons = await page.locator('.presskit-download').evaluateAll((links) => links.map((link) => {
+          const style = getComputedStyle(link);
+          return { download: link.hasAttribute('download'), local: link.getAttribute('href').startsWith('downloads/presskit-'), height: link.getBoundingClientRect().height, border: style.borderTopWidth, background: style.backgroundImage, label: link.getAttribute('aria-label') };
+        }));
+        assert(buttons.length === 4 && buttons.every((button) => button.download && button.local && button.height >= 44 && button.border === '1px' && button.background.includes('linear-gradient') && button.label.startsWith('Download ')), 'Each presskit should have a clear, accessible local download button.');
+        if (['desktop', 'browser-comments', 'mobile'].includes(name)) {
+          await page.locator('.presskits').screenshot({ path: path.join(checks, `${name}-presskit-buttons.png`) });
+          await page.locator('.social-band').screenshot({ path: path.join(checks, `${name}-social-overlay.png`) });
+        }
+      }
       if (file === 'about.html') {
         const about = await page.evaluate(() => {
           const text = (el) => el.textContent.trim().replace(/\s+/g, ' ');
@@ -97,7 +129,7 @@ let browser;
         assert(about.projectSizes.every((size) => size.width <= 400 && size.height <= 420), 'Project cards should remain medium-sized, including on wide screens.');
         assert(about.galleryColumns === (width > 1024 ? 6 : width > 767 ? 2 : 1), 'About photo columns differ from the original responsive structure.');
         assert(about.storyColumns === (width > 767 ? 3 : 1), 'About history should use three desktop columns and one mobile column.');
-        assert(about.photoTint === 'rgb(0, 222, 238)', 'Gallery tint should use the existing cyan palette.');
+        assert(about.photoTint === 'rgb(255, 133, 46)', 'Gallery tint should use neon orange to match the supplied logo.');
         assert(about.photoFilters.every((filter) => filter === 'grayscale(1)'), 'Unselected photos should have the neon tint treatment.');
         assert(about.projectArtwork.every((image) => image.fit === 'contain' && image.inside), 'Project illustrations should fit completely inside their frames.');
         assert(about.projectArtwork.every((image) => image.separateCaption), 'Project titles and details must be below the covers.');
@@ -105,6 +137,10 @@ let browser;
         assert(JSON.stringify(about.order) === JSON.stringify(['about-brand', 'about-gallery', 'about-story', 'about-projects']), 'About section order differs from the source.');
       }
       await page.screenshot({ path: path.join(checks, `${name}-${file.replace('.html', '')}.png`), fullPage: true });
+      if (['preview.html', 'about.html'].includes(file) && ['desktop', 'browser-comments', 'mobile', 'small-mobile'].includes(name)) {
+        await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+        await page.screenshot({ path: path.join(checks, `${name}-${file.replace('.html', '')}-viewport.png`) });
+      }
       if (name === 'desktop' && file === 'indies.html') await page.locator('.studio-row').first().screenshot({ path: path.join(checks, 'indies-first-row.png') });
       if (name === 'desktop' && file === 'press.html') await page.locator('.press-row').first().screenshot({ path: path.join(checks, 'press-first-row.png') });
       if (file === 'about.html') await page.locator('.about-projects').screenshot({ path: path.join(checks, `${name}-project-sizing.png`) });
@@ -128,9 +164,34 @@ let browser;
       }
     }
   }
+  for (const width of [1920, 2560]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto(url('preview.html'));
+    await page.evaluate(async () => { await document.fonts.ready; await document.querySelector('.hero-image').decode(); });
+    const bounds = await page.locator('.hero-image').boundingBox();
+    assert(Math.abs(bounds.x) < 1 && Math.abs(bounds.width - width) < 1 && Math.abs(bounds.width / bounds.height - 3) < .01, 'Wide-screen banner should remain full-width and uncropped.');
+    assert(await page.evaluate(() => document.documentElement.scrollWidth) === width, 'Wide-screen banner causes horizontal overflow.');
+    const { data, info } = await sharp(await page.locator('.hero-image').screenshot()).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+    const thirds = [0, 0, 0];
+    for (let y = 0; y < info.height; y++) {
+      for (let x = 0; x < info.width; x++) {
+        const offset = (y * info.width + x) * info.channels;
+        const rgb = [data[offset], data[offset + 1], data[offset + 2]];
+        if (Math.max(...rgb) > 40 && Math.max(...rgb) - Math.min(...rgb) > 20) thirds[Math.min(2, Math.floor(x * 3 / info.width))]++;
+      }
+    }
+    assert(thirds.every((pixels) => pixels > info.width * info.height / 3 * .05), 'The full-width banner should show artwork at both edges and the center, not empty side panels.');
+    await page.screenshot({ path: path.join(checks, `wide-banner-${width}.png`) });
+  }
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto(url('preview.html'));
-  assert(await page.locator('.hero-image').getAttribute('src') === 'assets/images/hero-arcade-kid.png', 'Home should retain the supplied child image.');
+  assert(await page.locator('.hero-image').getAttribute('src') === 'assets/images/hero-arcade-banner.webp', 'Home should use the locally saved panoramic banner.');
+  assert(createHash('sha256').update(fs.readFileSync(path.join(theme, 'assets/images/hero-arcade-kid.png'))).digest('hex') === 'a1b9d733a826fb1ed71ad4173fb8f061df912dd4dfc31878661ddaa5a814948b', 'The supplied child image must remain unaltered.');
+  assert(createHash('sha256').update(fs.readFileSync(path.join(theme, 'assets/images', structure.logo))).digest('hex') === '18f4ad2cab0379615bf0abbfccf1993c3c6a22fc75ef55e54f075c99dee67b2b', 'The supplied publisher logo must be preserved exactly.');
+  await page.locator('.featured-game .arcade-button').click({ noWaitAfter: true });
+  await page.waitForURL(url('game-the-last-cat-in-the-universe.html'));
+  await page.locator('.brand').click({ noWaitAfter: true });
+  await page.waitForURL(url('preview.html'));
   assert(await page.locator('.site-nav [aria-current="page"]').textContent() === 'Inicio', 'Home navigation is not distinct.');
   await page.getByRole('button', { name: 'Next highlight' }).click();
   assert(await page.locator('[data-promotion-slide]:visible h2').textContent() === '100% pure graphic adventure', 'Highlight carousel failed.');
@@ -177,7 +238,7 @@ let browser;
     images.forEach((image) => { image.loading = 'eager'; });
     await Promise.all(images.map((image) => image.decode()));
   });
-  await page.locator('.about-gallery').screenshot({ path: path.join(checks, 'about-gallery-cyan.png') });
+  await page.locator('.about-gallery').screenshot({ path: path.join(checks, 'about-gallery-orange.png') });
   await photo.hover();
   await page.waitForFunction(() => getComputedStyle(document.querySelector('[data-gallery-item]'), '::after').opacity === '0' && getComputedStyle(document.querySelector('[data-gallery-item] img')).filter === 'none');
   await page.locator('.about-gallery').screenshot({ path: path.join(checks, 'about-gallery-hover.png') });
@@ -224,6 +285,13 @@ let browser;
   await page.locator('.press-row').first().waitFor();
   assert(await page.locator('.press-row').count() === 15, 'Press is incomplete.');
   assert(await page.locator('.presskit').count() === 4, 'Presskits are missing.');
+  for (const link of await page.locator('.presskit-download').all()) {
+    const expected = path.basename(await link.getAttribute('href'));
+    const downloadReady = page.waitForEvent('download');
+    await link.click();
+    const download = await downloadReady;
+    assert(download.suggestedFilename() === expected && await download.failure() === null, 'A presskit download failed.');
+  }
   const links = await page.locator('a').evaluateAll((items) => items.map((item) => item.getAttribute('href')));
   assert(!links.some((href) => /^https?:\/\/(www\.)?flynnsarcades\.com/i.test(href || '')), 'A link points back to the source website.');
   const pages = fs.readdirSync(theme).filter((file) => file.endsWith('.html') && file !== 'index.html');
@@ -268,7 +336,7 @@ let browser;
     assert(await page.locator('.hero').count() === 1, 'Mobile Inicio should return to home.');
   }
   assert(errors.length === 0, errors.join('\n'));
-  const report = { layouts, errors, checkedPages: pages.length, artifactsDirectory: checks, backgroundPixels, catalog: catalog.length, studios: 16, press: 15, presskits: 4, about: { photos: 6, originalTextVerified: true, projects: 2, viewerVerified: true, cyanGalleryHoverAndFocusVerified: true, pinkSquareHeadingsVerified: true, referenceProjectCardsVerified: true, mediumProjectSizeVerified: true, completeArtworkFitVerified: true, captionsDoNotOverlap: true }, result: 'Shared local arcade background, desktop and mobile assets, rendered background pixels, medium project cards, original About content, gallery, navigation and offline rendering passed.' };
+  const report = { layouts, errors, checkedPages: pages.length, artifactsDirectory: checks, backgroundPixels, catalog: catalog.length, studios: 16, press: 15, presskits: 4, suppliedPublisherLogoVerified: true, nonDestructiveLogoCropVerified: true, presskitDownloadsVerified: true, translucentSocialBandVerified: true, fullWidthPanoramicBannerVerified: true, uncroppedBannerVerified: true, wideBannerPixelsVerified: true, originalChildImagePreserved: true, separateFeaturedGameVerified: true, about: { photos: 6, originalTextVerified: true, projects: 2, viewerVerified: true, orangeGalleryHoverAndFocusVerified: true, pinkSquareHeadingsVerified: true, referenceProjectCardsVerified: true, mediumProjectSizeVerified: true, completeArtworkFitVerified: true, captionsDoNotOverlap: true }, result: 'Full-width panoramic banner without cropping, desktop/mobile/ultrawide artwork pixels, original image preservation, shared content, download buttons and offline navigation passed.' };
   fs.writeFileSync(path.join(checks, 'verification.json'), JSON.stringify(report, null, 2));
   fs.writeFileSync(path.join(checksRoot, 'verification.json'), JSON.stringify(report, null, 2));
   console.log(JSON.stringify({ result: report.result, layouts: layouts.length, checkedPages: pages.length, backgroundPixels, artifactsDirectory: checks, errors }, null, 2));

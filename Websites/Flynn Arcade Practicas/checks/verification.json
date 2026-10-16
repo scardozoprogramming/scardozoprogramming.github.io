@@ -1343,32 +1343,41 @@
   ],
   "errors": [],
   "checkedPages": 37,
-  "artifactsDirectory": "C:\\Users\\santi\\Documents\\GitHub\\scardozoprogramming.github.io\\Websites\\Flynn Arcade Practicas\\checks\\preview-1792098288889",
+  "artifactsDirectory": "C:\\Users\\santi\\Documents\\GitHub\\scardozoprogramming.github.io\\Websites\\Flynn Arcade Practicas\\checks\\preview-1792165889791",
   "backgroundPixels": [
     {
       "name": "desktop",
-      "changedPixels": 254404
+      "changedPixels": 317831
     },
     {
       "name": "mobile",
-      "changedPixels": 19284
+      "changedPixels": 53035
     }
   ],
   "catalog": 32,
   "studios": 16,
   "press": 15,
   "presskits": 4,
+  "suppliedPublisherLogoVerified": true,
+  "nonDestructiveLogoCropVerified": true,
+  "presskitDownloadsVerified": true,
+  "translucentSocialBandVerified": true,
+  "fullWidthPanoramicBannerVerified": true,
+  "uncroppedBannerVerified": true,
+  "wideBannerPixelsVerified": true,
+  "originalChildImagePreserved": true,
+  "separateFeaturedGameVerified": true,
   "about": {
     "photos": 6,
     "originalTextVerified": true,
     "projects": 2,
     "viewerVerified": true,
-    "cyanGalleryHoverAndFocusVerified": true,
+    "orangeGalleryHoverAndFocusVerified": true,
     "pinkSquareHeadingsVerified": true,
     "referenceProjectCardsVerified": true,
     "mediumProjectSizeVerified": true,
     "completeArtworkFitVerified": true,
     "captionsDoNotOverlap": true
   },
-  "result": "Shared local arcade background, desktop and mobile assets, rendered background pixels, medium project cards, original About content, gallery, navigation and offline rendering passed."
+  "result": "Full-width panoramic banner without cropping, desktop/mobile/ultrawide artwork pixels, original image preservation, shared content, download buttons and offline navigation passed."
 }

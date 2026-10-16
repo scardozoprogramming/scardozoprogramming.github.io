@@ -22,11 +22,11 @@ foreach ($kit in $kits) {
         $info = @($kit.Title, '', "Publisher: Flynn's Arcade", ('Press contact: ' + $editorial.contact_email), '')
         if ($game) { $info += @($game.summary, '', ('Platforms listed: ' + ($game.platforms -join ', '))) }
         if ($kit.Slug -eq 'flynns-arcade') { $info += $editorial.about[0].paragraphs }
-        $info += @('', 'Local media kit assembled from the public publisher website.', 'Includes the original publisher logo and supplied cover artwork.')
+        $info += @('', 'Local media kit assembled from public publisher information.', 'Includes the publisher logo supplied by the user and local cover artwork.')
         $entry = $archive.CreateEntry('press-information.txt')
         $writer = [System.IO.StreamWriter]::new($entry.Open(), [System.Text.UTF8Encoding]::new($false))
         try { $writer.Write(($info -join [Environment]::NewLine)) } finally { $writer.Dispose() }
-        [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, (Join-Path $themeDirectory ('assets\images\' + $structure.logo)), 'flynns-arcade-original-logo.png') | Out-Null
+        [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, (Join-Path $themeDirectory ('assets\images\' + $structure.logo)), 'flynns-arcade-publishing-logo.png') | Out-Null
         $cover = $structure.presskits[$kit.Index].image
         [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, (Join-Path $themeDirectory ('assets\images\' + $cover)), ('cover' + [System.IO.Path]::GetExtension($cover))) | Out-Null
     } finally { $archive.Dispose(); $stream.Dispose() }

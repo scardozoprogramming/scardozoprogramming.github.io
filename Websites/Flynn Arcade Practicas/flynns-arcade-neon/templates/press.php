@@ -7,7 +7,11 @@
 </div>
 <section class="section-inner presskits"><div class="section-heading"><h2 class="section-title">Check out the presskits</h2></div><div class="presskit-grid">
     <?php foreach (array('what-comes-after' => 'What Comes After', 'lambs-on-the-road' => 'Lambs on the Road', 'kolumno' => 'Kolumno', 'flynns-arcade' => "Flynn's Arcade") as $slug => $name) : $index = array_search($slug, array('what-comes-after', 'lambs-on-the-road', 'kolumno', 'flynns-arcade'), true); ?>
-        <a class="presskit" href="<?php echo esc_url(get_theme_file_uri('downloads/presskit-' . $slug . '.zip')); ?>" download><img src="<?php echo esc_url(flynns_arcade_neon_asset($structure['presskits'][$index]['image'])); ?>" alt="<?php echo esc_attr($name); ?>" loading="lazy"><span><strong><?php echo esc_html($name); ?></strong><span>Presskit <?php flynns_arcade_neon_icon('download'); ?></span></span></a>
+        <article class="presskit">
+            <img src="<?php echo esc_url(flynns_arcade_neon_asset($structure['presskits'][$index]['image'])); ?>" alt="<?php echo esc_attr($name); ?>" loading="lazy">
+            <h3><?php echo esc_html($name); ?></h3>
+            <a class="arcade-button presskit-download" href="<?php echo esc_url(get_theme_file_uri('downloads/presskit-' . $slug . '.zip')); ?>" download aria-label="<?php echo esc_attr('Download ' . $name . ' presskit'); ?>">Download presskit <?php flynns_arcade_neon_icon('download'); ?></a>
+        </article>
     <?php endforeach; ?>
 </div></section>
 <?php flynns_arcade_neon_promotions(); ?>

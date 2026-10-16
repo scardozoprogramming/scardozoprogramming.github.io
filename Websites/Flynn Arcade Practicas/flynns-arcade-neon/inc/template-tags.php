@@ -6,8 +6,12 @@ function flynns_arcade_neon_icon(string $name): void {
     ?><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-<?php echo esc_attr($name); ?>"></use></svg><?php
 }
 
+function flynns_arcade_neon_logo(): void {
+    ?><span class="publisher-logo"><img src="<?php echo esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['logo'])); ?>" width="1600" height="1000" alt="Flynn's Arcade Publishing" decoding="async"></span><?php
+}
+
 function flynns_arcade_neon_brand(): void {
-    ?><a class="brand" href="<?php echo esc_url(flynns_arcade_neon_url('home')); ?>" aria-label="Flynn's Arcade home"><img src="<?php echo esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['logo'])); ?>" width="170" height="96" alt="Flynn's Arcade"></a><?php
+    ?><a class="brand" href="<?php echo esc_url(flynns_arcade_neon_url('home')); ?>" aria-label="Flynn's Arcade home"><?php flynns_arcade_neon_logo(); ?></a><?php
 }
 
 function flynns_arcade_neon_nav(): void {

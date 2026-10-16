@@ -1,6 +1,6 @@
 <?php if (!defined('ABSPATH')) { exit; } ?>
 <h1 class="screen-reader-text">About</h1>
-<div class="about-brand"><img src="<?php echo esc_url(flynns_arcade_neon_asset($structure['about_image'])); ?>" alt="Flynn's Arcade" width="5760" height="3240" fetchpriority="high"></div>
+<div class="about-brand"><?php flynns_arcade_neon_logo(); ?></div>
 <section class="about-gallery" aria-label="Studio photos" data-gallery>
     <?php foreach ($structure['about_gallery'] as $photo) : ?>
         <a href="<?php echo esc_url(flynns_arcade_neon_asset($photo['image'])); ?>" data-gallery-item title="View photo"><img src="<?php echo esc_url(flynns_arcade_neon_asset($photo['image'])); ?>" alt="<?php echo esc_attr($photo['alt']); ?>" loading="lazy" decoding="async" width="1200" height="800"></a>
