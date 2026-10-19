@@ -1,410 +1,3 @@
-let scenarios = [
-  {
-    id: "recepcion-22",
-    label: "Recepción 2-2",
-    meta: ["Side-out", "Recepción", "Base"],
-    title: "Recepción 2-2: cerrar el pasillo central",
-    summary:
-      "Antes del saque la pareja define quién manda en el centro. El receptor que entra de frente tiene prioridad y el compañero se convierte rápido en colocador.",
-    objective:
-      "Recibir alto hacia la ventana central, evitar dudas en el balón entre dos y llegar al segundo toque con hombros orientados al atacante.",
-    calls: [
-      "Mía: el receptor entra de frente al pasillo central.",
-      "Tuya: el compañero llega con mejor ángulo.",
-      "Alta: la recepción sale separada de la red y necesita tiempo.",
-      "Centro: el segundo toque debe quedar dentro de la ventana de colocación."
-    ],
-    movements: [
-      "A inicia en fondo-línea, a 2 metros de la línea lateral. Si el saque viene al pasillo central, primer paso corto hacia dentro y plataforma estable.",
-      "B inicia en diagonal media. Si A recibe, B entra por delante del balón hacia zona de colocación, sin cruzarse por delante del receptor.",
-      "Después del primer toque, el receptor recupera dos pasos hacia cobertura del atacante."
-    ],
-    roles: [
-      "Receptor de frente manda sobre el balón del centro.",
-      "No receptor entra a colocar con carrera curva y frena antes del contacto.",
-      "Atacante espera la altura del pase y mira bloqueo/defensa rival antes de decidir."
-    ],
-    corrections: [
-      "Si ambos dudan, asignar centro fijo al receptor que está más adelantado.",
-      "Si la recepción cae pegada a la red, cantar 'libre' o 'alta' antes de correr.",
-      "Si el colocador llega tarde, priorizar pase alto y no bola rápida."
-    ],
-    drill:
-      "Saque dirigido a línea, pasillo central y diagonal. La pareja solo suma si canta prioridad antes del contacto y termina con ataque dirigido.",
-    court: {
-      players: [
-        { type: "home", label: "A", x: 23, y: 68 },
-        { type: "partner", label: "B", x: 36, y: 34 },
-        { type: "rival", label: "S", x: 78, y: 50 }
-      ],
-      ball: { x: 72, y: 50 },
-      zones: [
-        { label: "Pasillo", x: 28, y: 42, w: 16, h: 24 },
-        { label: "Colocar", x: 45, y: 40, w: 10, h: 22 }
-      ],
-      routes: [
-        { kind: "ball", x1: 72, y1: 50, x2: 30, y2: 54 },
-        { kind: "move", x1: 36, y1: 34, x2: 47, y2: 47 },
-        { kind: "move", x1: 23, y1: 68, x2: 30, y2: 54 }
-      ]
-    }
-  },
-  {
-    id: "saque-seam",
-    label: "Saque al centro",
-    meta: ["Saque", "Estrategia", "Presión"],
-    title: "Saque al pasillo central: provocar decisión tardía",
-    summary:
-      "El saque al espacio entre receptores no busca solo punto directo: fuerza una llamada, mueve al colocador y reduce la calidad del ataque rival.",
-    objective:
-      "Hacer que el rival reciba en movimiento y obligarle a jugar una colocación alta, previsible y separada de la red.",
-    calls: [
-      "Centro: objetivo entre hombros de los receptores.",
-      "Corto: si el bloqueador rival se queda pesado atrás.",
-      "Largo: si el receptor adelanta demasiado el peso.",
-      "Entra: aviso del sacador para ocupar base defensiva tras sacar."
-    ],
-    movements: [
-      "Sacador inicia detrás de fondo, sirve al pasillo central y entra hacia diagonal media del lado acordado.",
-      "Bloqueador inicia a 1 metro de la red, observa la recepción y decide si bloquea línea, diagonal o se retira.",
-      "Si la recepción rival sale alta y separada, el defensor se planta profundo; si sale corta, avanza a zona de toque."
-    ],
-    roles: [
-      "Sacador comunica objetivo antes de sacar y entra sin quedarse mirando.",
-      "Compañero en red confirma señal de bloqueo y lee primer toque rival.",
-      "Defensor ajusta su base según la calidad de recepción rival."
-    ],
-    corrections: [
-      "No sacar al centro sin plan de bloqueo posterior.",
-      "Si el sacador tarda en entrar, el rival ataca la diagonal libre.",
-      "Con viento frontal, reducir riesgo y buscar saque flotado profundo al cuerpo."
-    ],
-    drill:
-      "Serie de 12 saques: 4 al pasillo, 4 al cuerpo del receptor débil y 4 cortos. Puntúa si el equipo entra a su base defensiva antes del segundo toque rival.",
-    court: {
-      players: [
-        { type: "home", label: "S", x: 88, y: 78 },
-        { type: "partner", label: "B", x: 52, y: 38 },
-        { type: "rival", label: "R1", x: 25, y: 33 },
-        { type: "rival", label: "R2", x: 25, y: 67 }
-      ],
-      ball: { x: 88, y: 78 },
-      zones: [
-        { label: "Objetivo", x: 18, y: 43, w: 16, h: 20 },
-        { label: "Base S", x: 62, y: 62, w: 14, h: 20 }
-      ],
-      routes: [
-        { kind: "ball", x1: 88, y1: 78, x2: 26, y2: 52 },
-        { kind: "move", x1: 88, y1: 78, x2: 68, y2: 68 },
-        { kind: "move", x1: 52, y1: 38, x2: 50, y2: 31 }
-      ]
-    }
-  },
-  {
-    id: "sideout-linea",
-    label: "Side-out línea",
-    meta: ["Ataque", "Recepción", "Salida"],
-    title: "Side-out por línea: abrir el campo después de recibir",
-    summary:
-      "Cuando la recepción obliga al colocador a entrar desde el centro, el atacante puede cargar línea si el bloqueo llega tarde o cierra diagonal.",
-    objective:
-      "Crear una carrera de ataque corta pero equilibrada, con llamada temprana del colocador y cobertura inmediata del compañero.",
-    calls: [
-      "Línea: ataque directo al lateral libre.",
-      "Manos: usar bloqueo si está formado.",
-      "Corta: si el defensor se hunde demasiado.",
-      "Cubro: el colocador se queda debajo del atacante tras soltar el pase."
-    ],
-    movements: [
-      "Receptor inicia en fondo, recibe y sale por fuera de la línea del balón para preparar carrera de dos pasos.",
-      "Colocador entra desde centro, coloca alto a hombro externo y cae a cobertura corta.",
-      "Atacante aterriza y recupera al centro por si el rival defiende."
-    ],
-    roles: [
-      "Atacante no invade debajo del balón: espera con hombros abiertos.",
-      "Colocador comunica dirección probable si ve al defensor.",
-      "La cobertura se coloca delante del atacante, no detrás."
-    ],
-    corrections: [
-      "Si la colocación queda dentro, no forzar línea: jugar manos o diagonal corta.",
-      "Si el bloqueo está cerrado, usar golpe alto a fondo contrario.",
-      "Si no hay llamada, atacar zona grande y recuperar rápido."
-    ],
-    drill:
-      "Recepción + ataque condicionado: el colocador debe cantar línea, corta o manos antes del salto del atacante.",
-    court: {
-      players: [
-        { type: "home", label: "A", x: 28, y: 66 },
-        { type: "partner", label: "C", x: 43, y: 49 },
-        { type: "rival", label: "B", x: 52, y: 34 },
-        { type: "rival", label: "D", x: 70, y: 64 }
-      ],
-      ball: { x: 43, y: 49 },
-      zones: [
-        { label: "Carrera", x: 18, y: 55, w: 18, h: 28 },
-        { label: "Línea", x: 57, y: 18, w: 12, h: 34 }
-      ],
-      routes: [
-        { kind: "ball", x1: 43, y1: 49, x2: 31, y2: 39 },
-        { kind: "move", x1: 28, y1: 66, x2: 31, y2: 39 },
-        { kind: "move", x1: 43, y1: 49, x2: 36, y2: 45 }
-      ]
-    }
-  },
-  {
-    id: "defensa-linea",
-    label: "Bloqueo línea",
-    meta: ["Bloqueo", "Defensa", "2-2"],
-    title: "Bloqueo línea, defensa diagonal",
-    summary:
-      "El bloqueador quita línea y el defensor se coloca con hombros hacia diagonal larga, preparado para defender golpe fuerte o correr la corta.",
-    objective:
-      "Reducir opciones del atacante, obligar a diagonal y transformar defensa positiva en contraataque.",
-    calls: [
-      "Línea: el bloqueador cierra lateral.",
-      "Diagonal: el defensor se responsabiliza de la diagonal larga.",
-      "Corta: aviso si el brazo atacante baja.",
-      "Fuera: si el atacante llega tarde y golpea por detrás del cuerpo."
-    ],
-    movements: [
-      "Bloqueador inicia frente al atacante, salta vertical cerrando línea con mano exterior fuerte.",
-      "Defensor inicia en diagonal media, baja centro de gravedad y ajusta un paso según carrera del atacante.",
-      "Si hay toque de bloqueo, defensor avanza dos pasos a zona corta; si no hay toque, mantiene diagonal larga."
-    ],
-    roles: [
-      "Bloqueador no persigue balón: cierra espacio elegido.",
-      "Defensor lee hombro y muñeca, no la pelota solamente.",
-      "Tras defensa, bloqueador se abre para ser atacante de transición."
-    ],
-    corrections: [
-      "Si el bloqueo salta hacia dentro, la línea queda abierta.",
-      "Si el defensor se hunde demasiado, regala corta.",
-      "Si nadie canta toque, se pierde el primer paso de transición."
-    ],
-    drill:
-      "Ataque rival desde zona 4: tres bolas a línea, diagonal y corta. La defensa suma doble si la llamada llega antes del golpeo.",
-    court: {
-      players: [
-        { type: "home", label: "D", x: 27, y: 64 },
-        { type: "partner", label: "B", x: 48, y: 35 },
-        { type: "rival", label: "A", x: 58, y: 34 }
-      ],
-      ball: { x: 58, y: 34 },
-      zones: [
-        { label: "Diagonal", x: 20, y: 49, w: 25, h: 34 },
-        { label: "Corta", x: 40, y: 37, w: 10, h: 20 }
-      ],
-      routes: [
-        { kind: "ball", x1: 58, y1: 34, x2: 27, y2: 64 },
-        { kind: "move", x1: 48, y1: 35, x2: 49, y2: 28 },
-        { kind: "move", x1: 27, y1: 64, x2: 34, y2: 58 }
-      ]
-    }
-  },
-  {
-    id: "defensa-diagonal",
-    label: "Bloqueo diagonal",
-    meta: ["Bloqueo", "Defensa", "Variación"],
-    title: "Bloqueo diagonal, defensa línea",
-    summary:
-      "Variación para castigar atacantes que viven de la diagonal fuerte. El bloqueador se mete en diagonal y el defensor protege línea y toque alto.",
-    objective:
-      "Quitar el golpe natural del atacante y forzar una línea técnica bajo presión.",
-    calls: [
-      "Ángulo: el bloqueador cierra diagonal.",
-      "Línea: el defensor se abre a la línea larga.",
-      "Alta: defensa de shot profundo.",
-      "Cubro: cobertura corta si el atacante cambia a dejada."
-    ],
-    movements: [
-      "Bloqueador inicia centrado, ajusta medio paso hacia dentro y presenta manos a diagonal.",
-      "Defensor inicia más abierto hacia línea, con pie exterior listo para correr fondo.",
-      "Si el atacante no tiene carrera, defensor avanza porque aumenta probabilidad de corta."
-    ],
-    roles: [
-      "Bloqueador muestra tarde la intención para no regalar lectura.",
-      "Defensor protege línea sin perder visión del atacante.",
-      "La pareja cambia esta estrategia solo con señal clara antes del saque."
-    ],
-    corrections: [
-      "No usar bloqueo diagonal si el defensor llega tarde a línea.",
-      "Si el rival juega shot por encima, el defensor debe empezar medio paso más profundo.",
-      "Si el atacante pega alto a manos, bloquear con hombros firmes y no invadir hacia fuera."
-    ],
-    drill:
-      "Bloqueo diagonal durante 8 ataques seguidos. El defensor solo puntúa si arranca desde línea media y nombra el golpe antes del contacto.",
-    court: {
-      players: [
-        { type: "home", label: "D", x: 33, y: 31 },
-        { type: "partner", label: "B", x: 49, y: 63 },
-        { type: "rival", label: "A", x: 58, y: 64 }
-      ],
-      ball: { x: 58, y: 64 },
-      zones: [
-        { label: "Línea", x: 19, y: 18, w: 18, h: 30 },
-        { label: "Ángulo", x: 43, y: 54, w: 12, h: 26 }
-      ],
-      routes: [
-        { kind: "ball", x1: 58, y1: 64, x2: 31, y2: 31 },
-        { kind: "move", x1: 49, y1: 63, x2: 48, y2: 57 },
-        { kind: "move", x1: 33, y1: 31, x2: 27, y2: 28 }
-      ]
-    }
-  },
-  {
-    id: "pull-defense",
-    label: "Falso bloqueo",
-    meta: ["Pull", "Lectura", "Defensa"],
-    title: "Falso bloqueo: retirarse de la red para defender dos zonas",
-    summary:
-      "Cuando el rival recibe mal o ataca sin carrera, el bloqueador puede retirarse de la red para sumar un segundo defensor.",
-    objective:
-      "Convertir una situación de ataque débil rival en defensa organizada con dos jugadores leyendo el golpe.",
-    calls: [
-      "Puño: el bloqueador se retira de la red.",
-      "Corta: quien sale del bloqueo toma la zona corta.",
-      "Fondo: el defensor original se queda profundo.",
-      "Yo: confirmación de balón defendible."
-    ],
-    movements: [
-      "Bloqueador inicia en red, lee recepción mala y retrocede con pasos cruzados hacia zona corta-media.",
-      "Defensor inicia profundo, no avanza hasta confirmar que el bloqueador se retira.",
-      "Tras defensa positiva, el jugador que no toca el balón entra a colocar."
-    ],
-    roles: [
-      "El pull se decide antes del salto rival, no durante.",
-      "Jugador que se retira protege corta y línea media.",
-      "Defensor profundo protege golpe alto y diagonal larga."
-    ],
-    corrections: [
-      "Si el bloqueador sale tarde, queda a medio camino.",
-      "Si ambos avanzan, el fondo queda libre.",
-      "Si nadie confirma la señal de puño, el defensor no sabe que cambia su zona."
-    ],
-    drill:
-      "Entrenador lanza recepciones malas al rival. La pareja decide bloquear o retirarse y debe nombrar corta/fondo antes del golpeo.",
-    court: {
-      players: [
-        { type: "home", label: "F", x: 42, y: 42 },
-        { type: "partner", label: "P", x: 29, y: 65 },
-        { type: "rival", label: "A", x: 58, y: 38 }
-      ],
-      ball: { x: 58, y: 38 },
-      zones: [
-        { label: "Corta", x: 35, y: 35, w: 16, h: 22 },
-        { label: "Fondo", x: 18, y: 58, w: 23, h: 25 }
-      ],
-      routes: [
-        { kind: "move", x1: 49, y1: 38, x2: 42, y2: 42 },
-        { kind: "ball", x1: 58, y1: 38, x2: 39, y2: 43 },
-        { kind: "move", x1: 29, y1: 65, x2: 27, y2: 69 }
-      ]
-    }
-  },
-  {
-    id: "free-ball",
-    label: "Free ball",
-    meta: ["Transición", "Ataque", "2-2"],
-    title: "Free ball: pasar de defensa a ataque",
-    summary:
-      "Cuando el rival regala una bola alta, la pareja cambia el ritmo: primer toque limpio, colocación estable y ataque al hueco.",
-    objective:
-      "Convertir una bola fácil en una acción ofensiva organizada, sin precipitar el segundo toque.",
-    calls: [
-      "Tiempo: frenar y construir.",
-      "Alta: colocar con margen.",
-      "Hueco: atacar zona libre.",
-      "Cubro: el colocador protege toque de bloqueo."
-    ],
-    movements: [
-      "Quien recibe free ball inicia debajo de la trayectoria y juega primer toque alto al centro.",
-      "Compañero se perfila como colocador a 2 metros de la red, hombros al atacante.",
-      "Atacante espera fuera de la línea del balón y entra con carrera corta."
-    ],
-    roles: [
-      "Primer contacto prioriza altura y centro, no velocidad.",
-      "Colocador canta tiempo si ve al rival desordenado.",
-      "Atacante mira defensa rival antes del último paso."
-    ],
-    corrections: [
-      "No atacar directo una bola que permite construir.",
-      "No colocar desde debajo del balón sin hombros al objetivo.",
-      "No terminar el punto sin cobertura: el rival también puede defender."
-    ],
-    drill:
-      "El entrenador lanza free balls alternas. La pareja debe nombrar el hueco antes del tercer toque.",
-    court: {
-      players: [
-        { type: "home", label: "R", x: 30, y: 56 },
-        { type: "partner", label: "C", x: 43, y: 44 },
-        { type: "rival", label: "D", x: 69, y: 62 },
-        { type: "rival", label: "B", x: 53, y: 32 }
-      ],
-      ball: { x: 64, y: 46 },
-      zones: [
-        { label: "Primer toque", x: 25, y: 45, w: 15, h: 22 },
-        { label: "Hueco", x: 64, y: 20, w: 18, h: 24 }
-      ],
-      routes: [
-        { kind: "ball", x1: 64, y1: 46, x2: 30, y2: 56 },
-        { kind: "move", x1: 43, y1: 44, x2: 49, y2: 41 },
-        { kind: "move", x1: 30, y1: 56, x2: 35, y2: 43 }
-      ]
-    }
-  },
-  {
-    id: "uno-uno",
-    label: "1-1 iniciación",
-    meta: ["Individual", "Lectura", "Base"],
-    title: "1-1: ocupar centro útil y recuperar equilibrio",
-    summary:
-      "El jugador aprende a volver al centro útil después de cada toque y a orientar el cuerpo antes de decidir dirección.",
-    objective:
-      "Mantener continuidad con desplazamientos cortos y recuperación rápida tras el golpeo.",
-    calls: [
-      "Centro: volver a base útil.",
-      "Alta: ganar tiempo.",
-      "Dentro: priorizar seguridad.",
-      "Hueco: atacar donde el rival no puede llegar equilibrado."
-    ],
-    movements: [
-      "Jugador inicia en centro útil, no pegado a línea.",
-      "Tras defender, da un paso de salida hacia fuera para atacar con espacio.",
-      "Después del golpeo, recupera con pasos cruzados hacia el centro útil."
-    ],
-    roles: [
-      "Defender desde el centro útil, no desde el centro geométrico.",
-      "Recuperar después del golpeo antes de mirar el resultado.",
-      "Atacar a espacio libre cuando el rival queda fuera de base."
-    ],
-    corrections: [
-      "Evitar quedarse mirando el golpeo propio.",
-      "No defender demasiado pegado a línea.",
-      "No atacar fuerte si el cuerpo está desequilibrado."
-    ],
-    drill:
-      "Campo reducido 4 x 8. Punto solo válido si el jugador recupera base antes del siguiente contacto rival.",
-    court: {
-      players: [
-        { type: "home", label: "J", x: 28, y: 50 },
-        { type: "rival", label: "R", x: 72, y: 42 }
-      ],
-      ball: { x: 72, y: 42 },
-      zones: [
-        { label: "Centro útil", x: 20, y: 36, w: 20, h: 28 },
-        { label: "Espacio", x: 67, y: 58, w: 16, h: 22 }
-      ],
-      routes: [
-        { kind: "ball", x1: 72, y1: 42, x2: 28, y2: 50 },
-        { kind: "move", x1: 28, y1: 50, x2: 30, y2: 42 },
-        { kind: "move", x1: 30, y1: 42, x2: 28, y2: 50 }
-      ]
-    }
-  }
-];
-
-scenarios = scenarios.filter((scenario) => scenario.id !== "uno-uno");
-
 const signalModes = [
   {
     id: "linea",
@@ -1010,65 +603,6 @@ let movementPhases = [
 
 movementPhases = movementPhases.filter((phase) => phase.id !== "uno");
 
-const communicationProtocol = [
-  {
-    phase: "Antes del saque propio",
-    aim: "Crear plan común antes de poner el balón en juego.",
-    script: "Objetivo de saque + señal de bloqueo + destino del sacador.",
-    example: "Centro, bloqueo línea, entro diagonal.",
-    must: ["Mirada breve", "Señal clara", "Confirmación verbal"],
-    avoid: "Sacar sin que el compañero sepa quién defiende qué zona."
-  },
-  {
-    phase: "Antes de recibir",
-    aim: "Evitar dudas en el primer toque.",
-    script: "Responsable del pasillo central + zona corta + plan si la recepción sale mala.",
-    example: "Yo centro, tú corta; si va mal, alta.",
-    must: ["Prioridad del centro", "Volumen de voz", "Plan B"],
-    avoid: "Dos jugadores entrando al mismo balón sin llamada."
-  },
-  {
-    phase: "Durante la recepción",
-    aim: "Nombrar propietario del balón y calidad del primer toque.",
-    script: "Mía/Tuya + alta/pegada/fuera.",
-    example: "Mía, alta. Voy.",
-    must: ["Una palabra primero", "Información útil después", "No gritar frases largas"],
-    avoid: "Hablar cuando el compañero ya está golpeando."
-  },
-  {
-    phase: "Durante la colocación",
-    aim: "Dar al atacante una imagen antes del salto.",
-    script: "Dirección disponible + cobertura.",
-    example: "Línea, cubro.",
-    must: ["Llamada temprana", "Cobertura real", "Aceptar decisión del atacante"],
-    avoid: "Cantar una zona tarde, cuando el atacante ya no puede ajustar."
-  },
-  {
-    phase: "Bloqueo-defensa",
-    aim: "Repartir pista sin contradicciones.",
-    script: "Señal antes del saque + confirmación si cambia.",
-    example: "Línea. Tengo diagonal.",
-    must: ["Señal visible", "Responsabilidad opuesta", "Aviso si hay pull"],
-    avoid: "Bloquear línea mientras el defensor también protege línea."
-  },
-  {
-    phase: "Transición",
-    aim: "Pasar de sobrevivir a organizar ataque.",
-    script: "Voy/tuya + tiempo/alta + dirección simple.",
-    example: "Voy, tiempo, hueco.",
-    must: ["Solución rápida", "Segundo toque alto", "Nuevo reparto de roles"],
-    avoid: "Intentar una bola perfecta desde defensa negativa."
-  },
-  {
-    phase: "Entre puntos",
-    aim: "Corregir sin cortar ritmo emocional.",
-    script: "Una información + una decisión siguiente.",
-    example: "Nos están sacando corto; próxima, tú avisas antes.",
-    must: ["Mensaje corto", "Responsabilidad compartida", "Cerrar con mirada"],
-    avoid: "Explicar tres errores antes del siguiente saque."
-  }
-];
-
 const callbook = [
   {
     call: "Mía",
@@ -1125,192 +659,6 @@ const callbook = [
     action: "El atacante espera detrás del colocador y ajusta la carrera sin cruzarse."
   }
 ];
-
-const strategies = [
-  {
-    title: "Saque al pasillo central",
-    phase: "Saque",
-    when: "Contra parejas que dudan en balones entre dos o cuando el colocador no receptor entra tarde.",
-    execution: [
-      "Servir al hombro interno del receptor más débil.",
-      "Sacador entra a base defensiva asignada.",
-      "Bloqueador lee si la recepción sale pegada, separada o fuera de sistema."
-    ],
-    movement: "Inicio: sacador en fondo. Destino: diagonal media o fondo. Compañero: red, preparado para bloquear o retirarse.",
-    risk: "Si el saque queda cómodo al centro sin presión, el rival tiene todos los ángulos.",
-    calls: ["Centro", "Entra", "Línea/Ángulo"]
-  },
-  {
-    title: "Saque corto al bloqueador",
-    phase: "Saque",
-    when: "Si el bloqueador rival es alto, pesado de piernas o prefiere atacar desde carrera larga.",
-    execution: [
-      "Saque flotado corto al espacio delante del bloqueador.",
-      "Defensa avanza medio paso porque aumenta opción de ataque sin potencia.",
-      "Bloqueador propio puede hacer pull si el rival ataca sin carrera."
-    ],
-    movement: "Inicio: receptor rival cerca de red. Destino esperado: obligado a recibir y atacar sin separación.",
-    risk: "Si queda demasiado alto, permite recepción perfecta y ataque rápido.",
-    calls: ["Corta", "Puño"]
-  },
-  {
-    title: "Bloqueo línea + defensa diagonal",
-    phase: "Defensa",
-    when: "Contra atacantes que puntúan fuerte por línea o cuando la línea es corta por viento/sol.",
-    execution: [
-      "Bloqueador cierra mano exterior sobre línea.",
-      "Defensor toma diagonal larga y lee muñeca.",
-      "Si el brazo baja, defensor cambia a corta."
-    ],
-    movement: "Inicio: bloqueador frente al atacante; defensor diagonal media. Destino: línea cerrada y diagonal protegida.",
-    risk: "Regala línea si el bloqueador salta hacia dentro.",
-    calls: ["Línea", "Tengo diagonal", "Corta"]
-  },
-  {
-    title: "Bloqueo diagonal + defensa línea",
-    phase: "Defensa",
-    when: "Contra atacantes de diagonal dominante o cuando el viento empuja el ataque cruzado.",
-    execution: [
-      "Bloqueador ocupa ángulo natural.",
-      "Defensor se abre a línea y protege shot profundo.",
-      "La señal debe esconderse hasta el último momento posible."
-    ],
-    movement: "Inicio: bloqueador centrado; defensor línea media. Destino: diagonal cerrada y línea defendida.",
-    risk: "Si el defensor sale tarde a línea, el atacante tiene golpe fácil.",
-    calls: ["Ángulo", "Línea", "Alta"]
-  },
-  {
-    title: "Pull o falso bloqueo",
-    phase: "Defensa",
-    when: "Recepción rival mala, colocación separada o atacante sin carrera real.",
-    execution: [
-      "Bloqueador confirma el puño y sale antes del salto rival.",
-      "Sale con pasos cruzados a zona corta-media.",
-      "Defensor profundo no invade corta hasta confirmar el pull."
-    ],
-    movement: "Inicio: bloqueador en red. Destino: zona corta-media. Defensor mantiene fondo.",
-    risk: "Llegar a medio camino y no cubrir ni red ni defensa.",
-    calls: ["Puño", "Corta"]
-  },
-  {
-    title: "Side-out seguro con ataque a zona grande",
-    phase: "Recepción",
-    when: "Tras recepción negativa, viento difícil o marcador de presión.",
-    execution: [
-      "Primer toque alto y separado.",
-      "Segundo toque con margen, no pegado a red.",
-      "Ataque profundo al centro-fondo para recuperar organización."
-    ],
-    movement: "Inicio: receptor en desequilibrio. Destino: ataque controlado y recuperación inmediata al centro.",
-    risk: "Intentar punto perfecto con pelota imperfecta.",
-    calls: ["Alta", "Dentro", "Cubro"]
-  },
-  {
-    title: "Free ball con ataque al hueco",
-    phase: "Transición",
-    when: "El rival regala balón alto o defiende sin posibilidad de atacar.",
-    execution: [
-      "Primer toque al centro con altura.",
-      "Colocador mira defensa rival antes de colocar.",
-      "Atacante decide entre línea, diagonal corta o fondo libre."
-    ],
-    movement: "Inicio: defensa organizada. Destino: atacante separado, colocador en cobertura y hueco identificado.",
-    risk: "Acelerar una bola que pedía construir.",
-    calls: ["Tiempo", "Hueco", "Cubro"]
-  },
-  {
-    title: "Ataque contra viento",
-    phase: "Ataque",
-    when: "El viento frena el balón o cambia trayectorias de colocación.",
-    execution: [
-      "Pedir colocación más alta y centrada.",
-      "Atacar con mano firme a zona profunda segura.",
-      "Evitar shots flotados si el viento los devuelve."
-    ],
-    movement: "Inicio: atacante más paciente. Destino: golpeo equilibrado, caída lista para defender.",
-    risk: "Usar golpe técnico suave sin control del viento.",
-    calls: ["Alta", "Fondo", "Dentro"]
-  }
-];
-
-let modules = [
-  {
-    category: "Comunicación",
-    title: "Sistema de llamadas por fase",
-    level: "Alto rendimiento",
-    description:
-      "Define qué se dice antes del saque, durante recepción, en colocación, ataque, bloqueo-defensa y transición.",
-    points: ["Prioridad antes del punto", "Una palabra en vuelo", "Corrección breve entre puntos", "Confirmación con mirada"]
-  },
-  {
-    category: "Movimiento",
-    title: "Inicio, disparador y destino",
-    level: "Táctico",
-    description:
-      "Cada movimiento nace de un disparador: saque, calidad de recepción, señal de bloqueo, defensa positiva o balón regalado.",
-    points: ["Punto de inicio", "Primer paso", "Ruta sin cruzarse", "Destino útil"]
-  },
-  {
-    category: "Estrategia",
-    title: "Plan de saque y primera defensa",
-    level: "Competición",
-    description:
-      "El saque se conecta con bloqueo-defensa: objetivo del saque, entrada del sacador y zona que cubre el compañero.",
-    points: ["Saque al centro", "Saque corto", "Saque al cuerpo", "Entrada defensiva"]
-  },
-  {
-    category: "Sistema 2-2",
-    title: "Bloqueo y defensa coordinados",
-    level: "Competición",
-    description:
-      "Señal clara, bloqueo disciplinado y defensor ocupando la zona que el bloqueo no cubre.",
-    points: ["Bloqueo línea", "Bloqueo diagonal", "Pull", "Transición tras defensa"]
-  },
-  {
-    category: "Posicionamiento",
-    title: "Base defensiva y centro útil",
-    level: "Fundamento",
-    description:
-      "La posición correcta depende de altura del balón, hombro atacante, viento y espacio que cubre el compañero.",
-    points: ["Centro útil", "Profundidad", "Zona corta", "Relación línea-diagonal"]
-  },
-  {
-    category: "Sistema 1-1",
-    title: "Lectura y recuperación individual",
-    level: "Iniciación",
-    description:
-      "Reduce variables para entender trayectoria, orientación corporal y vuelta a base después de cada golpeo.",
-    points: ["Campo reducido", "Primer paso", "Ataque seguro", "Recuperación"]
-  },
-  {
-    category: "Entreno",
-    title: "Drills con comunicación obligatoria",
-    level: "Sesión",
-    description:
-      "Ejercicios donde el punto solo vale si la pareja comunica antes, durante y después de la acción.",
-    points: ["Saque con plan", "Recepción al objetivo", "Ataque nombrado", "Corrección de 5 segundos"]
-  },
-  {
-    category: "Movimiento",
-    title: "Cobertura después del ataque",
-    level: "Pareja",
-    description:
-      "El colocador protege el balón tocado, el atacante aterriza listo y ambos se reorganizan si el rival defiende.",
-    points: ["Cubro", "Toque", "Otra", "Nueva transición"]
-  },
-  {
-    category: "Estrategia",
-    title: "Gestión de marcador y riesgo",
-    level: "Avanzado",
-    description:
-      "No se juega igual con ventaja, punto de cambio o set point. El riesgo debe ser compartido y consciente.",
-    points: ["Saque seguro", "Ataque a zona grande", "Bloqueo disciplinado", "Reset emocional"]
-  }
-];
-
-modules = modules.filter((module) => !["Sistema 1-1", "Entreno"].includes(module.category));
-
-const calls = callbook.map((item) => item.call);
 
 const trainingPlans = {
   base: [
@@ -1375,24 +723,22 @@ const trainingPlans = {
   ]
 };
 
-const moduleFilters = ["Todos", "Comunicación", "Estrategia", "Movimiento", "Posicionamiento", "Sistema 2-2"];
 const levels = [
   { id: "base", label: "Base" },
   { id: "intermedio", label: "Intermedio" },
   { id: "competicion", label: "Competición" }
 ];
 
-let activeFilter = "Todos";
 let activeLevel = "base";
 let activeMovement = movementPhases[0].id;
 let activeSignal = signalModes[0].id;
 let activeSignalStep = 0;
-let signalPlaying = true;
-let signalTimer = null;
+let signalPlaying = false;
+let signalMotion = null;
 let activeSetting = settingModes[0].id;
 let activeSettingStep = 0;
-let settingPlaying = true;
-let settingTimer = null;
+let settingPlaying = false;
+let settingMotion = null;
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -1414,368 +760,42 @@ function escapeHTML(value) {
   });
 }
 
-const languageKey = "volley-beach-santi-language";
-const translations = {
-  es: {
-    "nav.home": "Inicio",
-    "nav.tournament": "Torneo",
-    "nav.scoreboard": "Marcador",
-    "language.label": "Idioma",
-    "cues.eyebrow": "Código de pista",
-    "cues.title": "Palabras de pista",
-    "cues.description": "Llamadas cortas para decidir rápido quién toca, qué zona cubre cada jugador y cómo se construye el ataque.",
-    "cues.current": "Palabras de pista · lista actual",
-    "cues.ritual": "Ritual de 5 segundos",
-    "cues.ritual1": "Mirada al compañero.",
-    "cues.ritual2": "Señal de bloqueo o defensa.",
-    "cues.ritual3": "Objetivo de saque.",
-    "cues.ritual4": "Confirmación verbal.",
-    "cues.ritual5": "Respirar y jugar.",
-    "tournament.eyebrow": "Organizador de torneo",
-    "tournament.title": "Grupos, cruces y final",
-    "tournament.description": "Define los equipos, genera una fase de grupos y simula las eliminatorias hasta tener campeón.",
-    "tournament.config": "Configuración",
-    "tournament.create": "Crear torneo",
-    "tournament.teams": "Equipos",
-    "tournament.format": "Formato",
-    "tournament.defineTeams": "Definir equipos",
-    "tournament.generateGroups": "Generar grupos",
-    "tournament.simulateGroups": "Simular grupos",
-    "tournament.buildBracket": "Crear eliminatorias",
-    "tournament.simulateBracket": "Simular eliminatorias",
-    "tournament.phase1": "Fase 1",
-    "tournament.groups": "Fase de grupos",
-    "tournament.finalPhase": "Fase final",
-    "tournament.knockout": "Eliminatorias",
-    "scoreboard.eyebrow": "Anotación del partido",
-    "scoreboard.title": "Marcador con cambio de lado",
-    "scoreboard.description": "Suma o resta puntos durante el partido. Cuando el total llega a un múltiplo de 7, aparece el aviso para cambiar de lado.",
-    "scoreboard.team1": "Equipo 1",
-    "scoreboard.team2": "Equipo 2",
-    "scoreboard.confirmSide": "Confirmar cambio de lado",
-    "scoreboard.reset": "Reiniciar marcador",
-    "scoreboard.control": "Control",
-    "scoreboard.summary": "Resumen del partido",
-    "common.reset": "Reiniciar"
-  },
-  en: {
-    "nav.home": "Home",
-    "nav.tournament": "Tournament",
-    "nav.scoreboard": "Scoreboard",
-    "language.label": "Language",
-    "cues.eyebrow": "Court code",
-    "cues.title": "Court calls",
-    "cues.description": "Short calls to decide who plays the ball, which zone each player covers, and how the attack is built.",
-    "cues.current": "Court calls · current list",
-    "cues.ritual": "5-second ritual",
-    "cues.ritual1": "Look at your partner.",
-    "cues.ritual2": "Block or defense signal.",
-    "cues.ritual3": "Serve target.",
-    "cues.ritual4": "Verbal confirmation.",
-    "cues.ritual5": "Breathe and play.",
-    "tournament.eyebrow": "Tournament organizer",
-    "tournament.title": "Groups, brackets and final",
-    "tournament.description": "Define the teams, generate a group stage, and simulate the brackets until there is a champion.",
-    "tournament.config": "Settings",
-    "tournament.create": "Create tournament",
-    "tournament.teams": "Teams",
-    "tournament.format": "Format",
-    "tournament.defineTeams": "Set teams",
-    "tournament.generateGroups": "Generate groups",
-    "tournament.simulateGroups": "Simulate groups",
-    "tournament.buildBracket": "Create brackets",
-    "tournament.simulateBracket": "Simulate brackets",
-    "tournament.phase1": "Phase 1",
-    "tournament.groups": "Group stage",
-    "tournament.finalPhase": "Final phase",
-    "tournament.knockout": "Brackets",
-    "scoreboard.eyebrow": "Match scoring",
-    "scoreboard.title": "Scoreboard with side changes",
-    "scoreboard.description": "Add or subtract points during the match. At every multiple of 7 total points, a side-change alert appears.",
-    "scoreboard.team1": "Team 1",
-    "scoreboard.team2": "Team 2",
-    "scoreboard.confirmSide": "Confirm side change",
-    "scoreboard.reset": "Reset scoreboard",
-    "scoreboard.control": "Control",
-    "scoreboard.summary": "Match summary",
-    "common.reset": "Reset"
-  },
-  it: {
-    "nav.home": "Inizio",
-    "nav.tournament": "Torneo",
-    "nav.scoreboard": "Segnapunti",
-    "language.label": "Lingua",
-    "cues.eyebrow": "Codice in campo",
-    "cues.title": "Parole di campo",
-    "cues.description": "Chiamate brevi per decidere chi gioca la palla, quale zona copre ogni giocatore e come costruire l'attacco.",
-    "cues.current": "Parole di campo · lista attuale",
-    "cues.ritual": "Rituale di 5 secondi",
-    "cues.ritual1": "Sguardo al compagno.",
-    "cues.ritual2": "Segnale di muro o difesa.",
-    "cues.ritual3": "Obiettivo del servizio.",
-    "cues.ritual4": "Conferma verbale.",
-    "cues.ritual5": "Respirare e giocare.",
-    "tournament.eyebrow": "Organizzatore torneo",
-    "tournament.title": "Gironi, tabelloni e finale",
-    "tournament.description": "Definisci le squadre, genera una fase a gironi e simula i tabelloni fino al campione.",
-    "tournament.config": "Configurazione",
-    "tournament.create": "Crea torneo",
-    "tournament.teams": "Squadre",
-    "tournament.format": "Formato",
-    "tournament.defineTeams": "Definisci squadre",
-    "tournament.generateGroups": "Genera gironi",
-    "tournament.simulateGroups": "Simula gironi",
-    "tournament.buildBracket": "Crea tabelloni",
-    "tournament.simulateBracket": "Simula tabelloni",
-    "tournament.phase1": "Fase 1",
-    "tournament.groups": "Fase a gironi",
-    "tournament.finalPhase": "Fase finale",
-    "tournament.knockout": "Tabelloni",
-    "scoreboard.eyebrow": "Punteggio partita",
-    "scoreboard.title": "Segnapunti con cambio campo",
-    "scoreboard.description": "Aggiungi o togli punti durante la partita. A ogni multiplo di 7 punti totali appare l'avviso di cambio campo.",
-    "scoreboard.team1": "Squadra 1",
-    "scoreboard.team2": "Squadra 2",
-    "scoreboard.confirmSide": "Conferma cambio campo",
-    "scoreboard.reset": "Reimposta segnapunti",
-    "scoreboard.control": "Controllo",
-    "scoreboard.summary": "Riepilogo partita",
-    "common.reset": "Reimposta"
-  },
-  fr: {
-    "nav.home": "Accueil",
-    "nav.tournament": "Tournoi",
-    "nav.scoreboard": "Score",
-    "language.label": "Langue",
-    "cues.eyebrow": "Code terrain",
-    "cues.title": "Mots de terrain",
-    "cues.description": "Des appels courts pour décider qui joue le ballon, quelle zone couvre chaque joueur et comment construire l'attaque.",
-    "cues.current": "Mots de terrain · liste actuelle",
-    "cues.ritual": "Rituel de 5 secondes",
-    "cues.ritual1": "Regard vers le partenaire.",
-    "cues.ritual2": "Signal de bloc ou défense.",
-    "cues.ritual3": "Cible du service.",
-    "cues.ritual4": "Confirmation verbale.",
-    "cues.ritual5": "Respirer et jouer.",
-    "tournament.eyebrow": "Organisateur de tournoi",
-    "tournament.title": "Groupes, tableaux et finale",
-    "tournament.description": "Définis les équipes, génère une phase de groupes et simule les tableaux jusqu'au champion.",
-    "tournament.config": "Configuration",
-    "tournament.create": "Créer le tournoi",
-    "tournament.teams": "Équipes",
-    "tournament.format": "Format",
-    "tournament.defineTeams": "Définir équipes",
-    "tournament.generateGroups": "Générer groupes",
-    "tournament.simulateGroups": "Simuler groupes",
-    "tournament.buildBracket": "Créer tableaux",
-    "tournament.simulateBracket": "Simuler tableaux",
-    "tournament.phase1": "Phase 1",
-    "tournament.groups": "Phase de groupes",
-    "tournament.finalPhase": "Phase finale",
-    "tournament.knockout": "Tableaux",
-    "scoreboard.eyebrow": "Score du match",
-    "scoreboard.title": "Score avec changement de côté",
-    "scoreboard.description": "Ajoute ou retire des points pendant le match. À chaque multiple de 7 points totaux, une alerte de changement de côté apparaît.",
-    "scoreboard.team1": "Équipe 1",
-    "scoreboard.team2": "Équipe 2",
-    "scoreboard.confirmSide": "Confirmer changement",
-    "scoreboard.reset": "Réinitialiser score",
-    "scoreboard.control": "Contrôle",
-    "scoreboard.summary": "Résumé du match",
-    "common.reset": "Réinitialiser"
-  },
-  de: {
-    "nav.home": "Start",
-    "nav.tournament": "Turnier",
-    "nav.scoreboard": "Zähltafel",
-    "language.label": "Sprache",
-    "cues.eyebrow": "Feldcode",
-    "cues.title": "Feldrufe",
-    "cues.description": "Kurze Rufe, um schnell zu entscheiden, wer den Ball nimmt, welche Zone jeder deckt und wie der Angriff aufgebaut wird.",
-    "cues.current": "Feldrufe · aktuelle Liste",
-    "cues.ritual": "5-Sekunden-Ritual",
-    "cues.ritual1": "Blick zum Partner.",
-    "cues.ritual2": "Block- oder Abwehrsignal.",
-    "cues.ritual3": "Aufschlagziel.",
-    "cues.ritual4": "Verbale Bestätigung.",
-    "cues.ritual5": "Atmen und spielen.",
-    "tournament.eyebrow": "Turnierplaner",
-    "tournament.title": "Gruppen, Raster und Finale",
-    "tournament.description": "Lege Teams fest, erstelle eine Gruppenphase und simuliere die Raster bis zum Champion.",
-    "tournament.config": "Einstellungen",
-    "tournament.create": "Turnier erstellen",
-    "tournament.teams": "Teams",
-    "tournament.format": "Format",
-    "tournament.defineTeams": "Teams festlegen",
-    "tournament.generateGroups": "Gruppen erstellen",
-    "tournament.simulateGroups": "Gruppen simulieren",
-    "tournament.buildBracket": "Raster erstellen",
-    "tournament.simulateBracket": "Raster simulieren",
-    "tournament.phase1": "Phase 1",
-    "tournament.groups": "Gruppenphase",
-    "tournament.finalPhase": "Finalphase",
-    "tournament.knockout": "Raster",
-    "scoreboard.eyebrow": "Spielstand",
-    "scoreboard.title": "Zähltafel mit Seitenwechsel",
-    "scoreboard.description": "Addiere oder ziehe Punkte während des Spiels ab. Bei jedem Vielfachen von 7 Gesamtpunkten erscheint ein Seitenwechsel-Hinweis.",
-    "scoreboard.team1": "Team 1",
-    "scoreboard.team2": "Team 2",
-    "scoreboard.confirmSide": "Seitenwechsel bestätigen",
-    "scoreboard.reset": "Zähltafel zurücksetzen",
-    "scoreboard.control": "Kontrolle",
-    "scoreboard.summary": "Spielübersicht",
-    "common.reset": "Zurücksetzen"
-  }
-};
-
-let activeLanguage = localStorage.getItem(languageKey) || "es";
-
-function t(key) {
-  return translations[activeLanguage]?.[key] || translations.es[key] || key;
-}
-
-function applyTranslations() {
-  document.documentElement.lang = activeLanguage;
-  document.querySelectorAll("[data-i18n]").forEach((node) => {
-    node.textContent = t(node.dataset.i18n);
-  });
-  document.querySelectorAll(".language-select").forEach((select) => {
-    select.value = activeLanguage;
-  });
-}
-
-function setupLanguageSwitcher() {
-  document.querySelectorAll(".language-select").forEach((select) => {
-    select.value = activeLanguage;
-    select.addEventListener("change", () => {
-      activeLanguage = select.value;
-      localStorage.setItem(languageKey, activeLanguage);
-      applyTranslations();
-      renderScoreboard();
-      renderKnockoutStage();
-    });
-  });
-  applyTranslations();
-}
-
 function listHTML(items) {
   return `<ul>${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
 }
 
-function renderScenarioTabs() {
-  const tabs = document.querySelector("#scenarioTabs");
-  tabs.innerHTML = "";
-
-  scenarios.forEach((scenario) => {
-    const button = el("button", "tab-button", scenario.label);
-    button.type = "button";
-    button.setAttribute("role", "tab");
-    button.setAttribute("aria-selected", String(scenario.id === activeScenario));
-    button.addEventListener("click", () => {
-      activeScenario = scenario.id;
-      renderScenarioTabs();
-      renderScenario();
+function observeAnimationVisibility(courtId, pause) {
+  const court = document.getElementById(courtId);
+  if (!court) return;
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries[0].isIntersecting) pause();
     });
-    tabs.appendChild(button);
+    observer.observe(court);
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) pause();
+  });
+  window.matchMedia?.("(prefers-reduced-motion: reduce)").addEventListener("change", (event) => {
+    if (event.matches) pause();
   });
 }
 
-function renderScenario() {
-  const scenario = scenarios.find((item) => item.id === activeScenario) || scenarios[0];
-  const detail = document.querySelector("#scenarioDetail");
-  const zonesLayer = document.querySelector("#zonesLayer");
-  const markersLayer = document.querySelector("#markersLayer");
-  const routeLayer = document.querySelector("#routeLayer");
-
-  zonesLayer.innerHTML = "";
-  markersLayer.innerHTML = "";
-  routeLayer.innerHTML = "";
-
-  routeLayer.innerHTML = `
-    <defs>
-      <marker id="arrowMove" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-        <path d="M 0 0 L 10 5 L 0 10 z" fill="#276ef1"></path>
-      </marker>
-      <marker id="arrowBall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-        <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff"></path>
-      </marker>
-    </defs>
-  `;
-
-  scenario.court.zones.forEach((zone, index) => {
-    const fallbackOwner = index === 0 ? "cover-blocker" : "cover-defender";
-    const zoneNode = el("div", `zone ${zone.owner || fallbackOwner}`);
-    zoneNode.innerHTML = `<span class="zone-label">${escapeHTML(zone.label)}</span>`;
-    zoneNode.style.left = `${zone.x}%`;
-    zoneNode.style.top = `${zone.y}%`;
-    zoneNode.style.width = `${zone.w}%`;
-    zoneNode.style.height = `${zone.h}%`;
-    zonesLayer.appendChild(zoneNode);
+function renderPhaseTimeline(id, steps, activeStep, onSelect) {
+  const timeline = document.getElementById(id);
+  if (!timeline) return;
+  if (timeline.children.length !== steps.length) {
+    timeline.replaceChildren(...steps.map(() => el("button", "phase-step")));
+  }
+  Array.from(timeline.children).forEach((button, index) => {
+    button.type = "button";
+    button.dataset.step = String(index);
+    button.classList.toggle("is-active", index === activeStep);
+    button.classList.toggle("is-complete", index < activeStep);
+    button.setAttribute("aria-current", index === activeStep ? "step" : "false");
+    button.innerHTML = `<span>${index + 1}</span><small>${steps[index].name}</small>`;
+    button.onclick = () => onSelect(index);
   });
-
-  scenario.court.routes.forEach((route) => {
-    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line.setAttribute("x1", route.x1);
-    line.setAttribute("y1", route.y1);
-    line.setAttribute("x2", route.x2);
-    line.setAttribute("y2", route.y2);
-    line.setAttribute("class", route.kind === "move" ? "route-move" : "route-ball");
-    line.setAttribute("marker-end", route.kind === "move" ? "url(#arrowMove)" : "url(#arrowBall)");
-    routeLayer.appendChild(line);
-  });
-
-  scenario.court.players.forEach((player) => {
-    const marker = el("div", `marker ${player.type}`, player.label);
-    marker.style.left = `${player.x}%`;
-    marker.style.top = `${player.y}%`;
-    markersLayer.appendChild(marker);
-  });
-
-  const ball = el("div", "marker ball", "B");
-  ball.style.left = `${scenario.court.ball.x}%`;
-  ball.style.top = `${scenario.court.ball.y}%`;
-  markersLayer.appendChild(ball);
-
-  const zoneSummary = scenario.court.zones.map((zone, index) => {
-    const role = zone.owner === "cover-support" ? "Cobertura" : index === 0 ? "Bloqueador" : "Defensor";
-    return `${role}: ${zone.label}`;
-  });
-
-  detail.innerHTML = `
-    <div class="scenario-meta">
-      ${scenario.meta.map((item) => `<span class="pill">${item}</span>`).join("")}
-    </div>
-    <h3>${scenario.title}</h3>
-    <p>${scenario.summary}</p>
-    <div class="detail-group">
-      <h4>Objetivo</h4>
-      <p>${scenario.objective}</p>
-    </div>
-    <div class="detail-group">
-      <h4>Zonas de cobertura</h4>
-      ${listHTML(zoneSummary)}
-    </div>
-    <div class="detail-group">
-      <h4>Comunicación</h4>
-      ${listHTML(scenario.calls)}
-    </div>
-    <div class="detail-group">
-      <h4>Movimientos inicio → destino</h4>
-      ${listHTML(scenario.movements)}
-    </div>
-    <div class="detail-group">
-      <h4>Roles</h4>
-      ${listHTML(scenario.roles)}
-    </div>
-    <div class="detail-group">
-      <h4>Correcciones de entrenador</h4>
-      ${listHTML(scenario.corrections)}
-    </div>
-    <div class="detail-group">
-      <h4>Drill</h4>
-      <p>${scenario.drill}</p>
-    </div>
-  `;
 }
 
 function renderSignalControls() {
@@ -1786,11 +806,12 @@ function renderSignalControls() {
   signalModes.forEach((mode) => {
     const button = el("button", "signal-button", mode.label);
     button.type = "button";
+    button.dataset.mode = mode.id;
     button.setAttribute("aria-pressed", String(mode.id === activeSignal));
     button.addEventListener("click", () => {
       activeSignal = mode.id;
       activeSignalStep = 0;
-      renderSignalControls();
+      controls.querySelectorAll("button").forEach((option) => option.setAttribute("aria-pressed", String(option.dataset.mode === activeSignal)));
       renderSignalDemo();
     });
     controls.appendChild(button);
@@ -1826,13 +847,6 @@ function handSignalHTML(mode) {
   `;
 }
 
-function setSignalPosition(selector, position) {
-  const node = document.querySelector(selector);
-  if (!node) return;
-  node.style.left = `${position[0]}%`;
-  node.style.top = `${position[1]}%`;
-}
-
 function setSignalZone(selector, zone) {
   const node = document.querySelector(selector);
   if (!node) return;
@@ -1850,59 +864,9 @@ function setSignalZone(selector, zone) {
   node.style.opacity = "1";
 }
 
-function renderSignalTrails(previous, current) {
-  const layer = document.querySelector("#signalTrails");
-  if (!layer) return;
-
-  const line = (from, to, className, marker) =>
-    `<line class="${className}" x1="${from[0]}" y1="${from[1]}" x2="${to[0]}" y2="${to[1]}" marker-end="url(#${marker})"></line>`;
-
-  layer.innerHTML = `
-    <defs>
-      <marker id="signalArrowBlock" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z"></path>
-      </marker>
-      <marker id="signalArrowDefense" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z"></path>
-      </marker>
-      <marker id="signalArrowBall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z"></path>
-      </marker>
-    </defs>
-    ${
-      previous
-        ? [
-            line(previous.players.blocker, current.players.blocker, "trail trail-blocker", "signalArrowBlock"),
-            line(previous.players.defender, current.players.defender, "trail trail-defender", "signalArrowDefense"),
-            line(previous.ball, current.ball, "trail trail-ball", "signalArrowBall")
-          ].join("")
-        : ""
-    }
-  `;
-}
-
 function renderSignalTimeline(steps) {
-  const timeline = document.querySelector("#signalTimeline");
-  if (!timeline) return;
-
-  timeline.innerHTML = steps
-    .map(
-      (step, index) => `
-        <button class="phase-step${index === activeSignalStep ? " is-active" : ""}${index < activeSignalStep ? " is-complete" : ""}"
-          type="button" data-step="${index}" aria-current="${index === activeSignalStep ? "step" : "false"}">
-          <span>${index + 1}</span>
-          <small>${step.name}</small>
-        </button>
-      `
-    )
-    .join("");
-
-  timeline.querySelectorAll(".phase-step").forEach((button) => {
-    button.addEventListener("click", () => {
-      activeSignalStep = Number(button.dataset.step);
-      setSignalPlayback(false);
-      renderSignalStep();
-    });
+  renderPhaseTimeline("signalTimeline", steps, activeSignalStep, (index) => {
+    signalMotion?.seek(index);
   });
 }
 
@@ -1927,11 +891,10 @@ function renderSignalInfo(mode) {
       <span class="quick-rule"><strong>Defensa</strong><small>${defenseZone}</small></span>
       <span class="quick-rule"><strong>Clave</strong><small>${signalFocus}</small></span>
     </div>
-    <div class="current-step-card">
-      <span id="signalStepName"></span>
-      <p id="signalStepDetail"></p>
-    </div>
-    <p class="tip-line"><strong>Ajuste:</strong> ${mode.correction}</p>
+    <details class="learning-details">
+      <summary>Cómo corregirlo</summary>
+      <p>${mode.correction}</p>
+    </details>
   `;
 }
 
@@ -1941,25 +904,17 @@ function updateSignalPlaybackButton() {
   if (!button || !label) return;
 
   button.classList.toggle("is-paused", !signalPlaying);
-  button.setAttribute("aria-label", signalPlaying ? "Pausar animación" : "Reproducir animación");
-  label.textContent = signalPlaying ? "Pausar" : "Reproducir";
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  const text = signalPlaying ? "Pausar" : reduceMotion ? "Ver siguiente paso" : "Reproducir";
+  button.setAttribute("aria-label", text);
+  label.textContent = text;
 }
 
 function setSignalPlayback(playing) {
-  signalPlaying = playing;
-  if (signalTimer) window.clearInterval(signalTimer);
-  signalTimer = null;
-
-  if (signalPlaying) {
-    signalTimer = window.setInterval(() => {
-      const mode = signalModes.find((item) => item.id === activeSignal) || signalModes[0];
-      const steps = buildSignalSteps(mode);
-      activeSignalStep = activeSignalStep >= steps.length - 1 ? 0 : activeSignalStep + 1;
-      renderSignalStep();
-    }, 2100);
-  }
-
-  updateSignalPlaybackButton();
+  if (playing) {
+    setSettingPlayback(false);
+    signalMotion?.play();
+  } else signalMotion?.pause();
 }
 
 function renderSignalStep() {
@@ -1967,7 +922,6 @@ function renderSignalStep() {
   const steps = buildSignalSteps(mode);
   activeSignalStep = Math.max(0, Math.min(activeSignalStep, steps.length - 1));
   const step = steps[activeSignalStep];
-  const previous = activeSignalStep > 0 ? steps[activeSignalStep - 1] : null;
   const court = document.querySelector("#signalCourt");
   if (!court) return;
 
@@ -1979,47 +933,57 @@ function renderSignalStep() {
   document.querySelector("#defenseZoneLabel").textContent = mode.defenseZone;
   document.querySelector("#supportZoneLabel").textContent = mode.supportZone;
   document.querySelector("#phaseCaption").innerHTML = `<strong>${step.name}</strong><span>${step.caption}</span>`;
-  document.querySelector("#signalStepName").textContent = `Paso ${activeSignalStep + 1}: ${step.name}`;
-  document.querySelector("#signalStepDetail").textContent = step.caption;
   document.querySelector("#signalStepCounter").textContent = `${activeSignalStep + 1} / ${steps.length}`;
+  if (mode.id === "pull" && activeSignalStep >= 3) {
+    const cue = document.querySelector("#signalMotionCue");
+    if (cue) cue.textContent = `${step.name} · B se retira a la corta; D protege el fondo sin bloqueo.`;
+  }
 
-  Object.entries(step.players).forEach(([role, position]) => setSignalPosition(`.demo-player.${role}`, position));
-  setSignalPosition(".demo-ball", step.ball);
   setSignalZone(".block-zone", step.coverage?.block);
   setSignalZone(".defense-zone", step.coverage?.defense);
   setSignalZone(".support-zone", step.coverage?.support);
-  renderSignalTrails(previous, step);
   renderSignalTimeline(steps);
+  document.querySelector("#signalPrevious").disabled = activeSignalStep === 0;
+  document.querySelector("#signalNext").disabled = activeSignalStep === steps.length - 1;
 }
 
 function renderSignalDemo() {
   const mode = signalModes.find((item) => item.id === activeSignal) || signalModes[0];
   renderSignalInfo(mode);
-  renderSignalStep();
-  setSignalPlayback(true);
+  if (!signalMotion) signalMotion = createTeachingMotion("signal", {
+    blocker: ".demo-player.blocker", defender: ".demo-player.defender",
+    attacker: ".demo-player.attacker", setter: ".demo-player.setter"
+  }, {
+    ball: ".demo-ball", routeRoles: ["blocker", "defender"],
+    colors: {blocker: "#176765", defender: "#276ef1"},
+    contactRoles: ["defender", "attacker", "setter", "attacker", "attacker", null],
+    cues: [
+      "B enseña la señal; D confirma y prepara el saque.",
+      "D saca y entra; A recibe. B lee al atacante.",
+      "C coloca; B se ajusta a la red y D recupera el centro.",
+      "B muestra su bloqueo; D cubre el espacio complementario.",
+      "B y D fijan sus zonas antes del golpeo.",
+      "A ataca; B bloquea y D protege la zona libre."
+    ],
+    onStep(index) { activeSignalStep = index; renderSignalStep(); },
+    onStateChange(state) { signalPlaying = state.playing; updateSignalPlaybackButton(); }
+  });
+  signalMotion?.load(buildSignalSteps(mode));
 }
 
 function setupSignalAnimationControls() {
+  observeAnimationVisibility("signalCourt", () => setSignalPlayback(false));
   document.querySelector("#signalPlay")?.addEventListener("click", () => setSignalPlayback(!signalPlaying));
   document.querySelector("#signalRestart")?.addEventListener("click", () => {
-    activeSignalStep = 0;
-    renderSignalStep();
-    setSignalPlayback(true);
+    signalMotion?.restart();
   });
   document.querySelector("#signalPrevious")?.addEventListener("click", () => {
-    const mode = signalModes.find((item) => item.id === activeSignal) || signalModes[0];
-    const steps = buildSignalSteps(mode);
-    activeSignalStep = activeSignalStep <= 0 ? steps.length - 1 : activeSignalStep - 1;
-    setSignalPlayback(false);
-    renderSignalStep();
+    signalMotion?.seek(activeSignalStep - 1);
   });
   document.querySelector("#signalNext")?.addEventListener("click", () => {
-    const mode = signalModes.find((item) => item.id === activeSignal) || signalModes[0];
-    const steps = buildSignalSteps(mode);
-    activeSignalStep = activeSignalStep >= steps.length - 1 ? 0 : activeSignalStep + 1;
-    setSignalPlayback(false);
-    renderSignalStep();
+    signalMotion?.seek(activeSignalStep + 1);
   });
+  setupMotionPreferences("signal", signalMotion);
 }
 
 function renderSettingControls() {
@@ -2030,22 +994,16 @@ function renderSettingControls() {
   settingModes.forEach((mode) => {
     const button = el("button", "signal-button", mode.label);
     button.type = "button";
+    button.dataset.mode = mode.id;
     button.setAttribute("aria-pressed", String(mode.id === activeSetting));
     button.addEventListener("click", () => {
       activeSetting = mode.id;
       activeSettingStep = 0;
-      renderSettingControls();
+      controls.querySelectorAll("button").forEach((option) => option.setAttribute("aria-pressed", String(option.dataset.mode === activeSetting)));
       renderSettingDemo();
     });
     controls.appendChild(button);
   });
-}
-
-function setSettingPosition(selector, position) {
-  const node = document.querySelector(selector);
-  if (!node) return;
-  node.style.left = `${position[0]}%`;
-  node.style.top = `${position[1]}%`;
 }
 
 function setSettingZone(selector, visible, zone) {
@@ -2062,59 +1020,9 @@ function setSettingZone(selector, visible, zone) {
   node.style.opacity = visible ? "1" : "0";
 }
 
-function renderSettingTrails(previous, current) {
-  const layer = document.querySelector("#settingTrails");
-  if (!layer) return;
-
-  const line = (from, to, className, marker) =>
-    `<line class="${className}" x1="${from[0]}" y1="${from[1]}" x2="${to[0]}" y2="${to[1]}" marker-end="url(#${marker})"></line>`;
-
-  layer.innerHTML = `
-    <defs>
-      <marker id="settingArrowAttack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z"></path>
-      </marker>
-      <marker id="settingArrowSetter" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z"></path>
-      </marker>
-      <marker id="settingArrowBall" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-        <path d="M 0 0 L 10 5 L 0 10 z"></path>
-      </marker>
-    </defs>
-    ${
-      previous
-        ? [
-            line(previous.players.attacker, current.players.attacker, "setting-trail trail-attacker", "settingArrowAttack"),
-            line(previous.players.setter, current.players.setter, "setting-trail trail-setter", "settingArrowSetter"),
-            line(previous.ball, current.ball, "setting-trail trail-set-ball", "settingArrowBall")
-          ].join("")
-        : ""
-    }
-  `;
-}
-
 function renderSettingTimeline(steps) {
-  const timeline = document.querySelector("#settingTimeline");
-  if (!timeline) return;
-
-  timeline.innerHTML = steps
-    .map(
-      (step, index) => `
-        <button class="phase-step${index === activeSettingStep ? " is-active" : ""}${index < activeSettingStep ? " is-complete" : ""}"
-          type="button" data-step="${index}" aria-current="${index === activeSettingStep ? "step" : "false"}">
-          <span>${index + 1}</span>
-          <small>${step.name}</small>
-        </button>
-      `
-    )
-    .join("");
-
-  timeline.querySelectorAll(".phase-step").forEach((button) => {
-    button.addEventListener("click", () => {
-      activeSettingStep = Number(button.dataset.step);
-      setSettingPlayback(false);
-      renderSettingStep();
-    });
+  renderPhaseTimeline("settingTimeline", steps, activeSettingStep, (index) => {
+    settingMotion?.seek(index);
   });
 }
 
@@ -2127,16 +1035,18 @@ function renderSettingInfo(mode) {
     <h3>${mode.title}</h3>
     <span class="setting-call">${mode.badge}</span>
     <p class="info-lead">${mode.meaning}</p>
-    <div class="quick-rules setting-rules">
-      <span class="quick-rule setter-rule"><strong>Mira</strong><small>${mode.look}</small></span>
-      <span class="quick-rule setter-rule"><strong>Coloca</strong><small>${mode.set}</small></span>
-      <span class="quick-rule attacker-rule"><strong>Ataca</strong><small>${mode.attacker}</small></span>
-    </div>
-    <div class="current-step-card">
-      <span id="settingStepName"></span>
-      <p id="settingStepDetail"></p>
-    </div>
-    <p class="tip-line"><strong>Punto clave:</strong> ${mode.correction}</p>
+    <details class="learning-details">
+      <summary>Qué hace cada jugador</summary>
+      <div class="quick-rules setting-rules">
+        <span class="quick-rule setter-rule"><strong>Mira</strong><small>${mode.look}</small></span>
+        <span class="quick-rule setter-rule"><strong>Coloca</strong><small>${mode.set}</small></span>
+        <span class="quick-rule attacker-rule"><strong>Ataca</strong><small>${mode.attacker}</small></span>
+      </div>
+    </details>
+    <details class="learning-details">
+      <summary>Cómo corregirlo</summary>
+      <p>${mode.correction}</p>
+    </details>
   `;
 }
 
@@ -2146,25 +1056,17 @@ function updateSettingPlaybackButton() {
   if (!button || !label) return;
 
   button.classList.toggle("is-paused", !settingPlaying);
-  button.setAttribute("aria-label", settingPlaying ? "Pausar animación" : "Reproducir animación");
-  label.textContent = settingPlaying ? "Pausar" : "Reproducir";
+  const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  const text = settingPlaying ? "Pausar" : reduceMotion ? "Ver siguiente paso" : "Reproducir";
+  button.setAttribute("aria-label", text);
+  label.textContent = text;
 }
 
 function setSettingPlayback(playing) {
-  settingPlaying = playing;
-  if (settingTimer) window.clearInterval(settingTimer);
-  settingTimer = null;
-
-  if (settingPlaying) {
-    settingTimer = window.setInterval(() => {
-      const mode = settingModes.find((item) => item.id === activeSetting) || settingModes[0];
-      const steps = buildSettingSteps(mode);
-      activeSettingStep = activeSettingStep >= steps.length - 1 ? 0 : activeSettingStep + 1;
-      renderSettingStep();
-    }, 2200);
-  }
-
-  updateSettingPlaybackButton();
+  if (playing) {
+    setSignalPlayback(false);
+    settingMotion?.play();
+  } else settingMotion?.pause();
 }
 
 function renderSettingStep() {
@@ -2172,7 +1074,6 @@ function renderSettingStep() {
   const steps = buildSettingSteps(mode);
   activeSettingStep = Math.max(0, Math.min(activeSettingStep, steps.length - 1));
   const step = steps[activeSettingStep];
-  const previous = activeSettingStep > 0 ? steps[activeSettingStep - 1] : null;
   const court = document.querySelector("#settingCourt");
   if (!court) return;
 
@@ -2181,15 +1082,7 @@ function renderSettingStep() {
   document.querySelector("#settingBadge").textContent = mode.badge;
   document.querySelector("#settingTargetLabel").textContent = `Destino ${mode.label.toLowerCase()}`;
   document.querySelector("#settingPhaseCaption").innerHTML = `<strong>${step.name}</strong><span>${step.caption}</span>`;
-  document.querySelector("#settingStepName").textContent = `Paso ${activeSettingStep + 1}: ${step.name}`;
-  document.querySelector("#settingStepDetail").textContent = step.caption;
   document.querySelector("#settingStepCounter").textContent = `${activeSettingStep + 1} / ${steps.length}`;
-
-  setSettingPosition(".setting-player.attack-player", step.players.attacker);
-  setSettingPosition(".setting-player.set-player", step.players.setter);
-  setSettingPosition(".setting-player.rival-server", step.players.server);
-  setSettingPosition(".setting-player.rival-blocker", step.players.blocker);
-  setSettingPosition(".setting-ball", step.ball);
 
   const receptionZone = {
     x: Math.max(5, mode.receiverStart[0] - 12),
@@ -2204,38 +1097,76 @@ function renderSettingStep() {
   const facing = document.querySelector("#setterFacing");
   if (facing) facing.style.setProperty("--facing-angle", `${step.facing}deg`);
 
-  renderSettingTrails(previous, step);
   renderSettingTimeline(steps);
+  document.querySelector("#settingPrevious").disabled = activeSettingStep === 0;
+  document.querySelector("#settingNext").disabled = activeSettingStep === steps.length - 1;
 }
 
 function renderSettingDemo() {
   const mode = settingModes.find((item) => item.id === activeSetting) || settingModes[0];
   renderSettingInfo(mode);
-  renderSettingStep();
-  setSettingPlayback(true);
+  if (!settingMotion) settingMotion = createTeachingMotion("setting", {
+    attacker: ".setting-player.attack-player", setter: ".setting-player.set-player",
+    server: ".setting-player.rival-server", blocker: ".setting-player.rival-blocker"
+  }, {
+    ball: ".setting-ball", routeRoles: ["attacker", "setter"],
+    colors: {attacker: "#176765", setter: "#276ef1"},
+    contactRoles: ["server", "attacker", null, "setter", null, "attacker"],
+    cues: [
+      "A espera para recibir; C prepara la entrada a colocar.",
+      "A recibe y orienta el primer toque; C entra.",
+      "C llega al balón; A se prepara para atacar.",
+      "C se orienta y escucha la llamada de A.",
+      "C coloca y sale del carril; A inicia la carrera.",
+      "A ataca hacia la red; C se queda en cobertura."
+    ],
+    onStep(index) { activeSettingStep = index; renderSettingStep(); },
+    onStateChange(state) { settingPlaying = state.playing; updateSettingPlaybackButton(); }
+  });
+  settingMotion?.load(buildSettingSteps(mode));
 }
 
 function setupSettingAnimationControls() {
+  observeAnimationVisibility("settingCourt", () => setSettingPlayback(false));
   document.querySelector("#settingPlay")?.addEventListener("click", () => setSettingPlayback(!settingPlaying));
   document.querySelector("#settingRestart")?.addEventListener("click", () => {
-    activeSettingStep = 0;
-    renderSettingStep();
-    setSettingPlayback(true);
+    settingMotion?.restart();
   });
   document.querySelector("#settingPrevious")?.addEventListener("click", () => {
-    const mode = settingModes.find((item) => item.id === activeSetting) || settingModes[0];
-    const steps = buildSettingSteps(mode);
-    activeSettingStep = activeSettingStep <= 0 ? steps.length - 1 : activeSettingStep - 1;
-    setSettingPlayback(false);
-    renderSettingStep();
+    settingMotion?.seek(activeSettingStep - 1);
   });
   document.querySelector("#settingNext")?.addEventListener("click", () => {
-    const mode = settingModes.find((item) => item.id === activeSetting) || settingModes[0];
-    const steps = buildSettingSteps(mode);
-    activeSettingStep = activeSettingStep >= steps.length - 1 ? 0 : activeSettingStep + 1;
-    setSettingPlayback(false);
-    renderSettingStep();
+    settingMotion?.seek(activeSettingStep + 1);
   });
+  setupMotionPreferences("setting", settingMotion);
+}
+
+function createTeachingMotion(prefix, selectors, options) {
+  const court = document.querySelector(`#${prefix}Court`);
+  if (!court || !window.CourtMotion) return null;
+  return window.CourtMotion.create({
+    ...options, court,
+    players: Object.fromEntries(Object.entries(selectors).map(([role, selector]) => [role, court.querySelector(selector)])),
+    ball: court.querySelector(options.ball),
+    trails: document.querySelector(`#${prefix}Trails`),
+    progress: document.querySelector(`#${prefix}MotionProgress`),
+    cue: document.querySelector(`#${prefix}MotionCue`),
+    getCue(step, index) { return `${step.name} · ${options.cues[index]}`; }
+  });
+}
+
+function setupMotionPreferences(prefix, motion) {
+  if (!motion) return;
+  const speed = document.querySelector(`#${prefix}Speed`);
+  const routes = document.querySelector(`#${prefix}Routes`);
+  if (speed) {
+    motion.setSpeed(speed.value);
+    speed.addEventListener("change", () => motion.setSpeed(speed.value));
+  }
+  if (routes) {
+    motion.setRoutes(routes.checked);
+    routes.addEventListener("change", () => motion.setRoutes(routes.checked));
+  }
 }
 
 function renderMovementTabs() {
@@ -2246,11 +1177,11 @@ function renderMovementTabs() {
   movementPhases.forEach((phase) => {
     const button = el("button", "tab-button", phase.label);
     button.type = "button";
-    button.setAttribute("role", "tab");
-    button.setAttribute("aria-selected", String(phase.id === activeMovement));
+    button.dataset.phase = phase.id;
+    button.setAttribute("aria-pressed", String(phase.id === activeMovement));
     button.addEventListener("click", () => {
       activeMovement = phase.id;
-      renderMovementTabs();
+      tabs.querySelectorAll("button").forEach((option) => option.setAttribute("aria-pressed", String(option.dataset.phase === activeMovement)));
       renderMovement();
     });
     tabs.appendChild(button);
@@ -2267,10 +1198,10 @@ function renderMovement() {
     <span class="system-tag">${phase.label}</span>
     <h3>${phase.title}</h3>
     <p>${phase.goal}</p>
-    <div class="detail-group">
-      <h4>Principios</h4>
+    <details class="learning-details">
+      <summary>Claves para hacerlo bien</summary>
       ${listHTML(phase.principles)}
-    </div>
+    </details>
   `;
 
   table.innerHTML = phase.steps
@@ -2279,33 +1210,18 @@ function renderMovement() {
         <article class="movement-card">
           <span class="card-topline">${step.role}</span>
           <dl>
-            <div><dt>Inicio</dt><dd>${step.start}</dd></div>
-            <div><dt>Disparador</dt><dd>${step.trigger}</dd></div>
-            <div><dt>Movimiento</dt><dd>${step.move}</dd></div>
-            <div><dt>Destino</dt><dd>${step.destination}</dd></div>
-            <div><dt>Llamada</dt><dd>${step.cue}</dd></div>
-            <div><dt>Corrección</dt><dd>${step.correction}</dd></div>
+            <div><dt>Sal desde</dt><dd>${step.start}</dd></div>
+            <div><dt>Llega a</dt><dd>${step.destination}</dd></div>
           </dl>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderCommunicationProtocol() {
-  const grid = document.querySelector("#communicationProtocol");
-  if (!grid) return;
-  grid.innerHTML = communicationProtocol
-    .map(
-      (item, index) => `
-        <article class="communication-block">
-          <span class="block-index">${String(index + 1).padStart(2, "0")}</span>
-          <h3>${item.phase}</h3>
-          <p>${item.aim}</p>
-          <div class="mini-rule"><strong>Guion:</strong> ${item.script}</div>
-          <div class="mini-rule"><strong>Ejemplo:</strong> ${item.example}</div>
-          ${listHTML(item.must)}
-          <p class="avoid-text"><strong>Evitar:</strong> ${item.avoid}</p>
+          <details class="learning-details">
+            <summary>Cuándo moverte y cómo hacerlo</summary>
+            <dl>
+              <div><dt>Cuándo</dt><dd>${step.trigger}</dd></div>
+              <div><dt>Cómo</dt><dd>${step.move}</dd></div>
+              <div><dt>Qué decir</dt><dd>${step.cue}</dd></div>
+              <div><dt>Corrige</dt><dd>${step.correction}</dd></div>
+            </dl>
+          </details>
         </article>
       `
     )
@@ -2318,82 +1234,14 @@ function renderCallbook() {
   grid.innerHTML = callbook
     .map(
       (item) => `
-        <article class="callbook-card">
-          <span class="call-word">${item.call}</span>
-          <p><strong>Momento:</strong> ${item.moment}</p>
-          <p><strong>Significa:</strong> ${item.meaning}</p>
-          <p><strong>Acción:</strong> ${item.action}</p>
-        </article>
+        <details class="callbook-card">
+          <summary><span class="call-word">${item.call}</span><span>${item.meaning}</span></summary>
+          <p><strong>Cuándo:</strong> ${item.moment}.</p>
+          <p><strong>Tu pareja:</strong> ${item.action}</p>
+        </details>
       `
     )
     .join("");
-}
-
-function renderStrategies() {
-  const grid = document.querySelector("#strategyGrid");
-  if (!grid) return;
-  grid.innerHTML = strategies
-    .map(
-      (strategy) => `
-        <article class="strategy-card">
-          <span class="card-topline">${strategy.phase}</span>
-          <h3>${strategy.title}</h3>
-          <p><strong>Cuándo usarla:</strong> ${strategy.when}</p>
-          <div class="detail-group">
-            <h4>Ejecución</h4>
-            ${listHTML(strategy.execution)}
-          </div>
-          <div class="movement-note">${strategy.movement}</div>
-          <p class="avoid-text"><strong>Riesgo:</strong> ${strategy.risk}</p>
-          <div class="strategy-calls">
-            ${strategy.calls.map((call) => `<span class="pill">${call}</span>`).join("")}
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderFilters() {
-  const bar = document.querySelector("#moduleFilters");
-  if (!bar) return;
-  bar.innerHTML = "";
-
-  moduleFilters.forEach((filter) => {
-    const button = el("button", `filter-button${filter === activeFilter ? " is-active" : ""}`, filter);
-    button.type = "button";
-    button.addEventListener("click", () => {
-      activeFilter = filter;
-      renderFilters();
-      renderModules();
-    });
-    bar.appendChild(button);
-  });
-}
-
-function renderModules() {
-  const grid = document.querySelector("#moduleGrid");
-  if (!grid) return;
-  const visible = activeFilter === "Todos" ? modules : modules.filter((module) => module.category === activeFilter);
-  grid.innerHTML = "";
-
-  visible.forEach((module) => {
-    const card = el("article", "module-card");
-    card.innerHTML = `
-      <span class="card-topline">${module.category} · ${module.level}</span>
-      <h3>${module.title}</h3>
-      <p>${module.description}</p>
-      ${listHTML(module.points)}
-    `;
-    grid.appendChild(card);
-  });
-}
-
-function renderCalls() {
-  const container = document.querySelector("#callChips");
-  if (!container) return;
-  container.innerHTML = "";
-  calls.forEach((call) => container.appendChild(el("span", "call-chip", call)));
 }
 
 function renderLevels() {
@@ -2404,11 +1252,11 @@ function renderLevels() {
   levels.forEach((level) => {
     const button = el("button", "level-button", level.label);
     button.type = "button";
-    button.setAttribute("role", "tab");
-    button.setAttribute("aria-selected", String(level.id === activeLevel));
+    button.dataset.level = level.id;
+    button.setAttribute("aria-pressed", String(level.id === activeLevel));
     button.addEventListener("click", () => {
       activeLevel = level.id;
-      renderLevels();
+      switcher.querySelectorAll("button").forEach((option) => option.setAttribute("aria-pressed", String(option.dataset.level === activeLevel)));
       renderTraining();
     });
     switcher.appendChild(button);
@@ -2420,19 +1268,25 @@ function renderTraining() {
   if (!grid) return;
   grid.innerHTML = "";
 
-  trainingPlans[activeLevel].forEach((plan) => {
+  const plans = trainingPlans[activeLevel];
+  const totalMinutes = plans.reduce((total, plan) => total + Number.parseInt(plan.time, 10), 0);
+  const summary = document.querySelector("#trainingSummary");
+  if (summary) summary.textContent = `${levels.find((level) => level.id === activeLevel).label} · ${totalMinutes} minutos de práctica · 3 ejercicios`;
+
+  plans.forEach((plan, index) => {
     const card = el("article", "training-card");
     card.innerHTML = `
-      <span class="training-time">${plan.time}</span>
+      <span class="training-time">${index + 1} · ${plan.time}</span>
       <h3>${plan.title}</h3>
       <p>${plan.text}</p>
-      ${listHTML(plan.points)}
+      <details class="learning-details"><summary>En qué fijarte</summary>${listHTML(plan.points)}</details>
     `;
     grid.appendChild(card);
   });
 }
 
 const tournamentState = {
+  format: null,
   teams: [],
   groups: [],
   groupMatches: [],
@@ -2443,10 +1297,98 @@ const tournamentState = {
 
 const scoreboardState = {
   scores: [0, 0],
+  target: 21,
   displayOrder: [0, 1],
   confirmedSideTotals: new Set(),
-  log: []
+  log: [],
+  history: []
 };
+
+const playStorageKey = "volley-beach-santi-play-v1";
+let restoringPlayState = false;
+let tournamentDraftNames = [];
+
+function savePlayState() {
+  if (restoringPlayState || !document.querySelector("#tournamentTeamCount")) return;
+  try {
+    localStorage.setItem(playStorageKey, JSON.stringify({
+      version: 1,
+      tournament: tournamentState,
+      draft: {
+        count: document.querySelector("#tournamentTeamCount").value,
+        format: document.querySelector("#tournamentFormat").value,
+        names: tournamentDraftNames.map((name, index) => document.querySelectorAll(".team-name-input")[index]?.value ?? name)
+      },
+      scoreboard: {
+        ...scoreboardState,
+        names: getScoreNames(),
+        confirmedSideTotals: [...scoreboardState.confirmedSideTotals]
+      }
+    }));
+    const status = document.querySelector("#tournamentSaveStatus");
+    if (status) status.textContent = "Guardado automáticamente en este navegador.";
+  } catch {
+    const status = document.querySelector("#tournamentSaveStatus");
+    if (status) status.textContent = "El navegador no permite guardar. Mantén esta pestaña abierta para conservar el progreso.";
+  }
+}
+
+function restorePlayState() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(playStorageKey));
+    if (!saved || saved.version !== 1) return false;
+    const draft = saved.draft;
+    if (!draft || !Array.isArray(draft.names)) return false;
+    restoringPlayState = true;
+    document.querySelector("#tournamentTeamCount").value = String(clampTournamentTeams(draft.count));
+    if (["final-four", "gold-silver-final-four", "double", "gold-silver"].includes(draft.format)) {
+      document.querySelector("#tournamentFormat").value = draft.format;
+    }
+    renderTeamInputs(clampTournamentTeams(draft.count), draft.names);
+    const savedTournament = saved.tournament;
+    const validTeamList = (teams) => Array.isArray(teams) && teams.length <= 32 && new Set(teams).size === teams.length && teams.every((team) => typeof team === "string" && team.length > 0 && team.length <= 40);
+    const validGroups = savedTournament && validTeamList(savedTournament.teams) && savedTournament.teams.length >= 4 &&
+      Array.isArray(savedTournament.groups) && savedTournament.groups.length > 0 && savedTournament.groups.length <= 8 &&
+      savedTournament.groups.every((group, index) => group && group.id === `grupo-${index + 1}` && typeof group.name === "string" && group.name.length <= 40 &&
+        validTeamList(group.teams) && group.teams.length >= 2 && group.teams.every(team => savedTournament.teams.includes(team))) &&
+      savedTournament.groups.flatMap(group => group.teams).length === savedTournament.teams.length &&
+      new Set(savedTournament.groups.flatMap(group => group.teams)).size === savedTournament.teams.length;
+    const expectedMatches = validGroups ? createGroupMatches(savedTournament.groups) : [];
+    const validMatches = validGroups && Array.isArray(savedTournament.groupMatches) && savedTournament.groupMatches.length === expectedMatches.length &&
+      savedTournament.groupMatches.every((match, index) => match && ['id', 'groupId', 'home', 'away'].every(key => match[key] === expectedMatches[index][key]));
+    if (validMatches) {
+      tournamentState.format = ["final-four", "gold-silver-final-four", "double", "gold-silver"].includes(savedTournament.format) ? savedTournament.format : draft.format;
+      tournamentState.teams = savedTournament.teams;
+      tournamentState.groups = savedTournament.groups;
+      tournamentState.groupMatches = savedTournament.groupMatches.map((match) => ({ ...match, homePoints: parseScore(match.homePoints), awayPoints: parseScore(match.awayPoints) }));
+      const phase = savedTournament.finalPhase;
+      if (phase && phase.format === tournamentState.format && Array.isArray(phase.flights) && phase.flights.length <= 2 &&
+        phase.flights.every((flight) => flight && ["general", "oro", "plata"].includes(flight.id) && typeof flight.name === "string" && flight.name.length <= 40 && validTeamList(flight.teams) && flight.teams.length >= 2 && flight.teams.every((team) => tournamentState.teams.includes(team))) && new Set(phase.flights.map(flight => flight.id)).size === phase.flights.length) {
+        tournamentState.finalPhase = phase;
+        tournamentState.knockoutScores = savedTournament.knockoutScores && typeof savedTournament.knockoutScores === "object" ? savedTournament.knockoutScores : {};
+      }
+    }
+    const score = saved.scoreboard;
+    if (score && Array.isArray(score.scores) && score.scores.length === 2 && score.scores.every((value) => Number.isInteger(value) && value >= 0 && value <= 10000) &&
+      Array.isArray(score.displayOrder) && [...score.displayOrder].sort().join() === "0,1") {
+      scoreboardState.scores = score.scores;
+      scoreboardState.target = score.target === 15 ? 15 : 21;
+      scoreboardState.displayOrder = score.displayOrder;
+      scoreboardState.confirmedSideTotals = new Set(Array.isArray(score.confirmedSideTotals) ? score.confirmedSideTotals.filter(value => Number.isInteger(value) && value > 0 && value <= score.scores[0] + score.scores[1]) : []);
+      scoreboardState.log = Array.isArray(score.log) ? score.log.filter((item) => typeof item === "string").slice(0, 8) : [];
+      scoreboardState.history = [];
+      if (Array.isArray(score.names)) score.names.slice(0, 2).forEach((name, index) => {
+        document.querySelector(index === 0 ? "#scoreTeamA" : "#scoreTeamB").value = typeof name === "string" ? name.slice(0, 32) : `Equipo ${index + 1}`;
+      });
+      document.querySelector("#scoreSetTarget").value = String(scoreboardState.target);
+    }
+    return true;
+  } catch {
+    return false;
+  } finally {
+    restoringPlayState = false;
+  }
+}
 
 function clampTournamentTeams(value) {
   const count = Number.parseInt(value, 10);
@@ -2454,13 +1396,16 @@ function clampTournamentTeams(value) {
   return Math.max(4, Math.min(32, count));
 }
 
-function renderTeamInputs(count = 8) {
+function renderTeamInputs(count = 8, savedNames = null) {
   const container = document.querySelector("#teamInputs");
   if (!container) return;
 
-  const currentNames = Array.from(container.querySelectorAll(".team-name-input")).map((input) => input.value);
+  if (savedNames) tournamentDraftNames = savedNames.slice(0, 32).map((name) => typeof name === "string" ? name.slice(0, 32) : "");
+  else container.querySelectorAll(".team-name-input").forEach((input, index) => { tournamentDraftNames[index] = input.value; });
+  const currentNames = tournamentDraftNames;
   container.innerHTML = Array.from({ length: count }, (_, index) => {
-    const value = currentNames[index] || `Equipo ${index + 1}`;
+    const value = currentNames[index] ?? `Equipo ${index + 1}`;
+    tournamentDraftNames[index] = value;
     return `
       <label class="team-input-row">
         <span>Equipo ${index + 1}</span>
@@ -2476,18 +1421,53 @@ function getTournamentTeams() {
   if (input) input.value = String(count);
   renderTeamInputs(count);
 
-  const used = new Map();
+  const used = new Set();
   return Array.from(document.querySelectorAll(".team-name-input")).slice(0, count).map((field, index) => {
     const baseName = field.value.trim() || `Equipo ${index + 1}`;
-    const seen = used.get(baseName) || 0;
-    used.set(baseName, seen + 1);
-    return seen ? `${baseName} ${seen + 1}` : baseName;
+    let name = baseName;
+    let suffix = 2;
+    while (used.has(name.toLocaleLowerCase())) name = `${baseName} ${suffix++}`;
+    used.add(name.toLocaleLowerCase());
+    field.value = name;
+    return name;
   });
 }
 
 function setTournamentStatus(message) {
   const status = document.querySelector("#tournamentStatus");
   if (status) status.textContent = message;
+  updateTournamentControls();
+  savePlayState();
+}
+
+function isTournamentDraftChanged() {
+  if (!tournamentState.groups.length) return false;
+  const names = Array.from(document.querySelectorAll(".team-name-input"), (input, index) => input.value.trim() || `Equipo ${index + 1}`);
+  return Number(document.querySelector("#tournamentTeamCount")?.value) !== tournamentState.teams.length ||
+    document.querySelector("#tournamentFormat")?.value !== tournamentState.format || names.join("\n") !== tournamentState.teams.join("\n");
+}
+
+function updateTournamentControls() {
+  if (!document.querySelector("#tournamentTeamCount")) return;
+  const total = tournamentState.groupMatches.length;
+  const complete = tournamentState.groupMatches.filter(hasValidScore).length;
+  const hasGroups = total > 0;
+  const hasFinal = Boolean(tournamentState.finalPhase);
+  document.querySelector("#buildBracket").disabled = !hasGroups || complete !== total || hasFinal;
+  document.querySelector("#simulateGroups").disabled = !hasGroups || complete === total;
+  document.querySelector("#simulateBracket").disabled = !hasFinal || getAllKnockoutMatches(buildCurrentFinalPhase()).every((match) => !isEditableMatch(match));
+  document.querySelector("#generateTournament").textContent = hasGroups ? "Volver a crear grupos" : "Crear grupos";
+  const progress = document.querySelector("#tournamentProgress");
+  if (progress) progress.textContent = hasGroups ? `Grupos: ${complete} de ${total} partidos completados.${hasFinal ? " Fase final disponible abajo." : complete === total ? " Ya puedes crear la fase final." : " Anota los dos marcadores de cada partido."}` : "";
+  const format = document.querySelector("#tournamentFormat")?.value;
+  const hints = {
+    "final-four": "Los cuatro mejores pasan a dos semifinales, final y partido por el bronce.",
+    "gold-silver-final-four": "Los dos primeros de cada grupo van a oro; el resto, a plata. Los cuatro mejores de cada categoría juegan su podio.",
+    "double": "Todos pasan a la fase final. Dos derrotas eliminan; la gran final se repite si es la primera derrota del ganador de la llave principal.",
+    "gold-silver": "Los dos primeros de cada grupo van a oro; el resto, a plata. Cada categoría disputa su cuadro de doble eliminación."
+  };
+  const hint = document.querySelector("#tournamentFormatHint");
+  if (hint) hint.textContent = `${hints[format] || ""}${isTournamentDraftChanged() ? " Tienes cambios sin aplicar: los grupos actuales conservan sus equipos y su formato. Vuelve a crearlos para aplicar los cambios." : ""}`;
 }
 
 function createGroups(teams) {
@@ -2525,12 +1505,13 @@ function createGroupMatches(groups) {
 }
 
 function parseScore(value) {
-  const score = Number.parseInt(value, 10);
-  return Number.isFinite(score) && score >= 0 ? score : null;
+  if (value === null || value === undefined || String(value).trim() === "") return null;
+  const score = Number(value);
+  return Number.isInteger(score) && score >= 0 ? score : null;
 }
 
 function hasValidScore(match) {
-  return match.homePoints !== null && match.awayPoints !== null && match.homePoints !== match.awayPoints;
+  return Number.isInteger(match.homePoints) && Number.isInteger(match.awayPoints) && match.homePoints >= 0 && match.awayPoints >= 0 && match.homePoints !== match.awayPoints;
 }
 
 function randomBeachScore() {
@@ -2581,6 +1562,13 @@ function calculateGroupStandings(group) {
   );
 }
 
+function renderStandingsRows(group) {
+  return calculateGroupStandings(group).map((row, index) => `<tr>
+    <td><strong>${index + 1}</strong> ${escapeHTML(row.team)}</td>
+    <td>${row.played}</td><td>${row.wins}</td><td>${row.diff}</td><td>${row.pointsFor}</td>
+  </tr>`).join('');
+}
+
 function renderGroupStage() {
   const stage = document.querySelector("#groupStage");
   if (!stage) return;
@@ -2596,11 +1584,11 @@ function renderGroupStage() {
 
   stage.innerHTML = tournamentState.groups
     .map((group) => {
-      const standings = calculateGroupStandings(group);
+
       const matches = tournamentState.groupMatches.filter((match) => match.groupId === group.id);
       return `
         <section class="group-card">
-          <h4>${group.name}</h4>
+          <h4>${escapeHTML(group.name)}</h4>
           <div class="team-seed-list">
             ${group.teams.map((team) => `<span>${escapeHTML(team)}</span>`).join("")}
           </div>
@@ -2610,33 +1598,23 @@ function renderGroupStage() {
                 (match) => `
                   <div class="match-row">
                     <span>${escapeHTML(match.home)}</span>
-                    <input class="group-score-input" type="number" min="0" max="40" value="${match.homePoints ?? ""}" data-match="${match.id}" data-side="home" aria-label="Puntos de ${escapeHTML(match.home)}" />
+                    <input class="group-score-input" type="number" min="0" step="1" inputmode="numeric" value="${match.homePoints ?? ""}" data-match="${match.id}" data-side="home" aria-label="Puntos de ${escapeHTML(match.home)}" />
                     <strong>vs</strong>
-                    <input class="group-score-input" type="number" min="0" max="40" value="${match.awayPoints ?? ""}" data-match="${match.id}" data-side="away" aria-label="Puntos de ${escapeHTML(match.away)}" />
+                    <input class="group-score-input" type="number" min="0" step="1" inputmode="numeric" value="${match.awayPoints ?? ""}" data-match="${match.id}" data-side="away" aria-label="Puntos de ${escapeHTML(match.away)}" />
                     <span>${escapeHTML(match.away)}</span>
                   </div>
+                  <p class="match-feedback" data-feedback="${match.id}" ${match.homePoints !== null && match.awayPoints !== null && !hasValidScore(match) ? "" : "hidden"}>El partido no puede terminar empatado. Corrige el resultado.</p>
                 `
               )
               .join("")}
           </div>
           <table class="standings-table">
+            <caption class="visually-hidden">Clasificación de ${escapeHTML(group.name)}. J: jugados; V: victorias; Dif.: diferencia de puntos; PF: puntos a favor.</caption>
             <thead>
-              <tr><th>Equipo</th><th>J</th><th>V</th><th>Dif.</th><th>PF</th></tr>
+              <tr><th scope="col">Equipo</th><th scope="col"><abbr title="Jugados">J</abbr></th><th scope="col"><abbr title="Victorias">V</abbr></th><th scope="col"><abbr title="Diferencia de puntos">Dif.</abbr></th><th scope="col"><abbr title="Puntos a favor">PF</abbr></th></tr>
             </thead>
             <tbody>
-              ${standings
-                .map(
-                  (row, index) => `
-                    <tr>
-                      <td><strong>${index + 1}</strong> ${escapeHTML(row.team)}</td>
-                      <td>${row.played}</td>
-                      <td>${row.wins}</td>
-                      <td>${row.diff}</td>
-                      <td>${row.pointsFor}</td>
-                    </tr>
-                  `
-                )
-                .join("")}
+              ${renderStandingsRows(group)}
             </tbody>
           </table>
         </section>
@@ -2645,22 +1623,26 @@ function renderGroupStage() {
     .join("");
 
   stage.querySelectorAll(".group-score-input").forEach((input) => {
-    input.addEventListener("change", () => {
+    input.addEventListener("input", () => {
       const match = tournamentState.groupMatches.find((item) => item.id === input.dataset.match);
       if (!match) return;
       match[input.dataset.side === "home" ? "homePoints" : "awayPoints"] = parseScore(input.value);
       tournamentState.finalPhase = null;
       tournamentState.knockoutScores = {};
       tournamentState.champion = null;
-      renderGroupStage();
+      const group = tournamentState.groups.find(group => group.id === match.groupId);
+      const card = input.closest('.group-card');
+      card.querySelector('tbody').innerHTML = renderStandingsRows(group);
+      const feedback = card.querySelector(`[data-feedback="${match.id}"]`);
+      feedback.hidden = !(match.homePoints !== null && match.awayPoints !== null && !hasValidScore(match));
       renderKnockoutStage();
-      setTournamentStatus("Clasificación actualizada. Crea las eliminatorias cuando termines los grupos.");
+      setTournamentStatus(hasValidScore(match) ? "Resultado guardado. La clasificación se actualiza automáticamente." : "Introduce los puntos de ambos equipos, sin empates.");
     });
   });
 }
 
 function getTournamentFormat() {
-  return document.querySelector("#tournamentFormat")?.value || "double";
+  return tournamentState.format || document.querySelector("#tournamentFormat")?.value || "final-four";
 }
 
 function getWinnerRoundName(roundIndex) {
@@ -2694,7 +1676,7 @@ function createFinalFlights() {
   const ranked = getRankedGroupTeams();
   const format = getTournamentFormat();
 
-  if (format === "gold-silver") {
+  if (format === "gold-silver" || format === "gold-silver-final-four") {
     const gold = [];
     const silver = [];
     tournamentState.groups.forEach((group) => {
@@ -2715,7 +1697,7 @@ function createFinalFlights() {
   return [
     {
       id: "general",
-      name: "Doble eliminación",
+      name: format === "final-four" ? "Final Four" : "Doble eliminación",
       teams: rankTeamsForFinalPhase(ranked).map((item) => item.team)
     }
   ];
@@ -2726,12 +1708,9 @@ function pairBracketTeams(teams) {
   const pairs = [];
   const byes = [];
 
+  if (entries.length % 2 === 1) byes.push(entries.shift());
   for (let index = 0; index < Math.floor(entries.length / 2); index += 1) {
     pairs.push([entries[index], entries[entries.length - 1 - index]]);
-  }
-
-  if (entries.length % 2 === 1) {
-    byes.push(entries[Math.floor(entries.length / 2)]);
   }
 
   return { pairs, byes };
@@ -2742,9 +1721,13 @@ function getStoredKnockoutScore(matchId) {
 }
 
 function createBracketMatch(id, home, away) {
-  const stored = getStoredKnockoutScore(id);
-  const homePoints = stored.homePoints ?? null;
-  const awayPoints = stored.awayPoints ?? null;
+  let stored = getStoredKnockoutScore(id);
+  if (stored.home !== home || stored.away !== away) {
+    delete tournamentState.knockoutScores[id];
+    stored = {};
+  }
+  const homePoints = parseScore(stored.homePoints);
+  const awayPoints = parseScore(stored.awayPoints);
   const match = { id, home, away, homePoints, awayPoints, winner: null, loser: null };
 
   if (!away) {
@@ -2780,7 +1763,8 @@ function buildDoubleEliminationFlight(seed) {
     roundIndex += 1;
   }
 
-  let losersActive = [...losersFromWinners];
+  // Keep this simplified second-chance bracket stable until the winners side is complete.
+  let losersActive = winnersActive.length === 1 ? [...losersFromWinners] : [];
   const losersRounds = [];
   let loserRoundIndex = 0;
 
@@ -2800,33 +1784,79 @@ function buildDoubleEliminationFlight(seed) {
   const winnerSideChampion = winnersActive.length === 1 ? winnersActive[0] : null;
   const loserSideChampion = losersActive.length === 1 ? losersActive[0] : null;
   let finalMatch = null;
+  let grandFinalMatch = null;
+  let resetMatch = null;
   let champion = null;
 
   if (winnerSideChampion && loserSideChampion) {
-    finalMatch = createBracketMatch(`${seed.id}-final-0`, winnerSideChampion, loserSideChampion);
+    grandFinalMatch = createBracketMatch(`${seed.id}-final-0`, winnerSideChampion, loserSideChampion);
+    finalMatch = grandFinalMatch;
+    if (grandFinalMatch.winner === loserSideChampion) {
+      resetMatch = createBracketMatch(`${seed.id}-reset-0`, winnerSideChampion, loserSideChampion);
+      finalMatch = resetMatch;
+    }
     champion = finalMatch.winner;
   } else if (winnerSideChampion && seed.teams.length === 1) {
     champion = winnerSideChampion;
   }
 
-  return { ...seed, winnersRounds, losersRounds, finalMatch, champion };
+  return { ...seed, winnersRounds, losersRounds, grandFinalMatch, resetMatch, finalMatch, champion };
+}
+
+function buildFinalFourFlight(seed) {
+  const qualified = seed.teams.slice(0, 4);
+  const semifinals = [];
+  let finalMatch = null;
+  let bronzeMatch = null;
+  let bronze = null;
+  if (qualified.length >= 4) {
+    semifinals.push(createBracketMatch(`${seed.id}-semi-0`, qualified[0], qualified[3]));
+    semifinals.push(createBracketMatch(`${seed.id}-semi-1`, qualified[1], qualified[2]));
+    if (semifinals.every(match => match.winner)) {
+      finalMatch = createBracketMatch(`${seed.id}-final-0`, semifinals[0].winner, semifinals[1].winner);
+      bronzeMatch = createBracketMatch(`${seed.id}-bronze-0`, semifinals[0].loser, semifinals[1].loser);
+      bronze = bronzeMatch.winner;
+    }
+  } else if (qualified.length === 3) {
+    // Top seed advances directly; the semifinal loser takes bronze.
+    semifinals.push(createBracketMatch(`${seed.id}-semi-0`, qualified[1], qualified[2]));
+    if (semifinals[0].winner) {
+      finalMatch = createBracketMatch(`${seed.id}-final-0`, qualified[0], semifinals[0].winner);
+      bronze = semifinals[0].loser;
+    }
+  } else if (qualified.length === 2) {
+    finalMatch = createBracketMatch(`${seed.id}-final-0`, qualified[0], qualified[1]);
+  }
+  return { ...seed, qualified, semifinals, bronzeMatch, bronze, finalMatch,
+    champion: finalMatch?.winner || null, winnersRounds: [], losersRounds: [], isFinalFour: true };
 }
 
 function buildCurrentFinalPhase() {
   if (!tournamentState.finalPhase) return [];
-  return tournamentState.finalPhase.flights.map(buildDoubleEliminationFlight);
+  const finalFour = ["final-four", "gold-silver-final-four"].includes(tournamentState.finalPhase.format);
+  return tournamentState.finalPhase.flights.map(finalFour ? buildFinalFourFlight : buildDoubleEliminationFlight);
 }
 
 function getAllKnockoutMatches(flights) {
   return flights.flatMap((flight) => [
+    ...(flight.semifinals || []),
     ...flight.winnersRounds.flatMap((round) => round.matches),
     ...flight.losersRounds.flatMap((round) => round.matches),
-    ...(flight.finalMatch ? [flight.finalMatch] : [])
+    ...(flight.resetMatch && flight.grandFinalMatch ? [flight.grandFinalMatch] : []),
+    ...(flight.finalMatch ? [flight.finalMatch] : []),
+    ...(flight.bronzeMatch ? [flight.bronzeMatch] : [])
   ]);
 }
 
 function isEditableMatch(match) {
   return match.home && match.away && !match.winner;
+}
+
+function pruneKnockoutScores() {
+  const currentIds = new Set(getAllKnockoutMatches(buildCurrentFinalPhase()).map((match) => match.id));
+  Object.keys(tournamentState.knockoutScores).forEach((id) => {
+    if (!currentIds.has(id)) delete tournamentState.knockoutScores[id];
+  });
 }
 
 function buildBracketFromStandings() {
@@ -2851,7 +1881,9 @@ function buildBracketFromStandings() {
   tournamentState.knockoutScores = {};
   tournamentState.champion = null;
   renderKnockoutStage();
-  setTournamentStatus("Fase final creada. Anota resultados en Ganadores y Perdedores.");
+  setTournamentStatus(["final-four", "gold-silver-final-four"].includes(getTournamentFormat())
+    ? "Fase final creada. Los cuatro mejores de cada categoría juegan semifinales; los ganadores van a la final y los perdedores al partido por el bronce."
+    : "Fase final creada. Anota resultados en Ganadores y Perdedores.");
 }
 
 function simulateGroupStage() {
@@ -2859,7 +1891,7 @@ function simulateGroupStage() {
     generateTournament();
   }
 
-  tournamentState.groupMatches.forEach((match) => {
+  tournamentState.groupMatches.filter((match) => !hasValidScore(match)).forEach((match) => {
     const [homePoints, awayPoints] = randomBeachScore();
     match.homePoints = homePoints;
     match.awayPoints = awayPoints;
@@ -2869,8 +1901,8 @@ function simulateGroupStage() {
   tournamentState.knockoutScores = {};
   tournamentState.champion = null;
   renderGroupStage();
-  buildBracketFromStandings();
-  setTournamentStatus("Fase de grupos simulada. Ya puedes anotar o simular la fase final.");
+  renderKnockoutStage();
+  setTournamentStatus("Partidos pendientes completados con ejemplos. Revisa los resultados y crea la fase final.");
 }
 
 function simulateKnockoutStage() {
@@ -2886,13 +1918,27 @@ function simulateKnockoutStage() {
     const openMatch = getAllKnockoutMatches(flights).find(isEditableMatch);
     if (!openMatch) break;
     const [homePoints, awayPoints] = randomBeachScore();
-    tournamentState.knockoutScores[openMatch.id] = { homePoints, awayPoints };
+    tournamentState.knockoutScores[openMatch.id] = { home: openMatch.home, away: openMatch.away, homePoints, awayPoints };
     safety += 1;
   }
 
   renderKnockoutStage();
   const champions = buildCurrentFinalPhase().map((flight) => flight.champion).filter(Boolean);
   setTournamentStatus(champions.length ? `Campeones: ${champions.join(" · ")}.` : "Fase final simulada parcialmente.");
+}
+
+function renderTournamentPodium(flight) {
+  const lastLosersRound = flight.losersRounds[flight.losersRounds.length - 1];
+  const bronze = flight.isFinalFour ? flight.bronze : lastLosersRound?.matches.length === 1 ? lastLosersRound.matches[0].loser : null;
+  const places = [
+    ['🥇', '1.º · Oro', flight.champion],
+    ['🥈', '2.º · Plata', flight.champion ? flight.finalMatch?.loser : null],
+    ['🥉', '3.º · Bronce', bronze]
+  ];
+  return `<section class="tournament-podium" aria-label="Podio de ${escapeHTML(flight.name)}">
+    <h5>Podio · ${escapeHTML(flight.name)}</h5>
+    <ol>${places.map(([medal, label, team], index) => `<li><span aria-hidden="true">${medal}</span><strong>${label}</strong><span>${team ? escapeHTML(team) : index === 2 && flight.teams.length < 3 ? 'No se disputa · menos de 3 equipos' : 'Pendiente de resultados'}</span></li>`).join('')}</ol>
+  </section>`;
 }
 
 function renderKnockoutStage() {
@@ -2915,11 +1961,11 @@ function renderKnockoutStage() {
   const renderScoreInputs = (match) => `
     <div class="bracket-scoreline ${match.winner === match.home ? "is-winner" : ""}">
       <span>${escapeHTML(match.home)}</span>
-      <input class="knockout-score-input" type="number" min="0" max="40" value="${match.homePoints ?? ""}" data-match="${match.id}" data-side="home" aria-label="Puntos de ${escapeHTML(match.home)}" />
+      <input class="knockout-score-input" type="number" min="0" step="1" inputmode="numeric" value="${match.homePoints ?? ""}" data-match="${match.id}" data-side="home" aria-label="Puntos de ${escapeHTML(match.home)}" />
     </div>
     <div class="bracket-scoreline ${match.winner === match.away ? "is-winner" : ""}">
       <span>${escapeHTML(match.away)}</span>
-      <input class="knockout-score-input" type="number" min="0" max="40" value="${match.awayPoints ?? ""}" data-match="${match.id}" data-side="away" aria-label="Puntos de ${escapeHTML(match.away)}" />
+      <input class="knockout-score-input" type="number" min="0" step="1" inputmode="numeric" value="${match.awayPoints ?? ""}" data-match="${match.id}" data-side="away" aria-label="Puntos de ${escapeHTML(match.away)}" />
     </div>
   `;
 
@@ -2930,13 +1976,27 @@ function renderKnockoutStage() {
           ? renderScoreInputs(match)
           : `<div class="bracket-scoreline is-winner"><span>${escapeHTML(match.home)}</span><strong>Bye</strong></div>`
       }
+      ${match.homePoints !== null && match.awayPoints !== null && !hasValidScore(match) ? '<p class="match-feedback">Corrige el empate para decidir quién avanza.</p>' : ''}
     </article>
   `;
+
+  const renderPendingMatch = (home, away) => `<article class="bracket-match pending-match"><div class="bracket-scoreline"><span>${home}</span></div><div class="bracket-scoreline"><span>${away}</span></div><p>Pendiente de las semifinales</p></article>`;
+  const renderFinalFour = (flight) => `
+    <p class="final-format-note">Clasifican los ${flight.qualified.length} primeros de esta categoría, según la clasificación de grupos.${flight.qualified.length === 3 ? ' El primer clasificado pasa directamente a la final; el perdedor de la semifinal es tercero.' : ''}</p>
+    <div class="bracket-columns final-four-columns">
+      <section class="round-column"><h5>Semifinales</h5>
+        ${flight.semifinals.map((match, index) => `<div class="bracket-round"><h6>Semifinal ${index + 1}</h6>${renderMatch(match)}</div>`).join('') || '<p>No se disputan con solo dos equipos.</p>'}
+      </section>
+      <section class="round-column"><h5>Finales</h5>
+        <div class="bracket-round"><h6>🥇 Final · 1.º y 2.º puesto</h6>${flight.finalMatch ? renderMatch(flight.finalMatch) : renderPendingMatch('Ganador de semifinal 1', 'Ganador de semifinal 2')}</div>
+        <div class="bracket-round"><h6>🥉 Partido por el 3.º puesto</h6>${flight.bronzeMatch ? renderMatch(flight.bronzeMatch) : flight.qualified.length >= 4 ? renderPendingMatch('Perdedor de semifinal 1', 'Perdedor de semifinal 2') : flight.qualified.length === 3 ? '<p>El perdedor de la semifinal obtiene el bronce.</p>' : '<p>No se disputa · menos de 3 equipos.</p>'}</div>
+      </section>
+    </div>`;
 
   stage.innerHTML = `
     <div class="final-format-note">
       <strong>Formato:</strong>
-      <span>${tournamentState.finalPhase.format === "gold-silver" ? "Oro y plata · doble eliminación" : "Todos · doble eliminación"}</span>
+      <span>${({"final-four": "Grupos → Final Four", "gold-silver-final-four": "Oro y plata → Final Four", "gold-silver": "Oro y plata · doble eliminación", "double": "Todos · doble eliminación"})[tournamentState.finalPhase.format]}</span>
     </div>
     <div class="flight-stack">
       ${flights
@@ -2944,9 +2004,10 @@ function renderKnockoutStage() {
           (flight) => `
             <section class="flight-card">
               <div class="flight-heading">
-                <h4>${flight.name}</h4>
+                <h4>${escapeHTML(flight.name)}</h4>
                 <span>${flight.teams.length} equipos</span>
               </div>
+              ${flight.isFinalFour ? renderFinalFour(flight) : `
               <div class="bracket-columns">
                 <section class="round-column">
                   <h5>Fase ganadores</h5>
@@ -2975,19 +2036,17 @@ function renderKnockoutStage() {
                             `
                           )
                           .join("")
-                      : `<div class="empty-state small"><p>Los perdedores de ganadores aparecerán aquí.</p></div>`
+                      : `<div class="empty-state small"><p>Completa la fase de ganadores para abrir el cuadro de segunda oportunidad.</p></div>`
                   }
                 </section>
                 <section class="round-column">
                   <h5>Final</h5>
-                  ${flight.finalMatch ? renderMatch(flight.finalMatch) : `<div class="empty-state small"><p>Completa ambas fases para abrir la final.</p></div>`}
+                  ${flight.grandFinalMatch ? `<div class="bracket-round"><h6>Gran final · 1.º y 2.º puesto</h6>${renderMatch(flight.grandFinalMatch)}</div>${flight.resetMatch ? `<div class="bracket-round"><h6>Final definitiva</h6><p>Ambos equipos tienen una derrota. Este partido decide el título.</p>${renderMatch(flight.resetMatch)}</div>` : '<p>Si gana el equipo de perdedores, se juega una final definitiva.</p>'}` : `<div class="empty-state small"><p>Completa ambas fases para abrir la final.</p></div>`}
+                  <p>El perdedor del último partido de la fase de perdedores obtiene el tercer puesto.</p>
                 </section>
               </div>
-              ${
-                flight.champion
-                  ? `<div class="champion-banner"><span>Campeón</span><strong>${escapeHTML(flight.champion)}</strong></div>`
-                  : ""
-              }
+              `}
+              ${renderTournamentPodium(flight)}
             </section>
           `
         )
@@ -2996,18 +2055,34 @@ function renderKnockoutStage() {
   `;
 
   stage.querySelectorAll(".knockout-score-input").forEach((input) => {
-    input.addEventListener("change", () => {
+    input.addEventListener("input", () => {
+      const match = getAllKnockoutMatches(flights).find((item) => item.id === input.dataset.match);
+      if (!match) return;
       const current = tournamentState.knockoutScores[input.dataset.match] || {};
+      current.home = match.home;
+      current.away = match.away;
       current[input.dataset.side === "home" ? "homePoints" : "awayPoints"] = parseScore(input.value);
       tournamentState.knockoutScores[input.dataset.match] = current;
-      renderKnockoutStage();
-      setTournamentStatus("Resultado de eliminatoria actualizado.");
+      pruneKnockoutScores();
+      setTournamentStatus("Resultado guardado. Los cruces se actualizan al salir del campo.");
+    });
+    input.addEventListener("blur", () => {
+      window.setTimeout(() => {
+        const focused = document.activeElement;
+        const focusMatch = focused?.dataset.match;
+        const focusSide = focused?.dataset.side;
+        renderKnockoutStage();
+        if (focusMatch && focusSide) stage.querySelector(`[data-match="${focusMatch}"][data-side="${focusSide}"]`)?.focus({preventScroll: true});
+      }, 0);
     });
   });
 }
 
 function generateTournament() {
+  if (tournamentState.groupMatches.some((match) => match.homePoints !== null || match.awayPoints !== null) &&
+    !window.confirm("Volver a crear los grupos borrará los resultados de este torneo. Los nombres se conservarán. ¿Continuar?")) return;
   const teams = getTournamentTeams();
+  tournamentState.format = document.querySelector("#tournamentFormat")?.value || "final-four";
   tournamentState.teams = teams;
   tournamentState.groups = createGroups(teams);
   tournamentState.groupMatches = createGroupMatches(tournamentState.groups);
@@ -3020,6 +2095,8 @@ function generateTournament() {
 }
 
 function resetTournament() {
+  if (tournamentState.groups.length && !window.confirm("¿Empezar un torneo nuevo? Se borrarán los resultados. Los nombres de los equipos se conservarán.")) return;
+  tournamentState.format = null;
   tournamentState.teams = [];
   tournamentState.groups = [];
   tournamentState.groupMatches = [];
@@ -3027,8 +2104,7 @@ function resetTournament() {
   tournamentState.knockoutScores = {};
   tournamentState.champion = null;
   const countInput = document.querySelector("#tournamentTeamCount");
-  if (countInput) countInput.value = "8";
-  renderTeamInputs(8);
+  renderTeamInputs(clampTournamentTeams(countInput?.value));
   renderGroupStage();
   renderKnockoutStage();
   setTournamentStatus("Torneo reiniciado. Define los equipos para empezar.");
@@ -3038,14 +2114,26 @@ function setupTournamentControls() {
   const countInput = document.querySelector("#tournamentTeamCount");
   if (!countInput) return;
 
-  renderTeamInputs(clampTournamentTeams(countInput.value));
+  const restored = restorePlayState();
+  if (!restored) renderTeamInputs(clampTournamentTeams(countInput.value));
   renderGroupStage();
   renderKnockoutStage();
+  updateTournamentControls();
+  if (restored) setTournamentStatus("Progreso recuperado. Puedes continuar donde lo dejaste.");
 
-  document.querySelector("#buildTeamFields")?.addEventListener("click", () => {
-    renderTeamInputs(clampTournamentTeams(countInput.value));
-    setTournamentStatus("Lista de equipos preparada. Cambia los nombres y genera los grupos.");
+  countInput.addEventListener("change", () => {
+    countInput.value = String(clampTournamentTeams(countInput.value));
+    renderTeamInputs(Number(countInput.value));
+    setTournamentStatus(tournamentState.groups.length ? "Cantidad preparada. Vuelve a crear los grupos para aplicar el cambio." : "Lista actualizada. Escribe los nombres y crea los grupos.");
   });
+  document.querySelector("#tournamentFormat")?.addEventListener("change", () => {
+    setTournamentStatus(tournamentState.groups.length ? "Formato preparado. Vuelve a crear los grupos para aplicar el cambio." : "Formato elegido. Escribe los equipos y crea los grupos.");
+  });
+  document.querySelector("#teamInputs")?.addEventListener("input", () => {
+    updateTournamentControls();
+    savePlayState();
+  });
+
   document.querySelector("#generateTournament")?.addEventListener("click", generateTournament);
   document.querySelector("#simulateGroups")?.addEventListener("click", simulateGroupStage);
   document.querySelector("#buildBracket")?.addEventListener("click", buildBracketFromStandings);
@@ -3063,6 +2151,34 @@ function addScoreLog(message) {
   scoreboardState.log = [message, ...scoreboardState.log].slice(0, 8);
 }
 
+function getSideChangeInterval() {
+  return scoreboardState.target === 15 ? 5 : 7;
+}
+
+function getPendingSideChange() {
+  const total = scoreboardState.scores[0] + scoreboardState.scores[1];
+  const interval = getSideChangeInterval();
+  for (let point = interval; point <= total; point += interval) {
+    if (!scoreboardState.confirmedSideTotals.has(point)) return point;
+  }
+  return null;
+}
+
+function getSetWinner() {
+  const [home, away] = scoreboardState.scores;
+  return Math.max(home, away) >= scoreboardState.target && Math.abs(home - away) >= 2 ? (home > away ? 0 : 1) : null;
+}
+
+function rememberScoreState() {
+  scoreboardState.history.push({
+    scores: [...scoreboardState.scores],
+    confirmedSideTotals: [...scoreboardState.confirmedSideTotals],
+    displayOrder: [...scoreboardState.displayOrder],
+    log: [...scoreboardState.log]
+  });
+  if (scoreboardState.history.length > 100) scoreboardState.history.shift();
+}
+
 function renderScoreboard() {
   const scoreA = document.querySelector("#scoreA");
   const scoreB = document.querySelector("#scoreB");
@@ -3071,9 +2187,11 @@ function renderScoreboard() {
   const names = getScoreNames();
   const [leftTeam, rightTeam] = scoreboardState.displayOrder;
   const total = scoreboardState.scores[0] + scoreboardState.scores[1];
-  const nextChange = total === 0 ? 7 : Math.ceil((total + 1) / 7) * 7;
-  const needsSideChange =
-    total > 0 && total % 7 === 0 && !scoreboardState.confirmedSideTotals.has(total);
+  const interval = getSideChangeInterval();
+  const pendingChange = getPendingSideChange();
+  const nextChange = pendingChange || (Math.floor(total / interval) + 1) * interval;
+  const needsSideChange = pendingChange !== null;
+  const winner = getSetWinner();
 
   document.querySelector("#scoreNameA").textContent = names[leftTeam];
   document.querySelector("#scoreNameB").textContent = names[rightTeam];
@@ -3088,27 +2206,31 @@ function renderScoreboard() {
       button.dataset.team = String(teamIndex);
       const action = Number(button.dataset.delta) > 0 ? "Sumar" : "Restar";
       button.setAttribute("aria-label", `${action} punto a ${names[teamIndex]}`);
+      button.disabled = Number(button.dataset.delta) > 0 ? winner !== null : scoreboardState.scores[teamIndex] === 0;
     });
   });
 
   const notice = document.querySelector("#sideChangeNotice");
   if (notice) {
-    notice.classList.toggle("is-active", needsSideChange);
-    notice.innerHTML = needsSideChange
-      ? `<strong>Cambio de lado</strong><span>Total ${total} puntos. Cambiad antes del siguiente saque.</span>`
-      : `<span>Próximo cambio de lado en el punto total ${nextChange}.</span>`;
+    notice.classList.toggle("is-active", needsSideChange && winner === null);
+    notice.innerHTML = winner !== null
+      ? `<strong>Set para ${escapeHTML(names[winner])}</strong><span>${scoreboardState.scores[0]}–${scoreboardState.scores[1]}. Reinicia el marcador para el siguiente set.</span>`
+      : needsSideChange
+        ? `<strong>Cambio de lado pendiente</strong><span>Corresponde al punto total ${pendingChange}. Confírmalo cuando cambiéis de campo.</span>`
+        : `<span>Próximo cambio de lado en el punto total ${nextChange}.</span>`;
   }
 
   const confirmButton = document.querySelector("#confirmSideChange");
   if (confirmButton) {
-    confirmButton.disabled = !needsSideChange;
+    confirmButton.disabled = !needsSideChange || winner !== null;
   }
 
   const summary = document.querySelector("#matchSummary");
   if (summary) {
     summary.innerHTML = `
       <div><strong>Total jugado</strong><span>${total} puntos</span></div>
-      <div><strong>Próximo cambio</strong><span>${nextChange}</span></div>
+      <div><strong>Objetivo del set</strong><span>${scoreboardState.target} · ventaja de 2</span></div>
+      <div><strong>${needsSideChange ? "Cambio pendiente" : "Próximo cambio"}</strong><span>${winner !== null ? "Set terminado" : nextChange}</span></div>
       <div><strong>${escapeHTML(names[leftTeam])}</strong><span>Izquierda</span></div>
       <div><strong>${escapeHTML(names[rightTeam])}</strong><span>Derecha</span></div>
     `;
@@ -3120,19 +2242,28 @@ function renderScoreboard() {
       ? scoreboardState.log.map((item) => `<p>${escapeHTML(item)}</p>`).join("")
       : "<p>El historial aparecerá cuando empiece el partido.</p>";
   }
+  const undo = document.querySelector("#undoScore");
+  if (undo) undo.disabled = scoreboardState.history.length === 0;
+  savePlayState();
 }
 
 function updateScore(teamIndex, delta) {
+  if (delta > 0 && getSetWinner() !== null) return;
   const nextScore = Math.max(0, scoreboardState.scores[teamIndex] + delta);
   if (nextScore === scoreboardState.scores[teamIndex]) return;
 
+  rememberScoreState();
   scoreboardState.scores[teamIndex] = nextScore;
   const names = getScoreNames();
   const action = delta > 0 ? "suma" : "resta";
   addScoreLog(`${names[teamIndex]} ${action} punto. Marcador ${scoreboardState.scores[0]}-${scoreboardState.scores[1]}.`);
 
   const total = scoreboardState.scores[0] + scoreboardState.scores[1];
-  if (delta > 0 && total > 0 && total % 7 === 0 && !scoreboardState.confirmedSideTotals.has(total)) {
+  if (delta < 0) {
+    scoreboardState.confirmedSideTotals = new Set([...scoreboardState.confirmedSideTotals].filter((point) => point <= total));
+    scoreboardState.displayOrder = scoreboardState.confirmedSideTotals.size % 2 ? [1, 0] : [0, 1];
+  }
+  if (delta > 0 && total > 0 && total % getSideChangeInterval() === 0 && !scoreboardState.confirmedSideTotals.has(total)) {
     addScoreLog(`Aviso de cambio de lado en el punto total ${total}.`);
   }
 
@@ -3140,19 +2271,21 @@ function updateScore(teamIndex, delta) {
 }
 
 function confirmSideChange() {
-  const total = scoreboardState.scores[0] + scoreboardState.scores[1];
-  if (total <= 0 || total % 7 !== 0 || scoreboardState.confirmedSideTotals.has(total)) return;
-  scoreboardState.confirmedSideTotals.add(total);
+  const point = getPendingSideChange();
+  if (point === null || getSetWinner() !== null) return;
+  scoreboardState.confirmedSideTotals.add(point);
   scoreboardState.displayOrder = [...scoreboardState.displayOrder].reverse();
-  addScoreLog(`Cambio de lado confirmado con ${total} puntos totales.`);
+  addScoreLog(`Cambio de lado del punto ${point} confirmado.`);
   renderScoreboard();
 }
 
 function resetScoreboard() {
+  if (scoreboardState.scores.some((score) => score > 0) && !window.confirm("¿Reiniciar este set a 0–0? Los nombres y el tipo de set se conservarán.")) return;
   scoreboardState.scores = [0, 0];
   scoreboardState.displayOrder = [0, 1];
   scoreboardState.confirmedSideTotals = new Set();
   scoreboardState.log = [];
+  scoreboardState.history = [];
   renderScoreboard();
 }
 
@@ -3163,6 +2296,31 @@ function setupScoreboardControls() {
     button.addEventListener("click", () => {
       updateScore(Number(button.dataset.team), Number(button.dataset.delta));
     });
+  });
+  document.querySelector("#scoreSetTarget")?.addEventListener("change", (event) => {
+    const target = Number(event.target.value);
+    if (scoreboardState.scores.some((score) => score > 0)) {
+      if (!window.confirm("Cambiar el tipo de set reiniciará el marcador a 0–0. ¿Continuar?")) {
+        event.target.value = String(scoreboardState.target);
+        return;
+      }
+      scoreboardState.scores = [0, 0];
+      scoreboardState.confirmedSideTotals = new Set();
+      scoreboardState.displayOrder = [0, 1];
+      scoreboardState.history = [];
+      scoreboardState.log = [];
+    }
+    scoreboardState.target = target === 15 ? 15 : 21;
+    renderScoreboard();
+  });
+  document.querySelector("#undoScore")?.addEventListener("click", () => {
+    const previous = scoreboardState.history.pop();
+    if (!previous) return;
+    scoreboardState.scores = previous.scores;
+    scoreboardState.confirmedSideTotals = new Set(previous.confirmedSideTotals);
+    scoreboardState.displayOrder = previous.displayOrder;
+    scoreboardState.log = previous.log;
+    renderScoreboard();
   });
   document.querySelector("#scoreTeamA")?.addEventListener("input", renderScoreboard);
   document.querySelector("#scoreTeamB")?.addEventListener("input", renderScoreboard);
@@ -3194,23 +2352,49 @@ if (legacyHashMap[window.location.hash] && !document.querySelector(window.locati
   window.setTimeout(scrollToLegacyTarget, 900);
 }
 
-setupLanguageSwitcher();
+
 
 if (document.querySelector("#signalCourt")) {
   renderSignalControls();
-  setupSignalAnimationControls();
   renderSignalDemo();
+  setupSignalAnimationControls();
 }
 
 if (document.querySelector("#settingCourt")) {
   renderSettingControls();
-  setupSettingAnimationControls();
   renderSettingDemo();
+  setupSettingAnimationControls();
 }
 
 renderMovementTabs();
 renderMovement();
 renderCallbook();
-renderCalls();
+renderLevels();
+renderTraining();
 setupTournamentControls();
 setupScoreboardControls();
+
+
+function updateCurrentNavigation() {
+  const tournamentPage = Boolean(document.querySelector('#torneo'));
+  const targetHash = tournamentPage ? (window.location.hash === '#marcador' ? '#marcador' : '#torneo') : '#entrenar';
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    const target = new URL(link.href, window.location.href);
+    if (target.pathname === window.location.pathname && target.hash === targetHash) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+}
+window.addEventListener('hashchange', updateCurrentNavigation);
+updateCurrentNavigation();
+
+// Restore section links after the dynamic groups and format guide have been laid out.
+if (window.location.hash && 'scrollRestoration' in window.history) window.history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+  if (!window.location.hash) return;
+  try {
+    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if (target) window.requestAnimationFrame(() => target.scrollIntoView({behavior: 'instant', block: 'start'}));
+  } catch {
+    // An invalid fragment must not interrupt the page.
+  }
+}, {once: true});
