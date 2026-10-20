@@ -133,10 +133,11 @@ h3 { margin-bottom:8px; font-size:1.25rem; line-height:1.2; }
 .achievement-list p { margin-bottom:0; color:var(--muted); }
 
 .evidence-section { background:#fff; }
-.evidence-grid { width:min(var(--max),100%); margin:0 auto; columns:3; column-gap:18px; }
-.evidence-grid figure { break-inside:avoid; margin:0 0 18px; overflow:hidden; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); box-shadow:0 12px 32px rgba(61,41,54,.07); }
-.evidence-grid img { width:100%; height:auto; object-fit:contain; background:var(--rose-soft); }
-.evidence-grid figcaption { display:grid; min-width:0; gap:3px; padding:18px; }
+.evidence-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; align-items:stretch; width:min(var(--max),100%); margin:0 auto; }
+.evidence-grid figure { display:grid; min-width:0; grid-template-rows:auto 1fr; margin:0; overflow:hidden; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); box-shadow:0 12px 32px rgba(61,41,54,.07); }
+.evidence-grid img { width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; object-position:center; background:var(--rose-soft); }
+.evidence-grid figure:nth-child(3) img { object-position:center 45%; background:#fff; }
+.evidence-grid figcaption { display:grid; min-width:0; align-content:start; gap:3px; padding:18px; }
 .evidence-grid figcaption span { color:var(--muted); font-size:.9rem; }
 .media-details { width:min(var(--max),100%); margin:20px auto 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
 .media-details summary { max-width:100%; padding:17px 0; color:var(--plum); font-weight:850; line-height:1.4; cursor:pointer; overflow-wrap:anywhere; }
@@ -194,7 +195,7 @@ h3 { margin-bottom:8px; font-size:1.25rem; line-height:1.2; }
   .proof-ribbon article:nth-child(3) { border-left:0; border-top:1px solid rgba(255,255,255,.16); }
   .proof-ribbon article:nth-child(4) { border-top:1px solid rgba(255,255,255,.16); }
   .focus-grid { grid-template-columns:1fr; }
-  .evidence-grid { columns:2; }
+  .evidence-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .video-grid { grid-template-columns:1fr; }
 }
 
@@ -217,7 +218,7 @@ h3 { margin-bottom:8px; font-size:1.25rem; line-height:1.2; }
   .experience-list article { grid-template-columns:1fr; gap:8px; }
   .experience-place { grid-column:auto; }
   .achievement-list article { grid-template-columns:64px 1fr; gap:14px; }
-  .evidence-grid { columns:1; }
+  .evidence-grid { grid-template-columns:1fr; }
   .site-footer { flex-direction:column; }
   .footer-links { justify-content:flex-start; text-align:left; }
   .contact-actions { grid-template-columns:1fr; }
