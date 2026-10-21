@@ -1,0 +1,157 @@
+{
+  "what-comes-after": {
+    "image": "previews/what-comes-after.webp",
+    "width": 640,
+    "height": 359
+  },
+  "donut-dodo": {
+    "image": "previews/donut-dodo.webp",
+    "width": 600,
+    "height": 338
+  },
+  "looking-up-i-see-only-a-ceiling": {
+    "image": "previews/looking-up-i-see-only-a-ceiling.webp",
+    "width": 600,
+    "height": 338
+  },
+  "dexter-stardust": {
+    "image": "previews/dexter-stardust.webp",
+    "width": 640,
+    "height": 360
+  },
+  "the-last-cat-in-the-universe": {
+    "image": "previews/the-last-cat-in-the-universe.webp",
+    "width": 640,
+    "height": 360
+  },
+  "boardwalk-builders": {
+    "image": "previews/boardwalk-builders.webp",
+    "width": 640,
+    "height": 360
+  },
+  "viral-reload-ex": {
+    "image": "previews/viral-reload-ex.webp",
+    "width": 640,
+    "height": 360
+  },
+  "living-dead-house": {
+    "image": "previews/living-dead-house.webp",
+    "width": 640,
+    "height": 360
+  },
+  "unto-deepest-depths": {
+    "image": "previews/unto-deepest-depths.webp",
+    "width": 640,
+    "height": 360
+  },
+  "silver-bullet": {
+    "image": "previews/silver-bullet.webp",
+    "width": 640,
+    "height": 360
+  },
+  "ion-shift": {
+    "image": "previews/ion-shift.webp",
+    "width": 640,
+    "height": 360
+  },
+  "flora-fang-guardians-of-the-vampire-garden": {
+    "image": "previews/flora-fang-guardians-of-the-vampire-garden.webp",
+    "width": 640,
+    "height": 360
+  },
+  "skies-above": {
+    "image": "previews/skies-above.webp",
+    "width": 640,
+    "height": 360
+  },
+  "freddy-farmer": {
+    "image": "previews/freddy-farmer.webp",
+    "width": 640,
+    "height": 360
+  },
+  "super-spy-raccoon": {
+    "image": "previews/super-spy-raccoon.webp",
+    "width": 640,
+    "height": 359
+  },
+  "cash-cow-dx": {
+    "image": "previews/cash-cow-dx.webp",
+    "width": 640,
+    "height": 360
+  },
+  "satryn-dx": {
+    "image": "previews/satryn-dx.webp",
+    "width": 600,
+    "height": 338
+  },
+  "goliath-depot": {
+    "image": "previews/goliath-depot.webp",
+    "width": 640,
+    "height": 360
+  },
+  "attack-of-the-karens": {
+    "image": "previews/attack-of-the-karens.webp",
+    "width": 600,
+    "height": 338
+  },
+  "murtop": {
+    "image": "previews/murtop.webp",
+    "width": 600,
+    "height": 338
+  },
+  "8-colors-star-guardians": {
+    "image": "previews/8-colors-star-guardians.webp",
+    "width": 600,
+    "height": 338
+  },
+  "colored-effects": {
+    "image": "previews/colored-effects.webp",
+    "width": 600,
+    "height": 338
+  },
+  "sentry-city": {
+    "image": "previews/sentry-city.webp",
+    "width": 600,
+    "height": 338
+  },
+  "galacticon": {
+    "image": "previews/galacticon.webp",
+    "width": 640,
+    "height": 360
+  },
+  "a-winding-path": {
+    "image": "previews/a-winding-path.webp",
+    "width": 600,
+    "height": 338
+  },
+  "lambs-on-the-road": {
+    "image": "previews/lambs-on-the-road.webp",
+    "width": 640,
+    "height": 360
+  },
+  "papertris": {
+    "image": "previews/papertris.webp",
+    "width": 600,
+    "height": 338
+  },
+  "the-legend-of-gwen": {
+    "image": "previews/the-legend-of-gwen.webp",
+    "width": 600,
+    "height": 338
+  },
+  "laraan": {
+    "image": "previews/laraan.webp",
+    "width": 640,
+    "height": 360
+  },
+  "hexagravity": {
+    "image": "previews/hexagravity.webp",
+    "width": 640,
+    "height": 360
+  },
+  "monster-puzzle": {
+    "image": "previews/monster-puzzle.webp",
+    "width": 640,
+    "height": 360
+  }
+}

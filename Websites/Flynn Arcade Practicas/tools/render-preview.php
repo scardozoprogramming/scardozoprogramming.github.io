@@ -25,9 +25,9 @@ function wp_body_open() {}
 function wp_head() {
     $view = flynns_arcade_neon_view();
     $title = 'game' === $view ? flynns_arcade_neon_current_game()['title'] : ('home' === $view ? 'Inicio' : ucfirst($view));
-    echo '<title>' . esc_html($title) . ' | Flynn\'s Arcade</title><link rel="stylesheet" href="style.css?v=2.5.1"><link rel="icon" href="' . esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['favicon'])) . '">';
+    echo '<title>' . esc_html($title) . ' | Flynn\'s Arcade</title><link rel="stylesheet" href="style.css?v=2.8.0"><link rel="icon" href="' . esc_url(flynns_arcade_neon_asset(flynns_arcade_neon_data('structure')['favicon'])) . '">';
 }
-function wp_footer() { echo '<script src="assets/js/theme.js?v=2.5.1"></script>'; }
+function wp_footer() { echo '<script src="assets/js/theme.js?v=2.8.0"></script>'; }
 function get_header() { require FLYNNS_THEME . '/header.php'; }
 function get_footer() { require FLYNNS_THEME . '/footer.php'; }
 require FLYNNS_THEME . '/inc/content.php';
@@ -41,7 +41,11 @@ foreach ($pages as $file => $query) {
     $previewQuery = $query;
     ob_start();
     require FLYNNS_THEME . '/front-page.php';
-    file_put_contents(FLYNNS_THEME . '/' . $file, ob_get_clean());
+    if (false === file_put_contents(FLYNNS_THEME . '/' . $file, ob_get_clean())) {
+        throw new RuntimeException('Could not generate ' . $file);
+    }
 }
-copy(FLYNNS_THEME . '/preview.html', FLYNNS_THEME . '/index.html');
+if (!copy(FLYNNS_THEME . '/preview.html', FLYNNS_THEME . '/index.html')) {
+    throw new RuntimeException('Could not generate index.html');
+}
 echo count($pages) . " static pages generated from the WordPress templates.\n";

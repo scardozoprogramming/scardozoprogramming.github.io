@@ -1,6 +1,6 @@
 # Estructura y entrega
 
-Revision del 16 de octubre de 2026.
+Revision del 21 de octubre de 2026.
 
 | Sitio original | Version independiente |
 | --- | --- |
@@ -10,6 +10,7 @@ Revision del 16 de octubre de 2026.
 | Filtros sobre el catalogo | All games, Narrative, Platform, Arcade, Point & Click, Puzzle y RPG |
 | Galeria de tres columnas con seis juegos iniciales | Tres columnas en ordenador, dos en tableta y una en movil; seis juegos iniciales |
 | Load more | Revela los siguientes seis juegos hasta llegar a los 32 |
+| Fichas propias de cada juego | Las 32 fichas con sus textos completos, capturas, compra, trailers y relacionados en el mismo orden del original; recursos y navegacion locales |
 | Indies con creadores, logos, retratos y biografias | Los mismos 16 nombres y juegos, recursos propios y descripciones resumidas |
 | About con logo centrado, seis fotos, tres columnas de historia y Projects | Mismo orden, las seis fotos locales ampliables y textos completos; Projects utiliza tarjetas segun la ultima imagen del usuario |
 | Press Media y presskits | Las mismas 15 menciones y cuatro kits locales con botones de descarga claramente identificados |
@@ -17,6 +18,10 @@ Revision del 16 de octubre de 2026.
 | Better news y Send prayers | Newsletter y contacto en el mismo orden |
 
 ## Identidad visual
+
+La revision 2.8 incorpora animaciones al pasar el raton por las tarjetas de Inicio y Games. Se utilizan los GIF originales de 31 juegos, guardados y optimizados localmente, sin cambiar el tamano de las tarjetas ni sus enlaces. Eternum Ex conserva su portada fija porque el usuario confirmo que aun no tiene GIF. Se respeta movimiento reducido y la navegacion tactil sigue funcionando con un toque. Ver `tarjetas-animadas.md`.
+
+La revision 2.7 extiende a las 32 fichas la distribucion aprobada en What Comes After: video superior, galeria de cinco capturas, compra, descripcion/caracteristicas y trailer, resenas pertinentes y otros juegos. Conserva los textos completos de cada pagina del editor y el uniforme actual. La plantilla y el componente de video son compartidos, sin una segunda version de escritorio/movil ni el antiguo carrusel superior. Las resenas se presentan como extractos breves con atribucion y enlace. No se trasladan las referencias cruzadas a productos, videos o resenas de otro juego encontradas en algunas fichas originales. Ver `fichas-de-juegos.md`, `videos-y-vista-previa.md` y el informe generado `revision-fichas.md`.
 
 Se conserva el uniforme oscuro, cyan y magenta de la imagen de referencia. El logo mantiene la identidad autentica de Flynn's Arcade. La imagen del nino es el archivo adjunto por el usuario, sin modificaciones.
 

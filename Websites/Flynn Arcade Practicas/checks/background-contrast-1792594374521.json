@@ -1,0 +1,128 @@
+[
+  {
+    "width": 1440,
+    "file": "preview.html",
+    "selector": ".featured-game-description",
+    "ratio": 9.6,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "about.html",
+    "selector": ".about-story p",
+    "ratio": 4.66,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "about.html",
+    "selector": ".about-story h2",
+    "ratio": 5.2,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "indies.html",
+    "selector": ".studio-description p",
+    "ratio": 5.84,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "indies.html",
+    "selector": ".studio-games",
+    "ratio": 5.1,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "press.html",
+    "selector": ".press-copy > p:not(.eyebrow)",
+    "ratio": 9.89,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "press.html",
+    "selector": ".presskit-download",
+    "ratio": 18.47,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "press.html",
+    "selector": ".social-band p",
+    "ratio": 10.05,
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "file": "game-eternum-ex.html",
+    "selector": ".game-description p",
+    "ratio": 10.2,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "preview.html",
+    "selector": ".featured-game-description",
+    "ratio": 9.95,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "about.html",
+    "selector": ".about-story p",
+    "ratio": 6.49,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "about.html",
+    "selector": ".about-story h2",
+    "ratio": 5.17,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "indies.html",
+    "selector": ".studio-description p",
+    "ratio": 6.48,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "indies.html",
+    "selector": ".studio-games",
+    "ratio": 5.21,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "press.html",
+    "selector": ".press-copy > p:not(.eyebrow)",
+    "ratio": 6.48,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "press.html",
+    "selector": ".presskit-download",
+    "ratio": 18.47,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "press.html",
+    "selector": ".social-band p",
+    "ratio": 9.77,
+    "pass": true
+  },
+  {
+    "width": 390,
+    "file": "game-eternum-ex.html",
+    "selector": ".game-description p",
+    "ratio": 10.27,
+    "pass": true
+  }
+]

@@ -9,7 +9,7 @@ Revision inicial el 5 de octubre de 2026. Estructura y recursos revisados de nue
 - Descripcion e historia: https://www.flynnsarcades.com/about-3/
 - Prensa: https://www.flynnsarcades.com/press/
 
-Se consultaron tambien las fichas de What Comes After, Donut Dodo, Looking Up I See Only A Ceiling, Dexter Stardust, Eternum Ex, The Last Cat in the Universe y Viral Reload EX.
+El 20 de octubre de 2026 se consultaron y guardaron las 32 fichas enlazadas por el catalogo original. Sus referencias se conservan en `checks/game-reference/manifest.json` y los HTML de esa misma carpeta. Las capturas y portadas se guardan localmente en `assets/images/game-details/`; `checks/game-reference/asset-manifest.json` conserva su procedencia.
 
 ## Adaptacion
 

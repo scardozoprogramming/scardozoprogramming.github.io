@@ -53,18 +53,80 @@
     viewer.addEventListener('close', () => opener?.focus({ preventScroll: true }));
   }
 
-  document.querySelectorAll('[data-promotions]').forEach((carousel) => {
-    const slides = Array.from(carousel.querySelectorAll('[data-promotion-slide]'));
-    const dots = Array.from(carousel.querySelectorAll('[data-promotion-index]'));
+  document.querySelectorAll('[data-promotions], [data-carousel]').forEach((carousel) => {
+    const slides = Array.from(carousel.querySelectorAll('[data-promotion-slide], [data-carousel-slide]'));
+    const dots = Array.from(carousel.querySelectorAll('[data-promotion-index], [data-carousel-index]'));
+    const count = carousel.querySelector('[data-carousel-count]');
     let current = 0;
     function show(index) {
       current = (index + slides.length) % slides.length;
       slides.forEach((slide, i) => { slide.hidden = i !== current; });
       dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
+      if (count) count.textContent = `${current + 1} / ${slides.length}`;
     }
-    carousel.querySelectorAll('[data-promotion-step]').forEach((button) => button.addEventListener('click', () => show(current + Number(button.dataset.promotionStep))));
+    carousel.querySelectorAll('[data-promotion-step], [data-carousel-step]').forEach((button) => button.addEventListener('click', () => show(current + Number(button.dataset.carouselStep ?? button.dataset.promotionStep))));
     dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+    carousel.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        show(current + (event.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
   });
+
+  document.querySelectorAll('[data-video-id]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      // Local files have no HTTP Referer; keep the working YouTube link in that case.
+      if (!/^https?:$/.test(location.protocol) || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || !/^[\w-]{11}$/.test(link.dataset.videoId)) return;
+      event.preventDefault();
+      const player = new URL(`https://www.youtube-nocookie.com/embed/${link.dataset.videoId}`);
+      player.searchParams.set('autoplay', '1');
+      player.searchParams.set('rel', '0');
+      player.searchParams.set('origin', location.origin);
+      const start = Number(link.dataset.videoStart);
+      if (Number.isInteger(start) && start > 0) player.searchParams.set('start', String(start));
+      const frame = document.createElement('iframe');
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      frame.src = player.href;
+      frame.title = link.dataset.videoTitle;
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      frame.allowFullscreen = true;
+      link.closest('.game-video-frame').replaceChildren(frame);
+      frame.focus();
+    });
+  });
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+  const previewCache = new Map();
+  const gamePreviews = Array.from(document.querySelectorAll('[data-game-preview]')).map((image) => {
+    const link = image.closest('.game-link');
+    const card = image.closest('[data-game-card]');
+    const cover = image.getAttribute('src');
+    const preview = image.dataset.gamePreview;
+    const isActive = () => !document.hidden && !card.hidden && !reducedMotion.matches && ((hoverPointer.matches && link.matches(':hover')) || link.matches(':focus-visible'));
+    function update() {
+      if (!isActive()) {
+        if (image.getAttribute('src') !== cover) image.setAttribute('src', cover);
+        return;
+      }
+      // Decode on demand and keep the cover visible if loading fails or focus moves.
+      if (!previewCache.has(preview)) {
+        const preload = new Image();
+        preload.src = preview;
+        previewCache.set(preview, preload.decode().then(() => true, () => false));
+      }
+      previewCache.get(preview).then((ready) => {
+        if (ready && isActive() && image.getAttribute('src') !== preview) image.setAttribute('src', preview);
+      });
+    }
+    ['pointerenter', 'pointerleave', 'focus', 'blur'].forEach((event) => link.addEventListener(event, update));
+    return update;
+  });
+  const refreshGamePreviews = () => gamePreviews.forEach((update) => update());
+  reducedMotion.addEventListener('change', refreshGamePreviews);
+  hoverPointer.addEventListener('change', refreshGamePreviews);
+  document.addEventListener('visibilitychange', refreshGamePreviews);
 
   const catalog = document.querySelector('[data-catalog]');
   if (catalog) {
@@ -88,6 +150,7 @@
       more.hidden = matches <= limit;
       empty.hidden = matches > 0;
       count.textContent = matches ? `${Math.min(matches, limit)} / ${matches} games` : '';
+      refreshGamePreviews();
     }
     filters.forEach((button) => button.addEventListener('click', () => {
       category = button.dataset.filter;

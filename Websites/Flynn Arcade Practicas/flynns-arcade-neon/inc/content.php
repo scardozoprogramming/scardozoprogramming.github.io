@@ -28,7 +28,7 @@ function flynns_arcade_neon_editorial(): array {
 
 function flynns_arcade_neon_data(string $name): array {
     static $data = array();
-    if (!in_array($name, array('site', 'structure'), true)) return array();
+    if (!in_array($name, array('site', 'structure', 'game-details', 'card-previews'), true)) return array();
     if (!isset($data[$name])) $data[$name] = json_decode(file_get_contents(get_template_directory() . '/inc/' . $name . '.json'), true) ?: array();
     return $data[$name];
 }

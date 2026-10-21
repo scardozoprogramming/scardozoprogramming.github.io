@@ -1,9 +1,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const lucide = require('C:/Users/santi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/lucide');
-const names = ['ArrowRight', 'ArrowLeft', 'ChevronLeft', 'ChevronRight', 'X', 'Menu', 'MapPin', 'Mail', 'Search', 'Gamepad2', 'Plus', 'Download', 'ExternalLink'];
+const names = ['ArrowRight', 'ArrowLeft', 'ChevronLeft', 'ChevronRight', 'X', 'Menu', 'MapPin', 'Mail', 'Search', 'Gamepad2', 'Plus', 'Download', 'ExternalLink', 'Play', 'ShoppingBag', 'Maximize2'];
 const symbols = names.map((name) => {
-  const id = name.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+  const id = name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/([a-z])(\d)/g, '$1-$2').toLowerCase();
   const nodes = lucide[name].map(([tag, attributes]) => {
     const attrs = Object.entries(attributes).map(([key, value]) => `${key}="${value}"`).join(' ');
     return `<${tag} ${attrs}/>`;

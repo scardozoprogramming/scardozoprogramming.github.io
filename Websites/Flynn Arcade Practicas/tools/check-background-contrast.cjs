@@ -21,7 +21,7 @@ let browser;
     ['press.html', '.press-copy > p:not(.eyebrow)'],
     ['press.html', '.presskit-download'],
     ['press.html', '.social-band p'],
-    ['game-eternum-ex.html', '.game-detail-copy > p:not(.eyebrow)'],
+    ['game-eternum-ex.html', '.game-description p'],
   ];
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 900 });

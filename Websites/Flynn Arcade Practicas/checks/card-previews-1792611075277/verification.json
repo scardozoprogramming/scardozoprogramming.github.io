@@ -1,0 +1,496 @@
+{
+  "checks": [
+    {
+      "file": "preview.html",
+      "game": "What Comes After",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Donut Dodo",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Looking Up I See Only A Ceiling",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Dexter Stardust",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Eternum Ex",
+      "hover": false,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "The Last Cat in the Universe",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Boardwalk Builders",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Viral Reload EX",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Living Dead House",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Unto Deepest Depths",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Silver Bullet",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "ION Shift",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Flora & Fang: Guardians of the vampire garden",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Skies Above",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Freddy Farmer",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Super Spy Raccoon",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Cash Cow DX",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Satryn DX",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Goliath Depot",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Attack of the Karens",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Murtop",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "8-Colors Star Guardians +",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Colored Effects",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Sentry City",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Galacticon",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "A Winding Path",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Lambs on the Road",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Papertris",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "The Legend of Gwen",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Laraan",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Hexagravity",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Monster Puzzle",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "What Comes After",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Donut Dodo",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Looking Up I See Only A Ceiling",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Dexter Stardust",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Eternum Ex",
+      "hover": false,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "The Last Cat in the Universe",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Boardwalk Builders",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Viral Reload EX",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Living Dead House",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Unto Deepest Depths",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Silver Bullet",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "ION Shift",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Flora & Fang: Guardians of the vampire garden",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Skies Above",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Freddy Farmer",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Super Spy Raccoon",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Cash Cow DX",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Satryn DX",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Goliath Depot",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Attack of the Karens",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Murtop",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "8-Colors Star Guardians +",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Colored Effects",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Sentry City",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Galacticon",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "A Winding Path",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Lambs on the Road",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Papertris",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "The Legend of Gwen",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Laraan",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Hexagravity",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    },
+    {
+      "file": "games.html",
+      "game": "Monster Puzzle",
+      "hover": true,
+      "staticRestored": true,
+      "stableDimensions": true
+    }
+  ],
+  "motion": [
+    {
+      "file": "preview.html",
+      "game": "What Comes After",
+      "changingPixels": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Donut Dodo",
+      "changingPixels": true
+    },
+    {
+      "file": "preview.html",
+      "game": "Boardwalk Builders",
+      "changingPixels": true
+    },
+    {
+      "file": "games.html",
+      "game": "What Comes After",
+      "changingPixels": true
+    },
+    {
+      "file": "games.html",
+      "game": "Donut Dodo",
+      "changingPixels": true
+    },
+    {
+      "file": "games.html",
+      "game": "Boardwalk Builders",
+      "changingPixels": true
+    }
+  ],
+  "animated": 31,
+  "static": [
+    "eternum-ex"
+  ],
+  "keyboard": true,
+  "reducedMotion": true,
+  "filtersStopAnimation": true,
+  "touchNavigation": true,
+  "failedImageFallback": true,
+  "delayedImageFallback": true,
+  "filePreview": true,
+  "errors": []
+}

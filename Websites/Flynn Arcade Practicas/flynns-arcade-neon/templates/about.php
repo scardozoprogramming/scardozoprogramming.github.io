@@ -22,7 +22,4 @@
         <?php endforeach; ?>
     </div>
 </section>
-<dialog class="image-viewer" data-gallery-dialog aria-label="Studio photo gallery">
-    <div class="image-viewer-toolbar"><p data-gallery-count aria-live="polite"></p><button class="icon-button" type="button" data-gallery-close aria-label="Close photo" title="Close photo"><?php flynns_arcade_neon_icon('x'); ?></button></div>
-    <div class="image-viewer-stage"><button class="icon-button" type="button" data-gallery-step="-1" aria-label="Previous photo" title="Previous photo"><?php flynns_arcade_neon_icon('chevron-left'); ?></button><img data-gallery-image alt=""><button class="icon-button" type="button" data-gallery-step="1" aria-label="Next photo" title="Next photo"><?php flynns_arcade_neon_icon('chevron-right'); ?></button></div>
-</dialog>
+<?php flynns_arcade_neon_gallery_dialog('Studio photo gallery'); ?>
