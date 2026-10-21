@@ -1,0 +1,514 @@
+{
+  "sections": [
+    {
+      "tag": "SECTION",
+      "id": "9de0197",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "WHAT COMES AFTER"
+        },
+        {
+          "tag": "H2",
+          "text": "Never lose yourself"
+        }
+      ],
+      "paragraphs": [],
+      "widgets": [
+        {
+          "id": "2632f9b0",
+          "type": "heading.default",
+          "text": "WHAT COMES AFTER"
+        },
+        {
+          "id": "43675cd",
+          "type": "heading.default",
+          "text": "Never lose yourself"
+        },
+        {
+          "id": "67a2e27f",
+          "type": "social-icons.default",
+          "text": ""
+        },
+        {
+          "id": "4dda44af",
+          "type": "media-carousel.default",
+          "text": "Reproducir"
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://bit.ly/WCA_US"
+        },
+        {
+          "text": "",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_05.jpeg"
+        },
+        {
+          "text": "Reproducir",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_02.jpeg"
+        }
+      ],
+      "images": [],
+      "settings": [
+        {
+          "id": "692dab66",
+          "settings": {
+            "animation": "fadeInUp"
+          }
+        },
+        {
+          "id": "4dda44af",
+          "settings": {
+            "slides_per_view": "1",
+            "slides_to_scroll": "1",
+            "skin": "carousel",
+            "effect": "slide",
+            "show_arrows": "yes",
+            "pagination": "bullets",
+            "speed": 500,
+            "autoplay": "yes",
+            "autoplay_speed": 5000,
+            "loop": "yes",
+            "pause_on_hover": "yes",
+            "pause_on_interaction": "yes",
+            "space_between": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            },
+            "space_between_tablet": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            },
+            "space_between_mobile": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tag": "SECTION",
+      "id": "594d6b1",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "WHAT COMES AFTER"
+        },
+        {
+          "tag": "H2",
+          "text": "Never Lose Yourself"
+        }
+      ],
+      "paragraphs": [],
+      "widgets": [
+        {
+          "id": "26d6927e",
+          "type": "heading.default",
+          "text": "WHAT COMES AFTER"
+        },
+        {
+          "id": "44681cb",
+          "type": "heading.default",
+          "text": "Never Lose Yourself"
+        },
+        {
+          "id": "76416952",
+          "type": "social-icons.default",
+          "text": ""
+        },
+        {
+          "id": "e2bc841",
+          "type": "image.default",
+          "text": ""
+        },
+        {
+          "id": "f708aa9",
+          "type": "video.default",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://bit.ly/WCA_US"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi.png",
+          "alt": "",
+          "srcset": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi.png 800w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi-300x300.png 300w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi-150x150.png 150w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi-768x768.png 768w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi-600x600.png 600w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/Vivi-100x100.png 100w"
+        }
+      ],
+      "settings": [
+        {
+          "id": "5b044a70",
+          "settings": {
+            "animation": "fadeInUp"
+          }
+        },
+        {
+          "id": "f708aa9",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=ZBIj7KCL5LU",
+            "lazy_load": "yes",
+            "video_type": "youtube",
+            "controls": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "SECTION",
+      "id": "d1640f5",
+      "headings": [],
+      "paragraphs": [],
+      "widgets": [
+        {
+          "id": "ebe232a",
+          "type": "gallery.default",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_01.jpeg"
+        },
+        {
+          "text": "",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_02.jpeg"
+        },
+        {
+          "text": "",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_05.jpeg"
+        },
+        {
+          "text": "",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_03.jpeg"
+        },
+        {
+          "text": "",
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/WCA_04.jpeg"
+        }
+      ],
+      "images": [],
+      "settings": [
+        {
+          "id": "ebe232a",
+          "settings": {
+            "gallery_layout": "masonry",
+            "columns": 5,
+            "gap": {
+              "unit": "px",
+              "size": 0,
+              "sizes": []
+            },
+            "image_hover_animation": "move-contained-right",
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "gap_tablet": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            },
+            "gap_mobile": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            },
+            "link_to": "file",
+            "overlay_background": "yes",
+            "content_hover_animation": "fade-in"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "SECTION",
+      "id": "92586f4",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "PURCHASE"
+        },
+        {
+          "tag": "H2",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "paragraphs": [],
+      "widgets": [
+        {
+          "id": "784ac94",
+          "type": "heading.default",
+          "text": "PURCHASE"
+        },
+        {
+          "id": "09a7032",
+          "type": "heading.default",
+          "text": "Nintendo Switch"
+        }
+      ],
+      "links": [
+        {
+          "text": "Nintendo Switch",
+          "href": "https://bit.ly/WCA_US"
+        }
+      ],
+      "images": [],
+      "settings": [
+        {
+          "id": "b74d709",
+          "settings": {
+            "background_background": "classic"
+          }
+        },
+        {
+          "id": "9cdf1c1",
+          "settings": {
+            "background_background": "classic"
+          }
+        },
+        {
+          "id": "1d54b36",
+          "settings": {
+            "background_background": "classic"
+          }
+        },
+        {
+          "id": "1b4f428",
+          "settings": {
+            "background_background": "classic"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "SECTION",
+      "id": "171c3b3",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Interactive Fiction"
+        },
+        {
+          "tag": "H2",
+          "text": "Reflexion Game"
+        },
+        {
+          "tag": "H2",
+          "text": "Narrative"
+        }
+      ],
+      "paragraphs": [
+        "What Comes After is a experience, a heartwarming story, and a love letter to all of you who think you’re a burden for other people.",
+        "Help Vivi finds herself through the journey that takes her to where people go after they died, to what comes after. Ride the train filled with the souls of the people, animals, and plants that are on their way to leave this world, and talk to them to learn about love, regrets, life, and death that haunt us every day until our time has come. All presented in a light-hearted way with a sprinkle of comedy and philosophy.",
+        "Features:",
+        "– A short heartwarming story that will stay in your heart and memory– A personal journey of learning how to love yourself– A tale filled with love and comedy– Colorful art to accompany your journey in the train not bound for the living– An easy to pick-up gameplay"
+      ],
+      "widgets": [
+        {
+          "id": "dc4a5d9",
+          "type": "image.default",
+          "text": ""
+        },
+        {
+          "id": "4f56987",
+          "type": "heading.default",
+          "text": "Interactive Fiction"
+        },
+        {
+          "id": "4519e6c",
+          "type": "heading.default",
+          "text": "Reflexion Game"
+        },
+        {
+          "id": "7be8a16",
+          "type": "heading.default",
+          "text": "Narrative"
+        },
+        {
+          "id": "0bb31c2",
+          "type": "text-editor.default",
+          "text": "What Comes After is a experience, a heartwarming story, and a love letter to all of you who think you’re a burden for other people.Help Vivi finds herself through the journey that takes her to where people go after they "
+        },
+        {
+          "id": "1342055",
+          "type": "text-editor.default",
+          "text": "Features:– A short heartwarming story that will stay in your heart and memory– A personal journey of learning how to love yourself– A tale filled with love and comedy– Colorful art to accompany your journey in the train "
+        },
+        {
+          "id": "e01560f",
+          "type": "video.default",
+          "text": ""
+        },
+        {
+          "id": "4dc585e2",
+          "type": "testimonial-carousel.default",
+          "text": "“When I completed the game, I wanted to run outside of my downtown L.A. apartment to hug strangers, feed every stray cat, water every plant and just embrace the world.” Todd MartensLos Angeles Times \"The last thing I was"
+        }
+      ],
+      "links": [
+        {
+          "text": "Interactive Fiction",
+          "href": "https://bit.ly/WCA_US"
+        },
+        {
+          "text": "Reflexion Game",
+          "href": "https://bit.ly/WCA_US"
+        },
+        {
+          "text": "Narrative",
+          "href": "https://bit.ly/WCA_US"
+        },
+        {
+          "text": "Los Angeles Times",
+          "href": "https://www.latimes.com/entertainment-arts/story/2020-12-16/2020-games-about-death"
+        },
+        {
+          "text": "The Gamer",
+          "href": "https://www.thegamer.com/what-comes-after-review/"
+        },
+        {
+          "text": "Nintendo Link",
+          "href": "https://nintendolink.com/2021/03/18/what-comes-after-switch-review-love-yourself/"
+        },
+        {
+          "text": "Games Paladins",
+          "href": "https://paladins.it/what-comes-after-ama-la-tua-vita-amati-recensione-nintendo-switch/"
+        },
+        {
+          "text": "Vida Extra",
+          "href": "https://www.vidaextra.com/analisis/analisis-what-comes-after-review-trailer-precio-experiencia-juego-para-nintendo-switch"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca.jpg",
+          "alt": "",
+          "srcset": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca.jpg 1600w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca-300x225.jpg 300w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca-1024x768.jpg 1024w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca-768x576.jpg 768w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca-1536x1152.jpg 1536w, https://www.flynnsarcades.com/wp-content/uploads/2021/08/wca-600x450.jpg 600w"
+        }
+      ],
+      "settings": [
+        {
+          "id": "7c9ffea",
+          "settings": {
+            "background_background": "classic"
+          }
+        },
+        {
+          "id": "e01560f",
+          "settings": {
+            "youtube_url": "https://www.youtube.com/watch?v=zk9ebZ-LRFU&t=4s",
+            "video_type": "youtube",
+            "controls": "yes"
+          }
+        },
+        {
+          "id": "4dc585e2",
+          "settings": {
+            "space_between": {
+              "unit": "px",
+              "size": 0,
+              "sizes": []
+            },
+            "slides_per_view": "2",
+            "slides_to_scroll": "1",
+            "pagination": "progressbar",
+            "speed": 1000,
+            "show_arrows": "yes",
+            "space_between_tablet": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            },
+            "space_between_mobile": {
+              "unit": "px",
+              "size": 10,
+              "sizes": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "tag": "SECTION",
+      "id": "331fcd6",
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "OTHER GAMES"
+        },
+        {
+          "tag": "H2",
+          "text": "Eternum Ex"
+        },
+        {
+          "tag": "H2",
+          "text": "Lambs on the road"
+        }
+      ],
+      "paragraphs": [
+        "Hell is yours, the Arcade is ours",
+        "When hope is the last thing to be lost"
+      ],
+      "widgets": [
+        {
+          "id": "6f87622",
+          "type": "heading.default",
+          "text": "OTHER GAMES"
+        },
+        {
+          "id": "1e891fe",
+          "type": "eael-image-accordion.default",
+          "text": "Eternum Ex Hell is yours, the Arcade is ours Lambs on the road When hope is the last thing to be lost #eael-img-accordion-1e891fe .eael-image-accordion-hover:hover { flex: 3 1 0% !important; } #eael-img-accordion-1e891fe"
+        }
+      ],
+      "links": [
+        {
+          "text": "Eternum Ex",
+          "href": "https://www.flynnsarcades.com/eternum-ex/"
+        }
+      ],
+      "images": [],
+      "settings": [
+        {
+          "id": "10a5685",
+          "settings": {
+            "background_background": "classic"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "SECTION",
+      "id": "6e53d81",
+      "headings": [],
+      "paragraphs": [],
+      "widgets": [
+        {
+          "id": "402b58be",
+          "type": "eael-twitter-feed.default",
+          "text": ".eael-twitter-feed-402b58be.eael-twitter-feed-masonry.eael-twitter-feed-col-2 .eael-twitter-feed-item { width: calc(50% - 0px); } .eael-twitter-feed-402b58be.eael-twitter-feed-masonry.eael-twitter-feed-col-3 .eael-twitte"
+        }
+      ],
+      "links": [],
+      "images": [],
+      "settings": [
+        {
+          "id": "402b58be",
+          "settings": {
+            "pagination": "false"
+          }
+        }
+      ]
+    }
+  ]
+}

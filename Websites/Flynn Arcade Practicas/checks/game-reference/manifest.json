@@ -1,0 +1,482 @@
+[
+  {
+    "title": "What Comes After",
+    "source": "https://www.flynnsarcades.com/what-comes-after/",
+    "tagline": "Never lose yourself",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/what-comes-after-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://www.xbox.com/es-ES/games/store/what-comes-after/9P6DQHFMRTSR",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/xbox.svg"
+      },
+      {
+        "url": "https://store.playstation.com/es-es/concept/10014985",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/playstation-logotype.svg"
+      }
+    ],
+    "slug": "what-comes-after",
+    "localTitle": "What Comes After"
+  },
+  {
+    "title": "Donut Dodo",
+    "source": "https://www.flynnsarcades.com/donut-dodo/",
+    "tagline": "Classic arcade game from the 80’s",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/donut-dodo-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "donut-dodo",
+    "localTitle": "Donut Dodo"
+  },
+  {
+    "title": "Looking Up I See Only A Ceiling",
+    "source": "https://www.flynnsarcades.com/looking-up-i-see-only-a-ceiling",
+    "tagline": "A psychological adventure about a stressed girl",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/looking-up-i-see-only-a-ceiling-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "looking-up-i-see-only-a-ceiling",
+    "localTitle": "Looking Up I See Only A Ceiling"
+  },
+  {
+    "title": "Dexter Stardust",
+    "source": "https://www.flynnsarcades.com/dexter/",
+    "tagline": "Adventures in outer space",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/dexter-stardust-adventures-in-outer-space-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://www.xbox.com/es-ES/games/store/dexter-stardust-adventures-in-outer-space/9mthklppvpml",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/xbox.svg"
+      }
+    ],
+    "slug": "dexter-stardust",
+    "localTitle": "Dexter Stardust"
+  },
+  {
+    "title": "Eternum Ex",
+    "source": "https://www.flynnsarcades.com/eternum-ex/",
+    "tagline": "Hell is yours, the arcade is ours",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/eternum-ex-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.playstation.com/es-es/product/EP4681-CUSA13145_00-ETERNUMEX0000000/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/playstation-logotype.svg"
+      },
+      {
+        "url": "https://www.xbox.com/es-es/games/store/eternum-ex/9p17k8j4tfkq",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/xbox.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/597900/Eternum_EX/?curator_clanid=33589201",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "eternum-ex",
+    "localTitle": "Eternum Ex"
+  },
+  {
+    "title": "The Last Cat in the Universe",
+    "source": "https://www.flynnsarcades.com/the-last-cat-in-the-universe/",
+    "tagline": "A short narrative incremental game about finding peace amidst the darkness.",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/the-last-cat-in-the-universe-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "the-last-cat-in-the-universe",
+    "localTitle": "The Last Cat in the Universe"
+  },
+  {
+    "title": "Boardwalk Builders",
+    "source": "https://www.flynnsarcades.com/boardwalk-builders/",
+    "tagline": "Design and expand",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/boardwalk-builders-switch/?srsltid=AU7gw4Wsc26u3-GRox8IJ6N7t85VA70G3WTQ6_5vaSOl64vjKZVFaCgY",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "boardwalk-builders",
+    "localTitle": "Boardwalk Builders"
+  },
+  {
+    "title": "Viral Reload EX",
+    "source": "https://www.flynnsarcades.com/viral-reload-ex/",
+    "tagline": "A classic shoot-em-up experience",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/viral-reload-ex-switch/?srsltid=AfmBOopn3Y-KCUMi_KGJicNK5N4zsd-64xxVZ63qyDgdn-5ZYiwoLZXf",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "viral-reload-ex",
+    "localTitle": "Viral Reload EX"
+  },
+  {
+    "title": "Living Dead House",
+    "source": "https://www.flynnsarcades.com/Living-dead-house",
+    "tagline": "Living Dead House, a classic arcade experience",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/living-dead-house-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "living-dead-house",
+    "localTitle": "Living Dead House"
+  },
+  {
+    "title": "Unto Deepest Depths",
+    "source": "https://www.flynnsarcades.com/unto-deepest-depths",
+    "tagline": "Unto Deepest Depths is a turn-based strategy game",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/unto-deepest-depths-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "unto-deepest-depths",
+    "localTitle": "Unto Deepest Depths"
+  },
+  {
+    "title": "Silver Bullet",
+    "source": "https://www.flynnsarcades.com/silver-bullet",
+    "tagline": "Silver Bullet is a gothic arcade shooter gameTake control of alien creature",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/silver-bullet-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/2818130/Silver_Bullet/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "silver-bullet",
+    "localTitle": "Silver Bullet"
+  },
+  {
+    "title": "ION Shift",
+    "source": "https://www.flynnsarcades.com/ion-shift",
+    "tagline": "Take control of alien creature",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/ion-shift-switch/?srsltid=AfmBOorkr84mkwgrA2Nrj2jmU6Jh_8EmFJPVuGsKdLb9V9qQ7ZpLNYnn",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "ion-shift",
+    "localTitle": "ION Shift"
+  },
+  {
+    "title": "Flora & Fang: Guardians of the vampire garden",
+    "source": "https://www.flynnsarcades.com/flora-fang/",
+    "tagline": "Spray them! Trap them!",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/flora-and-fang-guardians-of-the-vampire-garden-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "flora-fang-guardians-of-the-vampire-garden",
+    "localTitle": "Flora & Fang: Guardians of the vampire garden"
+  },
+  {
+    "title": "Skies Above",
+    "source": "https://www.flynnsarcades.com/skies-above/",
+    "tagline": "Help a Leviathan to reach the space",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/skies-above-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "skies-above",
+    "localTitle": "Skies Above"
+  },
+  {
+    "title": "Freddy Farmer",
+    "source": "https://www.flynnsarcades.com/freddy-farmer/",
+    "tagline": "Freddy Farmer is a retro arcade style game with 16-bit pixel art graphics.",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/freddy-farmer-switch/?srsltid=AfmBOoreHdSxChK6Ydw8ef6G3gsVyZeJw3wKXp6BVu90AExvXSpz57Ps",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/3207370/Freddy_Farmer/?l=spanish",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      },
+      {
+        "url": "https://www.xbox.com/en-us/games/store/freddy-farmer/9N726G6L4PKS",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/xbox.svg"
+      },
+      {
+        "url": "https://store.playstation.com/es-es/product/EP6718-PPSA29482_00-0077142230530028",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/playstation-logotype.svg"
+      }
+    ],
+    "slug": "freddy-farmer",
+    "localTitle": "Freddy Farmer"
+  },
+  {
+    "title": "Super Spy Raccoon",
+    "source": "https://www.flynnsarcades.com/super-spy-raccoon/",
+    "tagline": "A retro arcade throwback where you hide, sneak, climb!",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/super-spy-raccoon-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "super-spy-raccoon",
+    "localTitle": "Super Spy Raccoon"
+  },
+  {
+    "title": "Cash Cow DX",
+    "source": "https://www.flynnsarcades.com/cash-cow-dx/",
+    "tagline": "Holy cow, it’s all about the moooney!",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/cash-cow-dx-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "cash-cow-dx",
+    "localTitle": "Cash Cow DX"
+  },
+  {
+    "title": "Satryn DX",
+    "source": "https://www.flynnsarcades.com/satryn-dx/",
+    "tagline": "A chaotic, infinite twin stick shooty✨",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/satryn-dx-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "satryn-dx",
+    "localTitle": "Satryn DX"
+  },
+  {
+    "title": "Goliath Depot",
+    "source": "https://www.flynnsarcades.com/goliath-depot/",
+    "tagline": "A door-slamming 2D arcade game taken straight from the early 80’s",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/goliath-depot-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "goliath-depot",
+    "localTitle": "Goliath Depot"
+  },
+  {
+    "title": "Attack of the Karens",
+    "source": "https://www.flynnsarcades.com/attack-of-the-karens/",
+    "tagline": "A roguelite bullet hell shoot ‘em up that focuses on difficult multi-phased boss fights",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/attack-of-the-karens-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "attack-of-the-karens",
+    "localTitle": "Attack of the Karens"
+  },
+  {
+    "title": "Murtop",
+    "source": "https://www.flynnsarcades.com/murtop/",
+    "tagline": "Bomberman meets Digdug",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/murtop-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/2148170/Murtop/?curator_clanid=33589201",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "murtop",
+    "localTitle": "Murtop"
+  },
+  {
+    "title": "8-Colors Star Guardians +",
+    "source": "https://www.flynnsarcades.com/8-colors-star-guardians/",
+    "tagline": "Alien monsters have invaded Earth!",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/8-colors-star-guardians-plus-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "8-colors-star-guardians",
+    "localTitle": "8-Colors Star Guardians +"
+  },
+  {
+    "title": "Colored Effects",
+    "source": "https://www.flynnsarcades.com/colored-effects",
+    "tagline": "A puzzle platformer game",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/colored-effects-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "colored-effects",
+    "localTitle": "Colored Effects"
+  },
+  {
+    "title": "Sentry City",
+    "source": "https://www.flynnsarcades.com/sentrycity",
+    "tagline": "Cyberpunk-style side-scroller",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/sentry-city-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "sentry-city",
+    "localTitle": "Sentry City"
+  },
+  {
+    "title": "Galacticon",
+    "source": "https://www.flynnsarcades.com/galacticon/",
+    "tagline": "Half God, half machine",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/galacticon-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/1737980/Galacticon/?curator_clanid=33589201",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "galacticon",
+    "localTitle": "Galacticon"
+  },
+  {
+    "title": "A winding path",
+    "source": "https://www.flynnsarcades.com/a-winding-path/",
+    "tagline": "Hand-drawn adventure",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/a-winding-path-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "a-winding-path",
+    "localTitle": "A Winding Path"
+  },
+  {
+    "title": "Lambs on the road",
+    "source": "https://www.flynnsarcades.com/lambs-on-the-road/",
+    "tagline": "When hope is the last thing to be lost",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/lambs-on-the-road-the-beginning-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/866270/Lambs_on_the_road__The_beginning/?curator_clanid=33589201",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "lambs-on-the-road",
+    "localTitle": "Lambs on the Road"
+  },
+  {
+    "title": "Papertris",
+    "source": "https://www.flynnsarcades.com/papertris",
+    "tagline": "Tribute to Tetris",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/papertris-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "papertris",
+    "localTitle": "Papertris"
+  },
+  {
+    "title": "The Legend of Gwen",
+    "source": "https://www.flynnsarcades.com/the-legend-of-gwen/",
+    "tagline": "Defeat time and The Evil​",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/the-legend-of-gwen-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/2179460/The_Legend_of_Gwen/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "the-legend-of-gwen",
+    "localTitle": "The Legend of Gwen"
+  },
+  {
+    "title": "Laraan",
+    "source": "https://www.flynnsarcades.com/laRAAN/",
+    "tagline": "Enter an old space of computer entertainment",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/laraan-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/493710/Laraan/?curator_clanid=33589201",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "laraan",
+    "localTitle": "Laraan"
+  },
+  {
+    "title": "Hexagravity",
+    "source": "https://www.flynnsarcades.com/hexagravity/",
+    "tagline": "No gravity, no pain.",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/hexagravity-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      }
+    ],
+    "slug": "hexagravity",
+    "localTitle": "Hexagravity"
+  },
+  {
+    "title": "Monster Puzzle",
+    "source": "https://www.flynnsarcades.com/monster-puzzle/",
+    "tagline": "Avoid your enemies",
+    "stores": [
+      {
+        "url": "https://www.nintendo.com/us/store/products/monster-puzzle-switch/",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg"
+      },
+      {
+        "url": "https://store.steampowered.com/app/493700/Monster_Puzzle/?curator_clanid=33589201",
+        "icon": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/steam.svg"
+      }
+    ],
+    "slug": "monster-puzzle",
+    "localTitle": "Monster Puzzle"
+  }
+]

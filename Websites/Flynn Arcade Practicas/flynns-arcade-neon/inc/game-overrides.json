@@ -1,0 +1,15 @@
+{
+  "what-comes-after": {
+    "hero_video": { "id": "ZBIj7KCL5LU", "url": "https://www.youtube.com/watch?v=ZBIj7KCL5LU" },
+    "trailers": [{ "id": "zk9ebZ-LRFU", "url": "https://www.youtube.com/watch?v=zk9ebZ-LRFU&t=4s", "start": 4 }]
+  },
+  "donut-dodo": {
+    "extra_stores": [{ "label": "Steam", "platform": "PC", "url": "https://store.steampowered.com/app/1779560/Donut_Dodo/" }]
+  },
+  "colored-effects": {
+    "extra_stores": [{ "label": "Steam", "platform": "PC", "url": "https://store.steampowered.com/app/1892570/Colored_Effects/" }]
+  },
+  "papertris": {
+    "excluded_video_ids": ["OkY-OcmmmU8"]
+  }
+}
