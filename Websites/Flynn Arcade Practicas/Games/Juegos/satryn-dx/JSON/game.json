@@ -1,0 +1,124 @@
+{
+  "title": "Satryn DX",
+  "summary": "A chaotic twin-stick shooting game that keeps going.",
+  "image": "Games/Juegos/satryn-dx/Images/cover.jpg",
+  "tags": [
+    "Arcade",
+    "RPG"
+  ],
+  "categories": [
+    "arcade",
+    "rpg"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "satryn-dx",
+  "tagline": "A chaotic, infinite twin stick shooty✨",
+  "hero_video": {
+    "id": "xiqeekKgv0o",
+    "url": "https://www.youtube.com/watch?v=xiqeekKgv0o"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/satryn-dx/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Satryn DX gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/satryn-dx/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Satryn DX gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/satryn-dx/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Satryn DX gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/satryn-dx/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Satryn DX gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/satryn-dx/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Satryn DX gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/satryn-dx/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Satryn DX cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/satryn-dx-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Satryn Deluxe is a twin-stick shooter game featuring infinite levels of chaotic, physics-based baddie blasting"
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "paragraph",
+      "text": "Satryn deluxe is a little twin stick shooty featuring infinite levels of chaotic, physics-based baddie blasting. save your friends to increase the score multiplier. the bigger the score, the more power-ups will spawn. i hope your brain enjoys this reward loop."
+    },
+    {
+      "type": "paragraph",
+      "text": "12 fearsome baddies (not cuddly) 9 power-ups that will make you smile and say «i’m having fun» 5 hazards that add to the chaotic nature of this strange place 60 shiny achievements to collect Steam® friends and global leaderboards a manual that reveals helpful hints and useless lore as you discover things the love of your friends makes you stronger"
+    },
+    {
+      "type": "paragraph",
+      "text": "Worldwide leaderboard"
+    }
+  ],
+  "trailers": [
+    {
+      "id": "xiqeekKgv0o",
+      "url": "https://www.youtube.com/watch?v=xiqeekKgv0o"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "\"I had a blast with the arcade fun in Satryn DX and will surely boot it up whenever I want to try and beat.\"",
+      "author": "Video Chums",
+      "outlet": "Meta Critic",
+      "url": "https://videochums.com/article/old-school-console-games-part-4#satryn-dx"
+    },
+    {
+      "quote": "\"Satryn DX should appeal to fans of Robotron 2084 and games like it with its no-nonsense action.\"",
+      "author": "TouchArcade",
+      "outlet": "Metacritic",
+      "url": ""
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/satryn-dx/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

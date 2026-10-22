@@ -1,0 +1,105 @@
+{
+  "title": "Hexagravity",
+  "summary": "A platform game built around the absence of gravity.",
+  "image": "Games/Juegos/hexagravity/Images/cover.jpg",
+  "tags": [
+    "Platform"
+  ],
+  "categories": [
+    "platform"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "hexagravity",
+  "tagline": "No gravity, no pain",
+  "hero_video": {
+    "id": "WU7H6Ps84EQ",
+    "url": "https://www.youtube.com/watch?v=WU7H6Ps84EQ"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/hexagravity/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Hexagravity gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/hexagravity/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Hexagravity gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/hexagravity/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Hexagravity gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/hexagravity/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Hexagravity gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/hexagravity/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Hexagravity gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/hexagravity/Images/poster.webp",
+    "width": 1000,
+    "height": 1000,
+    "alt": "Hexagravity cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/hexagravity-switch/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Puzzle"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Hexagon tower world of geometry platformer game. Every new world is a new game! Make your way between dangers jumping in this amazing platformer and rhythmic action game! Be prepare for a near impossible challenge in this hexagon tower world of geometry. Test your skills as you battle your way jumping through dangerous passages and spiky obstacles. Every new world is a new game!!!"
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Platformer and rhythmic action game!",
+        "Unblock new levels with a totally different gameplay mechanic!",
+        "Test yourself for an almost impossible challenge!",
+        "Be the BEST OF THE WORLD!"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "WU7H6Ps84EQ",
+      "url": "https://www.youtube.com/watch?v=WU7H6Ps84EQ"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road"
+  ],
+  "preview": {
+    "image": "Games/Juegos/hexagravity/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

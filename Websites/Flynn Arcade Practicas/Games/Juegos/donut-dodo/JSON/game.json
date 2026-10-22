@@ -1,0 +1,136 @@
+{
+  "title": "Donut Dodo",
+  "summary": "Play as baker Billy Burns and run, jump and climb to collect every donut. Five single-screen levels and a bonus stage bring the challenge of early arcade classics to a new game.",
+  "image": "Games/Juegos/donut-dodo/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "donut-dodo",
+  "tagline": "Classic arcade game from the 80's",
+  "hero_video": {
+    "id": "HRj6asc5Gpo",
+    "url": "https://www.youtube.com/watch?v=HRj6asc5Gpo"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/donut-dodo/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Donut Dodo gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/donut-dodo/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Donut Dodo gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/donut-dodo/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Donut Dodo gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/donut-dodo/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Donut Dodo gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/donut-dodo/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Donut Dodo gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/donut-dodo/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Donut Dodo cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/donut-dodo-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/1779560/Donut_Dodo/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Tough as nails and no «continues», do you have what it takes?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Donut Dodo is a lighthearted arcade game, reminiscent of the beloved early 80’s classics that we still cherish today. You play as baker Billy Burns, who has to run, jump and climb to outwit Donut Dodo and his clueless minions. Your goal is to collect all the donuts in each level in the best possible time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Will you manage to beat the high score today? Come and join the fun!"
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "5 single-screen levels plus a bonus stage, each with its own gameplay mechanics",
+        "incredibly tight controls (no cheap deaths) for frantic single player arcade gameplay",
+        "an old-school screen ratio and pixel-perfect graphics with a 16-color palette",
+        "an original chiptune soundtrack by the talented CosmicGem",
+        "worldwide leaderboards, limited to 3 initial characters, arcade style!"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "HRj6asc5Gpo",
+      "url": "https://www.youtube.com/watch?v=HRj6asc5Gpo"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Fans of classic arcade games should love Donut Dodo, mainly because it gives them something new. It’s not a port; it’s a new game...",
+      "author": "Pure Nintendo",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-donut-dodo-nintendo-switch/"
+    },
+    {
+      "quote": "Like a donut, Donut Dodo is a small, sweet confection that you’ll likely chew through in a few bites. But the delicious taste will...",
+      "author": "Touch Arcade",
+      "outlet": "Metacritic",
+      "url": "https://toucharcade.com/2022/12/02/the-knight-witch-switch-review-eshop-railbound-cyber-monday-deals/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/donut-dodo/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

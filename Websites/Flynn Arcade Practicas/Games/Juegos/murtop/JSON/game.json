@@ -1,0 +1,141 @@
+{
+  "title": "Murtop",
+  "summary": "An arcade game bringing together ideas from Bomberman and Dig Dug.",
+  "image": "Games/Juegos/murtop/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "murtop",
+  "tagline": "Do you have enough coins to beat it?",
+  "hero_video": {
+    "id": "Z3mEErlelKM",
+    "url": "https://www.youtube.com/watch?v=Z3mEErlelKM"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/murtop/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Murtop gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/murtop/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Murtop gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/murtop/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Murtop gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/murtop/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Murtop gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/murtop/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Murtop gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/murtop/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Murtop cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/murtop-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/2148170/Murtop/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Murtop is fast-paced arcade game packed with action, as if it was taken out directly from the 80’s, where Dig Dug meets Bomberman."
+    },
+    {
+      "type": "paragraph",
+      "text": "Help Murti save the world from an invasion of carrot-hungry moles with her bomb-pooping skills!"
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "256 single-screen time-limited stages… and a kill screen! Let’s see if you can get to it.",
+        "5 fast-paced chiptune tracks.",
+        "Local high scores leaderboard.",
+        "Optimized to be used in arcade cabinet machines.",
+        "Lots and lots of explosions!"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Technical details:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Vertical screen with beautiful bezels to fill the void.",
+        "16 color palette.",
+        "Pixel perfect scaling.",
+        "CRT filter.",
+        "Attract mode (just like in the old arcade machines).",
+        "TATE mode (rotate the screen to play the game as it was meant to)."
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "Z3mEErlelKM",
+      "url": "https://www.youtube.com/watch?v=Z3mEErlelKM"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "\"Honestly, it is very well designed as an arcade game and it could have been a success in the time of the arcades. In...",
+      "author": "TheLinkgirl",
+      "outlet": "Metacritic",
+      "url": "https://www.metacritic.com/user/TheLinkgirl"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/murtop/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

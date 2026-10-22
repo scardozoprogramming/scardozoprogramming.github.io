@@ -1,0 +1,111 @@
+{
+  "title": "Monster Puzzle",
+  "summary": "Avoid enemies while tackling puzzle challenges.",
+  "image": "Games/Juegos/monster-puzzle/Images/cover.jpeg",
+  "tags": [
+    "Puzzle"
+  ],
+  "categories": [
+    "puzzle"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "monster-puzzle",
+  "tagline": "Avoid your enemies",
+  "hero_video": {
+    "id": "_zNmudmZw8Y",
+    "url": "https://www.youtube.com/watch?v=_zNmudmZw8Y"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/monster-puzzle/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Monster Puzzle gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/monster-puzzle/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Monster Puzzle gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/monster-puzzle/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Monster Puzzle gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/monster-puzzle/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Monster Puzzle gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/monster-puzzle/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Monster Puzzle gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/monster-puzzle/Images/poster.webp",
+    "width": 1000,
+    "height": 1000,
+    "alt": "Monster Puzzle cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/monster-puzzle-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/493700/Monster_Puzzle/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Puzzle"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Far away, lost in another dimension, there‘s a world where human dreams come to life. A land built upon sweet dreams where Trekkie and her friends live, safe from the bitter monsters inhabiting the dark world of nightmares. But even all the fear and anguish in the land of the human aren’t enough for the nightmare monsters, who are stealing the dreams of Trekkie‘s world, keeping them hidden while dreams are corrupted and transformed into nightmares. Help Trekkie ﬁnd their dreams before it‘s too late!"
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "50+ levels",
+        "Charming world with a cartoon, minimalistic style",
+        "Retro-inspired 8-bit sound effects and music",
+        "Aoid your enemies"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "_zNmudmZw8Y",
+      "url": "https://www.youtube.com/watch?v=_zNmudmZw8Y"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road"
+  ],
+  "preview": {
+    "image": "Games/Juegos/monster-puzzle/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

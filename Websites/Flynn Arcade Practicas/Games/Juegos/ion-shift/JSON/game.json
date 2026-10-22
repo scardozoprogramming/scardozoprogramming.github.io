@@ -1,0 +1,116 @@
+{
+  "title": "ION Shift",
+  "summary": "Take control of an alien in a platform adventure.",
+  "image": "Games/Juegos/ion-shift/Images/cover.png",
+  "tags": [
+    "Platform",
+    "Adventure"
+  ],
+  "categories": [
+    "platform",
+    "adventure"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "ion-shift",
+  "tagline": "In this hardcore 2D platformer game, players take control of alien creature",
+  "hero_video": {
+    "id": "HTDR4M8_0Is",
+    "url": "https://www.youtube.com/watch?v=HTDR4M8_0Is"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/ion-shift/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "ION Shift gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/ion-shift/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "ION Shift gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/ion-shift/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "ION Shift gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/ion-shift/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "ION Shift gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/ion-shift/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "ION Shift gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/ion-shift/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "ION Shift cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/ion-shift-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "ION Shift delivers fast, high-stakes gameplay with precision controls and a unique sandbox-style approach to combat arenas. The campaign progressively challenges the player through evolving level design, tight mechanics, and a focus on player-driven mastery."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this hardcore 2D platformer game, players take control of alien creature navigating a vast and menacing space ship. The objective is simple: survive against all odds. The ship is crawling with hostile soldiers, deadly turrets, and laser drones that are constantly on the lookout."
+    },
+    {
+      "type": "paragraph",
+      "text": "Experience an adrenaline-fueled combat system like never before, featuring dynamic dashes, strategic throwables, and sandbox-style arenas. Dash through the battlefield with precision, unleash an array of creative throwables, and navigate a dynamic environment for tactical advantages. This is combat reimagined, where every move is a strategic choice in an ever-evolving arena."
+    }
+  ],
+  "trailers": [
+    {
+      "id": "HTDR4M8_0Is",
+      "url": "https://www.youtube.com/watch?v=HTDR4M8_0Is"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Electro Soul Games have created a fun and experimental title with Ion Shift for a low price.",
+      "author": "LV1 Gaming",
+      "outlet": "Lv1 Gaming",
+      "url": "https://lv1gaming.com/ion-shift-review-be-the-perfect-organism/"
+    },
+    {
+      "quote": "ION Shift from Flynn’s Arcade and Electro Soul Games is a fast-paced, Rated M for Mature hardcore 2D action platformer.",
+      "author": "Ps4blog",
+      "outlet": "Ps4blog",
+      "url": "https://www.ps4blog.net/2025/08/nintendo-switch-ion-shift-review/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/ion-shift/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "title": "Laraan",
+  "summary": "Explore a world inspired by earlier computer entertainment.",
+  "image": "Games/Juegos/laraan/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Narrative"
+  ],
+  "categories": [
+    "platform",
+    "narrative"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "laraan",
+  "tagline": "Enter an old space of computer entertainment",
+  "hero_video": {
+    "id": "sQLlXC56KT4",
+    "url": "https://www.youtube.com/watch?v=sQLlXC56KT4"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/laraan/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Laraan gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/laraan/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Laraan gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/laraan/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Laraan gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/laraan/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Laraan gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/laraan/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Laraan gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/laraan/Images/poster.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Laraan cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/laraan-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/493710/Laraan/"
+    }
+  ],
+  "genres": [
+    "Interactive Fiction",
+    "Reflexion Game",
+    "Platform"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Laraan is a Science-Fiction game about exploration in a desolate world. Created with a minimalist low poly style. Accompanied by a splendid movie soundtrack. You’re about to enter an old world of computer entertainment. Laraan bridges the gap between Cinema and Action/Adventure games with a completely old style of fluid, cinematic storytelling. Laraan is experienced best when using a controller, a Windows or Xbox game pad is ideal. Using a completely old graphic system of cinematic zooms, pans, close-ups, and cuts, Laraan gets you involved in a breathtaking story of inter-dimensional travel. You’ll duck as lasers saber, boulder crash, and monsters roar. The complete musical score and realistic, digitized sound effects will make you feel like you’re on a movie sound stage."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Great music and visuals",
+        "An interactive journey of a world to explore",
+        "Abstract and simple design",
+        "Level & obstacle variety"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "sQLlXC56KT4",
+      "url": "https://www.youtube.com/watch?v=sQLlXC56KT4"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road"
+  ],
+  "preview": {
+    "image": "Games/Juegos/laraan/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

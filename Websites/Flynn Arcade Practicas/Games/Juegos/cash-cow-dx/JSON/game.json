@@ -1,0 +1,131 @@
+{
+  "title": "Cash Cow DX",
+  "summary": "An arcade game with a playful focus on collecting money.",
+  "image": "Games/Juegos/cash-cow-dx/Images/cover.jpg",
+  "tags": [
+    "Arcade"
+  ],
+  "categories": [
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "cash-cow-dx",
+  "tagline": "Holy cow, it’s all about the moooney!",
+  "hero_video": {
+    "id": "9rvS3cC_qO8",
+    "url": "https://www.youtube.com/watch?v=9rvS3cC_qO8"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/cash-cow-dx/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Cash Cow DX gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/cash-cow-dx/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Cash Cow DX gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/cash-cow-dx/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Cash Cow DX gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/cash-cow-dx/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Cash Cow DX gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/cash-cow-dx/Images/screenshot-5.webp",
+      "width": 640,
+      "height": 360,
+      "alt": "Cash Cow DX gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/cash-cow-dx/Images/poster.webp",
+    "width": 1000,
+    "height": 1000,
+    "alt": "Cash Cow DX cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/cash-cow-dx-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Cash Cow DX is a fast and furious blast from the past with an 80’s inspired arcade experience, released 40 years late…"
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "paragraph",
+      "text": "Holy cow, it’s all about the moooney! Embark on an udderly moo-velous adventure where you run, jump and slide to rescue Cash Cow’s riches from the grasp of those sneaky Pig Pockets and reclaim what’s rightfully hers! Make no mistake – this game is tough as nails! Are you up for the challenge? Cash Cow DX features…"
+    },
+    {
+      "type": "list",
+      "items": [
+        "5 multi-screen levels, bonus stages and many secrets",
+        "player speed selection: normal or turbo (unlockable)",
+        "arcade, speedrun and marathon modes",
+        "local scoreboards, limited to 3-character initials, arcade style",
+        "delightful chiptunes by Vincent Verger aka Tuï",
+        "Tough as nails and no continues but you can play until the cows come home!"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Worldwide leaderboard"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "9rvS3cC_qO8",
+      "url": "https://www.youtube.com/watch?v=9rvS3cC_qO8"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "\"Cash Cow DX revisits the arcade era, when success required quick reflexes, a whole lot of practice\".",
+      "author": "Tech-Gaming",
+      "outlet": "Metacritic",
+      "url": "https://www.tech-gaming.com/cash-cow-dx/"
+    },
+    {
+      "quote": "\"Cash Cow DX certainly looks and sounds like it would’ve fit right in with your favorite ’80s arcade\"",
+      "author": "Pure Nintendo",
+      "outlet": "Metacritic",
+      "url": "https://purenintendo.com/review-cash-cow-dx-nintendo-switch/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/cash-cow-dx/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "title": "Silver Bullet",
+  "summary": "Gothic atmosphere meets arcade shooting.",
+  "image": "Games/Juegos/silver-bullet/Images/cover.png",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "silver-bullet",
+  "tagline": "Silver Bullet is a gothic arcade shooter game",
+  "hero_video": {
+    "id": "2O_JJrUIJpg",
+    "url": "https://www.youtube.com/watch?v=2O_JJrUIJpg"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/silver-bullet/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Silver Bullet gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/silver-bullet/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Silver Bullet gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/silver-bullet/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Silver Bullet gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/silver-bullet/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Silver Bullet gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/silver-bullet/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Silver Bullet gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/silver-bullet/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Silver Bullet cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/silver-bullet-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/2818130/Silver_Bullet/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Silver Bullet is a gothic arcade shooter: blast your way through creepy environments and macabre mini-games as Van Helsing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reggie the vampire is kidnapping puppies and he must be stopped! As Van Helsing, embark on a journey around the world to rescue the puppies: from haunted mansions and museums to macabre cemeteries, each level is filled with unique challenges to overcome and secrets to uncover. Man’s Best Friend: Van Helsing’s trusty bloodhound, Silver, can be summoned during levels to attack enemies and even drive vehicles! Any enemies hit by Silver will drop delicious bonus items that will boost your score, so make the most of your canine friend’s help. Unlock and Upgrade: Collect gold coins hidden throughout the levels to purchase power-ups that will aid you on your mission. Collect enough coins to unlock the additional puzzle game mode, Blocks of Terror! Collected bonus items, completed challenges, and discovered secret items count toward your progress and allow you to unlock additional weapons, from a zombie-smashing shotgun to the devastating rocket launcher. Top Dog: Both Arcade Mode and Terror Blocks feature online leaderboards, allowing you to track your progress and compete for the best score. And for those who prefer to show off their skills live, the game’s low memory footprint ensures smooth streaming. Control and Conquer: With gameplay based on Cabal shooters like Wild Guns Reloaded, Silver Bullet offers extensive control and customization options. Play with modern aim with twin sticks or with a classic single stick using a gamepad, go retro with an arcade stick, or focus on precision with a keyboard and mouse. Old-Fashioned Awesome: With personality-filled pixel art, customizable retro screen filters, and chilling synth-pop beats from the legendary YM2612 chip, Silver Bullet looks and sounds like a lost 16-bit classic."
+    }
+  ],
+  "trailers": [
+    {
+      "id": "2O_JJrUIJpg",
+      "url": "https://www.youtube.com/watch?v=2O_JJrUIJpg"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Silver Bullet is a thrilling throwback that blends tight, old-school gallery shooting with modern smoothness and melee parries. It’s pure arcade joy that’s simple,...",
+      "author": "Tech-Gaming",
+      "outlet": "Tech-Gaming",
+      "url": "https://www.tech-gaming.com/silver-bullet/"
+    },
+    {
+      "quote": "Silver Bullet’s aesthetic is dark, cartoony, and full of Halloween charm. But beneath its playful premise of a pint-sized Van Helsing rescuing puppies from...",
+      "author": "Nintendo Life",
+      "outlet": "Nintendo Life",
+      "url": "https://www.nintendolife.com/reviews/switch-eshop/silver-bullet"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/silver-bullet/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "title": "Attack of the Karens",
+  "summary": "A roguelite shooter built around demanding boss battles with multiple phases.",
+  "image": "Games/Juegos/attack-of-the-karens/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "attack-of-the-karens",
+  "tagline": "A roguelite bullet hell shoot 'em up that focuses on difficult multi-phased boss fights",
+  "hero_video": {
+    "id": "PXM3mY0TH10",
+    "url": "https://www.youtube.com/watch?v=PXM3mY0TH10"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/attack-of-the-karens/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Attack of the Karens gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/attack-of-the-karens/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Attack of the Karens gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/attack-of-the-karens/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Attack of the Karens gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/attack-of-the-karens/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Attack of the Karens gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/attack-of-the-karens/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Attack of the Karens gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/attack-of-the-karens/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Attack of the Karens cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/attack-of-the-karens-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A roguelite bullet hell shoot ‘em up that focuses on difficult multi-phased boss fights"
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "paragraph",
+      "text": "Defend your city to your last breath in this zany, rambunctious roguelite shoot ‘em up. An evil alien pathogen has mutated four spoiled women and turned them into cyborgs with massive robot armies. It’s up to you to cancel them forever!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Defeat the four Karens in challenging boss battles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fight hordes of evil Karen minions, from expired coupon launchers to angry coffee cups across six different environments."
+    },
+    {
+      "type": "paragraph",
+      "text": "Grow more powerful every run by spending your hard earned modules on stat and weapon upgrades."
+    },
+    {
+      "type": "heading",
+      "text": "FEATURES"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Over 40 in-game upgrades for tons of different build options"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Over 20 meta progression upgrades to get stronger every run"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "4 epic Karen bosses to destroy"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "6 different areas to defend"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Fully voiced dialogue for your wing mate Amanda and the four Karens"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "8-bit retro-inspired soundtrack hearkens to the glory days of console gaming"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Beautiful pixel art crafted frame-by-frame"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "PXM3mY0TH10",
+      "url": "https://www.youtube.com/watch?v=PXM3mY0TH10"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/attack-of-the-karens/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

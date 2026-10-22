@@ -1,0 +1,46 @@
+/* Flynn's Arcade: home styles. */
+.hero { border-bottom: 1px solid var(--line); background: var(--bg); }
+
+.hero-image { width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: contain; }
+
+.featured-game { border-bottom: 1px solid var(--line); background: rgba(3, 8, 17, 0.8); }
+
+.featured-game-inner { display: grid; grid-template-columns: minmax(0px, 1fr) minmax(0px, 0.85fr); align-items: center; gap: 50px; padding-block: 32px; }
+
+.featured-game-copy { min-width: 0px; }
+
+.featured-game-copy .eyebrow { margin-bottom: 12px; }
+
+.featured-game h1 { font: 400 22px/1.6 var(--pixel); text-transform: uppercase; }
+
+.featured-game h1 span { display: block; color: var(--cyan); }
+
+.featured-game h1 span + span { color: var(--pink); }
+
+.featured-game-description { max-width: 380px; color: var(--muted); margin-top: 16px; font-size: 15px; line-height: 1.55; }
+
+.featured-game-platform { display: flex; align-items: center; gap: 12px; margin-top: 15px; font-size: 12px; color: var(--muted); }
+
+.featured-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
+
+.featured-game-image { width: 100%; max-height: 250px; aspect-ratio: 16 / 9; object-fit: contain; }
+
+@media (max-width: 1150px) {
+.featured-game-inner { gap: 32px; }
+.featured-game h1 { font-size: 20px; }
+}
+
+@media (max-width: 767px) {
+.featured-game-inner { grid-template-columns: 1fr; gap: 24px; }
+.featured-game-image { max-height: 200px; }
+}
+
+@media (max-width: 600px) {
+.featured-game-inner { padding-block: 25px; }
+.featured-game h1 { font-size: 18px; }
+.featured-game-description { font-size: 14px; }
+}
+
+@media (max-width: 360px) {
+.featured-game h1 { font-size: 16px; }
+}

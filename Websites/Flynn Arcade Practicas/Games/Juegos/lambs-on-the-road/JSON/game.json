@@ -1,0 +1,142 @@
+{
+  "title": "Lambs on the Road",
+  "summary": "A platform adventure centered on holding onto hope.",
+  "image": "Games/Juegos/lambs-on-the-road/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Adventure"
+  ],
+  "categories": [
+    "platform",
+    "adventure"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "lambs-on-the-road",
+  "tagline": "When hope is the last thing to be lost",
+  "hero_video": {
+    "id": "lUwQEoTGRho",
+    "url": "https://www.youtube.com/watch?v=lUwQEoTGRho"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/lambs-on-the-road/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 715,
+      "alt": "Lambs on the Road gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/lambs-on-the-road/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 715,
+      "alt": "Lambs on the Road gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/lambs-on-the-road/Images/screenshot-3.webp",
+      "width": 690,
+      "height": 388,
+      "alt": "Lambs on the Road gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/lambs-on-the-road/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 715,
+      "alt": "Lambs on the Road gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/lambs-on-the-road/Images/screenshot-5.webp",
+      "width": 690,
+      "height": 388,
+      "alt": "Lambs on the Road gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/lambs-on-the-road/Images/poster.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Lambs on the Road cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/lambs-on-the-road-the-beginning-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/866270/Lambs_on_the_road__The_beginning/"
+    }
+  ],
+  "genres": [
+    "Apocalyptic Fiction",
+    "Platform",
+    "Narrative"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Society as we know it has ceased to exist. Help John find his little Mary, in a path full of obstacles, monsters and suffering that separate you from your only purpose: to save your child."
+    },
+    {
+      "type": "paragraph",
+      "text": "Live an indie adventure full of horror and despair, a 2D side-scrolling platformer, with puzzles that will awaken your ingenuity to make our protagonist escape without a scratch from the city."
+    },
+    {
+      "type": "paragraph",
+      "text": "Try to escape from human despair: hide, run, fight, kill, but always remember… never look back."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A short heartbreaking story that will hold your heart in a fist",
+        "A personal journey of learning how to survive",
+        "A tale filled with horror and desperation",
+        "Colorful art to accompany your journey",
+        "A nice combination between platformer and adventure game"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "lUwQEoTGRho",
+      "url": "https://www.youtube.com/watch?v=lUwQEoTGRho"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "“Is stark art style fits the tone of the game perfectly, setting the scene for John’s emotional but perilous journey. It isn’t easy –...",
+      "author": "Kim Snaith",
+      "outlet": "Game Spew",
+      "url": "https://www.gamespew.com/2021/07/apocalyptic-survival-game-lambs-on-the-road-the-beginning-is-out-now/"
+    },
+    {
+      "quote": "\"A lot of the storytelling is done in the environments. Writing on the walls, blood splatters and a city in ruins. The simple art...",
+      "author": "Morgan Truder",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-lambs-on-the-road-the-beginning-nintendo-switch/"
+    },
+    {
+      "quote": "The voices convey fear, stress, panic or despair; they do a very good job of immersing you in the game.",
+      "author": "Shahid0",
+      "outlet": "Versus Media",
+      "url": "https://versusmedia.mx/review/lambs-on-the-road-the-beginning/",
+      "translated_from": "Spanish"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/lambs-on-the-road/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "articles": [
+    {
+      "title": "Cash Cow DX",
+      "outlet": "Tech Gaming",
+      "date": "Sep. 30",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Cash Cow DX (Nintendo Switch)",
+      "image": "Press/Images/review-0.jpg",
+      "article_url": "https://www.tech-gaming.com/cash-cow-dx/",
+      "summary": "Arcade action shaped by practice and fast reactions."
+    },
+    {
+      "title": "Satryn DX",
+      "outlet": "Video Chums",
+      "date": "Jul. 25",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Satryn DX (Nintendo Switch)",
+      "image": "Press/Images/review-1.png",
+      "article_url": "https://videochums.com/article/old-school-console-games-part-4#satryn-dx",
+      "summary": "Twin-stick arcade play with a focus on high scores."
+    },
+    {
+      "title": "Goliath Depot",
+      "outlet": "Tech Gaming",
+      "date": "Jun. 2",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Goliath Depot (Nintendo Switch)",
+      "image": "Press/Images/review-2.jpg",
+      "article_url": "https://www.tech-gaming.com/goliath-depot/",
+      "summary": "A door-slamming arcade concept inspired by Hotel Mario."
+    },
+    {
+      "title": "8-Colors Star Guardians +",
+      "outlet": "Siliconera",
+      "date": "Jan. 7",
+      "platform": "Nintendo Switch",
+      "heading": "Review: 8-Colors Star Guardians + (Nintendo Switch)",
+      "image": "Press/Images/review-3.jpg",
+      "article_url": "https://www.siliconera.com/review-8-colors-star-guardians-feels-more-like-a-puzzle-than-an-rpg/",
+      "summary": "A compact challenge for players who enjoy planning battles."
+    },
+    {
+      "title": "Colored Effects",
+      "outlet": "Indie Gamer Chick",
+      "date": "Nov. 26",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Colored Effects (Nintendo Switch)",
+      "image": "Press/Images/review-4.jpg",
+      "article_url": "https://indiegamerchick.com/2023/11/26/colored-effects-indie-review/",
+      "summary": "A review of the Nintendo Switch puzzle game."
+    },
+    {
+      "title": "Sentry City",
+      "outlet": "TouchArcade",
+      "date": "Oct. 10",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Sentry City (Nintendo Switch)",
+      "image": "Press/Images/review-5.jpg",
+      "article_url": "https://toucharcade.com/2023/10/06/infinity-strash-dragon-quest-dai-switch-review-rise-of-the-triad-eshop-performance-detective-pikachu-download/",
+      "summary": "A look at this cyberpunk side-scroller on Switch."
+    },
+    {
+      "title": "Murtop",
+      "outlet": "Tech Gaming",
+      "date": "May 20",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Murtop (Nintendo Switch)",
+      "image": "Press/Images/review-6.jpg",
+      "article_url": "https://www.tech-gaming.com/murtop/",
+      "summary": "Short arcade sessions for fans of coin-op games."
+    },
+    {
+      "title": "Papertris",
+      "outlet": "Finger Guns",
+      "date": "Mar. 20",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Papertris (Nintendo Switch)",
+      "image": "Press/Images/review-7.jpg",
+      "article_url": "https://fingerguns.net/games/2023/03/20/papertris-review-switch-vertical-vertigo/",
+      "summary": "Puzzle tactics, visual style and music on Nintendo Switch."
+    },
+    {
+      "title": "Donut Dodo",
+      "outlet": "Pure Nintendo",
+      "date": "Nov. 29",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Donut DoDo (Nintendo Switch)",
+      "image": "Press/Images/review-8.jpg",
+      "article_url": "https://purenintendo.com/review-donut-dodo-nintendo-switch/",
+      "summary": "A new game drawing on the appeal of early arcade classics."
+    },
+    {
+      "title": "A Winding Path",
+      "outlet": "Games Freezer",
+      "date": "Oct. 30",
+      "platform": "Nintendo Switch",
+      "heading": "Review: A Winding Path (Nintendo Switch)",
+      "image": "Press/Images/review-9.jpg",
+      "article_url": "https://www.gamesfreezer.co.uk/2022/10/winding-path-nintendo-switch-review-810.html",
+      "summary": "A hand-drawn adventure with relaxed pacing and thoughtful writing."
+    },
+    {
+      "title": "Galacticon",
+      "outlet": "Mid-Life Gamer Geek",
+      "date": "May 22",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Galacticon (Nintendo Switch)",
+      "image": "Press/Images/review-10.png",
+      "article_url": "https://midlifegamergeek.com/2022/05/20/video-game-review-galacticon-nintendo-switch/",
+      "summary": "A solo developer's tribute to classic arcade experiences."
+    },
+    {
+      "title": "Dexter Stardust",
+      "outlet": "Pure Nintendo",
+      "date": "Mar. 15",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Dexter Stardust: Adventures in outer space (Nintendo Switch)",
+      "image": "Press/Images/review-11.png",
+      "article_url": "https://purenintendo.com/review-dexter-stardust-adventures-in-outer-space-nintendo-switch/",
+      "summary": "A point-and-click space adventure with writing and puzzles."
+    },
+    {
+      "title": "What Comes After",
+      "outlet": "Los Angeles Times",
+      "date": "Dec. 16",
+      "platform": "",
+      "heading": "To appreciate modern life, I can’t stop playing games about death",
+      "image": "Press/Images/review-12.jpeg",
+      "article_url": "https://www.latimes.com/entertainment-arts/story/2020-12-16/2020-games-about-death",
+      "summary": "What Comes After features in a discussion of games about death."
+    },
+    {
+      "title": "Lambs on the Road",
+      "outlet": "Pure Nintendo",
+      "date": "Aug. 18",
+      "platform": "Nintendo Switch",
+      "heading": "Review: Lambs on the Road: The Beginning (Nintendo Switch)",
+      "image": "Press/Images/review-13.jpg",
+      "article_url": "https://purenintendo.com/review-lambs-on-the-road-the-beginning-nintendo-switch/",
+      "summary": "Storytelling through ruined environments, puzzles and platforming."
+    },
+    {
+      "title": "Eternum Ex",
+      "outlet": "Nintenderos",
+      "date": "Nov. 28",
+      "platform": "",
+      "heading": "When you decide to look back and nostalgically recall your first games",
+      "image": "Press/Images/review-14.png",
+      "article_url": "https://www.nintenderos.com/2018/10/analisis-eternum-ex/",
+      "summary": "A look at Eternum Ex and its classic arcade influences."
+    }
+  ],
+  "presskits": [
+    {
+      "image": "Press/Images/presskit-0.jpg",
+      "label": ""
+    },
+    {
+      "image": "Press/Images/presskit-1.jpg",
+      "label": ""
+    },
+    {
+      "image": "Press/Images/presskit-2.jpg",
+      "label": ""
+    },
+    {
+      "image": "Press/Images/presskit-3.jpg",
+      "label": ""
+    }
+  ],
+  "highlights": "Home/JSON/home.json"
+}

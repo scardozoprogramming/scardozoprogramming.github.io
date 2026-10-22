@@ -1,0 +1,112 @@
+{
+  "title": "Boardwalk Builders",
+  "summary": "Design and expand a boardwalk in this building game.",
+  "image": "Games/Juegos/boardwalk-builders/Images/cover.jpg",
+  "tags": [
+    "Puzzle",
+    "Arcade"
+  ],
+  "categories": [
+    "puzzle",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "boardwalk-builders",
+  "tagline": "Design and expand",
+  "hero_video": {
+    "id": "cu29TVVvAhI",
+    "url": "https://www.youtube.com/watch?v=cu29TVVvAhI"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/boardwalk-builders/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Boardwalk Builders gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/boardwalk-builders/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Boardwalk Builders gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/boardwalk-builders/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Boardwalk Builders gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/boardwalk-builders/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Boardwalk Builders gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/boardwalk-builders/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Boardwalk Builders gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/boardwalk-builders/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Boardwalk Builders cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/boardwalk-builders-switch/"
+    }
+  ],
+  "genres": [
+    "Puzzle",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Design and expand your boardwalk by building rides, shops, and restaurants to draw in crowds."
+    },
+    {
+      "type": "paragraph",
+      "text": "Create the ultimate beachfront destination! A game all about building a beautiful boardwalk. Start with small stands and grow into a sprawling seaside paradise full of rides, high-end shops and fancy restaurants. Build your Boardwalk Dozens of shops to choose from Build rides, restaurants, and stores, selling everything from sunglasses to vintage video games to sea glass art Boost your visit rate by building the rides and restaurants people want Manage your Promenade Earn rewards as customers visit your shops Upgrade each shop to bring in more revenue and serve customers faster Expand your boardwalk and hire entertainers Launch marketing campaigns to spread the word about your seaside destination Combine Shops and Rides Not enough space to serve your customers? Combine shops to create bigger, better ones that can handle more customers at a time and earn you more money Dozens of combination recipes to discover – movie theaters, bumper cars and more!"
+    },
+    {
+      "type": "heading",
+      "text": "Other Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Navigate demand-changing weather events such as smog and rain",
+        "Donate to neighboring businesses – and earn rewards in return!",
+        "Participate in themed festivals to up your income and draw in big crowds",
+        "Invite VIPs and convince them to build their top-tier attractions on your boardwalk"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "cu29TVVvAhI",
+      "url": "https://www.youtube.com/watch?v=cu29TVVvAhI"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/boardwalk-builders/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

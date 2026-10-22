@@ -1,0 +1,123 @@
+{
+  "title": "Papertris",
+  "summary": "A puzzle game inspired by Tetris.",
+  "image": "Games/Juegos/papertris/Images/cover.jpg",
+  "tags": [
+    "Puzzle"
+  ],
+  "categories": [
+    "puzzle"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "papertris",
+  "tagline": "A tribute to Tetris",
+  "hero_video": {
+    "id": "fRrG1LPihvg",
+    "url": "https://www.youtube.com/watch?v=fRrG1LPihvg"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/papertris/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Papertris gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/papertris/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Papertris gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/papertris/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Papertris gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/papertris/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Papertris gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/papertris/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Papertris gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/papertris/Images/poster.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Papertris cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/papertris-switch/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Papertris is an interesting and fun arcade puzzle game in which colored cubes dissolve in all 6 possible directions and you decide where to place your cubes. In addition, there are also power cubes and numerous possible combinations in a classic but modern and lovingly hand-painted game."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The Challenge mode is tricky with various tasks where the player has to solve suitable tasks in order to get to the next level, which are more difficult at each level",
+        "In the Endless mode, which gets faster and more difficult from level to level, you can score points as long as you can",
+        "The 2 player VS mode demands tactical skill in which players can use numerous combos to send each other blocking cubes to block the opponent’s options",
+        "Combinations of the cubes in all 6 directions",
+        "Atmospheric music",
+        "Icon option for color blind people",
+        "Dark mode",
+        "Full Controller support"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "fRrG1LPihvg",
+      "url": "https://www.youtube.com/watch?v=fRrG1LPihvg"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "The game’s layered depth is an interesting element with new rules and tactics to discover. It also has a visually appealing look, and a...",
+      "author": "Finger Guns",
+      "outlet": "Finger Guns",
+      "url": "https://fingerguns.net/games/2023/03/20/papertris-review-switch-vertical-vertigo/"
+    },
+    {
+      "quote": "Papertris is solid for its budget price. While I would’ve liked more options (and a consistent challenge), it’s a game built off classics. Local...",
+      "author": "Pure nintendo",
+      "outlet": "Metacritic",
+      "url": "https://purenintendo.com/review-papertris-nintendo-switch/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/papertris/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

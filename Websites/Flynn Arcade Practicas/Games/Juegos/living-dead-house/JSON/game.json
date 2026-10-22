@@ -1,0 +1,122 @@
+{
+  "title": "Living Dead House",
+  "summary": "An arcade experience inspired by classic games.",
+  "image": "Games/Juegos/living-dead-house/Images/cover.jpg",
+  "tags": [
+    "Arcade",
+    "Platform"
+  ],
+  "categories": [
+    "arcade",
+    "platform"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "living-dead-house",
+  "tagline": "Classic arcade experience",
+  "hero_video": {
+    "id": "1xfZ3PFnhfs",
+    "url": "https://www.youtube.com/watch?v=1xfZ3PFnhfs"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/living-dead-house/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Living Dead House gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/living-dead-house/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Living Dead House gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/living-dead-house/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Living Dead House gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/living-dead-house/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Living Dead House gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/living-dead-house/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Living Dead House gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/living-dead-house/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Living Dead House cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/living-dead-house-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Living Dead House delivers a pulse pounding, classic arcade experience. Battle through waves of the undead solo or team up with a friend. Use an arsenal of weapons and survival items to outlast the night. Will you escape alive and claim your top spot on the leaderboard?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Survive the Night. Escape the Dead."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darkness descends and the undead rise. Armed with only a handful of weapons and the shelter of an abandoned house, you must fight to see the sunrise. Can you hold out, or be overwhelmed?"
+    },
+    {
+      "type": "heading",
+      "text": "Features"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Retro arcade thrills with modern polish",
+        "Gorgeous 16-bit pixel art bursting with personality",
+        "Spooky, toe-tapping chiptune soundtrack",
+        "Play solo or team up in local co-op",
+        "Arcade and Survival modes for endless action",
+        "Compete on leaderboards for 1 or 2 players",
+        "20 pulse pounding stages of undead mayhem",
+        "6 unique weapons and items to aid your survival",
+        "Collect hidden letters to unlock a devastating super weapon",
+        "Black & White and CRT filters for an authentic horror atmosphere"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "1xfZ3PFnhfs",
+      "url": "https://www.youtube.com/watch?v=1xfZ3PFnhfs"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/living-dead-house/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

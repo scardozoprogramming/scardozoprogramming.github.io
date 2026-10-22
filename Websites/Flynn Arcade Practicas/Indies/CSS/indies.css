@@ -1,0 +1,51 @@
+/* Flynn's Arcade: indies styles. */
+.studio-directory { padding-bottom: 65px; }
+
+.studio-row { display: grid; grid-template-columns: minmax(0px, 0.9fr) minmax(0px, 0.65fr) minmax(0px, 1.2fr); gap: 40px; align-items: center; padding-block: 32px; border-top: 1px solid var(--line); }
+
+.studio-identity { min-width: 0px; }
+
+.studio-games { width: fit-content; max-width: 100%; padding: 2px 6px; color: var(--pink); background: rgba(3, 8, 17, 0.88); font-size: 12px; margin-bottom: 12px; }
+
+.studio-identity h2 { font-size: 24px; line-height: 1.3; font-weight: 600; }
+
+.studio-logo { margin-top: 24px; max-width: 200px; width: 100%; height: 100px; object-fit: contain; object-position: left center; }
+
+.studio-portrait { width: 100%; height: 220px; object-fit: contain; }
+
+.studio-description p { color: var(--muted); line-height: 1.75; }
+
+.studio-bio { margin-top: 14px; color: var(--muted); }
+
+.studio-bio summary { width: fit-content; min-height: 44px; padding-block: 10px; color: var(--cyan); cursor: pointer; font-size: 14px; font-weight: 600; }
+
+.studio-bio summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+.studio-bio p + p { margin-top: 12px; }
+
+.studio-website { margin-top: 20px; overflow-wrap: anywhere; }
+
+@media (max-width: 1150px) {
+.studio-row { gap: 30px; }
+.studio-portrait { height: 220px; }
+}
+
+@media (max-width: 850px) {
+.studio-row { grid-template-columns: 1fr 1fr; gap: 25px; padding-block: 30px; }
+.studio-description { grid-column: 1 / 3; }
+}
+
+@media (max-width: 600px) {
+.studio-row { grid-template-columns: minmax(0px, 1fr) minmax(0px, 0.8fr); gap: 16px; }
+.studio-description { grid-column: 1 / -1; }
+.studio-identity h2 { font-size: 20px; }
+.studio-games { font-size: 11px; }
+.studio-logo { height: 75px; max-width: 140px; margin-top: 15px; }
+.studio-portrait { height: 150px; object-position: center center; }
+.studio-description p { font-size: 15px; }
+}
+
+@media (max-width: 360px) {
+.studio-identity h2 { font-size: 18px; }
+.studio-row { column-gap: 15px; }
+}

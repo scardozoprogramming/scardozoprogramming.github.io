@@ -1,0 +1,142 @@
+{
+  "title": "Freddy Farmer",
+  "summary": "Retro arcade gameplay presented in 16-bit pixel art.",
+  "image": "Games/Juegos/freddy-farmer/Images/cover.jpg",
+  "tags": [
+    "Arcade"
+  ],
+  "categories": [
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PC",
+    "Xbox",
+    "PlayStation"
+  ],
+  "slug": "freddy-farmer",
+  "tagline": "A retro arcade style game with 16-bit pixel art graphics",
+  "hero_video": {
+    "id": "Bq4u-M9gdTg",
+    "url": "https://www.youtube.com/watch?v=Bq4u-M9gdTg"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/freddy-farmer/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Freddy Farmer gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/freddy-farmer/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Freddy Farmer gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/freddy-farmer/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Freddy Farmer gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/freddy-farmer/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Freddy Farmer gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/freddy-farmer/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Freddy Farmer gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/freddy-farmer/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Freddy Farmer cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/freddy-farmer-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/3207370/Freddy_Farmer/"
+    },
+    {
+      "label": "Xbox",
+      "platform": "Xbox",
+      "url": "https://www.xbox.com/en-us/games/store/freddy-farmer/9N726G6L4PKS"
+    },
+    {
+      "label": "PlayStation",
+      "platform": "PlayStation",
+      "url": "https://store.playstation.com/es-es/product/EP6718-PPSA29482_00-0077142230530028"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Freddy Farmer is a retro arcade style game with 16-bit pixel art graphics in the style of the 80s/90s where you can test your skills as a player."
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "list",
+      "items": [
+        "High-quality pixel art graphics with excellent 16-bit animations.",
+        "5 different Worlds with 7 levels in each of them.",
+        "More than 25 types of enemies with their own characteristics.",
+        "2 different endings for the story.",
+        "5 different 8-bit style bonus levels that unlock mini-games.",
+        "Galleries and unlockable extras.",
+        "3 game modes, each one more challenging than the last.",
+        "Various cameos and references to cinema, literature and video games.",
+        "Enjoy the CRT filter and 4:3 camera for a total retro experience."
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "Bq4u-M9gdTg",
+      "url": "https://www.youtube.com/watch?v=Bq4u-M9gdTg"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Freddy Farmer provides a couple unique twists to classic arcade platformer action.",
+      "author": "Pure Nintendo",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-freddy-farmer-nintendo-switch/"
+    },
+    {
+      "quote": "It's challenging, cute, old-school, and has a lot of variety so if you're looking for an arcade-style game.",
+      "author": "Video Chums",
+      "outlet": "Video Chums",
+      "url": "https://videochums.com/article/6-retro-2d-indies-for-switch#freddy-farmer"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/freddy-farmer/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

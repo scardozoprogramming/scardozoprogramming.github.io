@@ -1,0 +1,15 @@
+{
+  "name": "Enzo Brown, Slain Mascot",
+  "detail": "Super Spy Raccoon",
+  "slug": "enzo-brown-slain-mascot",
+  "media": {
+    "name": "Enzo Brown, Slain Mascot",
+    "logo": "Indies/Estudios/enzo-brown-slain-mascot/Images/logo.png",
+    "portrait": "Indies/Estudios/enzo-brown-slain-mascot/Images/portrait.jpg",
+    "website": "https://slain-mascot.itch.io/"
+  },
+  "summary": "A solo developer inspired by yesterday's games.",
+  "paragraphs": [
+    "My name is Enzo Brown and I’m a solo-developer that makes Yesterday’s Games, Today. I’ve made art all my life and I’ve made (or at least tried to make) games since the flash days. It wasn’t until 2023 that I decided to give game-development a real shot. There’s something about older titles that really draws me in and it is my goal to try and capture that magic in my projects."
+  ]
+}

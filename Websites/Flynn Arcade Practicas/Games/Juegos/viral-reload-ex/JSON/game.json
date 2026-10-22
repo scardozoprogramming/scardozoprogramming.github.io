@@ -1,0 +1,147 @@
+{
+  "title": "Viral Reload EX",
+  "summary": "Bimmy and Octo fight microscopic infections while chasing Kyle Kaboom. Dash through danger in this shoot-em-up, with Story, Arcade and Boss Rush modes plus online leaderboards.",
+  "image": "Games/Juegos/viral-reload-ex/Images/cover.jpg",
+  "tags": [
+    "Arcade",
+    "Shooter"
+  ],
+  "categories": [
+    "arcade",
+    "shooter"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "viral-reload-ex",
+  "tagline": "A classic shoot-em-up experience",
+  "hero_video": {
+    "id": "wyAE_FDBK9g",
+    "url": "https://www.youtube.com/watch?v=wyAE_FDBK9g"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/viral-reload-ex/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Viral Reload EX gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/viral-reload-ex/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Viral Reload EX gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/viral-reload-ex/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Viral Reload EX gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/viral-reload-ex/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Viral Reload EX gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/viral-reload-ex/Images/screenshot-5.webp",
+      "width": 800,
+      "height": 450,
+      "alt": "Viral Reload EX gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/viral-reload-ex/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Viral Reload EX cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/viral-reload-ex-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Viral Reload EX is a shoot-em-up with a dash mechanic where you shrink down to fight infections at a microscopic scale! Can you defeat the evil Kyle Kaboom before he destroys the moon?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the year 2063 the evil Kyle Kaboom has begun kidnapping the former members of his band Chainsaw Cannonball and infecting them with deadly viruses! Strapped into the Viral Unit, Bimmy and Octo must fight these infections all while trying to track down Kyle and stop him before he destroys the moon!"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Gameplay –"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Blast away at deadly viruses and mechanical hybrids as you fight for the future of mankind! Dash through bullets, lasers, and even enemies to stay alive and rack up points."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Features –"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Story Mode – Defend earth from Kyle Kaboom at your pace: retry stages, practice bosses, and watch the story unfold."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arcade Mode – Rack up a high score and attempt to clear the game in one complete run! You’ll receive extra lives and a shield power-up to help tackle the swarm of viruses. If you can do it once, can you do it 2 or even 3 times in a row?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Boss Rush Mode – Once you’ve beaten the Story Mode, try your hand at Boss Rush! You’ll face every boss back to back in one continuous loop as they become more and more challenging to defeat."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you’re up for some competition, see if you can be the top player in the world on the Online Leaderboard!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Grab a friend and fight for the high score with Alternating V.S. Multiplayer, or carry each other through the story!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Customize your visual experience with a selection of borders, the gorgeous Lottes CRT filter, and full Tate support for your vertical monitor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Struggling to see bullets against the backgrounds? Hand getting tired from holding down or mashing the fire button? You can customize your experience further with a selection of Accessibility features."
+    },
+    {
+      "type": "paragraph",
+      "text": "Own an Arcade Cabinet in your home running a PC? Viral Reload can be taken off of Free Play and assigned a credit button for a more authentic arcade experience. (You could even get quarters out of your friends!)"
+    }
+  ],
+  "trailers": [
+    {
+      "id": "wyAE_FDBK9g",
+      "url": "https://www.youtube.com/watch?v=wyAE_FDBK9g"
+    }
+  ],
+  "reviews": [],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/viral-reload-ex/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

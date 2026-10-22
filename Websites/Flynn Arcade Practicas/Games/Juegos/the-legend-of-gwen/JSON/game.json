@@ -1,0 +1,132 @@
+{
+  "title": "The Legend of Gwen",
+  "summary": "Face time and evil in an arcade platformer.",
+  "image": "Games/Juegos/the-legend-of-gwen/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "the-legend-of-gwen",
+  "tagline": "Defeat time and The Evil",
+  "hero_video": {
+    "id": "OkY-OcmmmU8",
+    "url": "https://www.youtube.com/watch?v=OkY-OcmmmU8"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/the-legend-of-gwen/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "The Legend of Gwen gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/the-legend-of-gwen/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "The Legend of Gwen gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/the-legend-of-gwen/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "The Legend of Gwen gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/the-legend-of-gwen/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "The Legend of Gwen gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/the-legend-of-gwen/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "The Legend of Gwen gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/the-legend-of-gwen/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "The Legend of Gwen cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/the-legend-of-gwen-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/2179460/The_Legend_of_Gwen/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Gwen had just arrived at the school of sorcery, she wanted to become the best Witch in the world, to her bad luck, she arrived at a bad time just when she arrived she couldn’t even have her welcome party because there was a surprise guest..»The evil !» The evil did not hesitate twice and began to absorb everything he could from the school! Now who will teach Gwen about wizardry?! Will she be able to learn on her own, will she be able to overcome the obstacles of evil and recover the school? Help Gwen with this Challenge and defeat evil (if you can!)."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Visit different Moons with their own obstacles, colors and enemies",
+        "Traps, Enemies, and big bosses on each of the moons",
+        "Timed levels without enemies, they are true tests of agility and skill!",
+        "Collect different seeds for the garden… (Could it be that you can get them all?)",
+        "Isometric mode and different points of view of all levels (Help to find secrets)!",
+        "Due to the high difficulty of the game, different help chests and a boss hunter were added",
+        "Added checkpoint magic(Not available in timed levels)",
+        "Game mode with the use of two characters… at the same time! in a challenge with corki!",
+        "6 different types of wands that change the style of play!"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "OkY-OcmmmU8",
+      "url": "https://www.youtube.com/watch?v=OkY-OcmmmU8"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "\"If you enjoy a bit more challenging type of game, you may enjoy your time here in The Legend of Gwen.\"",
+      "author": "THE BOSS RUSH NETWORK",
+      "outlet": "THE BOSS RUSH NETWORK",
+      "url": "https://bossrush.net/2023/02/12/game-review-the-legend-of-gwen/"
+    },
+    {
+      "quote": "\"The platforming is also a bit on the more challenging side\"",
+      "author": "ps4blog.net",
+      "outlet": "ps4blog.net",
+      "url": "https://www.ps4blog.net/2023/02/nintendo-switch-the-legend-of-gwen-review/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/the-legend-of-gwen/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

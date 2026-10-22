@@ -1,0 +1,130 @@
+{
+  "title": "A Winding Path",
+  "summary": "An adventure presented in hand-drawn art.",
+  "image": "Games/Juegos/a-winding-path/Images/cover.jpg",
+  "tags": [
+    "Narrative"
+  ],
+  "categories": [
+    "narrative"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "a-winding-path",
+  "tagline": "Finding the beauty of the world​",
+  "hero_video": {
+    "id": "kY-BX5TFhTc",
+    "url": "https://www.youtube.com/watch?v=kY-BX5TFhTc&t=2s",
+    "start": 2
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/a-winding-path/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "A Winding Path gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/a-winding-path/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "A Winding Path gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/a-winding-path/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "A Winding Path gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/a-winding-path/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "A Winding Path gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/a-winding-path/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "A Winding Path gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/a-winding-path/Images/cover.jpg",
+    "width": 640,
+    "height": 400,
+    "alt": "A Winding Path"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/a-winding-path-switch/"
+    }
+  ],
+  "genres": [
+    "Narrative",
+    "Adventure",
+    "Story"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A Winding Path is a hand-drawn adventure game about finding the beauty of the world and enjoying the little things."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a whimsical fantasy world, the rain has ceased to fall. The rivers are running low and the crops have withered. Seeking to uncover the elemental mystery, you find an enchanted lyre and set out on a magical journey to restore balance to the world."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Explore the peaceful atmosphere of a lovingly crafted, hand-drawn 2D world."
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mend a world stricken by distrust and restore unity among its inhabitants.",
+        "Meet colorful characters and help them solve troubles big and small.",
+        "Explore ancient caverns, enchanting forests and busy settlements.",
+        "Discover the secrets of the land and the magic within."
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "kY-BX5TFhTc",
+      "url": "https://www.youtube.com/watch?v=kY-BX5TFhTc"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "I think anyone who likes chill meditative titles will also dig A Winding Path as well.",
+      "author": "Ladies Gamers",
+      "outlet": "Twitter",
+      "url": "https://twitter.com/Locomalito/status/1439608950807269377?s=20"
+    },
+    {
+      "quote": "I liked the creativity, and most of all, just a great happy ending. Fun game with enjoyable escapism",
+      "author": "American Dung Beetle",
+      "outlet": "Twitter",
+      "url": "https://twitter.com/FranGallegoBR/status/1439601142388899847?s=20/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/a-winding-path/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

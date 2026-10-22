@@ -1,0 +1,126 @@
+{
+  "title": "Super Spy Raccoon",
+  "summary": "Hide, sneak and climb in a retro arcade game.",
+  "image": "Games/Juegos/super-spy-raccoon/Images/cover.jpg",
+  "tags": [
+    "Arcade"
+  ],
+  "categories": [
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "super-spy-raccoon",
+  "tagline": "A retro arcade throwback where you hide, sneak, climb!",
+  "hero_video": {
+    "id": "cwFLn-a7pys",
+    "url": "https://www.youtube.com/watch?v=cwFLn-a7pys&t=3s",
+    "start": 3
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/super-spy-raccoon/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Super Spy Raccoon gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/super-spy-raccoon/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Super Spy Raccoon gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/super-spy-raccoon/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Super Spy Raccoon gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/super-spy-raccoon/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Super Spy Raccoon gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/super-spy-raccoon/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Super Spy Raccoon gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/super-spy-raccoon/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Super Spy Raccoon cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/super-spy-raccoon-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A retro arcade throwback where you hide, sneak, climb, and leap your way to victory! YOU MUST NOT BE SEEN! Do you have the skills to top score?"
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "paragraph",
+      "text": "Super Spy Raccoon is an imagining of a stealth game as an early 80’s Arcade Classic! Your mission, if you choose to accept it, is to acquire all classified documents as you venture deeper and deeper into enemy territory. Hide, sneak, climb, and leap your way to victory! YOU MUST NOT BE SEEN! Do you have the skills to top score?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "5 single-screen levels that loop until a kill screen!",
+        "challenging yet addictive arcade style fun",
+        "short wait-times to get right back into the action!",
+        "unlockable suit colors to match your sense of style",
+        "local and global leaderboards for increased bragging rights!"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "cwFLn-a7pys",
+      "url": "https://www.youtube.com/watch?v=cwFLn-a7pys&t=3s",
+      "start": 3
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Super Spy Raccoon is a superb 2D arcade stealth game that will have you trying over and over again",
+      "author": "Video Chums",
+      "outlet": "Video Chums",
+      "url": "https://videochums.com/article/upbeat-switch-indie-games#super-spy-raccoon"
+    },
+    {
+      "quote": "\"Honestly, it is very well designed as an arcade game and it could have been a success in the time of the arcades. In...",
+      "author": "Pure Nintendo",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-super-spy-raccoon-nintendo-switch/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/super-spy-raccoon/Images/preview.webp",
+    "width": 640,
+    "height": 359
+  }
+}

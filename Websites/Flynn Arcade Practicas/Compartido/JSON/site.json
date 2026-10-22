@@ -1,0 +1,60 @@
+{
+  "socials": [
+    {
+      "name": "Bluesky",
+      "icon": "bluesky",
+      "url": "https://bsky.app/profile/flynnsarcade.bsky.social"
+    },
+    {
+      "name": "Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com/FlynnsArcades"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/flynnsarcadegames/"
+    },
+    {
+      "name": "TikTok",
+      "icon": "tiktok",
+      "url": "https://www.tiktok.com/@flynnsarcades"
+    },
+    {
+      "name": "Steam",
+      "icon": "steam",
+      "url": "https://store.steampowered.com/publisher/Flynns"
+    },
+    {
+      "name": "YouTube",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/user/jpd92363"
+    },
+    {
+      "name": "Facebook",
+      "icon": "facebook",
+      "url": "https://www.facebook.com/FlynnsArcades"
+    },
+    {
+      "name": "Twitch",
+      "icon": "twitch",
+      "url": "https://www.twitch.tv/flynnsarcades"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/flynnsarcade/"
+    }
+  ],
+  "footer": {
+    "social_title": "Find us everywhere",
+    "social_copy": "Except Tik Tok... at the last dance we broke our hips.",
+    "newsletter_title": "Better news",
+    "newsletter_copy": "Get all updates about our games release and more.",
+    "newsletter_extra": "Don't be shy.",
+    "contact_title": "Send prayers",
+    "contact_copy": "You may prefer to be the first to contact us. We understand.",
+    "contact_extra": "The newsletter is a complicated relationship."
+  },
+  "contact_email": "press@flynnsarcades.com"
+}

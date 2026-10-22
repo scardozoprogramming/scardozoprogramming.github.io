@@ -1,0 +1,157 @@
+{
+  "title": "8-Colors Star Guardians +",
+  "summary": "Face an invasion of alien monsters in an RPG puzzle game.",
+  "image": "Games/Juegos/8-colors-star-guardians/Images/cover.jpg",
+  "tags": [
+    "RPG",
+    "Puzzle"
+  ],
+  "categories": [
+    "rpg",
+    "puzzle"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "8-colors-star-guardians",
+  "tagline": "Alien monsters have invaded Earth!",
+  "hero_video": {
+    "id": "hdUbJ-rNH80",
+    "url": "https://www.youtube.com/watch?v=hdUbJ-rNH80"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/8-colors-star-guardians/Images/screenshot-1.webp",
+      "width": 600,
+      "height": 338,
+      "alt": "8-Colors Star Guardians + gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/8-colors-star-guardians/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "8-Colors Star Guardians + gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/8-colors-star-guardians/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "8-Colors Star Guardians + gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/8-colors-star-guardians/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "8-Colors Star Guardians + gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/8-colors-star-guardians/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "8-Colors Star Guardians + gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/8-colors-star-guardians/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "8-Colors Star Guardians + cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/8-colors-star-guardians-plus-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Alien monsters have invaded Earth! It’s up to the Star Guardians, a dysfunctional group of heroines, to protect the planet and awkwardly save the day (yet again)! Fight evil with pixelated style, in this turn-based, choose-your-boss-path game made with just 8 colors!"
+    },
+    {
+      "type": "heading",
+      "text": "A heartfelt, ironic homage to the tokusatsu genre"
+    },
+    {
+      "type": "paragraph",
+      "text": "Oh no! Evil alien monsters have attacked Earth (yet again)! But fret not, because the Star Guardians, an elite group of fighters led by the hot-blooded Rhea, is going to kick their backs back to outer space!"
+    },
+    {
+      "type": "heading",
+      "text": "Plan your path"
+    },
+    {
+      "type": "paragraph",
+      "text": "Face eight gigantic galactic monsters, carefully choosing which ones to tackle first! Unlock skills by defeating the weakest ones and use them to best the heavy-hitters! And don’t worry if you don’t do it at the first attempt, your teammates will offer precious advice after every defeat!"
+    },
+    {
+      "type": "heading",
+      "text": "Meet your (dysfunctional) heroines!"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Star Guardians are a motley crew of girls and women at different stages of their lives, with their quirks, aspirations, crushes and little idiosyncrasies. Learn more about their relationships after beating (or being defeated) by a boss."
+    },
+    {
+      "type": "heading",
+      "text": "Up for one more challenge?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose between a more relaxed Story Mode, with dialogues, hints and charming interactions, and a more brutal Arcade Mode, where you’ll have to best all enemies in a set amount of turns. Can you beat them all before the timer runs out?"
+    },
+    {
+      "type": "heading",
+      "text": "Wait, there’s more!"
+    },
+    {
+      "type": "paragraph",
+      "text": "More content and quality-of-life improvements, compared to the original version:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Story Mode Chapter 2: One year after the end of Chapter 1, fight through a gauntlet of deadly ensembles of monsters, find the truth behind the mysterious White Guardian, and bring back peace to the planet once more!",
+        "Unlockable costumes for all characters, obtained by clearing Story and Arcade mode",
+        "Improved settings and user interface",
+        "Full joypad and keyboard support. The game can still be played with a mouse in its entirety for additional accessibility."
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "hdUbJ-rNH80",
+      "url": "https://www.youtube.com/watch?v=hdUbJ-rNH80"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "\"8-Colors Star Guardians + is a novel indie approach to the boss-rush concept that makes players experiment and think about every move. While the...",
+      "author": "Siliconera",
+      "outlet": "Metacritic",
+      "url": "https://www.siliconera.com/review-8-colors-star-guardians-feels-more-like-a-puzzle-than-an-rpg/"
+    },
+    {
+      "quote": "\"8-Colors Star Guardians + showcases a unique twist on RPGs utilizing its eight-color pixel art style. Despite its limited palette, character designs are surprisingly...",
+      "author": "Noisy Pixel",
+      "outlet": "Metacritic",
+      "url": "https://noisypixel.net/8-colors-star-guardians-plus-review-switch/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/8-colors-star-guardians/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  }
+}

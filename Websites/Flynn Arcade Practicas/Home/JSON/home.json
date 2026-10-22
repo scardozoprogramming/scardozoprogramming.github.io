@@ -1,0 +1,31 @@
+{
+  "featured_game": "The Last Cat in the Universe",
+  "hero_title": [
+    "The Last Cat",
+    "in the Universe"
+  ],
+  "hero_copy": "A short narrative incremental game about finding peace amidst the darkness.",
+  "promotions": [
+    {
+      "title": "Hell comes to Asia",
+      "subtitle": "Eternum Ex",
+      "description": "Eternum Ex goes on sale in Asia on August 5.",
+      "game": "Eternum Ex",
+      "image": "Games/Juegos/eternum-ex/Images/promotion.png"
+    },
+    {
+      "title": "100% pure graphic adventure",
+      "subtitle": "Dexter Stardust",
+      "description": "Dexter Stardust: available March 03, 2022.",
+      "game": "Dexter Stardust",
+      "image": "Games/Juegos/dexter-stardust/Images/promotion.png"
+    },
+    {
+      "title": "Never Lose Yourself",
+      "subtitle": "What Comes After",
+      "description": "What Comes After, best releasing experience.",
+      "game": "What Comes After",
+      "image": "Games/Juegos/what-comes-after/Images/promotion.png"
+    }
+  ]
+}

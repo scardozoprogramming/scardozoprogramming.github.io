@@ -1,0 +1,136 @@
+{
+  "title": "Galacticon",
+  "summary": "Play as a being that is part god, part machine.",
+  "image": "Games/Juegos/galacticon/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "galacticon",
+  "tagline": "Half God, half machine",
+  "hero_video": {
+    "id": "1qq2xSTWAoA",
+    "url": "https://www.youtube.com/watch?v=1qq2xSTWAoA"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/galacticon/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Galacticon gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/galacticon/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Galacticon gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/galacticon/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Galacticon gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/galacticon/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Galacticon gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/galacticon/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Galacticon gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/galacticon/Images/poster.webp",
+    "width": 374,
+    "height": 448,
+    "alt": "Galacticon cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/galacticon-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/1737980/Galacticon/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Humans are tiny creatures of an outer belt planet that thanks to their biomechanical monstrosities have invaded, exploited and enslaved most species in the galaxy."
+    },
+    {
+      "type": "paragraph",
+      "text": "The interestellar council has met for the first time in eons has determined that there is only one option left to exterminate this plague… an option that has always been feared because it could be as powerful as dangerous:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Invoke the Galacticon, a deadly legendary creature -half God, half machine- and pray everything goes well…"
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Awesome gameplay",
+        "Direct and frantic action",
+        "Infinite levels with progressive difficulty curve",
+        "Optimized to be used in arcade cabinet machines",
+        "Local Hi-Scores table, a worldwide table through QR code reading"
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "rwUEnjfGp-A",
+      "url": "https://www.youtube.com/watch?v=rwUEnjfGp-A"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "“The arcade is strong in this game. The overall finish and the bonus system make it well deserving of the award. Congratulations!!!”",
+      "author": "Locomalito",
+      "outlet": "Twitter",
+      "url": "https://twitter.com/Locomalito/status/1439608950807269377?s=20"
+    },
+    {
+      "quote": "If you enjoy arcade-style score attack action games, Galacticon is a must-have.",
+      "author": "TouchArcade",
+      "outlet": "TouchArcade",
+      "url": "https://toucharcade.com/2023/01/16/breakers-collection-switch-review-dragon-quest-treasures-eshop-discount-price/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "what-comes-after"
+  ],
+  "preview": {
+    "image": "Games/Juegos/galacticon/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

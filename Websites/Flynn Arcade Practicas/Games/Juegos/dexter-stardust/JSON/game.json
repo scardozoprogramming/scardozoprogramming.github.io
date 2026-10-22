@@ -1,0 +1,140 @@
+{
+  "title": "Dexter Stardust",
+  "summary": "Join Dexter and Aurora to uncover the mystery of Planet X's robot. This fully voiced point-and-click space adventure features inventory puzzles and more than 100 scenes.",
+  "image": "Games/Juegos/dexter-stardust/Images/cover.jpg",
+  "tags": [
+    "Point & Click",
+    "Adventure"
+  ],
+  "categories": [
+    "adventure",
+    "narrative",
+    "point-click",
+    "puzzle"
+  ],
+  "platforms": [
+    "Switch",
+    "Xbox"
+  ],
+  "slug": "dexter-stardust",
+  "tagline": "Adventures in outer space",
+  "hero_video": {
+    "id": "qGue3bNP5lA",
+    "url": "https://www.youtube.com/watch?v=qGue3bNP5lA"
+  },
+  "gallery": [
+    {
+      "image": "Games/Juegos/dexter-stardust/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 716,
+      "alt": "Dexter Stardust gameplay screenshot 1"
+    },
+    {
+      "image": "Games/Juegos/dexter-stardust/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 718,
+      "alt": "Dexter Stardust gameplay screenshot 2"
+    },
+    {
+      "image": "Games/Juegos/dexter-stardust/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 717,
+      "alt": "Dexter Stardust gameplay screenshot 3"
+    },
+    {
+      "image": "Games/Juegos/dexter-stardust/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 716,
+      "alt": "Dexter Stardust gameplay screenshot 4"
+    },
+    {
+      "image": "Games/Juegos/dexter-stardust/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 717,
+      "alt": "Dexter Stardust gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "Games/Juegos/dexter-stardust/Images/poster.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Dexter Stardust cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/dexter-stardust-adventures-in-outer-space-switch/"
+    },
+    {
+      "label": "Xbox",
+      "platform": "Xbox",
+      "url": "https://www.xbox.com/es-ES/games/store/dexter-stardust-adventures-in-outer-space/9mthklppvpml"
+    }
+  ],
+  "genres": [
+    "Point & Click",
+    "Adventure Game",
+    "Puzzle"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Space! Dexter Stardust barely escaped when the Vreesians, inhabitants of the menacing Planet X, sent a fleet of robots to destroy all life on Earth. Now, twenty years later, a mechanical man from the tenth planet wants to communicate a very important message to Dexter: he is the key to saving both humans and Vreesians."
+    },
+    {
+      "type": "paragraph",
+      "text": "Play with taco-loving Dexter Stardust as he, and his good friend Aurora, embark on the greatest adventure of their lives and uncover the mystery of Planet X’s Robot."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Created as a classic point and click adventure, you can walk, talk and interact with everything around you",
+        "Use and collect inventory items to solve puzzles in over 100 unique scenes.",
+        "Playing Dexter Stardust is like watching back-to-back episodes of a Saturday morning cartoon.",
+        "All characters, scenes and gameplay are fully dubbed.",
+        "An adventure for everyone. The whole family can go on a space adventure."
+      ]
+    }
+  ],
+  "trailers": [
+    {
+      "id": "qGue3bNP5lA",
+      "url": "https://www.youtube.com/watch?v=qGue3bNP5lA"
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "“Dexter Stardust: Adventures in Outer Space is a great point-and-click game with clever writing and puzzles; I was hooked from the beginning. At only...",
+      "author": "Jemma Casson",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-dexter-stardust-adventures-in-outer-space-nintendo-switch/"
+    },
+    {
+      "quote": "“Dexter Stardust starts slow and probably has one too many taco jokes, but eventually, you'll be hooked in, waiting to see what happens next....",
+      "author": "Jared Lord",
+      "outlet": "Game Crater",
+      "url": "https://www.thegamecrater.com/dexter-stardust-adventures-in-outer-space-pc-review/"
+    },
+    {
+      "quote": "\"Is there a place in 2021 for old-school point-and-click adventures? Absolutely, and Dexter Stardust proves it. This is a great title for kids and...",
+      "author": "Elena Kua",
+      "outlet": "Ladies Gamers",
+      "url": "https://ladiesgamers.com/dexter-stardust-adventures-in-outer-space-review/"
+    }
+  ],
+  "related": [
+    "what-comes-after",
+    "eternum-ex",
+    "lambs-on-the-road"
+  ],
+  "preview": {
+    "image": "Games/Juegos/dexter-stardust/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  }
+}

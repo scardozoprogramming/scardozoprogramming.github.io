@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Radin Games",
+    "slug": "radin-games",
+    "html": "Indies/Estudios/radin-games/HTML/studio.html",
+    "data": "Indies/Estudios/radin-games/JSON/studio.json"
+  },
+  {
+    "name": "Fahmitsu, Rolling Glory Jam",
+    "slug": "fahmitsu-rolling-glory-jam",
+    "html": "Indies/Estudios/fahmitsu-rolling-glory-jam/HTML/studio.html",
+    "data": "Indies/Estudios/fahmitsu-rolling-glory-jam/JSON/studio.json"
+  },
+  {
+    "name": "Pablo Navarro, RAWRLAB Games",
+    "slug": "pablo-navarro-rawrlab-games",
+    "html": "Indies/Estudios/pablo-navarro-rawrlab-games/HTML/studio.html",
+    "data": "Indies/Estudios/pablo-navarro-rawrlab-games/JSON/studio.json"
+  },
+  {
+    "name": "Jeremy Fryc, Stardust Team",
+    "slug": "jeremy-fryc-stardust-team",
+    "html": "Indies/Estudios/jeremy-fryc-stardust-team/HTML/studio.html",
+    "data": "Indies/Estudios/jeremy-fryc-stardust-team/JSON/studio.json"
+  },
+  {
+    "name": "Sebastian, Pixel Games",
+    "slug": "sebastian-pixel-games",
+    "html": "Indies/Estudios/sebastian-pixel-games/HTML/studio.html",
+    "data": "Indies/Estudios/sebastian-pixel-games/JSON/studio.json"
+  },
+  {
+    "name": "Xavi, Hiulit",
+    "slug": "xavi-hiulit",
+    "html": "Indies/Estudios/xavi-hiulit/HTML/studio.html",
+    "data": "Indies/Estudios/xavi-hiulit/JSON/studio.json"
+  },
+  {
+    "name": "Soufiane, Tacsou",
+    "slug": "soufiane-tacsou",
+    "html": "Indies/Estudios/soufiane-tacsou/HTML/studio.html",
+    "data": "Indies/Estudios/soufiane-tacsou/JSON/studio.json"
+  },
+  {
+    "name": "Andrea, Der Mondhase",
+    "slug": "andrea-der-mondhase",
+    "html": "Indies/Estudios/andrea-der-mondhase/HTML/studio.html",
+    "data": "Indies/Estudios/andrea-der-mondhase/JSON/studio.json"
+  },
+  {
+    "name": "Andrea Tarondo, silver978",
+    "slug": "andrea-tarondo-silver978",
+    "html": "Indies/Estudios/andrea-tarondo-silver978/HTML/studio.html",
+    "data": "Indies/Estudios/andrea-tarondo-silver978/JSON/studio.json"
+  },
+  {
+    "name": "Joel Potter, Studio Primitive",
+    "slug": "joel-potter-studio-primitive",
+    "html": "Indies/Estudios/joel-potter-studio-primitive/HTML/studio.html",
+    "data": "Indies/Estudios/joel-potter-studio-primitive/JSON/studio.json"
+  },
+  {
+    "name": "David Langlois, Vidvad Games",
+    "slug": "david-langlois-vidvad-games",
+    "html": "Indies/Estudios/david-langlois-vidvad-games/HTML/studio.html",
+    "data": "Indies/Estudios/david-langlois-vidvad-games/JSON/studio.json"
+  },
+  {
+    "name": "May Oswald, Maybell Soft",
+    "slug": "may-oswald-maybell-soft",
+    "html": "Indies/Estudios/may-oswald-maybell-soft/HTML/studio.html",
+    "data": "Indies/Estudios/may-oswald-maybell-soft/JSON/studio.json"
+  },
+  {
+    "name": "Luke Orsie, Crashable Studios",
+    "slug": "luke-orsie-crashable-studios",
+    "html": "Indies/Estudios/luke-orsie-crashable-studios/HTML/studio.html",
+    "data": "Indies/Estudios/luke-orsie-crashable-studios/JSON/studio.json"
+  },
+  {
+    "name": "Enzo Brown, Slain Mascot",
+    "slug": "enzo-brown-slain-mascot",
+    "html": "Indies/Estudios/enzo-brown-slain-mascot/HTML/studio.html",
+    "data": "Indies/Estudios/enzo-brown-slain-mascot/JSON/studio.json"
+  },
+  {
+    "name": "Jose, Catcade Games",
+    "slug": "jose-catcade-games",
+    "html": "Indies/Estudios/jose-catcade-games/HTML/studio.html",
+    "data": "Indies/Estudios/jose-catcade-games/JSON/studio.json"
+  },
+  {
+    "name": "Magnus Fredriksson, Bortbyting",
+    "slug": "magnus-fredriksson-bortbyting",
+    "html": "Indies/Estudios/magnus-fredriksson-bortbyting/HTML/studio.html",
+    "data": "Indies/Estudios/magnus-fredriksson-bortbyting/JSON/studio.json"
+  }
+]
