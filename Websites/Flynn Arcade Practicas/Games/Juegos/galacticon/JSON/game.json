@@ -103,12 +103,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "rwUEnjfGp-A",
-      "url": "https://www.youtube.com/watch?v=rwUEnjfGp-A"
-    }
-  ],
   "reviews": [
     {
       "quote": "“The arcade is strong in this game. The overall finish and the bonus system make it well deserving of the award. Congratulations!!!”",
@@ -126,11 +120,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/galacticon/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

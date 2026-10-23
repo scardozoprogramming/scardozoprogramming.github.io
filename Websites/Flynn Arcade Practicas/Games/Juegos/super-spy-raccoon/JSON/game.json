@@ -92,13 +92,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "cwFLn-a7pys",
-      "url": "https://www.youtube.com/watch?v=cwFLn-a7pys&t=3s",
-      "start": 3
-    }
-  ],
   "reviews": [
     {
       "quote": "Super Spy Raccoon is a superb 2D arcade stealth game that will have you trying over and over again",
@@ -116,11 +109,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/super-spy-raccoon/Images/preview.webp",
     "width": 640,
     "height": 359
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

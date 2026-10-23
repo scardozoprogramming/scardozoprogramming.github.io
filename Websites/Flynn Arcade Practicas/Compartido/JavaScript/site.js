@@ -100,8 +100,9 @@ document.querySelectorAll('[data-directory]').forEach((directory) => {
     const more = directory.querySelector('[data-directory-more]');
     const count = directory.querySelector('[data-directory-count]');
     const empty = directory.querySelector('[data-directory-empty]');
+    const pageSize = Math.max(1, Math.floor(Number(directory.dataset.directoryPageSize) || 6));
     const params = new URL(location.href).searchParams;
-    let limit = Math.max(6, Math.min(rows.length, Number(params.get('shown')) || 6));
+    let limit = Math.max(pageSize, Math.min(rows.length, Number(params.get('shown')) || pageSize));
     search.value = (params.get('q') || '').slice(0, 100);
     directory.querySelector('[data-directory-tools]').hidden = false;
     function render(save = true) {
@@ -116,15 +117,15 @@ document.querySelectorAll('[data-directory]').forEach((directory) => {
       more.hidden = matches <= limit;
       empty.hidden = matches > 0;
       clear.hidden = !search.value;
-      if (save) updateLocation({ q: search.value.trim(), shown: limit > 6 ? limit : '' });
+      if (save) updateLocation({ q: search.value.trim(), shown: limit > pageSize ? limit : '' });
     }
-    search.addEventListener('input', () => { limit = 6; render(); });
-    clear.addEventListener('click', () => { search.value = ''; limit = 6; render(); search.focus(); });
-    more.addEventListener('click', () => { limit += 6; render(); });
+    search.addEventListener('input', () => { limit = pageSize; render(); });
+    clear.addEventListener('click', () => { search.value = ''; limit = pageSize; render(); search.focus(); });
+    more.addEventListener('click', () => { limit += pageSize; render(); });
     window.addEventListener('popstate', () => {
       const params = new URL(location.href).searchParams;
       search.value = (params.get('q') || '').slice(0, 100);
-      limit = Math.max(6, Math.min(rows.length, Number(params.get('shown')) || 6));
+      limit = Math.max(pageSize, Math.min(rows.length, Number(params.get('shown')) || pageSize));
       render(false);
     });
     render(false);

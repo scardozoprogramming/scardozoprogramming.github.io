@@ -9,7 +9,7 @@
 
 .game-detail-copy { min-width: 0px; }
 
-.game-detail-copy h1 { margin: 10px 0px 14px; font-size: 38px; line-height: 1.2; font-weight: 600; overflow-wrap: anywhere; }
+.game-detail-copy h1 { margin: 10px 0px 14px; color: var(--cyan); font-size: 38px; line-height: 1.2; font-weight: 600; overflow-wrap: anywhere; }
 
 .game-tagline { max-width: 460px; color: var(--muted); font-size: 20px; line-height: 1.5; }
 
@@ -87,6 +87,14 @@
 
 .game-video-external { display: flex; justify-content: flex-end; margin-top: 8px; font-size: 13px; }
 
+.game-animation { position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 0px; overflow: hidden; border: 1px solid var(--line); border-radius: 3px; background: rgb(2, 5, 12); }
+
+.game-animation picture { display: block; width: 100%; height: 100%; }
+
+.game-animation img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+.game-animation-toggle { position: absolute; right: 10px; bottom: 10px; border: 1px solid var(--line); background: rgba(3, 8, 17, 0.9); color: var(--cyan); }
+
 .game-reviews { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); }
 
 .game-reviews-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
@@ -109,12 +117,16 @@
 
 .game-review .icon { width: 12px; height: 12px; }
 
-.other-games { padding-block: 38px 55px; }
+.other-games { max-width: 1120px; padding-block: 38px 55px; }
 
-.related-games-grid-2 { max-width: 820px; grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+.other-games .section-title { font-size: 18px; line-height: 1.5; }
+
+.related-games-grid { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
 
 @media (max-width: 1024px) {
 .game-gallery { grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 10px; }
+.other-games { max-width: 820px; }
+.related-games-grid { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
 }
 
 @media (max-width: 1150px) {

@@ -95,21 +95,16 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "lVvc9PFdigA",
-      "url": "https://www.youtube.com/watch?v=lVvc9PFdigA"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/the-last-cat-in-the-universe/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

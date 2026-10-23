@@ -18,6 +18,12 @@
     "data": "Indies/Estudios/pablo-navarro-rawrlab-games/JSON/studio.json"
   },
   {
+    "name": "Jose, Catcade Games",
+    "slug": "jose-catcade-games",
+    "html": "Indies/Estudios/jose-catcade-games/HTML/studio.html",
+    "data": "Indies/Estudios/jose-catcade-games/JSON/studio.json"
+  },
+  {
     "name": "Jeremy Fryc, Stardust Team",
     "slug": "jeremy-fryc-stardust-team",
     "html": "Indies/Estudios/jeremy-fryc-stardust-team/HTML/studio.html",
@@ -84,15 +90,21 @@
     "data": "Indies/Estudios/enzo-brown-slain-mascot/JSON/studio.json"
   },
   {
-    "name": "Jose, Catcade Games",
-    "slug": "jose-catcade-games",
-    "html": "Indies/Estudios/jose-catcade-games/HTML/studio.html",
-    "data": "Indies/Estudios/jose-catcade-games/JSON/studio.json"
-  },
-  {
     "name": "Magnus Fredriksson, Bortbyting",
     "slug": "magnus-fredriksson-bortbyting",
     "html": "Indies/Estudios/magnus-fredriksson-bortbyting/HTML/studio.html",
     "data": "Indies/Estudios/magnus-fredriksson-bortbyting/JSON/studio.json"
+  },
+  {
+    "name": "Apamate Studio",
+    "slug": "apamate-studio",
+    "html": "Indies/Estudios/apamate-studio/HTML/studio.html",
+    "data": "Indies/Estudios/apamate-studio/JSON/studio.json"
+  },
+  {
+    "name": "Dust Games",
+    "slug": "dust-games",
+    "html": "Indies/Estudios/dust-games/HTML/studio.html",
+    "data": "Indies/Estudios/dust-games/JSON/studio.json"
   }
 ]

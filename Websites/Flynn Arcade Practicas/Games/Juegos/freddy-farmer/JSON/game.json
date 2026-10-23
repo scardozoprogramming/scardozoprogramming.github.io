@@ -109,12 +109,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "Bq4u-M9gdTg",
-      "url": "https://www.youtube.com/watch?v=Bq4u-M9gdTg"
-    }
-  ],
   "reviews": [
     {
       "quote": "Freddy Farmer provides a couple unique twists to classic arcade platformer action.",
@@ -132,11 +126,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/freddy-farmer/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

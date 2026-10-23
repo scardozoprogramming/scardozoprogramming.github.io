@@ -90,12 +90,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "fRrG1LPihvg",
-      "url": "https://www.youtube.com/watch?v=fRrG1LPihvg"
-    }
-  ],
   "reviews": [
     {
       "quote": "The game’s layered depth is an interesting element with new rules and tactics to discover. It also has a visually appealing look, and a...",
@@ -113,11 +107,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/papertris/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

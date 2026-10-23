@@ -104,12 +104,6 @@
       "text": "You may die or get trapped in this game, nothing prevents you from restarting at any moment and getting back in an instant."
     }
   ],
-  "trailers": [
-    {
-      "id": "F_CmGh5HRxg",
-      "url": "https://www.youtube.com/watch?v=F_CmGh5HRxg"
-    }
-  ],
   "reviews": [
     {
       "quote": "For me, the hallmark of a good puzzler is reaching a zen-like state with the game.",
@@ -127,11 +121,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/colored-effects/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

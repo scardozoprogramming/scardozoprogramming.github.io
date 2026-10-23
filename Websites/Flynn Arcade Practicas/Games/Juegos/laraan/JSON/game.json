@@ -94,20 +94,16 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "sQLlXC56KT4",
-      "url": "https://www.youtube.com/watch?v=sQLlXC56KT4"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
-    "lambs-on-the-road"
+    "lambs-on-the-road",
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/laraan/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

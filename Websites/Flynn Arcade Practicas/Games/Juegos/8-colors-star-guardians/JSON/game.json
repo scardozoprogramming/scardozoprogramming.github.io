@@ -124,12 +124,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "hdUbJ-rNH80",
-      "url": "https://www.youtube.com/watch?v=hdUbJ-rNH80"
-    }
-  ],
   "reviews": [
     {
       "quote": "\"8-Colors Star Guardians + is a novel indie approach to the boss-rush concept that makes players experiment and think about every move. While the...",
@@ -147,11 +141,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/8-colors-star-guardians/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

@@ -102,21 +102,16 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "1xfZ3PFnhfs",
-      "url": "https://www.youtube.com/watch?v=1xfZ3PFnhfs"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/living-dead-house/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

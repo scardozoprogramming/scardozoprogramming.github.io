@@ -100,12 +100,6 @@
       "text": "Cartoonish blood, fear."
     }
   ],
-  "trailers": [
-    {
-      "id": "X4jKWIeGao4",
-      "url": "https://www.youtube.com/watch?v=X4jKWIeGao4"
-    }
-  ],
   "reviews": [
     {
       "quote": "It’s short and cathartic.",
@@ -123,11 +117,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

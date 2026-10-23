@@ -97,12 +97,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "kY-BX5TFhTc",
-      "url": "https://www.youtube.com/watch?v=kY-BX5TFhTc"
-    }
-  ],
   "reviews": [
     {
       "quote": "I think anyone who likes chill meditative titles will also dig A Winding Path as well.",
@@ -120,11 +114,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/a-winding-path/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

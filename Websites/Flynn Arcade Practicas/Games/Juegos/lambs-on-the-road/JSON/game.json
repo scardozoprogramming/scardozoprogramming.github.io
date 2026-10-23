@@ -103,12 +103,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "lUwQEoTGRho",
-      "url": "https://www.youtube.com/watch?v=lUwQEoTGRho"
-    }
-  ],
   "reviews": [
     {
       "quote": "“Is stark art style fits the tone of the game perfectly, setting the scene for John’s emotional but perilous journey. It isn’t easy –...",
@@ -132,11 +126,13 @@
   ],
   "related": [
     "eternum-ex",
-    "what-comes-after"
+    "lambs-on-the-road",
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/lambs-on-the-road/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

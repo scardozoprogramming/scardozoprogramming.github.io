@@ -101,12 +101,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "qGue3bNP5lA",
-      "url": "https://www.youtube.com/watch?v=qGue3bNP5lA"
-    }
-  ],
   "reviews": [
     {
       "quote": "“Dexter Stardust: Adventures in Outer Space is a great point-and-click game with clever writing and puzzles; I was hooked from the beginning. At only...",
@@ -128,13 +122,14 @@
     }
   ],
   "related": [
-    "what-comes-after",
     "eternum-ex",
-    "lambs-on-the-road"
+    "lambs-on-the-road",
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/dexter-stardust/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

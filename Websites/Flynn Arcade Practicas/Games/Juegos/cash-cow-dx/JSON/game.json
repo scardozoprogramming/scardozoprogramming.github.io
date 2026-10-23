@@ -98,12 +98,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "9rvS3cC_qO8",
-      "url": "https://www.youtube.com/watch?v=9rvS3cC_qO8"
-    }
-  ],
   "reviews": [
     {
       "quote": "\"Cash Cow DX revisits the arcade era, when success required quick reflexes, a whole lot of practice\".",
@@ -121,11 +115,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/cash-cow-dx/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

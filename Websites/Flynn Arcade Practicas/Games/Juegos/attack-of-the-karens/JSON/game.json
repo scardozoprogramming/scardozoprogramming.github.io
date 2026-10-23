@@ -141,21 +141,16 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "PXM3mY0TH10",
-      "url": "https://www.youtube.com/watch?v=PXM3mY0TH10"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/attack-of-the-karens/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

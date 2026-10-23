@@ -127,21 +127,16 @@
       "text": "Own an Arcade Cabinet in your home running a PC? Viral Reload can be taken off of Free Play and assigned a credit button for a more authentic arcade experience. (You could even get quarters out of your friends!)"
     }
   ],
-  "trailers": [
-    {
-      "id": "wyAE_FDBK9g",
-      "url": "https://www.youtube.com/watch?v=wyAE_FDBK9g"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/viral-reload-ex/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

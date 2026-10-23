@@ -92,12 +92,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "zSTL72hEcds",
-      "url": "https://www.youtube.com/watch?v=zSTL72hEcds"
-    }
-  ],
   "reviews": [
     {
       "quote": "Flora & Fang: Guardians of the Vampire Garden is the type of game that would’ve kept my friends and I entertained late into a...",
@@ -115,11 +109,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

@@ -60,6 +60,15 @@
       "slug": "lambs-on-the-road",
       "copy": "When hope is the last thing to be lost",
       "image": "Games/Juegos/lambs-on-the-road/Images/cover.jpg"
+    },
+    {
+      "title": "Saga",
+      "slug": "saga",
+      "copy": "A Viking girl's quest for revenge.",
+      "image": "About/Images/project-saga.webp",
+      "tags": ["Platform", "Action"],
+      "platforms": ["PC"],
+      "url": "https://store.steampowered.com/app/2590820/Saga/?l=english"
     }
   ]
 }

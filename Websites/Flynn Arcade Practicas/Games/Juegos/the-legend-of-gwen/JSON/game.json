@@ -99,12 +99,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "OkY-OcmmmU8",
-      "url": "https://www.youtube.com/watch?v=OkY-OcmmmU8"
-    }
-  ],
   "reviews": [
     {
       "quote": "\"If you enjoy a bit more challenging type of game, you may enjoy your time here in The Legend of Gwen.\"",
@@ -122,11 +116,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/the-legend-of-gwen/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

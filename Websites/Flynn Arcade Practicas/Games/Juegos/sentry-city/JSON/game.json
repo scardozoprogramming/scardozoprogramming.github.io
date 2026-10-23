@@ -98,13 +98,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "8eLQ6h5HwVY",
-      "url": "https://www.youtube.com/watch?v=8eLQ6h5HwVY&t=1s",
-      "start": 1
-    }
-  ],
   "reviews": [
     {
       "quote": "Sentry City has its moments, and I think a certain kind of player might get really into it.",
@@ -116,11 +109,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/sentry-city/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

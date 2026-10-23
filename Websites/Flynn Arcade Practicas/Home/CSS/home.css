@@ -5,7 +5,9 @@
 
 .featured-game { border-bottom: 1px solid var(--line); background: rgba(3, 8, 17, 0.8); }
 
-.featured-game-inner { display: grid; grid-template-columns: minmax(0px, 1fr) minmax(0px, 0.85fr); align-items: center; gap: 50px; padding-block: 32px; }
+.featured-game-inner, .promotions .promotion-inner { max-width: 880px; }
+
+.featured-game-inner { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); align-items: center; gap: 36px; padding-block: 32px; }
 
 .featured-game-copy { min-width: 0px; }
 
@@ -23,7 +25,24 @@
 
 .featured-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
 
+.featured-game-link { display: block; min-width: 0px; }
+
 .featured-game-image { width: 100%; max-height: 250px; aspect-ratio: 16 / 9; object-fit: contain; }
+
+.promotions .promotion-slide { grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 36px; min-height: 250px; }
+
+.promotions .promotion-copy { padding-left: 0px; }
+
+.promotion-visual { display: block; position: relative; width: 100%; height: 220px; }
+
+.promotions .promotion-art { height: 100%; margin-top: 0px; }
+
+/* Remove only the transparent padding around the original Eternum artwork. */
+.promotion-visual-eternum { width: 273px; max-width: 100%; overflow: hidden; }
+
+.promotion-visual-eternum .promotion-art { position: absolute; left: -70.732%; top: -9.89%; max-width: none; width: 177.384%; height: 109.89%; }
+
+.promotion-visual-eternum .promotion-art[src$="/preview.webp"] { left: 0px; top: 0px; width: 100%; height: 100%; }
 
 @media (max-width: 1150px) {
 .featured-game-inner { gap: 32px; }
@@ -33,6 +52,9 @@
 @media (max-width: 767px) {
 .featured-game-inner { grid-template-columns: 1fr; gap: 24px; }
 .featured-game-image { max-height: 200px; }
+.promotions .promotion-slide { grid-template-columns: 1fr; grid-template-rows: minmax(220px, auto) 180px; gap: 20px; min-height: 420px; }
+.promotion-visual { height: 180px; max-width: 400px; }
+.promotion-visual-eternum { width: 223px; }
 }
 
 @media (max-width: 600px) {

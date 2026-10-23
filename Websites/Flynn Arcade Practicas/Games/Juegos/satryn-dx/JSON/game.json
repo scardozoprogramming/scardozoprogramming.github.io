@@ -91,12 +91,6 @@
       "text": "Worldwide leaderboard"
     }
   ],
-  "trailers": [
-    {
-      "id": "xiqeekKgv0o",
-      "url": "https://www.youtube.com/watch?v=xiqeekKgv0o"
-    }
-  ],
   "reviews": [
     {
       "quote": "\"I had a blast with the arcade fun in Satryn DX and will surely boot it up whenever I want to try and beat.\"",
@@ -114,11 +108,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/satryn-dx/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

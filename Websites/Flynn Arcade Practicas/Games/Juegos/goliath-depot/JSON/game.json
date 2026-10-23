@@ -97,12 +97,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "p4wQZClL7X4",
-      "url": "https://www.youtube.com/watch?v=p4wQZClL7X4"
-    }
-  ],
   "reviews": [
     {
       "quote": "\"Built around a concept introduced in Hotel Mario, a much-maligned CD-i title.\"",
@@ -120,11 +114,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/goliath-depot/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

@@ -104,13 +104,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "zk9ebZ-LRFU",
-      "url": "https://www.youtube.com/watch?v=zk9ebZ-LRFU&t=4s",
-      "start": 4
-    }
-  ],
   "reviews": [
     {
       "quote": "“When I completed the game, I wanted to run outside of my downtown L.A. apartment to hug strangers, feed every stray cat, water every...",
@@ -147,11 +140,13 @@
   ],
   "related": [
     "eternum-ex",
-    "lambs-on-the-road"
+    "lambs-on-the-road",
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/what-comes-after/Images/preview.webp",
     "width": 640,
     "height": 359
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

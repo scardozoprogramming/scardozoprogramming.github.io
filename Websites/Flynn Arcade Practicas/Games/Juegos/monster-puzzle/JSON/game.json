@@ -92,20 +92,16 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "_zNmudmZw8Y",
-      "url": "https://www.youtube.com/watch?v=_zNmudmZw8Y"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
-    "lambs-on-the-road"
+    "lambs-on-the-road",
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/monster-puzzle/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

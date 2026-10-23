@@ -112,12 +112,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "MSRTJvFvM2E",
-      "url": "https://www.youtube.com/watch?v=MSRTJvFvM2E"
-    }
-  ],
   "reviews": [
     {
       "quote": "If I had to describe Eternum Ex in one word, it would be nostalgia... My mind returned to an earlier era...",
@@ -140,8 +134,17 @@
     }
   ],
   "related": [
-    "what-comes-after",
-    "lambs-on-the-road"
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
   ],
-  "preview": null
+  "preview": {
+    "image": "Games/Juegos/eternum-ex/Images/preview.webp",
+    "width": 640,
+    "height": 360,
+    "source": "https://www.youtube.com/watch?v=MSRTJvFvM2E",
+    "start_seconds": 20.5,
+    "duration_seconds": 3.5
+  },
+  "related_source": "About/JSON/about.json"
 }

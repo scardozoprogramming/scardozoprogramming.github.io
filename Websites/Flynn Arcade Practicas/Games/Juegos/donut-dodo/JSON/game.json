@@ -103,12 +103,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "HRj6asc5Gpo",
-      "url": "https://www.youtube.com/watch?v=HRj6asc5Gpo"
-    }
-  ],
   "reviews": [
     {
       "quote": "Fans of classic arcade games should love Donut Dodo, mainly because it gives them something new. It’s not a port; it’s a new game...",
@@ -126,11 +120,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/donut-dodo/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

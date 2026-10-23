@@ -92,21 +92,16 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "cu29TVVvAhI",
-      "url": "https://www.youtube.com/watch?v=cu29TVVvAhI"
-    }
-  ],
   "reviews": [],
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/boardwalk-builders/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

@@ -191,9 +191,9 @@ h1, h2, h3, p { margin: 0px; }
 
 .page-heading { padding-block: 44px 28px; }
 
-.page-heading h1 { font-size: 38px; line-height: 1.2; margin-top: 11px; font-weight: 600; }
+.page-heading h1 { color: var(--cyan); font-size: 38px; line-height: 1.2; margin-top: 11px; font-weight: 600; }
 
-.page-heading h1 span { color: var(--cyan); }
+.page-heading h1 span { color: var(--pink); }
 
 .page-heading h1:first-child { margin-top: 0px; }
 
@@ -223,9 +223,9 @@ body:has(.image-viewer[open]) { overflow: hidden; }
 
 .section-heading { margin-bottom: 25px; }
 
-.section-title { font: 400 18px/1.7 var(--pixel); text-transform: uppercase; }
+.section-title { color: var(--cyan); font: 400 18px/1.7 var(--pixel); text-transform: uppercase; }
 
-.section-title::after { display: block; content: ""; width: 65px; height: 2px; margin-top: 10px; background: linear-gradient(90deg, var(--cyan), var(--pink)); }
+.page-heading h1::after, .section-title::after, .game-detail-copy h1::after { display: block; content: ""; width: 65px; height: 2px; margin-top: 10px; background: linear-gradient(90deg, var(--cyan), var(--pink)); }
 
 .presskits, .other-games { padding-bottom: 60px; }
 

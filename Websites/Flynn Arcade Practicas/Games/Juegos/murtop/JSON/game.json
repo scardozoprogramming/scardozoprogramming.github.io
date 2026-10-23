@@ -114,12 +114,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "Z3mEErlelKM",
-      "url": "https://www.youtube.com/watch?v=Z3mEErlelKM"
-    }
-  ],
   "reviews": [
     {
       "quote": "\"Honestly, it is very well designed as an arcade game and it could have been a success in the time of the arcades. In...",
@@ -131,11 +125,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/murtop/Images/preview.webp",
     "width": 600,
     "height": 338
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

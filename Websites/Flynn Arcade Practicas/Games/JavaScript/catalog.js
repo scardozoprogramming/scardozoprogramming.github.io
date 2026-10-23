@@ -4,11 +4,10 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
   const previewCache = new Map();
   const gamePreviews = Array.from(document.querySelectorAll('[data-game-preview]')).map((image) => {
-    const link = image.closest('.game-link');
-    const card = image.closest('[data-game-card]');
+    const link = image.closest('a');
     const cover = image.getAttribute('src');
     const preview = image.dataset.gamePreview;
-    const isActive = () => !document.hidden && !card.hidden && !reducedMotion.matches && ((hoverPointer.matches && link.matches(':hover')) || link.matches(':focus-visible'));
+    const isActive = () => !document.hidden && !image.closest('[hidden]') && !reducedMotion.matches && ((hoverPointer.matches && link.matches(':hover')) || link.matches(':focus-visible'));
     function update() {
       if (!isActive()) {
         if (image.getAttribute('src') !== cover) image.setAttribute('src', cover);

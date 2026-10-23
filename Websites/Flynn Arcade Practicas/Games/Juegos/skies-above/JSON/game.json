@@ -85,12 +85,6 @@
       ]
     }
   ],
-  "trailers": [
-    {
-      "id": "EijpwYgu-O8",
-      "url": "https://www.youtube.com/watch?v=EijpwYgu-O8"
-    }
-  ],
   "reviews": [
     {
       "quote": "Skies Above provides some pure and simple arcade action fun.",
@@ -108,11 +102,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/skies-above/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }

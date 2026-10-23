@@ -11,21 +11,24 @@
       "subtitle": "Eternum Ex",
       "description": "Eternum Ex goes on sale in Asia on August 5.",
       "game": "Eternum Ex",
-      "image": "Games/Juegos/eternum-ex/Images/promotion.png"
+      "image": "Games/Juegos/eternum-ex/Images/promotion.png",
+      "preview": "Games/Juegos/eternum-ex/Images/preview.webp"
     },
     {
-      "title": "100% pure graphic adventure",
-      "subtitle": "Dexter Stardust",
-      "description": "Dexter Stardust: available March 03, 2022.",
-      "game": "Dexter Stardust",
-      "image": "Games/Juegos/dexter-stardust/Images/promotion.png"
+      "title": "When hope is the last thing to be lost",
+      "subtitle": "Lambs on the Road",
+      "description": "A platform adventure centered on holding onto hope.",
+      "game": "Lambs on the Road",
+      "image": "Games/Juegos/lambs-on-the-road/Images/cover.jpg",
+      "preview": "Games/Juegos/lambs-on-the-road/Images/preview.webp"
     },
     {
-      "title": "Never Lose Yourself",
-      "subtitle": "What Comes After",
-      "description": "What Comes After, best releasing experience.",
-      "game": "What Comes After",
-      "image": "Games/Juegos/what-comes-after/Images/promotion.png"
+      "title": "A Viking girl's quest for revenge.",
+      "subtitle": "Saga",
+      "description": "An action platformer from Flynn's Arcade.",
+      "game": "Saga",
+      "image": "About/Images/project-saga.webp",
+      "url": "https://store.steampowered.com/app/2590820/Saga/?l=english"
     }
   ]
 }

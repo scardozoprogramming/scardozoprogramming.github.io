@@ -83,12 +83,6 @@
       "text": "Experience an adrenaline-fueled combat system like never before, featuring dynamic dashes, strategic throwables, and sandbox-style arenas. Dash through the battlefield with precision, unleash an array of creative throwables, and navigate a dynamic environment for tactical advantages. This is combat reimagined, where every move is a strategic choice in an ever-evolving arena."
     }
   ],
-  "trailers": [
-    {
-      "id": "HTDR4M8_0Is",
-      "url": "https://www.youtube.com/watch?v=HTDR4M8_0Is"
-    }
-  ],
   "reviews": [
     {
       "quote": "Electro Soul Games have created a fun and experimental title with Ion Shift for a low price.",
@@ -106,11 +100,12 @@
   "related": [
     "eternum-ex",
     "lambs-on-the-road",
-    "what-comes-after"
+    "saga"
   ],
   "preview": {
     "image": "Games/Juegos/ion-shift/Images/preview.webp",
     "width": 640,
     "height": 360
-  }
+  },
+  "related_source": "About/JSON/about.json"
 }
