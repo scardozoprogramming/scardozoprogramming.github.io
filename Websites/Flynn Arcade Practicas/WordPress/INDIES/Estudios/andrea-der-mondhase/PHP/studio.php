@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Andrea, Der Mondhase 8-Colors Star Guardians +" aria-labelledby="studio-7">
+            <div class="studio-identity"><p class="studio-games">8-Colors Star Guardians +</p><h2 id="studio-7">Andrea, Der Mondhase</h2><img class="studio-logo" src="<?php echo esc_url(flynns_asset_url('INDIES/Estudios/andrea-der-mondhase/Images/logo.png')); ?>" alt="Andrea, Der Mondhase logo" loading="lazy"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(flynns_asset_url('INDIES/Estudios/andrea-der-mondhase/Images/portrait.jpg')); ?>" alt="Andrea, Der Mondhase" loading="lazy">
+            <div class="studio-description"><p>Italian solo developer and founder of Der Mondhase.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Andrea, Der Mondhase</span></summary><p>Andrea Demetrio is an Italian solo developer with a PhD in Physics (don’t ask). Mostly known for his 3D fighting game Schwarzerblitz and defined as a «trolling creator» by some players due to his approach to game development, he routinely explores different genres depending on how inspiration strikes him. He started his (so far) one man studio «Der Mondhase» in 2021. 8-Colors Star Guardians + is his first commercial game and the first to be published on console.</p></details><a class="text-link studio-website" href="https://dermondhase.github.io/" target="_blank" rel="noopener noreferrer">dermondhase.github.io<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

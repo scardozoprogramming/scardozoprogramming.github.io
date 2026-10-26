@@ -1,0 +1,120 @@
+{
+  "title": "Sentry City",
+  "summary": "Side-scrolling action with a cyberpunk setting.",
+  "image": "GAMES/Juegos/sentry-city/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "sentry-city",
+  "tagline": "A Cyberpunk-style side-scroller",
+  "hero_video": {
+    "id": "8eLQ6h5HwVY",
+    "url": "https://www.youtube.com/watch?v=8eLQ6h5HwVY&t=1s",
+    "start": 1
+  },
+  "gallery": [
+    {
+      "image": "GAMES/Juegos/sentry-city/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Sentry City gameplay screenshot 1"
+    },
+    {
+      "image": "GAMES/Juegos/sentry-city/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Sentry City gameplay screenshot 2"
+    },
+    {
+      "image": "GAMES/Juegos/sentry-city/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Sentry City gameplay screenshot 3"
+    },
+    {
+      "image": "GAMES/Juegos/sentry-city/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Sentry City gameplay screenshot 4"
+    },
+    {
+      "image": "GAMES/Juegos/sentry-city/Images/screenshot-5.webp",
+      "width": 600,
+      "height": 338,
+      "alt": "Sentry City gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "GAMES/Juegos/sentry-city/Images/poster.webp",
+    "width": 1280,
+    "height": 720,
+    "alt": "Sentry City cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/sentry-city-switch/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Sentry City is a cyberpunk-style side-scroller with gameplay that is part trial-and-error, and part reaction time based. Traverse the city using the motorcycle overworld map, blast and think your way through the levels, and fight tough bosses to uncover who is behind the city’s AI disruption."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sentry City is a cyberpunk-style side-scroller with gameplay that is part trial-and-error, and part reaction time based shooter. Each level, and each section of each level is uniquely designed and not repetitive. It would sit at home with classic 8-bit/16-bit games, while also at the same time having it’s own original mechanics and feel. Traverse the city using the motorcycle overworld map, blast and think your way through the levels, destroy the AI brain in each sector, fight tough robot bosses to uncover who is behind the city’s AI disruption."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Blast and think your way through challenging levels and tough bosses in Sentry City’s cyberpunk-esque setting",
+        "Unique side-scroller game-play that is part trial-and-error, part reaction time based, and part puzzle. Each section and level is uniquely designed and not repetitive.",
+        "Super responsive controls for tight gameplay",
+        "Infinite lives and multiple checkpoints on every level",
+        "Runs at 60fps+ framerate",
+        "Hand-drawn pixel art graphics and animations including intro and outro cutscenes.",
+        "Modern lighting and effects to add style and feel",
+        "Time Attack for each level that rates you based on how fast you beat each level (for the speed-runners out there)",
+        "Beautiful Retro Synth-wave/electronic soundtrack"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Sentry City has its moments, and I think a certain kind of player might get really into it.",
+      "author": "Touch Arcade",
+      "outlet": "Touch Arcade",
+      "url": "https://toucharcade.com/2023/10/06/infinity-strash-dragon-quest-dai-switch-review-rise-of-the-triad-eshop-performance-detective-pikachu-download/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
+  ],
+  "preview": {
+    "image": "GAMES/Juegos/sentry-city/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  },
+  "related_source": "ABOUT/JSON/about.json"
+}

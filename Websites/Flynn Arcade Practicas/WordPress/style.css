@@ -1,0 +1,17 @@
+/*
+Theme Name: Flynn's Arcade Neon
+Description: The complete Flynn's Arcade website, organised by section, game and studio.
+Version: 1.0.0
+Requires at least: 6.3
+Requires PHP: 7.4
+Text Domain: flynns-arcade
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.wordpress-content { padding-block: 32px 50px; overflow-wrap: anywhere; }
+.wordpress-content > * + * { margin-top: 20px; }
+.wordpress-content a:not(.arcade-button) { color: var(--cyan); }
+.wordpress-content h2, .wordpress-content h3 { color: var(--cyan); }
+.wordpress-content img { height: auto; }
+.wordpress-content input, .wordpress-content textarea { max-width: 100%; }

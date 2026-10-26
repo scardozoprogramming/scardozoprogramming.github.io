@@ -1,0 +1,79 @@
+{
+  "history": [
+    {
+      "title": "Description",
+      "paragraphs": [
+        "We love creating games and that is what we try to do everyday. Flynn’s Arcades is a company that develop its own games meanwhile we publish third party games.",
+        "The games we produce are smart, simple and elegantly designed. Our objective is to make people spend a good time with our products creating an enjoyable video game experience."
+      ]
+    },
+    {
+      "title": "Early history",
+      "paragraphs": [
+        "Everything began at the Autonomic University of Barcelona several years ago. Juan Peralta, Flynn’s Arcades CEO, was teaching at this university. Juan used to direct different final degree projects all related with video games. One day Felipe Lumbreras and me proposed to Xavier Alsina (one of our pupils) to develop a total different Augmented Reality mobile game to reinvent the concept of board games. This is how we began to look for collaborators and after a month, we were a group of developers and artists developing OUTSIDERS.",
+        "Outsiders is a DEMO of combination of board games like Warhhamer and video games like Xcom, all combined with Augmented Reality (AR). During this project Juan Peralta met Francisco Raya, one of the designers."
+      ]
+    },
+    {
+      "title": "After that",
+      "paragraphs": [
+        "After the Outsiders DEMO was finished some people found new jobs like Juan Gonzalez and Luis Estanyol now working at FX Animation and others like Francisco and me decided to work in new projects.",
+        "This is how Flynn’s Arcades became truth and our last projects also. Now Francisco and me are trying to create new projects and an incredible experience for the users."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "image": "ABOUT/Images/gallery-01.jpg",
+      "alt": "Playing Eternum on an arcade cabinet"
+    },
+    {
+      "image": "ABOUT/Images/gallery-02.jpg",
+      "alt": "At the studio with Flynn's Arcade on the screens"
+    },
+    {
+      "image": "ABOUT/Images/gallery-03.jpg",
+      "alt": "Testing the OUTSIDERS augmented-reality prototype"
+    },
+    {
+      "image": "ABOUT/Images/gallery-04.jpg",
+      "alt": "Presenting game projects at the university"
+    },
+    {
+      "image": "ABOUT/Images/gallery-05.jpg",
+      "alt": "Flynn's Arcade exhibition stand with Eternum"
+    },
+    {
+      "image": "ABOUT/Images/gallery-06.jpg",
+      "alt": "A group photo at IndieDevDay"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Eternum Ex",
+      "slug": "eternum-ex",
+      "copy": "Hell is yours, the Arcade is ours",
+      "image": "GAMES/Juegos/eternum-ex/Images/cover.jpg"
+    },
+    {
+      "title": "Lambs on the road",
+      "slug": "lambs-on-the-road",
+      "copy": "When hope is the last thing to be lost",
+      "image": "GAMES/Juegos/lambs-on-the-road/Images/cover.jpg"
+    },
+    {
+      "title": "Saga",
+      "slug": "saga",
+      "copy": "A Viking girl's quest for revenge.",
+      "image": "ABOUT/Images/project-saga.webp",
+      "tags": [
+        "Platform",
+        "Action"
+      ],
+      "platforms": [
+        "PC"
+      ],
+      "url": "https://store.steampowered.com/app/2590820/Saga/?l=english"
+    }
+  ]
+}

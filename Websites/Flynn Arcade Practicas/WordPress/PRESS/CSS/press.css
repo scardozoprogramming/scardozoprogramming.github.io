@@ -1,0 +1,38 @@
+/* Flynn's Arcade: press styles. */
+.press-directory { padding-bottom: 60px; }
+
+.press-row { display: grid; grid-template-columns: minmax(0px, 0.65fr) minmax(0px, 1.35fr); gap: 32px; align-items: center; padding-block: 28px; border-top: 1px solid var(--line); }
+
+.press-image { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: rgb(2, 6, 13); }
+
+.press-copy h2 { font-size: 25px; font-weight: 600; line-height: 1.3; margin: 10px 0px 13px; }
+
+.press-copy > p:not(.eyebrow) { color: var(--muted); }
+
+.press-copy .text-link { margin-top: 18px; }
+
+.presskit-grid { display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 22px; }
+
+.presskit { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; min-width: 0px; }
+
+.presskit > img { aspect-ratio: 4 / 3; width: 100%; object-fit: contain; background: rgb(2, 6, 13); }
+
+.presskit h3 { font-size: 16px; font-weight: 600; }
+
+.presskit-caption { color: var(--muted); font-size: 12px; }
+
+.presskit-download { width: 100%; margin-top: auto; }
+
+@media (max-width: 850px) {
+.press-row { gap: 25px; }
+.press-copy h2 { font-size: 21px; }
+.presskit-grid { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+}
+
+@media (max-width: 600px) {
+.press-row { grid-template-columns: 1fr; gap: 20px; padding-block: 25px; }
+.press-copy h2 { font-size: 23px; }
+.press-copy > p:not(.eyebrow) { font-size: 15px; }
+.presskit-grid { grid-template-columns: 1fr; gap: 25px; }
+.presskit h3 { font-size: 16px; }
+}

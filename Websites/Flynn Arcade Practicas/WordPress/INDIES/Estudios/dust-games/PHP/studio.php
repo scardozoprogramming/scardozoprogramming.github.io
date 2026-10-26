@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Dust Games Roombattle Barcelona" aria-labelledby="studio-17">
+            <div class="studio-identity"><p class="studio-games">Roombattle</p><h2 id="studio-17">Dust Games</h2><img class="studio-logo" src="<?php echo esc_url(flynns_asset_url('INDIES/Estudios/dust-games/Images/logo.webp')); ?>" alt="Dust Games logo" loading="lazy" width="500" height="292"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(flynns_asset_url('INDIES/Estudios/dust-games/Images/portrait.webp')); ?>" alt="The Dust Games team at their Roombattle stand" loading="lazy" width="960" height="540">
+            <div class="studio-description"><p>Dust Games is an independent video game studio based in Barcelona. We blend creativity and fun to turn them into engaging gaming experiences that everyone can enjoy.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Dust Games</span></summary><p>We&#8217;re enthusiastic about the idea of offering gaming experiences that make players have an incredible time, laugh heartily, and above all, disconnect from their daily routines with our games.</p></details><a class="text-link studio-website" href="https://drive.google.com/drive/folders/1WSe8igGP9T7T1yvPTw-XCsToITOOBC8t" target="_blank" rel="noopener noreferrer">Roombattle press kit<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

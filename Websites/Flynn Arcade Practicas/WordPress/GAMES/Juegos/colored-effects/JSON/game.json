@@ -1,0 +1,132 @@
+{
+  "title": "Colored Effects",
+  "summary": "A game combining puzzles and platforming.",
+  "image": "GAMES/Juegos/colored-effects/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "colored-effects",
+  "tagline": "A puzzle platformer game",
+  "hero_video": {
+    "id": "F_CmGh5HRxg",
+    "url": "https://www.youtube.com/watch?v=F_CmGh5HRxg"
+  },
+  "gallery": [
+    {
+      "image": "GAMES/Juegos/colored-effects/Images/screenshot-1.webp",
+      "width": 600,
+      "height": 338,
+      "alt": "Colored Effects gameplay screenshot 1"
+    },
+    {
+      "image": "GAMES/Juegos/colored-effects/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Colored Effects gameplay screenshot 2"
+    },
+    {
+      "image": "GAMES/Juegos/colored-effects/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Colored Effects gameplay screenshot 3"
+    },
+    {
+      "image": "GAMES/Juegos/colored-effects/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Colored Effects gameplay screenshot 4"
+    },
+    {
+      "image": "GAMES/Juegos/colored-effects/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Colored Effects gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "GAMES/Juegos/colored-effects/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Colored Effects cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/colored-effects-switch/"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/1892570/Colored_Effects/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Colored Effects is a puzzle platformer game where you use different abilities to advance through levels. Each color grants a unique ability. Switch between the colors and their effects to collect gems, defeat bosses, and solve fun puzzles."
+    },
+    {
+      "type": "heading",
+      "text": "Colors and Effects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Effects are the abilities you use in the game, each effect is unique and distinguishable by its own color. Switching Colors at the right moment is the key to progress."
+    },
+    {
+      "type": "heading",
+      "text": "Unique Bosses"
+    },
+    {
+      "type": "paragraph",
+      "text": "Encounter bosses in between levels, each boss has unique attacks and requires a different way to defeat it."
+    },
+    {
+      "type": "heading",
+      "text": "Restart and try again"
+    },
+    {
+      "type": "paragraph",
+      "text": "You may die or get trapped in this game, nothing prevents you from restarting at any moment and getting back in an instant."
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "For me, the hallmark of a good puzzler is reaching a zen-like state with the game.",
+      "author": "Hey Poor Player",
+      "outlet": "Hey Poor Player",
+      "url": "https://www.heypoorplayer.com/2023/11/29/colored-effects-review-switch/"
+    },
+    {
+      "quote": "The initial fun may soon give way to want.",
+      "author": "Pure Nintendo",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-colored-effects-nintendo-switch/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
+  ],
+  "preview": {
+    "image": "GAMES/Juegos/colored-effects/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  },
+  "related_source": "ABOUT/JSON/about.json"
+}

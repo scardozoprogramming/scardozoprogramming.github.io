@@ -1,0 +1,34 @@
+{
+  "featured_game": "The Last Cat in the Universe",
+  "hero_title": [
+    "The Last Cat",
+    "in the Universe"
+  ],
+  "hero_copy": "A short narrative incremental game about finding peace amidst the darkness.",
+  "promotions": [
+    {
+      "title": "Hell comes to Asia",
+      "subtitle": "Eternum Ex",
+      "description": "Eternum Ex goes on sale in Asia on August 5.",
+      "game": "Eternum Ex",
+      "image": "GAMES/Juegos/eternum-ex/Images/promotion.png",
+      "preview": "GAMES/Juegos/eternum-ex/Images/preview.webp"
+    },
+    {
+      "title": "When hope is the last thing to be lost",
+      "subtitle": "Lambs on the Road",
+      "description": "A platform adventure centered on holding onto hope.",
+      "game": "Lambs on the Road",
+      "image": "GAMES/Juegos/lambs-on-the-road/Images/cover.jpg",
+      "preview": "GAMES/Juegos/lambs-on-the-road/Images/preview.webp"
+    },
+    {
+      "title": "A Viking girl's quest for revenge.",
+      "subtitle": "Saga",
+      "description": "An action platformer from Flynn's Arcade.",
+      "game": "Saga",
+      "image": "ABOUT/Images/project-saga.webp",
+      "url": "https://store.steampowered.com/app/2590820/Saga/?l=english"
+    }
+  ]
+}

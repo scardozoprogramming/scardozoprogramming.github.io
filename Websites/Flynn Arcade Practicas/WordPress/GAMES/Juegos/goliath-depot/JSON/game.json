@@ -1,0 +1,125 @@
+{
+  "title": "Goliath Depot",
+  "summary": "A 2D door-slamming arcade game inspired by early coin-op classics.",
+  "image": "GAMES/Juegos/goliath-depot/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch"
+  ],
+  "slug": "goliath-depot",
+  "tagline": "A door-slamming 2D arcade game taken straight from the early 80's",
+  "hero_video": {
+    "id": "p4wQZClL7X4",
+    "url": "https://www.youtube.com/watch?v=p4wQZClL7X4"
+  },
+  "gallery": [
+    {
+      "image": "GAMES/Juegos/goliath-depot/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Goliath Depot gameplay screenshot 1"
+    },
+    {
+      "image": "GAMES/Juegos/goliath-depot/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Goliath Depot gameplay screenshot 2"
+    },
+    {
+      "image": "GAMES/Juegos/goliath-depot/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Goliath Depot gameplay screenshot 3"
+    },
+    {
+      "image": "GAMES/Juegos/goliath-depot/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Goliath Depot gameplay screenshot 4"
+    },
+    {
+      "image": "GAMES/Juegos/goliath-depot/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Goliath Depot gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "GAMES/Juegos/goliath-depot/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Goliath Depot cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/goliath-depot-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Close all doors, kick the enemies and speedrun your way through 40 unique levels. Are you good enough to lift the curse of the Goliath Depot?"
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "paragraph",
+      "text": "Goliath Depot is a door-slamming 2D arcade platformer in the style of the early 80’s. Close all doors, kick away the enemies and rack up your score in 4 worlds filled with single-screen levels inspired by tough-as-nail retro arcade platformers. Are you good enough to lift the curse of the Goliath Depot?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pick-up-and-play arcade gameplay",
+        "4 worlds with unique themes and gimmicks (40 levels and 2 difficulties)",
+        "Play in solo or local co-op (*2 controllers are required for local co-op)",
+        "Graphics and music inspired by the 1980",
+        "Unlockable modes and power ups",
+        "25 medals (in-game achivements) that unlock new characters!",
+        "A built-in randomizer mode with settings for infinite replayability",
+        "Online leaderboards",
+        "Speedrun-mode (timer + individual level practice)!"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "\"Built around a concept introduced in Hotel Mario, a much-maligned CD-i title.\"",
+      "author": "Tech Gaming",
+      "outlet": "Metacritic",
+      "url": "https://www.tech-gaming.com/goliath-depot/"
+    },
+    {
+      "quote": "\"If you’ve enjoyed the recent string of retro arcade throwbacks that have been brought to the Switch.\"",
+      "author": "TouchArcade",
+      "outlet": "Metacritic",
+      "url": "https://toucharcade.com/2024/06/03/umbraclaw-switch-review-bethesda-eshop-discount-sale-wizardry-remake-port/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
+  ],
+  "preview": {
+    "image": "GAMES/Juegos/goliath-depot/Images/preview.webp",
+    "width": 640,
+    "height": 360
+  },
+  "related_source": "ABOUT/JSON/about.json"
+}

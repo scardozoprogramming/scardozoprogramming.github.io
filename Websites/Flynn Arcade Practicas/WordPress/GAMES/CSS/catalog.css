@@ -1,0 +1,29 @@
+/* Flynn's Arcade: catalog styles. */
+.catalog { padding-block: 42px 58px; scroll-margin-top: 20px; }
+
+.catalog-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+
+html:not(.js-enabled) .catalog-toolbar { display: none; }
+
+.catalog-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 22px; flex-wrap: wrap; margin-bottom: 25px; }
+
+.filter-group { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+
+.filter-button { min-height: 44px; padding: 8px 13px; border: 1px solid transparent; border-radius: 3px; color: var(--muted); background: rgba(3, 8, 17, 0.8); font-size: 12px; font-weight: 600; text-transform: uppercase; }
+
+.filter-button:hover { color: var(--cyan); }
+
+.filter-button[aria-pressed="true"] { color: var(--bg); background: var(--cyan); }
+
+.page-heading + .catalog { padding-top: 0px; }
+
+@media (max-width: 1150px) {
+.filter-button { padding-inline: 9px; }
+}
+
+@media (max-width: 600px) {
+.catalog { padding-block: 27px 35px; }
+.catalog-toolbar { gap: 17px; margin-bottom: 20px; }
+.filter-group { gap: 3px; }
+.filter-button { min-height: 44px; padding: 8px 10px; font-size: 12px; }
+}

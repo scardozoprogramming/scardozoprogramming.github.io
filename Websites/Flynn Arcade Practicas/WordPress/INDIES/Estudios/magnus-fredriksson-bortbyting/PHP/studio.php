@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Magnus Fredriksson, Bortbyting Flora &amp; Fang: Guardians of the vampire garden" aria-labelledby="studio-15">
+            <div class="studio-identity"><p class="studio-games">Flora &amp; Fang: Guardians of the vampire garden</p><h2 id="studio-15">Magnus Fredriksson, Bortbyting</h2><img class="studio-logo" src="<?php echo esc_url(flynns_asset_url('INDIES/Estudios/magnus-fredriksson-bortbyting/Images/logo.png')); ?>" alt="Magnus Fredriksson, Bortbyting logo" loading="lazy"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(flynns_asset_url('INDIES/Estudios/magnus-fredriksson-bortbyting/Images/portrait.jpg')); ?>" alt="Magnus Fredriksson, Bortbyting" loading="lazy">
+            <div class="studio-description"><p>Kiruna-based animator and filmmaker turned arcade game developer.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Magnus Fredriksson, Bortbyting</span></summary><p>I’m Magnus Fredriksson, animator, filmmaker, and now indie game developer, thanks to a mild midlife crisis. I grew up in Kiruna in northern Sweden (where I now live again), where arcades were few and far between. Gaming at home on the Amiga or NES became my go-to, but I’ve always had a special love for arcade-style games that are easy to pick up and play, especially if they’re co-op.</p></details><a class="text-link studio-website" href="https://bortbyting.com/" target="_blank" rel="noopener noreferrer">bortbyting.com<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

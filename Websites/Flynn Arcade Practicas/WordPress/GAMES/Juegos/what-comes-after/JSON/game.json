@@ -1,0 +1,152 @@
+{
+  "title": "What Comes After",
+  "summary": "Travel with Vivi on a train carrying the souls of people, animals and plants. Through their conversations, this narrative adventure explores life, loss and learning to love yourself.",
+  "image": "GAMES/Juegos/what-comes-after/Images/cover.jpg",
+  "tags": [
+    "Narrative",
+    "Adventure"
+  ],
+  "categories": [
+    "narrative"
+  ],
+  "platforms": [
+    "Switch",
+    "Xbox",
+    "PlayStation"
+  ],
+  "slug": "what-comes-after",
+  "tagline": "Never lose yourself",
+  "hero_video": {
+    "id": "ZBIj7KCL5LU",
+    "url": "https://www.youtube.com/watch?v=ZBIj7KCL5LU"
+  },
+  "gallery": [
+    {
+      "image": "GAMES/Juegos/what-comes-after/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "What Comes After gameplay screenshot 1"
+    },
+    {
+      "image": "GAMES/Juegos/what-comes-after/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "What Comes After gameplay screenshot 2"
+    },
+    {
+      "image": "GAMES/Juegos/what-comes-after/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "What Comes After gameplay screenshot 3"
+    },
+    {
+      "image": "GAMES/Juegos/what-comes-after/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "What Comes After gameplay screenshot 4"
+    },
+    {
+      "image": "GAMES/Juegos/what-comes-after/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "What Comes After gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "GAMES/Juegos/what-comes-after/Images/poster.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "What Comes After cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/what-comes-after-switch/"
+    },
+    {
+      "label": "Xbox",
+      "platform": "Xbox",
+      "url": "https://www.xbox.com/es-ES/games/store/what-comes-after/9P6DQHFMRTSR"
+    },
+    {
+      "label": "PlayStation",
+      "platform": "PlayStation",
+      "url": "https://store.playstation.com/es-es/concept/10014985"
+    }
+  ],
+  "genres": [
+    "Interactive Fiction",
+    "Reflexion Game",
+    "Narrative"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "What Comes After is a experience, a heartwarming story, and a love letter to all of you who think you’re a burden for other people."
+    },
+    {
+      "type": "paragraph",
+      "text": "Help Vivi finds herself through the journey that takes her to where people go after they died, to what comes after. Ride the train filled with the souls of the people, animals, and plants that are on their way to leave this world, and talk to them to learn about love, regrets, life, and death that haunt us every day until our time has come. All presented in a light-hearted way with a sprinkle of comedy and philosophy."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A short heartwarming story that will stay in your heart and memory",
+        "A personal journey of learning how to love yourself",
+        "A tale filled with love and comedy",
+        "Colorful art to accompany your journey in the train not bound for the living",
+        "An easy to pick-up gameplay"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "“When I completed the game, I wanted to run outside of my downtown L.A. apartment to hug strangers, feed every stray cat, water every...",
+      "author": "Todd Martens",
+      "outlet": "Los Angeles Times",
+      "url": "https://www.latimes.com/entertainment-arts/story/2020-12-16/2020-games-about-death"
+    },
+    {
+      "quote": "\"The last thing I was expecting to get out of it was a total reevaluation of my own life and how I was living...",
+      "author": "Stephanie Minor",
+      "outlet": "The Gamer",
+      "url": "https://www.thegamer.com/what-comes-after-review/"
+    },
+    {
+      "quote": "\"This is one of those games that can easily be played multiple times to rekindle conversations had and relearn how to connect with certain...",
+      "author": "Jason Capp",
+      "outlet": "Nintendo Link",
+      "url": "https://nintendolink.com/2021/03/18/what-comes-after-switch-review-love-yourself/"
+    },
+    {
+      "quote": "A personal journey towards self-love with easy-to-learn gameplay, offering plenty of ideas and new perspectives...",
+      "author": "Redazione",
+      "outlet": "Games Paladins",
+      "url": "https://paladins.it/what-comes-after-ama-la-tua-vita-amati-recensione-nintendo-switch/",
+      "translated_from": "Italian"
+    },
+    {
+      "quote": "The best part is grabbing a cushion, leaning back and letting go. Its story and themes are its only weapons...",
+      "author": "Juan Sanmartín",
+      "outlet": "Vida Extra",
+      "url": "https://www.vidaextra.com/analisis/analisis-what-comes-after-review-trailer-precio-experiencia-juego-para-nintendo-switch",
+      "translated_from": "Spanish"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
+  ],
+  "preview": {
+    "image": "GAMES/Juegos/what-comes-after/Images/preview.webp",
+    "width": 640,
+    "height": 359
+  },
+  "related_source": "ABOUT/JSON/about.json"
+}
