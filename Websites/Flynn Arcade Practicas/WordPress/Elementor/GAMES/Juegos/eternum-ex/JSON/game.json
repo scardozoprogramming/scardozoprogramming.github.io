@@ -1,0 +1,150 @@
+{
+  "title": "Eternum Ex",
+  "summary": "Guide Sir Arthur through the underground kingdom of Samarnath in search of five magical artifacts. This retro arcade platformer features 25 levels, boss encounters, secret bonuses and worldwide high scores.",
+  "image": "GAMES/Juegos/eternum-ex/Images/cover.jpg",
+  "tags": [
+    "Platform",
+    "Arcade"
+  ],
+  "categories": [
+    "platform",
+    "arcade"
+  ],
+  "platforms": [
+    "Switch",
+    "PlayStation",
+    "Xbox",
+    "PC"
+  ],
+  "slug": "eternum-ex",
+  "tagline": "Hell is yours, the Arcade is ours",
+  "hero_video": {
+    "id": "4cKBn3aDJX0",
+    "url": "https://www.youtube.com/watch?v=4cKBn3aDJX0&t=142s",
+    "start": 142
+  },
+  "gallery": [
+    {
+      "image": "GAMES/Juegos/eternum-ex/Images/screenshot-1.webp",
+      "width": 1280,
+      "height": 721,
+      "alt": "Eternum Ex gameplay screenshot 1"
+    },
+    {
+      "image": "GAMES/Juegos/eternum-ex/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 721,
+      "alt": "Eternum Ex gameplay screenshot 2"
+    },
+    {
+      "image": "GAMES/Juegos/eternum-ex/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 721,
+      "alt": "Eternum Ex gameplay screenshot 3"
+    },
+    {
+      "image": "GAMES/Juegos/eternum-ex/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 721,
+      "alt": "Eternum Ex gameplay screenshot 4"
+    },
+    {
+      "image": "GAMES/Juegos/eternum-ex/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 721,
+      "alt": "Eternum Ex gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "GAMES/Juegos/eternum-ex/Images/poster.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Eternum Ex cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/eternum-ex-switch/"
+    },
+    {
+      "label": "PlayStation",
+      "platform": "PlayStation",
+      "url": "https://store.playstation.com/es-es/product/EP4681-CUSA13145_00-ETERNUMEX0000000/"
+    },
+    {
+      "label": "Xbox",
+      "platform": "Xbox",
+      "url": "https://www.xbox.com/es-es/games/store/eternum-ex/9p17k8j4tfkq"
+    },
+    {
+      "label": "Steam",
+      "platform": "PC",
+      "url": "https://store.steampowered.com/app/597900/Eternum_EX/"
+    }
+  ],
+  "genres": [
+    "Retro Pixel",
+    "Arcade",
+    "Platformer"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Sir Arthur has gotten old… too old. He has lost everything he had and loved, and with nothing more to lose he leaves for Samarnath, an evil subterranean kingdom (which no knight has ever returned alive) in search of treasures, adventures and the most important: five magical orbs that together provide: the Eternal youth. Thanks to its progressive difficulty curve, and with a path divided into “worlds” of 5 levels each one, Eternum Ex is challenging, addictive and an ode to the nostalgia of the golden age of arcade games."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Awesome gameplay (may cause addiction).",
+        "Retro, arcade and platformer 100%",
+        "16-bit aesthetics",
+        "Memorable soundtrack",
+        "Plenty of different enemies",
+        "25 Levels",
+        "Special levels with final bosses",
+        "Secrets bonus on each level",
+        "Worldwide “High Score” leaderboard"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "If I had to describe Eternum Ex in one word, it would be nostalgia... My mind returned to an earlier era...",
+      "author": "Kumi",
+      "outlet": "Nintenderos",
+      "url": "https://www.nintenderos.com/2018/10/analisis-eternum-ex/",
+      "translated_from": "Spanish"
+    },
+    {
+      "quote": "\"It is difficult not to play again and again a level until you get over it. A title for classic hearts, but also for...",
+      "author": "Gustavo Maeso",
+      "outlet": "IGN",
+      "url": "https://es.ign.com/eternum-ex/141898/review/analisis-de-eternum-ex-para-pc-y-nintendo-switch"
+    },
+    {
+      "quote": "\"If you really long for those days of playing Street Fighter II and Metal Slug while you wait for your Book It group’s pizza...",
+      "author": "Zachary Miller",
+      "outlet": "Nintendo World Report",
+      "url": "http://www.nintendoworldreport.com/review/48895/eternum-ex-switch-eshop-review-faq/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
+  ],
+  "preview": {
+    "image": "GAMES/Juegos/eternum-ex/Images/preview.webp",
+    "width": 640,
+    "height": 360,
+    "source": "https://www.youtube.com/watch?v=MSRTJvFvM2E",
+    "start_seconds": 20.5,
+    "duration_seconds": 3.5
+  },
+  "related_source": "ABOUT/JSON/about.json"
+}

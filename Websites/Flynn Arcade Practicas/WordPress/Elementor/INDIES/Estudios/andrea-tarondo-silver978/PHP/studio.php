@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Andrea Tarondo, silver978 Looking Up I See Only A Ceiling" aria-labelledby="studio-8">
+            <div class="studio-identity"><p class="studio-games">Looking Up I See Only A Ceiling</p><h2 id="studio-8">Andrea Tarondo, silver978</h2><img class="studio-logo" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/andrea-tarondo-silver978/Images/logo.jpg')); ?>" alt="Andrea Tarondo, silver978 logo" loading="lazy"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/andrea-tarondo-silver978/Images/portrait.png')); ?>" alt="Andrea Tarondo, silver978" loading="lazy">
+            <div class="studio-description"><p>Italian game designer creating psychological, emotionally impactful experiences.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Andrea Tarondo, silver978</span></summary><p>Hello! I am Andrea, aka silver978, an italian indie game designer and developer passionate to psychological horrors, but also energetic and stylish videogames: my main focus is on providing fun and emotional impactful experiences to the players. I started developing games since 2015, when I mainly produced experimental ones. I began publishing commercial indie games on 2023, by releasing on Steam a short psychological adventure about a stressed girl trying to manage her study life: «Looking Up I See Only A Ceiling.</p></details><a class="text-link studio-website" href="https://silver978.com/" target="_blank" rel="noopener noreferrer">silver978.com<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

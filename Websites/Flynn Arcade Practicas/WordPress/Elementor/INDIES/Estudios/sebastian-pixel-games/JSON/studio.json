@@ -1,0 +1,15 @@
+{
+  "name": "Sebastian, Pixel Games",
+  "detail": "Donut Dodo, Cash Cow DX",
+  "slug": "sebastian-pixel-games",
+  "media": {
+    "name": "Sebastian, Pixel games",
+    "logo": "INDIES/Estudios/sebastian-pixel-games/Images/logo.png",
+    "portrait": "INDIES/Estudios/sebastian-pixel-games/Images/portrait.png",
+    "website": "https://pixel.games/"
+  },
+  "summary": "Classic arcade experiences from an independent Luxembourg studio.",
+  "paragraphs": [
+    "I wrote my first program as a kid in 1982, on my grandmother’s black and white TV, with a Sinclair Spectrum 48K, before moving on to the Commodore 64. It was an amazing experience and from that day on I knew I wanted to make games. I run pixel games, an independent development studio based in Luxembourg, focused on creating fun, classic, arcade experiences for modern machines."
+  ]
+}

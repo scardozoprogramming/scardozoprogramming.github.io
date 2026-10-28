@@ -1,0 +1,51 @@
+/* Flynn's Arcade: indies styles. */
+.flynns-arcade.flynns-arcade .studio-directory { padding-bottom: 65px; }
+
+.flynns-arcade.flynns-arcade .studio-row { display: grid; grid-template-columns: minmax(0px, 0.9fr) minmax(0px, 0.65fr) minmax(0px, 1.2fr); gap: 40px; align-items: center; padding-block: 32px; border-top: 1px solid var(--line); }
+
+.flynns-arcade.flynns-arcade .studio-identity { min-width: 0px; }
+
+.flynns-arcade.flynns-arcade .studio-games { width: fit-content; max-width: 100%; padding: 2px 6px; color: var(--pink); background: rgba(3, 8, 17, 0.88); font-size: 12px; margin-bottom: 12px; }
+
+.flynns-arcade.flynns-arcade .studio-identity h2 { font-size: 24px; line-height: 1.3; font-weight: 600; }
+
+.flynns-arcade.flynns-arcade .studio-logo { margin-top: 24px; max-width: 200px; width: 100%; height: 100px; object-fit: contain; object-position: left center; }
+
+.flynns-arcade.flynns-arcade .studio-portrait { width: 100%; height: 220px; object-fit: contain; }
+
+.flynns-arcade.flynns-arcade .studio-description p { color: var(--muted); line-height: 1.75; }
+
+.flynns-arcade.flynns-arcade .studio-bio { margin-top: 14px; color: var(--muted); }
+
+.flynns-arcade.flynns-arcade .studio-bio summary { width: fit-content; min-height: 44px; padding-block: 10px; color: var(--cyan); cursor: pointer; font-size: 14px; font-weight: 600; }
+
+.flynns-arcade.flynns-arcade .studio-bio summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+.flynns-arcade.flynns-arcade .studio-bio p + p { margin-top: 12px; }
+
+.flynns-arcade.flynns-arcade .studio-website { margin-top: 20px; overflow-wrap: anywhere; }
+
+@media (max-width: 1150px) {
+.flynns-arcade.flynns-arcade .studio-row { gap: 30px; }
+.flynns-arcade.flynns-arcade .studio-portrait { height: 220px; }
+}
+
+@media (max-width: 850px) {
+.flynns-arcade.flynns-arcade .studio-row { grid-template-columns: 1fr 1fr; gap: 25px; padding-block: 30px; }
+.flynns-arcade.flynns-arcade .studio-description { grid-column: 1 / 3; }
+}
+
+@media (max-width: 600px) {
+.flynns-arcade.flynns-arcade .studio-row { grid-template-columns: minmax(0px, 1fr) minmax(0px, 0.8fr); gap: 16px; }
+.flynns-arcade.flynns-arcade .studio-description { grid-column: 1 / -1; }
+.flynns-arcade.flynns-arcade .studio-identity h2 { font-size: 20px; }
+.flynns-arcade.flynns-arcade .studio-games { font-size: 11px; }
+.flynns-arcade.flynns-arcade .studio-logo { height: 75px; max-width: 140px; margin-top: 15px; }
+.flynns-arcade.flynns-arcade .studio-portrait { height: 150px; object-position: center center; }
+.flynns-arcade.flynns-arcade .studio-description p { font-size: 15px; }
+}
+
+@media (max-width: 360px) {
+.flynns-arcade.flynns-arcade .studio-identity h2 { font-size: 18px; }
+.flynns-arcade.flynns-arcade .studio-row { column-gap: 15px; }
+}

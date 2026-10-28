@@ -1,0 +1,16 @@
+{
+  "name": "Radin Games",
+  "detail": "Eternum Ex, Galacticon",
+  "slug": "radin-games",
+  "media": {
+    "name": "Radin Games",
+    "logo": "INDIES/Estudios/radin-games/Images/logo.png",
+    "portrait": "INDIES/Estudios/radin-games/Images/portrait.png",
+    "website": "https://www.radingames.com/"
+  },
+  "summary": "Retro arcade inspiration, rooted in 8-bit computers.",
+  "paragraphs": [
+    "I am Radin, an indie video game developer who LOVES retro and arcade video games.",
+    "I have grown up playing arcade cabinet games and 8 bit computers and my goal is to make games like those of that time: directs, frenetics, addictives and with the real feeling of arcade games of the ’80s and ’90s."
+  ]
+}

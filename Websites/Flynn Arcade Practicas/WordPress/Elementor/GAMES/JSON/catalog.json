@@ -1,0 +1,194 @@
+[
+  {
+    "title": "What Comes After",
+    "slug": "what-comes-after",
+    "template": "GAMES/Juegos/what-comes-after/PHP/index.php",
+    "data": "GAMES/Juegos/what-comes-after/JSON/game.json"
+  },
+  {
+    "title": "Donut Dodo",
+    "slug": "donut-dodo",
+    "template": "GAMES/Juegos/donut-dodo/PHP/index.php",
+    "data": "GAMES/Juegos/donut-dodo/JSON/game.json"
+  },
+  {
+    "title": "Looking Up I See Only A Ceiling",
+    "slug": "looking-up-i-see-only-a-ceiling",
+    "template": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/PHP/index.php",
+    "data": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/JSON/game.json"
+  },
+  {
+    "title": "Dexter Stardust",
+    "slug": "dexter-stardust",
+    "template": "GAMES/Juegos/dexter-stardust/PHP/index.php",
+    "data": "GAMES/Juegos/dexter-stardust/JSON/game.json"
+  },
+  {
+    "title": "Eternum Ex",
+    "slug": "eternum-ex",
+    "template": "GAMES/Juegos/eternum-ex/PHP/index.php",
+    "data": "GAMES/Juegos/eternum-ex/JSON/game.json"
+  },
+  {
+    "title": "The Last Cat in the Universe",
+    "slug": "the-last-cat-in-the-universe",
+    "template": "GAMES/Juegos/the-last-cat-in-the-universe/PHP/index.php",
+    "data": "GAMES/Juegos/the-last-cat-in-the-universe/JSON/game.json"
+  },
+  {
+    "title": "Boardwalk Builders",
+    "slug": "boardwalk-builders",
+    "template": "GAMES/Juegos/boardwalk-builders/PHP/index.php",
+    "data": "GAMES/Juegos/boardwalk-builders/JSON/game.json"
+  },
+  {
+    "title": "Viral Reload EX",
+    "slug": "viral-reload-ex",
+    "template": "GAMES/Juegos/viral-reload-ex/PHP/index.php",
+    "data": "GAMES/Juegos/viral-reload-ex/JSON/game.json"
+  },
+  {
+    "title": "Living Dead House",
+    "slug": "living-dead-house",
+    "template": "GAMES/Juegos/living-dead-house/PHP/index.php",
+    "data": "GAMES/Juegos/living-dead-house/JSON/game.json"
+  },
+  {
+    "title": "Unto Deepest Depths",
+    "slug": "unto-deepest-depths",
+    "template": "GAMES/Juegos/unto-deepest-depths/PHP/index.php",
+    "data": "GAMES/Juegos/unto-deepest-depths/JSON/game.json"
+  },
+  {
+    "title": "Silver Bullet",
+    "slug": "silver-bullet",
+    "template": "GAMES/Juegos/silver-bullet/PHP/index.php",
+    "data": "GAMES/Juegos/silver-bullet/JSON/game.json"
+  },
+  {
+    "title": "ION Shift",
+    "slug": "ion-shift",
+    "template": "GAMES/Juegos/ion-shift/PHP/index.php",
+    "data": "GAMES/Juegos/ion-shift/JSON/game.json"
+  },
+  {
+    "title": "Flora & Fang: Guardians of the vampire garden",
+    "slug": "flora-fang-guardians-of-the-vampire-garden",
+    "template": "GAMES/Juegos/flora-fang-guardians-of-the-vampire-garden/PHP/index.php",
+    "data": "GAMES/Juegos/flora-fang-guardians-of-the-vampire-garden/JSON/game.json"
+  },
+  {
+    "title": "Skies Above",
+    "slug": "skies-above",
+    "template": "GAMES/Juegos/skies-above/PHP/index.php",
+    "data": "GAMES/Juegos/skies-above/JSON/game.json"
+  },
+  {
+    "title": "Freddy Farmer",
+    "slug": "freddy-farmer",
+    "template": "GAMES/Juegos/freddy-farmer/PHP/index.php",
+    "data": "GAMES/Juegos/freddy-farmer/JSON/game.json"
+  },
+  {
+    "title": "Super Spy Raccoon",
+    "slug": "super-spy-raccoon",
+    "template": "GAMES/Juegos/super-spy-raccoon/PHP/index.php",
+    "data": "GAMES/Juegos/super-spy-raccoon/JSON/game.json"
+  },
+  {
+    "title": "Cash Cow DX",
+    "slug": "cash-cow-dx",
+    "template": "GAMES/Juegos/cash-cow-dx/PHP/index.php",
+    "data": "GAMES/Juegos/cash-cow-dx/JSON/game.json"
+  },
+  {
+    "title": "Satryn DX",
+    "slug": "satryn-dx",
+    "template": "GAMES/Juegos/satryn-dx/PHP/index.php",
+    "data": "GAMES/Juegos/satryn-dx/JSON/game.json"
+  },
+  {
+    "title": "Goliath Depot",
+    "slug": "goliath-depot",
+    "template": "GAMES/Juegos/goliath-depot/PHP/index.php",
+    "data": "GAMES/Juegos/goliath-depot/JSON/game.json"
+  },
+  {
+    "title": "Attack of the Karens",
+    "slug": "attack-of-the-karens",
+    "template": "GAMES/Juegos/attack-of-the-karens/PHP/index.php",
+    "data": "GAMES/Juegos/attack-of-the-karens/JSON/game.json"
+  },
+  {
+    "title": "Murtop",
+    "slug": "murtop",
+    "template": "GAMES/Juegos/murtop/PHP/index.php",
+    "data": "GAMES/Juegos/murtop/JSON/game.json"
+  },
+  {
+    "title": "8-Colors Star Guardians +",
+    "slug": "8-colors-star-guardians",
+    "template": "GAMES/Juegos/8-colors-star-guardians/PHP/index.php",
+    "data": "GAMES/Juegos/8-colors-star-guardians/JSON/game.json"
+  },
+  {
+    "title": "Colored Effects",
+    "slug": "colored-effects",
+    "template": "GAMES/Juegos/colored-effects/PHP/index.php",
+    "data": "GAMES/Juegos/colored-effects/JSON/game.json"
+  },
+  {
+    "title": "Sentry City",
+    "slug": "sentry-city",
+    "template": "GAMES/Juegos/sentry-city/PHP/index.php",
+    "data": "GAMES/Juegos/sentry-city/JSON/game.json"
+  },
+  {
+    "title": "Galacticon",
+    "slug": "galacticon",
+    "template": "GAMES/Juegos/galacticon/PHP/index.php",
+    "data": "GAMES/Juegos/galacticon/JSON/game.json"
+  },
+  {
+    "title": "A Winding Path",
+    "slug": "a-winding-path",
+    "template": "GAMES/Juegos/a-winding-path/PHP/index.php",
+    "data": "GAMES/Juegos/a-winding-path/JSON/game.json"
+  },
+  {
+    "title": "Lambs on the Road",
+    "slug": "lambs-on-the-road",
+    "template": "GAMES/Juegos/lambs-on-the-road/PHP/index.php",
+    "data": "GAMES/Juegos/lambs-on-the-road/JSON/game.json"
+  },
+  {
+    "title": "Papertris",
+    "slug": "papertris",
+    "template": "GAMES/Juegos/papertris/PHP/index.php",
+    "data": "GAMES/Juegos/papertris/JSON/game.json"
+  },
+  {
+    "title": "The Legend of Gwen",
+    "slug": "the-legend-of-gwen",
+    "template": "GAMES/Juegos/the-legend-of-gwen/PHP/index.php",
+    "data": "GAMES/Juegos/the-legend-of-gwen/JSON/game.json"
+  },
+  {
+    "title": "Laraan",
+    "slug": "laraan",
+    "template": "GAMES/Juegos/laraan/PHP/index.php",
+    "data": "GAMES/Juegos/laraan/JSON/game.json"
+  },
+  {
+    "title": "Hexagravity",
+    "slug": "hexagravity",
+    "template": "GAMES/Juegos/hexagravity/PHP/index.php",
+    "data": "GAMES/Juegos/hexagravity/JSON/game.json"
+  },
+  {
+    "title": "Monster Puzzle",
+    "slug": "monster-puzzle",
+    "template": "GAMES/Juegos/monster-puzzle/PHP/index.php",
+    "data": "GAMES/Juegos/monster-puzzle/JSON/game.json"
+  }
+]

@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Joel Potter, Studio Primitive Attack of the Karens" aria-labelledby="studio-9">
+            <div class="studio-identity"><p class="studio-games">Attack of the Karens</p><h2 id="studio-9">Joel Potter, Studio Primitive</h2><img class="studio-logo" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/joel-potter-studio-primitive/Images/logo.jpg')); ?>" alt="Joel Potter, Studio Primitive logo" loading="lazy"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/joel-potter-studio-primitive/Images/portrait.jpg')); ?>" alt="Joel Potter, Studio Primitive" loading="lazy">
+            <div class="studio-description"><p>Solo developer behind Attack of the Karens.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Joel Potter, Studio Primitive</span></summary><p>I’ve been making games for about 4 years now, and absolutely love it. I’m the solo developer behind Attack of the Karens, and have plans to release many more projects both solo and with my brother Grant. Game dev is hard but it is so worth it. It’s one of the most satisfying things in the world to start with an idea and end up turning it into a finished game!.</p></details><a class="text-link studio-website" href="https://www.studioprimitive.net/" target="_blank" rel="noopener noreferrer">www.studioprimitive.net<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

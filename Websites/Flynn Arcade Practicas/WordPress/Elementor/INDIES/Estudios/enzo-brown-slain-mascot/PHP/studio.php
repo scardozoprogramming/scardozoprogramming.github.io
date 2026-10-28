@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Enzo Brown, Slain Mascot Super Spy Raccoon" aria-labelledby="studio-13">
+            <div class="studio-identity"><p class="studio-games">Super Spy Raccoon</p><h2 id="studio-13">Enzo Brown, Slain Mascot</h2><img class="studio-logo" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/enzo-brown-slain-mascot/Images/logo.png')); ?>" alt="Enzo Brown, Slain Mascot logo" loading="lazy"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/enzo-brown-slain-mascot/Images/portrait.jpg')); ?>" alt="Enzo Brown, Slain Mascot" loading="lazy">
+            <div class="studio-description"><p>A solo developer inspired by yesterday's games.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Enzo Brown, Slain Mascot</span></summary><p>My name is Enzo Brown and I’m a solo-developer that makes Yesterday’s Games, Today. I’ve made art all my life and I’ve made (or at least tried to make) games since the flash days. It wasn’t until 2023 that I decided to give game-development a real shot. There’s something about older titles that really draws me in and it is my goal to try and capture that magic in my projects.</p></details><a class="text-link studio-website" href="https://slain-mascot.itch.io/" target="_blank" rel="noopener noreferrer">slain-mascot.itch.io<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

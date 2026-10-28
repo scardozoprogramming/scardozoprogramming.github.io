@@ -1,0 +1,128 @@
+{
+  "title": "Looking Up I See Only A Ceiling",
+  "summary": "Follow a student overwhelmed by study in a short psychological adventure. Hand-drawn locations, three endings and an unlockable lore mode reveal what lies beyond an apparently ordinary ceiling.",
+  "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/cover.jpg",
+  "tags": [
+    "Narrative",
+    "Adventure"
+  ],
+  "categories": [
+    "narrative",
+    "adventure"
+  ],
+  "platforms": [
+    "Switch",
+    "PC"
+  ],
+  "slug": "looking-up-i-see-only-a-ceiling",
+  "tagline": "A psychological adventure about a stressed girl",
+  "hero_video": {
+    "id": "X4jKWIeGao4",
+    "url": "https://www.youtube.com/watch?v=X4jKWIeGao4"
+  },
+  "gallery": [
+    {
+      "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-1.webp",
+      "width": 600,
+      "height": 338,
+      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 1"
+    },
+    {
+      "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-2.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 2"
+    },
+    {
+      "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-3.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 3"
+    },
+    {
+      "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-4.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 4"
+    },
+    {
+      "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-5.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/poster.webp",
+    "width": 1080,
+    "height": 1080,
+    "alt": "Looking Up I See Only A Ceiling cover artwork"
+  },
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/us/store/products/looking-up-i-see-only-a-ceiling-switch/"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Arcade",
+    "Pixel Art"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "A short psychological adventure about a stressed girl who wants to explore her ceiling."
+    },
+    {
+      "type": "heading",
+      "text": "ABOUT THIS GAME"
+    },
+    {
+      "type": "paragraph",
+      "text": "A seemingly monotonous life, full of books and endless study. But what happens if you reach the ‘point of no return’? Follow the challenging life of a student in this short psychological adventure game"
+    },
+    {
+      "type": "paragraph",
+      "text": "Short but meaningful experience; Hand drawn locations and characters; 3 endings to discover; An unlockable mode to know more about the game’s lore."
+    },
+    {
+      "type": "heading",
+      "text": "DESCRIPTION OF ADULT CONTENT"
+    },
+    {
+      "type": "paragraph",
+      "text": "The developers describe its content like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cartoonish blood, fear."
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "It’s short and cathartic.",
+      "author": "GameGrin",
+      "outlet": "Game Grin",
+      "url": "https://www.gamegrin.com/reviews/looking-up-i-see-only-a-ceiling-review/"
+    },
+    {
+      "quote": "it does a great job conveying its message while remaining fun and haunting.",
+      "author": "Pure Nintendo",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-looking-up-i-see-only-a-ceiling-nintendo-switch/"
+    }
+  ],
+  "related": [
+    "eternum-ex",
+    "lambs-on-the-road",
+    "saga"
+  ],
+  "preview": {
+    "image": "GAMES/Juegos/looking-up-i-see-only-a-ceiling/Images/preview.webp",
+    "width": 600,
+    "height": 338
+  },
+  "related_source": "ABOUT/JSON/about.json"
+}

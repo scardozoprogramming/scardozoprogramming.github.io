@@ -1,0 +1,68 @@
+/* Flynn's Arcade: home styles. */
+.flynns-arcade.flynns-arcade .hero { border-bottom: 1px solid var(--line); background: var(--bg); }
+
+.flynns-arcade.flynns-arcade .hero-image { width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: contain; }
+
+.flynns-arcade.flynns-arcade .featured-game { border-bottom: 1px solid var(--line); background: rgba(3, 8, 17, 0.8); }
+
+.flynns-arcade.flynns-arcade .featured-game-inner,.flynns-arcade.flynns-arcade  .promotions .promotion-inner { max-width: 880px; }
+
+.flynns-arcade.flynns-arcade .featured-game-inner { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); align-items: center; gap: 36px; padding-block: 32px; }
+
+.flynns-arcade.flynns-arcade .featured-game-copy { min-width: 0px; }
+
+.flynns-arcade.flynns-arcade .featured-game-copy .eyebrow { margin-bottom: 12px; }
+
+.flynns-arcade.flynns-arcade .featured-game h1 { font: 400 22px/1.6 var(--pixel); text-transform: uppercase; }
+
+.flynns-arcade.flynns-arcade .featured-game h1 span { display: block; color: var(--cyan); }
+
+.flynns-arcade.flynns-arcade .featured-game h1 span + span { color: var(--pink); }
+
+.flynns-arcade.flynns-arcade .featured-game-description { max-width: 380px; color: var(--muted); margin-top: 16px; font-size: 15px; line-height: 1.55; }
+
+.flynns-arcade.flynns-arcade .featured-game-platform { display: flex; align-items: center; gap: 12px; margin-top: 15px; font-size: 12px; color: var(--muted); }
+
+.flynns-arcade.flynns-arcade .featured-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
+
+.flynns-arcade.flynns-arcade .featured-game-link { display: block; min-width: 0px; }
+
+.flynns-arcade.flynns-arcade .featured-game-image { width: 100%; max-height: 250px; aspect-ratio: 16 / 9; object-fit: contain; }
+
+.flynns-arcade.flynns-arcade .promotions .promotion-slide { grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 36px; min-height: 250px; }
+
+.flynns-arcade.flynns-arcade .promotions .promotion-copy { padding-left: 0px; }
+
+.flynns-arcade.flynns-arcade .promotion-visual { display: block; position: relative; width: 100%; height: 220px; }
+
+.flynns-arcade.flynns-arcade .promotions .promotion-art { height: 100%; margin-top: 0px; }
+
+/* Remove only the transparent padding around the original Eternum artwork. */
+.flynns-arcade.flynns-arcade .promotion-visual-eternum { width: 273px; max-width: 100%; overflow: hidden; }
+
+.flynns-arcade.flynns-arcade .promotion-visual-eternum .promotion-art { position: absolute; left: -70.732%; top: -9.89%; max-width: none; width: 177.384%; height: 109.89%; }
+
+.flynns-arcade.flynns-arcade .promotion-visual-eternum .promotion-art[src$="/preview.webp"] { left: 0px; top: 0px; width: 100%; height: 100%; }
+
+@media (max-width: 1150px) {
+.flynns-arcade.flynns-arcade .featured-game-inner { gap: 32px; }
+.flynns-arcade.flynns-arcade .featured-game h1 { font-size: 20px; }
+}
+
+@media (max-width: 767px) {
+.flynns-arcade.flynns-arcade .featured-game-inner { grid-template-columns: 1fr; gap: 24px; }
+.flynns-arcade.flynns-arcade .featured-game-image { max-height: 200px; }
+.flynns-arcade.flynns-arcade .promotions .promotion-slide { grid-template-columns: 1fr; grid-template-rows: minmax(220px, auto) 180px; gap: 20px; min-height: 420px; }
+.flynns-arcade.flynns-arcade .promotion-visual { height: 180px; max-width: 400px; }
+.flynns-arcade.flynns-arcade .promotion-visual-eternum { width: 223px; }
+}
+
+@media (max-width: 600px) {
+.flynns-arcade.flynns-arcade .featured-game-inner { padding-block: 25px; }
+.flynns-arcade.flynns-arcade .featured-game h1 { font-size: 18px; }
+.flynns-arcade.flynns-arcade .featured-game-description { font-size: 14px; }
+}
+
+@media (max-width: 360px) {
+.flynns-arcade.flynns-arcade .featured-game h1 { font-size: 16px; }
+}

@@ -1,0 +1,76 @@
+/* Flynn's Arcade: about styles. */
+.flynns-arcade.flynns-arcade .about-brand { display: grid; place-items: center; min-height: 214px; }
+
+.flynns-arcade.flynns-arcade .about-brand .publisher-logo { width: 37%; }
+
+.flynns-arcade.flynns-arcade .about-gallery { display: grid; grid-template-columns: repeat(6, minmax(0px, 1fr)); }
+
+.flynns-arcade.flynns-arcade .about-gallery a { position: relative; isolation: isolate; display: block; aspect-ratio: 3 / 2; overflow: hidden; }
+
+.flynns-arcade.flynns-arcade .about-gallery img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); transition: filter 200ms; }
+
+.flynns-arcade.flynns-arcade .about-gallery a::after { content: ""; position: absolute; inset: 0px; background: var(--orange); opacity: 0.8; mix-blend-mode: color; pointer-events: none; transition: opacity 200ms; }
+
+.flynns-arcade.flynns-arcade .about-gallery a:is(:hover, :focus)::after { opacity: 0; }
+
+.flynns-arcade.flynns-arcade .about-gallery a:is(:hover, :focus) img { filter: none; }
+
+.flynns-arcade.flynns-arcade .about-gallery a:focus-visible { outline-offset: -4px; }
+
+.flynns-arcade.flynns-arcade .about-story { display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); padding-block: 18px 32px; background: rgba(3, 8, 17, 0.82); }
+
+.flynns-arcade.flynns-arcade .about-story section { min-width: 0px; padding-inline: 10px; }
+
+.flynns-arcade.flynns-arcade .about-story h2 { margin: 0px; padding: 15px; border: 2px solid var(--pink); border-radius: 0px; text-align: center; color: var(--pink); background: rgba(3, 8, 17, 0.88); font-size: 18px; font-weight: 600; line-height: 1.3; }
+
+.flynns-arcade.flynns-arcade .about-story-copy { margin: 24px 30px 0px; max-width: 60ch; }
+
+.flynns-arcade.flynns-arcade .about-story p { color: var(--muted); }
+
+.flynns-arcade.flynns-arcade .about-story p + p { margin-top: 16px; }
+
+.flynns-arcade.flynns-arcade .about-projects { max-width: 1120px; padding-block: 24px 48px; }
+
+.flynns-arcade.flynns-arcade .about-projects .section-title { color: var(--pink); }
+
+.flynns-arcade.flynns-arcade .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 24px; }
+
+.flynns-arcade.flynns-arcade .about-projects .game-body { display: flex; flex-direction: column; min-height: 148px; padding: 18px 20px; }
+
+.flynns-arcade.flynns-arcade .about-projects .game-body h3 { min-height: 28px; font-size: 20px; }
+
+.flynns-arcade.flynns-arcade .about-projects .tag { font-size: 10px; }
+
+.flynns-arcade.flynns-arcade .about-projects .platforms { margin-top: auto; padding-top: 16px; gap: 18px; }
+
+.flynns-arcade.flynns-arcade .about-projects .platform-icon { width: 20px; height: 20px; }
+
+.flynns-arcade.flynns-arcade .about-projects .game-arrow { display: flex; right: 20px; bottom: 22px; }
+
+@media (max-width: 1024px) {
+.flynns-arcade.flynns-arcade .about-gallery { grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 4px; }
+.flynns-arcade.flynns-arcade .about-story h2 { font-size: 15px; }
+.flynns-arcade.flynns-arcade .about-projects { max-width: 820px; }
+.flynns-arcade.flynns-arcade .projects-grid { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+}
+
+@media (max-width: 1150px) {
+.flynns-arcade.flynns-arcade .about-story-copy { margin-inline: 20px; }
+}
+
+@media (max-width: 850px) {
+.flynns-arcade.flynns-arcade .about-story-copy { margin-inline: 12px; }
+.flynns-arcade.flynns-arcade .about-story p { font-size: 14px; }
+}
+
+@media (max-width: 767px) {
+.flynns-arcade.flynns-arcade .about-brand .publisher-logo { width: 79%; }
+.flynns-arcade.flynns-arcade .about-gallery { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+.flynns-arcade.flynns-arcade .about-story { grid-template-columns: 1fr; gap: 30px; padding-block: 28px 35px; }
+.flynns-arcade.flynns-arcade .about-story section { padding-inline: 18px; }
+.flynns-arcade.flynns-arcade .about-story h2 { font-size: 18px; }
+.flynns-arcade.flynns-arcade .about-story-copy { margin: 20px 10px 0px; }
+.flynns-arcade.flynns-arcade .about-story p { font-size: 15px; }
+.flynns-arcade.flynns-arcade .about-projects { max-width: 400px; padding-block: 12px 40px; }
+.flynns-arcade.flynns-arcade .projects-grid { grid-template-columns: 1fr; }
+}

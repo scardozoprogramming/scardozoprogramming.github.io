@@ -1,5 +1,7 @@
 # Flynn's Arcade Neon para WordPress
 
+> Para mantener Elementor y tu tema actual, utiliza el complemento de la subcarpeta **Elementor/** y sigue **Elementor/README.md**. No actives este tema para esa modalidad. La documentacion que sigue corresponde a la alternativa anterior como tema completo.
+
 Esta carpeta es un tema completo de WordPress, independiente de la web HTML original. Incluye las cinco secciones, las 32 fichas de juegos, los 18 estudios, las animaciones, las fotos, las fuentes, los iconos y los materiales de prensa de la version actual.
 
 ## Organizacion

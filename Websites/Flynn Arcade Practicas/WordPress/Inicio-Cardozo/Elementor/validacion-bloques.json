@@ -1,0 +1,13 @@
+{
+  "sections": 5,
+  "cards": 32,
+  "widgets": 200,
+  "types": {
+    "html": 2,
+    "image": 37,
+    "heading": 42,
+    "text-editor": 5,
+    "icon-list": 65,
+    "button": 49
+  }
+}

@@ -1,0 +1,29 @@
+/* Flynn's Arcade: catalog styles. */
+.flynns-arcade.flynns-arcade .catalog { padding-block: 42px 58px; scroll-margin-top: 20px; }
+
+.flynns-arcade.flynns-arcade .catalog-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+
+.flynns-arcade.flynns-arcade:not(.js-enabled) .catalog-toolbar { display: none; }
+
+.flynns-arcade.flynns-arcade .catalog-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 22px; flex-wrap: wrap; margin-bottom: 25px; }
+
+.flynns-arcade.flynns-arcade .filter-group { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+
+.flynns-arcade.flynns-arcade .filter-button { min-height: 44px; padding: 8px 13px; border: 1px solid transparent; border-radius: 3px; color: var(--muted); background: rgba(3, 8, 17, 0.8); font-size: 12px; font-weight: 600; text-transform: uppercase; }
+
+.flynns-arcade.flynns-arcade .filter-button:hover { color: var(--cyan); }
+
+.flynns-arcade.flynns-arcade .filter-button[aria-pressed="true"] { color: var(--bg); background: var(--cyan); }
+
+.flynns-arcade.flynns-arcade .page-heading + .catalog { padding-top: 0px; }
+
+@media (max-width: 1150px) {
+.flynns-arcade.flynns-arcade .filter-button { padding-inline: 9px; }
+}
+
+@media (max-width: 600px) {
+.flynns-arcade.flynns-arcade .catalog { padding-block: 27px 35px; }
+.flynns-arcade.flynns-arcade .catalog-toolbar { gap: 17px; margin-bottom: 20px; }
+.flynns-arcade.flynns-arcade .filter-group { gap: 3px; }
+.flynns-arcade.flynns-arcade .filter-button { min-height: 44px; padding: 8px 10px; font-size: 12px; }
+}

@@ -1,0 +1,17 @@
+/* Resets stay inside the shortcode; the active theme and other widgets are untouched. */
+.flynns-arcade.flynns-arcade { width: 100%; max-width: 100%; text-align: left; direction: ltr; }
+.flynns-arcade.flynns-arcade :where(h1, h2, h3, h4, p, figure, blockquote, ul, ol, button, input) { font-family: inherit; font-style: normal; letter-spacing: 0; }
+.flynns-arcade.flynns-arcade :where(h1, h2, h3, h4) { font-weight: 700; text-transform: none; }
+.flynns-arcade.flynns-arcade :where(figure, blockquote, ul, ol) { margin: 0; }
+.flynns-arcade.flynns-arcade :where(button, input) { border-radius: 0; box-shadow: none; text-transform: none; line-height: inherit; }
+.flynns-arcade.flynns-arcade button { padding: 0; }
+.flynns-arcade.flynns-arcade button:hover, .flynns-arcade.flynns-arcade button:focus { text-decoration: none; }
+.flynns-arcade.flynns-arcade a { box-shadow: none; }
+.flynns-arcade.flynns-arcade .site-header, .flynns-arcade.flynns-arcade .site-footer { display: block; width: 100%; max-width: none; margin: 0; padding: 0; }
+.flynns-arcade.flynns-arcade img { height: auto; }
+.flynns-arcade.flynns-arcade .fae-not-found { padding-block: 60px; }
+.flynns-arcade.flynns-arcade .fae-not-found .arcade-button { margin-top: 24px; }
+.flynns-arcade.flynns-arcade[data-flynns-elementor]::before { background-attachment: fixed; }
+@media (max-width: 767px) {
+    .flynns-arcade.flynns-arcade[data-flynns-elementor]::before { background-attachment: scroll; background-size: auto 100vh; background-position: center top; background-repeat: repeat-y; }
+}

@@ -1,0 +1,8 @@
+<?php
+defined('ABSPATH') || exit;
+?>
+<article class="studio-row" data-directory-item="" data-directory-query="Pablo Navarro, RAWRLAB Games Explosive Dinosaurs" aria-labelledby="studio-2">
+            <div class="studio-identity"><p class="studio-games">Explosive Dinosaurs</p><h2 id="studio-2">Pablo Navarro, RAWRLAB Games</h2><img class="studio-logo" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/pablo-navarro-rawrlab-games/Images/logo.jpg')); ?>" alt="Pablo Navarro, RAWRLAB Games logo" loading="lazy"></div>
+            <img class="studio-portrait" src="<?php echo esc_url(fae_asset_url('INDIES/Estudios/pablo-navarro-rawrlab-games/Images/portrait.jpg')); ?>" alt="Pablo Navarro, RAWRLAB Games" loading="lazy">
+            <div class="studio-description"><p>Director and lead programmer at RAWRLAB Games.</p><details class="studio-bio"><summary>Full story<span class="screen-reader-text">: Pablo Navarro, RAWRLAB Games</span></summary><p>I’m Pablo Navarro, director and main programmer at RAWRLAB Games and previously at PiX Juegos.</p><p>I develop management applications by day and by night. I develop 2D indie video games of dubious success.</p><p>I have too many favorite games to mention here, but I will mention that most of my favorites are from Nintendo .</p></details><a class="text-link studio-website" href="http://www.rawrlab.com/" target="_blank" rel="noopener noreferrer">www.rawrlab.com<svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-external-link"></use></svg></a></div>
+        </article>

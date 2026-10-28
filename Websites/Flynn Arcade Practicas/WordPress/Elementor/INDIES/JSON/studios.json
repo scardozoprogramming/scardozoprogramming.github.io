@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Radin Games",
+    "slug": "radin-games",
+    "template": "INDIES/Estudios/radin-games/PHP/studio.php",
+    "data": "INDIES/Estudios/radin-games/JSON/studio.json"
+  },
+  {
+    "name": "Fahmitsu, Rolling Glory Jam",
+    "slug": "fahmitsu-rolling-glory-jam",
+    "template": "INDIES/Estudios/fahmitsu-rolling-glory-jam/PHP/studio.php",
+    "data": "INDIES/Estudios/fahmitsu-rolling-glory-jam/JSON/studio.json"
+  },
+  {
+    "name": "Pablo Navarro, RAWRLAB Games",
+    "slug": "pablo-navarro-rawrlab-games",
+    "template": "INDIES/Estudios/pablo-navarro-rawrlab-games/PHP/studio.php",
+    "data": "INDIES/Estudios/pablo-navarro-rawrlab-games/JSON/studio.json"
+  },
+  {
+    "name": "Jose, Catcade Games",
+    "slug": "jose-catcade-games",
+    "template": "INDIES/Estudios/jose-catcade-games/PHP/studio.php",
+    "data": "INDIES/Estudios/jose-catcade-games/JSON/studio.json"
+  },
+  {
+    "name": "Jeremy Fryc, Stardust Team",
+    "slug": "jeremy-fryc-stardust-team",
+    "template": "INDIES/Estudios/jeremy-fryc-stardust-team/PHP/studio.php",
+    "data": "INDIES/Estudios/jeremy-fryc-stardust-team/JSON/studio.json"
+  },
+  {
+    "name": "Sebastian, Pixel Games",
+    "slug": "sebastian-pixel-games",
+    "template": "INDIES/Estudios/sebastian-pixel-games/PHP/studio.php",
+    "data": "INDIES/Estudios/sebastian-pixel-games/JSON/studio.json"
+  },
+  {
+    "name": "Xavi, Hiulit",
+    "slug": "xavi-hiulit",
+    "template": "INDIES/Estudios/xavi-hiulit/PHP/studio.php",
+    "data": "INDIES/Estudios/xavi-hiulit/JSON/studio.json"
+  },
+  {
+    "name": "Soufiane, Tacsou",
+    "slug": "soufiane-tacsou",
+    "template": "INDIES/Estudios/soufiane-tacsou/PHP/studio.php",
+    "data": "INDIES/Estudios/soufiane-tacsou/JSON/studio.json"
+  },
+  {
+    "name": "Andrea, Der Mondhase",
+    "slug": "andrea-der-mondhase",
+    "template": "INDIES/Estudios/andrea-der-mondhase/PHP/studio.php",
+    "data": "INDIES/Estudios/andrea-der-mondhase/JSON/studio.json"
+  },
+  {
+    "name": "Andrea Tarondo, silver978",
+    "slug": "andrea-tarondo-silver978",
+    "template": "INDIES/Estudios/andrea-tarondo-silver978/PHP/studio.php",
+    "data": "INDIES/Estudios/andrea-tarondo-silver978/JSON/studio.json"
+  },
+  {
+    "name": "Joel Potter, Studio Primitive",
+    "slug": "joel-potter-studio-primitive",
+    "template": "INDIES/Estudios/joel-potter-studio-primitive/PHP/studio.php",
+    "data": "INDIES/Estudios/joel-potter-studio-primitive/JSON/studio.json"
+  },
+  {
+    "name": "David Langlois, Vidvad Games",
+    "slug": "david-langlois-vidvad-games",
+    "template": "INDIES/Estudios/david-langlois-vidvad-games/PHP/studio.php",
+    "data": "INDIES/Estudios/david-langlois-vidvad-games/JSON/studio.json"
+  },
+  {
+    "name": "May Oswald, Maybell Soft",
+    "slug": "may-oswald-maybell-soft",
+    "template": "INDIES/Estudios/may-oswald-maybell-soft/PHP/studio.php",
+    "data": "INDIES/Estudios/may-oswald-maybell-soft/JSON/studio.json"
+  },
+  {
+    "name": "Luke Orsie, Crashable Studios",
+    "slug": "luke-orsie-crashable-studios",
+    "template": "INDIES/Estudios/luke-orsie-crashable-studios/PHP/studio.php",
+    "data": "INDIES/Estudios/luke-orsie-crashable-studios/JSON/studio.json"
+  },
+  {
+    "name": "Enzo Brown, Slain Mascot",
+    "slug": "enzo-brown-slain-mascot",
+    "template": "INDIES/Estudios/enzo-brown-slain-mascot/PHP/studio.php",
+    "data": "INDIES/Estudios/enzo-brown-slain-mascot/JSON/studio.json"
+  },
+  {
+    "name": "Magnus Fredriksson, Bortbyting",
+    "slug": "magnus-fredriksson-bortbyting",
+    "template": "INDIES/Estudios/magnus-fredriksson-bortbyting/PHP/studio.php",
+    "data": "INDIES/Estudios/magnus-fredriksson-bortbyting/JSON/studio.json"
+  },
+  {
+    "name": "Apamate Studio",
+    "slug": "apamate-studio",
+    "template": "INDIES/Estudios/apamate-studio/PHP/studio.php",
+    "data": "INDIES/Estudios/apamate-studio/JSON/studio.json"
+  },
+  {
+    "name": "Dust Games",
+    "slug": "dust-games",
+    "template": "INDIES/Estudios/dust-games/PHP/studio.php",
+    "data": "INDIES/Estudios/dust-games/JSON/studio.json"
+  }
+]
