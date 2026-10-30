@@ -1,0 +1,63 @@
+{
+  "story": [
+    {
+      "paragraphs": [
+        "We love creating games and that is what we try to do everyday. Flynn’s Arcades is a company that develop its own games meanwhile we publish third party games.",
+        "The games we produce are smart, simple and elegantly designed. Our objective is to make people spend a good time with our products creating an enjoyable video game experience."
+      ],
+      "title": "Description"
+    },
+    {
+      "paragraphs": [
+        "Everything began at the Autonomic University of Barcelona several years ago. Juan Peralta, Flynn’s Arcades CEO, was teaching at this university. Juan used to direct different final degree projects all related with video games. One day Felipe Lumbreras and me proposed to Xavier Alsina (one of our pupils) to develop a total different Augmented Reality mobile game to reinvent the concept of board games. This is how we began to look for collaborators and after a month, we were a group of developers and artists developing OUTSIDERS.",
+        "Outsiders is a DEMO of combination of board games like Warhhamer and video games like Xcom, all combined with Augmented Reality (AR). During this project Juan Peralta met Francisco Raya, one of the designers."
+      ],
+      "title": "Early history"
+    },
+    {
+      "paragraphs": [
+        "After the Outsiders DEMO was finished some people found new jobs like Juan Gonzalez and Luis Estanyol now working at FX Animation and others like Francisco and me decided to work in new projects.",
+        "This is how Flynn’s Arcades became truth and our last projects also. Now Francisco and me are trying to create new projects and an incredible experience for the users."
+      ],
+      "title": "After that"
+    }
+  ],
+  "photos": [
+    {
+      "id": 4080,
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/CARRUSEL_01_ETERNUM.jpg",
+      "thumbnail": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/CARRUSEL_01_ETERNUM-300x188.jpg",
+      "alt": "Playing Eternum on an arcade cabinet"
+    },
+    {
+      "id": 4846,
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/04/1644771649510b-scaled-e1650923731522.jpg",
+      "thumbnail": "https://www.flynnsarcades.com/wp-content/uploads/2022/04/1644771649510b-300x201.jpg",
+      "alt": "At the studio with Flynn's Arcade on the screens"
+    },
+    {
+      "id": 4077,
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/CARRUSEL_04_flynns.jpg",
+      "thumbnail": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/CARRUSEL_04_flynns-300x188.jpg",
+      "alt": "Testing the OUTSIDERS augmented-reality prototype"
+    },
+    {
+      "id": 4232,
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/2014-08-27_17.36.08-e1650923401272.jpg",
+      "thumbnail": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/2014-08-27_17.36.08-300x169.jpg",
+      "alt": "Presenting game projects at the university"
+    },
+    {
+      "id": 2163,
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2016/10/tS9ikaGC-scaled-e1650923673132.jpg",
+      "thumbnail": "https://www.flynnsarcades.com/wp-content/uploads/2016/10/tS9ikaGC-300x170.jpg",
+      "alt": "Flynn's Arcade exhibition stand with Eternum"
+    },
+    {
+      "id": 5189,
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/11/IMG-20221029-WA0003.jpg",
+      "thumbnail": "https://www.flynnsarcades.com/wp-content/uploads/2022/11/IMG-20221029-WA0003-300x225.jpg",
+      "alt": "A group photo at IndieDevDay"
+    }
+  ]
+}

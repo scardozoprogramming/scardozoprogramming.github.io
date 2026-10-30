@@ -1,0 +1,140 @@
+{
+  "mobile": {
+    "scroll": 350,
+    "width": 345,
+    "sections": [
+      {
+        "class": "fc-home fc-about-brand",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "class": "fc-home fc-about-gallery",
+        "scroll": 350,
+        "width": 345
+      },
+      {
+        "class": "fc-home fc-about-story",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "class": "fc-home fc-about-projects",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "class": "fc-home fc-local-footer fc-social-footer",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "class": "fc-home fc-local-footer fc-contact-footer",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "class": "fc-home fc-local-footer fc-footer-credits",
+        "scroll": 345,
+        "width": 345
+      }
+    ],
+    "photosGrid": "112.262px 112.262px 112.262px",
+    "projectsGrid": "308.8px"
+  },
+  "tablet": {
+    "scroll": 758,
+    "width": 753,
+    "photos": "248.262px 248.262px 248.275px",
+    "projects": "332.4px 332.4px"
+  },
+  "storyMatches": true,
+  "projectTitles": [
+    "Eternum Ex",
+    "Lambs on the Road",
+    "Saga"
+  ],
+  "gallery": {
+    "firstOpen": true,
+    "forward": "2 / 6\nNext photo\nPrevious photo\nAt the studio with Flynn's Arcade on the screens",
+    "controls": [
+      "Close photo (Esc)",
+      "Share",
+      "Zoom",
+      "Full screen",
+      "6 / 6",
+      "1 / 6",
+      "2 / 6",
+      "3 / 6",
+      "4 / 6",
+      "5 / 6",
+      "6 / 6",
+      "1 / 6",
+      "Next photo",
+      "Previous photo"
+    ],
+    "backward": "1 / 6\nNext photo\nPrevious photo\nPlaying Eternum on an arcade cabinet",
+    "last": "6 / 6\nNext photo\nPrevious photo\nA group photo at IndieDevDay",
+    "lastLoaded": true,
+    "closedWithEscape": true
+  },
+  "animations": [
+    {
+      "alt": "Eternum Ex · Cover",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-eternum-ex-hover.webp"
+    },
+    {
+      "alt": "Lambs on the Road · Cover",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-lambs-on-the-road-hover.webp"
+    },
+    {
+      "alt": "View Saga on Steam",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-saga-hover.webp"
+    }
+  ],
+  "console": [],
+  "photos": [
+    {
+      "alt": "Playing Eternum on an arcade cabinet",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/CARRUSEL_01_ETERNUM-300x188.jpg"
+    },
+    {
+      "alt": "At the studio with Flynn's Arcade on the screens",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/04/1644771649510b-300x201.jpg"
+    },
+    {
+      "alt": "Testing the OUTSIDERS augmented-reality prototype",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/CARRUSEL_04_flynns-300x188.jpg"
+    },
+    {
+      "alt": "Presenting game projects at the university",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/09/2014-08-27_17.36.08-300x169.jpg"
+    },
+    {
+      "alt": "Flynn's Arcade exhibition stand with Eternum",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2016/10/tS9ikaGC-300x170.jpg"
+    },
+    {
+      "alt": "A group photo at IndieDevDay",
+      "loaded": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/11/IMG-20221029-WA0003-300x225.jpg"
+    }
+  ],
+  "desktop": {
+    "scroll": 1513,
+    "width": 1513
+  },
+  "footerOverflow": false,
+  "sagaLink": "https://store.steampowered.com/app/2590820/Saga/?l=english",
+  "pageId": 6925,
+  "status": "About Cardozo\n(Borrador)",
+  "sections": 9
+}

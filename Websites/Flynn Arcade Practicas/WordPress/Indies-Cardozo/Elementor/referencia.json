@@ -1,0 +1,325 @@
+[
+  {
+    "bio": [
+      "I am Radin, an indie video game developer who LOVES retro and arcade video games.",
+      "I have grown up playing arcade cabinet games and 8 bit computers and my goal is to make games like those of that time: directs, frenetics, addictives and with the real feeling of arcade games of the ’80s and ’90s."
+    ],
+    "games": "Eternum Ex, Galacticon",
+    "links": [
+      {
+        "external": true,
+        "text": "www.radingames.com",
+        "url": "https://www.radingames.com/"
+      }
+    ],
+    "logo": "../Estudios/radin-games/Images/logo.png",
+    "name": "Radin Games",
+    "portrait": "../Estudios/radin-games/Images/portrait.png",
+    "query": "Radin Games Eternum Ex, Galacticon",
+    "summary": "Retro arcade inspiration, rooted in 8-bit computers."
+  },
+  {
+    "bio": [
+      "I’m an indie developer based in Jakarta, Indonesia. I’ve been working in the game industry since 2011 and have covered wide range of jobs from programming, game design, game journalism, marketing, PR, and narrative design. I probably can write dozens or more paragraphs about myself, but that sounds a bit too narcissistic."
+    ],
+    "games": "What Comes After",
+    "links": [
+      {
+        "external": true,
+        "text": "fahmitsu.com",
+        "url": "https://fahmitsu.com/"
+      }
+    ],
+    "logo": "../Estudios/fahmitsu-rolling-glory-jam/Images/logo.png",
+    "name": "Fahmitsu, Rolling Glory Jam",
+    "portrait": "../Estudios/fahmitsu-rolling-glory-jam/Images/portrait.jpg",
+    "query": "Fahmitsu, Rolling Glory Jam What Comes After",
+    "summary": "A Jakarta-based developer working across games and narrative."
+  },
+  {
+    "bio": [
+      "I’m Pablo Navarro, director and main programmer at RAWRLAB Games and previously at PiX Juegos.",
+      "I develop management applications by day and by night. I develop 2D indie video games of dubious success.",
+      "I have too many favorite games to mention here, but I will mention that most of my favorites are from Nintendo ."
+    ],
+    "games": "Explosive Dinosaurs",
+    "links": [
+      {
+        "external": true,
+        "text": "www.rawrlab.com",
+        "url": "http://www.rawrlab.com/"
+      }
+    ],
+    "logo": "../Estudios/pablo-navarro-rawrlab-games/Images/logo.jpg",
+    "name": "Pablo Navarro, RAWRLAB Games",
+    "portrait": "../Estudios/pablo-navarro-rawrlab-games/Images/portrait.jpg",
+    "query": "Pablo Navarro, RAWRLAB Games Explosive Dinosaurs",
+    "summary": "Director and lead programmer at RAWRLAB Games."
+  },
+  {
+    "bio": [
+      "Hello! My name is Jose from Valencia (Spain) and all my life I have played video games, especially Arcades and 16-bit consoles.",
+      "Without studying video game development and learning on my own, I try to create video games that are reminiscent of that wonderful time."
+    ],
+    "games": "Freddy Farmer",
+    "links": [
+      {
+        "external": true,
+        "text": "www.catcadegames.com",
+        "url": "https://www.catcadegames.com/"
+      }
+    ],
+    "logo": "../Estudios/jose-catcade-games/Images/logo.png",
+    "name": "Jose, Catcade Games",
+    "portrait": "../Estudios/jose-catcade-games/Images/portrait.png",
+    "query": "Jose, Catcade Games Freddy Farmer",
+    "summary": "Self-taught Valencian creator inspired by arcades and 16-bit consoles."
+  },
+  {
+    "bio": [
+      "Hello! I’m an indie developer currently living in Bradenton, Florida. More importantly, I’m a husband, father, avid skateboarder, and exclamation point enthusiast! While I created Dexter Stardust and some of the other characters together with my friends Munk Alejandro, Lola Mendez, and Alec Corday, I am a one-man-band behind the scenes;",
+      "I do the programming, artwork, game design, music production, sound design, and whatever else needs to be done. I regularly feel like tearing my hair out in frustration, but my wonderful wife always brings me back to reality. She’s the best!"
+    ],
+    "games": "Dexter Stardust",
+    "links": [
+      {
+        "external": true,
+        "text": "www.dexterstardust.com",
+        "url": "https://www.dexterstardust.com/"
+      }
+    ],
+    "logo": "../Estudios/jeremy-fryc-stardust-team/Images/logo.png",
+    "name": "Jeremy Fryc, Stardust Team",
+    "portrait": "../Estudios/jeremy-fryc-stardust-team/Images/portrait.jpeg",
+    "query": "Jeremy Fryc, Stardust Team Dexter Stardust",
+    "summary": "Programming, art, music and design behind Dexter Stardust."
+  },
+  {
+    "bio": [
+      "I wrote my first program as a kid in 1982, on my grandmother’s black and white TV, with a Sinclair Spectrum 48K, before moving on to the Commodore 64. It was an amazing experience and from that day on I knew I wanted to make games. I run pixel games, an independent development studio based in Luxembourg, focused on creating fun, classic, arcade experiences for modern machines."
+    ],
+    "games": "Donut Dodo, Cash Cow DX",
+    "links": [
+      {
+        "external": true,
+        "text": "pixel.games",
+        "url": "https://pixel.games/"
+      }
+    ],
+    "logo": "../Estudios/sebastian-pixel-games/Images/logo.png",
+    "name": "Sebastian, Pixel Games",
+    "portrait": "../Estudios/sebastian-pixel-games/Images/portrait.png",
+    "query": "Sebastian, Pixel Games Donut Dodo, Cash Cow DX",
+    "summary": "Classic arcade experiences from an independent Luxembourg studio."
+  },
+  {
+    "bio": [
+      "I’m Xavi, a.k.a hiulit, an indie developer based in Barcelona. I like creating fun arcade games that could have been released in the 80’s. I grew up playing mostly Nintendo consoles, so it’s a dream come true to have my games on the Switch."
+    ],
+    "games": "Murtop",
+    "links": [
+      {
+        "external": true,
+        "text": "games.hiulit.com",
+        "url": "https://games.hiulit.com/murtop/"
+      }
+    ],
+    "logo": "../Estudios/xavi-hiulit/Images/logo.png",
+    "name": "Xavi, Hiulit",
+    "portrait": "../Estudios/xavi-hiulit/Images/portrait.jpg",
+    "query": "Xavi, Hiulit Murtop",
+    "summary": "Barcelona developer recreating the feel of 1980s arcades."
+  },
+  {
+    "bio": [
+      "I’m Soufiane, a software developer and indie game developer based in Morocco. I have been passionate about video games since I was a kid and have been playing them ever since. With a focus on 2D, I strive to create unique and memorable gaming experiences that offer both fun and challenges for players."
+    ],
+    "games": "Colored Effects",
+    "links": [
+      {
+        "external": true,
+        "text": "www.tacsou.com",
+        "url": "https://www.tacsou.com/"
+      }
+    ],
+    "logo": "../Estudios/soufiane-tacsou/Images/logo.png",
+    "name": "Soufiane, Tacsou",
+    "portrait": "../Estudios/soufiane-tacsou/Images/portrait.png",
+    "query": "Soufiane, Tacsou Colored Effects",
+    "summary": "Morocco-based developer focused on memorable, challenging 2D games."
+  },
+  {
+    "bio": [
+      "Andrea Demetrio is an Italian solo developer with a PhD in Physics (don’t ask). Mostly known for his 3D fighting game Schwarzerblitz and defined as a «trolling creator» by some players due to his approach to game development, he routinely explores different genres depending on how inspiration strikes him. He started his (so far) one man studio «Der Mondhase» in 2021. 8-Colors Star Guardians + is his first commercial game and the first to be published on console."
+    ],
+    "games": "8-Colors Star Guardians +",
+    "links": [
+      {
+        "external": true,
+        "text": "dermondhase.github.io",
+        "url": "https://dermondhase.github.io/"
+      }
+    ],
+    "logo": "../Estudios/andrea-der-mondhase/Images/logo.png",
+    "name": "Andrea, Der Mondhase",
+    "portrait": "../Estudios/andrea-der-mondhase/Images/portrait.jpg",
+    "query": "Andrea, Der Mondhase 8-Colors Star Guardians +",
+    "summary": "Italian solo developer and founder of Der Mondhase."
+  },
+  {
+    "bio": [
+      "Hello! I am Andrea, aka silver978, an italian indie game designer and developer passionate to psychological horrors, but also energetic and stylish videogames: my main focus is on providing fun and emotional impactful experiences to the players. I started developing games since 2015, when I mainly produced experimental ones. I began publishing commercial indie games on 2023, by releasing on Steam a short psychological adventure about a stressed girl trying to manage her study life: «Looking Up I See Only A Ceiling."
+    ],
+    "games": "Looking Up I See Only A Ceiling",
+    "links": [
+      {
+        "external": true,
+        "text": "silver978.com",
+        "url": "https://silver978.com/"
+      }
+    ],
+    "logo": "../Estudios/andrea-tarondo-silver978/Images/logo.jpg",
+    "name": "Andrea Tarondo, silver978",
+    "portrait": "../Estudios/andrea-tarondo-silver978/Images/portrait.png",
+    "query": "Andrea Tarondo, silver978 Looking Up I See Only A Ceiling",
+    "summary": "Italian game designer creating psychological, emotionally impactful experiences."
+  },
+  {
+    "bio": [
+      "I’ve been making games for about 4 years now, and absolutely love it. I’m the solo developer behind Attack of the Karens, and have plans to release many more projects both solo and with my brother Grant. Game dev is hard but it is so worth it. It’s one of the most satisfying things in the world to start with an idea and end up turning it into a finished game!."
+    ],
+    "games": "Attack of the Karens",
+    "links": [
+      {
+        "external": true,
+        "text": "www.studioprimitive.net",
+        "url": "https://www.studioprimitive.net/"
+      }
+    ],
+    "logo": "../Estudios/joel-potter-studio-primitive/Images/logo.jpg",
+    "name": "Joel Potter, Studio Primitive",
+    "portrait": "../Estudios/joel-potter-studio-primitive/Images/portrait.jpg",
+    "query": "Joel Potter, Studio Primitive Attack of the Karens",
+    "summary": "Solo developer behind Attack of the Karens."
+  },
+  {
+    "bio": [
+      "Hello! I’m David and I’m a solo indie developer from Quebec City, Canada. I like to create neo-retro arcade games just like what I used to play growing up in the 90’s. I keep things short and simple and as a speedrunner myself, I really enjoy adding a twist where you’re rewarded for completing my games as fast as possible. With Vidvad Games, I do the programming, pixel art and game design, and I partner up with a good friend of mine (ZerolagGaming) for the music. I wish I could tell my younger self that one day, one of my creation would run on a Nintendo console. What a surreal experience!"
+    ],
+    "games": "Goliath Depot",
+    "links": [
+      {
+        "external": true,
+        "text": "vidvad.games",
+        "url": "https://vidvad.games/"
+      }
+    ],
+    "logo": "../Estudios/david-langlois-vidvad-games/Images/logo.jpg",
+    "name": "David Langlois, Vidvad Games",
+    "portrait": "../Estudios/david-langlois-vidvad-games/Images/portrait.png",
+    "query": "David Langlois, Vidvad Games Goliath Depot",
+    "summary": "Quebec-based creator of neo-retro arcade games and speedrunning."
+  },
+  {
+    "bio": [
+      "Hi, i’m maybell, purveyor of fine electronic curiosities such as satryn. it is an honor and my pleasure to serve you the very best games i can muster. support your local indie! <3"
+    ],
+    "games": "Satryn DX",
+    "links": [
+      {
+        "external": true,
+        "text": "maybell.itch.io",
+        "url": "https://maybell.itch.io/"
+      }
+    ],
+    "logo": "../Estudios/may-oswald-maybell-soft/Images/logo.webp",
+    "name": "May Oswald, Maybell Soft",
+    "portrait": "../Estudios/may-oswald-maybell-soft/Images/portrait.png",
+    "query": "May Oswald, Maybell Soft Satryn DX",
+    "summary": "Independent creator of Satryn and other electronic curiosities."
+  },
+  {
+    "bio": [
+      "I’m Luke Orsie, animator/artist for crashable studios. Besides making games I enjoy skateboarding, fishing, firearms, Dogs, cats, bush-crafting, and most non-traditional sports. Crashable Studios is comprised of us two brothers, Luke (me) and Micah. We have been gamers since we were kids in the 90’s. I remember firing up «Contra» on our brand new NES we got for Christmas in that time. Those memories and gaming moments have stuck with us through the years and we strive to recreated those magic moments/feelings we get from gaming in our own creative way. We have been developing since 2012 when our first game «Alum» was kickstarted and are on our third commercial title as of the writing of this bio."
+    ],
+    "games": "Sentry City",
+    "links": [
+      {
+        "external": true,
+        "text": "www.wildwooddown.com",
+        "url": "https://www.wildwooddown.com/"
+      }
+    ],
+    "logo": "../Estudios/luke-orsie-crashable-studios/Images/logo.png",
+    "name": "Luke Orsie, Crashable Studios",
+    "portrait": "../Estudios/luke-orsie-crashable-studios/Images/portrait.png",
+    "query": "Luke Orsie, Crashable Studios Sentry City",
+    "summary": "Two brothers drawing inspiration from their 1990s gaming."
+  },
+  {
+    "bio": [
+      "My name is Enzo Brown and I’m a solo-developer that makes Yesterday’s Games, Today. I’ve made art all my life and I’ve made (or at least tried to make) games since the flash days. It wasn’t until 2023 that I decided to give game-development a real shot. There’s something about older titles that really draws me in and it is my goal to try and capture that magic in my projects."
+    ],
+    "games": "Super Spy Raccoon",
+    "links": [
+      {
+        "external": true,
+        "text": "slain-mascot.itch.io",
+        "url": "https://slain-mascot.itch.io/"
+      }
+    ],
+    "logo": "../Estudios/enzo-brown-slain-mascot/Images/logo.png",
+    "name": "Enzo Brown, Slain Mascot",
+    "portrait": "../Estudios/enzo-brown-slain-mascot/Images/portrait.jpg",
+    "query": "Enzo Brown, Slain Mascot Super Spy Raccoon",
+    "summary": "A solo developer inspired by yesterday's games."
+  },
+  {
+    "bio": [
+      "I’m Magnus Fredriksson, animator, filmmaker, and now indie game developer, thanks to a mild midlife crisis. I grew up in Kiruna in northern Sweden (where I now live again), where arcades were few and far between. Gaming at home on the Amiga or NES became my go-to, but I’ve always had a special love for arcade-style games that are easy to pick up and play, especially if they’re co-op."
+    ],
+    "games": "Flora & Fang: Guardians of the vampire garden",
+    "links": [
+      {
+        "external": true,
+        "text": "bortbyting.com",
+        "url": "https://bortbyting.com/"
+      }
+    ],
+    "logo": "../Estudios/magnus-fredriksson-bortbyting/Images/logo.png",
+    "name": "Magnus Fredriksson, Bortbyting",
+    "portrait": "../Estudios/magnus-fredriksson-bortbyting/Images/portrait.jpg",
+    "query": "Magnus Fredriksson, Bortbyting Flora & Fang: Guardians of the vampire garden",
+    "summary": "Kiruna-based animator and filmmaker turned arcade game developer."
+  },
+  {
+    "bio": [
+      "With roots in film production, animation, and art, we moved into game development to explore interactive storytelling. That discipline shapes our studio philosophy: we approach video games as a powerful narrative canvas, dedicated to delivering meaningful, story-driven experiences."
+    ],
+    "games": "Venezuela",
+    "links": [],
+    "logo": "../Estudios/apamate-studio/Images/logo.webp",
+    "name": "Apamate Studio",
+    "portrait": "../Estudios/apamate-studio/Images/portrait.webp",
+    "query": "Apamate Studio Venezuela Wilmar Wilderman Niño",
+    "summary": "We are Apamate Studio, an indie game studio from Venezuela, founded by brothers Wilmar and Wilderman Niño."
+  },
+  {
+    "bio": [
+      "We’re enthusiastic about the idea of offering gaming experiences that make players have an incredible time, laugh heartily, and above all, disconnect from their daily routines with our games."
+    ],
+    "games": "Roombattle",
+    "links": [
+      {
+        "external": true,
+        "text": "Roombattle press kit",
+        "url": "https://drive.google.com/drive/folders/1WSe8igGP9T7T1yvPTw-XCsToITOOBC8t"
+      }
+    ],
+    "logo": "../Estudios/dust-games/Images/logo.webp",
+    "name": "Dust Games",
+    "portrait": "../Estudios/dust-games/Images/portrait.webp",
+    "query": "Dust Games Roombattle Barcelona",
+    "summary": "Dust Games is an independent video game studio based in Barcelona. We blend creativity and fun to turn them into engaging gaming experiences that everyone can enjoy."
+  }
+]

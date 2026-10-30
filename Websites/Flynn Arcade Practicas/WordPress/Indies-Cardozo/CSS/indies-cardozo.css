@@ -1,0 +1,222 @@
+body.page-id-6961 [data-elementor-id="6961"]:has(.fc-home) { background: linear-gradient(90deg, rgb(3 8 17 / 55%), rgb(3 8 17 / 88%) 32%, rgb(3 8 17 / 88%) 68%, rgb(3 8 17 / 55%)), #030811 url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/arcade-city.webp") center / cover no-repeat; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home { --fc-cyan: #00deee; --fc-pink: #f51ca5; --fc-ink: #030811; --fc-line: #183348; --fc-muted: #a6bfd3; color: #f1f6fc; font: 16px/1.6 "Flynns Cardozo Barlow", Arial, sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home :where(h1,h2,h3,p,figure) { margin: 0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home :where(.elementor-heading-title) { color: #f1f6fc; font-family: inherit; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home :where(a) { text-decoration: none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home [hidden] { display: none !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home :is(a,button,input):focus-visible { outline: 2px solid var(--fc-cyan); outline-offset: 4px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home .elementor-widget { margin-bottom: 0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home .elementor-widget-text-editor { color: var(--fc-muted); font-family: inherit; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-setup { display: none; }
+body.elementor-editor-active.page-id-6961 [data-elementor-id="6961"] .fc-setup { display: block; min-height: 28px; background: #07111e; border-bottom: 1px dashed #183348; }
+body.elementor-editor-active.page-id-6961 [data-elementor-id="6961"] .fc-setup::before { content: "INDIES · DESIGN & INTERACTIONS"; display: block; padding: 5px 16px; color: #a6bfd3; font: 11px Arial, sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-cta .elementor-button { display: inline-flex; align-items: center; min-height: 44px; padding: 12px 21px; border: 1px solid; border-image: linear-gradient(100deg,var(--fc-cyan),var(--fc-pink)) 1; border-radius: 0; color: #f1f6fc; background-color: var(--fc-ink); font: 700 12px/1.3 "Flynns Cardozo Barlow", Arial, sans-serif; text-transform: uppercase; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-cta .elementor-button:hover { background-color: #092132; color: var(--fc-cyan); box-shadow: 0 0 16px rgb(0 222 238 / 10%); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-cta .elementor-button-content-wrapper { gap: 14px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-cta .elementor-button-icon { color: var(--fc-cyan); font-size: 14px; }
+body.page-id-6961 { --fc-cyan:#00deee; --fc-pink:#f51ca5; --fc-muted:#a6bfd3; --fc-line:#183348; --fc-white:#f1f6fc; position:relative; isolation:isolate; min-height:100vh; background:#030811 !important; }
+body.page-id-6961::before { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; opacity:.7; background:linear-gradient(90deg,rgb(3 8 17 / 50%),rgb(3 8 17 / 90%) 32%,rgb(3 8 17 / 90%) 68%,rgb(3 8 17 / 50%)),url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/arcade-city.webp") center / cover no-repeat; }
+body.page-id-6961 #content, body.page-id-6961 [data-elementor-id="6961"] { background:transparent !important; }
+body.page-id-6961:has(.fc-local-header) .elementor-location-header,
+body.page-id-6961:has(.fc-local-footer) .elementor-location-footer { display:none !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container,
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-footer > .elementor-container { width:calc(100% - 112px); max-width:1260px; margin-inline:auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header { position:relative; z-index:20; padding:0; background:#030811; border-bottom:1px solid var(--fc-line); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header::after { content:""; position:absolute; inset-inline:0; bottom:-1px; height:1px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container { min-height:94px; align-items:center; gap:32px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header .elementor-widget-wrap { padding:0; align-items:center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-logo-col { width:170px !important; flex:0 0 auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-logo { width:170px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-logo > .elementor-widget-container { position:relative; width:100%; aspect-ratio:650 / 318; overflow:hidden; mix-blend-mode:screen; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-logo img { position:absolute; left:-76.9231%; top:-103.774%; width:246.154%; max-width:none; height:auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-nav-col { width:auto !important; flex:1 1 auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-nav-col > .elementor-widget-wrap { justify-content:center; gap:35px; flex-wrap:nowrap; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-menu-item { width:auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-menu-item .elementor-button { position:relative; min-height:44px; display:inline-flex; align-items:center; padding:10px 0; background:transparent; color:var(--fc-white); font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-transform:uppercase; border:0; border-radius:0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-menu-item.fc-active .elementor-button,
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-menu-item .elementor-button:hover { color:var(--fc-cyan); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-menu-item.fc-active .elementor-button::after { content:""; position:absolute; inset-inline:0; bottom:1px; height:2px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col { width:260px !important; flex:0 0 auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col > .elementor-widget-wrap { gap:10px; justify-content:flex-end; flex-wrap:nowrap; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social { width:auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social .elementor-button { display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; padding:0; border:1px solid var(--fc-line); border-radius:50%; color:var(--fc-cyan); background:#071522; transition:color .15s,border-color .15s; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social .elementor-button:is(:hover,:focus-visible) { color:var(--fc-pink); border-color:var(--fc-pink); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social .elementor-button-content-wrapper { gap:0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social .elementor-button-icon { margin:0; display:grid; place-items:center; width:24px; height:24px; font-size:24px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social :is(i,svg) { color:inherit; fill:currentColor; font-size:inherit; width:1em; height:1em; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social .elementor-button-text { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col .fc-home-social .elementor-button { width:44px; height:44px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col .elementor-button-icon { width:21px; height:21px; font-size:21px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-bluesky i { background:currentColor; mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z'/%3E%3C/svg%3E") center/contain no-repeat; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-bluesky i::before { content:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-nav-toggle { display:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-footer { background:rgb(0 0 0 / 65%); border-top:1px solid var(--fc-line); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-footer > .elementor-container { align-items:center; gap:35px; padding-block:35px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-footer .elementor-widget-wrap { padding:0; align-content:flex-start; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-copy { width:260px !important; flex:0 0 auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-copy p { max-width:260px; margin-top:10px; font-size:13px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-social-col { width:auto !important; flex:1 1 auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-social-col > .elementor-widget-wrap { justify-content:flex-end; gap:15px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-footer h2.elementor-heading-title { color:var(--fc-cyan); font-size:13px; line-height:1.6; font-weight:600; text-transform:uppercase; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-footer { background:#07111e; border-block:1px solid var(--fc-line); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-footer > .elementor-container { gap:80px; padding-block:40px 45px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-col { width:calc(50% - 40px) !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-col .elementor-widget-text-editor { margin-top:13px; font-size:14px; line-height:1.6; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-col .fc-news-status { margin-top:20px; color:var(--fc-white); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-textlink .elementor-button { display:inline-flex; align-items:center; min-height:44px; gap:10px; padding:0; background:transparent; color:var(--fc-cyan); border:0; font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-textlink .elementor-button-icon { order:2; margin:0 0 0 10px; font-size:14px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-textlink .elementor-button:hover { color:var(--fc-pink); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email { margin-top:26px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email .elementor-button { display:inline-flex; align-items:center; padding:0; background:transparent; border:0; color:var(--fc-pink); font:600 20px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email .elementor-button-content-wrapper { gap:12px; align-items:center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email .elementor-button-icon { margin:0; font-size:19px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email .elementor-button-text { overflow-wrap:anywhere; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-credits > .elementor-container { align-items:center; min-height:64px; gap:25px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-credits > .elementor-container > .elementor-column { width:calc((100% - 50px) / 3); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-credits .elementor-widget-text-editor,
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-credits .elementor-button { font-size:11px; color:#6e8ba3; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-credit-motto { text-align:center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-credit-link { text-align:right; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-credits .elementor-button { color:var(--fc-muted); }
+@media(max-width:1150px) {
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container,body.page-id-6961 [data-elementor-id="6961"] .fc-local-footer > .elementor-container { width:calc(100% - 64px); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container { gap:20px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-nav-col > .elementor-widget-wrap { gap:24px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col { width:244px !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col > .elementor-widget-wrap { gap:6px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-footer > .elementor-container { align-items:flex-start; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-social-col > .elementor-widget-wrap { gap:10px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-footer > .elementor-container { gap:40px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-col { width:calc(50% - 20px) !important; }
+}
+@media(max-width:850px) {
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col { display:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-footer > .elementor-container { gap:30px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-col { width:calc(50% - 15px) !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email .elementor-button { font-size:16px; }
+}
+@media(max-width:767px) {
+body.page-id-6961::before { background-image:linear-gradient(90deg,rgb(3 8 17 / 80%),rgb(3 8 17 / 70%)),url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/arcade-city-mobile.webp"); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container { flex-wrap:nowrap; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-footer > .elementor-container { flex-wrap:nowrap; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-footer > .elementor-container { flex-wrap:nowrap; }
+}
+@media(max-width:600px) {
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container,body.page-id-6961 [data-elementor-id="6961"] .fc-local-footer > .elementor-container { width:calc(100% - 36px); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header > .elementor-container { min-height:82px; justify-content:space-between; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-logo-col,body.page-id-6961 [data-elementor-id="6961"] .fc-home-logo { width:150px !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col { display:block; width:44px !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-header-social-col .fc-home-social { display:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-nav-toggle { display:block; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-nav-toggle .elementor-button { display:grid; place-items:center; width:44px; height:44px; padding:0; background:transparent; color:var(--fc-muted); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-nav-toggle .elementor-button-text { position:absolute; width:1px; height:1px; clip-path:inset(50%); overflow:hidden; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-nav-col { display:none; position:absolute; top:100%; left:0; right:0; width:100% !important; padding:18px; background:#07111e; border-bottom:1px solid var(--fc-line); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-local-header.fc-nav-open .fc-nav-col { display:block; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-nav-col > .elementor-widget-wrap { gap:8px 16px; flex-wrap:wrap; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-menu-item .elementor-button { font-size:12px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-footer > .elementor-container { flex-direction:column; gap:24px; padding-block:30px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-copy,body.page-id-6961 [data-elementor-id="6961"] .fc-footer-social-col { width:100% !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-social-copy p { max-width:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-social-col > .elementor-widget-wrap { justify-content:flex-start; gap:12px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-footer > .elementor-container { flex-direction:column; gap:35px; padding-block:32px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-contact-col { width:100% !important; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email { margin-top:21px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-email .elementor-button { font-size:20px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-footer-credits > .elementor-container { flex-wrap:wrap; gap:10px 20px; padding-block:20px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-credit-motto { display:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-credit-brand,body.page-id-6961 [data-elementor-id="6961"] .fc-credit-link { width:auto !important; flex:1 1 auto; }
+}
+@media(prefers-reduced-motion:reduce) {
+body.page-id-6961 [data-elementor-id="6961"] .fc-home-social .elementor-button { transition:none; }
+}
+
+/* Indies Cardozo: the independent creators directory from the GitHub reference. */
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading > .elementor-container,
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-tools > .elementor-container,
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container,
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-more > .elementor-container { width:calc(100% - 112px); max-width:1260px; margin-inline:auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading { padding-block:44px 28px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading .fc-directory-eyebrow { color:var(--fc-cyan); font:700 12px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-transform:uppercase; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading .fc-directory-title { margin-top:11px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-title .elementor-heading-title { color:var(--fc-cyan); font:600 38px/1.2 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-title .elementor-heading-title span { color:var(--fc-pink); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-title::after { content:""; display:block; width:65px; height:2px; margin-top:10px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-tools > .elementor-container > .elementor-column > .elementor-widget-wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:24px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search { width:auto; max-width:100%; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search > .elementor-widget-container { display:flex; align-items:center; gap:4px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search label { display:flex; align-items:center; gap:9px; min-height:44px; padding:8px 12px; border:1px solid var(--fc-line); border-radius:3px; background:rgb(3 8 17 / 92%); color:var(--fc-muted); min-width:0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search label:focus-within { border-color:var(--fc-cyan); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search svg { width:18px; height:18px; flex:0 0 18px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search input { width:240px; min-width:0; padding:0; border:0; outline:none; background:none; border-radius:0; color:#f1f6fc; font:400 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search input::placeholder { color:var(--fc-muted); opacity:1; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search input:focus-visible { outline:none; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search button { display:grid; place-items:center; width:36px; height:44px; flex:0 0 36px; padding:8px; color:var(--fc-muted); background:transparent; border:0; border-radius:3px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search button:hover { color:var(--fc-cyan); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-count { width:auto; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-count .elementor-heading-title { color:var(--fc-muted); font:400 13px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; font-variant-numeric:tabular-nums; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,.65fr) minmax(0,1.2fr); gap:40px; align-items:center; padding-block:32px; border-top:1px solid var(--fc-line); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container > .elementor-column { width:auto; min-width:0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .elementor-widget-wrap { display:block; padding:0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .fc-studio-games { margin-bottom:12px; width:fit-content; max-width:100%; padding:2px 6px; color:var(--fc-pink); background:rgb(3 8 17 / 88%); font:400 12px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-name .elementor-heading-title { color:#f1f6fc; font:600 24px/1.3 "Flynns Cardozo Barlow",Arial,sans-serif; overflow-wrap:anywhere; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .fc-studio-logo { margin-top:24px; width:100%; max-width:200px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-logo img { display:block; width:100%; height:100px; object-fit:contain; object-position:left center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-portrait img { display:block; width:100%; height:220px; object-fit:contain; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-summary { color:var(--fc-muted); font-size:16px; line-height:1.75; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .fc-studio-bio { margin-top:14px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-toggle-item { border:0; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-tab-title { min-height:44px; padding:10px 0; border:0; background:transparent; color:var(--fc-cyan); font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-tab-title a { color:inherit; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-toggle-icon { color:var(--fc-cyan); width:12px; font-size:11px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-tab-content { padding:0; border:0; background:transparent; color:var(--fc-muted); font:400 16px/1.75 "Flynns Cardozo Barlow",Arial,sans-serif; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-tab-content p + p { margin-top:12px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .fc-studio-website { margin-top:20px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-website .elementor-button { display:inline-flex; align-items:center; padding:0; min-height:23px; color:var(--fc-cyan); background:transparent; border:0; border-radius:0; font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-align:left; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-website .elementor-button-content-wrapper { gap:9px; align-items:center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-website .elementor-button-text { overflow-wrap:anywhere; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-website .elementor-button-icon { font-size:13px; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-website .elementor-button:hover { color:var(--fc-pink); }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-more { padding-block:30px 65px; text-align:center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-empty { padding-block:55px; text-align:center; }
+body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row[hidden],
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-more[hidden],
+body.page-id-6961 [data-elementor-id="6961"] .fc-directory-empty[hidden] { display:none !important; }
+body.elementor-editor-active.page-id-6961 [data-elementor-id="6961"] .fc-directory-empty { display:none; }
+@media(max-width:1150px) {
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading > .elementor-container,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-tools > .elementor-container,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-more > .elementor-container { width:calc(100% - 64px); }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container { gap:30px; }
+}
+@media(max-width:850px) {
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:25px; padding-block:30px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-copy { grid-column:1/-1; }
+}
+@media(max-width:767px) {
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container > .elementor-column { width:auto; }
+}
+@media(max-width:600px) {
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading > .elementor-container,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-tools > .elementor-container,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-more > .elementor-container { width:calc(100% - 36px); }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-heading { padding-block:30px 24px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-title .elementor-heading-title { font-size:30px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search { width:100%; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search label { flex:1; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-directory-search input { width:100%; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container { grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:16px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-name .elementor-heading-title { font-size:20px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .fc-studio-games { font-size:11px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row .fc-studio-logo { margin-top:15px; max-width:140px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-logo img { height:75px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-portrait img { height:150px; object-position:center; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-summary,
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-bio .elementor-tab-content { font-size:15px; }
+}
+@media(max-width:360px) {
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-name .elementor-heading-title { font-size:18px; }
+ body.page-id-6961 [data-elementor-id="6961"] .fc-studio-row > .elementor-container { column-gap:15px; }
+}

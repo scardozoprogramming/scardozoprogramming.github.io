@@ -1,0 +1,199 @@
+[data-elementor-id="6953"]:has(.fc-home) { background: linear-gradient(90deg, rgb(3 8 17 / 55%), rgb(3 8 17 / 88%) 32%, rgb(3 8 17 / 88%) 68%, rgb(3 8 17 / 55%)), #030811 url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/arcade-city.webp") center / cover no-repeat; }
+[data-elementor-id="6953"] .fc-home { --fc-cyan: #00deee; --fc-pink: #f51ca5; --fc-ink: #030811; --fc-line: #183348; --fc-muted: #a6bfd3; color: #f1f6fc; font: 16px/1.6 "Flynns Cardozo Barlow", Arial, sans-serif; }
+[data-elementor-id="6953"] .fc-home :where(h1,h2,h3,p,figure) { margin: 0; }
+[data-elementor-id="6953"] .fc-home :where(.elementor-heading-title) { color: #f1f6fc; font-family: inherit; }
+[data-elementor-id="6953"] .fc-home :where(a) { text-decoration: none; }
+[data-elementor-id="6953"] .fc-home [hidden] { display: none !important; }
+[data-elementor-id="6953"] .fc-home :is(a,button,input):focus-visible { outline: 2px solid var(--fc-cyan); outline-offset: 4px; }
+[data-elementor-id="6953"] .fc-home .elementor-widget { margin-bottom: 0; }
+[data-elementor-id="6953"] .fc-home .elementor-widget-text-editor { color: var(--fc-muted); font-family: inherit; }
+[data-elementor-id="6953"] .fc-setup { display: none; }
+.elementor-editor-active [data-elementor-id="6953"] .fc-setup { display: block; min-height: 28px; background: #07111e; border-bottom: 1px dashed #183348; }
+.elementor-editor-active [data-elementor-id="6953"] .fc-setup::before { content: "GAMES · DESIGN & INTERACTIONS"; display: block; padding: 5px 16px; color: #a6bfd3; font: 11px Arial, sans-serif; }
+[data-elementor-id="6953"] .fc-cta .elementor-button { display: inline-flex; align-items: center; min-height: 44px; padding: 12px 21px; border: 1px solid; border-image: linear-gradient(100deg,var(--fc-cyan),var(--fc-pink)) 1; border-radius: 0; color: #f1f6fc; background-color: var(--fc-ink); font: 700 12px/1.3 "Flynns Cardozo Barlow", Arial, sans-serif; text-transform: uppercase; }
+[data-elementor-id="6953"] .fc-cta .elementor-button:hover { background-color: #092132; color: var(--fc-cyan); box-shadow: 0 0 16px rgb(0 222 238 / 10%); }
+[data-elementor-id="6953"] .fc-cta .elementor-button-content-wrapper { gap: 14px; }
+[data-elementor-id="6953"] .fc-cta .elementor-button-icon { color: var(--fc-cyan); font-size: 14px; }
+[data-elementor-id="6953"] .fc-catalog > .elementor-container > .elementor-column > .elementor-widget-wrap { display: grid !important; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; align-items: stretch; position: relative; }
+[data-elementor-id="6953"] .fc-catalog-title, [data-elementor-id="6953"] .fc-filterbar, [data-elementor-id="6953"] .fc-empty, [data-elementor-id="6953"] .fc-loadmore { grid-column: 1 / -1; }
+[data-elementor-id="6953"] .fc-catalog-title .elementor-heading-title { font: 400 21px/1.5 "Flynns Cardozo Pixel", monospace; text-transform: uppercase; color: var(--fc-cyan); }
+[data-elementor-id="6953"] .fc-catalog-title::after { content: ""; display: block; width: 64px; height: 2px; margin-top: 14px; background: linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+[data-elementor-id="6953"] .fc-catalog-count { position: absolute; top: 10px; right: 0; width: auto; }
+[data-elementor-id="6953"] .fc-catalog-count .elementor-heading-title { color: var(--fc-muted); font: 400 12px/1.5 "Flynns Cardozo Barlow", Arial, sans-serif; }
+[data-elementor-id="6953"] .fc-filterbar { grid-row: 2; padding-right: 250px; }
+[data-elementor-id="6953"] .fc-filterbar > .elementor-container > .elementor-column > .elementor-widget-wrap { display: flex; flex-wrap: wrap; gap: 6px; align-content: center; }
+[data-elementor-id="6953"] .fc-filterbar .elementor-widget-button { width: auto; }
+[data-elementor-id="6953"] .fc-filter .elementor-button { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; border-radius: 2px; background: transparent; color: var(--fc-muted); font: 700 11px/1.3 "Flynns Cardozo Barlow", Arial, sans-serif; text-transform: uppercase; }
+[data-elementor-id="6953"] .fc-filter.fc-current .elementor-button, [data-elementor-id="6953"] .fc-filter .elementor-button:hover { color: #030811; background: var(--fc-cyan); }
+[data-elementor-id="6953"] .fc-search { grid-column: 3; grid-row: 2; width: 225px; justify-self: end; align-self: center; }
+[data-elementor-id="6953"] .fc-search input { width: 100%; min-height: 48px; padding: 12px 16px; border: 1px solid var(--fc-line); border-radius: 2px; background: rgb(3 8 17 / 90%); color: #f1f6fc; font: 14px "Flynns Cardozo Barlow", Arial, sans-serif; }
+[data-elementor-id="6953"] .fc-search input::placeholder { color: var(--fc-muted); }
+[data-elementor-id="6953"] .fc-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+[data-elementor-id="6953"] .fc-card { width: 100% !important; min-width: 0; margin: 0; padding: 0; border: 1px solid var(--fc-line); border-radius: 3px; overflow: hidden; background: #07111e; transition: border-color .18s,box-shadow .18s; }
+[data-elementor-id="6953"] .fc-card:hover, [data-elementor-id="6953"] .fc-card:focus-within { border-color: var(--fc-cyan); box-shadow: 0 0 18px rgb(0 222 238 / 12%); }
+[data-elementor-id="6953"] .fc-card > .elementor-container { height: 100%; }
+[data-elementor-id="6953"] .fc-card > .elementor-container > .elementor-column { width: 100%; }
+[data-elementor-id="6953"] .fc-card > .elementor-container > .elementor-column > .elementor-widget-wrap { display: flex; flex-direction: column; align-content: stretch; gap: 12px; padding: 0 0 24px; height: 100%; }
+[data-elementor-id="6953"] .fc-cover { background: #030811; }
+[data-elementor-id="6953"] .fc-cover img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+[data-elementor-id="6953"] .fc-card-title { padding: 7px 20px 0; }
+[data-elementor-id="6953"] .fc-card-title .elementor-heading-title { color: #f1f6fc; font: 700 20px/1.3 "Flynns Cardozo Barlow", Arial, sans-serif; }
+[data-elementor-id="6953"] .fc-card-title a { color: inherit; }
+[data-elementor-id="6953"] .fc-tags { padding: 0 20px; }
+[data-elementor-id="6953"] .fc-tags .elementor-icon-list-items { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+[data-elementor-id="6953"] .fc-tags .elementor-icon-list-item { padding: 3px 8px; margin: 0; background: #0c2938; border-radius: 2px; }
+[data-elementor-id="6953"] .fc-tags .elementor-icon-list-text { padding: 0; color: var(--fc-cyan); font: 700 10px/1.5 "Flynns Cardozo Barlow", Arial, sans-serif; text-transform: uppercase; }
+[data-elementor-id="6953"] .fc-tags .elementor-icon-list-icon { display: none; }
+[data-elementor-id="6953"] .fc-platforms { padding: 10px 70px 0 20px; margin-top: auto; }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-items { display: flex; flex-wrap: wrap; gap: 17px; margin: 0; padding: 0; list-style: none; }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-item { margin: 0; padding: 0; }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-icon { color: var(--fc-pink); font-size: 23px; }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-icon :is(i,svg) { color: var(--fc-pink); fill: var(--fc-pink); width: 1em; height: 1em; }
+[data-elementor-id="6953"] .fc-platforms .fa-nintendo-switch { display: inline-block; background-color: var(--fc-pink); mask: url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg") center / contain no-repeat; }
+[data-elementor-id="6953"] .fc-platforms .fa-nintendo-switch::before { content: none; }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+[data-elementor-id="6953"] .fc-card-arrow { position: absolute; right: 15px; bottom: 17px; width: auto; }
+[data-elementor-id="6953"] .fc-card-arrow .elementor-button { min-width: 36px; min-height: 36px; display: grid; place-items: center; padding: 6px; color: var(--fc-muted); background: transparent; }
+[data-elementor-id="6953"] .fc-card-arrow .elementor-button-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+[data-elementor-id="6953"] .fc-empty { display: none; text-align: center; }
+.elementor-editor-active [data-elementor-id="6953"] .fc-empty { display: block; border: 1px dashed var(--fc-line); padding: 15px; }
+[data-elementor-id="6953"] .fc-loadmore { text-align: center; padding-top: 8px; }
+@media(max-width:1100px) {
+[data-elementor-id="6953"] .fc-filterbar { padding-right: 0; }
+[data-elementor-id="6953"] .fc-search { grid-column: 1/-1; grid-row: 3; width: 100%; }
+[data-elementor-id="6953"] .fc-catalog > .elementor-container > .elementor-column > .elementor-widget-wrap { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:767px) {
+[data-elementor-id="6953"] .fc-catalog > .elementor-container > .elementor-column > .elementor-widget-wrap { grid-template-columns: 1fr; }
+[data-elementor-id="6953"] .fc-catalog-title .elementor-heading-title { font-size: 18px; }
+[data-elementor-id="6953"] .fc-catalog-count { top: 5px; }
+}
+@media(prefers-reduced-motion:reduce) {
+[data-elementor-id="6953"] .fc-card { transition: none; }
+}
+body.page-id-6953 { --fc-cyan:#00deee; --fc-pink:#f51ca5; --fc-muted:#a6bfd3; --fc-line:#183348; --fc-white:#f1f6fc; position:relative; isolation:isolate; min-height:100vh; background:#030811 !important; }
+body.page-id-6953::before { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; opacity:.7; background:linear-gradient(90deg,rgb(3 8 17 / 50%),rgb(3 8 17 / 90%) 32%,rgb(3 8 17 / 90%) 68%,rgb(3 8 17 / 50%)),url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/arcade-city.webp") center / cover no-repeat; }
+body.page-id-6953 #content, body.page-id-6953 [data-elementor-id="6953"] { background:transparent !important; }
+body.page-id-6953:has(.fc-local-header) .elementor-location-header,
+body.page-id-6953:has(.fc-local-footer) .elementor-location-footer { display:none !important; }
+[data-elementor-id="6953"] .fc-local-header > .elementor-container,
+[data-elementor-id="6953"] .fc-local-footer > .elementor-container { width:calc(100% - 112px); max-width:1260px; margin-inline:auto; }
+[data-elementor-id="6953"] .fc-local-header { position:relative; z-index:20; padding:0; background:#030811; border-bottom:1px solid var(--fc-line); }
+[data-elementor-id="6953"] .fc-local-header::after { content:""; position:absolute; inset-inline:0; bottom:-1px; height:1px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+[data-elementor-id="6953"] .fc-local-header > .elementor-container { min-height:94px; align-items:center; gap:32px; }
+[data-elementor-id="6953"] .fc-local-header .elementor-widget-wrap { padding:0; align-items:center; }
+[data-elementor-id="6953"] .fc-logo-col { width:170px !important; flex:0 0 auto; }
+[data-elementor-id="6953"] .fc-home-logo { width:170px; }
+[data-elementor-id="6953"] .fc-home-logo > .elementor-widget-container { position:relative; width:100%; aspect-ratio:650 / 318; overflow:hidden; mix-blend-mode:screen; }
+[data-elementor-id="6953"] .fc-home-logo img { position:absolute; left:-76.9231%; top:-103.774%; width:246.154%; max-width:none; height:auto; }
+[data-elementor-id="6953"] .fc-nav-col { width:auto !important; flex:1 1 auto; }
+[data-elementor-id="6953"] .fc-nav-col > .elementor-widget-wrap { justify-content:center; gap:35px; flex-wrap:nowrap; }
+[data-elementor-id="6953"] .fc-home-menu-item { width:auto; }
+[data-elementor-id="6953"] .fc-home-menu-item .elementor-button { position:relative; min-height:44px; display:inline-flex; align-items:center; padding:10px 0; background:transparent; color:var(--fc-white); font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-transform:uppercase; border:0; border-radius:0; }
+[data-elementor-id="6953"] .fc-home-menu-item.fc-active .elementor-button,
+[data-elementor-id="6953"] .fc-home-menu-item .elementor-button:hover { color:var(--fc-cyan); }
+[data-elementor-id="6953"] .fc-home-menu-item.fc-active .elementor-button::after { content:""; position:absolute; inset-inline:0; bottom:1px; height:2px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+[data-elementor-id="6953"] .fc-header-social-col { width:260px !important; flex:0 0 auto; }
+[data-elementor-id="6953"] .fc-header-social-col > .elementor-widget-wrap { gap:10px; justify-content:flex-end; flex-wrap:nowrap; }
+[data-elementor-id="6953"] .fc-home-social { width:auto; }
+[data-elementor-id="6953"] .fc-home-social .elementor-button { display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; padding:0; border:1px solid var(--fc-line); border-radius:50%; color:var(--fc-cyan); background:#071522; transition:color .15s,border-color .15s; }
+[data-elementor-id="6953"] .fc-home-social .elementor-button:is(:hover,:focus-visible) { color:var(--fc-pink); border-color:var(--fc-pink); }
+[data-elementor-id="6953"] .fc-home-social .elementor-button-content-wrapper { gap:0; }
+[data-elementor-id="6953"] .fc-home-social .elementor-button-icon { margin:0; display:grid; place-items:center; width:24px; height:24px; font-size:24px; }
+[data-elementor-id="6953"] .fc-home-social :is(i,svg) { color:inherit; fill:currentColor; font-size:inherit; width:1em; height:1em; }
+[data-elementor-id="6953"] .fc-home-social .elementor-button-text { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+[data-elementor-id="6953"] .fc-header-social-col .fc-home-social .elementor-button { width:44px; height:44px; }
+[data-elementor-id="6953"] .fc-header-social-col .elementor-button-icon { width:21px; height:21px; font-size:21px; }
+[data-elementor-id="6953"] .fc-social-bluesky i { background:currentColor; mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z'/%3E%3C/svg%3E") center/contain no-repeat; }
+[data-elementor-id="6953"] .fc-social-bluesky i::before { content:none; }
+[data-elementor-id="6953"] .fc-home-nav-toggle { display:none; }
+[data-elementor-id="6953"] .fc-social-footer { background:rgb(0 0 0 / 65%); border-top:1px solid var(--fc-line); }
+[data-elementor-id="6953"] .fc-social-footer > .elementor-container { align-items:center; gap:35px; padding-block:35px; }
+[data-elementor-id="6953"] .fc-local-footer .elementor-widget-wrap { padding:0; align-content:flex-start; }
+[data-elementor-id="6953"] .fc-social-copy { width:260px !important; flex:0 0 auto; }
+[data-elementor-id="6953"] .fc-social-copy p { max-width:260px; margin-top:10px; font-size:13px; }
+[data-elementor-id="6953"] .fc-footer-social-col { width:auto !important; flex:1 1 auto; }
+[data-elementor-id="6953"] .fc-footer-social-col > .elementor-widget-wrap { justify-content:flex-end; gap:15px; }
+[data-elementor-id="6953"] .fc-local-footer h2.elementor-heading-title { color:var(--fc-cyan); font-size:13px; line-height:1.6; font-weight:600; text-transform:uppercase; }
+[data-elementor-id="6953"] .fc-contact-footer { background:#07111e; border-block:1px solid var(--fc-line); }
+[data-elementor-id="6953"] .fc-contact-footer > .elementor-container { gap:80px; padding-block:40px 45px; }
+[data-elementor-id="6953"] .fc-contact-col { width:calc(50% - 40px) !important; }
+[data-elementor-id="6953"] .fc-contact-col .elementor-widget-text-editor { margin-top:13px; font-size:14px; line-height:1.6; }
+[data-elementor-id="6953"] .fc-contact-col .fc-news-status { margin-top:20px; color:var(--fc-white); }
+[data-elementor-id="6953"] .fc-home-textlink .elementor-button { display:inline-flex; align-items:center; min-height:44px; gap:10px; padding:0; background:transparent; color:var(--fc-cyan); border:0; font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6953"] .fc-home-textlink .elementor-button-icon { order:2; margin:0 0 0 10px; font-size:14px; }
+[data-elementor-id="6953"] .fc-home-textlink .elementor-button:hover { color:var(--fc-pink); }
+[data-elementor-id="6953"] .fc-home-email { margin-top:26px; }
+[data-elementor-id="6953"] .fc-home-email .elementor-button { display:inline-flex; align-items:center; padding:0; background:transparent; border:0; color:var(--fc-pink); font:600 20px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6953"] .fc-home-email .elementor-button-content-wrapper { gap:12px; align-items:center; }
+[data-elementor-id="6953"] .fc-home-email .elementor-button-icon { margin:0; font-size:19px; }
+[data-elementor-id="6953"] .fc-home-email .elementor-button-text { overflow-wrap:anywhere; }
+[data-elementor-id="6953"] .fc-footer-credits > .elementor-container { align-items:center; min-height:64px; gap:25px; }
+[data-elementor-id="6953"] .fc-footer-credits > .elementor-container > .elementor-column { width:calc((100% - 50px) / 3); }
+[data-elementor-id="6953"] .fc-footer-credits .elementor-widget-text-editor,
+[data-elementor-id="6953"] .fc-footer-credits .elementor-button { font-size:11px; color:#6e8ba3; }
+[data-elementor-id="6953"] .fc-credit-motto { text-align:center; }
+[data-elementor-id="6953"] .fc-credit-link { text-align:right; }
+[data-elementor-id="6953"] .fc-footer-credits .elementor-button { color:var(--fc-muted); }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-icon { font-size:23px !important; }
+[data-elementor-id="6953"] .fc-platforms .elementor-icon-list-icon :is(i,svg) { font-size:23px !important; width:23px !important; height:23px !important; }
+[data-elementor-id="6953"] .fc-platforms .fa-nintendo-switch { display:inline-block; background-color:var(--fc-pink); mask:url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg") center/contain no-repeat; }
+[data-elementor-id="6953"] .fc-platforms .fa-nintendo-switch::before { content:none; }
+[data-elementor-id="6953"] .fc-card-title .elementor-heading-title { font-size:18px; font-weight:600; line-height:1.4; }
+[data-elementor-id="6953"] .fc-card { border-radius:4px; }
+[data-elementor-id="6953"] .fc-card-title { padding:7px 22px 0; }
+[data-elementor-id="6953"] .fc-tags { padding-inline:22px; }
+[data-elementor-id="6953"] .fc-catalog-title .elementor-heading-title { font-size:18px; }
+[data-elementor-id="6953"] .fc-filter .elementor-button { padding:8px 13px; font-size:12px; font-weight:600; background:rgb(3 8 17 / 80%); }
+[data-elementor-id="6953"] .fc-filter.fc-current .elementor-button { background:var(--fc-cyan); }
+@media(max-width:1150px) {
+[data-elementor-id="6953"] .fc-local-header > .elementor-container,[data-elementor-id="6953"] .fc-local-footer > .elementor-container { width:calc(100% - 64px); }
+[data-elementor-id="6953"] .fc-local-header > .elementor-container { gap:20px; }
+[data-elementor-id="6953"] .fc-nav-col > .elementor-widget-wrap { gap:24px; }
+[data-elementor-id="6953"] .fc-header-social-col { width:244px !important; }
+[data-elementor-id="6953"] .fc-header-social-col > .elementor-widget-wrap { gap:6px; }
+[data-elementor-id="6953"] .fc-social-footer > .elementor-container { align-items:flex-start; }
+[data-elementor-id="6953"] .fc-footer-social-col > .elementor-widget-wrap { gap:10px; }
+[data-elementor-id="6953"] .fc-contact-footer > .elementor-container { gap:40px; }
+[data-elementor-id="6953"] .fc-contact-col { width:calc(50% - 20px) !important; }
+}
+@media(max-width:850px) {
+[data-elementor-id="6953"] .fc-header-social-col { display:none; }
+[data-elementor-id="6953"] .fc-contact-footer > .elementor-container { gap:30px; }
+[data-elementor-id="6953"] .fc-contact-col { width:calc(50% - 15px) !important; }
+[data-elementor-id="6953"] .fc-home-email .elementor-button { font-size:16px; }
+}
+@media(max-width:767px) {
+body.page-id-6953::before { background-image:linear-gradient(90deg,rgb(3 8 17 / 80%),rgb(3 8 17 / 70%)),url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/arcade-city-mobile.webp"); }
+[data-elementor-id="6953"] .fc-local-header > .elementor-container { flex-wrap:nowrap; }
+[data-elementor-id="6953"] .fc-social-footer > .elementor-container { flex-wrap:nowrap; }
+[data-elementor-id="6953"] .fc-contact-footer > .elementor-container { flex-wrap:nowrap; }
+}
+@media(max-width:600px) {
+[data-elementor-id="6953"] .fc-local-header > .elementor-container,[data-elementor-id="6953"] .fc-local-footer > .elementor-container { width:calc(100% - 36px); }
+[data-elementor-id="6953"] .fc-local-header > .elementor-container { min-height:82px; justify-content:space-between; }
+[data-elementor-id="6953"] .fc-logo-col,[data-elementor-id="6953"] .fc-home-logo { width:150px !important; }
+[data-elementor-id="6953"] .fc-header-social-col { display:block; width:44px !important; }
+[data-elementor-id="6953"] .fc-header-social-col .fc-home-social { display:none; }
+[data-elementor-id="6953"] .fc-home-nav-toggle { display:block; }
+[data-elementor-id="6953"] .fc-home-nav-toggle .elementor-button { display:grid; place-items:center; width:44px; height:44px; padding:0; background:transparent; color:var(--fc-muted); }
+[data-elementor-id="6953"] .fc-home-nav-toggle .elementor-button-text { position:absolute; width:1px; height:1px; clip-path:inset(50%); overflow:hidden; }
+[data-elementor-id="6953"] .fc-nav-col { display:none; position:absolute; top:100%; left:0; right:0; width:100% !important; padding:18px; background:#07111e; border-bottom:1px solid var(--fc-line); }
+[data-elementor-id="6953"] .fc-local-header.fc-nav-open .fc-nav-col { display:block; }
+[data-elementor-id="6953"] .fc-nav-col > .elementor-widget-wrap { gap:8px 16px; flex-wrap:wrap; }
+[data-elementor-id="6953"] .fc-home-menu-item .elementor-button { font-size:12px; }
+[data-elementor-id="6953"] .fc-social-footer > .elementor-container { flex-direction:column; gap:24px; padding-block:30px; }
+[data-elementor-id="6953"] .fc-social-copy,[data-elementor-id="6953"] .fc-footer-social-col { width:100% !important; }
+[data-elementor-id="6953"] .fc-social-copy p { max-width:none; }
+[data-elementor-id="6953"] .fc-footer-social-col > .elementor-widget-wrap { justify-content:flex-start; gap:12px; }
+[data-elementor-id="6953"] .fc-contact-footer > .elementor-container { flex-direction:column; gap:35px; padding-block:32px; }
+[data-elementor-id="6953"] .fc-contact-col { width:100% !important; }
+[data-elementor-id="6953"] .fc-home-email { margin-top:21px; }
+[data-elementor-id="6953"] .fc-home-email .elementor-button { font-size:20px; }
+[data-elementor-id="6953"] .fc-footer-credits > .elementor-container { flex-wrap:wrap; gap:10px 20px; padding-block:20px; }
+[data-elementor-id="6953"] .fc-credit-motto { display:none; }
+[data-elementor-id="6953"] .fc-credit-brand,[data-elementor-id="6953"] .fc-credit-link { width:auto !important; flex:1 1 auto; }
+}
+@media(prefers-reduced-motion:reduce) {
+[data-elementor-id="6953"] .fc-home-social .elementor-button { transition:none; }
+}

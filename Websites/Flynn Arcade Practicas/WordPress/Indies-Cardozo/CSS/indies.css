@@ -1,0 +1,90 @@
+/* Indies Cardozo: the independent creators directory from the GitHub reference. */
+[data-elementor-id="6961"] .fc-directory-heading > .elementor-container,
+[data-elementor-id="6961"] .fc-directory-tools > .elementor-container,
+[data-elementor-id="6961"] .fc-studio-row > .elementor-container,
+[data-elementor-id="6961"] .fc-directory-more > .elementor-container { width:calc(100% - 112px); max-width:1260px; margin-inline:auto; }
+[data-elementor-id="6961"] .fc-directory-heading { padding-block:44px 28px; }
+[data-elementor-id="6961"] .fc-directory-heading .fc-directory-eyebrow { color:var(--fc-cyan); font:700 12px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-transform:uppercase; }
+[data-elementor-id="6961"] .fc-directory-heading .fc-directory-title { margin-top:11px; }
+[data-elementor-id="6961"] .fc-directory-title .elementor-heading-title { color:var(--fc-cyan); font:600 38px/1.2 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6961"] .fc-directory-title .elementor-heading-title span { color:var(--fc-pink); }
+[data-elementor-id="6961"] .fc-directory-title::after { content:""; display:block; width:65px; height:2px; margin-top:10px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+[data-elementor-id="6961"] .fc-directory-tools > .elementor-container > .elementor-column > .elementor-widget-wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:24px; }
+[data-elementor-id="6961"] .fc-directory-search { width:auto; max-width:100%; }
+[data-elementor-id="6961"] .fc-directory-search > .elementor-widget-container { display:flex; align-items:center; gap:4px; }
+[data-elementor-id="6961"] .fc-directory-search label { display:flex; align-items:center; gap:9px; min-height:44px; padding:8px 12px; border:1px solid var(--fc-line); border-radius:3px; background:rgb(3 8 17 / 92%); color:var(--fc-muted); min-width:0; }
+[data-elementor-id="6961"] .fc-directory-search label:focus-within { border-color:var(--fc-cyan); }
+[data-elementor-id="6961"] .fc-directory-search svg { width:18px; height:18px; flex:0 0 18px; }
+[data-elementor-id="6961"] .fc-directory-search input { width:240px; min-width:0; padding:0; border:0; outline:none; background:none; border-radius:0; color:#f1f6fc; font:400 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6961"] .fc-directory-search input::placeholder { color:var(--fc-muted); opacity:1; }
+[data-elementor-id="6961"] .fc-directory-search input:focus-visible { outline:none; }
+[data-elementor-id="6961"] .fc-directory-search button { display:grid; place-items:center; width:36px; height:44px; flex:0 0 36px; padding:8px; color:var(--fc-muted); background:transparent; border:0; border-radius:3px; }
+[data-elementor-id="6961"] .fc-directory-search button:hover { color:var(--fc-cyan); }
+[data-elementor-id="6961"] .fc-visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+[data-elementor-id="6961"] .fc-directory-count { width:auto; }
+[data-elementor-id="6961"] .fc-directory-count .elementor-heading-title { color:var(--fc-muted); font:400 13px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; font-variant-numeric:tabular-nums; }
+[data-elementor-id="6961"] .fc-studio-row > .elementor-container { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,.65fr) minmax(0,1.2fr); gap:40px; align-items:center; padding-block:32px; border-top:1px solid var(--fc-line); }
+[data-elementor-id="6961"] .fc-studio-row > .elementor-container > .elementor-column { width:auto; min-width:0; }
+[data-elementor-id="6961"] .fc-studio-row .elementor-widget-wrap { display:block; padding:0; }
+[data-elementor-id="6961"] .fc-studio-row .fc-studio-games { margin-bottom:12px; width:fit-content; max-width:100%; padding:2px 6px; color:var(--fc-pink); background:rgb(3 8 17 / 88%); font:400 12px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6961"] .fc-studio-name .elementor-heading-title { color:#f1f6fc; font:600 24px/1.3 "Flynns Cardozo Barlow",Arial,sans-serif; overflow-wrap:anywhere; }
+[data-elementor-id="6961"] .fc-studio-row .fc-studio-logo { margin-top:24px; width:100%; max-width:200px; }
+[data-elementor-id="6961"] .fc-studio-logo img { display:block; width:100%; height:100px; object-fit:contain; object-position:left center; }
+[data-elementor-id="6961"] .fc-studio-portrait img { display:block; width:100%; height:220px; object-fit:contain; }
+[data-elementor-id="6961"] .fc-studio-summary { color:var(--fc-muted); font-size:16px; line-height:1.75; }
+[data-elementor-id="6961"] .fc-studio-row .fc-studio-bio { margin-top:14px; }
+[data-elementor-id="6961"] .fc-studio-bio .elementor-toggle-item { border:0; }
+[data-elementor-id="6961"] .fc-studio-bio .elementor-tab-title { min-height:44px; padding:10px 0; border:0; background:transparent; color:var(--fc-cyan); font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6961"] .fc-studio-bio .elementor-tab-title a { color:inherit; }
+[data-elementor-id="6961"] .fc-studio-bio .elementor-toggle-icon { color:var(--fc-cyan); width:12px; font-size:11px; }
+[data-elementor-id="6961"] .fc-studio-bio .elementor-tab-content { padding:0; border:0; background:transparent; color:var(--fc-muted); font:400 16px/1.75 "Flynns Cardozo Barlow",Arial,sans-serif; }
+[data-elementor-id="6961"] .fc-studio-bio .elementor-tab-content p + p { margin-top:12px; }
+[data-elementor-id="6961"] .fc-studio-row .fc-studio-website { margin-top:20px; }
+[data-elementor-id="6961"] .fc-studio-website .elementor-button { display:inline-flex; align-items:center; padding:0; min-height:23px; color:var(--fc-cyan); background:transparent; border:0; border-radius:0; font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-align:left; }
+[data-elementor-id="6961"] .fc-studio-website .elementor-button-content-wrapper { gap:9px; align-items:center; }
+[data-elementor-id="6961"] .fc-studio-website .elementor-button-text { overflow-wrap:anywhere; }
+[data-elementor-id="6961"] .fc-studio-website .elementor-button-icon { font-size:13px; }
+[data-elementor-id="6961"] .fc-studio-website .elementor-button:hover { color:var(--fc-pink); }
+[data-elementor-id="6961"] .fc-directory-more { padding-block:30px 65px; text-align:center; }
+[data-elementor-id="6961"] .fc-directory-empty { padding-block:55px; text-align:center; }
+[data-elementor-id="6961"] .fc-studio-row[hidden],
+[data-elementor-id="6961"] .fc-directory-more[hidden],
+[data-elementor-id="6961"] .fc-directory-empty[hidden] { display:none !important; }
+body.elementor-editor-active.page-id-6961 [data-elementor-id="6961"] .fc-directory-empty { display:none; }
+@media(max-width:1150px) {
+ [data-elementor-id="6961"] .fc-directory-heading > .elementor-container,
+ [data-elementor-id="6961"] .fc-directory-tools > .elementor-container,
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container,
+ [data-elementor-id="6961"] .fc-directory-more > .elementor-container { width:calc(100% - 64px); }
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container { gap:30px; }
+}
+@media(max-width:850px) {
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:25px; padding-block:30px; }
+ [data-elementor-id="6961"] .fc-studio-copy { grid-column:1/-1; }
+}
+@media(max-width:767px) {
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container > .elementor-column { width:auto; }
+}
+@media(max-width:600px) {
+ [data-elementor-id="6961"] .fc-directory-heading > .elementor-container,
+ [data-elementor-id="6961"] .fc-directory-tools > .elementor-container,
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container,
+ [data-elementor-id="6961"] .fc-directory-more > .elementor-container { width:calc(100% - 36px); }
+ [data-elementor-id="6961"] .fc-directory-heading { padding-block:30px 24px; }
+ [data-elementor-id="6961"] .fc-directory-title .elementor-heading-title { font-size:30px; }
+ [data-elementor-id="6961"] .fc-directory-search { width:100%; }
+ [data-elementor-id="6961"] .fc-directory-search label { flex:1; }
+ [data-elementor-id="6961"] .fc-directory-search input { width:100%; }
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container { grid-template-columns:minmax(0,1fr) minmax(0,.8fr); gap:16px; }
+ [data-elementor-id="6961"] .fc-studio-name .elementor-heading-title { font-size:20px; }
+ [data-elementor-id="6961"] .fc-studio-row .fc-studio-games { font-size:11px; }
+ [data-elementor-id="6961"] .fc-studio-row .fc-studio-logo { margin-top:15px; max-width:140px; }
+ [data-elementor-id="6961"] .fc-studio-logo img { height:75px; }
+ [data-elementor-id="6961"] .fc-studio-portrait img { height:150px; object-position:center; }
+ [data-elementor-id="6961"] .fc-studio-summary,
+ [data-elementor-id="6961"] .fc-studio-bio .elementor-tab-content { font-size:15px; }
+}
+@media(max-width:360px) {
+ [data-elementor-id="6961"] .fc-studio-name .elementor-heading-title { font-size:18px; }
+ [data-elementor-id="6961"] .fc-studio-row > .elementor-container { column-gap:15px; }
+}

@@ -1,0 +1,267 @@
+{
+  "filters": [
+    {
+      "filter": "All games",
+      "expected": 32,
+      "count": "6 / 32 games",
+      "pass": true
+    },
+    {
+      "filter": "Narrative",
+      "expected": 7,
+      "count": "6 / 7 games",
+      "pass": true
+    },
+    {
+      "filter": "Platform",
+      "expected": 17,
+      "count": "6 / 17 games",
+      "pass": true
+    },
+    {
+      "filter": "Arcade",
+      "expected": 19,
+      "count": "6 / 19 games",
+      "pass": true
+    },
+    {
+      "filter": "Point & Click",
+      "expected": 1,
+      "count": "1 / 1 games",
+      "pass": true
+    },
+    {
+      "filter": "Puzzle",
+      "expected": 6,
+      "count": "6 / 6 games",
+      "pass": true
+    },
+    {
+      "filter": "RPG",
+      "expected": 3,
+      "count": "3 / 3 games",
+      "pass": true
+    }
+  ],
+  "loadMore": [
+    "12 / 32 games",
+    "18 / 32 games",
+    "24 / 32 games",
+    "30 / 32 games",
+    "32 / 32 games"
+  ],
+  "animations": [
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-what-comes-after-hover.webp",
+      "title": "What Comes After · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-donut-dodo-hover.webp",
+      "title": "Donut Dodo · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-looking-up-i-see-only-a-ceiling-hover.webp",
+      "title": "Looking Up I See Only A Ceiling · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-dexter-stardust-hover.webp",
+      "title": "Dexter Stardust · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-eternum-ex-hover.webp",
+      "title": "Eternum Ex · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-last-cat-in-the-universe-hover.webp",
+      "title": "The Last Cat in the Universe · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-boardwalk-builders-hover.webp",
+      "title": "Boardwalk Builders · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-viral-reload-ex-hover.webp",
+      "title": "Viral Reload EX · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-living-dead-house-hover.webp",
+      "title": "Living Dead House · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-unto-deepest-depths-hover.webp",
+      "title": "Unto Deepest Depths · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-silver-bullet-hover.webp",
+      "title": "Silver Bullet · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-ion-shift-hover.webp",
+      "title": "ION Shift · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-flora-fang-guardians-of-the-vampire-garden-hover.webp",
+      "title": "Flora & Fang: Guardians of the vampire garden · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-skies-above-hover.webp",
+      "title": "Skies Above · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-freddy-farmer-hover.webp",
+      "title": "Freddy Farmer · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-super-spy-raccoon-hover.webp",
+      "title": "Super Spy Raccoon · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-cash-cow-dx-hover.webp",
+      "title": "Cash Cow DX · Cover",
+      "width": 400
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-satryn-dx-hover.webp",
+      "title": "Satryn DX · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-goliath-depot-hover.webp",
+      "title": "Goliath Depot · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-attack-of-the-karens-hover.webp",
+      "title": "Attack of the Karens · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-murtop-hover.webp",
+      "title": "Murtop · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-8-colors-star-guardians-hover.webp",
+      "title": "8-Colors Star Guardians + · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-colored-effects-hover.webp",
+      "title": "Colored Effects · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-sentry-city-hover.webp",
+      "title": "Sentry City · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-galacticon-hover.webp",
+      "title": "Galacticon · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-a-winding-path-hover.webp",
+      "title": "A Winding Path · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-lambs-on-the-road-hover.webp",
+      "title": "Lambs on the Road · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-papertris-hover.webp",
+      "title": "Papertris · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-legend-of-gwen-hover.webp",
+      "title": "The Legend of Gwen · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-laraan-hover.webp",
+      "title": "Laraan · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-hexagravity-hover.webp",
+      "title": "Hexagravity · Cover",
+      "width": 480
+    },
+    {
+      "ready": true,
+      "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-monster-puzzle-hover.webp",
+      "title": "Monster Puzzle · Cover",
+      "width": 480
+    }
+  ],
+  "animationCount": 32,
+  "uniqueAnimations": 32,
+  "console": [],
+  "tablet": {
+    "scroll": 758,
+    "width": 753,
+    "grid": "334.4px 334.4px"
+  },
+  "footer": {
+    "overflow": false,
+    "email": "mailto:press@flynnsarcades.com"
+  },
+  "savedDraft": true,
+  "pageId": 6953,
+  "mobile": {
+    "width": 345,
+    "documentScroll": 345,
+    "columns": 1,
+    "editorResizeHandles": true
+  }
+}
