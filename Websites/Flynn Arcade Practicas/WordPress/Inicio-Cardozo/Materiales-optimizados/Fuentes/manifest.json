@@ -1,0 +1,17 @@
+[
+  {
+    "font": "barlow-regular",
+    "ttfBytes": 104068,
+    "woffBytes": 50476
+  },
+  {
+    "font": "barlow-bold",
+    "ttfBytes": 108220,
+    "woffBytes": 52024
+  },
+  {
+    "font": "press-start-2p",
+    "ttfBytes": 118204,
+    "woffBytes": 39260
+  }
+]

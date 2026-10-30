@@ -1,0 +1,429 @@
+{
+  "type": "elementor",
+  "siteurl": "https://www.flynnsarcades.com/wp-json/",
+  "elements": [
+    {
+      "id": "fc30010",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "00A · Home header · GitHub design",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1260
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "html_tag": "header",
+        "css_classes": "fc-home fc-local-header"
+      },
+      "elements": [
+        {
+          "id": "fc30007",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Logo",
+            "_column_size": 25,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-logo-col"
+          },
+          "elements": [
+            {
+              "id": "fc30001",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "_title": "Publishing logo",
+                "_css_classes": "fc-home-logo",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "image": {
+                  "id": "",
+                  "url": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Compartido/Images/Brand/flynns-publishing-pixel.png"
+                },
+                "image_size": "full",
+                "link_to": "custom",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/inicio-cardozo/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": "aria-label|Flynn's Arcade home"
+                },
+                "caption_source": "none",
+                "open_lightbox": "no"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fc30008",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Navigation",
+            "_column_size": 50,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-nav-col"
+          },
+          "elements": [
+            {
+              "id": "fc30002",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Home",
+                "_css_classes": "fc-home-menu-item fc-active",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Home",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/inicio-cardozo/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": "aria-current|page"
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30003",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Games",
+                "_css_classes": "fc-home-menu-item",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Games",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/games/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30004",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Indies",
+                "_css_classes": "fc-home-menu-item",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Indies",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/indies/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30005",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "About",
+                "_css_classes": "fc-home-menu-item",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "About",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/about-3/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30006",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Press",
+                "_css_classes": "fc-home-menu-item",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Press",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/press/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                }
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fc3000f",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Social channels & mobile menu",
+            "_column_size": 25,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-header-social-col"
+          },
+          "elements": [
+            {
+              "id": "fc30009",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Bluesky",
+                "_css_classes": "fc-home-social fc-social-bluesky",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Bluesky",
+                "link": {
+                  "url": "https://bsky.app/profile/flynnsarcade.bsky.social",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fas fa-circle",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3000a",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Twitter",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Twitter",
+                "link": {
+                  "url": "https://twitter.com/FlynnsArcades",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-twitter",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3000b",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Instagram",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Instagram",
+                "link": {
+                  "url": "https://www.instagram.com/flynnsarcadegames/",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-instagram",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3000c",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "TikTok",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "TikTok",
+                "link": {
+                  "url": "https://www.tiktok.com/@flynnsarcades",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-tiktok",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3000d",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Steam",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Steam",
+                "link": {
+                  "url": "https://store.steampowered.com/publisher/Flynns",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-steam",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3000e",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Open navigation",
+                "_css_classes": "fc-home-nav-toggle",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Open navigation",
+                "link": {
+                  "url": "#home-navigation",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": "role|button,aria-expanded|false"
+                },
+                "selected_icon": {
+                  "value": "fas fa-bars",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

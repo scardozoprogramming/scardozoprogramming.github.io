@@ -1,0 +1,796 @@
+{
+  "type": "elementor",
+  "siteurl": "https://www.flynnsarcades.com/wp-json/",
+  "elements": [
+    {
+      "id": "fc3001e",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "05 · Find us everywhere",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1260
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "html_tag": "section",
+        "css_classes": "fc-home fc-local-footer fc-social-footer"
+      },
+      "elements": [
+        {
+          "id": "fc30013",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Social introduction",
+            "_column_size": 30,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-social-copy"
+          },
+          "elements": [
+            {
+              "id": "fc30011",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "_title": "Social title",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "title": "Find us everywhere",
+                "header_size": "h2"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30012",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Social description",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>Except Tik Tok... at the last dance we broke our hips.</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fc3001d",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Social channels",
+            "_column_size": 70,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-footer-social-col"
+          },
+          "elements": [
+            {
+              "id": "fc30014",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Bluesky",
+                "_css_classes": "fc-home-social fc-social-bluesky",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Bluesky",
+                "link": {
+                  "url": "https://bsky.app/profile/flynnsarcade.bsky.social",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fas fa-circle",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30015",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Twitter",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Twitter",
+                "link": {
+                  "url": "https://twitter.com/FlynnsArcades",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-twitter",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30016",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Instagram",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Instagram",
+                "link": {
+                  "url": "https://www.instagram.com/flynnsarcadegames/",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-instagram",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30017",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "TikTok",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "TikTok",
+                "link": {
+                  "url": "https://www.tiktok.com/@flynnsarcades",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-tiktok",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30018",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Steam",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Steam",
+                "link": {
+                  "url": "https://store.steampowered.com/publisher/Flynns",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-steam",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30019",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "YouTube",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "YouTube",
+                "link": {
+                  "url": "https://www.youtube.com/user/jpd92363",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-youtube",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3001a",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Facebook",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Facebook",
+                "link": {
+                  "url": "https://www.facebook.com/FlynnsArcades",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-facebook",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3001b",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Twitch",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Twitch",
+                "link": {
+                  "url": "https://www.twitch.tv/flynnsarcades",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-twitch",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc3001c",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "LinkedIn",
+                "_css_classes": "fc-home-social ",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "LinkedIn",
+                "link": {
+                  "url": "https://www.linkedin.com/company/flynnsarcade/",
+                  "is_external": "on",
+                  "nofollow": "",
+                  "custom_attributes": "rel|noopener noreferrer"
+                },
+                "selected_icon": {
+                  "value": "fab fa-linkedin",
+                  "library": "fa-brands"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fc3002a",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "06 · Better news & Send prayers",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1260
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "html_tag": "section",
+        "css_classes": "fc-home fc-local-footer fc-contact-footer"
+      },
+      "elements": [
+        {
+          "id": "fc30024",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Better news",
+            "_column_size": 50,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-contact-col fc-newsletter-col"
+          },
+          "elements": [
+            {
+              "id": "fc3001f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "_title": "Newsletter title",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "title": "Better news",
+                "header_size": "h2"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30020",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Newsletter introduction",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>Get all updates about our games release and more.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30021",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Newsletter invitation",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>Don't be shy.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30022",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Newsletter status",
+                "_css_classes": "fc-news-status",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>Newsletter coming soon</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30023",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Follow us on Steam",
+                "_css_classes": "fc-home-textlink",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "Follow us on Steam",
+                "link": {
+                  "url": "https://store.steampowered.com/publisher/Flynns",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "selected_icon": {
+                  "value": "fas fa-external-link-alt",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fc30029",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Send prayers",
+            "_column_size": 50,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-contact-col"
+          },
+          "elements": [
+            {
+              "id": "fc30025",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "_title": "Contact title",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "title": "Send prayers",
+                "header_size": "h2"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30026",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Contact introduction",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>You may prefer to be the first to contact us. We understand.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30027",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Contact note",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>The newsletter is a complicated relationship.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "fc30028",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "press@flynnsarcades.com",
+                "_css_classes": "fc-home-email",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "press@flynnsarcades.com",
+                "link": {
+                  "url": "mailto:press@flynnsarcades.com",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "selected_icon": {
+                  "value": "far fa-envelope",
+                  "library": "fa-regular"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fc30031",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_title": "07 · Footer credits",
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1260
+        },
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "html_tag": "section",
+        "css_classes": "fc-home fc-local-footer fc-footer-credits"
+      },
+      "elements": [
+        {
+          "id": "fc3002c",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Studio name",
+            "_column_size": 33,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-credit-brand"
+          },
+          "elements": [
+            {
+              "id": "fc3002b",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Studio name",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>Flynn's Arcade</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fc3002e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "Studio motto",
+            "_column_size": 34,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-credit-motto"
+          },
+          "elements": [
+            {
+              "id": "fc3002d",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Studio motto",
+                "_css_classes": "",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "editor": "<p>Independent games. Arcade soul.</p>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fc30030",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_title": "About link",
+            "_column_size": 33,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            },
+            "css_classes": "fc-credit-link"
+          },
+          "elements": [
+            {
+              "id": "fc3002f",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "About the studio",
+                "_css_classes": "fc-home-textlink",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                },
+                "text": "About the studio",
+                "link": {
+                  "url": "https://www.flynnsarcades.com/about-3/",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "selected_icon": {
+                  "value": "fas fa-arrow-right",
+                  "library": "fa-solid"
+                },
+                "icon_align": "left"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

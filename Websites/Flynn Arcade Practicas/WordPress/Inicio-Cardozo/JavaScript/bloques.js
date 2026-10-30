@@ -8,48 +8,11 @@
     const banner = root.querySelector('.fc-banner img');
     if (banner && !banner.alt) banner.alt = 'Panoramic neon arcade overlooking the city';
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    const pointer = matchMedia('(hover: hover) and (pointer: fine)');
-    const cache = new Map();
-    const refresh = [];
-    root.querySelectorAll('a[data-fc-preview]').forEach(link => {
-      const image = link.querySelector('img');
-      if (!image) return;
-      const host = link.closest('.fc-card, .fc-promo-slide, .fc-featured') || link;
-      const cover = image.getAttribute('src');
-      const srcset = image.getAttribute('srcset');
-      const sizes = image.getAttribute('sizes');
-      const preview = link.dataset.fcPreview;
-      if (!image.alt) image.alt = link.getAttribute('aria-label')?.replace(/^Discover /,'') || '';
-      const active = () => !document.hidden && !host.hidden && !motion.matches && ((pointer.matches && host.matches(':hover')) || host.matches(':focus-within'));
-      function update() {
-        if (!active()) {
-          if (image.getAttribute('src') !== cover) image.setAttribute('src',cover);
-          if (srcset) image.setAttribute('srcset',srcset);
-          if (sizes) image.setAttribute('sizes',sizes);
-          image.classList.remove('fc-preview-active');
-          return;
-        }
-        if (!cache.has(preview)) {
-          const preload = new Image();
-          preload.src = preview;
-          cache.set(preview,preload.decode().then(() => true,() => false));
-        }
-        cache.get(preview).then(ready => {
-          if (!ready || !active()) return;
-          image.removeAttribute('srcset');
-          image.removeAttribute('sizes');
-          image.src = preview;
-          image.classList.add('fc-preview-active');
-        });
-      }
-      ['pointerenter','pointerleave','focusin'].forEach(name => host.addEventListener(name,update));
-      host.addEventListener('focusout',() => requestAnimationFrame(update));
-      refresh.push(update);
-    });
-    const refreshPreviews = () => refresh.forEach(update => update());
-    document.addEventListener('visibilitychange',refreshPreviews);
-    motion.addEventListener('change',refreshPreviews);
-    pointer.addEventListener('change',refreshPreviews);
+    const mediaData = document.getElementById('fc-home-media');
+    let media = {};
+    try { media = mediaData ? JSON.parse(mediaData.textContent) : {}; } catch { /* Keep the native links if an optional map is invalid. */ }
+    const previewLoader = window.FlynnsHomePreviews(root, { media });
+    const refreshPreviews = previewLoader.refresh;
 
     const catalog = root.querySelector('.fc-catalog');
     const cards = [...catalog.querySelectorAll('.fc-card')];
@@ -132,6 +95,14 @@
       if (!motion.matches && !document.hidden && !promotions.matches(':hover') && !promotions.contains(document.activeElement)) showSlide(current+1);
     },7000);
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',init,{once:true});
-  else init();
+  const start = () => {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded',init,{once:true});
+    else init();
+  };
+  // Existing EAEL footer code still invokes these legacy entry points.
+  // On this native Home they all delegate to the guarded initializer.
+  if (!window.FlynnsArcade && document.querySelector('[data-elementor-id="6876"]')) {
+    window.FlynnsArcade = { navigation:start, carousels:start, catalog:start };
+  }
+  start();
 })();

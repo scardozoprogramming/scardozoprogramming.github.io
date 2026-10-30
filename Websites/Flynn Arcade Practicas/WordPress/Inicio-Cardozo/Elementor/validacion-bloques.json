@@ -1,13 +1,18 @@
 {
-  "sections": 5,
+  "sections": 9,
+  "widgets": 236,
   "cards": 32,
-  "widgets": 200,
-  "types": {
-    "html": 2,
-    "image": 37,
-    "heading": 42,
-    "text-editor": 5,
-    "icon-list": 65,
-    "button": 49
-  }
+  "uniqueAnimations": 33,
+  "animationLinks": 36,
+  "optimizedFilesUploaded": 65,
+  "animationBytes": 10575766,
+  "sagaAnimationBytes": 454552,
+  "coverBytes": 1129224,
+  "sourcePreviewBytes": 49816650,
+  "supportBytes": 225796,
+  "sourceSupportBytes": 461886,
+  "reference": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html",
+  "scope": "Inicio Cardozo · 6876",
+  "savedAs": "draft",
+  "verifiedCards": 32
 }
