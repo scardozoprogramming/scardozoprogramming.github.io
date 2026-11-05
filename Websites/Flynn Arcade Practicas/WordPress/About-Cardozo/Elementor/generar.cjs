@@ -22,7 +22,7 @@ const setup = clone(source.content[0]);
 setup.settings._title = '00 · Design & interactions';
 setup.settings.padding = zero;
 const header = clone(source.content[1]);
-header.settings._title = '01 · About header';
+header.settings._title = '01 · Shared header · Template 7123';
 for (const item of walk(header).filter(n => n.settings._css_classes?.includes('fc-home-menu-item'))) {
   const active = item.settings.text === 'About';
   item.settings._css_classes = 'fc-home-menu-item' + (active ? ' fc-active' : '');

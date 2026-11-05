@@ -1,0 +1,186 @@
+{
+  "templateId": 7123,
+  "pages": [
+    {
+      "current": [
+        "Home"
+      ],
+      "headers": 1,
+      "links": [
+        {
+          "label": "Home",
+          "url": "https://www.flynnsarcades.com/inicio-cardozo/"
+        },
+        {
+          "label": "Games",
+          "url": "https://www.flynnsarcades.com/games-cardozo/"
+        },
+        {
+          "label": "Indies",
+          "url": "https://www.flynnsarcades.com/indies-cardozo/"
+        },
+        {
+          "label": "About",
+          "url": "https://www.flynnsarcades.com/about-cardozo/"
+        },
+        {
+          "label": "Press",
+          "url": "https://www.flynnsarcades.com/press-cardozo/"
+        }
+      ],
+      "logo": "https://www.flynnsarcades.com/inicio-cardozo/",
+      "page": "inicio",
+      "reference": true,
+      "scrollWidth": 1513,
+      "shared": true,
+      "width": 1513
+    },
+    {
+      "current": [
+        "Games"
+      ],
+      "headers": 1,
+      "links": [
+        {
+          "label": "Home",
+          "url": "https://www.flynnsarcades.com/inicio-cardozo/"
+        },
+        {
+          "label": "Games",
+          "url": "https://www.flynnsarcades.com/games-cardozo/"
+        },
+        {
+          "label": "Indies",
+          "url": "https://www.flynnsarcades.com/indies-cardozo/"
+        },
+        {
+          "label": "About",
+          "url": "https://www.flynnsarcades.com/about-cardozo/"
+        },
+        {
+          "label": "Press",
+          "url": "https://www.flynnsarcades.com/press-cardozo/"
+        }
+      ],
+      "logo": "https://www.flynnsarcades.com/inicio-cardozo/",
+      "page": "games",
+      "reference": true,
+      "scrollWidth": 1513,
+      "shared": true,
+      "width": 1513
+    },
+    {
+      "current": [
+        "About"
+      ],
+      "headers": 1,
+      "links": [
+        {
+          "label": "Home",
+          "url": "https://www.flynnsarcades.com/inicio-cardozo/"
+        },
+        {
+          "label": "Games",
+          "url": "https://www.flynnsarcades.com/games-cardozo/"
+        },
+        {
+          "label": "Indies",
+          "url": "https://www.flynnsarcades.com/indies-cardozo/"
+        },
+        {
+          "label": "About",
+          "url": "https://www.flynnsarcades.com/about-cardozo/"
+        },
+        {
+          "label": "Press",
+          "url": "https://www.flynnsarcades.com/press-cardozo/"
+        }
+      ],
+      "logo": "https://www.flynnsarcades.com/inicio-cardozo/",
+      "page": "about",
+      "reference": true,
+      "scrollWidth": 1513,
+      "shared": true,
+      "width": 1513
+    },
+    {
+      "current": [
+        "Indies"
+      ],
+      "headers": 1,
+      "links": [
+        {
+          "label": "Home",
+          "url": "https://www.flynnsarcades.com/inicio-cardozo/"
+        },
+        {
+          "label": "Games",
+          "url": "https://www.flynnsarcades.com/games-cardozo/"
+        },
+        {
+          "label": "Indies",
+          "url": "https://www.flynnsarcades.com/indies-cardozo/"
+        },
+        {
+          "label": "About",
+          "url": "https://www.flynnsarcades.com/about-cardozo/"
+        },
+        {
+          "label": "Press",
+          "url": "https://www.flynnsarcades.com/press-cardozo/"
+        }
+      ],
+      "logo": "https://www.flynnsarcades.com/inicio-cardozo/",
+      "page": "indies",
+      "reference": true,
+      "scrollWidth": 1513,
+      "shared": true,
+      "width": 1513
+    },
+    {
+      "current": [
+        "Press"
+      ],
+      "headers": 1,
+      "links": [
+        {
+          "label": "Home",
+          "url": "https://www.flynnsarcades.com/inicio-cardozo/"
+        },
+        {
+          "label": "Games",
+          "url": "https://www.flynnsarcades.com/games-cardozo/"
+        },
+        {
+          "label": "Indies",
+          "url": "https://www.flynnsarcades.com/indies-cardozo/"
+        },
+        {
+          "label": "About",
+          "url": "https://www.flynnsarcades.com/about-cardozo/"
+        },
+        {
+          "label": "Press",
+          "url": "https://www.flynnsarcades.com/press-cardozo/"
+        }
+      ],
+      "logo": "https://www.flynnsarcades.com/inicio-cardozo/",
+      "page": "press",
+      "reference": true,
+      "scrollWidth": 1513,
+      "shared": true,
+      "width": 1513
+    }
+  ],
+  "mobile": {
+    "viewport": 360,
+    "headerWidth": 344.8000183105469,
+    "noHeaderOverflow": true,
+    "openVerified": true,
+    "closeByToggle": {
+      "expanded": "false",
+      "navDisplay": "none",
+      "open": false
+    }
+  }
+}

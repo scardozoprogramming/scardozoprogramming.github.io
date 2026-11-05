@@ -1,0 +1,99 @@
+/* Reusable game layout. No page ID is required when the template is duplicated. */
+body:has(.fc-game-setup) .fc-game-block>.elementor-container{width:calc(100% - 112px);max-width:1260px;margin-inline:auto}
+body:has(.fc-game-setup) .fc-game-block .elementor-widget-wrap{padding:0;align-content:flex-start}
+body:has(.fc-game-setup) .fc-game-block .elementor-widget{margin-bottom:0}
+body:has(.fc-game-setup) .fc-game-block [hidden]{display:none!important}
+.fc-game-page{padding:26px 0 32px!important;background:rgb(3 8 17 / 84%)}
+.fc-game-back{margin-bottom:26px!important}
+.fc-game-back .elementor-button,.fc-game-youtube .elementor-button{display:inline-flex;align-items:center;gap:10px;padding:0;min-height:44px;color:var(--fc-cyan);background:none;border:0;font:600 13px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif}
+.fc-game-back .elementor-button-content-wrapper,.fc-game-youtube .elementor-button-content-wrapper{gap:10px}
+.fc-game-back .elementor-button:hover,.fc-game-youtube .elementor-button:hover{color:var(--fc-pink)}
+.fc-game-showcase>.elementor-container{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:center}
+.fc-game-showcase>.elementor-container>.elementor-column{width:100%;min-width:0}
+.fc-game-copy>.elementor-widget-wrap{display:flex;flex-direction:column;gap:0}
+.fc-game-eyebrow,.fc-game-eyebrow p{color:var(--fc-cyan)!important;font:700 12px/1.4 "Flynns Cardozo Barlow",Arial,sans-serif;text-transform:uppercase}
+.fc-game-title{margin:10px 0 14px!important}
+.fc-game-title .elementor-heading-title{color:var(--fc-cyan)!important;font:600 38px/1.2 "Flynns Cardozo Barlow",Arial,sans-serif;overflow-wrap:anywhere}
+.fc-game-title::after{content:"";display:block;width:64px;height:2px;margin-top:14px;background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink))}
+.fc-game-tagline{max-width:460px;color:var(--fc-muted);font-size:20px;line-height:1.5}
+.fc-game-platforms{margin-top:14px!important}
+.fc-game-platforms .elementor-icon-list-items{display:flex;flex-wrap:wrap;gap:20px}
+.fc-game-platforms .elementor-icon-list-item{margin:0!important;display:inline-flex;gap:8px}
+.fc-game-platforms .elementor-icon-list-text{padding:0;color:var(--fc-muted);font:400 12px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif}
+.fc-game-platforms .elementor-icon-list-icon{color:var(--fc-pink)}
+.fc-game-platforms .elementor-icon-list-icon :is(i,svg){color:var(--fc-pink);fill:currentColor;font-size:22px;width:22px;height:22px}
+.fc-game-platforms .fa-nintendo-switch{display:inline-block;background:var(--fc-pink);mask:url("https://www.flynnsarcades.com/wp-content/uploads/2021/08/interruptor-de-nintendo.svg") center/contain no-repeat}
+.fc-game-platforms .fa-nintendo-switch::before{content:none}
+.fc-game-get{margin-top:28px!important}
+.fc-game-video-col>.elementor-widget-wrap{display:block}
+.fc-game-video{width:100%;border:1px solid var(--fc-line);border-radius:3px;overflow:hidden;background:#02050c;aspect-ratio:16/9}
+.fc-game-video .elementor-widget-container,.fc-game-video .elementor-wrapper{height:100%;aspect-ratio:16/9}
+.fc-game-video .elementor-custom-embed-image-overlay{background-size:contain!important;background-repeat:no-repeat;background-position:center;background-color:#02050c}
+.fc-game-video .elementor-custom-embed-play{display:flex;align-items:center;gap:12px;padding:12px 21px;border:1px solid;border-image:linear-gradient(100deg,var(--fc-cyan),var(--fc-pink)) 1;background:#030811;color:var(--fc-cyan);opacity:1;text-shadow:none;font-size:16px}
+.fc-game-video .elementor-custom-embed-play :is(i,svg){font-size:18px;width:18px;height:18px;color:var(--fc-cyan);fill:currentColor}
+.fc-game-video .elementor-custom-embed-play::after{content:"Watch video";color:#f1f6fc;font:700 12px/1.4 "Flynns Cardozo Barlow",Arial,sans-serif;text-transform:uppercase;white-space:nowrap}
+.fc-game-youtube{text-align:right;margin-top:8px!important}
+.fc-game-sections{background:rgb(3 8 17 / 94%);border-block:1px solid var(--fc-line)}
+.fc-game-sections>.elementor-container>.elementor-column>.elementor-widget-wrap{display:flex;gap:14px 28px;padding-block:12px!important;flex-wrap:wrap}
+.fc-game-section-link{width:auto!important}
+.fc-game-section-link .elementor-button{background:none;color:var(--fc-muted);padding:8px 0;font:600 13px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif;min-height:44px}
+.fc-game-section-link .elementor-button:is(:hover,:focus-visible){color:var(--fc-cyan)}
+body:has(.fc-game-setup) .fc-game-gallery>.elementor-container{width:100%;max-width:none}
+.fc-game-gallery>.elementor-container>.elementor-column>.elementor-widget-wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;border-block:1px solid var(--fc-line)}
+.fc-game-shot{width:100%!important;min-width:0;background:#02050c}
+.fc-game-shot a{display:block;aspect-ratio:16/9;line-height:0}
+.fc-game-shot img{width:100%;height:100%;aspect-ratio:16/9;object-fit:contain}
+.fc-game-shot a:is(:hover,:focus-visible){outline:2px solid var(--fc-cyan);outline-offset:-2px}
+.fc-game-purchase{padding:25px 0!important;background:rgb(3 8 17 / 94%);border-bottom:1px solid var(--fc-line)}
+.fc-game-purchase>.elementor-container>.elementor-column>.elementor-widget-wrap{display:flex;align-items:center;gap:12px 20px;flex-wrap:wrap}
+.fc-game-purchase .elementor-widget{width:auto!important}
+.fc-game-purchase-title{margin-right:20px!important}
+.fc-game-purchase-title .elementor-heading-title{font:400 14px/1.5 "Flynns Cardozo Pixel",monospace!important;color:var(--fc-cyan)!important;text-transform:uppercase}
+.fc-game-about{padding:36px 0 46px!important;background:rgb(3 8 17 / 92%)}
+.fc-game-about>.elementor-container{display:grid;grid-template-columns:200px minmax(0,1fr);gap:32px;align-items:start}
+.fc-game-about>.elementor-container>.elementor-column{width:100%;min-width:0}
+.fc-game-artwork img{display:block;width:100%;max-height:320px;object-fit:contain}
+.fc-game-about-title{position:absolute;width:1px!important;height:1px;overflow:hidden;clip-path:inset(50%)}
+.fc-game-genres{padding-bottom:18px!important;border-bottom:1px solid var(--fc-line);margin-bottom:24px!important}
+.fc-game-genres>.elementor-container>.elementor-column>.elementor-widget-wrap{display:flex;gap:8px 18px;flex-wrap:wrap}
+.fc-game-genre{width:auto!important}
+.fc-game-genre .elementor-heading-title{font:600 14px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif!important;color:var(--fc-cyan)!important}
+.fc-game-description{margin-bottom:16px!important;color:var(--fc-muted);font:400 16px/1.8 "Flynns Cardozo Barlow",Arial,sans-serif;max-width:75ch}
+.fc-game-features-media{margin-top:12px!important}
+.fc-game-features-media>.elementor-container{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:30px;align-items:start}
+.fc-game-features-media>.elementor-container>.elementor-column{width:100%;min-width:0}
+.fc-game-features-heading .elementor-heading-title,.fc-game-reviews-title .elementor-heading-title{font:600 16px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif!important;color:var(--fc-cyan)!important}
+.fc-game-features ul{padding-left:19px;margin:12px 0 20px;color:var(--fc-muted);font:400 15px/1.65 "Flynns Cardozo Barlow",Arial,sans-serif}
+.fc-game-features li+li{margin-top:9px}.fc-game-features li::marker{color:var(--fc-pink)}
+.fc-game-animation-col>.elementor-widget-wrap{position:relative}
+.fc-game-animation{aspect-ratio:16/9;border:1px solid var(--fc-line);border-radius:3px;overflow:hidden;background:#02050c;width:100%}
+.fc-game-animation img{display:block;width:100%;height:100%;aspect-ratio:16/9;object-fit:contain}
+.fc-game-animation-toggle{position:absolute;right:10px;bottom:10px;width:auto!important}
+.fc-game-animation-toggle .elementor-button{padding:10px;background:rgb(3 8 17 / 90%);color:var(--fc-cyan);border:1px solid var(--fc-line);min-width:44px;min-height:44px}
+.fc-game-animation-toggle .elementor-button-text{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.fc-game-reviews{margin-top:32px!important;padding-top:20px!important;border-top:1px solid var(--fc-line)}
+.fc-game-review-toolbar>.elementor-container>.elementor-column>.elementor-widget-wrap{display:flex;align-items:center;gap:6px;margin-bottom:20px}
+.fc-game-reviews-title{margin-right:auto!important;width:auto!important;flex:1}
+.fc-game-review-prev,.fc-game-review-next,.fc-game-review-count{width:auto!important}
+.fc-game-review-prev .elementor-button,.fc-game-review-next .elementor-button{display:grid;place-items:center;width:44px;height:44px;padding:0;color:var(--fc-muted);background:none;border:0}
+.fc-game-review-prev .elementor-button-text,.fc-game-review-next .elementor-button-text{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.fc-game-review-count .elementor-heading-title{color:var(--fc-muted)!important;font:400 12px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif!important;min-width:48px;text-align:center}
+.fc-game-review-slide>.elementor-container{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;min-height:205px}
+.fc-game-review-slide>.elementor-container>.elementor-column{width:100%;min-width:0;border-left:2px solid var(--fc-pink);padding-left:18px}
+.fc-game-review-quote{min-height:120px;margin-bottom:16px!important;color:#f1f6fc!important;font:400 15px/1.7 "Flynns Cardozo Barlow",Arial,sans-serif}
+.fc-game-review-author,.fc-game-review-translation{color:var(--fc-muted);font-size:12px;line-height:1.5}
+.fc-game-review-outlet .elementor-button{padding:3px 0;background:none;color:var(--fc-cyan);font:400 12px/1.5 "Flynns Cardozo Barlow",Arial,sans-serif}
+.fc-game-review-outlet .elementor-button-content-wrapper{gap:7px}
+.fc-game-block[id]{scroll-margin-top:45px}
+.fc-game-photo-dialog{width:min(1100px,95vw);max-width:95vw;max-height:94vh;padding:16px;background:#030811;border:1px solid #183348;color:#f1f6fc}
+.fc-game-photo-dialog::backdrop{background:rgb(0 0 0 / 88%)}
+.fc-game-photo-toolbar{display:flex;align-items:center;justify-content:space-between;padding-bottom:10px}
+.fc-game-photo-stage{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:8px}
+.fc-game-photo-stage img{width:100%;max-height:78vh;object-fit:contain}
+.fc-game-photo-dialog button{width:44px;height:44px;border:1px solid #183348;background:#071522;color:#00deee;font-size:20px;cursor:pointer}
+.fc-game-photo-dialog button:focus-visible{outline:2px solid #00deee;outline-offset:2px}
+@media(max-width:600px){.fc-game-about{position:relative}.fc-game-about .fc-game-artwork-col{display:block!important;position:absolute;top:28px;left:18px;width:88px!important}.fc-game-artwork img{max-height:125px}.fc-game-genres{padding-left:104px!important;min-height:125px;display:flex;align-items:center}}
+@media(max-width:1150px){body:has(.fc-game-setup) .fc-game-block>.elementor-container{width:calc(100% - 64px)}.fc-game-showcase>.elementor-container{gap:30px}.fc-game-about>.elementor-container{grid-template-columns:160px minmax(0,1fr);gap:24px}}
+@media(max-width:1024px){.fc-game-gallery>.elementor-container>.elementor-column>.elementor-widget-wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+@media(max-width:850px){.fc-game-showcase>.elementor-container,.fc-game-features-media>.elementor-container{grid-template-columns:1fr;gap:26px}.fc-game-copy>.elementor-widget-wrap{max-width:100%}.fc-game-get{margin-top:22px!important}}
+@media(max-width:600px){body:has(.fc-game-setup) .fc-game-block>.elementor-container{width:calc(100% - 36px)}body:has(.fc-game-setup) .fc-game-gallery>.elementor-container{width:100%}.fc-game-page{padding:22px 0 28px!important}.fc-game-title .elementor-heading-title{font-size:30px}.fc-game-tagline{font-size:18px}.fc-game-gallery>.elementor-container>.elementor-column>.elementor-widget-wrap{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.fc-game-purchase{padding:22px 0!important}.fc-game-purchase .fc-cta{width:100%!important}.fc-game-purchase .fc-cta .elementor-button{width:100%;justify-content:center}.fc-game-purchase-title{width:100%!important}.fc-game-about{padding:28px 0 32px!important}.fc-game-about>.elementor-container{grid-template-columns:1fr;gap:20px}.fc-game-artwork{width:88px!important;float:left}.fc-game-artwork-col{display:none!important}.fc-game-description{font-size:15px}.fc-game-review-slide>.elementor-container{grid-template-columns:1fr;min-height:350px}.fc-game-review-quote{min-height:95px}.fc-game-photo-stage{grid-template-columns:32px minmax(0,1fr) 32px;gap:4px}.fc-game-photo-dialog button{width:32px;height:44px}}

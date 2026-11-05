@@ -31,16 +31,7 @@ const socialWidgets = count => socials.slice(0,count).map(([name,url,icon,classe
   b.settings.link.custom_attributes='rel|noopener noreferrer';
   return b;
 });
-const page = 'https://www.flynnsarcades.com/inicio-cardozo/';
-const logo = widget('image','Publishing logo',{image:{id:'',url:'https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Compartido/Images/Brand/flynns-publishing-pixel.png'},image_size:'full',link_to:'custom',link:link(page,'aria-label|Flynn\'s Arcade home'),caption_source:'none',open_lightbox:'no'},'fc-home-logo');
-const nav = [
- ['Home',page],['Games','https://www.flynnsarcades.com/games/'],['Indies','https://www.flynnsarcades.com/indies/'],['About','https://www.flynnsarcades.com/about-3/'],['Press','https://www.flynnsarcades.com/press/']
-].map(([title,url],i)=>button(title,url,'fc-home-menu-item'+(i===0?' fc-active':''),'',i===0?'aria-current|page':''));
-const header=section('00A · Home header · GitHub design',[
- col('Logo',[logo],25,'fc-logo-col'),
- col('Navigation',nav,50,'fc-nav-col'),
- col('Social channels & mobile menu',[...socialWidgets(5),button('Open navigation','#home-navigation','fc-home-nav-toggle','fas fa-bars','role|button,aria-expanded|false')],25,'fc-header-social-col'),
-],'fc-local-header','header');
+const header=require('../../Ajustes-Cabecera/referencia.cjs')();
 const footer=[
  section('05 · Find us everywhere',[
    col('Social introduction',[heading('Social title','Find us everywhere'),para('Social description','Except Tik Tok... at the last dance we broke our hips.')],30,'fc-social-copy'),

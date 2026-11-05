@@ -25,7 +25,7 @@ const title = {
   ] }]
 };
 const content = [setup, header, title, catalog, ...footer];
-const names = ['00 · Design & interactions', '01 · Games header', '02 · Games heading', '03 · Games · 32 editable cards', '04 · Find us everywhere', '05 · Better news & Send prayers', '06 · Footer credits'];
+const names = ['00 · Design & interactions', '01 · Shared header · Template 7123', '02 · Games heading', '03 · Games · 32 editable cards', '04 · Find us everywhere', '05 · Better news & Send prayers', '06 · Footer credits'];
 content.forEach((node, i) => { node.settings._title = names[i]; });
 for (const node of content.flatMap(walk)) {
   node.id = id();

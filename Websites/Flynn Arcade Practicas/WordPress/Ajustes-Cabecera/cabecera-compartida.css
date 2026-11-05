@@ -1,0 +1,57 @@
+.fc-shared-instance{--fc-cyan:#00deee;--fc-pink:#f51ca5;--fc-muted:#a6bfd3;--fc-line:#183348;--fc-white:#f1f6fc;color:var(--fc-white);font:16px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif}.fc-shared-header .elementor-widget{margin-bottom:0}.fc-shared-header a{text-decoration:none}.fc-shared-header a:focus-visible{outline:2px solid var(--fc-cyan);outline-offset:4px}.fc-shared-support{display:none!important}
+body.page-id-6876:has(.fc-local-header) .elementor-location-header{ display:none !important; }
+.fc-shared-header > .elementor-container{ width:calc(100% - 112px); max-width:1260px; margin-inline:auto; }
+.fc-shared-header{ position:relative; z-index:20; padding:0; background:#030811; border-bottom:1px solid var(--fc-line); }
+.fc-shared-header::after{ content:""; position:absolute; inset-inline:0; bottom:-1px; height:1px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+.fc-shared-header > .elementor-container{ min-height:94px; align-items:center; gap:32px; }
+.fc-shared-header .elementor-widget-wrap{ padding:0; align-items:center; }
+.fc-shared-header .fc-logo-col{ width:170px !important; flex:0 0 auto; }
+.fc-shared-header .fc-home-logo{ width:170px; }
+.fc-shared-header .fc-home-logo > .elementor-widget-container{ position:relative; width:100%; aspect-ratio:650 / 318; overflow:hidden; mix-blend-mode:screen; }
+.fc-shared-header .fc-home-logo img{ position:absolute; left:-76.9231%; top:-103.774%; width:246.154%; max-width:none; height:auto; }
+.fc-shared-header .fc-nav-col{ width:auto !important; flex:1 1 auto; }
+.fc-shared-header .fc-nav-col > .elementor-widget-wrap{ justify-content:center; gap:35px; flex-wrap:nowrap; }
+.fc-shared-header .fc-home-menu-item{ width:auto; }
+.fc-shared-header .fc-home-menu-item .elementor-button{ position:relative; min-height:44px; display:inline-flex; align-items:center; padding:10px 0; background:transparent; color:var(--fc-white); font:600 14px/1.6 "Flynns Cardozo Barlow",Arial,sans-serif; text-transform:uppercase; border:0; border-radius:0; }
+.fc-shared-header .fc-home-menu-item.fc-active .elementor-button,
+.fc-shared-header .fc-home-menu-item .elementor-button:hover{ color:var(--fc-cyan); }
+.fc-shared-header .fc-home-menu-item.fc-active .elementor-button::after{ content:""; position:absolute; inset-inline:0; bottom:1px; height:2px; background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+.fc-shared-header .fc-header-social-col{ width:260px !important; flex:0 0 auto; }
+.fc-shared-header .fc-header-social-col > .elementor-widget-wrap{ gap:10px; justify-content:flex-end; flex-wrap:nowrap; }
+.fc-shared-header .fc-home-social{ width:auto; }
+.fc-shared-header .fc-home-social .elementor-button{ display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; padding:0; border:1px solid var(--fc-line); border-radius:50%; color:var(--fc-cyan); background:#071522; transition:color .15s,border-color .15s; }
+.fc-shared-header .fc-home-social .elementor-button:is(:hover,:focus-visible){ color:var(--fc-pink); border-color:var(--fc-pink); }
+.fc-shared-header .fc-home-social .elementor-button-content-wrapper{ gap:0; }
+.fc-shared-header .fc-home-social .elementor-button-icon{ margin:0; display:grid; place-items:center; width:24px; height:24px; font-size:24px; }
+.fc-shared-header .fc-home-social :is(i,svg){ color:inherit; fill:currentColor; font-size:inherit; width:1em; height:1em; }
+.fc-shared-header .fc-home-social .elementor-button-text{ position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.fc-shared-header .fc-header-social-col .fc-home-social .elementor-button{ width:44px; height:44px; }
+.fc-shared-header .fc-header-social-col .elementor-button-icon{ width:21px; height:21px; font-size:21px; }
+.fc-shared-header .fc-social-bluesky i{ background:currentColor; mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z'/%3E%3C/svg%3E") center/contain no-repeat; }
+.fc-shared-header .fc-social-bluesky i::before{ content:none; }
+.fc-shared-header .fc-home-nav-toggle{ display:none; }
+@media(max-width:1150px){.fc-shared-header > .elementor-container{ width:calc(100% - 64px); }
+.fc-shared-header > .elementor-container{ gap:20px; }
+.fc-shared-header .fc-nav-col > .elementor-widget-wrap{ gap:24px; }
+.fc-shared-header .fc-header-social-col{ width:244px !important; }
+.fc-shared-header .fc-header-social-col > .elementor-widget-wrap{ gap:6px; }
+}
+@media(max-width:850px){.fc-shared-header .fc-header-social-col{ display:none; }
+}
+@media(max-width:767px){.fc-shared-header > .elementor-container{ flex-wrap:nowrap; }
+}
+@media(max-width:600px){.fc-shared-header > .elementor-container{ width:calc(100% - 36px); }
+.fc-shared-header > .elementor-container{ min-height:82px; justify-content:space-between; }
+.fc-shared-header .fc-logo-col,.fc-shared-header .fc-home-logo{ width:150px !important; }
+.fc-shared-header .fc-header-social-col{ display:block; width:44px !important; }
+.fc-shared-header .fc-header-social-col .fc-home-social{ display:none; }
+.fc-shared-header .fc-home-nav-toggle{ display:block; }
+.fc-shared-header .fc-home-nav-toggle .elementor-button{ display:grid; place-items:center; width:44px; height:44px; padding:0; background:transparent; color:var(--fc-muted); }
+.fc-shared-header .fc-home-nav-toggle .elementor-button-text{ position:absolute; width:1px; height:1px; clip-path:inset(50%); overflow:hidden; }
+.fc-shared-header .fc-nav-col{ display:none; position:absolute; top:100%; left:0; right:0; width:100% !important; padding:18px; background:#07111e; border-bottom:1px solid var(--fc-line); }
+.fc-shared-header.fc-nav-open .fc-nav-col{ display:block; }
+.fc-shared-header .fc-nav-col > .elementor-widget-wrap{ gap:8px 16px; flex-wrap:wrap; }
+.fc-shared-header .fc-home-menu-item .elementor-button{ font-size:12px; }
+}
+@media(prefers-reduced-motion:reduce){.fc-shared-header .fc-home-social .elementor-button{ transition:none; }
+}
