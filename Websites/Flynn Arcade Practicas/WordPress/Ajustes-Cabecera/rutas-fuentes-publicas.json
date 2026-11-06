@@ -1,0 +1,941 @@
+{
+  "collectedAt": "2026-11-06T14:02:36.029Z",
+  "origin": "https://www.flynnsarcades.com",
+  "internalOrigins": [
+    "https://www.flynnsarcades.com",
+    "http://www.flynnsarcades.com",
+    "https://flynnsarcades.com",
+    "http://flynnsarcades.com"
+  ],
+  "apiRoot": "https://www.flynnsarcades.com/wp-json/",
+  "endpoint": "https://www.flynnsarcades.com/wp-json/wp/v2/pages",
+  "originChecks": [
+    {
+      "requested": "http://www.flynnsarcades.com/",
+      "finalUrl": "https://www.flynnsarcades.com/",
+      "status": 200,
+      "confirmed": true
+    },
+    {
+      "requested": "https://flynnsarcades.com/",
+      "finalUrl": "https://www.flynnsarcades.com/",
+      "status": 200,
+      "confirmed": true
+    },
+    {
+      "requested": "http://flynnsarcades.com/",
+      "finalUrl": "https://www.flynnsarcades.com/",
+      "status": 200,
+      "confirmed": true
+    }
+  ],
+  "discovery": {
+    "homepage": "https://www.flynnsarcades.com/",
+    "apiLinkTag": "<link rel=\"https://api.w.org/\" href=\"https://www.flynnsarcades.com/wp-json/\" />",
+    "homepagePageId": 3231,
+    "headerPage": "https://www.flynnsarcades.com/inicio-cardozo/",
+    "header7123Observed": true,
+    "headerClassesObserved": true
+  },
+  "access": "Public unauthenticated GET only; no cookies or credentials. Local inventories supply titles/ids and game aliases, never verified target slugs.",
+  "scope": {
+    "targetCount": 41,
+    "excludedTargetIds": [
+      6984
+    ],
+    "excludedSourceIds": [
+      3436
+    ],
+    "excludedCategory": "Point & Click"
+  },
+  "sources": [
+    {
+      "id": 3231,
+      "slug": "inicio",
+      "link": "https://www.flynnsarcades.com/",
+      "title": "Inicio",
+      "status": "publish"
+    },
+    {
+      "id": 3332,
+      "slug": "press",
+      "link": "https://www.flynnsarcades.com/press/",
+      "title": "Press",
+      "status": "publish"
+    },
+    {
+      "id": 3436,
+      "slug": "point-click",
+      "link": "https://www.flynnsarcades.com/point-click/",
+      "title": "Point &#038; Click",
+      "status": "publish"
+    },
+    {
+      "id": 3753,
+      "slug": "what-comes-after",
+      "link": "https://www.flynnsarcades.com/what-comes-after/",
+      "title": "What Comes After",
+      "status": "publish"
+    },
+    {
+      "id": 3950,
+      "slug": "games",
+      "link": "https://www.flynnsarcades.com/games/",
+      "title": "Games",
+      "status": "publish"
+    },
+    {
+      "id": 4030,
+      "slug": "indies",
+      "link": "https://www.flynnsarcades.com/indies/",
+      "title": "Indies",
+      "status": "publish"
+    },
+    {
+      "id": 4032,
+      "slug": "about-3",
+      "link": "https://www.flynnsarcades.com/about-3/",
+      "title": "About",
+      "status": "publish"
+    },
+    {
+      "id": 4100,
+      "slug": "press_plantilla",
+      "link": "https://www.flynnsarcades.com/press_plantilla/",
+      "title": "Press_Plantilla",
+      "status": "publish"
+    },
+    {
+      "id": 4147,
+      "slug": "lambs-on-the-road",
+      "link": "https://www.flynnsarcades.com/lambs-on-the-road/",
+      "title": "Lambs on the road",
+      "status": "publish"
+    },
+    {
+      "id": 4256,
+      "slug": "eternum-ex",
+      "link": "https://www.flynnsarcades.com/eternum-ex/",
+      "title": "Eternum Ex",
+      "status": "publish"
+    },
+    {
+      "id": 4438,
+      "slug": "galacticon",
+      "link": "https://www.flynnsarcades.com/galacticon/",
+      "title": "Galacticon",
+      "status": "publish"
+    },
+    {
+      "id": 4473,
+      "slug": "kolumno",
+      "link": "https://www.flynnsarcades.com/kolumno/",
+      "title": "Kolumno",
+      "status": "publish"
+    },
+    {
+      "id": 4532,
+      "slug": "gunpig",
+      "link": "https://www.flynnsarcades.com/gunpig/",
+      "title": "Gunpig",
+      "status": "publish"
+    },
+    {
+      "id": 4563,
+      "slug": "explosive-dinosaurs",
+      "link": "https://www.flynnsarcades.com/explosive-dinosaurs/",
+      "title": "Explosive Dinosaurs",
+      "status": "publish"
+    },
+    {
+      "id": 4585,
+      "slug": "laraan",
+      "link": "https://www.flynnsarcades.com/laraan/",
+      "title": "Laraan",
+      "status": "publish"
+    },
+    {
+      "id": 4616,
+      "slug": "monster-puzzle",
+      "link": "https://www.flynnsarcades.com/monster-puzzle/",
+      "title": "Monster Puzzle",
+      "status": "publish"
+    },
+    {
+      "id": 4647,
+      "slug": "hexagravity",
+      "link": "https://www.flynnsarcades.com/hexagravity/",
+      "title": "Hexagravity",
+      "status": "publish"
+    },
+    {
+      "id": 4676,
+      "slug": "dexter",
+      "link": "https://www.flynnsarcades.com/dexter/",
+      "title": "Dexter",
+      "status": "publish"
+    },
+    {
+      "id": 4864,
+      "slug": "a-winding-path",
+      "link": "https://www.flynnsarcades.com/a-winding-path/",
+      "title": "A winding Path",
+      "status": "publish"
+    },
+    {
+      "id": 5060,
+      "slug": "spaceducks",
+      "link": "https://www.flynnsarcades.com/spaceducks/",
+      "title": "Space Ducks: The great escape",
+      "status": "publish"
+    },
+    {
+      "id": 5120,
+      "slug": "donut-dodo",
+      "link": "https://www.flynnsarcades.com/donut-dodo/",
+      "title": "Donut Dodo",
+      "status": "publish"
+    },
+    {
+      "id": 5198,
+      "slug": "the-legend-of-gwen",
+      "link": "https://www.flynnsarcades.com/the-legend-of-gwen/",
+      "title": "The Legend of Gwen",
+      "status": "publish"
+    },
+    {
+      "id": 5269,
+      "slug": "murtop",
+      "link": "https://www.flynnsarcades.com/murtop/",
+      "title": "Murtop",
+      "status": "publish"
+    },
+    {
+      "id": 5416,
+      "slug": "papertris",
+      "link": "https://www.flynnsarcades.com/papertris/",
+      "title": "Papertris",
+      "status": "publish"
+    },
+    {
+      "id": 5605,
+      "slug": "sentrycity",
+      "link": "https://www.flynnsarcades.com/sentrycity/",
+      "title": "Sentry City",
+      "status": "publish"
+    },
+    {
+      "id": 5677,
+      "slug": "colored-effects",
+      "link": "https://www.flynnsarcades.com/colored-effects/",
+      "title": "Colored Effects",
+      "status": "publish"
+    },
+    {
+      "id": 5746,
+      "slug": "8-colors-star-guardians",
+      "link": "https://www.flynnsarcades.com/8-colors-star-guardians/",
+      "title": "8-Colors Star Guardians",
+      "status": "publish"
+    },
+    {
+      "id": 5786,
+      "slug": "looking-up-i-see-only-a-ceiling",
+      "link": "https://www.flynnsarcades.com/looking-up-i-see-only-a-ceiling/",
+      "title": "Looking Up I See Only A Ceiling",
+      "status": "publish"
+    },
+    {
+      "id": 5858,
+      "slug": "attack-of-the-karens",
+      "link": "https://www.flynnsarcades.com/attack-of-the-karens/",
+      "title": "Attack of the Karens",
+      "status": "publish"
+    },
+    {
+      "id": 5952,
+      "slug": "goliath-depot",
+      "link": "https://www.flynnsarcades.com/goliath-depot/",
+      "title": "Goliath Depot",
+      "status": "publish"
+    },
+    {
+      "id": 6038,
+      "slug": "satryn-dx",
+      "link": "https://www.flynnsarcades.com/satryn-dx/",
+      "title": "Satryn DX",
+      "status": "publish"
+    },
+    {
+      "id": 6086,
+      "slug": "cash-cow-dx",
+      "link": "https://www.flynnsarcades.com/cash-cow-dx/",
+      "title": "Cash Cow DX",
+      "status": "publish"
+    },
+    {
+      "id": 6156,
+      "slug": "super-spy-raccoon",
+      "link": "https://www.flynnsarcades.com/super-spy-raccoon/",
+      "title": "Super Spy Raccoon",
+      "status": "publish"
+    },
+    {
+      "id": 6260,
+      "slug": "freddy-farmer",
+      "link": "https://www.flynnsarcades.com/freddy-farmer/",
+      "title": "Freddy Farmer",
+      "status": "publish"
+    },
+    {
+      "id": 6326,
+      "slug": "privacy-policy",
+      "link": "https://www.flynnsarcades.com/privacy-policy/",
+      "title": "Privacy policy",
+      "status": "publish"
+    },
+    {
+      "id": 6337,
+      "slug": "skies-above",
+      "link": "https://www.flynnsarcades.com/skies-above/",
+      "title": "Skies Above",
+      "status": "publish"
+    },
+    {
+      "id": 6413,
+      "slug": "flora-fang",
+      "link": "https://www.flynnsarcades.com/flora-fang/",
+      "title": "Flora &#038; Fang: Guardians of the vampire garden",
+      "status": "publish"
+    },
+    {
+      "id": 6498,
+      "slug": "ion-shift",
+      "link": "https://www.flynnsarcades.com/ion-shift/",
+      "title": "ION Shift",
+      "status": "publish"
+    },
+    {
+      "id": 6567,
+      "slug": "silver-bullet",
+      "link": "https://www.flynnsarcades.com/silver-bullet/",
+      "title": "Silver Bullet",
+      "status": "publish"
+    },
+    {
+      "id": 6613,
+      "slug": "unto-deepest-depths",
+      "link": "https://www.flynnsarcades.com/unto-deepest-depths/",
+      "title": "Unto Deepest Depths",
+      "status": "publish"
+    },
+    {
+      "id": 6697,
+      "slug": "living-dead-house",
+      "link": "https://www.flynnsarcades.com/living-dead-house/",
+      "title": "Living Dead House",
+      "status": "publish"
+    },
+    {
+      "id": 6747,
+      "slug": "viral-reload-ex",
+      "link": "https://www.flynnsarcades.com/viral-reload-ex/",
+      "title": "Viral Reload EX",
+      "status": "publish"
+    },
+    {
+      "id": 6797,
+      "slug": "boardwalk-builders",
+      "link": "https://www.flynnsarcades.com/boardwalk-builders/",
+      "title": "BoardWalk Builders",
+      "status": "publish"
+    },
+    {
+      "id": 6853,
+      "slug": "the-last-cat-in-the-universe",
+      "link": "https://www.flynnsarcades.com/the-last-cat-in-the-universe/",
+      "title": "The Last Cat in the Universe",
+      "status": "publish"
+    }
+  ],
+  "publicTargets": [
+    {
+      "id": 6876,
+      "slug": "inicio-cardozo",
+      "link": "https://www.flynnsarcades.com/inicio-cardozo/",
+      "title": "Inicio Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6925,
+      "slug": "about-cardozo",
+      "link": "https://www.flynnsarcades.com/about-cardozo/",
+      "title": "About Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6927,
+      "slug": "8-colors-star-guardians-cardozo",
+      "link": "https://www.flynnsarcades.com/8-colors-star-guardians-cardozo/",
+      "title": "8-Colors Star Guardians Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6929,
+      "slug": "a-winding-path-cardozo",
+      "link": "https://www.flynnsarcades.com/a-winding-path-cardozo/",
+      "title": "A winding Path Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6931,
+      "slug": "attack-of-the-karens-cardozo",
+      "link": "https://www.flynnsarcades.com/attack-of-the-karens-cardozo/",
+      "title": "Attack of the Karens Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6933,
+      "slug": "boardwalk-builders-cardozo",
+      "link": "https://www.flynnsarcades.com/boardwalk-builders-cardozo/",
+      "title": "BoardWalk Builders Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6935,
+      "slug": "cash-cow-dx-cardozo",
+      "link": "https://www.flynnsarcades.com/cash-cow-dx-cardozo/",
+      "title": "Cash Cow DX Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6937,
+      "slug": "colored-effects-cardozo",
+      "link": "https://www.flynnsarcades.com/colored-effects-cardozo/",
+      "title": "Colored Effects Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6939,
+      "slug": "dexter-cardozo",
+      "link": "https://www.flynnsarcades.com/dexter-cardozo/",
+      "title": "Dexter Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6941,
+      "slug": "donut-dodo-cardozo",
+      "link": "https://www.flynnsarcades.com/donut-dodo-cardozo/",
+      "title": "Donut Dodo Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6943,
+      "slug": "eternum-ex-cardozo",
+      "link": "https://www.flynnsarcades.com/eternum-ex-cardozo/",
+      "title": "Eternum Ex Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6945,
+      "slug": "explosive-dinosaurs-cardozo",
+      "link": "https://www.flynnsarcades.com/explosive-dinosaurs-cardozo/",
+      "title": "Explosive Dinosaurs Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6947,
+      "slug": "flora-fang-guardians-of-the-vampire-garden-cardozo",
+      "link": "https://www.flynnsarcades.com/flora-fang-guardians-of-the-vampire-garden-cardozo/",
+      "title": "Flora &#038; Fang: Guardians of the vampire garden Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6949,
+      "slug": "freddy-farmer-cardozo",
+      "link": "https://www.flynnsarcades.com/freddy-farmer-cardozo/",
+      "title": "Freddy Farmer Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6951,
+      "slug": "galacticon-cardozo",
+      "link": "https://www.flynnsarcades.com/galacticon-cardozo/",
+      "title": "Galacticon Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6953,
+      "slug": "games-cardozo",
+      "link": "https://www.flynnsarcades.com/games-cardozo/",
+      "title": "Games Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6955,
+      "slug": "goliath-depot-cardozo",
+      "link": "https://www.flynnsarcades.com/goliath-depot-cardozo/",
+      "title": "Goliath Depot Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6957,
+      "slug": "gunpig-cardozo",
+      "link": "https://www.flynnsarcades.com/gunpig-cardozo/",
+      "title": "Gunpig Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6959,
+      "slug": "hexagravity-cardozo",
+      "link": "https://www.flynnsarcades.com/hexagravity-cardozo/",
+      "title": "Hexagravity Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6961,
+      "slug": "indies-cardozo",
+      "link": "https://www.flynnsarcades.com/indies-cardozo/",
+      "title": "Indies Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6963,
+      "slug": "ion-shift-cardozo",
+      "link": "https://www.flynnsarcades.com/ion-shift-cardozo/",
+      "title": "ION Shift Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6965,
+      "slug": "kolumno-cardozo",
+      "link": "https://www.flynnsarcades.com/kolumno-cardozo/",
+      "title": "Kolumno Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6967,
+      "slug": "lambs-on-the-road-cardozo",
+      "link": "https://www.flynnsarcades.com/lambs-on-the-road-cardozo/",
+      "title": "Lambs on the road Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6969,
+      "slug": "laraan-cardozo",
+      "link": "https://www.flynnsarcades.com/laraan-cardozo/",
+      "title": "Laraan Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6972,
+      "slug": "living-dead-house-cardozo",
+      "link": "https://www.flynnsarcades.com/living-dead-house-cardozo/",
+      "title": "Living Dead House Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6976,
+      "slug": "looking-up-i-see-only-a-ceiling-cardozo",
+      "link": "https://www.flynnsarcades.com/looking-up-i-see-only-a-ceiling-cardozo/",
+      "title": "Looking Up I See Only A Ceiling Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6978,
+      "slug": "monster-puzzle-cardozo",
+      "link": "https://www.flynnsarcades.com/monster-puzzle-cardozo/",
+      "title": "Monster Puzzle Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6980,
+      "slug": "murtop-cardozo",
+      "link": "https://www.flynnsarcades.com/murtop-cardozo/",
+      "title": "Murtop Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 6982,
+      "slug": "papertris-cardozo",
+      "link": "https://www.flynnsarcades.com/papertris-cardozo/",
+      "title": "Papertris Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 7098,
+      "slug": "press-cardozo",
+      "link": "https://www.flynnsarcades.com/press-cardozo/",
+      "title": "Press Cardozo",
+      "status": "publish"
+    },
+    {
+      "id": 7106,
+      "slug": "what-comes-after-cardozo",
+      "link": "https://www.flynnsarcades.com/what-comes-after-cardozo/",
+      "title": "What Comes After Cardozo",
+      "status": "publish"
+    }
+  ],
+  "excludedPublicTargets": [],
+  "expectedTargets": [
+    {
+      "id": 6927,
+      "title": "8-Colors Star Guardians Cardozo"
+    },
+    {
+      "id": 6929,
+      "title": "A winding Path Cardozo"
+    },
+    {
+      "id": 6925,
+      "title": "About Cardozo"
+    },
+    {
+      "id": 6931,
+      "title": "Attack of the Karens Cardozo"
+    },
+    {
+      "id": 6933,
+      "title": "BoardWalk Builders Cardozo"
+    },
+    {
+      "id": 6935,
+      "title": "Cash Cow DX Cardozo"
+    },
+    {
+      "id": 6937,
+      "title": "Colored Effects Cardozo"
+    },
+    {
+      "id": 6939,
+      "title": "Dexter Cardozo"
+    },
+    {
+      "id": 6941,
+      "title": "Donut Dodo Cardozo"
+    },
+    {
+      "id": 6943,
+      "title": "Eternum Ex Cardozo"
+    },
+    {
+      "id": 6945,
+      "title": "Explosive Dinosaurs Cardozo"
+    },
+    {
+      "id": 6947,
+      "title": "Flora &#038; Fang: Guardians of the vampire garden Cardozo"
+    },
+    {
+      "id": 6949,
+      "title": "Freddy Farmer Cardozo"
+    },
+    {
+      "id": 6951,
+      "title": "Galacticon Cardozo"
+    },
+    {
+      "id": 6953,
+      "title": "Games Cardozo"
+    },
+    {
+      "id": 6955,
+      "title": "Goliath Depot Cardozo"
+    },
+    {
+      "id": 6957,
+      "title": "Gunpig Cardozo"
+    },
+    {
+      "id": 6959,
+      "title": "Hexagravity Cardozo"
+    },
+    {
+      "id": 6961,
+      "title": "Indies Cardozo"
+    },
+    {
+      "id": 6876,
+      "title": "Inicio Cardozo"
+    },
+    {
+      "id": 6963,
+      "title": "ION Shift Cardozo"
+    },
+    {
+      "id": 6965,
+      "title": "Kolumno Cardozo"
+    },
+    {
+      "id": 6967,
+      "title": "Lambs on the road Cardozo"
+    },
+    {
+      "id": 6969,
+      "title": "Laraan Cardozo"
+    },
+    {
+      "id": 6972,
+      "title": "Living Dead House Cardozo"
+    },
+    {
+      "id": 6976,
+      "title": "Looking Up I See Only A Ceiling Cardozo"
+    },
+    {
+      "id": 6978,
+      "title": "Monster Puzzle Cardozo"
+    },
+    {
+      "id": 6980,
+      "title": "Murtop Cardozo"
+    },
+    {
+      "id": 6982,
+      "title": "Papertris Cardozo"
+    },
+    {
+      "id": 7098,
+      "title": "Press Cardozo"
+    },
+    {
+      "id": 7294,
+      "title": "Satryn DX Cardozo"
+    },
+    {
+      "id": 7296,
+      "title": "Sentry City Cardozo"
+    },
+    {
+      "id": 7297,
+      "title": "Silver Bullet Cardozo"
+    },
+    {
+      "id": 7298,
+      "title": "Skies Above Cardozo"
+    },
+    {
+      "id": 7299,
+      "title": "Space Ducks: The great escape Cardozo"
+    },
+    {
+      "id": 7300,
+      "title": "Super Spy Raccoon Cardozo"
+    },
+    {
+      "id": 7301,
+      "title": "The Last Cat in the Universe Cardozo"
+    },
+    {
+      "id": 7302,
+      "title": "The Legend of Gwen Cardozo"
+    },
+    {
+      "id": 7310,
+      "title": "Unto Deepest Depths Cardozo"
+    },
+    {
+      "id": 7311,
+      "title": "Viral Reload EX Cardozo"
+    },
+    {
+      "id": 7106,
+      "title": "What Comes After Cardozo"
+    }
+  ],
+  "localGameAliases": [
+    {
+      "id": 6955,
+      "title": "Goliath Depot Cardozo",
+      "slug": "goliath-depot",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6957,
+      "title": "Gunpig Cardozo",
+      "slug": "gunpig",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6959,
+      "title": "Hexagravity Cardozo",
+      "slug": "hexagravity",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6963,
+      "title": "ION Shift Cardozo",
+      "slug": "ion-shift",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6965,
+      "title": "Kolumno Cardozo",
+      "slug": "kolumno",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6967,
+      "title": "Lambs on the road Cardozo",
+      "slug": "lambs-on-the-road",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6969,
+      "title": "Laraan Cardozo",
+      "slug": "laraan",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6972,
+      "title": "Living Dead House Cardozo",
+      "slug": "living-dead-house",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6976,
+      "title": "Looking Up I See Only A Ceiling Cardozo",
+      "slug": "looking-up-i-see-only-a-ceiling",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6978,
+      "title": "Monster Puzzle Cardozo",
+      "slug": "monster-puzzle",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6980,
+      "title": "Murtop Cardozo",
+      "slug": "murtop",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6982,
+      "title": "Papertris Cardozo",
+      "slug": "papertris",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7294,
+      "title": "Satryn DX Cardozo",
+      "slug": "satryn-dx",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7296,
+      "title": "Sentry City Cardozo",
+      "slug": "sentry-city",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7297,
+      "title": "Silver Bullet Cardozo",
+      "slug": "silver-bullet",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7298,
+      "title": "Skies Above Cardozo",
+      "slug": "skies-above",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7299,
+      "title": "Space Ducks: The great escape Cardozo",
+      "slug": "space-ducks-the-great-escape",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7300,
+      "title": "Super Spy Raccoon Cardozo",
+      "slug": "super-spy-raccoon",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7301,
+      "title": "The Last Cat in the Universe Cardozo",
+      "slug": "the-last-cat-in-the-universe",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7302,
+      "title": "The Legend of Gwen Cardozo",
+      "slug": "the-legend-of-gwen",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7310,
+      "title": "Unto Deepest Depths Cardozo",
+      "slug": "unto-deepest-depths",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 7311,
+      "title": "Viral Reload EX Cardozo",
+      "slug": "viral-reload-ex",
+      "provenance": "WordPress/Juegos-Cardozo/restantes.json"
+    },
+    {
+      "id": 6933,
+      "title": "BoardWalk Builders Cardozo",
+      "slug": "boardwalk-builders",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6935,
+      "title": "Cash Cow DX Cardozo",
+      "slug": "cash-cow-dx",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6937,
+      "title": "Colored Effects Cardozo",
+      "slug": "colored-effects",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6939,
+      "title": "Dexter Cardozo",
+      "slug": "dexter-stardust",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6941,
+      "title": "Donut Dodo Cardozo",
+      "slug": "donut-dodo",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6943,
+      "title": "Eternum Ex Cardozo",
+      "slug": "eternum-ex",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6945,
+      "title": "Explosive Dinosaurs Cardozo",
+      "slug": "explosive-dinosaurs",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6947,
+      "title": "Flora & Fang: Guardians of the vampire garden Cardozo",
+      "slug": "flora-fang-guardians-of-the-vampire-garden",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6949,
+      "title": "Freddy Farmer Cardozo",
+      "slug": "freddy-farmer",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    },
+    {
+      "id": 6951,
+      "title": "Galacticon Cardozo",
+      "slug": "galacticon",
+      "provenance": "WordPress/Juegos-Cardozo/paginas.json"
+    }
+  ]
+}

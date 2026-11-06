@@ -1255,12 +1255,97 @@
     "reviews": 2,
     "blocksPreserved": 5,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-satryn-dx-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "Satryn DX",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7294&action=elementor",
     "id": "post-7294",
     "preview": "https://www.flynnsarcades.com/?page_id=7294&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/satryn-dx/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/satryn-dx-switch/"
+      ],
+      "title": "Satryn DX",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=xiqeekKgv0o\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/satryn-dx\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-satryn-dx-hover.webp"
+      }
+    }
   },
   {
     "slug": "sentry-city",
@@ -1272,12 +1357,97 @@
     "reviews": 1,
     "blocksPreserved": 12,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-sentry-city-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "Sentry City",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7296&action=elementor",
     "id": "post-7296",
     "preview": "https://www.flynnsarcades.com/?page_id=7296&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/sentry-city/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/sentry-city-switch/"
+      ],
+      "title": "Sentry City",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=8eLQ6h5HwVY&t=1s\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/sentry-city\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"start\":1,\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-sentry-city-hover.webp"
+      }
+    }
   },
   {
     "slug": "silver-bullet",
@@ -1289,12 +1459,98 @@
     "reviews": 2,
     "blocksPreserved": 2,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-silver-bullet-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "Silver Bullet",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7297&action=elementor",
     "id": "post-7297",
     "preview": "https://www.flynnsarcades.com/?page_id=7297&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/silver-bullet/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/silver-bullet-switch/",
+        "https://store.steampowered.com/app/2818130/Silver_Bullet/"
+      ],
+      "title": "Silver Bullet",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=2O_JJrUIJpg\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/silver-bullet\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-silver-bullet-hover.webp"
+      }
+    }
   },
   {
     "slug": "skies-above",
@@ -1306,23 +1562,193 @@
     "reviews": 2,
     "blocksPreserved": 5,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-skies-above-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "Skies Above",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7298&action=elementor",
     "id": "post-7298",
     "preview": "https://www.flynnsarcades.com/?page_id=7298&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/skies-above/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/skies-above-switch/"
+      ],
+      "title": "Skies Above",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=EijpwYgu-O8\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/skies-above\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-skies-above-hover.webp"
+      }
+    }
   },
   {
     "slug": "space-ducks-the-great-escape",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "Space Ducks: The great escape",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7299&action=elementor",
     "id": "post-7299",
     "preview": "https://www.flynnsarcades.com/?page_id=7299&preview=true",
     "title": "Space Ducks: The great escape Cardozo",
     "wpStatus": "Borrador, ",
-    "captures": 5
+    "captures": 5,
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-1.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-1.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-2.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-2.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-4.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-4.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-5.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-5.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-6.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-6.jpeg"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/store/products/space-ducks-the-great-escape-switch/"
+      ],
+      "title": "Space Ducks: The great escape",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=Iq-C9SXQc0I\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/www.flynnsarcades.com\\/wp-content\\/uploads\\/2022\\/10\\/SpaceDucks-Screenshot-1.jpeg\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-GIF.gif"
+      }
+    }
   },
   {
     "slug": "super-spy-raccoon",
@@ -1334,12 +1760,97 @@
     "reviews": 2,
     "blocksPreserved": 8,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-super-spy-raccoon-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "Super Spy Raccoon",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7300&action=elementor",
     "id": "post-7300",
     "preview": "https://www.flynnsarcades.com/?page_id=7300&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/super-spy-raccoon/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/super-spy-raccoon-switch/"
+      ],
+      "title": "Super Spy Raccoon",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=cwFLn-a7pys&t=3s\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/super-spy-raccoon\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"start\":3,\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-super-spy-raccoon-hover.webp"
+      }
+    }
   },
   {
     "slug": "the-last-cat-in-the-universe",
@@ -1351,12 +1862,93 @@
     "reviews": 0,
     "blocksPreserved": 8,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-last-cat-in-the-universe-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "The Last Cat in the Universe",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7301&action=elementor",
     "id": "post-7301",
     "preview": "https://www.flynnsarcades.com/?page_id=7301&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-last-cat-in-the-universe/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/the-last-cat-in-the-universe-switch/"
+      ],
+      "title": "The Last Cat in the Universe",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=lVvc9PFdigA\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/the-last-cat-in-the-universe\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-last-cat-in-the-universe-hover.webp"
+      }
+    }
   },
   {
     "slug": "the-legend-of-gwen",
@@ -1368,12 +1960,98 @@
     "reviews": 2,
     "blocksPreserved": 11,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-legend-of-gwen-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-verified",
     "gameTitle": "The Legend of Gwen",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7302&action=elementor",
     "id": "post-7302",
     "preview": "https://www.flynnsarcades.com/?page_id=7302&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/the-legend-of-gwen/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/the-legend-of-gwen-switch/",
+        "https://store.steampowered.com/app/2179460/The_Legend_of_Gwen/"
+      ],
+      "title": "The Legend of Gwen",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=OkY-OcmmmU8\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/the-legend-of-gwen\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-legend-of-gwen-hover.webp"
+      }
+    }
   },
   {
     "slug": "unto-deepest-depths",
@@ -1385,12 +2063,33 @@
     "reviews": 0,
     "blocksPreserved": 15,
     "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-unto-deepest-depths-hover.webp",
-    "status": "prepared-not-applied",
+    "status": "saved-draft-awaiting-verification",
     "gameTitle": "Unto Deepest Depths",
     "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7310&action=elementor",
     "id": "post-7310",
     "preview": "https://www.flynnsarcades.com/?page_id=7310&preview=true",
-    "wpStatus": "Borrador, "
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    }
   },
   {
     "slug": "viral-reload-ex",
