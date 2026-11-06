@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-11-06T07:04:05.596Z",
+  "method": "HEAD for original images/GIF; GET for YouTube public oEmbed",
+  "results": [
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-1.jpeg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-1.jpeg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-2.jpeg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-2.jpeg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-4.jpeg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-4.jpeg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-5.jpeg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-5.jpeg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-6.jpeg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-6.jpeg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/1x1.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/1x1.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-GIF.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-GIF.gif"
+    },
+    {
+      "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIq-C9SXQc0I&format=json",
+      "status": 200,
+      "content_type": "application/json",
+      "response": {
+        "title": "SpaceDucks Nintendo USA Trailer",
+        "author_name": "Flynn's Arcade",
+        "author_url": "https://www.youtube.com/@jpd92363",
+        "type": "video",
+        "height": 113,
+        "width": 200,
+        "version": "1.0",
+        "provider_name": "YouTube",
+        "provider_url": "https://www.youtube.com/",
+        "thumbnail_height": 360,
+        "thumbnail_width": 480,
+        "thumbnail_url": "https://i.ytimg.com/vi/Iq-C9SXQc0I/hqdefault.jpg",
+        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/Iq-C9SXQc0I?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"SpaceDucks Nintendo USA Trailer\"></iframe>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "title": "Space Ducks: The great escape",
+  "slug": "space-ducks-the-great-escape",
+  "source": "https://www.flynnsarcades.com/spaceducks/",
+  "tagline": "Cosmic puzzle adventure",
+  "platforms": [
+    "Switch"
+  ],
+  "hero_video": {
+    "id": "Iq-C9SXQc0I",
+    "url": "https://www.youtube.com/watch?v=Iq-C9SXQc0I",
+    "start": 0
+  },
+  "gallery": [
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-1.jpeg",
+      "alt": "Space Ducks: The great escape gameplay screenshot 1"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-2.jpeg",
+      "alt": "Space Ducks: The great escape gameplay screenshot 2"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-4.jpeg",
+      "alt": "Space Ducks: The great escape gameplay screenshot 3"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-5.jpeg",
+      "alt": "Space Ducks: The great escape gameplay screenshot 4"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-Screenshot-6.jpeg",
+      "alt": "Space Ducks: The great escape gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/1x1.jpg",
+    "alt": "Space Ducks: The great escape cover artwork"
+  },
+  "animation_url": "https://www.flynnsarcades.com/wp-content/uploads/2022/10/SpaceDucks-GIF.gif",
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/store/products/space-ducks-the-great-escape-switch/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Puzzle"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Space Ducks: The great escape is part of the CosmOS 9 bundle, a set of 9 puzzle games discovered on a mysterious, alien video game console drifting through outer space."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this cosmic puzzle adventure, help a lost tribe of duck-people in their millennial quest for a stable world!"
+    },
+    {
+      "type": "paragraph",
+      "text": "In Space Ducks: The great escape, complete challenging Sokoban-like puzzles, by moving the Space Ducks in the right sequence, in order to reach the power source their ship requires and travel to the next planet."
+    },
+    {
+      "type": "heading",
+      "text": "Features"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Help a tribe of duck-people escape 18+ puzzle planets,",
+        "Travel across a colorful galaxy and visit 3 biomes,",
+        "Learn and master original Sokoban inspired mechanics",
+        "Harness gravity to reshape the planets to your needs",
+        "Coordinate the ducks’ efforts (or let them die trying)",
+        "Enjoy the retro-classical art, dark humor and original music"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "A fun puzzle game, if you don't mind a duck dying from time to time.",
+      "author": "Fran Fox",
+      "outlet": "Steam",
+      "url": "https://store.steampowered.com/app/1862710/Space_Ducks_The_great_escape/#app_reviews_hash",
+      "translated_from": "Spanish"
+    },
+    {
+      "quote": "Overall a fun experience.",
+      "author": "Kawaii Desu-chan",
+      "outlet": "Steam",
+      "url": "https://store.steampowered.com/app/1862710/Space_Ducks_The_great_escape/#app_reviews_hash"
+    }
+  ]
+}

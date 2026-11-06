@@ -1,0 +1,1412 @@
+[
+  {
+    "slug": "goliath-depot",
+    "title": "Goliath Depot Cardozo",
+    "sections": 11,
+    "widgets": 82,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 12,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-goliath-depot-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Goliath Depot",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6955&action=elementor",
+    "id": "post-6955",
+    "preview": "https://www.flynnsarcades.com/?page_id=6955&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/goliath-depot/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/goliath-depot-switch/"
+      ],
+      "title": "Goliath Depot",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=p4wQZClL7X4\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/goliath-depot\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-goliath-depot-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "gunpig",
+    "status": "saved-draft-verified",
+    "gameTitle": "Gunpig",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6957&action=elementor",
+    "id": "post-6957",
+    "preview": "https://www.flynnsarcades.com/?page_id=6957&preview=true",
+    "title": "Gunpig Cardozo",
+    "wpStatus": "Borrador, ",
+    "captures": 5,
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_01.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_01.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_02.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_02.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_03.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_03.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_04.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_04.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_05.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_05.jpg"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/games/detail/gunpig-firepower-for-hire-switch/"
+      ],
+      "title": "Gunpig",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=IBJKOnkBVgA\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/www.flynnsarcades.com\\/wp-content\\/uploads\\/2021\\/11\\/GunPig_Screenshot_01.jpg\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/relax_gunpig-1.gif"
+      }
+    }
+  },
+  {
+    "slug": "hexagravity",
+    "title": "Hexagravity Cardozo",
+    "sections": 11,
+    "widgets": 73,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 6,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-hexagravity-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Hexagravity",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6959&action=elementor",
+    "id": "post-6959",
+    "preview": "https://www.flynnsarcades.com/?page_id=6959&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/hexagravity/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/hexagravity-switch/"
+      ],
+      "title": "Hexagravity",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=WU7H6Ps84EQ\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/hexagravity\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-hexagravity-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "ion-shift",
+    "title": "ION Shift Cardozo",
+    "sections": 11,
+    "widgets": 81,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 3,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-ion-shift-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "ION Shift",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6963&action=elementor",
+    "id": "post-6963",
+    "preview": "https://www.flynnsarcades.com/?page_id=6963&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/ion-shift/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/ion-shift-switch/"
+      ],
+      "title": "ION Shift",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=HTDR4M8_0Is\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/ion-shift\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-ion-shift-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "kolumno",
+    "status": "saved-draft-verified",
+    "gameTitle": "Kolumno",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6965&action=elementor",
+    "id": "post-6965",
+    "preview": "https://www.flynnsarcades.com/?page_id=6965&preview=true",
+    "title": "Kolumno Cardozo",
+    "wpStatus": "Borrador, ",
+    "captures": 5,
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_02.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_02.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_03.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_03.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_04.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_04.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_05.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_05.jpg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_06-1.jpg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_06-1.jpg"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/Kolumno-1880197.html"
+      ],
+      "title": "Kolumno",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=Rbdx1j5yTWE\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/www.flynnsarcades.com\\/wp-content\\/uploads\\/2021\\/11\\/Screenshot_02.jpg\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/kolumno_2.gif"
+      }
+    }
+  },
+  {
+    "slug": "lambs-on-the-road",
+    "title": "Lambs on the road Cardozo",
+    "sections": 11,
+    "widgets": 91,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 3,
+    "blocksPreserved": 9,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-lambs-on-the-road-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Lambs on the Road",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6967&action=elementor",
+    "id": "post-6967",
+    "preview": "https://www.flynnsarcades.com/?page_id=6967&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/lambs-on-the-road/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/lambs-on-the-road-the-beginning-switch/",
+        "https://store.steampowered.com/app/866270/Lambs_on_the_road__The_beginning/"
+      ],
+      "title": "Lambs on the Road",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=lUwQEoTGRho\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/lambs-on-the-road\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-lambs-on-the-road-hover.webp"
+      },
+      "reviewNext": "2 / 2",
+      "reviewRestored": "1 / 2"
+    }
+  },
+  {
+    "slug": "laraan",
+    "title": "Laraan Cardozo",
+    "sections": 11,
+    "widgets": 74,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 6,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-laraan-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Laraan",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6969&action=elementor",
+    "id": "post-6969",
+    "preview": "https://www.flynnsarcades.com/?page_id=6969&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/laraan/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/laraan-switch/",
+        "https://store.steampowered.com/app/493710/Laraan/"
+      ],
+      "title": "Laraan",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=sQLlXC56KT4\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/laraan\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-laraan-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "living-dead-house",
+    "title": "Living Dead House Cardozo",
+    "sections": 11,
+    "widgets": 75,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 14,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-living-dead-house-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Living Dead House",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6972&action=elementor",
+    "id": "post-6972",
+    "preview": "https://www.flynnsarcades.com/?page_id=6972&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/living-dead-house/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/living-dead-house-switch/"
+      ],
+      "title": "Living Dead House",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=1xfZ3PFnhfs\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/living-dead-house\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-living-dead-house-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "looking-up-i-see-only-a-ceiling",
+    "title": "Looking Up I See Only A Ceiling Cardozo",
+    "sections": 11,
+    "widgets": 85,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-looking-up-i-see-only-a-ceiling-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Looking Up I See Only A Ceiling",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6976&action=elementor",
+    "id": "post-6976",
+    "preview": "https://www.flynnsarcades.com/?page_id=6976&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/looking-up-i-see-only-a-ceiling-switch/"
+      ],
+      "title": "Looking Up I See Only A Ceiling",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=X4jKWIeGao4\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/looking-up-i-see-only-a-ceiling\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-looking-up-i-see-only-a-ceiling-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "monster-puzzle",
+    "title": "Monster Puzzle Cardozo",
+    "sections": 11,
+    "widgets": 74,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 6,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-monster-puzzle-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Monster Puzzle",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6978&action=elementor",
+    "id": "post-6978",
+    "preview": "https://www.flynnsarcades.com/?page_id=6978&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/monster-puzzle/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/monster-puzzle-switch/",
+        "https://store.steampowered.com/app/493700/Monster_Puzzle/"
+      ],
+      "title": "Monster Puzzle",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=_zNmudmZw8Y\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/monster-puzzle\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-monster-puzzle-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "murtop",
+    "title": "Murtop Cardozo",
+    "sections": 11,
+    "widgets": 82,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 1,
+    "blocksPreserved": 15,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-murtop-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Murtop",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6980&action=elementor",
+    "id": "post-6980",
+    "preview": "https://www.flynnsarcades.com/?page_id=6980&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/murtop/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/murtop-switch/",
+        "https://store.steampowered.com/app/2148170/Murtop/"
+      ],
+      "title": "Murtop",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=Z3mEErlelKM\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/murtop\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-murtop-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "papertris",
+    "title": "Papertris Cardozo",
+    "sections": 11,
+    "widgets": 81,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 10,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-papertris-hover.webp",
+    "status": "saved-draft-verified",
+    "gameTitle": "Papertris",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6982&action=elementor",
+    "id": "post-6982",
+    "preview": "https://www.flynnsarcades.com/?page_id=6982&preview=true",
+    "wpStatus": "Borrador, ",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/papertris/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/papertris-switch/"
+      ],
+      "title": "Papertris",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=fRrG1LPihvg\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/papertris\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-papertris-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "point-click",
+    "status": "saved-draft-verified",
+    "gameTitle": "Point & Click",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6984&action=elementor",
+    "id": "post-6984",
+    "preview": "https://www.flynnsarcades.com/?page_id=6984&preview=true",
+    "title": "Point & Click Cardozo",
+    "wpStatus": "Borrador, ",
+    "pageKind": "category",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "cards": [
+        "Dexter Stardust"
+      ],
+      "fakeGameSections": 0,
+      "headers": 1,
+      "links": [
+        {
+          "href": "https://www.flynnsarcades.com/dexter-cardozo/",
+          "preview": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-dexter-stardust-hover.webp"
+        }
+      ],
+      "overflow": false,
+      "placeholder": false,
+      "title": "Point & Click",
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-dexter-stardust-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "satryn-dx",
+    "title": "Satryn DX Cardozo",
+    "sections": 11,
+    "widgets": 83,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 5,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-satryn-dx-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Satryn DX",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7294&action=elementor",
+    "id": "post-7294",
+    "preview": "https://www.flynnsarcades.com/?page_id=7294&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "sentry-city",
+    "title": "Sentry City Cardozo",
+    "sections": 11,
+    "widgets": 79,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 1,
+    "blocksPreserved": 12,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-sentry-city-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Sentry City",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7296&action=elementor",
+    "id": "post-7296",
+    "preview": "https://www.flynnsarcades.com/?page_id=7296&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "silver-bullet",
+    "title": "Silver Bullet Cardozo",
+    "sections": 11,
+    "widgets": 81,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 2,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-silver-bullet-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Silver Bullet",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7297&action=elementor",
+    "id": "post-7297",
+    "preview": "https://www.flynnsarcades.com/?page_id=7297&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "skies-above",
+    "title": "Skies Above Cardozo",
+    "sections": 11,
+    "widgets": 81,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 5,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-skies-above-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Skies Above",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7298&action=elementor",
+    "id": "post-7298",
+    "preview": "https://www.flynnsarcades.com/?page_id=7298&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "space-ducks-the-great-escape",
+    "status": "prepared-not-applied",
+    "gameTitle": "Space Ducks: The great escape",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7299&action=elementor",
+    "id": "post-7299",
+    "preview": "https://www.flynnsarcades.com/?page_id=7299&preview=true",
+    "title": "Space Ducks: The great escape Cardozo",
+    "wpStatus": "Borrador, ",
+    "captures": 5
+  },
+  {
+    "slug": "super-spy-raccoon",
+    "title": "Super Spy Raccoon Cardozo",
+    "sections": 11,
+    "widgets": 82,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 8,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-super-spy-raccoon-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Super Spy Raccoon",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7300&action=elementor",
+    "id": "post-7300",
+    "preview": "https://www.flynnsarcades.com/?page_id=7300&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "the-last-cat-in-the-universe",
+    "title": "The Last Cat in the Universe Cardozo",
+    "sections": 11,
+    "widgets": 74,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 8,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-last-cat-in-the-universe-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "The Last Cat in the Universe",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7301&action=elementor",
+    "id": "post-7301",
+    "preview": "https://www.flynnsarcades.com/?page_id=7301&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "the-legend-of-gwen",
+    "title": "The Legend of Gwen Cardozo",
+    "sections": 11,
+    "widgets": 82,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 11,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-the-legend-of-gwen-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "The Legend of Gwen",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7302&action=elementor",
+    "id": "post-7302",
+    "preview": "https://www.flynnsarcades.com/?page_id=7302&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "unto-deepest-depths",
+    "title": "Unto Deepest Depths Cardozo",
+    "sections": 11,
+    "widgets": 80,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 15,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-unto-deepest-depths-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Unto Deepest Depths",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7310&action=elementor",
+    "id": "post-7310",
+    "preview": "https://www.flynnsarcades.com/?page_id=7310&preview=true",
+    "wpStatus": "Borrador, "
+  },
+  {
+    "slug": "viral-reload-ex",
+    "title": "Viral Reload EX Cardozo",
+    "sections": 11,
+    "widgets": 83,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 13,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-viral-reload-ex-hover.webp",
+    "status": "prepared-not-applied",
+    "gameTitle": "Viral Reload EX",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=7311&action=elementor",
+    "id": "post-7311",
+    "preview": "https://www.flynnsarcades.com/?page_id=7311&preview=true",
+    "wpStatus": "Borrador, "
+  }
+]

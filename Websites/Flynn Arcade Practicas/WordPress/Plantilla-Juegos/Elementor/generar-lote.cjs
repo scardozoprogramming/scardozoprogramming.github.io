@@ -14,7 +14,8 @@ const find = (nodes, cls) => all(nodes).find(n => (n.settings._css_classes || n.
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const link = url => ({url, is_external: '', nofollow: '', custom_attributes: 'target|_blank,rel|noopener noreferrer'});
 const icons = {Switch:['fab fa-nintendo-switch','fa-brands'], Xbox:['fab fa-xbox','fa-brands'], PlayStation:['fab fa-playstation','fa-brands'], PC:['fas fa-desktop','fa-solid']};
-const slugs = ['boardwalk-builders','cash-cow-dx','colored-effects','dexter-stardust','donut-dodo','eternum-ex','explosive-dinosaurs','flora-fang-guardians-of-the-vampire-garden','freddy-farmer','galacticon'];
+const config = process.argv[2] ? read(path.resolve(process.argv[2])) : null;
+const slugs = config?.slugs || ['boardwalk-builders','cash-cow-dx','colored-effects','dexter-stardust','donut-dodo','eternum-ex','explosive-dinosaurs','flora-fang-guardians-of-the-vampire-garden','freddy-farmer','galacticon'];
 const report = [];
 for (const [index, slug] of slugs.entries()) {
   const local = path.join(root, 'Games/Juegos', slug, 'JSON/game.json');
@@ -104,5 +105,5 @@ for (const [index, slug] of slugs.entries()) {
   report.push(result);
 }
 fs.mkdirSync(path.join(wp,'Juegos-Cardozo'),{recursive:true});
-fs.writeFileSync(path.join(wp,'Juegos-Cardozo/preparacion.json'),JSON.stringify(report,null,2));
+fs.writeFileSync(path.join(wp,'Juegos-Cardozo',config?.report || 'preparacion.json'),JSON.stringify(report,null,2));
 console.log(report);

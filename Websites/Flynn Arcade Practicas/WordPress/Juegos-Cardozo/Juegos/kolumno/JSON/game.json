@@ -1,0 +1,94 @@
+{
+  "title": "Kolumno",
+  "slug": "kolumno",
+  "source": "https://www.flynnsarcades.com/kolumno/",
+  "tagline": "Simple design, complex puzzle",
+  "platforms": [
+    "Switch"
+  ],
+  "hero_video": {
+    "id": "Rbdx1j5yTWE",
+    "url": "https://www.youtube.com/watch?v=Rbdx1j5yTWE",
+    "start": 0
+  },
+  "gallery": [
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_02.jpg",
+      "alt": "Kolumno gameplay screenshot 1"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_03.jpg",
+      "alt": "Kolumno gameplay screenshot 2"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_04.jpg",
+      "alt": "Kolumno gameplay screenshot 3"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_05.jpg",
+      "alt": "Kolumno gameplay screenshot 4"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_06-1.jpg",
+      "alt": "Kolumno gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/kolumno.jpg",
+    "alt": "Kolumno cover artwork"
+  },
+  "animation_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/kolumno_2.gif",
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/Kolumno-1880197.html"
+    }
+  ],
+  "genres": [
+    "Arcade",
+    "Relax Game",
+    "Puzzle"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Wait for the right moment and make the ball fall through intricate moving columns. Sounds simple to you? Well, it’s not! Behind the apparent simplicity of Kolumno are really fun and demanding game mechanics."
+    },
+    {
+      "type": "paragraph",
+      "text": "Like other puzzle games, requires intelligence, planning, and patience, but the challenge doesn’t stop there. The game will also test your reflexes thanks to special skills that will allow you: Stop in the air, fall at high speed, decrease in size or break the rings that form the column."
+    },
+    {
+      "type": "paragraph",
+      "text": "Don’t be fooled by its minimalist graphics and its relaxing soundtrack, Kolumno is one of the most elegant and challenging puzzles of recent times."
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "4 different items that give great depth to the puzzles",
+        "75 levels full of challenges",
+        "Elegant graphics and sound",
+        "Easy to control, difficult to master"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "Kolumno is a simple puzzle game with a focus on timing and execution that makes for a good test of your brain and your reflexes for such a low price.",
+      "author": "Kirstie Summers",
+      "outlet": "Pure Nintendo",
+      "url": "https://purenintendo.com/review-kolumno-nintendo-switch/"
+    },
+    {
+      "quote": "Don’t know what captured my attention more; the zen-like minimalism of puzzler Kolumno, or that it’s published by Flynn’s Arcade. You mean he’s still trapped in the game!?.",
+      "author": "Vulgar Knight",
+      "outlet": "Vulgar Knight",
+      "url": "https://vulgarknight.com/kolumno-on-this-switch-this-month/"
+    }
+  ]
+}

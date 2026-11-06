@@ -1,0 +1,30 @@
+{
+  "id": 4532,
+  "title": "Gunpig",
+  "url": "https://www.flynnsarcades.com/gunpig/",
+  "type": "post",
+  "subtype": "page",
+  "_links": {
+    "self": [
+      {
+        "embeddable": true,
+        "href": "https://www.flynnsarcades.com/wp-json/wp/v2/pages/4532",
+        "targetHints": {
+          "allow": [
+            "GET"
+          ]
+        }
+      }
+    ],
+    "about": [
+      {
+        "href": "https://www.flynnsarcades.com/wp-json/wp/v2/types/page"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://www.flynnsarcades.com/wp-json/wp/v2/search"
+      }
+    ]
+  }
+}

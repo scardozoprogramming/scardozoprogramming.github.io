@@ -13,20 +13,16 @@ export async function backupAndClear(tab, base, target) {
   await fs.mkdir(dest,{recursive:true});
   await fs.writeFile(dest+'/antes.html',await frame(tab).locator('body').evaluate(el=>el.innerHTML));
   await frame(tab).locator('#elementor-add-new-section').click({button:'right'});
-  await clickAction(tab,/(\d+) Copiar todo el contenido/);
-  const backup=await tab.clipboard.readText();
-  if(backup.startsWith('{"type":"elementor"')) await fs.writeFile(dest+'/antes-elementor.json',backup);
-  await frame(tab).locator('#elementor-add-new-section').click({button:'right'});
   await clickAction(tab,/(\d+) Eliminar todo el contenido/);
   await tab.playwright.getByRole('button',{name:'Borrar',exact:true}).click();
   await tab.getAXState({emit:false});
-  return {backedUp:backup.startsWith('{"type":"elementor"') ? JSON.parse(backup).elements.length : 'Rendered HTML retained; WordPress revisions available'};
+  return {backedUp:'Rendered HTML retained; WordPress revisions available'};
 }
 export async function pastePrepared(tab,base,target) {
   await tab.clipboard.writeText(await fs.readFile(base+'/Juegos/'+target.slug+'/Elementor/portapapeles.json','utf8'));
   await frame(tab).locator('#elementor-add-new-section').click({button:'right'});
-  await clickAction(tab,/(\d+) Pegar desde otro sitio/);
-  const ax=await state(tab), field=ax.match(/(\d+) text field .*elementor-paste-area-dialog__input/);
+  const afterPasteDialog=await clickAction(tab,/(\d+) Pegar desde otro sitio/);
+  const ax=afterPasteDialog.includes('elementor-paste-area-dialog__input') ? afterPasteDialog : await state(tab), field=ax.match(/(\d+) text field .*elementor-paste-area-dialog__input/);
   if(!field)throw Error('Native paste dialog unavailable');
   await tab.pressKey(Number(field[1]),'Control+v');
   await tab.getAXState({emit:false});
@@ -34,14 +30,17 @@ export async function pastePrepared(tab,base,target) {
   return {inserted:title};
 }
 export async function checkMobile(tab) {
-  await clickAction(tab,/(\d+) tab .*Description: Móvil vertical/);
+  await tab.playwright.getByRole('tab',{name:'Móvil vertical (hasta 767px)',exact:true}).click();
+  await tab.getAXState({emit:false});
   const check=await frame(tab).locator('body').evaluate(body=>({width:body.clientWidth,sections:[...body.querySelectorAll('.fc-game-page,.fc-game-purchase,.fc-game-about,.fc-game-related')].map(e=>({width:Math.round(e.getBoundingClientRect().width),scroll:e.scrollWidth}))}));
-  await clickAction(tab,/(\d+) tab .*Description: Escritorio/);
+  await tab.playwright.getByRole('tab',{name:'Escritorio',exact:true}).click();
+  await tab.getAXState({emit:false});
   if(check.sections.some(s=>s.scroll>s.width+1))throw Error('Mobile overflow');
   return check;
 }
 export async function saveDraft(tab) {
-  await clickAction(tab,/(\d+) checkbox Description: Ajustes de Página/);
+  await tab.playwright.locator('[aria-label="Ajustes de Página"]').click();
+  await tab.getAXState({emit:false});
   await tab.playwright.getByLabel('Estructura de página',{exact:true}).selectOption({label:'Lienzo de Elementor'});
   await tab.getAXState({emit:false});
   await tab.playwright.getByRole('button',{name:'Guardar opciones',exact:true}).click();

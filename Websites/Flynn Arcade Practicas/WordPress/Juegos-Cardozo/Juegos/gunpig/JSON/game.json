@@ -1,0 +1,98 @@
+{
+  "title": "Gunpig",
+  "slug": "gunpig",
+  "source": "https://www.flynnsarcades.com/gunpig/",
+  "tagline": "Pigs, spaceships, weapons... what can go wrong?",
+  "platforms": [
+    "Switch"
+  ],
+  "hero_video": {
+    "id": "IBJKOnkBVgA",
+    "url": "https://www.youtube.com/watch?v=IBJKOnkBVgA",
+    "start": 0
+  },
+  "gallery": [
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_01.jpg",
+      "alt": "Gunpig gameplay screenshot 1"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_02.jpg",
+      "alt": "Gunpig gameplay screenshot 2"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_03.jpg",
+      "alt": "Gunpig gameplay screenshot 3"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_04.jpg",
+      "alt": "Gunpig gameplay screenshot 4"
+    },
+    {
+      "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/GunPig_Screenshot_05.jpg",
+      "alt": "Gunpig gameplay screenshot 5"
+    }
+  ],
+  "poster": {
+    "image": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/gunpig.jpg",
+    "alt": "Gunpig cover artwork"
+  },
+  "animation_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/relax_gunpig-1.gif",
+  "stores": [
+    {
+      "label": "Nintendo Switch",
+      "platform": "Switch",
+      "url": "https://www.nintendo.com/games/detail/gunpig-firepower-for-hire-switch/"
+    }
+  ],
+  "genres": [
+    "Platform",
+    "Arcade",
+    "Roguelike"
+  ],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Cute Pigs, spaceships and weapons, isn’t that a perfect combo? Join us in a thrilling adventure where you will have to test your speed and reflexes at the wheel."
+    },
+    {
+      "type": "paragraph",
+      "text": "Gunpig is a fast-paced arcade-style twin-stick shooter with a quick swap weapons system, bonus levels and hidden collectibles! Guaranteed desestress."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Development started in 2014",
+        "All audio, animation, UI and in-game graphics, as well as sound effects were created solely by Neil LaPointe!",
+        "Some of the Bax Cards illustrators include Charles Brubaker (Fuzzy Princess), Troy Little (PowerPuff Girls for IDW), and Newgrounds legend David C. Lovelace."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Features:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "8 different stages of increasing challenge",
+        "Quick swap ‘GunMod’ system…just drive over the pad to change out your gun at any time!",
+        "Hidden ‘Bax Card’ art card collectibles illustrated by individual artists hidden throughout the levels",
+        "Full soundtrack by Tower Of Guns/Mothergunship composer Mike Mirabello, with special victory track by The Mysterious Breakmaster Cylinder"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "The game doesn’t have time to get repetitive, and a couple of fun bonus levels help break things up. It has a well-fitting soundtrack that adds to the fun.",
+      "author": "Trevor Gould",
+      "outlet": "Pure NIntendo",
+      "url": "https://purenintendo.com/review-gunpig-firepower-for-hire-nintendo-switch/"
+    },
+    {
+      "quote": "Gunpig where it shines the most, without a doubt, is in its fun gameplay. This is achieved by providing us with different types of shots throughout the adventure..",
+      "author": "Javier M. G.",
+      "outlet": "Nintenderos",
+      "url": "https://www.nintenderos.com/2021/01/analisis-gunpig-firepower-for-hire-para-nintendo-switch/"
+    }
+  ]
+}

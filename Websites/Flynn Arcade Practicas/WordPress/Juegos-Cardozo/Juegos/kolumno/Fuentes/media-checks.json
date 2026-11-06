@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-11-06T07:04:05.247Z",
+  "method": "HEAD for original images/GIF; GET for YouTube public oEmbed",
+  "results": [
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_02.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_02.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_03.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_03.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_04.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_04.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_05.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_05.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_06-1.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/Screenshot_06-1.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/kolumno.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/08/kolumno.jpg"
+    },
+    {
+      "url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/kolumno_2.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "final_url": "https://www.flynnsarcades.com/wp-content/uploads/2021/11/kolumno_2.gif"
+    },
+    {
+      "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRbdx1j5yTWE&format=json",
+      "status": 200,
+      "content_type": "application/json",
+      "response": {
+        "title": "Trailer Kolumno Nintendo Switch 30fps",
+        "author_name": "Flynn's Arcade",
+        "author_url": "https://www.youtube.com/@jpd92363",
+        "type": "video",
+        "height": 113,
+        "width": 200,
+        "version": "1.0",
+        "provider_name": "YouTube",
+        "provider_url": "https://www.youtube.com/",
+        "thumbnail_height": 360,
+        "thumbnail_width": 480,
+        "thumbnail_url": "https://i.ytimg.com/vi/Rbdx1j5yTWE/hqdefault.jpg",
+        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/Rbdx1j5yTWE?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Trailer Kolumno Nintendo Switch 30fps\"></iframe>"
+      }
+    }
+  ]
+}
