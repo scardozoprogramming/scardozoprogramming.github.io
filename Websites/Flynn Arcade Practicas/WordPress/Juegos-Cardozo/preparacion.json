@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "boardwalk-builders",
+    "title": "Boardwalk Builders",
+    "sections": 11,
+    "widgets": 74,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-boardwalk-builders-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "cash-cow-dx",
+    "title": "Cash Cow DX",
+    "sections": 11,
+    "widgets": 83,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 10,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-cash-cow-dx-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "colored-effects",
+    "title": "Colored Effects",
+    "sections": 11,
+    "widgets": 86,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-colored-effects-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "dexter-stardust",
+    "title": "Dexter Stardust",
+    "sections": 11,
+    "widgets": 89,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 3,
+    "blocksPreserved": 8,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-dexter-stardust-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "donut-dodo",
+    "title": "Donut Dodo",
+    "sections": 11,
+    "widgets": 84,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 9,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-donut-dodo-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "eternum-ex",
+    "title": "Eternum Ex",
+    "sections": 11,
+    "widgets": 91,
+    "stores": 4,
+    "captures": 5,
+    "reviews": 3,
+    "blocksPreserved": 11,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-eternum-ex-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "explosive-dinosaurs",
+    "title": "Explosive Dinosaurs",
+    "sections": 11,
+    "widgets": 83,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 8,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/Gif_Explosive.gif",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "flora-fang-guardians-of-the-vampire-garden",
+    "title": "Flora & Fang: Guardians of the vampire garden",
+    "sections": 11,
+    "widgets": 82,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-flora-fang-guardians-of-the-vampire-garden-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "freddy-farmer",
+    "title": "Freddy Farmer",
+    "sections": 11,
+    "widgets": 84,
+    "stores": 4,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 11,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-freddy-farmer-hover.webp",
+    "status": "prepared-not-applied"
+  },
+  {
+    "slug": "galacticon",
+    "title": "Galacticon",
+    "sections": 11,
+    "widgets": 84,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 9,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-galacticon-hover.webp",
+    "status": "prepared-not-applied"
+  }
+]

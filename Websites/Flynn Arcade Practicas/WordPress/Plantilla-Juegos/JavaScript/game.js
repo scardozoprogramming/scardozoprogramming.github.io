@@ -10,7 +10,13 @@
       if(section) section.id = anchor;
     }
     const title = root.querySelector('.fc-game-title')?.textContent.trim() || 'Game';
-    root.querySelectorAll('.fc-game-gallery img').forEach((img,i) => { img.alt = `${title} gameplay screenshot ${i+1}`; });
+    root.querySelectorAll('.fc-game-gallery img').forEach((img,i) => {
+      img.alt = `${title} gameplay screenshot ${i+1}`;
+      const link = img.closest('a');
+      if(link) { link.href = img.getAttribute('src'); link.setAttribute('aria-label','View '+img.alt); }
+    });
+    const aboutTitle = root.querySelector('.fc-game-about-title .elementor-heading-title');
+    if(aboutTitle) aboutTitle.textContent = 'About '+title;
     const artwork = root.querySelector('.fc-game-artwork img');
     if (artwork) artwork.alt = title + ' cover artwork';
     const videoCover = root.querySelector('.fc-game-video img');
@@ -62,6 +68,7 @@
     const dialog = root.querySelector('[data-fc-gallery-dialog]');
     const shots = [...root.querySelectorAll('.fc-game-gallery a')];
     if (dialog && shots.length) {
+      dialog.setAttribute('aria-label',title+' screenshots');
       document.body.append(dialog);
       let index = 0, opener;
       const img = dialog.querySelector('img');

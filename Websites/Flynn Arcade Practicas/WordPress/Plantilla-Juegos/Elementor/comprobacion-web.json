@@ -1,0 +1,110 @@
+{
+  "anchors": [
+    {
+      "exists": true,
+      "target": "#overview",
+      "text": "Overview"
+    },
+    {
+      "exists": true,
+      "target": "#screenshots",
+      "text": "Screenshots"
+    },
+    {
+      "exists": true,
+      "target": "#purchase",
+      "text": "Purchase"
+    },
+    {
+      "exists": true,
+      "target": "#about-game",
+      "text": "About the game"
+    },
+    {
+      "exists": true,
+      "target": "#reviews",
+      "text": "Reviews"
+    }
+  ],
+  "desktop": {
+    "current": [
+      "Games"
+    ],
+    "scrollWidth": 1513,
+    "viewport": 1513
+  },
+  "mobile": {
+    "bodyScroll": 350,
+    "bodyWidth": 345,
+    "showcaseColumns": "308.8px",
+    "videoWidth": 308.8000183105469,
+    "viewport": 360,
+    "width": 344.8000183105469,
+    "sections": [
+      {
+        "name": "fc-game-block fc-game-page",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "name": "fc-game-block fc-game-sections",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "name": "fc-game-block fc-game-gallery",
+        "scroll": 350,
+        "width": 345
+      },
+      {
+        "name": "fc-game-block fc-game-purchase",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "name": "fc-game-block fc-game-about",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "name": "fc-game-block fc-game-related",
+        "scroll": 345,
+        "width": 345
+      }
+    ]
+  },
+  "template": {
+    "id": 7158,
+    "name": "Cardozo · Game page",
+    "viewUrl": "https://www.flynnsarcades.com/?elementor_library=cardozo-%c2%b7-game-page",
+    "editUrl": "https://www.flynnsarcades.com/wp-admin/post.php?post=7158&action=elementor"
+  },
+  "reuse": {
+    "current": [
+      "Games"
+    ],
+    "hasOverview": true,
+    "hasPurchase": true,
+    "hasReviews": true,
+    "noOverflow": true,
+    "rootId": "7158",
+    "title": "What Comes After"
+  },
+  "finalSupport": {
+    "gameUpdated": true,
+    "templateUpdated": true,
+    "galleryDynamicLabel": "What Comes After screenshots",
+    "galleryHrefTracksImages": true,
+    "escapeCloses": true
+  },
+  "interactions": {
+    "galleryNextAndEscape": true,
+    "reviewsThreeSlides": true,
+    "animationPauseResume": true,
+    "storeLinks": 3
+  },
+  "limitations": {
+    "youtubeEmbed": "Iframe URL correct and loaded only on click; playback not confirmed in this browser. External Watch on YouTube link available.",
+    "existingSiteConsoleError": "FlynnsArcade is not defined (global site script, outside game support)"
+  }
+}

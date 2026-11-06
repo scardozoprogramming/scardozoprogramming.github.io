@@ -1,0 +1,1019 @@
+[
+  {
+    "slug": "boardwalk-builders",
+    "title": "BoardWalk Builders Cardozo",
+    "sections": 11,
+    "widgets": 74,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 0,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-boardwalk-builders-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6933&action=elementor",
+    "id": "post-6933",
+    "preview": "https://www.flynnsarcades.com/?page_id=6933&preview=true",
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/boardwalk-builders/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/boardwalk-builders-switch/"
+      ],
+      "title": "Boardwalk Builders",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=cu29TVVvAhI\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/boardwalk-builders\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "widgets": 87,
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-boardwalk-builders-hover.webp"
+      }
+    },
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    }
+  },
+  {
+    "slug": "cash-cow-dx",
+    "title": "Cash Cow DX Cardozo",
+    "sections": 11,
+    "widgets": 83,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 10,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-cash-cow-dx-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6935&action=elementor",
+    "id": "post-6935",
+    "preview": "https://www.flynnsarcades.com/?page_id=6935&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "class": "elementor-element elementor-element-edit-mode elementor-element-f6502dd elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default fc-home fc-game-block fc-game-page",
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "class": "elementor-element elementor-element-edit-mode elementor-element-a267411 elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default fc-home fc-game-block fc-game-purchase",
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "class": "elementor-element elementor-element-edit-mode elementor-element-eb39ab2 elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default fc-home fc-game-block fc-game-about",
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "class": "elementor-element elementor-element-edit-mode elementor-element-f6954f5 elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default fc-home fc-game-block fc-game-related",
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/cash-cow-dx/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/cash-cow-dx-switch/"
+      ],
+      "title": "Cash Cow DX",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=9rvS3cC_qO8\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/cash-cow-dx\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "widgets": 96,
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-cash-cow-dx-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "colored-effects",
+    "title": "Colored Effects Cardozo",
+    "sections": 11,
+    "widgets": 86,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-colored-effects-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6937&action=elementor",
+    "id": "post-6937",
+    "preview": "https://www.flynnsarcades.com/?page_id=6937&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/colored-effects/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/colored-effects-switch/",
+        "https://store.steampowered.com/app/1892570/Colored_Effects/"
+      ],
+      "title": "Colored Effects",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=F_CmGh5HRxg\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/colored-effects\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "widgets": 99,
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-colored-effects-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "dexter-stardust",
+    "title": "Dexter Cardozo",
+    "sections": 11,
+    "widgets": 89,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 3,
+    "blocksPreserved": 8,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-dexter-stardust-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6939&action=elementor",
+    "id": "post-6939",
+    "preview": "https://www.flynnsarcades.com/?page_id=6939&preview=true",
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/dexter-stardust/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/dexter-stardust-adventures-in-outer-space-switch/",
+        "https://www.xbox.com/es-ES/games/store/dexter-stardust-adventures-in-outer-space/9mthklppvpml"
+      ],
+      "title": "Dexter Stardust",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=qGue3bNP5lA\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/dexter-stardust\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-dexter-stardust-hover.webp"
+      },
+      "reviewNext": "2 / 2",
+      "reviewRestored": "1 / 2"
+    },
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    }
+  },
+  {
+    "slug": "donut-dodo",
+    "title": "Donut Dodo Cardozo",
+    "sections": 11,
+    "widgets": 84,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 9,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-donut-dodo-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6941&action=elementor",
+    "id": "post-6941",
+    "preview": "https://www.flynnsarcades.com/?page_id=6941&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/donut-dodo/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/donut-dodo-switch/",
+        "https://store.steampowered.com/app/1779560/Donut_Dodo/"
+      ],
+      "title": "Donut Dodo",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=HRj6asc5Gpo\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/donut-dodo\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-donut-dodo-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "eternum-ex",
+    "title": "Eternum Ex Cardozo",
+    "sections": 11,
+    "widgets": 91,
+    "stores": 4,
+    "captures": 5,
+    "reviews": 3,
+    "blocksPreserved": 11,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-eternum-ex-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6943&action=elementor",
+    "id": "post-6943",
+    "preview": "https://www.flynnsarcades.com/?page_id=6943&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/eternum-ex/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/eternum-ex-switch/",
+        "https://store.playstation.com/es-es/product/EP4681-CUSA13145_00-ETERNUMEX0000000/",
+        "https://www.xbox.com/es-es/games/store/eternum-ex/9p17k8j4tfkq",
+        "https://store.steampowered.com/app/597900/Eternum_EX/"
+      ],
+      "title": "Eternum Ex",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=4cKBn3aDJX0&t=142s\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/eternum-ex\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"start\":142,\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-eternum-ex-hover.webp"
+      },
+      "reviewNext": "2 / 2",
+      "reviewRestored": "1 / 2"
+    }
+  },
+  {
+    "slug": "explosive-dinosaurs",
+    "title": "Explosive Dinosaurs Cardozo",
+    "sections": 11,
+    "widgets": 83,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 8,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/Gif_Explosive.gif",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6945&action=elementor",
+    "id": "post-6945",
+    "preview": "https://www.flynnsarcades.com/?page_id=6945&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_06.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_06.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_05.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_05.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_04.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_04.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_03.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_03.jpeg"
+        },
+        {
+          "href": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_02.jpeg",
+          "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_02.jpeg"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/Explosive-Dinosaurs-1808162.html"
+      ],
+      "title": "Explosive Dinosaurs",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=EbDJV61sm1w&t=1s\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/www.flynnsarcades.com\\/wp-content\\/uploads\\/2021\\/12\\/NSwitchDS_ExplosiveDinosaurs_06.jpeg\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"start\":1,\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2021/12/Gif_Explosive.gif"
+      }
+    }
+  },
+  {
+    "slug": "flora-fang-guardians-of-the-vampire-garden",
+    "title": "Flora & Fang: Guardians of the vampire garden Cardozo",
+    "sections": 11,
+    "widgets": 82,
+    "stores": 1,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 7,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-flora-fang-guardians-of-the-vampire-garden-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6947&action=elementor",
+    "id": "post-6947",
+    "preview": "https://www.flynnsarcades.com/?page_id=6947&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/flora-fang-guardians-of-the-vampire-garden/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/flora-and-fang-guardians-of-the-vampire-garden-switch/"
+      ],
+      "title": "Flora & Fang: Guardians of the vampire garden",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=zSTL72hEcds\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/flora-fang-guardians-of-the-vampire-garden\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-flora-fang-guardians-of-the-vampire-garden-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "freddy-farmer",
+    "title": "Freddy Farmer Cardozo",
+    "sections": 11,
+    "widgets": 84,
+    "stores": 4,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 11,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-freddy-farmer-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6949&action=elementor",
+    "id": "post-6949",
+    "preview": "https://www.flynnsarcades.com/?page_id=6949&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/freddy-farmer/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/freddy-farmer-switch/",
+        "https://store.steampowered.com/app/3207370/Freddy_Farmer/",
+        "https://www.xbox.com/en-us/games/store/freddy-farmer/9N726G6L4PKS",
+        "https://store.playstation.com/es-es/product/EP6718-PPSA29482_00-0077142230530028"
+      ],
+      "title": "Freddy Farmer",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=Bq4u-M9gdTg\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/freddy-farmer\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-freddy-farmer-hover.webp"
+      }
+    }
+  },
+  {
+    "slug": "galacticon",
+    "title": "Galacticon Cardozo",
+    "sections": 11,
+    "widgets": 84,
+    "stores": 2,
+    "captures": 5,
+    "reviews": 2,
+    "blocksPreserved": 9,
+    "animation": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-galacticon-hover.webp",
+    "status": "saved-draft-verified",
+    "edit": "https://www.flynnsarcades.com/wp-admin/post.php?post=6951&action=elementor",
+    "id": "post-6951",
+    "preview": "https://www.flynnsarcades.com/?page_id=6951&preview=true",
+    "mobile": {
+      "sections": [
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        },
+        {
+          "scroll": 345,
+          "width": 345
+        }
+      ],
+      "width": 345
+    },
+    "checks": {
+      "anchors": [
+        {
+          "exists": true,
+          "href": "#overview"
+        },
+        {
+          "exists": true,
+          "href": "#screenshots"
+        },
+        {
+          "exists": true,
+          "href": "#purchase"
+        },
+        {
+          "exists": true,
+          "href": "#about-game"
+        },
+        {
+          "exists": true,
+          "href": "#reviews"
+        }
+      ],
+      "captures": [
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-1.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-1.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-2.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-2.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-3.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-3.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-4.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-4.webp"
+        },
+        {
+          "href": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-5.webp",
+          "src": "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Games/Juegos/galacticon/Images/screenshot-5.webp"
+        }
+      ],
+      "headers": 1,
+      "overflow": false,
+      "related": [
+        "Eternum Ex",
+        "Lambs on the Road",
+        "Saga"
+      ],
+      "stores": [
+        "https://www.nintendo.com/us/store/products/galacticon-switch/",
+        "https://store.steampowered.com/app/1737980/Galacticon/"
+      ],
+      "title": "Galacticon",
+      "trailer": "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=1qq2xSTWAoA\",\"show_image_overlay\":\"yes\",\"image_overlay\":{\"url\":\"https:\\/\\/scardozoprogramming.github.io\\/Websites\\/Flynn%20Arcade%20Practicas\\/Games\\/Juegos\\/galacticon\\/Images\\/screenshot-1.webp\",\"id\":\"\",\"size\":\"\"},\"lazy_load\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\"}",
+      "galleryModal": true,
+      "galleryNext": true,
+      "animation": {
+        "loaded": true,
+        "src": "https://www.flynnsarcades.com/wp-content/uploads/2026/10/fc-home-galacticon-hover.webp"
+      }
+    }
+  }
+]

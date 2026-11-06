@@ -1,0 +1,33 @@
+{
+  "title": "Explosive Dinosaurs",
+  "slug": "explosive-dinosaurs",
+  "source": "https://www.flynnsarcades.com/explosive-dinosaurs/",
+  "tagline": "The multiplayer who made Michael Bay cry",
+  "platforms": ["Switch"],
+  "hero_video": {
+    "id": "EbDJV61sm1w",
+    "url": "https://www.youtube.com/watch?v=EbDJV61sm1w&t=1s",
+    "start": 1
+  },
+  "gallery": [
+    {"image":"https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_06.jpeg","alt":"Explosive Dinosaurs gameplay screenshot 1"},
+    {"image":"https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_05.jpeg","alt":"Explosive Dinosaurs gameplay screenshot 2"},
+    {"image":"https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_04.jpeg","alt":"Explosive Dinosaurs gameplay screenshot 3"},
+    {"image":"https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_03.jpeg","alt":"Explosive Dinosaurs gameplay screenshot 4"},
+    {"image":"https://www.flynnsarcades.com/wp-content/uploads/2021/12/NSwitchDS_ExplosiveDinosaurs_02.jpeg","alt":"Explosive Dinosaurs gameplay screenshot 5"}
+  ],
+  "poster":{"image":"https://www.flynnsarcades.com/wp-content/uploads/2021/09/2W8cV0df.jpeg","alt":"Explosive Dinosaurs cover artwork"},
+  "animation_url":"https://www.flynnsarcades.com/wp-content/uploads/2021/12/Gif_Explosive.gif",
+  "stores":[{"label":"Nintendo Switch","platform":"Switch","url":"https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/Explosive-Dinosaurs-1808162.html"}],
+  "genres":["Platform","Multiplayer","Mini Games"],
+  "blocks":[
+    {"type":"paragraph","text":"The main objective of this game is to DESTROY FRIENDSHIPS with PURE COMPETITION!! (We shall not be liable if you end up having FUN)"},
+    {"type":"paragraph","text":"Up to 4 PLAYERS in just one TV, only buying the game ONCE!"},
+    {"type":"heading","text":"Features"},
+    {"type":"list","items":["40 different competitive multiplayer minigames","Prehistory Mode: Unlock new minigames alone or with your friends","Team Mode (2VS2): One wins and one sabotages the other team. An amazing strategy tweak to every minigame!","Crazy Arcade Challenge: One minigame after another and just one chance. Will you make it?","Inspired by Michael Bay"]}
+  ],
+  "reviews":[
+    {"quote":"The game thus moves away from other party games such as Mario Party and the like that err on the easy side…","author":"Adrián Laguna","outlet":"Navigames","url":"https://www.navigames.es/noticias/explosive-dinosaurs-llegara-a-steam-el-6-de-diciembre/"},
+    {"quote":"Explosive Dinosaurs is a party game not suitable for rat children or bad losers.","author":"Gendou","outlet":"Retro-o-Rama","url":"https://retroorama.blogspot.com/2018/11/rawrlab-nos-trae-diversion-prehistorica.html","translated_from":"Spanish"}
+  ]
+}
