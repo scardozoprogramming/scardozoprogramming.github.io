@@ -1,3 +1,6 @@
+@import url('./Sincronizado/fontawesome.min-c66b16aa957b02.css');
+@import url('./Sincronizado/brands.min-880c3fd727ea3a.css');
+@import url('./Sincronizado/solid.min-1b73948aa145f7.css');
 .fa-local-lightbox{inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;border:0;padding:56px 64px 24px;background:rgb(3 8 17 / 97%);color:#f1f6fc}
 .fa-local-lightbox::backdrop{background:#030811}
 .fa-local-lightbox[open]{display:grid;place-items:center}
