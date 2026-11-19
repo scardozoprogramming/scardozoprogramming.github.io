@@ -1,0 +1,310 @@
+[
+  {
+    "title": "8-Colors Star Guardians",
+    "source": "https://www.flynnsarcades.com/8-colors-star-guardians/",
+    "file": "Games/Juegos/8-colors-star-guardians/HTML/index.html",
+    "template": "Games/Juegos/8-colors-star-guardians/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "About",
+    "source": "https://www.flynnsarcades.com/about-3/",
+    "file": "About/HTML/index.html",
+    "template": "About/JSON/pagina.json",
+    "kind": "about"
+  },
+  {
+    "title": "A winding Path",
+    "source": "https://www.flynnsarcades.com/a-winding-path/",
+    "file": "Games/Juegos/a-winding-path/HTML/index.html",
+    "template": "Games/Juegos/a-winding-path/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Attack of the Karens",
+    "source": "https://www.flynnsarcades.com/attack-of-the-karens/",
+    "file": "Games/Juegos/attack-of-the-karens/HTML/index.html",
+    "template": "Games/Juegos/attack-of-the-karens/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "BoardWalk Builders",
+    "source": "https://www.flynnsarcades.com/boardwalk-builders/",
+    "file": "Games/Juegos/boardwalk-builders/HTML/index.html",
+    "template": "Games/Juegos/boardwalk-builders/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Donut Dodo",
+    "source": "https://www.flynnsarcades.com/donut-dodo/",
+    "file": "Games/Juegos/donut-dodo/HTML/index.html",
+    "template": "Games/Juegos/donut-dodo/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Dexter",
+    "source": "https://www.flynnsarcades.com/dexter/",
+    "file": "Games/Juegos/dexter/HTML/index.html",
+    "template": "Games/Juegos/dexter/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Colored Effects",
+    "source": "https://www.flynnsarcades.com/colored-effects/",
+    "file": "Games/Juegos/colored-effects/HTML/index.html",
+    "template": "Games/Juegos/colored-effects/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Cash Cow DX",
+    "source": "https://www.flynnsarcades.com/cash-cow-dx/",
+    "file": "Games/Juegos/cash-cow-dx/HTML/index.html",
+    "template": "Games/Juegos/cash-cow-dx/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Eternum Ex",
+    "source": "https://www.flynnsarcades.com/eternum-ex/",
+    "file": "Games/Juegos/eternum-ex/HTML/index.html",
+    "template": "Games/Juegos/eternum-ex/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Explosive Dinosaurs",
+    "source": "https://www.flynnsarcades.com/explosive-dinosaurs/",
+    "file": "Games/Juegos/explosive-dinosaurs/HTML/index.html",
+    "template": "Games/Juegos/explosive-dinosaurs/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Freddy Farmer",
+    "source": "https://www.flynnsarcades.com/freddy-farmer/",
+    "file": "Games/Juegos/freddy-farmer/HTML/index.html",
+    "template": "Games/Juegos/freddy-farmer/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Galacticon",
+    "source": "https://www.flynnsarcades.com/galacticon/",
+    "file": "Games/Juegos/galacticon/HTML/index.html",
+    "template": "Games/Juegos/galacticon/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Flora & Fang: Guardians of the vampire garden",
+    "source": "https://www.flynnsarcades.com/flora-fang-guardians-of-the-vampire-garden/",
+    "file": "Games/Juegos/flora-fang-guardians-of-the-vampire-garden/HTML/index.html",
+    "template": "Games/Juegos/flora-fang-guardians-of-the-vampire-garden/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Games",
+    "source": "https://www.flynnsarcades.com/games/",
+    "file": "Games/HTML/index.html",
+    "template": "Games/JSON/pagina.json",
+    "kind": "games"
+  },
+  {
+    "title": "Hexagravity",
+    "source": "https://www.flynnsarcades.com/hexagravity/",
+    "file": "Games/Juegos/hexagravity/HTML/index.html",
+    "template": "Games/Juegos/hexagravity/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Indies",
+    "source": "https://www.flynnsarcades.com/indies/",
+    "file": "Indies/HTML/index.html",
+    "template": "Indies/JSON/pagina.json",
+    "kind": "indies"
+  },
+  {
+    "title": "Gunpig",
+    "source": "https://www.flynnsarcades.com/gunpig/",
+    "file": "Games/Juegos/gunpig/HTML/index.html",
+    "template": "Games/Juegos/gunpig/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Goliath Depot",
+    "source": "https://www.flynnsarcades.com/goliath-depot/",
+    "file": "Games/Juegos/goliath-depot/HTML/index.html",
+    "template": "Games/Juegos/goliath-depot/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Inicio",
+    "source": "https://www.flynnsarcades.com/",
+    "file": "Home/HTML/index.html",
+    "template": "Home/JSON/pagina.json",
+    "kind": "home"
+  },
+  {
+    "title": "ION Shift",
+    "source": "https://www.flynnsarcades.com/ion-shift/",
+    "file": "Games/Juegos/ion-shift/HTML/index.html",
+    "template": "Games/Juegos/ion-shift/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Kolumno",
+    "source": "https://www.flynnsarcades.com/kolumno/",
+    "file": "Games/Juegos/kolumno/HTML/index.html",
+    "template": "Games/Juegos/kolumno/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Laraan",
+    "source": "https://www.flynnsarcades.com/laraan/",
+    "file": "Games/Juegos/laraan/HTML/index.html",
+    "template": "Games/Juegos/laraan/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Living Dead House",
+    "source": "https://www.flynnsarcades.com/living-dead-house/",
+    "file": "Games/Juegos/living-dead-house/HTML/index.html",
+    "template": "Games/Juegos/living-dead-house/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Lambs on the road",
+    "source": "https://www.flynnsarcades.com/lambs-on-the-road/",
+    "file": "Games/Juegos/lambs-on-the-road/HTML/index.html",
+    "template": "Games/Juegos/lambs-on-the-road/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Murtop",
+    "source": "https://www.flynnsarcades.com/murtop/",
+    "file": "Games/Juegos/murtop/HTML/index.html",
+    "template": "Games/Juegos/murtop/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Monster Puzzle",
+    "source": "https://www.flynnsarcades.com/monster-puzzle/",
+    "file": "Games/Juegos/monster-puzzle/HTML/index.html",
+    "template": "Games/Juegos/monster-puzzle/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Looking Up I See Only A Ceiling",
+    "source": "https://www.flynnsarcades.com/looking-up-i-see-only-a-ceiling/",
+    "file": "Games/Juegos/looking-up-i-see-only-a-ceiling/HTML/index.html",
+    "template": "Games/Juegos/looking-up-i-see-only-a-ceiling/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Papertris",
+    "source": "https://www.flynnsarcades.com/papertris/",
+    "file": "Games/Juegos/papertris/HTML/index.html",
+    "template": "Games/Juegos/papertris/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Press",
+    "source": "https://www.flynnsarcades.com/press/",
+    "file": "Press/HTML/index.html",
+    "template": "Press/JSON/pagina.json",
+    "kind": "press"
+  },
+  {
+    "title": "Satryn DX",
+    "source": "https://www.flynnsarcades.com/satryn-dx/",
+    "file": "Games/Juegos/satryn-dx/HTML/index.html",
+    "template": "Games/Juegos/satryn-dx/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Sentry City",
+    "source": "https://www.flynnsarcades.com/sentry-city/",
+    "file": "Games/Juegos/sentry-city/HTML/index.html",
+    "template": "Games/Juegos/sentry-city/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Saga",
+    "source": "https://www.flynnsarcades.com/saga/",
+    "file": "Games/Juegos/saga/HTML/index.html",
+    "template": "Games/Juegos/saga/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Roombattle",
+    "source": "https://www.flynnsarcades.com/roombattle/",
+    "file": "Games/Juegos/roombattle/HTML/index.html",
+    "template": "Games/Juegos/roombattle/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Silver Bullet",
+    "source": "https://www.flynnsarcades.com/silver-bullet/",
+    "file": "Games/Juegos/silver-bullet/HTML/index.html",
+    "template": "Games/Juegos/silver-bullet/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Skies Above",
+    "source": "https://www.flynnsarcades.com/skies-above/",
+    "file": "Games/Juegos/skies-above/HTML/index.html",
+    "template": "Games/Juegos/skies-above/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Super Spy Raccoon",
+    "source": "https://www.flynnsarcades.com/super-spy-raccoon/",
+    "file": "Games/Juegos/super-spy-raccoon/HTML/index.html",
+    "template": "Games/Juegos/super-spy-raccoon/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Space Ducks: The great escape",
+    "source": "https://www.flynnsarcades.com/space-ducks-the-great-escape/",
+    "file": "Games/Juegos/space-ducks-the-great-escape/HTML/index.html",
+    "template": "Games/Juegos/space-ducks-the-great-escape/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "The Last Cat in the Universe",
+    "source": "https://www.flynnsarcades.com/the-last-cat-in-the-universe/",
+    "file": "Games/Juegos/the-last-cat-in-the-universe/HTML/index.html",
+    "template": "Games/Juegos/the-last-cat-in-the-universe/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "The Legend of Gwen",
+    "source": "https://www.flynnsarcades.com/the-legend-of-gwen/",
+    "file": "Games/Juegos/the-legend-of-gwen/HTML/index.html",
+    "template": "Games/Juegos/the-legend-of-gwen/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Unto Deepest Depths",
+    "source": "https://www.flynnsarcades.com/unto-deepest-depths/",
+    "file": "Games/Juegos/unto-deepest-depths/HTML/index.html",
+    "template": "Games/Juegos/unto-deepest-depths/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "Privacy",
+    "source": "https://www.flynnsarcades.com/privacy/",
+    "file": "Privacy/HTML/index.html",
+    "template": "Privacy/JSON/pagina.json",
+    "kind": "privacy"
+  },
+  {
+    "title": "Viral Reload EX",
+    "source": "https://www.flynnsarcades.com/viral-reload-ex/",
+    "file": "Games/Juegos/viral-reload-ex/HTML/index.html",
+    "template": "Games/Juegos/viral-reload-ex/JSON/pagina.json",
+    "kind": "game"
+  },
+  {
+    "title": "What Comes After",
+    "source": "https://www.flynnsarcades.com/what-comes-after/",
+    "file": "Games/Juegos/what-comes-after/HTML/index.html",
+    "template": "Games/Juegos/what-comes-after/JSON/pagina.json",
+    "kind": "game"
+  }
+]

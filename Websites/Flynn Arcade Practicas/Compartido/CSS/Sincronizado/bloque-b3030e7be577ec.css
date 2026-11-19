@@ -1,0 +1,87 @@
+
+@font-face {font-family:"Flynns Catalog Preview Barlow";src:url("../../Fonts/Sincronizado/barlow-regular-7fda4b68acc067.woff") format("woff");font-weight:400;font-display:swap;}
+@font-face {font-family:"Flynns Catalog Preview Barlow";src:url("../../Fonts/Sincronizado/barlow-bold-037d61a1fae104.woff") format("woff");font-weight:700;font-display:swap;}
+@font-face {font-family:"Flynns Catalog Preview Pixel";src:url("../../Fonts/Sincronizado/press-start-2p-5221d3a63e00d0.woff") format("woff");font-weight:400;font-display:swap;}
+[data-elementor-id="8134"] .fc-catalog-preview-support { display:none !important; }
+body.postid-8134 { --fc-cyan:#00deee; --fc-pink:#f51ca5; --fc-muted:#a6bfd3; --fc-line:#183348; --fc-white:#f1f6fc; position:relative; isolation:isolate; min-height:100vh; background:#030811 !important; }
+body.postid-8134::before { content:""; position:fixed; z-index:-1; inset:0; pointer-events:none; opacity:.7; background:linear-gradient(90deg,rgb(3 8 17 / 50%),rgb(3 8 17 / 90%) 32%,rgb(3 8 17 / 90%) 68%,rgb(3 8 17 / 50%)),url("../../Images/Sincronizado/arcade-city-eedd5235a99c42.webp") center / cover no-repeat; }
+body.postid-8134 #content, body.postid-8134 [data-elementor-id="8134"] { background:transparent !important; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home { --fc-cyan: #00deee; --fc-pink: #f51ca5; --fc-ink: #030811; --fc-line: #183348; --fc-muted: #a6bfd3; color: #f1f6fc; font: 16px/1.6 "Flynns Catalog Preview Barlow", Arial, sans-serif; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home :where(h1,h2,h3,p,figure) { margin: 0; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home :where(.elementor-heading-title) { color: #f1f6fc; font-family: inherit; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home :where(a) { text-decoration: none; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home [hidden] { display: none !important; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home :is(a,button,input):focus-visible { outline: 2px solid var(--fc-cyan); outline-offset: 4px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home .elementor-widget { margin-bottom: 0; }
+body.postid-8134 [data-elementor-id="8134"] .fc-home .elementor-widget-text-editor { color: var(--fc-muted); font-family: inherit; }
+body.postid-8134 [data-elementor-id="8134"] .fc-cta .elementor-button { display: inline-flex; align-items: center; min-height: 44px; padding: 12px 21px; border: 1px solid; border-image: linear-gradient(100deg,var(--fc-cyan),var(--fc-pink)) 1; border-radius: 0; color: #f1f6fc; background-color: var(--fc-ink); font: 700 12px/1.3 "Flynns Catalog Preview Barlow", Arial, sans-serif; text-transform: uppercase; }
+body.postid-8134 [data-elementor-id="8134"] .fc-cta .elementor-button:hover { background-color: #092132; color: var(--fc-cyan); box-shadow: 0 0 16px rgb(0 222 238 / 10%); }
+body.postid-8134 [data-elementor-id="8134"] .fc-cta .elementor-button-content-wrapper { gap: 14px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-cta .elementor-button-icon { color: var(--fc-cyan); font-size: 14px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog > .elementor-container > .elementor-column > .elementor-widget-wrap { display: grid !important; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; align-items: stretch; position: relative; }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog-title, body.postid-8134 [data-elementor-id="8134"] .fc-filterbar, body.postid-8134 [data-elementor-id="8134"] .fc-empty, body.postid-8134 [data-elementor-id="8134"] .fc-loadmore { grid-column: 1 / -1; }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog-title .elementor-heading-title { font: 400 21px/1.5 "Flynns Catalog Preview Pixel", monospace; text-transform: uppercase; color: var(--fc-cyan); }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog-title::after { content: ""; display: block; width: 64px; height: 2px; margin-top: 14px; background: linear-gradient(90deg,var(--fc-cyan),var(--fc-pink)); }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog-count { position: absolute; top: 10px; right: 0; width: auto; }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog-count .elementor-heading-title { color: var(--fc-muted); font: 400 12px/1.5 "Flynns Catalog Preview Barlow", Arial, sans-serif; }
+body.postid-8134 [data-elementor-id="8134"] .fc-filterbar { grid-row: 2; padding-right: 250px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-filterbar > .elementor-container > .elementor-column > .elementor-widget-wrap { display: flex; flex-wrap: wrap; gap: 6px; align-content: center; }
+body.postid-8134 [data-elementor-id="8134"] .fc-filterbar .elementor-widget-button { width: auto; }
+body.postid-8134 [data-elementor-id="8134"] .fc-filter .elementor-button { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; border-radius: 2px; background: transparent; color: var(--fc-muted); font: 700 11px/1.3 "Flynns Catalog Preview Barlow", Arial, sans-serif; text-transform: uppercase; }
+body.postid-8134 [data-elementor-id="8134"] .fc-filter.fc-current .elementor-button, body.postid-8134 [data-elementor-id="8134"] .fc-filter .elementor-button:hover { color: #030811; background: var(--fc-cyan); }
+body.postid-8134 [data-elementor-id="8134"] .fc-search { grid-column: 3; grid-row: 2; width: 225px; justify-self: end; align-self: center; }
+body.postid-8134 [data-elementor-id="8134"] .fc-search input { width: 100%; min-height: 48px; padding: 12px 16px; border: 1px solid var(--fc-line); border-radius: 2px; background: rgb(3 8 17 / 90%); color: #f1f6fc; font: 14px "Flynns Catalog Preview Barlow", Arial, sans-serif; }
+body.postid-8134 [data-elementor-id="8134"] .fc-search input::placeholder { color: var(--fc-muted); }
+body.postid-8134 [data-elementor-id="8134"] .fc-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+body.postid-8134 [data-elementor-id="8134"] .fc-card { width: 100% !important; min-width: 0; margin: 0; padding: 0; border: 1px solid var(--fc-line); border-radius: 3px; overflow: hidden; background: #07111e; transition: border-color .18s,box-shadow .18s; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card:hover, body.postid-8134 [data-elementor-id="8134"] .fc-card:focus-within { border-color: var(--fc-cyan); box-shadow: 0 0 18px rgb(0 222 238 / 12%); }
+body.postid-8134 [data-elementor-id="8134"] .fc-card > .elementor-container { height: 100%; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card > .elementor-container > .elementor-column { width: 100%; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card > .elementor-container > .elementor-column > .elementor-widget-wrap { display: flex; flex-direction: column; align-content: stretch; gap: 12px; padding: 0 0 24px; height: 100%; }
+body.postid-8134 [data-elementor-id="8134"] .fc-cover { background: #030811; }
+body.postid-8134 [data-elementor-id="8134"] .fc-cover img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-title { padding: 7px 20px 0; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-title .elementor-heading-title { color: #f1f6fc; font: 700 20px/1.3 "Flynns Catalog Preview Barlow", Arial, sans-serif; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-title a { color: inherit; }
+body.postid-8134 [data-elementor-id="8134"] .fc-tags { padding: 0 20px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-tags .elementor-icon-list-items { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+body.postid-8134 [data-elementor-id="8134"] .fc-tags .elementor-icon-list-item { padding: 3px 8px; margin: 0; background: #0c2938; border-radius: 2px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-tags .elementor-icon-list-text { padding: 0; color: var(--fc-cyan); font: 700 10px/1.5 "Flynns Catalog Preview Barlow", Arial, sans-serif; text-transform: uppercase; }
+body.postid-8134 [data-elementor-id="8134"] .fc-tags .elementor-icon-list-icon { display: none; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms { padding: 10px 70px 0 20px; margin-top: auto; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-items { display: flex; flex-wrap: wrap; gap: 17px; margin: 0; padding: 0; list-style: none; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-item { margin: 0; padding: 0; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-icon { color: var(--fc-pink); font-size: 23px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-icon :is(i,svg) { color: var(--fc-pink); fill: var(--fc-pink); width: 1em; height: 1em; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .fa-nintendo-switch { display: inline-block; background-color: var(--fc-pink); mask: url("../../Images/Sincronizado/interruptor-de-nintendo-da004eb05d33c5.svg") center / contain no-repeat; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .fa-nintendo-switch::before { content: none; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-arrow { position: absolute; right: 15px; bottom: 17px; width: auto; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-arrow .elementor-button { min-width: 36px; min-height: 36px; display: grid; place-items: center; padding: 6px; color: var(--fc-muted); background: transparent; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-arrow .elementor-button-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+body.postid-8134 [data-elementor-id="8134"] .fc-empty { display: none; text-align: center; }
+body.postid-8134 [data-elementor-id="8134"] .fc-loadmore { text-align: center; padding-top: 8px; }
+@media(max-width:1100px) {
+ body.postid-8134 [data-elementor-id="8134"] .fc-filterbar { padding-right: 0; }
+ body.postid-8134 [data-elementor-id="8134"] .fc-search { grid-column: 1/-1; grid-row: 3; width: 100%; }
+ body.postid-8134 [data-elementor-id="8134"] .fc-catalog > .elementor-container > .elementor-column > .elementor-widget-wrap { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:767px) {
+ body.postid-8134 [data-elementor-id="8134"] .fc-catalog > .elementor-container > .elementor-column > .elementor-widget-wrap { grid-template-columns: 1fr; }
+ body.postid-8134 [data-elementor-id="8134"] .fc-catalog-title .elementor-heading-title { font-size: 18px; }
+ body.postid-8134 [data-elementor-id="8134"] .fc-catalog-count { top: 5px; }
+}
+@media(prefers-reduced-motion:reduce) { body.postid-8134 [data-elementor-id="8134"] .fc-card { transition: none; } }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-icon { font-size:23px !important; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .elementor-icon-list-icon :is(i,svg) { font-size:23px !important; width:23px !important; height:23px !important; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .fa-nintendo-switch { display:inline-block; background-color:var(--fc-pink); mask:url("../../Images/Sincronizado/interruptor-de-nintendo-da004eb05d33c5.svg") center/contain no-repeat; }
+body.postid-8134 [data-elementor-id="8134"] .fc-platforms .fa-nintendo-switch::before { content:none; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-title .elementor-heading-title { font-size:18px; font-weight:600; line-height:1.4; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card { border-radius:4px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-card-title { padding:7px 22px 0; }
+body.postid-8134 [data-elementor-id="8134"] .fc-tags { padding-inline:22px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-catalog-title .elementor-heading-title { font-size:18px; }
+body.postid-8134 [data-elementor-id="8134"] .fc-filter .elementor-button { padding:8px 13px; font-size:12px; font-weight:600; background:rgb(3 8 17 / 80%); }
+body.postid-8134 [data-elementor-id="8134"] .fc-filter.fc-current .elementor-button { background:var(--fc-cyan); }
+@media(max-width:767px) { body.postid-8134::before { background-image:linear-gradient(90deg,rgb(3 8 17 / 80%),rgb(3 8 17 / 70%)),url("../../Images/Sincronizado/arcade-city-mobile-35ed9490b811cd.webp"); } }
+body.postid-8134.elementor-editor-active [data-elementor-id="8134"] .fc-filter a[data-fc-filter="all"] {color:#030811;background:var(--fc-cyan);}

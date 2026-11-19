@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Eternum Ex",
+    "slug": "eternum-ex",
+    "image": "Compartido/Images/Sincronizado/fc-home-eternum-ex-cover-284e7cb6b4f64e.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-eternum-ex-hover-75422eb2cb7b5b.webp",
+    "tags": [
+      "Platform",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PlayStation",
+      "Xbox",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/eternum-ex-switch/"
+      },
+      {
+        "label": "PlayStation",
+        "url": "https://store.playstation.com/es-es/product/EP4681-CUSA13145_00-ETERNUMEX0000000/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-es/games/store/eternum-ex/9p17k8j4tfkq"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/597900/Eternum_EX/"
+      }
+    ],
+    "url": "Games/Juegos/eternum-ex/HTML/index.html"
+  },
+  {
+    "title": "Lambs on the Road",
+    "slug": "lambs-on-the-road",
+    "image": "Compartido/Images/Sincronizado/LAMBSONTHEROAD_Banner_1920x1080-c6eb95e917f0ff.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-lambs-on-the-road-hover-31f907d7bbd819.webp",
+    "tags": [
+      "Platform",
+      "Adventure"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/lambs-on-the-road-the-beginning-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/866270/Lambs_on_the_road__The_beginning/"
+      }
+    ],
+    "url": "Games/Juegos/lambs-on-the-road/HTML/index.html"
+  },
+  {
+    "title": "Saga",
+    "slug": "saga",
+    "image": "Compartido/Images/Sincronizado/project-saga-1-935ae494e270de.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-saga-hover-4eae0b4170d775.webp",
+    "tags": [
+      "Platform",
+      "Action"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/2590820/Saga/?l=english"
+      }
+    ],
+    "url": "Games/Juegos/saga/HTML/index.html"
+  }
+]

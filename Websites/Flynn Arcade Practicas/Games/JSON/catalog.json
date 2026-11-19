@@ -2,193 +2,826 @@
   {
     "title": "What Comes After",
     "slug": "what-comes-after",
-    "page": "Games/Juegos/what-comes-after/HTML/index.html",
-    "data": "Games/Juegos/what-comes-after/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/what-comes-after-presskit-16x9-1-4382bf40b5cb2e.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-what-comes-after-hover-4ccb8cc644a6e6.webp",
+    "tags": [
+      "Narrative",
+      "Adventure"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "Xbox",
+      "PlayStation"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/what-comes-after-switch/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-ES/games/store/what-comes-after/9P6DQHFMRTSR"
+      },
+      {
+        "label": "PlayStation",
+        "url": "https://store.playstation.com/es-es/concept/10014985"
+      }
+    ],
+    "url": "Games/Juegos/what-comes-after/HTML/index.html"
   },
   {
     "title": "Donut Dodo",
     "slug": "donut-dodo",
-    "page": "Games/Juegos/donut-dodo/HTML/index.html",
-    "data": "Games/Juegos/donut-dodo/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-donut-dodo-cover-8fa45f5f574803.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-donut-dodo-hover-24037c64200495.webp",
+    "tags": [
+      "Platform",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/donut-dodo-switch/"
+      }
+    ],
+    "url": "Games/Juegos/donut-dodo/HTML/index.html"
   },
   {
     "title": "Looking Up I See Only A Ceiling",
     "slug": "looking-up-i-see-only-a-ceiling",
-    "page": "Games/Juegos/looking-up-i-see-only-a-ceiling/HTML/index.html",
-    "data": "Games/Juegos/looking-up-i-see-only-a-ceiling/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-looking-up-i-see-only-a-ceiling-cover-6817240d628c1d.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-looking-up-i-see-only-a-ceiling-hover-ffad0859f0b417.webp",
+    "tags": [
+      "Adventure",
+      "Narrative",
+      "Horror"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/looking-up-i-see-only-a-ceiling-switch/"
+      }
+    ],
+    "url": "Games/Juegos/looking-up-i-see-only-a-ceiling/HTML/index.html"
   },
   {
-    "title": "Dexter Stardust",
-    "slug": "dexter-stardust",
-    "page": "Games/Juegos/dexter-stardust/HTML/index.html",
-    "data": "Games/Juegos/dexter-stardust/JSON/game.json"
+    "title": "Saga",
+    "slug": "saga",
+    "image": "Compartido/Images/Sincronizado/project-saga-1-935ae494e270de.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-saga-hover-4eae0b4170d775.webp",
+    "tags": [
+      "Action",
+      "Platform",
+      "Adventure",
+      "RPG"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/2590820/Saga/?l=spanish"
+      }
+    ],
+    "url": "Games/Juegos/saga/HTML/index.html"
   },
   {
     "title": "Eternum Ex",
     "slug": "eternum-ex",
-    "page": "Games/Juegos/eternum-ex/HTML/index.html",
-    "data": "Games/Juegos/eternum-ex/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-eternum-ex-cover-284e7cb6b4f64e.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-eternum-ex-hover-75422eb2cb7b5b.webp",
+    "tags": [
+      "Platform",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PlayStation",
+      "Xbox",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/eternum-ex-switch/"
+      },
+      {
+        "label": "PlayStation",
+        "url": "https://store.playstation.com/es-es/product/EP4681-CUSA13145_00-ETERNUMEX0000000/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-es/games/store/eternum-ex/9p17k8j4tfkq"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/597900/Eternum_EX/"
+      }
+    ],
+    "url": "Games/Juegos/eternum-ex/HTML/index.html"
+  },
+  {
+    "title": "Roombattle",
+    "slug": "roombattle",
+    "image": "Compartido/Images/Sincronizado/Roombattle_CoverArt-8d8ff3ba415251.png",
+    "preview": "Compartido/Images/Sincronizado/RoomBattle_GIF-e4bbc33013370e.gif",
+    "tags": [
+      "Party Game",
+      "Multiplayer",
+      "Mini Games"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/roombattle-switch/"
+      }
+    ],
+    "url": "Games/Juegos/roombattle/HTML/index.html"
+  },
+  {
+    "title": "Dexter Stardust",
+    "slug": "dexter",
+    "image": "Compartido/Images/Sincronizado/fc-home-dexter-stardust-cover-9e8f02bbcc8f2b.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-dexter-stardust-hover-5363bd2e2f80f0.webp",
+    "tags": [
+      "Point & Click",
+      "Adventure",
+      "Puzzle"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "Xbox"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/dexter-stardust-adventures-in-outer-space-switch/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-ES/games/store/dexter-stardust-adventures-in-outer-space/9mthklppvpml"
+      }
+    ],
+    "url": "Games/Juegos/dexter/HTML/index.html"
   },
   {
     "title": "The Last Cat in the Universe",
     "slug": "the-last-cat-in-the-universe",
-    "page": "Games/Juegos/the-last-cat-in-the-universe/HTML/index.html",
-    "data": "Games/Juegos/the-last-cat-in-the-universe/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-the-last-cat-in-the-universe-cover-faaf7ab7dd42d8.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-the-last-cat-in-the-universe-hover-3289b546b8a2b8.webp",
+    "tags": [
+      "Narrative",
+      "Incremental",
+      "Relax Game"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "Xbox"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-last-cat-in-the-universe-switch/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-CO/games/store/the-last-cat-in-the-universe/9p3fj21jh844"
+      }
+    ],
+    "url": "Games/Juegos/the-last-cat-in-the-universe/HTML/index.html"
   },
   {
     "title": "Boardwalk Builders",
     "slug": "boardwalk-builders",
-    "page": "Games/Juegos/boardwalk-builders/HTML/index.html",
-    "data": "Games/Juegos/boardwalk-builders/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-boardwalk-builders-cover-78be394dfaf7cd.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-boardwalk-builders-hover-6b704359d92ed5.webp",
+    "tags": [
+      "Simulation",
+      "Puzzle"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/boardwalk-builders-switch/"
+      }
+    ],
+    "url": "Games/Juegos/boardwalk-builders/HTML/index.html"
   },
   {
     "title": "Viral Reload EX",
     "slug": "viral-reload-ex",
-    "page": "Games/Juegos/viral-reload-ex/HTML/index.html",
-    "data": "Games/Juegos/viral-reload-ex/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-viral-reload-ex-cover-bf7c72f8efbac0.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-viral-reload-ex-hover-f34924aab5ff75.webp",
+    "tags": [
+      "Arcade",
+      "Shooter"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/viral-reload-ex-switch/"
+      }
+    ],
+    "url": "Games/Juegos/viral-reload-ex/HTML/index.html"
   },
   {
     "title": "Living Dead House",
     "slug": "living-dead-house",
-    "page": "Games/Juegos/living-dead-house/HTML/index.html",
-    "data": "Games/Juegos/living-dead-house/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-living-dead-house-cover-d7d55bcd423b48.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-living-dead-house-hover-d0c964cfcc7a45.webp",
+    "tags": [
+      "Arcade",
+      "Shooter",
+      "Survival",
+      "Multiplayer"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/living-dead-house-switch/"
+      }
+    ],
+    "url": "Games/Juegos/living-dead-house/HTML/index.html"
   },
   {
     "title": "Unto Deepest Depths",
     "slug": "unto-deepest-depths",
-    "page": "Games/Juegos/unto-deepest-depths/HTML/index.html",
-    "data": "Games/Juegos/unto-deepest-depths/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-unto-deepest-depths-cover-2a7093933c4aec.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-unto-deepest-depths-hover-d995e043a1aad7.webp",
+    "tags": [
+      "Strategy",
+      "Roguelite"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/unto-deepest-depths-switch/"
+      }
+    ],
+    "url": "Games/Juegos/unto-deepest-depths/HTML/index.html"
   },
   {
     "title": "Silver Bullet",
     "slug": "silver-bullet",
-    "page": "Games/Juegos/silver-bullet/HTML/index.html",
-    "data": "Games/Juegos/silver-bullet/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-silver-bullet-cover-66f48c136f206f.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-silver-bullet-hover-4366dd4eb1cac5.webp",
+    "tags": [
+      "Shooter",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/silver-bullet-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/2818130/Silver_Bullet/"
+      }
+    ],
+    "url": "Games/Juegos/silver-bullet/HTML/index.html"
   },
   {
     "title": "ION Shift",
     "slug": "ion-shift",
-    "page": "Games/Juegos/ion-shift/HTML/index.html",
-    "data": "Games/Juegos/ion-shift/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-ion-shift-cover-9135d22d9543c4.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-ion-shift-hover-b1a9957cc97709.webp",
+    "tags": [
+      "Platform",
+      "Action"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "Xbox",
+      "Playstation"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/ion-shift-switch/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-ES/games/store/ion-shift/9P47QV410MJD"
+      },
+      {
+        "label": "Playstation",
+        "url": "https://store.playstation.com/es-es/concept/10017323"
+      }
+    ],
+    "url": "Games/Juegos/ion-shift/HTML/index.html"
   },
   {
     "title": "Flora & Fang: Guardians of the vampire garden",
     "slug": "flora-fang-guardians-of-the-vampire-garden",
-    "page": "Games/Juegos/flora-fang-guardians-of-the-vampire-garden/HTML/index.html",
-    "data": "Games/Juegos/flora-fang-guardians-of-the-vampire-garden/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-flora-fang-guardians-of-the-vampire-garden-cover-d588c6b529778a.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-flora-fang-guardians-of-the-vampire-garden-hover-85b9809aa2884b.webp",
+    "tags": [
+      "Arcade",
+      "Platform",
+      "Multiplayer"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/flora-and-fang-guardians-of-the-vampire-garden-switch/"
+      }
+    ],
+    "url": "Games/Juegos/flora-fang-guardians-of-the-vampire-garden/HTML/index.html"
   },
   {
     "title": "Skies Above",
     "slug": "skies-above",
-    "page": "Games/Juegos/skies-above/HTML/index.html",
-    "data": "Games/Juegos/skies-above/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-skies-above-cover-8f7eddf4f89830.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-skies-above-hover-d8235ce36a0828.webp",
+    "tags": [
+      "Action",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/skies-above-switch/"
+      }
+    ],
+    "url": "Games/Juegos/skies-above/HTML/index.html"
   },
   {
     "title": "Freddy Farmer",
     "slug": "freddy-farmer",
-    "page": "Games/Juegos/freddy-farmer/HTML/index.html",
-    "data": "Games/Juegos/freddy-farmer/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/FreddyFarmer_Banner_1920x1080-5729cb7f2a2357.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-freddy-farmer-hover-8b77396955df3f.webp",
+    "tags": [
+      "Arcade",
+      "Platform"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC",
+      "Xbox",
+      "PlayStation"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/freddy-farmer-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/3207370/Freddy_Farmer/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/en-us/games/store/freddy-farmer/9N726G6L4PKS"
+      },
+      {
+        "label": "PlayStation",
+        "url": "https://store.playstation.com/es-es/product/EP6718-PPSA29482_00-0077142230530028"
+      }
+    ],
+    "url": "Games/Juegos/freddy-farmer/HTML/index.html"
   },
   {
     "title": "Super Spy Raccoon",
     "slug": "super-spy-raccoon",
-    "page": "Games/Juegos/super-spy-raccoon/HTML/index.html",
-    "data": "Games/Juegos/super-spy-raccoon/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-super-spy-raccoon-cover-09935cf906d7a7.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-super-spy-raccoon-hover-b8f29d935c9154.webp",
+    "tags": [
+      "Stealth",
+      "Arcade",
+      "Platform"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/super-spy-raccoon-switch/"
+      }
+    ],
+    "url": "Games/Juegos/super-spy-raccoon/HTML/index.html"
   },
   {
     "title": "Cash Cow DX",
     "slug": "cash-cow-dx",
-    "page": "Games/Juegos/cash-cow-dx/HTML/index.html",
-    "data": "Games/Juegos/cash-cow-dx/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-cash-cow-dx-cover-83cd514d97a542.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-cash-cow-dx-hover-a2df0600e22998.webp",
+    "tags": [
+      "Arcade",
+      "Platform"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/cash-cow-dx-switch/"
+      }
+    ],
+    "url": "Games/Juegos/cash-cow-dx/HTML/index.html"
   },
   {
     "title": "Satryn DX",
     "slug": "satryn-dx",
-    "page": "Games/Juegos/satryn-dx/HTML/index.html",
-    "data": "Games/Juegos/satryn-dx/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/satryn_1920x1080-9d57b75febe194.png",
+    "preview": "Compartido/Images/Sincronizado/fc-home-satryn-dx-hover-cb553e740b023d.webp",
+    "tags": [
+      "Shooter",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/satryn-dx-switch/"
+      }
+    ],
+    "url": "Games/Juegos/satryn-dx/HTML/index.html"
   },
   {
     "title": "Goliath Depot",
     "slug": "goliath-depot",
-    "page": "Games/Juegos/goliath-depot/HTML/index.html",
-    "data": "Games/Juegos/goliath-depot/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-goliath-depot-cover-b7693253ff91e7.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-goliath-depot-hover-bf6d541ad4d15e.webp",
+    "tags": [
+      "Platform",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/goliath-depot-switch/"
+      }
+    ],
+    "url": "Games/Juegos/goliath-depot/HTML/index.html"
   },
   {
     "title": "Attack of the Karens",
     "slug": "attack-of-the-karens",
-    "page": "Games/Juegos/attack-of-the-karens/HTML/index.html",
-    "data": "Games/Juegos/attack-of-the-karens/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-attack-of-the-karens-cover-fc1fdd0f008686.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-attack-of-the-karens-hover-b6300d31506a40.webp",
+    "tags": [
+      "Shooter",
+      "Roguelite",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/attack-of-the-karens-switch/"
+      }
+    ],
+    "url": "Games/Juegos/attack-of-the-karens/HTML/index.html"
   },
   {
     "title": "Murtop",
     "slug": "murtop",
-    "page": "Games/Juegos/murtop/HTML/index.html",
-    "data": "Games/Juegos/murtop/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/Murtop_1920x1080-c424fe65054e76.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-murtop-hover-314d94eacb664d.webp",
+    "tags": [
+      "Arcade",
+      "Action"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/murtop-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/2148170/Murtop/"
+      }
+    ],
+    "url": "Games/Juegos/murtop/HTML/index.html"
   },
   {
     "title": "8-Colors Star Guardians +",
     "slug": "8-colors-star-guardians",
-    "page": "Games/Juegos/8-colors-star-guardians/HTML/index.html",
-    "data": "Games/Juegos/8-colors-star-guardians/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-8-colors-star-guardians-cover-7ac1bd78e8ded3.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-8-colors-star-guardians-hover-b6cb0567cfa0b1.webp",
+    "tags": [
+      "RPG",
+      "Strategy"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/8-colors-star-guardians-plus-switch/"
+      }
+    ],
+    "url": "Games/Juegos/8-colors-star-guardians/HTML/index.html"
   },
   {
     "title": "Colored Effects",
     "slug": "colored-effects",
-    "page": "Games/Juegos/colored-effects/HTML/index.html",
-    "data": "Games/Juegos/colored-effects/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/Colored-eShop_Banner-4ee02ec40612d2.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-colored-effects-hover-37eeed5730710e.webp",
+    "tags": [
+      "Puzzle",
+      "Platform"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/colored-effects-switch/"
+      }
+    ],
+    "url": "Games/Juegos/colored-effects/HTML/index.html"
   },
   {
     "title": "Sentry City",
     "slug": "sentry-city",
-    "page": "Games/Juegos/sentry-city/HTML/index.html",
-    "data": "Games/Juegos/sentry-city/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-sentry-city-cover-0499923fdce5f1.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-sentry-city-hover-034f20e886f7dd.webp",
+    "tags": [
+      "Shooter",
+      "Platform",
+      "Puzzle"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/sentry-city-switch/"
+      }
+    ],
+    "url": "Games/Juegos/sentry-city/HTML/index.html"
   },
   {
     "title": "Galacticon",
     "slug": "galacticon",
-    "page": "Games/Juegos/galacticon/HTML/index.html",
-    "data": "Games/Juegos/galacticon/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/Galaction_Banner_1920x1080-11c57f47a1873a.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-galacticon-hover-2bddfcd459f549.webp",
+    "tags": [
+      "Platform",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC",
+      "Xbox",
+      "Playstation"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/galacticon-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/1737980/Galacticon/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-es/games/store/galacticon/9pktxbk8tv3h"
+      },
+      {
+        "label": "Playstation",
+        "url": "https://store.playstation.com/es-es/product/EP6718-PPSA31526_00-0955124017661454"
+      }
+    ],
+    "url": "Games/Juegos/galacticon/HTML/index.html"
   },
   {
     "title": "A Winding Path",
     "slug": "a-winding-path",
-    "page": "Games/Juegos/a-winding-path/HTML/index.html",
-    "data": "Games/Juegos/a-winding-path/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-a-winding-path-cover-ca8c34d758e9ff.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-a-winding-path-hover-f86697a27d6fb7.webp",
+    "tags": [
+      "Adventure",
+      "Narrative"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "Xbox"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/a-winding-path-switch/"
+      },
+      {
+        "label": "Xbox",
+        "url": "https://www.xbox.com/es-ES/games/store/a-winding-path/9NK61CWQM6G3"
+      }
+    ],
+    "url": "Games/Juegos/a-winding-path/HTML/index.html"
   },
   {
     "title": "Lambs on the Road",
     "slug": "lambs-on-the-road",
-    "page": "Games/Juegos/lambs-on-the-road/HTML/index.html",
-    "data": "Games/Juegos/lambs-on-the-road/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/LAMBSONTHEROAD_Banner_1920x1080-c6eb95e917f0ff.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-lambs-on-the-road-hover-31f907d7bbd819.webp",
+    "tags": [
+      "Adventure",
+      "Platform",
+      "Horror"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/lambs-on-the-road-the-beginning-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/866270/Lambs_on_the_road__The_beginning/"
+      }
+    ],
+    "url": "Games/Juegos/lambs-on-the-road/HTML/index.html"
   },
   {
     "title": "Papertris",
     "slug": "papertris",
-    "page": "Games/Juegos/papertris/HTML/index.html",
-    "data": "Games/Juegos/papertris/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/Papertris_Banner_Hero_Banner-23396cc54d49da.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-papertris-hover-f9cca1b346c5f4.webp",
+    "tags": [
+      "Puzzle",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/papertris-switch/"
+      }
+    ],
+    "url": "Games/Juegos/papertris/HTML/index.html"
   },
   {
     "title": "The Legend of Gwen",
     "slug": "the-legend-of-gwen",
-    "page": "Games/Juegos/the-legend-of-gwen/HTML/index.html",
-    "data": "Games/Juegos/the-legend-of-gwen/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-the-legend-of-gwen-cover-f0527235e22905.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-the-legend-of-gwen-hover-d6400dbdfa9f54.webp",
+    "tags": [
+      "Platform",
+      "Action"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-legend-of-gwen-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/2179460/The_Legend_of_Gwen/"
+      }
+    ],
+    "url": "Games/Juegos/the-legend-of-gwen/HTML/index.html"
   },
   {
     "title": "Laraan",
     "slug": "laraan",
-    "page": "Games/Juegos/laraan/HTML/index.html",
-    "data": "Games/Juegos/laraan/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/Laraan_Banner_1920_1080-dda7db98390dd5.jpg",
+    "preview": "Compartido/Images/Sincronizado/fc-home-laraan-hover-8fc0749ee91029.webp",
+    "tags": [
+      "Adventure",
+      "Narrative",
+      "Platform"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/laraan-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/493710/Laraan/"
+      }
+    ],
+    "url": "Games/Juegos/laraan/HTML/index.html"
   },
   {
     "title": "Hexagravity",
     "slug": "hexagravity",
-    "page": "Games/Juegos/hexagravity/HTML/index.html",
-    "data": "Games/Juegos/hexagravity/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-hexagravity-cover-ed7093b529128c.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-hexagravity-hover-e9f178dfc186d0.webp",
+    "tags": [
+      "Platform",
+      "Rhythm"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/hexagravity-switch/"
+      }
+    ],
+    "url": "Games/Juegos/hexagravity/HTML/index.html"
   },
   {
     "title": "Monster Puzzle",
     "slug": "monster-puzzle",
-    "page": "Games/Juegos/monster-puzzle/HTML/index.html",
-    "data": "Games/Juegos/monster-puzzle/JSON/game.json"
+    "image": "Compartido/Images/Sincronizado/fc-home-monster-puzzle-cover-175c3ab05989a8.webp",
+    "preview": "Compartido/Images/Sincronizado/fc-home-monster-puzzle-hover-e2f6c7724f36ac.webp",
+    "tags": [
+      "Puzzle",
+      "Arcade"
+    ],
+    "platforms": [
+      "Nintendo Switch",
+      "PC"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/monster-puzzle-switch/"
+      },
+      {
+        "label": "PC",
+        "url": "https://store.steampowered.com/app/493700/Monster_Puzzle/"
+      }
+    ],
+    "url": "Games/Juegos/monster-puzzle/HTML/index.html"
+  },
+  {
+    "title": "Gunpig",
+    "slug": "gunpig",
+    "image": "Compartido/Images/Sincronizado/Gunpig-Horizontal_Header_1200_675-6a746b728cfa0e.jpg",
+    "preview": "Compartido/Images/Sincronizado/GunPig_Cover-6db0ada64dff76.gif",
+    "tags": [
+      "Shooter",
+      "Arcade",
+      "Roguelike"
+    ],
+    "platforms": [
+      "Nintendo Switch"
+    ],
+    "platform_links": [
+      {
+        "label": "Nintendo Switch",
+        "url": "https://www.nintendo.com/us/store/products/gunpig-firepower-for-hire-switch/"
+      }
+    ],
+    "url": "Games/Juegos/gunpig/HTML/index.html"
   }
 ]

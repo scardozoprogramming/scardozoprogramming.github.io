@@ -2,108 +2,383 @@
   {
     "name": "Radin Games",
     "slug": "radin-games",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Retro arcade inspiration, rooted in 8-bit computers.",
+    "paragraphs": [
+      "I am Radin, an indie video game developer who LOVES retro and arcade video games.",
+      "I have grown up playing arcade cabinet games and 8 bit computers and my goal is to make games like those of that time: directs, frenetics, addictives and with the real feeling of arcade games of the ’80s and ’90s."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/estudio_radin-games-3b42065293a5da.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/Captura-de-pantalla-2021-10-13-a-las-8.03.49-194x300-030082e945405a.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/radin-games/HTML/studio.html",
     "data": "Indies/Estudios/radin-games/JSON/studio.json"
   },
   {
     "name": "Fahmitsu, Rolling Glory Jam",
     "slug": "fahmitsu-rolling-glory-jam",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "A Jakarta-based developer working across games and narrative.",
+    "paragraphs": [
+      "I’m an indie developer based in Jakarta, Indonesia. I’ve been working in the game industry since 2011 and have covered wide range of jobs from programming, game design, game journalism, marketing, PR, and narrative design. I probably can write dozens or more paragraphs about myself, but that sounds a bit too narcissistic."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/estudio_rolling-7689ecf4b9fb19.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/fahmitsu-194x300-a4759c89c4edb7.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/fahmitsu-rolling-glory-jam/HTML/studio.html",
     "data": "Indies/Estudios/fahmitsu-rolling-glory-jam/JSON/studio.json"
   },
   {
     "name": "Pablo Navarro, RAWRLAB Games",
     "slug": "pablo-navarro-rawrlab-games",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Director and lead programmer at RAWRLAB Games.",
+    "paragraphs": [
+      "I’m Pablo Navarro, director and main programmer at RAWRLAB Games and previously at PiX Juegos.",
+      "I develop management applications by day and by night. I develop 2D indie video games of dubious success.",
+      "I have too many favorite games to mention here, but I will mention that most of my favorites are from Nintendo ."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/nuevo-logotipo-RAWRLAB-Games-fondo-negro-scaled-69fcd3878fc8c3.jpg",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/foto-panreyes-194x300-71edbe259996a2.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/pablo-navarro-rawrlab-games/HTML/studio.html",
     "data": "Indies/Estudios/pablo-navarro-rawrlab-games/JSON/studio.json"
   },
   {
     "name": "Jose, Catcade Games",
     "slug": "jose-catcade-games",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Self-taught Valencian creator inspired by arcades and 16-bit consoles.",
+    "paragraphs": [
+      "Hello! My name is Jose from Valencia (Spain) and all my life I have played video games, especially Arcades and 16-bit consoles.",
+      "Without studying video game development and learning on my own, I try to create video games that are reminiscent of that wonderful time."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/logo_Catcade-Games-fee1ee5428f140.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/jose_web-BLANCO-Y-NEGRO-191x300-94f3013ac1c48c.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/jose-catcade-games/HTML/studio.html",
     "data": "Indies/Estudios/jose-catcade-games/JSON/studio.json"
   },
   {
     "name": "Jeremy Fryc, Stardust Team",
     "slug": "jeremy-fryc-stardust-team",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Programming, art, music and design behind Dexter Stardust.",
+    "paragraphs": [
+      "Hello! I’m an indie developer currently living in Bradenton, Florida. More importantly, I’m a husband, father, avid skateboarder, and exclamation point enthusiast! While I created Dexter Stardust and some of the other characters together with my friends Munk Alejandro, Lola Mendez, and Alec Corday, I am a one-man-band behind the scenes;",
+      "I do the programming, artwork, game design, music production, sound design, and whatever else needs to be done. I regularly feel like tearing my hair out in frustration, but my wonderful wife always brings me back to reality. She’s the best!"
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/DexterTeamLogo_SplashScreen-a0a1c069251b15.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/IMG_3579-scaled-e1716387952904-df8ed0646db535.jpeg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/jeremy-fryc-stardust-team/HTML/studio.html",
     "data": "Indies/Estudios/jeremy-fryc-stardust-team/JSON/studio.json"
   },
   {
     "name": "Sebastian, Pixel Games",
     "slug": "sebastian-pixel-games",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Classic arcade experiences from an independent Luxembourg studio.",
+    "paragraphs": [
+      "I wrote my first program as a kid in 1982, on my grandmother’s black and white TV, with a Sinclair Spectrum 48K, before moving on to the Commodore 64. It was an amazing experience and from that day on I knew I wanted to make games. I run pixel games, an independent development studio based in Luxembourg, focused on creating fun, classic, arcade experiences for modern machines."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/pixel_logo_2020-87c4d8a4f1e7e1.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/SK_L-172x300-44680f75bd90a2.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/sebastian-pixel-games/HTML/studio.html",
     "data": "Indies/Estudios/sebastian-pixel-games/JSON/studio.json"
   },
   {
     "name": "Xavi, Hiulit",
     "slug": "xavi-hiulit",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Barcelona developer recreating the feel of 1980s arcades.",
+    "paragraphs": [
+      "I’m Xavi, a.k.a hiulit, an indie developer based in Barcelona. I like creating fun arcade games that could have been released in the 80’s. I grew up playing mostly Nintendo consoles, so it’s a dream come true to have my games on the Switch."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/hiulits_logo_white_RGB-f83fbe3ad10bbd.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/Xavi-Hiulit-225x300-aa530c803cceae.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/xavi-hiulit/HTML/studio.html",
     "data": "Indies/Estudios/xavi-hiulit/JSON/studio.json"
   },
   {
     "name": "Soufiane, Tacsou",
     "slug": "soufiane-tacsou",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Morocco-based developer focused on memorable, challenging 2D games.",
+    "paragraphs": [
+      "I’m Soufiane, a software developer and indie game developer based in Morocco. I have been passionate about video games since I was a kid and have been playing them ever since. With a focus on 2D, I strive to create unique and memorable gaming experiences that offer both fun and challenges for players."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/Tacsou_logo_alt-ed7c791fce9752.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/Soufiane-194x300-12aa4eb9c476d6.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/soufiane-tacsou/HTML/studio.html",
     "data": "Indies/Estudios/soufiane-tacsou/JSON/studio.json"
   },
   {
     "name": "Andrea, Der Mondhase",
     "slug": "andrea-der-mondhase",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Italian solo developer and founder of Der Mondhase.",
+    "paragraphs": [
+      "Andrea Demetrio is an Italian solo developer with a PhD in Physics (don’t ask). Mostly known for his 3D fighting game Schwarzerblitz and defined as a «trolling creator» by some players due to his approach to game development, he routinely explores different genres depending on how inspiration strikes him. He started his (so far) one man studio «Der Mondhase» in 2021. 8-Colors Star Guardians + is his first commercial game and the first to be published on console."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/Logo-Andrea-2-8a4a45ebaa1f07.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/Andrea-Picture-300x300-0f8a4bbb0b67d3.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/andrea-der-mondhase/HTML/studio.html",
     "data": "Indies/Estudios/andrea-der-mondhase/JSON/studio.json"
   },
   {
     "name": "Andrea Tarondo, silver978",
     "slug": "andrea-tarondo-silver978",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Italian game designer creating psychological, emotionally impactful experiences.",
+    "paragraphs": [
+      "Hello! I am Andrea, aka silver978, an italian indie game designer and developer passionate to psychological horrors, but also energetic and stylish videogames: my main focus is on providing fun and emotional impactful experiences to the players. I started developing games since 2015, when I mainly produced experimental ones. I began publishing commercial indie games on 2023, by releasing on Steam a short psychological adventure about a stressed girl trying to manage her study life: «Looking Up I See Only A Ceiling."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/image02-28952f72601896.jpg",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/logo_silver978-240x300-391ec2eae67d59.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/andrea-tarondo-silver978/HTML/studio.html",
     "data": "Indies/Estudios/andrea-tarondo-silver978/JSON/studio.json"
   },
   {
     "name": "Joel Potter, Studio Primitive",
     "slug": "joel-potter-studio-primitive",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Solo developer behind Attack of the Karens.",
+    "paragraphs": [
+      "I’ve been making games for about 4 years now, and absolutely love it. I’m the solo developer behind Attack of the Karens, and have plans to release many more projects both solo and with my brother Grant. Game dev is hard but it is so worth it. It’s one of the most satisfying things in the world to start with an idea and end up turning it into a finished game!."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/Sudio-Primitive-cb47c3e104c4ec.jpg",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/IMG_2133-225x300-9053420e571674.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/joel-potter-studio-primitive/HTML/studio.html",
     "data": "Indies/Estudios/joel-potter-studio-primitive/JSON/studio.json"
   },
   {
     "name": "David Langlois, Vidvad Games",
     "slug": "david-langlois-vidvad-games",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Quebec-based creator of neo-retro arcade games and speedrunning.",
+    "paragraphs": [
+      "Hello! I’m David and I’m a solo indie developer from Quebec City, Canada. I like to create neo-retro arcade games just like what I used to play growing up in the 90’s. I keep things short and simple and as a speedrunner myself, I really enjoy adding a twist where you’re rewarded for completing my games as fast as possible. With Vidvad Games, I do the programming, pixel art and game design, and I partner up with a good friend of mine (ZerolagGaming) for the music. I wish I could tell my younger self that one day, one of my creation would run on a Nintendo console. What a surreal experience!"
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/rr0eb9Ji_400x400-053ee2c0754963.jpg",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/dav-271x300-c9eb8fa3162f59.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/david-langlois-vidvad-games/HTML/studio.html",
     "data": "Indies/Estudios/david-langlois-vidvad-games/JSON/studio.json"
   },
   {
     "name": "May Oswald, Maybell Soft",
     "slug": "may-oswald-maybell-soft",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Independent creator of Satryn and other electronic curiosities.",
+    "paragraphs": [
+      "Hi, i’m maybell, purveyor of fine electronic curiosities such as satryn. it is an honor and my pleasure to serve you the very best games i can muster. support your local indie! <3"
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/213600-a9109cd0-e6fa-4e61-9635-e6f209d2c7fb-profile-90f74d7471fd15.webp",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/maybell-e1716387855564-863aeb56c1a47d.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/may-oswald-maybell-soft/HTML/studio.html",
     "data": "Indies/Estudios/may-oswald-maybell-soft/JSON/studio.json"
   },
   {
     "name": "Luke Orsie, Crashable Studios",
     "slug": "luke-orsie-crashable-studios",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Two brothers drawing inspiration from their 1990s gaming.",
+    "paragraphs": [
+      "I’m Luke Orsie, animator/artist for crashable studios. Besides making games I enjoy skateboarding, fishing, firearms, Dogs, cats, bush-crafting, and most non-traditional sports. Crashable Studios is comprised of us two brothers, Luke (me) and Micah. We have been gamers since we were kids in the 90’s. I remember firing up «Contra» on our brand new NES we got for Christmas in that time. Those memories and gaming moments have stuck with us through the years and we strive to recreated those magic moments/feelings we get from gaming in our own creative way. We have been developing since 2012 when our first game «Alum» was kickstarted and are on our third commercial title as of the writing of this bio."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/Screenshot_2024-01-22_143500-ece5dd19b1e394.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/Lukebio-300x297-8547ff8574d0d4.png",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/luke-orsie-crashable-studios/HTML/studio.html",
     "data": "Indies/Estudios/luke-orsie-crashable-studios/JSON/studio.json"
   },
   {
     "name": "Enzo Brown, Slain Mascot",
     "slug": "enzo-brown-slain-mascot",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "A solo developer inspired by yesterday’s games.",
+    "paragraphs": [
+      "My name is Enzo Brown and I’m a solo-developer that makes Yesterday’s Games, Today. I’ve made art all my life and I’ve made (or at least tried to make) games since the flash days. It wasn’t until 2023 that I decided to give game-development a real shot. There’s something about older titles that really draws me in and it is my goal to try and capture that magic in my projects."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/SlainMascot_Character_Aalpha-ffcedddd8c9589.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/95245519_10220887863401710_2285759179496882176_n-300x300-8ed9e8f9951db2.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/enzo-brown-slain-mascot/HTML/studio.html",
     "data": "Indies/Estudios/enzo-brown-slain-mascot/JSON/studio.json"
   },
   {
     "name": "Magnus Fredriksson, Bortbyting",
     "slug": "magnus-fredriksson-bortbyting",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Kiruna-based animator and filmmaker turned arcade game developer.",
+    "paragraphs": [
+      "I’m Magnus Fredriksson, animator, filmmaker, and now indie game developer, thanks to a mild midlife crisis. I grew up in Kiruna in northern Sweden (where I now live again), where arcades were few and far between. Gaming at home on the Amiga or NES became my go-to, but I’ve always had a special love for arcade-style games that are easy to pick up and play, especially if they’re co-op."
+    ],
+    "images": [
+      {
+        "image": "Compartido/Images/Sincronizado/bb_logga_liten_ljus_10px-de024e7702d33a.png",
+        "alt": ""
+      },
+      {
+        "image": "Compartido/Images/Sincronizado/magnus-225x300-4619c6ef5895f6.jpg",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/magnus-fredriksson-bortbyting/HTML/studio.html",
     "data": "Indies/Estudios/magnus-fredriksson-bortbyting/JSON/studio.json"
   },
   {
     "name": "Apamate Studio",
     "slug": "apamate-studio",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "We are Apamate Studio, an indie game studio from Venezuela, founded by brothers Wilmar and Wilderman Niño.",
+    "paragraphs": [
+      "With roots in film production, animation, and art, we moved into game development to explore interactive storytelling. That discipline shapes our studio philosophy: we approach video games as a powerful narrative canvas, dedicated to delivering meaningful, story-driven experiences."
+    ],
+    "images": [
+      {
+        "image": "Indies/Estudios/apamate-studio/Images/logo.webp",
+        "alt": ""
+      },
+      {
+        "image": "Indies/Estudios/apamate-studio/Images/portrait.webp",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/apamate-studio/HTML/studio.html",
     "data": "Indies/Estudios/apamate-studio/JSON/studio.json"
   },
   {
     "name": "Dust Games",
     "slug": "dust-games",
+    "source_url": "https://www.flynnsarcades.com/indies/",
+    "summary": "Dust Games is an independent video game studio based in Barcelona. We blend creativity and fun to turn them into engaging gaming experiences that everyone can enjoy.",
+    "paragraphs": [
+      "We’re enthusiastic about the idea of offering gaming experiences that make players have an incredible time, laugh heartily, and above all, disconnect from their daily routines with our games."
+    ],
+    "images": [
+      {
+        "image": "Indies/Estudios/dust-games/Images/logo.webp",
+        "alt": ""
+      },
+      {
+        "image": "Indies/Estudios/dust-games/Images/portrait.webp",
+        "alt": ""
+      }
+    ],
     "html": "Indies/Estudios/dust-games/HTML/studio.html",
     "data": "Indies/Estudios/dust-games/JSON/studio.json"
   }

@@ -1,15 +1,21 @@
 {
   "name": "May Oswald, Maybell Soft",
-  "detail": "Satryn DX",
   "slug": "may-oswald-maybell-soft",
-  "media": {
-    "name": "May Oswald, Maybell Soft",
-    "logo": "Indies/Estudios/may-oswald-maybell-soft/Images/logo.webp",
-    "portrait": "Indies/Estudios/may-oswald-maybell-soft/Images/portrait.png",
-    "website": "https://maybell.itch.io/"
-  },
+  "source_url": "https://www.flynnsarcades.com/indies/",
   "summary": "Independent creator of Satryn and other electronic curiosities.",
   "paragraphs": [
     "Hi, i’m maybell, purveyor of fine electronic curiosities such as satryn. it is an honor and my pleasure to serve you the very best games i can muster. support your local indie! <3"
-  ]
+  ],
+  "images": [
+    {
+      "image": "Compartido/Images/Sincronizado/213600-a9109cd0-e6fa-4e61-9635-e6f209d2c7fb-profile-90f74d7471fd15.webp",
+      "alt": ""
+    },
+    {
+      "image": "Compartido/Images/Sincronizado/maybell-e1716387855564-863aeb56c1a47d.png",
+      "alt": ""
+    }
+  ],
+  "html": "Indies/Estudios/may-oswald-maybell-soft/HTML/studio.html",
+  "data": "Indies/Estudios/may-oswald-maybell-soft/JSON/studio.json"
 }

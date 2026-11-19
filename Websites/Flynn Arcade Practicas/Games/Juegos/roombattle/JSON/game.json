@@ -1,0 +1,48 @@
+{
+  "title": "Roombattle",
+  "source_url": "https://www.flynnsarcades.com/roombattle/",
+  "synced_at": "2026-11-19T09:13:59.640Z",
+  "sections": [
+    {
+      "title": "Roombattle",
+      "text": [
+        "Flynn’s Arcade Publishing",
+        "Vacuum cleaner fighting"
+      ],
+      "images": []
+    },
+    {
+      "title": "Purchase",
+      "text": [],
+      "images": []
+    },
+    {
+      "title": "About What Comes After",
+      "text": [
+        "A fast-paced multiplayer party game where players compete and cooperate through a variety of exciting mini-games set inside themed rooms. Each challenge tests different skills, including teamwork, communication, concentration, problem-solving, and emotional resilience.Do you have what it takes to outplay your opponents, master every room, and become the ultimate RoomBattle champion?",
+        "Inspired by the fun and unpredictability of modern party games, RoomBattle combines accessible gameplay with meaningful experiences that promote positive social interaction and mental well-being. Every match offers new challenges, encouraging players to adapt, collaborate, and overcome obstacles together.",
+        "“‘Roombattle’ is a Multiplayer Battle Between Dangerous Vacuums”",
+        "Indie Game Plus",
+        "“Roombattle: A Reminder of the Importance of Fun With Loved Ones”",
+        "Ladies Gamers"
+      ],
+      "images": [
+        {
+          "image": "Compartido/Images/Sincronizado/Roombattle_CoverArt-8d8ff3ba415251.png",
+          "alt": ""
+        },
+        {
+          "image": "Compartido/Images/Sincronizado/RoomBattle_GIF-e4bbc33013370e.gif",
+          "alt": ""
+        }
+      ]
+    }
+  ],
+  "slug": "roombattle",
+  "paragraphs": [
+    "A fast-paced multiplayer party game where players compete and cooperate through a variety of exciting mini-games set inside themed rooms. Each challenge tests different skills, including teamwork, communication, concentration, problem-solving, and emotional resilience.Do you have what it takes to outplay your opponents, master every room, and become the ultimate RoomBattle champion?",
+    "Inspired by the fun and unpredictability of modern party games, RoomBattle combines accessible gameplay with meaningful experiences that promote positive social interaction and mental well-being. Every match offers new challenges, encouraging players to adapt, collaborate, and overcome obstacles together."
+  ],
+  "gallery": [],
+  "projects": "Compartido/JSON/proyectos.json"
+}

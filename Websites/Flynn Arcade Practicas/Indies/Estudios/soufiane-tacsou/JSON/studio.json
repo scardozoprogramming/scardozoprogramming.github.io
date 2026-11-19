@@ -1,15 +1,21 @@
 {
   "name": "Soufiane, Tacsou",
-  "detail": "Colored Effects",
   "slug": "soufiane-tacsou",
-  "media": {
-    "name": "Soufiane, Tacsou",
-    "logo": "Indies/Estudios/soufiane-tacsou/Images/logo.png",
-    "portrait": "Indies/Estudios/soufiane-tacsou/Images/portrait.png",
-    "website": "https://www.tacsou.com/"
-  },
+  "source_url": "https://www.flynnsarcades.com/indies/",
   "summary": "Morocco-based developer focused on memorable, challenging 2D games.",
   "paragraphs": [
     "I’m Soufiane, a software developer and indie game developer based in Morocco. I have been passionate about video games since I was a kid and have been playing them ever since. With a focus on 2D, I strive to create unique and memorable gaming experiences that offer both fun and challenges for players."
-  ]
+  ],
+  "images": [
+    {
+      "image": "Compartido/Images/Sincronizado/Tacsou_logo_alt-ed7c791fce9752.png",
+      "alt": ""
+    },
+    {
+      "image": "Compartido/Images/Sincronizado/Soufiane-194x300-12aa4eb9c476d6.png",
+      "alt": ""
+    }
+  ],
+  "html": "Indies/Estudios/soufiane-tacsou/HTML/studio.html",
+  "data": "Indies/Estudios/soufiane-tacsou/JSON/studio.json"
 }

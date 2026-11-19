@@ -1,128 +1,54 @@
 {
   "title": "Looking Up I See Only A Ceiling",
-  "summary": "Follow a student overwhelmed by study in a short psychological adventure. Hand-drawn locations, three endings and an unlockable lore mode reveal what lies beyond an apparently ordinary ceiling.",
-  "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/cover.jpg",
-  "tags": [
-    "Narrative",
-    "Adventure"
-  ],
-  "categories": [
-    "narrative",
-    "adventure"
-  ],
-  "platforms": [
-    "Switch",
-    "PC"
+  "source_url": "https://www.flynnsarcades.com/looking-up-i-see-only-a-ceiling/",
+  "synced_at": "2026-11-19T09:13:59.640Z",
+  "sections": [
+    {
+      "title": "Looking Up I See Only A Ceiling",
+      "text": [
+        "Flynn’s Arcade Publishing",
+        "A psychological adventure about a stressed girl"
+      ],
+      "images": []
+    },
+    {
+      "title": "Purchase",
+      "text": [],
+      "images": []
+    },
+    {
+      "title": "About Looking Up I See Only A Ceiling",
+      "text": [
+        "A short psychological adventure about a stressed girl who wants to explore her ceiling.",
+        "A seemingly monotonous life, full of books and endless study. But what happens if you reach the ‘point of no return’? Follow the challenging life of a student in this short psychological adventure game",
+        "Short but meaningful experience; Hand drawn locations and characters; 3 endings to discover; An unlockable mode to know more about the game’s lore.",
+        "The developers describe its content like this:",
+        "Cartoonish blood, fear.",
+        "It’s short and cathartic.",
+        "GameGrin",
+        "it does a great job conveying its message while remaining fun and haunting.",
+        "Pure Nintendo"
+      ],
+      "images": [
+        {
+          "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/poster.webp",
+          "alt": ""
+        },
+        {
+          "image": "Compartido/Images/Sincronizado/fc-home-looking-up-i-see-only-a-ceiling-hover-ffad0859f0b417.webp",
+          "alt": ""
+        }
+      ]
+    }
   ],
   "slug": "looking-up-i-see-only-a-ceiling",
-  "tagline": "A psychological adventure about a stressed girl",
-  "hero_video": {
-    "id": "X4jKWIeGao4",
-    "url": "https://www.youtube.com/watch?v=X4jKWIeGao4"
-  },
-  "gallery": [
-    {
-      "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-1.webp",
-      "width": 600,
-      "height": 338,
-      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 1"
-    },
-    {
-      "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-2.webp",
-      "width": 1280,
-      "height": 720,
-      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 2"
-    },
-    {
-      "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-3.webp",
-      "width": 1280,
-      "height": 720,
-      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 3"
-    },
-    {
-      "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-4.webp",
-      "width": 1280,
-      "height": 720,
-      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 4"
-    },
-    {
-      "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/screenshot-5.webp",
-      "width": 1280,
-      "height": 720,
-      "alt": "Looking Up I See Only A Ceiling gameplay screenshot 5"
-    }
+  "paragraphs": [
+    "A short psychological adventure about a stressed girl who wants to explore her ceiling.",
+    "A seemingly monotonous life, full of books and endless study. But what happens if you reach the ‘point of no return’? Follow the challenging life of a student in this short psychological adventure game",
+    "Short but meaningful experience; Hand drawn locations and characters; 3 endings to discover; An unlockable mode to know more about the game’s lore.",
+    "The developers describe its content like this:",
+    "Cartoonish blood, fear."
   ],
-  "poster": {
-    "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/poster.webp",
-    "width": 1080,
-    "height": 1080,
-    "alt": "Looking Up I See Only A Ceiling cover artwork"
-  },
-  "stores": [
-    {
-      "label": "Nintendo Switch",
-      "platform": "Switch",
-      "url": "https://www.nintendo.com/us/store/products/looking-up-i-see-only-a-ceiling-switch/"
-    }
-  ],
-  "genres": [
-    "Adventure",
-    "Arcade",
-    "Pixel Art"
-  ],
-  "blocks": [
-    {
-      "type": "paragraph",
-      "text": "A short psychological adventure about a stressed girl who wants to explore her ceiling."
-    },
-    {
-      "type": "heading",
-      "text": "ABOUT THIS GAME"
-    },
-    {
-      "type": "paragraph",
-      "text": "A seemingly monotonous life, full of books and endless study. But what happens if you reach the ‘point of no return’? Follow the challenging life of a student in this short psychological adventure game"
-    },
-    {
-      "type": "paragraph",
-      "text": "Short but meaningful experience; Hand drawn locations and characters; 3 endings to discover; An unlockable mode to know more about the game’s lore."
-    },
-    {
-      "type": "heading",
-      "text": "DESCRIPTION OF ADULT CONTENT"
-    },
-    {
-      "type": "paragraph",
-      "text": "The developers describe its content like this:"
-    },
-    {
-      "type": "paragraph",
-      "text": "Cartoonish blood, fear."
-    }
-  ],
-  "reviews": [
-    {
-      "quote": "It’s short and cathartic.",
-      "author": "GameGrin",
-      "outlet": "Game Grin",
-      "url": "https://www.gamegrin.com/reviews/looking-up-i-see-only-a-ceiling-review/"
-    },
-    {
-      "quote": "it does a great job conveying its message while remaining fun and haunting.",
-      "author": "Pure Nintendo",
-      "outlet": "Pure Nintendo",
-      "url": "https://purenintendo.com/review-looking-up-i-see-only-a-ceiling-nintendo-switch/"
-    }
-  ],
-  "related": [
-    "eternum-ex",
-    "lambs-on-the-road",
-    "saga"
-  ],
-  "preview": {
-    "image": "Games/Juegos/looking-up-i-see-only-a-ceiling/Images/preview.webp",
-    "width": 600,
-    "height": 338
-  },
-  "related_source": "About/JSON/about.json"
+  "gallery": [],
+  "projects": "Compartido/JSON/proyectos.json"
 }

@@ -1,16 +1,22 @@
 {
   "name": "Jeremy Fryc, Stardust Team",
-  "detail": "Dexter Stardust",
   "slug": "jeremy-fryc-stardust-team",
-  "media": {
-    "name": "Jeremy Fryc, Stardust Team",
-    "logo": "Indies/Estudios/jeremy-fryc-stardust-team/Images/logo.png",
-    "portrait": "Indies/Estudios/jeremy-fryc-stardust-team/Images/portrait.jpeg",
-    "website": "https://www.dexterstardust.com/"
-  },
+  "source_url": "https://www.flynnsarcades.com/indies/",
   "summary": "Programming, art, music and design behind Dexter Stardust.",
   "paragraphs": [
     "Hello! I’m an indie developer currently living in Bradenton, Florida. More importantly, I’m a husband, father, avid skateboarder, and exclamation point enthusiast! While I created Dexter Stardust and some of the other characters together with my friends Munk Alejandro, Lola Mendez, and Alec Corday, I am a one-man-band behind the scenes;",
     "I do the programming, artwork, game design, music production, sound design, and whatever else needs to be done. I regularly feel like tearing my hair out in frustration, but my wonderful wife always brings me back to reality. She’s the best!"
-  ]
+  ],
+  "images": [
+    {
+      "image": "Compartido/Images/Sincronizado/DexterTeamLogo_SplashScreen-a0a1c069251b15.png",
+      "alt": ""
+    },
+    {
+      "image": "Compartido/Images/Sincronizado/IMG_3579-scaled-e1716387952904-df8ed0646db535.jpeg",
+      "alt": ""
+    }
+  ],
+  "html": "Indies/Estudios/jeremy-fryc-stardust-team/HTML/studio.html",
+  "data": "Indies/Estudios/jeremy-fryc-stardust-team/JSON/studio.json"
 }

@@ -1,0 +1,14 @@
+.fa-local-lightbox{inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;border:0;padding:56px 64px 24px;background:rgb(3 8 17 / 97%);color:#f1f6fc}
+.fa-local-lightbox::backdrop{background:#030811}
+.fa-local-lightbox[open]{display:grid;place-items:center}
+.fa-local-lightbox figure{margin:0;max-width:100%;min-width:0;text-align:center}
+.fa-local-lightbox figure img{display:block;margin:auto;max-width:100%;max-height:calc(100dvh - 125px);object-fit:contain}
+.fa-local-lightbox figcaption{margin-top:12px;font:14px/1.5 Barlow,Arial,sans-serif;color:#a6bfd3}
+.fa-local-lightbox button{position:absolute;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #183348;border-radius:3px;background:#07111e;color:#00deee;font:32px/1 Arial,sans-serif;cursor:pointer}
+.fa-local-lightbox button:hover{border-color:#f51ca5;color:#f51ca5}
+.fa-local-lightbox button:focus-visible{outline:3px solid #00deee;outline-offset:3px}
+.fa-local-lightbox .fa-viewer-close{right:16px;top:12px}
+.fa-local-lightbox .fa-viewer-previous{left:10px;top:50%}
+.fa-local-lightbox .fa-viewer-next{right:10px;top:50%}
+.fa-local-lightbox [hidden]{display:none}
+@media(max-width:600px){.fa-local-lightbox{padding:62px 48px 20px}.fa-local-lightbox figcaption{font-size:12px}.fa-local-lightbox button{width:40px;height:44px}}

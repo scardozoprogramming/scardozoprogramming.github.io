@@ -1,60 +1,51 @@
 {
-  "socials": [
+  "source": "https://www.flynnsarcades.com",
+  "synced_at": "2026-11-19T09:13:59.640Z",
+  "navigation": [
     {
-      "name": "Bluesky",
-      "icon": "bluesky",
-      "url": "https://bsky.app/profile/flynnsarcade.bsky.social"
+      "title": "About",
+      "file": "About/HTML/index.html"
     },
     {
-      "name": "Twitter",
-      "icon": "twitter",
-      "url": "https://twitter.com/FlynnsArcades"
+      "title": "Games",
+      "file": "Games/HTML/index.html"
     },
     {
-      "name": "Instagram",
-      "icon": "instagram",
-      "url": "https://www.instagram.com/flynnsarcadegames/"
+      "title": "Indies",
+      "file": "Indies/HTML/index.html"
     },
     {
-      "name": "TikTok",
-      "icon": "tiktok",
-      "url": "https://www.tiktok.com/@flynnsarcades"
+      "title": "Inicio",
+      "file": "Home/HTML/index.html"
     },
     {
-      "name": "Steam",
-      "icon": "steam",
-      "url": "https://store.steampowered.com/publisher/Flynns"
+      "title": "Press",
+      "file": "Press/HTML/index.html"
     },
     {
-      "name": "YouTube",
-      "icon": "youtube",
-      "url": "https://www.youtube.com/user/jpd92363"
-    },
-    {
-      "name": "Facebook",
-      "icon": "facebook",
-      "url": "https://www.facebook.com/FlynnsArcades"
-    },
-    {
-      "name": "Twitch",
-      "icon": "twitch",
-      "url": "https://www.twitch.tv/flynnsarcades"
-    },
-    {
-      "name": "LinkedIn",
-      "icon": "linkedin",
-      "url": "https://www.linkedin.com/company/flynnsarcade/"
+      "title": "Privacy",
+      "file": "Privacy/HTML/index.html"
     }
   ],
-  "footer": {
-    "social_title": "Find us everywhere",
-    "social_copy": "Except Tik Tok... at the last dance we broke our hips.",
-    "newsletter_title": "Better news",
-    "newsletter_copy": "Get all updates about our games release and more.",
-    "newsletter_extra": "Don't be shy.",
-    "contact_title": "Send prayers",
-    "contact_copy": "You may prefer to be the first to contact us. We understand.",
-    "contact_extra": "The newsletter is a complicated relationship."
+  "shared_templates": {
+    "header": {
+      "wordpress_id": 7123,
+      "file": "Compartido/HTML/header.html"
+    },
+    "catalogo": {
+      "wordpress_id": 8134,
+      "file": "Compartido/HTML/catalogo.html"
+    },
+    "proyectos": {
+      "wordpress_id": 8251,
+      "file": "Compartido/HTML/proyectos.html"
+    },
+    "footer": {
+      "wordpress_id": 8398,
+      "file": "Compartido/HTML/footer.html"
+    }
   },
-  "contact_email": "press@flynnsarcades.com"
+  "privacy": {
+    "published": true
+  }
 }

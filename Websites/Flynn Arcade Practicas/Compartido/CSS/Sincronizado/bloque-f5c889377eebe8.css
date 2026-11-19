@@ -1,0 +1,49 @@
+
+@font-face{font-family:"Flynn Developed Barlow";src:url("../../Fonts/Sincronizado/barlow-regular-7fda4b68acc067.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Flynn Developed Barlow";src:url("../../Fonts/Sincronizado/barlow-bold-037d61a1fae104.woff") format("woff");font-weight:700;font-display:swap}
+@font-face{font-family:"Flynn Developed Pixel";src:url("../../Fonts/Sincronizado/press-start-2p-5221d3a63e00d0.woff") format("woff");font-display:swap}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related{--fc-cyan:#00deee;--fc-pink:#f51ca5;--fc-muted:#a6bfd3;--fc-line:#183348;color:#f1f6fc;font:400 16px/1.6 "Flynn Developed Barlow",Barlow,Arial,sans-serif;background:transparent;margin:0;padding:40px 24px 52px}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related>.elementor-container{max-width:1200px;margin-inline:auto}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related>.elementor-container>.elementor-column{width:100%;min-width:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related>.elementor-container>.elementor-column>.elementor-widget-wrap{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;align-items:stretch}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .elementor-widget{margin-bottom:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-projects-title{grid-column:1/-1;margin:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-projects-title .elementor-heading-title{font:400 20px/1.5 "Flynn Developed Pixel",monospace;color:var(--fc-pink);text-transform:uppercase;margin:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-projects-title:after{content:"";display:block;width:65px;height:2px;margin-top:12px;background:linear-gradient(90deg,var(--fc-cyan),var(--fc-pink))}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card{width:100%;min-width:0;border:1px solid var(--fc-line);border-radius:3px;overflow:hidden;background:#07111e;margin:0;padding:0;transition:border-color .18s}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card:hover,[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card:focus-within{border-color:var(--fc-cyan)}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card>.elementor-container{height:100%;max-width:none}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card>.elementor-container>.elementor-column{width:100%}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card>.elementor-container>.elementor-column>.elementor-widget-wrap{display:flex;flex-direction:column;flex-wrap:nowrap;gap:10px;align-items:stretch;position:relative;padding:0 0 18px;height:100%}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-cover{margin:0;background:#030811}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-cover a{display:block}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;max-height:none}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card-title{padding:7px 20px 0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card-title .elementor-heading-title{font:700 20px/1.35 "Flynn Developed Barlow",Barlow,Arial,sans-serif;color:#f1f6fc;margin:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card-title a{color:inherit;text-decoration:none}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-project-summary{padding:0 20px;color:var(--fc-muted);font:400 14px/1.6 "Flynn Developed Barlow",Barlow,Arial,sans-serif}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-project-summary p{margin:0;font:inherit;color:inherit}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-tags{padding:0 20px}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-tags .elementor-icon-list-items{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:0;padding:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-tags .elementor-icon-list-item{margin:0;padding:3px 8px;background:#0c2938;border-radius:2px}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-tags .elementor-icon-list-icon{display:none}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-tags .elementor-icon-list-text{padding:0;color:var(--fc-cyan);font:700 10px/1.5 "Flynn Developed Barlow",Barlow,Arial,sans-serif;text-transform:uppercase}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms{margin-top:auto;padding:4px 65px 0 20px}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .elementor-icon-list-items{display:flex;flex-wrap:wrap;gap:17px;list-style:none;margin:0;padding:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .elementor-icon-list-item{padding:0;margin:0}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .elementor-icon-list-icon{color:var(--fc-pink);font-size:23px}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .elementor-icon-list-icon :is(i,svg){color:var(--fc-pink);fill:currentColor;width:23px;height:23px;font-size:23px}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .fa-nintendo-switch{display:inline-block;background:currentColor;mask:url("../../Images/Sincronizado/interruptor-de-nintendo-da004eb05d33c5.svg") center/contain no-repeat}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .fa-nintendo-switch:before{content:none}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-platforms .elementor-icon-list-text,[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card-arrow .elementor-button-text{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card-arrow{position:absolute;right:14px;bottom:13px;width:auto}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card-arrow .elementor-button{display:grid;place-items:center;width:36px;height:36px;padding:6px;background:transparent;color:var(--fc-muted)}
+[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related a:focus-visible{outline:2px solid var(--fc-cyan);outline-offset:-3px}
+[data-elementor-id="8251"] .fc-developed-support{display:none}
+@media(max-width:900px){[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related>.elementor-container>.elementor-column>.elementor-widget-wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related{padding:30px 18px 36px}[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related>.elementor-container>.elementor-column>.elementor-widget-wrap{grid-template-columns:1fr;gap:20px}[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-projects-title .elementor-heading-title{font-size:18px}}
+@media(prefers-reduced-motion:reduce){[data-elementor-id="8251"] .fc-developed-projects.fc-home.fc-game-related .fc-card{transition:none}}
+
+.fc-shared-projects.fc-about-projects.elementor-section{padding:0}
+.fc-shared-projects.fc-about-projects.elementor-section>.elementor-container>.elementor-column>.elementor-widget-wrap{grid-template-columns:minmax(0,1fr);gap:0;padding:0}
+.fc-shared-projects.fc-about-projects.elementor-section .elementor-widget-shortcode{grid-column:1/-1;width:100%}

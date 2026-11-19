@@ -3,12 +3,15 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const root = path.resolve(__dirname, '../..');
-const folders = new Set(['Home', 'Games', 'Indies', 'About', 'Press', 'Compartido']);
+const folders = new Set(['Home', 'Games', 'Indies', 'About', 'Press', 'Privacy', 'Compartido']);
 const types = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8',
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png',
   '.webp': 'image/webp', '.svg': 'image/svg+xml', '.ttf': 'font/ttf',
+  '.gif': 'image/gif', '.avif': 'image/avif', '.ico': 'image/x-icon',
+  '.woff': 'font/woff', '.woff2': 'font/woff2', '.otf': 'font/otf', '.eot': 'application/vnd.ms-fontobject',
+  '.mp4': 'video/mp4', '.webm': 'video/webm', '.mjs': 'text/javascript; charset=utf-8',
   '.zip': 'application/zip', '.md': 'text/markdown; charset=utf-8', '.txt': 'text/plain; charset=utf-8',
 };
 const insideRoot = (file) => {

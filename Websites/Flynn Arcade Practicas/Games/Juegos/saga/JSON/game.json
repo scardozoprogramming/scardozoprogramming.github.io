@@ -1,0 +1,51 @@
+{
+  "title": "Saga",
+  "source_url": "https://www.flynnsarcades.com/saga/",
+  "synced_at": "2026-11-19T09:13:59.640Z",
+  "sections": [
+    {
+      "title": "Saga",
+      "text": [
+        "Flynn’s Arcade Publishing",
+        ""
+      ],
+      "images": []
+    },
+    {
+      "title": "Purchase",
+      "text": [],
+      "images": []
+    },
+    {
+      "title": "About Eternum Ex",
+      "text": [
+        "",
+        "",
+        "",
+        "If I had to describe Eternum Ex in one word, it would be nostalgia… My mind returned to an earlier era…",
+        "Kumi",
+        "Translated from Spanish",
+        "«It is difficult not to play again and again a level until you get over it. A title for classic hearts, but also for…",
+        "Gustavo Maeso",
+        "«If you really long for those days of playing Street Fighter II and Metal Slug while you wait for your Book It group’s pizza…",
+        "Zachary Miller"
+      ],
+      "images": [
+        {
+          "image": "Compartido/Images/Sincronizado/project-saga-1-935ae494e270de.webp",
+          "alt": ""
+        },
+        {
+          "image": "Compartido/Images/Sincronizado/fc-home-saga-hover-4eae0b4170d775.webp",
+          "alt": ""
+        }
+      ]
+    }
+  ],
+  "slug": "saga",
+  "paragraphs": [
+    ""
+  ],
+  "gallery": [],
+  "projects": "Compartido/JSON/proyectos.json"
+}

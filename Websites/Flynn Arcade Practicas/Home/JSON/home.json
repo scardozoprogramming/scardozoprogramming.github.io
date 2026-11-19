@@ -1,34 +1,23 @@
 {
-  "featured_game": "The Last Cat in the Universe",
-  "hero_title": [
-    "The Last Cat",
-    "in the Universe"
-  ],
-  "hero_copy": "A short narrative incremental game about finding peace amidst the darkness.",
-  "promotions": [
+  "title": "Inicio",
+  "source_url": "https://www.flynnsarcades.com/",
+  "synced_at": "2026-11-19T09:13:59.640Z",
+  "sections": [
     {
-      "title": "Hell comes to Asia",
-      "subtitle": "Eternum Ex",
-      "description": "Eternum Ex goes on sale in Asia on August 5.",
-      "game": "Eternum Ex",
-      "image": "Games/Juegos/eternum-ex/Images/promotion.png",
-      "preview": "Games/Juegos/eternum-ex/Images/preview.webp"
-    },
-    {
-      "title": "When hope is the last thing to be lost",
-      "subtitle": "Lambs on the Road",
-      "description": "A platform adventure centered on holding onto hope.",
-      "game": "Lambs on the Road",
-      "image": "Games/Juegos/lambs-on-the-road/Images/cover.jpg",
-      "preview": "Games/Juegos/lambs-on-the-road/Images/preview.webp"
-    },
-    {
-      "title": "A Viking girl's quest for revenge.",
-      "subtitle": "Saga",
-      "description": "An action platformer from Flynn's Arcade.",
-      "game": "Saga",
-      "image": "About/Images/project-saga.webp",
-      "url": "https://store.steampowered.com/app/2590820/Saga/?l=english"
+      "title": "Room Battle",
+      "text": [
+        "Vacuum cleaner fighting"
+      ],
+      "images": [
+        {
+          "image": "Compartido/Images/Sincronizado/Roombattle_CoverArt-8d8ff3ba415251.png",
+          "alt": ""
+        }
+      ]
     }
-  ]
+  ],
+  "featured_game": "Room Battle",
+  "hero_copy": "Vacuum cleaner fighting",
+  "promotions": [],
+  "catalog": "Games/JSON/catalog.json"
 }

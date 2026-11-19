@@ -1,16 +1,22 @@
 {
   "name": "Jose, Catcade Games",
-  "detail": "Freddy Farmer",
   "slug": "jose-catcade-games",
-  "media": {
-    "name": "Jose, Catcade Games",
-    "logo": "Indies/Estudios/jose-catcade-games/Images/logo.png",
-    "portrait": "Indies/Estudios/jose-catcade-games/Images/portrait.png",
-    "website": "https://www.catcadegames.com/"
-  },
+  "source_url": "https://www.flynnsarcades.com/indies/",
   "summary": "Self-taught Valencian creator inspired by arcades and 16-bit consoles.",
   "paragraphs": [
     "Hello! My name is Jose from Valencia (Spain) and all my life I have played video games, especially Arcades and 16-bit consoles.",
     "Without studying video game development and learning on my own, I try to create video games that are reminiscent of that wonderful time."
-  ]
+  ],
+  "images": [
+    {
+      "image": "Compartido/Images/Sincronizado/logo_Catcade-Games-fee1ee5428f140.png",
+      "alt": ""
+    },
+    {
+      "image": "Compartido/Images/Sincronizado/jose_web-BLANCO-Y-NEGRO-191x300-94f3013ac1c48c.png",
+      "alt": ""
+    }
+  ],
+  "html": "Indies/Estudios/jose-catcade-games/HTML/studio.html",
+  "data": "Indies/Estudios/jose-catcade-games/JSON/studio.json"
 }

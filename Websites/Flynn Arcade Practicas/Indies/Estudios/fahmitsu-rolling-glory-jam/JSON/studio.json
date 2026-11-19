@@ -1,15 +1,21 @@
 {
   "name": "Fahmitsu, Rolling Glory Jam",
-  "detail": "What Comes After",
   "slug": "fahmitsu-rolling-glory-jam",
-  "media": {
-    "name": "Fahmitsu, Rolling Glory Jam",
-    "logo": "Indies/Estudios/fahmitsu-rolling-glory-jam/Images/logo.png",
-    "portrait": "Indies/Estudios/fahmitsu-rolling-glory-jam/Images/portrait.jpg",
-    "website": "https://fahmitsu.com/"
-  },
+  "source_url": "https://www.flynnsarcades.com/indies/",
   "summary": "A Jakarta-based developer working across games and narrative.",
   "paragraphs": [
     "I’m an indie developer based in Jakarta, Indonesia. I’ve been working in the game industry since 2011 and have covered wide range of jobs from programming, game design, game journalism, marketing, PR, and narrative design. I probably can write dozens or more paragraphs about myself, but that sounds a bit too narcissistic."
-  ]
+  ],
+  "images": [
+    {
+      "image": "Compartido/Images/Sincronizado/estudio_rolling-7689ecf4b9fb19.png",
+      "alt": ""
+    },
+    {
+      "image": "Compartido/Images/Sincronizado/fahmitsu-194x300-a4759c89c4edb7.jpg",
+      "alt": ""
+    }
+  ],
+  "html": "Indies/Estudios/fahmitsu-rolling-glory-jam/HTML/studio.html",
+  "data": "Indies/Estudios/fahmitsu-rolling-glory-jam/JSON/studio.json"
 }

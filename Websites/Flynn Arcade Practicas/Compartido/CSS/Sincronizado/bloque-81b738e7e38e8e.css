@@ -1,0 +1,9 @@
+
+.fc6876a {display:none!important}
+body.page-id-6876 .fc-home .fc-promo-art:has(a[href$="/lambs-on-the-road/"]) {width:min(100%,32rem);margin-inline:auto}
+body.page-id-6876 .fc-home .fc-promo-art:has(a[href$="/lambs-on-the-road/"]) img {height:auto;aspect-ratio:16/9;object-fit:cover}
+body.page-id-6876 .fc-home .fc-promo-art-eternum:has(img.fc-preview-active) {width:min(100%,32rem);height:auto;aspect-ratio:16/9}
+body.page-id-6876 .fc-home .fc-promo-art-eternum img.fc-preview-active {inset:0;width:100%;height:100%;object-fit:contain}
+body.page-id-6876 .fc-home .fc-promo-art-eternum a {display:block;position:absolute;inset:0}
+body.page-id-6876 .fc-home .fc-promo-art-eternum:has(img.fc-preview-active) {position:relative}
+body.page-id-6876 .fc-home .fc-promo-art-eternum:has(img.fc-preview-active) img {object-fit:cover}
