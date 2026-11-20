@@ -1,0 +1,6 @@
+[
+  {
+    "url": "https://www.flynnsarcades.com/wp-content/uploads/img/bg.jpg",
+    "reason": "Original plugin default image is 404. Its unused generic CSS background was removed; no page uses this widget style."
+  }
+]

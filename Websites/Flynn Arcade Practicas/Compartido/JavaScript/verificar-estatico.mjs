@@ -24,7 +24,7 @@ function reference(value,from,resource=false){
   if(target.startsWith('../')||path.posix.isAbsolute(target)){missing.push({from,value,error:'outside root'});return}
   add(target);
 }
-async function walk(dir){let all=[];for(const entry of await fs.readdir(path.join(root,dir),{withFileTypes:true})){const file=dir?dir+'/'+entry.name:entry.name;if(entry.name==='.git')continue;if(entry.isDirectory())all.push(...await walk(file));else if(entry.isFile())all.push(file)}return all}
+async function walk(dir){let all=[];for(const entry of await fs.readdir(path.join(root,dir),{withFileTypes:true})){const file=dir?dir+'/'+entry.name:entry.name;if(entry.name==='.git'||(!dir&&entry.name==='versión anterior'))continue;if(entry.isDirectory())all.push(...await walk(file));else if(entry.isFile())all.push(file)}return all}
 const all=await walk('');
 for(const page of pages){add(page.file);add(page.template)}
 for(const file of external)if(all.includes(file))add(file);

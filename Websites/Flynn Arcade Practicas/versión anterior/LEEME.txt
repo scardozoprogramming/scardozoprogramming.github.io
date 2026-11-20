@@ -1,0 +1,52 @@
+FLYNN'S ARCADE — VERSIÓN ANTERIOR RECONSTRUIDA
+
+Esta carpeta es una copia local independiente del diseño anterior: fondo
+cuadriculado negro, paleta naranja/amarilla y contenidos preservados en las
+páginas terminadas en «Juan» y las plantillas de Juan Peralta.
+
+IMPORTANTE SOBRE SU PROCEDENCIA
+No es una captura histórica completa tomada antes del rediseño. Es una
+reconstrucción verificable realizada a partir del material que WordPress
+todavía conserva. No se han publicado restauraciones en WordPress.
+
+Material recuperado:
+- 44 páginas Juan.
+- 13 plantillas visuales de Juan Peralta.
+- Fondo original GRID_FONDO.jpg, conservado en la biblioteca de medios.
+- Cabecera: revisión 6783 de Juan, del 15 de septiembre de 2026.
+- Pie: revisión 6496 de Juan, del 28 de junio de 2025.
+- Press: contenido restituido desde Press_Archivos_Plantilla (4090), porque
+  las dos páginas auxiliares de Press conservadas estaban vacías.
+
+El Kit por defecto (3588) es configuración global, no una página visual.
+Sus colores y tipografías se aplican a esta copia. Se documenta por separado.
+Los contenedores de Feed Twitter y Twitter_linea se conservan, pero sus
+publicaciones externas no están disponibles; no se han inventado tweets.
+
+CÓMO ABRIRLA
+Abre index.html. Para utilizarla con un servidor local, desde esta carpeta:
+
+    node servidor.cjs
+
+Después abre http://127.0.0.1:4185/
+
+ORGANIZACIÓN
+Home, Games, Indies, About, Press y Privacy: páginas principales.
+Games/Juegos: fichas de los videojuegos.
+Paginas: páginas auxiliares antiguas.
+Plantillas: bloques de Juan Peralta recuperados.
+Compartido/HTML: cabecera y pie.
+Compartido/CSS y Compartido/JavaScript: estilos e interacciones locales.
+Assets: imágenes, animaciones, fuentes y estilos originales descargados.
+JSON: inventario y procedencia de los materiales.
+
+La copia funciona sin una instalación de WordPress ni su motor de plugins.
+Los enlaces de compra, redes, vídeos y publicaciones externas conservan sus
+destinos. El formulario de newsletter se muestra como parte del diseño, pero
+no envía datos. Los carruseles, filtros, búsqueda y galería funcionan localmente.
+
+El modo ?portfolio=1 del servidor añade únicamente anclas invisibles para
+automatizar capturas consecutivas. No cambia los textos, colores ni materiales.
+
+Para cambiar esta versión, edita sus propios archivos. Los archivos visuales
+de la versión actual se conservan fuera de esta carpeta y no se sobrescriben.

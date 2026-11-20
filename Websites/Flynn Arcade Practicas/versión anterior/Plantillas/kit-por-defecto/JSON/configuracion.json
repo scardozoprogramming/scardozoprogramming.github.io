@@ -1,0 +1,20 @@
+{
+  "id": 3588,
+  "title": "Kit por defecto",
+  "author": "Juan Peralta",
+  "type": "Configuración global",
+  "colors": {
+    "--e-global-color-primary": "#9C4D26",
+    "--e-global-color-secondary": "#BD782A",
+    "--e-global-color-text": "#9C4D26",
+    "--e-global-color-accent": "#FFCF33",
+    "--e-global-color-6cfa9f9": "#7B2121",
+    "--e-global-color-75b9b0c": "#000000",
+    "--e-global-color-80e29d3": "#0EF8F8",
+    "--e-global-color-db8f4a5": "#077C7C",
+    "--e-global-color-ac9a8be": "#043E3E",
+    "--e-global-color-1360e91": "#2D2D2D"
+  },
+  "background": "Assets/Images/GRID_FONDO.jpg",
+  "note": "Configuration, not a standalone visual page. Its appearance is represented in the previous-version captures."
+}
