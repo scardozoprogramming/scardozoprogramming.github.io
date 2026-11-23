@@ -9,20 +9,21 @@
         data-i18n-content="metaDescription"
         content="Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics, and interactive systems." />
 
+    <link rel="icon" type="image/png" href="Picture/SCARDOZO_avatar_con_detalles.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --bg: #050607;
-            --bg-2: #090f0d;
-            --card: rgba(10, 18, 16, .78);
-            --card-2: rgba(0, 230, 118, .06);
-            --accent: #00e676;
-            --accent-2: #00bcd4;
-            --text: #e9fff4;
-            --muted: #9aa8a2;
-            --border: rgba(0, 230, 118, .18);
-            --shadow: 0 0 35px rgba(0, 230, 118, .16);
+            --bg: #050a1a;
+            --bg-2: #0c1328;
+            --card: rgba(11, 20, 39, .82);
+            --card-2: rgba(139, 92, 246, .055);
+            --accent: #38DDF8;
+            --accent-2: #8B5CF6;
+            --text: #EDF5FF;
+            --muted: #A5B6CA;
+            --border: rgba(56, 221, 248, .20);
+            --shadow: 0 0 35px rgba(56, 221, 248, .12);
             --max: 1180px;
         }
 
@@ -39,9 +40,9 @@
             min-height: 100%;
             font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
             background:
-                radial-gradient(circle at top left, rgba(0, 230, 118, .15), transparent 32%),
-                radial-gradient(circle at bottom right, rgba(0, 188, 212, .12), transparent 34%),
-                linear-gradient(180deg, #020403, var(--bg));
+                radial-gradient(circle at top left, rgba(56, 221, 248, .15), transparent 32%),
+                radial-gradient(circle at bottom right, rgba(139, 92, 246, .12), transparent 34%),
+                linear-gradient(180deg, #040817, var(--bg));
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
@@ -90,7 +91,7 @@
             padding: 14px 16px;
             border: 1px solid var(--border);
             border-radius: 18px;
-            background: rgba(3, 8, 7, .82);
+            background: rgba(5, 12, 29, .86);
             backdrop-filter: blur(16px);
             box-shadow: var(--shadow);
         }
@@ -101,18 +102,24 @@
             align-items: center;
         }
 
+        /* Identidad SCARDOZO PROGRAMMING: se conserva íntegra la imagen original.
+           object-fit: cover recorta solo el fondo sobrante de su lienzo cuadrado. */
         .logo {
-            width: 48px;
-            height: 48px;
-            border-radius: 14px;
-            border: 1px solid rgba(0, 230, 118, .35);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            color: var(--accent);
-            background: linear-gradient(135deg, rgba(0,230,118,.16), rgba(0,188,212,.08));
-            box-shadow: inset 0 0 18px rgba(0,230,118,.15);
+            width: 56px;
+            height: 56px;
+            display: block;
+            flex: 0 0 56px;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #080e21;
+        }
+
+        .logo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         nav {
@@ -131,7 +138,7 @@
         }
 
         nav a:hover {
-            color: #001b10;
+            color: #061A29;
             background: var(--accent);
         }
 
@@ -139,8 +146,8 @@
         .cta {
             padding: 10px 14px;
             border-radius: 12px;
-            border: 1px solid rgba(0, 230, 118, .4);
-            background: linear-gradient(135deg, rgba(0,230,118,.16), rgba(0,188,212,.08));
+            border: 1px solid rgba(56, 221, 248, .4);
+            background: linear-gradient(135deg, rgba(56, 221, 248, .16), rgba(139, 92, 246, .08));
             color: var(--accent);
             font-weight: 800;
             text-decoration: none;
@@ -155,8 +162,8 @@
         .cta:hover {
             transform: translateY(-2px);
             background: var(--accent);
-            color: #001b10;
-            box-shadow: 0 0 25px rgba(0, 230, 118, .35);
+            color: #061A29;
+            box-shadow: 0 0 25px rgba(56, 221, 248, .35);
         }
 
         /* HERO */
@@ -217,11 +224,11 @@
         .contact-focus span {
             display: inline-flex;
             align-items: center;
-            border: 1px solid rgba(0,230,118,.30);
+            border: 1px solid rgba(56, 221, 248, .30);
             border-radius: 999px;
             padding: 7px 10px;
-            background: rgba(0,230,118,.07);
-            color: #c7ffdf;
+            background: rgba(56, 221, 248, .07);
+            color: #D2EEFF;
             font-size: 12px;
             font-weight: 900;
             text-transform: uppercase;
@@ -261,7 +268,7 @@
             border-radius: 24px;
             padding: 14px;
             background:
-                linear-gradient(180deg, rgba(0,230,118,.08), transparent),
+                linear-gradient(180deg, rgba(56, 221, 248, .08), transparent),
                 var(--card);
             box-shadow: var(--shadow);
             overflow: hidden;
@@ -345,7 +352,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(120deg, transparent, rgba(0,230,118,.12), transparent);
+            background: linear-gradient(120deg, transparent, rgba(56, 221, 248, .12), transparent);
             transform: translateX(-100%);
             transition: .6s;
             pointer-events: none;
@@ -357,8 +364,8 @@
 
         .card:hover {
             transform: translateY(-8px);
-            border-color: rgba(0, 230, 118, .65);
-            box-shadow: 0 0 38px rgba(0, 230, 118, .24);
+            border-color: rgba(56, 221, 248, .65);
+            box-shadow: 0 0 38px rgba(56, 221, 248, .24);
         }
 
         .card:hover h4 {
@@ -383,7 +390,7 @@
             object-fit: cover;
             object-position: center;
             border-radius: 16px;
-            background: #020403;
+            background: #040817;
             border: 1px solid rgba(255,255,255,.06);
         }
 
@@ -395,10 +402,10 @@
         .featured-label {
             display: inline-flex;
             margin-top: 14px;
-            border: 1px solid rgba(0,230,118,.36);
+            border: 1px solid rgba(56, 221, 248, .36);
             border-radius: 999px;
             padding: 6px 10px;
-            background: rgba(0,230,118,.10);
+            background: rgba(56, 221, 248, .10);
             color: var(--accent);
             font-size: 12px;
             font-weight: 900;
@@ -413,11 +420,11 @@
         }
 
         .project-tags span {
-            border: 1px solid rgba(0,230,118,.26);
+            border: 1px solid rgba(56, 221, 248, .26);
             border-radius: 999px;
             padding: 6px 9px;
-            background: rgba(0,230,118,.06);
-            color: #c7ffdf;
+            background: rgba(56, 221, 248, .06);
+            color: #D2EEFF;
             font-size: 12px;
             font-weight: 800;
             line-height: 1.25;
@@ -442,11 +449,11 @@
             display: inline-flex;
             width: fit-content;
             align-items: center;
-            border: 1px solid rgba(0,230,118,.34);
+            border: 1px solid rgba(56, 221, 248, .34);
             border-radius: 999px;
             padding: 7px 10px;
-            background: rgba(0,230,118,.08);
-            color: #c7ffdf;
+            background: rgba(56, 221, 248, .08);
+            color: #D2EEFF;
             font-size: 12px;
             font-weight: 900;
             text-transform: uppercase;
@@ -473,10 +480,10 @@
 
         .category-filter:hover,
         .category-filter.is-active {
-            border-color: rgba(0, 230, 118, .75);
+            border-color: rgba(56, 221, 248, .75);
             background: var(--accent);
-            color: #001b10;
-            box-shadow: 0 0 24px rgba(0, 230, 118, .25);
+            color: #061A29;
+            box-shadow: 0 0 24px rgba(56, 221, 248, .25);
         }
 
         .card.is-hidden {
@@ -519,7 +526,7 @@
             border-radius: 20px;
             padding: 18px;
             background:
-                linear-gradient(180deg, rgba(0,230,118,.07), transparent 52%),
+                linear-gradient(180deg, rgba(56, 221, 248, .07), transparent 52%),
                 var(--card);
             box-shadow: 0 16px 40px rgba(0,0,0,.22);
             transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
@@ -527,8 +534,8 @@
 
         .capability-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(0, 230, 118, .52);
-            box-shadow: 0 18px 42px rgba(0,0,0,.28), 0 0 28px rgba(0, 230, 118, .15);
+            border-color: rgba(56, 221, 248, .52);
+            box-shadow: 0 18px 42px rgba(0,0,0,.28), 0 0 28px rgba(56, 221, 248, .15);
         }
 
         .capability-card h4 {
@@ -538,11 +545,11 @@
         .capability-label {
             display: inline-flex;
             width: fit-content;
-            border: 1px solid rgba(0,230,118,.34);
+            border: 1px solid rgba(56, 221, 248, .34);
             border-radius: 999px;
             padding: 6px 9px;
-            background: rgba(0,230,118,.08);
-            color: #c7ffdf;
+            background: rgba(56, 221, 248, .08);
+            color: #D2EEFF;
             font-size: 11px;
             font-weight: 900;
             text-transform: uppercase;
@@ -599,6 +606,24 @@
             text-align: center;
         }
 
+
+        /* Full original brand mark, after Contact and before copyright. */
+        .footer-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 12px;
+        }
+        .footer-logo {
+            display: block;
+            width: min(360px, 100%);
+            aspect-ratio: 2.6 / 1;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        .footer-copyright { margin: 0; }
+
         /* RESPONSIVE */
         @media (max-width: 980px) {
             .hero {
@@ -627,6 +652,12 @@
             .wrap {
                 padding: 18px;
             }
+
+            /* Logotipo horizontal adaptado a la anchura del móvil. */
+            .brand { max-width: 100%; }
+            .logo { width: 142px; height: 54px; }
+            .brand > div:last-child strong { font-size: 12px; }
+            .brand > div:last-child .muted { font-size: 11px; }
 
             header {
                 position: relative;
@@ -672,7 +703,9 @@
     <div class="wrap">
         <header>
             <div class="brand">
-                <div class="logo">SCB</div>
+                <div class="logo">
+                    <img src="Picture/SCARDOZO_avatar_con_detalles.png" alt="Isotipo compacto de SCARDOZO PROGRAMMING" width="56" height="56" decoding="async">
+                </div>
                 <div>
                     <strong>Santiago Cardozo Botero</strong><br>
                     <span class="muted" data-i18n="role">Game & Web Developer</span>
@@ -924,7 +957,11 @@
             </div>
         </section>
         <footer>
-            © <span id="year"></span> Santiago Cardozo Botero
+            <div class="footer-brand">
+                <img class="footer-logo" src="Picture/Isologo_scardozo_programming.png"
+                     alt="SCARDOZO PROGRAMMING — logotipo completo" width="360" height="139" loading="lazy" decoding="async">
+            </div>
+            <p class="footer-copyright">© <span id="year"></span> Santiago Cardozo Botero</p>
         </footer>
     </div>
     <script>
@@ -945,8 +982,8 @@
         (function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.font = "bold 16px monospace";
-            ctx.fillStyle = "#00ff66";
-            ctx.shadowColor = "#00ff66";
+            ctx.fillStyle = "#38DDF8";
+            ctx.shadowColor = "#38DDF8";
             ctx.shadowBlur = 8;
             particles.forEach(p => {
                 ctx.globalAlpha = p.o;
