@@ -696,6 +696,17 @@
                 min-height: auto;
             }
         }
+
+        /* Temporary, self-contained previews for new web cards (no additional files needed). */
+        .project-preview {
+            display: block;
+            width: 100%;
+            height: 190px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,.08);
+            overflow: hidden;
+        }
+        .project-preview text { font-family: Inter, Arial, sans-serif; }
     </style>
 </head>
 <body>
@@ -744,7 +755,7 @@
                         <span data-i18n="proofSystems">Gameplay, UI, and interaction logic</span>
                     </div>
                     <div class="proof-stat">
-                        <strong>7 Projects</strong>
+                        <strong>9 Projects</strong>
                         <span data-i18n="proofProjects">Games, websites, and technical demos</span>
                     </div>
                     <div class="proof-stat">
@@ -787,7 +798,7 @@
                     <p class="muted" data-i18n="capabilityWebText">
                         Responsive layouts, JavaScript state, multilingual pages, product flows, and UI polish.
                     </p>
-                    <p class="capability-proof" data-i18n="capabilityWebProof">Evidence: Okiyama and Volley Beach Santi.</p>
+                    <p class="capability-proof" data-i18n="capabilityWebProof">Evidence: Okiyama, Volley Beach Santi, Natalia and Flynn's Arcades.</p>
                 </article>
                 <article class="capability-card">
                     <span class="capability-label" data-i18n="capabilityToolsLabel">Interactive Tools</span>
@@ -813,9 +824,9 @@
                 Projects grouped by discipline so the work is easier to scan.
             </p>
             <div class="category-bar" aria-label="Portfolio filters" data-i18n-aria-label="projectFiltersLabel">
-                <button class="category-filter is-active" type="button" data-filter="all" aria-controls="projectGrid" aria-pressed="true"><span data-i18n="filterAll">All Work</span> <strong>7</strong></button>
+                <button class="category-filter is-active" type="button" data-filter="all" aria-controls="projectGrid" aria-pressed="true"><span data-i18n="filterAll">All Work</span> <strong>9</strong></button>
                 <button class="category-filter" type="button" data-filter="game" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryGames">Game Development</span> <strong>4</strong></button>
-                <button class="category-filter" type="button" data-filter="web" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryWeb">Web Development</span> <strong>2</strong></button>
+                <button class="category-filter" type="button" data-filter="web" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryWeb">Web Development</span> <strong>4</strong></button>
                 <button class="category-filter" type="button" data-filter="graphics" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryGraphics">Computer Graphics</span> <strong>1</strong></button>
             </div>
 
@@ -849,6 +860,81 @@
                         <span data-i18n="volleyProof">Evidence: working prototype + tournament tools</span>
                     </div>
                     <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+                </a>
+
+
+                <!-- Nueva incorporación: sitio publicado. Su caso de estudio se añadirá después. -->
+                <a class="card" href="Websites/PortafolioFisioNatalia/site/index.html" data-categories="web" aria-label="Open Natalia physiotherapy portfolio">
+                    <svg class="project-preview" viewBox="0 0 520 280" role="img" aria-label="Illustrative preview of Natalia's physiotherapy portfolio; not a website screenshot" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="nataliaPreview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6faf9"/><stop offset="1" stop-color="#d7eaec"/></linearGradient>
+                            <linearGradient id="nataliaIcon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b8599"/><stop offset="1" stop-color="#4eabb0"/></linearGradient>
+                        </defs>
+                        <rect width="520" height="280" fill="url(#nataliaPreview)"/>
+                        <rect x="24" y="21" width="472" height="238" rx="16" fill="#ffffff" opacity=".87"/>
+                        <rect x="46" y="39" width="41" height="41" rx="10" fill="url(#nataliaIcon)"/>
+                        <text x="67" y="66" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">NP</text>
+                        <text x="96" y="53" fill="#205364" font-size="15" font-weight="800">NATALIA PARRA</text>
+                        <text x="96" y="70" fill="#477986" font-size="10" letter-spacing="1.6">FISIOTERAPEUTA</text>
+                        <line x1="47" y1="94" x2="468" y2="94" stroke="#deebeb" stroke-width="2"/>
+                        <text x="50" y="130" font-size="11" fill="#2b8fa0" font-weight="800" letter-spacing="2">PORTAFOLIO PROFESIONAL</text>
+                        <text x="49" y="165" font-size="25" fill="#17445c" font-weight="800">Neurodesarrollo</text>
+                        <text x="49" y="191" font-size="25" fill="#17445c" font-weight="800">y primera infancia</text>
+                        <rect x="49" y="210" width="122" height="25" rx="9" fill="#1f8697"/>
+                        <text x="110" y="227" fill="#ffffff" font-size="10" font-weight="800" text-anchor="middle">VER PORTAFOLIO</text>
+                        <circle cx="412" cy="177" r="57" fill="#dbf1ed"/>
+                        <path d="M385 200 Q412 148 439 200" fill="none" stroke="#7dbbb2" stroke-width="11" stroke-linecap="round"/>
+                        <circle cx="412" cy="145" r="15" fill="#7dbbb2"/>
+                        <text x="495" y="273" text-anchor="end" fill="#6d9da1" font-size="9">PREVIEW</text>
+                    </svg>
+                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
+                    <span class="featured-label" data-i18n="nataliaStatus">Published · In Improvement</span>
+                    <h4>Portafolio Fisio Natalia</h4>
+                    <p class="muted" data-i18n="nataliaDesc">I designed the personal logo and professional physiotherapy portfolio, presenting her experience with clear navigation and consistent colors and typography.</p>
+                    <div class="project-tags">
+                        <span data-i18n="nataliaRole">Designed & built: logo, personal brand and website</span>
+                        <span data-i18n="nataliaProof">Consistent palette, typography and navigation</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewPublishedSite">View published site</span>
+                </a>
+
+                <!-- Nueva incorporación: práctica de rediseño; la página individual de antes/después se hará después. -->
+                <a class="card" href="Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html" data-categories="web" aria-label="Open Flynn's Arcades improved version">
+                    <svg class="project-preview" viewBox="0 0 520 280" role="img" aria-label="Illustrative arcade website preview; not a website screenshot" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="flynnPreview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a143d"/><stop offset="1" stop-color="#101e3b"/></linearGradient>
+                            <linearGradient id="flynnAccent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8e63ff"/><stop offset="1" stop-color="#f34dbd"/></linearGradient>
+                        </defs>
+                        <rect width="520" height="280" fill="url(#flynnPreview)"/>
+                        <circle cx="415" cy="90" r="135" fill="#762cc2" opacity=".13"/>
+                        <circle cx="94" cy="234" r="140" fill="#28c4ea" opacity=".07"/>
+                        <rect x="24" y="24" width="472" height="232" rx="13" fill="#0c0f23" stroke="#6a50a3" stroke-width="2"/>
+                        <rect x="36" y="36" width="448" height="33" rx="5" fill="#22203a"/>
+                        <text x="52" y="58" font-size="17" font-weight="800" fill="#f1eafa">FLYNN'S ARCADE</text>
+                        <rect x="375" y="47" width="77" height="11" rx="5" fill="#6c5b96"/>
+                        <rect x="43" y="81" width="434" height="84" rx="7" fill="url(#flynnAccent)" opacity=".93"/>
+                        <text x="58" y="117" font-size="12" fill="#ffffff" letter-spacing="1.5" font-weight="700">ARCADE PUBLISHING</text>
+                        <text x="57" y="145" font-size="28" fill="#ffffff" font-weight="800">ROOMBATTLE</text>
+                        <rect x="44" y="179" width="248" height="18" rx="7" fill="#f5f0ff" opacity=".89"/>
+                        <circle cx="59" cy="188" r="5" fill="none" stroke="#695391" stroke-width="2"/>
+                        <path d="M63 191l6 5" stroke="#695391" stroke-width="2"/>
+                        <text x="79" y="192" font-size="9" fill="#695391">Search games · Genre · Platform</text>
+                        <rect x="303" y="180" width="81" height="16" rx="8" fill="#784ad6"/>
+                        <rect x="390" y="180" width="85" height="16" rx="8" fill="#397da3"/>
+                        <rect x="44" y="210" width="132" height="26" rx="5" fill="#393256"/>
+                        <rect x="183" y="210" width="132" height="26" rx="5" fill="#393256"/>
+                        <rect x="322" y="210" width="155" height="26" rx="5" fill="#393256"/>
+                        <text x="496" y="273" text-anchor="end" font-size="9" fill="#cab9ea">PREVIEW</text>
+                    </svg>
+                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
+                    <span class="featured-label" data-i18n="flynnStatus">UX/UI Redesign · Before &amp; After</span>
+                    <h4>Flynn's Arcades</h4>
+                    <p class="muted" data-i18n="flynnDesc">Improved an existing arcade website with enhanced search, filters and game catalogue navigation.</p>
+                    <div class="project-tags">
+                        <span data-i18n="flynnRole">Built: frontend improvements to a provided website</span>
+                        <span data-i18n="flynnProof">Original and improved versions published</span>
+                    </div>
+                    <span class="project-link" data-i18n="viewImprovedSite">View improved site</span>
                 </a>
 
                 <a class="card" href="Videogames/Lobstar/lobstar.html" data-categories="game">
@@ -951,6 +1037,7 @@
                     <div style="display:flex;flex-direction:column;gap:10px;">
                         <a class="cta" href="https://github.com/scardozoprogramming" target="_blank" rel="noopener noreferrer">GitHub</a>
                         <a class="cta" href="https://www.linkedin.com/in/santiago-cardozo-botero-2b8802260/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a class="cta" href="https://www.instagram.com/scardozoprogramming/" target="_blank" rel="noopener noreferrer">Instagram</a>
                         <a class="cta" href="https://scardozogamer.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
                     </div>
                 </div>
@@ -1065,7 +1152,7 @@
                 capabilityWebLabel: "Web Interfaces",
                 capabilityWebTitle: "Front-End Implementation",
                 capabilityWebText: "Responsive layouts, JavaScript state, multilingual pages, product flows, and UI polish.",
-                capabilityWebProof: "Evidence: Okiyama and Volley Beach Santi.",
+                capabilityWebProof: "Evidence: Okiyama, Volley Beach Santi, Natalia and Flynn's Arcades.",
                 capabilityToolsLabel: "Interactive Tools",
                 capabilityToolsTitle: "Useful Prototypes",
                 capabilityToolsText: "Browser tools, animated systems, scoreboards, cart flows, and user-facing interactions.",
@@ -1089,6 +1176,16 @@
                 interactiveWebProject: "Interactive Web Project",
                 okiyamaDesc: "Responsive company website with shop flow, cart logic, payment prep and WhatsApp support.",
                 volleyDesc: "Interactive training app with animations, tournament tools and live scoreboard logic.",
+                nataliaStatus: "Published · In Improvement",
+                nataliaDesc: "I designed the personal logo and professional physiotherapy portfolio, presenting her experience with clear navigation and consistent colors and typography.",
+                nataliaRole: "Designed & built: logo, personal brand and website",
+                nataliaProof: "Consistent palette, typography and navigation",
+                flynnStatus: "UX/UI Redesign · Before & After",
+                flynnDesc: "Improved an existing arcade website with enhanced search, filters and game catalogue navigation.",
+                flynnRole: "Built: frontend improvements to a provided website",
+                flynnProof: "Original and improved versions published",
+                viewPublishedSite: "View published site",
+                viewImprovedSite: "View improved site",
                 lobstarDesc: "Award-winning Unity arcade game with gameplay, UI, and feedback systems.",
                 roosterDesc: "Multiplayer combat prototype with health, timer, match flow and victory logic.",
                 ossmaskDesc: "Game jam platformer built around mask mechanics and fast production delivery.",
@@ -1151,7 +1248,7 @@
                 capabilityWebLabel: "Interfaces web",
                 capabilityWebTitle: "Implementación front-end",
                 capabilityWebText: "Diseños adaptables, estado con JavaScript, páginas multidioma, flujos de producto y pulido de interfaz.",
-                capabilityWebProof: "Evidencia: Okiyama y Volley Beach Santi.",
+                capabilityWebProof: "Evidencia: Okiyama, Volley Beach Santi, Natalia y Flynn's Arcades.",
                 capabilityToolsLabel: "Herramientas interactivas",
                 capabilityToolsTitle: "Prototipos útiles",
                 capabilityToolsText: "Herramientas en navegador, sistemas animados, marcadores, carritos e interacciones de usuario.",
@@ -1175,6 +1272,16 @@
                 interactiveWebProject: "Proyecto web interactivo",
                 okiyamaDesc: "Sitio corporativo adaptable con tienda, carrito, preparación de pago y atención por WhatsApp.",
                 volleyDesc: "App de entrenamiento con animaciones, torneo y lógica de marcador en vivo.",
+                nataliaStatus: "Publicado · En mejora",
+                nataliaDesc: "Diseñé el logo y el portafolio profesional de fisioterapia para presentar su experiencia, con navegación clara y colores y tipografía coherentes.",
+                nataliaRole: "Diseñé y desarrollé: logo, marca personal y web",
+                nataliaProof: "Paleta, tipografía y navegación unificadas",
+                flynnStatus: "Rediseño UX/UI · Antes y después",
+                flynnDesc: "Mejoré una web arcade existente incorporando búsqueda, filtros y mejor navegación del catálogo.",
+                flynnRole: "Desarrollé: mejoras frontend sobre la web recibida",
+                flynnProof: "Versiones original y mejorada publicadas",
+                viewPublishedSite: "Ver web publicada",
+                viewImprovedSite: "Ver web mejorada",
                 lobstarDesc: "Juego arcade premiado en Unity con gameplay, interfaz y sistemas de respuesta.",
                 roosterDesc: "Prototipo de combate multijugador con vida, temporizador, flujo y victoria.",
                 ossmaskDesc: "Juego de plataformas de game jam con mecánicas de máscaras y entrega rápida.",
