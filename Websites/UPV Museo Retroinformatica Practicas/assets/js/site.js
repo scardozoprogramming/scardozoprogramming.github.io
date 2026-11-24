@@ -6,7 +6,7 @@
   const dialogTitle = document.getElementById('modal-title');
   const dialogBody = document.getElementById('modal-body');
   const closeButton = document.getElementById('modal-close');
-  const modalData = window.RETRO_DEMO_DATA || { machines:{}, activities:{}, blogs:{} };
+  const modalData = window.RETRO_SITE_DATA || { machines:{}, activities:{}, blogs:{} };
   let focusBeforeDialog = null;
 
   function closeMenu() {
@@ -40,8 +40,8 @@
     if (image) {
       const fig = node('div', 'modal-figure');
       const img = document.createElement('img');
-      img.src = 'assets/' + image;
-      img.alt = 'Ilustración pixel art: ' + title;
+      img.src = image;
+      img.alt = 'Ilustración de ' + title;
       img.width = 320; img.height = 220;
       fig.append(img); dialogBody.append(fig);
     }
@@ -62,7 +62,7 @@
     const machineButton = e.target.closest('[data-machine]');
     if (machineButton) {
       const item = modalData.machines[machineButton.dataset.machine];
-      if (item) openDialog(item.title, item.text + ' La disponibilidad de este equipo en el museo debe confirmarse.', item.meta, item.image);
+      if (item) openDialog(item.title, item.text, item.meta, item.image);
       return;
     }
     const activityButton = e.target.closest('[data-activity]');
@@ -80,10 +80,10 @@
     const infoButton = e.target.closest('[data-info]');
     if (infoButton) {
       const legal = infoButton.dataset.info === 'legal';
-      openDialog(legal ? 'Aviso legal en revisión' : 'Privacidad en revisión',
-        legal ? 'Este es un prototipo. Los datos del titular de la web y los textos legales deberán aportarse y aprobarse antes de la publicación oficial.'
-              : 'Este prototipo no envía ni almacena datos del formulario. Antes de publicarlo será necesario definir el responsable del tratamiento, la política de privacidad y el mecanismo de contacto autorizado.',
-        'Información provisional del prototipo');
+      openDialog(legal ? 'Aviso legal' : 'Privacidad',
+        legal ? 'La información legal y los datos del titular de este sitio deben incorporarse por la entidad responsable antes de habilitar su publicación institucional.'
+              : 'El formulario informativo únicamente comprueba los campos en tu navegador; no envía datos ni realiza inscripciones. La política de privacidad oficial deberá publicarse antes de habilitar cualquier recogida de datos.',
+        'Información del sitio');
     }
   });
 
@@ -101,7 +101,7 @@
         if (isMatch) shown++;
       });
       const status = document.getElementById(group === 'activity' ? 'activity-filter-status' : 'machine-filter-status');
-      if (status) status.textContent = shown + (group === 'activity' ? (shown===1 ? ' actividad de ejemplo' : ' actividades de ejemplo') : (shown===1 ? ' ficha de ejemplo' : ' fichas de ejemplo'));
+      if (status) status.textContent = shown + (group === 'activity' ? (shown===1 ? ' actividad disponible para explorar' : ' actividades disponibles para explorar') : (shown===1 ? ' máquina' : ' máquinas'));
     });
   });
 
@@ -115,7 +115,7 @@
       const result = document.getElementById('form-result');
       if (!form.reportValidity()) { if (result) result.hidden = true; return; }
       if (result) {
-        result.textContent = '✓ Validación correcta. Esta es una demostración: no se han enviado ni guardado los datos. El canal de contacto real se añadirá después de la aprobación institucional.';
+        result.textContent = '✓ Campos correctos. Este formulario aún no está conectado a un servicio de contacto: no se han enviado ni guardado los datos.';
         result.hidden = false;
         result.scrollIntoView({block:'nearest', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
       }
