@@ -1,18 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Santiago Cardozo Botero — Game, Web, and Interactive Developer Portfolio</title>
-    <meta
-        name="description"
-        data-i18n-content="metaDescription"
-        content="Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics, and interactive systems." />
-
-    <link rel="icon" type="image/png" href="Picture/SCARDOZO_avatar_con_detalles.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Santiago Cardozo Botero — Game, Web, and Interactive Developer Portfolio</title>
+<meta content="Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics, and interactive systems." data-i18n-content="metaDescription" name="description"/>
+<link href="Picture/SCARDOZO_avatar_con_detalles.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<style>
         :root {
             --bg: #050a1a;
             --bg-2: #0c1328;
@@ -710,348 +706,313 @@
     </style>
 </head>
 <body>
-    <canvas id="binaryCanvas"></canvas>
-    <div class="wrap">
-        <header>
-            <div class="brand">
-                <div class="logo">
-                    <img src="Picture/SCARDOZO_avatar_con_detalles.png" alt="Isotipo compacto de SCARDOZO PROGRAMMING" width="56" height="56" decoding="async">
-                </div>
-                <div>
-                    <strong>Santiago Cardozo Botero</strong><br>
-                    <span class="muted" data-i18n="role">Game & Web Developer</span>
-                </div>
-            </div>
-            <nav>
-                <a href="#home" data-i18n="navHome">Home</a>
-                <a href="#profile" data-i18n="navProfile">Profile</a>
-                <a href="#projects" data-i18n="navProjects">Projects</a>
-                <a href="#contact" data-i18n="navContact">Contact</a>
-            </nav>
-            <button id="langToggle" class="cta">Español</button>
-        </header>
-        <main id="home" class="hero">
-            <div>
-                <h2 data-i18n="heroTitle">Game, Web, and Interactive Systems Portfolio</h2>
-                <h1 data-i18n="heroSubtitle">Building playable, usable, and polished interactive projects</h1>
-                <p class="lead" data-i18n="heroText">
+<canvas id="binaryCanvas"></canvas>
+<div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">
+<img alt="Isotipo compacto de SCARDOZO PROGRAMMING" decoding="async" height="56" src="Picture/SCARDOZO_avatar_con_detalles.png" width="56"/>
+</div>
+<div>
+<strong>Santiago Cardozo Botero</strong><br/>
+<span class="muted" data-i18n="role">Game &amp; Web Developer</span>
+</div>
+</div>
+<nav>
+<a data-i18n="navHome" href="#home">Home</a>
+<a data-i18n="navProfile" href="#profile">Profile</a>
+<a data-i18n="navProjects" href="#projects">Projects</a>
+<a data-i18n="navContact" href="#contact">Contact</a>
+</nav>
+<button class="cta" id="langToggle">Español</button>
+</header>
+<main class="hero" id="home">
+<div>
+<h2 data-i18n="heroTitle">Game, Web, and Interactive Systems Portfolio</h2>
+<h1 data-i18n="heroSubtitle">Building playable, usable, and polished interactive projects</h1>
+<p class="lead" data-i18n="heroText">
                     A focused portfolio across Unity games, responsive websites, technical graphics, and browser-based tools.
                 </p>
-                <div class="hero-stack" aria-label="Core stack">
-                    <span>Unity</span>
-                    <span>C#</span>
-                    <span>JavaScript</span>
-                    <span>HTML/CSS</span>
-                    <span data-i18n="stackUiSystems">UI Systems</span>
-                    <span data-i18n="stackInteractive">Interactive Tools</span>
-                </div>
-                <div class="hero-actions">
-                    <a class="cta" href="#projects" data-i18n="heroPrimaryCta">View Projects</a>
-                    <a class="cta" href="#contact" data-i18n="heroSecondaryCta">Contact Me</a>
-                </div>
-                <div class="hero-proof" aria-label="Portfolio proof points">
-                    <div class="proof-stat">
-                        <strong>Games + Web</strong>
-                        <span data-i18n="proofSystems">Gameplay, UI, and interaction logic</span>
-                    </div>
-                    <div class="proof-stat">
-                        <strong>9 Projects</strong>
-                        <span data-i18n="proofProjects">Games, websites, and technical demos</span>
-                    </div>
-                    <div class="proof-stat">
-                        <strong>Professional + Academic</strong>
-                        <span data-i18n="proofTeam">Company, academic, and team projects</span>
-                    </div>
-                </div>
-            </div>
-            <aside class="profile-card">
-                <img src="Picture/FotoSantiagoCardozoBotero.jpeg" alt="Santiago Cardozo Botero">
-                <div class="meta">
-                    <div>
-                        <strong data-i18n="skillsTitle">Skills</strong><br>
-                        <span class="muted" data-i18n="skillsText">
+<div aria-label="Core stack" class="hero-stack">
+<span>Unity</span>
+<span>C#</span>
+<span>JavaScript</span>
+<span>HTML/CSS</span>
+<span data-i18n="stackUiSystems">UI Systems</span>
+<span data-i18n="stackInteractive">Interactive Tools</span>
+</div>
+<div class="hero-actions">
+<a class="cta" data-i18n="heroPrimaryCta" href="#projects">View Projects</a>
+<a class="cta" data-i18n="heroSecondaryCta" href="#contact">Contact Me</a>
+</div>
+<div aria-label="Portfolio proof points" class="hero-proof">
+<div class="proof-stat">
+<strong>Games + Web</strong>
+<span data-i18n="proofSystems">Gameplay, UI, and interaction logic</span>
+</div>
+<div class="proof-stat">
+<strong>9 Projects</strong>
+<span data-i18n="proofProjects">Games, websites, and technical demos</span>
+</div>
+<div class="proof-stat">
+<strong>Professional + Academic</strong>
+<span data-i18n="proofTeam">Company, academic, and team projects</span>
+</div>
+</div>
+</div>
+<aside class="profile-card">
+<img alt="Santiago Cardozo Botero" src="Picture/FotoSantiagoCardozoBotero.jpeg"/>
+<div class="meta">
+<div>
+<strong data-i18n="skillsTitle">Skills</strong><br/>
+<span class="muted" data-i18n="skillsText">
                             Unity · C# · JavaScript · HTML/CSS · Gameplay Systems · UI Systems ·
                             Responsive Web · Computer Graphics
                         </span>
-                    </div>
-                </div>
-            </aside>
-        </main>
-        <section id="profile" class="profile-section">
-            <h3 data-i18n="profileTitle">Developer Profile</h3>
-            <p class="profile-intro" data-i18n="profileIntro">
+</div>
+</div>
+</aside>
+</main>
+<section class="profile-section" id="profile">
+<h3 data-i18n="profileTitle">Developer Profile</h3>
+<p class="profile-intro" data-i18n="profileIntro">
                 I build interactive systems across Unity and the web, combining gameplay logic, responsive interfaces,
                 and technical prototypes with clear visual presentation.
             </p>
-            <div class="capability-grid">
-                <article class="capability-card">
-                    <span class="capability-label" data-i18n="capabilityGameLabel">Game Systems</span>
-                    <h4 data-i18n="capabilityGameTitle">Gameplay Logic</h4>
-                    <p class="muted" data-i18n="capabilityGameText">
+<div class="capability-grid">
+<article class="capability-card">
+<span class="capability-label" data-i18n="capabilityGameLabel">Game Systems</span>
+<h4 data-i18n="capabilityGameTitle">Gameplay Logic</h4>
+<p class="muted" data-i18n="capabilityGameText">
                         Unity, C#, player feedback, UI behavior, combat states, and match-flow systems.
                     </p>
-                    <p class="capability-proof" data-i18n="capabilityGameProof">Evidence: LOBSTAR!, Smack That Rooster, Boo and OSS Mask Protocol.</p>
-                </article>
-                <article class="capability-card">
-                    <span class="capability-label" data-i18n="capabilityWebLabel">Web Interfaces</span>
-                    <h4 data-i18n="capabilityWebTitle">Front-End Implementation</h4>
-                    <p class="muted" data-i18n="capabilityWebText">
+<p class="capability-proof" data-i18n="capabilityGameProof">Evidence: LOBSTAR!, Smack That Rooster, Boo and OSS Mask Protocol.</p>
+</article>
+<article class="capability-card">
+<span class="capability-label" data-i18n="capabilityWebLabel">Web Interfaces</span>
+<h4 data-i18n="capabilityWebTitle">Front-End Implementation</h4>
+<p class="muted" data-i18n="capabilityWebText">
                         Responsive layouts, JavaScript state, multilingual pages, product flows, and UI polish.
                     </p>
-                    <p class="capability-proof" data-i18n="capabilityWebProof">Evidence: Okiyama, Volley Beach Santi, Natalia and Flynn's Arcades.</p>
-                </article>
-                <article class="capability-card">
-                    <span class="capability-label" data-i18n="capabilityToolsLabel">Interactive Tools</span>
-                    <h4 data-i18n="capabilityToolsTitle">Useful Prototypes</h4>
-                    <p class="muted" data-i18n="capabilityToolsText">
+<p class="capability-proof" data-i18n="capabilityWebProof">Evidence: Okiyama, Volley Beach Santi, Natalia and Flynn's Arcades.</p>
+</article>
+<article class="capability-card">
+<span class="capability-label" data-i18n="capabilityToolsLabel">Interactive Tools</span>
+<h4 data-i18n="capabilityToolsTitle">Useful Prototypes</h4>
+<p class="muted" data-i18n="capabilityToolsText">
                         Browser tools, animated systems, scoreboards, cart flows, and user-facing interactions.
                     </p>
-                    <p class="capability-proof" data-i18n="capabilityToolsProof">Evidence: Volley tools, Okiyama cart flow and project case studies.</p>
-                </article>
-                <article class="capability-card">
-                    <span class="capability-label" data-i18n="capabilityGraphicsLabel">Technical Graphics</span>
-                    <h4 data-i18n="capabilityGraphicsTitle">Visual Systems</h4>
-                    <p class="muted" data-i18n="capabilityGraphicsText">
+<p class="capability-proof" data-i18n="capabilityToolsProof">Evidence: Volley tools, Okiyama cart flow and project case studies.</p>
+</article>
+<article class="capability-card">
+<span class="capability-label" data-i18n="capabilityGraphicsLabel">Technical Graphics</span>
+<h4 data-i18n="capabilityGraphicsTitle">Visual Systems</h4>
+<p class="muted" data-i18n="capabilityGraphicsText">
                         Lighting, shading models, atmosphere, scene presentation, and render-mode controls.
                     </p>
-                    <p class="capability-proof" data-i18n="capabilityGraphicsProof">Evidence: Computer Graphics Final Project.</p>
-                </article>
-            </div>
-        </section>
-        <section id="projects">
-            <h3 data-i18n="projectsTitle">Selected Work</h3>
-            <p class="projects-intro" data-i18n="projectsIntro">
+<p class="capability-proof" data-i18n="capabilityGraphicsProof">Evidence: Computer Graphics Final Project.</p>
+</article>
+</div>
+</section>
+<section id="projects">
+<h3 data-i18n="projectsTitle">Selected Work</h3>
+<p class="projects-intro" data-i18n="projectsIntro">
                 Projects grouped by discipline so the work is easier to scan.
             </p>
-            <div class="category-bar" aria-label="Portfolio filters" data-i18n-aria-label="projectFiltersLabel">
-                <button class="category-filter is-active" type="button" data-filter="all" aria-controls="projectGrid" aria-pressed="true"><span data-i18n="filterAll">All Work</span> <strong>9</strong></button>
-                <button class="category-filter" type="button" data-filter="game" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryGames">Game Development</span> <strong>4</strong></button>
-                <button class="category-filter" type="button" data-filter="web" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryWeb">Web Development</span> <strong>4</strong></button>
-                <button class="category-filter" type="button" data-filter="graphics" aria-controls="projectGrid" aria-pressed="false"><span data-i18n="categoryGraphics">Computer Graphics</span> <strong>1</strong></button>
-            </div>
-
-            <div class="cards" id="projectGrid">
-
-                <a class="card" href="Websites/Okiyama/okiyama.html" data-categories="web">
-                    <img src="Websites/Okiyama/assets/hero-okiyama.jpg" alt="Okiyama website project" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
-                    <span class="featured-label" data-i18n="professionalProject">Professional Project</span>
-                    <h4>Okiyama Website</h4>
-                    <p class="muted" data-i18n="okiyamaDesc">
+<div aria-label="Portfolio filters" class="category-bar" data-i18n-aria-label="projectFiltersLabel">
+<button aria-controls="projectGrid" aria-pressed="true" class="category-filter is-active" data-filter="all" type="button"><span data-i18n="filterAll">All Work</span> <strong>9</strong></button>
+<button aria-controls="projectGrid" aria-pressed="false" class="category-filter" data-filter="game" type="button"><span data-i18n="categoryGames">Game Development</span> <strong>4</strong></button>
+<button aria-controls="projectGrid" aria-pressed="false" class="category-filter" data-filter="web" type="button"><span data-i18n="categoryWeb">Web Development</span> <strong>4</strong></button>
+<button aria-controls="projectGrid" aria-pressed="false" class="category-filter" data-filter="graphics" type="button"><span data-i18n="categoryGraphics">Computer Graphics</span> <strong>1</strong></button>
+</div>
+<div class="cards" id="projectGrid">
+<a class="card" data-categories="web" href="Websites/Okiyama/okiyama.html">
+<img alt="Okiyama website project" decoding="async" loading="lazy" src="Websites/Okiyama/assets/hero-okiyama.jpg"/>
+<span class="project-category" data-i18n="categoryWeb">Web Development</span>
+<span class="featured-label" data-i18n="professionalProject">Professional Project</span>
+<h4>Okiyama Website</h4>
+<p class="muted" data-i18n="okiyamaDesc">
                         Responsive company website with shop flow, cart logic, payment prep and WhatsApp support.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="okiyamaRole">Built: UI, cart and payment preparation</span>
-                        <span data-i18n="okiyamaProof">Evidence: case study + before/after reference</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                </a>
-
-                <a class="card" href="Websites/VolleyPlaya/volleyplaya.html" data-categories="web">
-                    <img src="Websites/VolleyPlaya/site/assets/hero-beach-volley.png" alt="Volley Beach Santi web development project" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
-                    <span class="featured-label" data-i18n="interactiveWebProject">Interactive Web Project</span>
-                    <h4>Volley Beach Santi</h4>
-                    <p class="muted" data-i18n="volleyDesc">
+<div class="project-tags">
+<span data-i18n="okiyamaRole">Built: UI, cart and payment preparation</span>
+<span data-i18n="okiyamaProof">Evidence: case study + before/after reference</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+</a>
+<a class="card" data-categories="web" href="Websites/VolleyPlaya/volleyplaya.html">
+<img alt="Volley Beach Santi web development project" decoding="async" loading="lazy" src="Websites/VolleyPlaya/site/assets/hero-beach-volley.png"/>
+<span class="project-category" data-i18n="categoryWeb">Web Development</span>
+<span class="featured-label" data-i18n="interactiveWebProject">Interactive Web Project</span>
+<h4>Volley Beach Santi</h4>
+<p class="muted" data-i18n="volleyDesc">
                         Interactive training app with animations, tournament tools and live scoreboard logic.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="volleyRole">Built: animated tools and scoreboard logic</span>
-                        <span data-i18n="volleyProof">Evidence: working prototype + tournament tools</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                </a>
-
-
-                <!-- Nueva incorporación: sitio publicado. Su caso de estudio se añadirá después. -->
-                <a class="card" href="Websites/PortafolioFisioNatalia/site/index.html" data-categories="web" aria-label="Open Natalia physiotherapy portfolio">
-                    <svg class="project-preview" viewBox="0 0 520 280" role="img" aria-label="Illustrative preview of Natalia's physiotherapy portfolio; not a website screenshot" preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <linearGradient id="nataliaPreview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6faf9"/><stop offset="1" stop-color="#d7eaec"/></linearGradient>
-                            <linearGradient id="nataliaIcon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b8599"/><stop offset="1" stop-color="#4eabb0"/></linearGradient>
-                        </defs>
-                        <rect width="520" height="280" fill="url(#nataliaPreview)"/>
-                        <rect x="24" y="21" width="472" height="238" rx="16" fill="#ffffff" opacity=".87"/>
-                        <rect x="46" y="39" width="41" height="41" rx="10" fill="url(#nataliaIcon)"/>
-                        <text x="67" y="66" fill="#ffffff" font-size="18" font-weight="800" text-anchor="middle">NP</text>
-                        <text x="96" y="53" fill="#205364" font-size="15" font-weight="800">NATALIA PARRA</text>
-                        <text x="96" y="70" fill="#477986" font-size="10" letter-spacing="1.6">FISIOTERAPEUTA</text>
-                        <line x1="47" y1="94" x2="468" y2="94" stroke="#deebeb" stroke-width="2"/>
-                        <text x="50" y="130" font-size="11" fill="#2b8fa0" font-weight="800" letter-spacing="2">PORTAFOLIO PROFESIONAL</text>
-                        <text x="49" y="165" font-size="25" fill="#17445c" font-weight="800">Neurodesarrollo</text>
-                        <text x="49" y="191" font-size="25" fill="#17445c" font-weight="800">y primera infancia</text>
-                        <rect x="49" y="210" width="122" height="25" rx="9" fill="#1f8697"/>
-                        <text x="110" y="227" fill="#ffffff" font-size="10" font-weight="800" text-anchor="middle">VER PORTAFOLIO</text>
-                        <circle cx="412" cy="177" r="57" fill="#dbf1ed"/>
-                        <path d="M385 200 Q412 148 439 200" fill="none" stroke="#7dbbb2" stroke-width="11" stroke-linecap="round"/>
-                        <circle cx="412" cy="145" r="15" fill="#7dbbb2"/>
-                        <text x="495" y="273" text-anchor="end" fill="#6d9da1" font-size="9">PREVIEW</text>
-                    </svg>
-                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
-                    <span class="featured-label" data-i18n="nataliaStatus">Published · In Improvement</span>
-                    <h4>Portafolio Fisio Natalia</h4>
-                    <p class="muted" data-i18n="nataliaDesc">I designed the personal logo and professional physiotherapy portfolio, presenting her experience with clear navigation and consistent colors and typography.</p>
-                    <div class="project-tags">
-                        <span data-i18n="nataliaRole">Designed & built: logo, personal brand and website</span>
-                        <span data-i18n="nataliaProof">Consistent palette, typography and navigation</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewPublishedSite">View published site</span>
-                </a>
-
-                <!-- Nueva incorporación: práctica de rediseño; la página individual de antes/después se hará después. -->
-                <a class="card" href="Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html" data-categories="web" aria-label="Open Flynn's Arcades improved version">
-                    <svg class="project-preview" viewBox="0 0 520 280" role="img" aria-label="Illustrative arcade website preview; not a website screenshot" preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <linearGradient id="flynnPreview" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a143d"/><stop offset="1" stop-color="#101e3b"/></linearGradient>
-                            <linearGradient id="flynnAccent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8e63ff"/><stop offset="1" stop-color="#f34dbd"/></linearGradient>
-                        </defs>
-                        <rect width="520" height="280" fill="url(#flynnPreview)"/>
-                        <circle cx="415" cy="90" r="135" fill="#762cc2" opacity=".13"/>
-                        <circle cx="94" cy="234" r="140" fill="#28c4ea" opacity=".07"/>
-                        <rect x="24" y="24" width="472" height="232" rx="13" fill="#0c0f23" stroke="#6a50a3" stroke-width="2"/>
-                        <rect x="36" y="36" width="448" height="33" rx="5" fill="#22203a"/>
-                        <text x="52" y="58" font-size="17" font-weight="800" fill="#f1eafa">FLYNN'S ARCADE</text>
-                        <rect x="375" y="47" width="77" height="11" rx="5" fill="#6c5b96"/>
-                        <rect x="43" y="81" width="434" height="84" rx="7" fill="url(#flynnAccent)" opacity=".93"/>
-                        <text x="58" y="117" font-size="12" fill="#ffffff" letter-spacing="1.5" font-weight="700">ARCADE PUBLISHING</text>
-                        <text x="57" y="145" font-size="28" fill="#ffffff" font-weight="800">ROOMBATTLE</text>
-                        <rect x="44" y="179" width="248" height="18" rx="7" fill="#f5f0ff" opacity=".89"/>
-                        <circle cx="59" cy="188" r="5" fill="none" stroke="#695391" stroke-width="2"/>
-                        <path d="M63 191l6 5" stroke="#695391" stroke-width="2"/>
-                        <text x="79" y="192" font-size="9" fill="#695391">Search games · Genre · Platform</text>
-                        <rect x="303" y="180" width="81" height="16" rx="8" fill="#784ad6"/>
-                        <rect x="390" y="180" width="85" height="16" rx="8" fill="#397da3"/>
-                        <rect x="44" y="210" width="132" height="26" rx="5" fill="#393256"/>
-                        <rect x="183" y="210" width="132" height="26" rx="5" fill="#393256"/>
-                        <rect x="322" y="210" width="155" height="26" rx="5" fill="#393256"/>
-                        <text x="496" y="273" text-anchor="end" font-size="9" fill="#cab9ea">PREVIEW</text>
-                    </svg>
-                    <span class="project-category" data-i18n="categoryWeb">Web Development</span>
-                    <span class="featured-label" data-i18n="flynnStatus">UX/UI Redesign · Before &amp; After</span>
-                    <h4>Flynn's Arcades</h4>
-                    <p class="muted" data-i18n="flynnDesc">Improved an existing arcade website with enhanced search, filters and game catalogue navigation.</p>
-                    <div class="project-tags">
-                        <span data-i18n="flynnRole">Built: frontend improvements to a provided website</span>
-                        <span data-i18n="flynnProof">Original and improved versions published</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewImprovedSite">View improved site</span>
-                </a>
-
-                <a class="card" href="Videogames/Lobstar/lobstar.html" data-categories="game">
-                    <img src="Videogames/Lobstar/lobstar-poster.PNG" alt="LOBSTAR!" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
-                    <span class="featured-label" data-i18n="featuredProject">Featured Project</span>
-                    <h4>LOBSTAR!</h4>
-                    <p class="muted" data-i18n="lobstarDesc">
+<div class="project-tags">
+<span data-i18n="volleyRole">Built: animated tools and scoreboard logic</span>
+<span data-i18n="volleyProof">Evidence: working prototype + tournament tools</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+</a>
+<!-- Caso de estudio: identidad visual y desarrollo del portafolio de Natalia. -->
+<a aria-label="Open Natalia physiotherapy case study" class="card" data-categories="web" href="Websites/PortafolioFisioNatalia/portafolionatalia.html">
+<img alt="Natru la Fisio: logotipo original, paleta de marca y retrato de Natalia" decoding="async" height="597" loading="lazy" src="Websites/PortafolioFisioNatalia/assets/caso-estudio/natru-miniatura-portafolio.webp" width="1024"/>
+<span class="project-category" data-i18n="categoryWeb">Web Development</span>
+<span class="featured-label" data-i18n="nataliaStatus">Published · In Improvement</span>
+<h4>Portafolio Fisio Natalia</h4>
+<p class="muted" data-i18n="nataliaDesc">I designed the personal logo and professional physiotherapy portfolio, presenting her experience with clear navigation and consistent colors and typography.</p>
+<div class="project-tags">
+<span data-i18n="nataliaRole">Designed &amp; built: logo, personal brand and website</span>
+<span data-i18n="nataliaProof">Consistent palette, typography and navigation</span>
+</div>
+<span class="project-link" data-i18n="viewPublishedSite">View published site</span>
+</a>
+<!-- Nueva incorporación: práctica de rediseño; la página individual de antes/después se hará después. -->
+<a aria-label="Open Flynn's Arcades case study" class="card" data-categories="web" href="Websites/Flynn Arcade Practicas/flynnsarcades.html">
+<svg aria-label="Illustrative arcade website preview; not a website screenshot" class="project-preview" preserveaspectratio="xMidYMid slice" role="img" viewbox="0 0 520 280">
+<defs>
+<lineargradient id="flynnPreview" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1a143d"></stop><stop offset="1" stop-color="#101e3b"></stop></lineargradient>
+<lineargradient id="flynnAccent" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#8e63ff"></stop><stop offset="1" stop-color="#f34dbd"></stop></lineargradient>
+</defs>
+<rect fill="url(#flynnPreview)" height="280" width="520"></rect>
+<circle cx="415" cy="90" fill="#762cc2" opacity=".13" r="135"></circle>
+<circle cx="94" cy="234" fill="#28c4ea" opacity=".07" r="140"></circle>
+<rect fill="#0c0f23" height="232" rx="13" stroke="#6a50a3" stroke-width="2" width="472" x="24" y="24"></rect>
+<rect fill="#22203a" height="33" rx="5" width="448" x="36" y="36"></rect>
+<text fill="#f1eafa" font-size="17" font-weight="800" x="52" y="58">FLYNN'S ARCADE</text>
+<rect fill="#6c5b96" height="11" rx="5" width="77" x="375" y="47"></rect>
+<rect fill="url(#flynnAccent)" height="84" opacity=".93" rx="7" width="434" x="43" y="81"></rect>
+<text fill="#ffffff" font-size="12" font-weight="700" letter-spacing="1.5" x="58" y="117">ARCADE PUBLISHING</text>
+<text fill="#ffffff" font-size="28" font-weight="800" x="57" y="145">ROOMBATTLE</text>
+<rect fill="#f5f0ff" height="18" opacity=".89" rx="7" width="248" x="44" y="179"></rect>
+<circle cx="59" cy="188" fill="none" r="5" stroke="#695391" stroke-width="2"></circle>
+<path d="M63 191l6 5" stroke="#695391" stroke-width="2"></path>
+<text fill="#695391" font-size="9" x="79" y="192">Search games · Genre · Platform</text>
+<rect fill="#784ad6" height="16" rx="8" width="81" x="303" y="180"></rect>
+<rect fill="#397da3" height="16" rx="8" width="85" x="390" y="180"></rect>
+<rect fill="#393256" height="26" rx="5" width="132" x="44" y="210"></rect>
+<rect fill="#393256" height="26" rx="5" width="132" x="183" y="210"></rect>
+<rect fill="#393256" height="26" rx="5" width="155" x="322" y="210"></rect>
+<text fill="#cab9ea" font-size="9" text-anchor="end" x="496" y="273">PREVIEW</text>
+</svg>
+<span class="project-category" data-i18n="categoryWeb">Web Development</span>
+<span class="featured-label" data-i18n="flynnStatus">UX/UI Redesign · Before &amp; After</span>
+<h4>Flynn's Arcades</h4>
+<p class="muted" data-i18n="flynnDesc">Improved an existing arcade website with enhanced search, filters and game catalogue navigation.</p>
+<div class="project-tags">
+<span data-i18n="flynnRole">Built: frontend improvements to a provided website</span>
+<span data-i18n="flynnProof">Original and improved versions published</span>
+</div>
+<span class="project-link" data-i18n="viewImprovedSite">View improved site</span>
+</a>
+<a class="card" data-categories="game" href="Videogames/Lobstar/lobstar.html">
+<img alt="LOBSTAR!" decoding="async" loading="lazy" src="Videogames/Lobstar/lobstar-poster.PNG"/>
+<span class="project-category" data-i18n="categoryGames">Game Development</span>
+<span class="featured-label" data-i18n="featuredProject">Featured Project</span>
+<h4>LOBSTAR!</h4>
+<p class="muted" data-i18n="lobstarDesc">
                         Award-winning Unity arcade game with gameplay, UI, and feedback systems.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="lobstarRole">Built: gameplay, UI, and feedback systems</span>
-                        <span data-i18n="lobstarProof">Evidence: trailer + playable build</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
-                </a>
-
-                <a class="card" href="Videogames/SmackThatRooster/smackthatrooster.html" data-categories="game">
-                    <img src="Videogames/SmackThatRooster/SmackThatRooster.PNG" alt="Smack That Rooster" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
-                    <h4>Smack That Rooster</h4>
-                    <p class="muted" data-i18n="roosterDesc">
+<div class="project-tags">
+<span data-i18n="lobstarRole">Built: gameplay, UI, and feedback systems</span>
+<span data-i18n="lobstarProof">Evidence: trailer + playable build</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+<img alt="Unity" class="engine-badge" src="Picture/Unity Logo.png"/>
+</a>
+<a class="card" data-categories="game" href="Videogames/SmackThatRooster/smackthatrooster.html">
+<img alt="Smack That Rooster" decoding="async" loading="lazy" src="Videogames/SmackThatRooster/SmackThatRooster.PNG"/>
+<span class="project-category" data-i18n="categoryGames">Game Development</span>
+<h4>Smack That Rooster</h4>
+<p class="muted" data-i18n="roosterDesc">
                         Multiplayer combat prototype with health, timer, match flow and victory logic.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="roosterRole">Built: health, timer and results flow</span>
-                        <span data-i18n="roosterProof">Evidence: gameplay video + systems breakdown</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
-                </a>
-
-                <a class="card" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html" data-categories="game">
-                    <img src="./Videogames/BooImInsideYourWall/Poster_Boo.png" alt="BOO! I'm Inside Your Walls" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
-                    <h4>BOO! I'm Inside Your Walls</h4>
-                    <p class="muted" data-i18n="BooImInsideYourWallDesc">
+<div class="project-tags">
+<span data-i18n="roosterRole">Built: health, timer and results flow</span>
+<span data-i18n="roosterProof">Evidence: gameplay video + systems breakdown</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+<img alt="Unity" class="engine-badge" src="Picture/Unity Logo.png"/>
+</a>
+<a class="card" data-categories="game" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html">
+<img alt="BOO! I'm Inside Your Walls" decoding="async" loading="lazy" src="./Videogames/BooImInsideYourWall/Poster_Boo.png"/>
+<span class="project-category" data-i18n="categoryGames">Game Development</span>
+<h4>BOO! I'm Inside Your Walls</h4>
+<p class="muted" data-i18n="BooImInsideYourWallDesc">
                         Stealth puzzle project with ghost abilities, level pacing and clear player goals.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="booRole">Built: player abilities + level pacing</span>
-                        <span data-i18n="booProof">Evidence: trailer + ability breakdown</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
-                </a>
-
-                <a class="card" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html" data-categories="game">
-                    <img src="./Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png" alt="OSS Mask Protocol" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryGames">Game Development</span>
-                    <h4>OSS Mask Protocol</h4>
-                    <p class="muted" data-i18n="ossmaskDesc">
+<div class="project-tags">
+<span data-i18n="booRole">Built: player abilities + level pacing</span>
+<span data-i18n="booProof">Evidence: trailer + ability breakdown</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+<img alt="Unity" class="engine-badge" src="Picture/Unity Logo.png"/>
+</a>
+<a class="card" data-categories="game" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html">
+<img alt="OSS Mask Protocol" decoding="async" loading="lazy" src="./Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png"/>
+<span class="project-category" data-i18n="categoryGames">Game Development</span>
+<h4>OSS Mask Protocol</h4>
+<p class="muted" data-i18n="ossmaskDesc">
                         Game jam platformer built around mask mechanics and fast production delivery.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="ossRole">Built: jam systems + production support</span>
-                        <span data-i18n="ossProof">Evidence: itch.io build + PDF</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                    <img src="Picture/Unity Logo.png" alt="Unity" class="engine-badge">
-                </a>
-
-                <a class="card" href="Websites/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html" data-categories="graphics">
-                    <img src="./Websites/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"
-                         alt="Computer Graphics Final Project" loading="lazy" decoding="async">
-                    <span class="project-category" data-i18n="categoryGraphics">Computer Graphics</span>
-                    <h4>Computer Graphics Final Project</h4>
-                    <p class="muted" data-i18n="graphicsDesc">
+<div class="project-tags">
+<span data-i18n="ossRole">Built: jam systems + production support</span>
+<span data-i18n="ossProof">Evidence: itch.io build + PDF</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+<img alt="Unity" class="engine-badge" src="Picture/Unity Logo.png"/>
+</a>
+<a class="card" data-categories="graphics" href="Websites/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html">
+<img alt="Computer Graphics Final Project" decoding="async" loading="lazy" src="./Websites/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"/>
+<span class="project-category" data-i18n="categoryGraphics">Computer Graphics</span>
+<h4>Computer Graphics Final Project</h4>
+<p class="muted" data-i18n="graphicsDesc">
                         Interactive graphics demo for lighting, shaders, fog and render modes.
                     </p>
-                    <div class="project-tags">
-                        <span data-i18n="graphicsRole">Built: lighting, shaders and render controls</span>
-                        <span data-i18n="graphicsProof">Evidence: interactive demo + GIFs</span>
-                    </div>
-                    <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
-                </a>
-
-            </div>
-        </section>
-        <section id="contact">
-            <h3 data-i18n="contactTitle">Contact</h3>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <p class="muted" data-i18n="contactText">
+<div class="project-tags">
+<span data-i18n="graphicsRole">Built: lighting, shaders and render controls</span>
+<span data-i18n="graphicsProof">Evidence: interactive demo + GIFs</span>
+</div>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
+</a>
+</div>
+</section>
+<section id="contact">
+<h3 data-i18n="contactTitle">Contact</h3>
+<div class="contact-grid">
+<div class="contact-card">
+<p class="muted" data-i18n="contactText">
                         Available for opportunities where interactive systems, clear interfaces and reliable implementation matter.
                     </p>
-                    <div class="contact-focus" aria-label="Professional focus">
-                        <span data-i18n="focusGameplay">Gameplay Systems</span>
-                        <span data-i18n="focusFrontend">Front-End UI</span>
-                        <span data-i18n="focusInteractive">Interactive Tools</span>
-                    </div>
-                    <p><strong>Email</strong></p>
-                    <a class="cta" href="mailto:santiagocardozobotero@gmail.com">
+<div aria-label="Professional focus" class="contact-focus">
+<span data-i18n="focusGameplay">Gameplay Systems</span>
+<span data-i18n="focusFrontend">Front-End UI</span>
+<span data-i18n="focusInteractive">Interactive Tools</span>
+</div>
+<p><strong>Email</strong></p>
+<a class="cta" href="mailto:santiagocardozobotero@gmail.com">
                         santiagocardozobotero@gmail.com
                     </a>
-                </div>
-                <div class="contact-card">
-                    <p><strong data-i18n="social">Social</strong></p>
-                    <div style="display:flex;flex-direction:column;gap:10px;">
-                        <a class="cta" href="https://github.com/scardozoprogramming" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a class="cta" href="https://www.linkedin.com/in/santiago-cardozo-botero-2b8802260/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a class="cta" href="https://www.instagram.com/scardozoprogramming/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a class="cta" href="https://scardozogamer.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="footer-brand">
-                <img class="footer-logo" src="Picture/Isologo_scardozo_programming.png"
-                     alt="SCARDOZO PROGRAMMING — logotipo completo" width="360" height="139" loading="lazy" decoding="async">
-            </div>
-            <p class="footer-copyright">© <span id="year"></span> Santiago Cardozo Botero</p>
-        </footer>
-    </div>
-    <script>
+</div>
+<div class="contact-card">
+<p><strong data-i18n="social">Social</strong></p>
+<div style="display:flex;flex-direction:column;gap:10px;">
+<a class="cta" href="https://github.com/scardozoprogramming" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="cta" href="https://www.linkedin.com/in/santiago-cardozo-botero-2b8802260/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="cta" href="https://www.instagram.com/scardozoprogramming/" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="cta" href="https://scardozogamer.itch.io/" rel="noopener noreferrer" target="_blank">Itch.io</a>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-brand">
+<img alt="SCARDOZO PROGRAMMING — logotipo completo" class="footer-logo" decoding="async" height="139" loading="lazy" src="Picture/Isologo_scardozo_programming.png" width="360"/>
+</div>
+<p class="footer-copyright">© <span id="year"></span> Santiago Cardozo Botero</p>
+</footer>
+</div>
+<script>
         document.getElementById("year").textContent = new Date().getFullYear();
         /* Binary background */
         const canvas = document.getElementById("binaryCanvas");
