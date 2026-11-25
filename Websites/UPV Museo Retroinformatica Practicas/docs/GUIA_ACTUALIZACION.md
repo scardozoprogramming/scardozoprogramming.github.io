@@ -12,7 +12,7 @@
 ## 2. Editar el proyecto
 
 - **Colores, espaciados y tamaño de tarjetas:** `assets/css/styles.css`.
-- **Textos y orden de bloques:** archivos `retroinformatica_*.html`.
+- **Textos y orden de bloques:** archivos `*.html`.
 - **Contenido de ventanas de ficha:** `assets/js/content.js`.
 - **Filtros, menú y validación de campos:** `assets/js/site.js`.
 - **Máquinas:** `assets/img/machines/`. Arcade, Amstrad, Commodore y Spectrum comparten las mismas imágenes en Inicio, Máquinas y sus fichas emergentes. Si sustituyes una, usa la misma ruta en todas sus referencias.

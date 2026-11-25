@@ -23,7 +23,8 @@
     document.addEventListener('click', e => {
       if (!menu.contains(e.target) && !menuButton.contains(e.target)) closeMenu();
     });
-    window.addEventListener('resize', () => { if (window.innerWidth > 800) closeMenu(); });
+    const desktopMenu = window.matchMedia('(min-width: 1021px)');
+    desktopMenu.addEventListener('change', event => { if (event.matches) closeMenu(); });
   }
 
   function node(tag, className, contents) {
@@ -40,22 +41,24 @@
     if (image) {
       const fig = node('div', 'modal-figure');
       const img = document.createElement('img');
-      img.src = image;
+      img.src = window.RETRO_THEME_BASE ? new URL(image, window.RETRO_THEME_BASE).href : image;
       img.alt = 'Ilustración de ' + title;
-      img.width = 320; img.height = 220;
+      img.decoding = 'async';
+      img.loading = 'eager';
       fig.append(img); dialogBody.append(fig);
     }
     if (meta) dialogBody.append(node('p', 'modal-detail', meta));
     dialogBody.append(node('p', '', text));
     if (dialog.open) dialog.close();
-    dialog.showModal();
+    if (typeof dialog.showModal === 'function') dialog.showModal(); else dialog.setAttribute('open', '');
     closeButton?.focus();
   }
-  closeButton?.addEventListener('click', () => dialog.close());
-  dialog?.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+  const closeDialog = () => { if (typeof dialog.close === 'function') dialog.close(); else { dialog.removeAttribute('open'); focusBeforeDialog?.focus?.(); } };
+  closeButton?.addEventListener('click', closeDialog);
+  dialog?.addEventListener('click', e => { if (e.target === dialog) closeDialog(); });
   dialog?.addEventListener('close', () => { focusBeforeDialog?.focus?.(); });
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeMenu();
+    if (e.key === 'Escape' && menuButton?.getAttribute('aria-expanded') === 'true') { closeMenu(); menuButton.focus(); }
   });
 
   document.addEventListener('click', e => {
@@ -101,23 +104,25 @@
         if (isMatch) shown++;
       });
       const status = document.getElementById(group === 'activity' ? 'activity-filter-status' : 'machine-filter-status');
-      if (status) status.textContent = shown + (group === 'activity' ? (shown===1 ? ' actividad disponible para explorar' : ' actividades disponibles para explorar') : (shown===1 ? ' máquina' : ' máquinas'));
+      if (status) status.textContent = shown + (group === 'activity' ? (shown===1 ? ' actividad propuesta' : ' actividades propuestas') : (shown===1 ? ' máquina' : ' máquinas'));
     });
   });
 
   const form = document.getElementById('formulario');
   if (form) {
+    form.addEventListener('submit', e => e.preventDefault());
+    form.querySelectorAll('input,select,textarea,button').forEach(control => control.disabled = false);
     const params = new URLSearchParams(window.location.search);
     const motivo = params.get('motivo');
-    if (['participar', 'propuesta', 'consulta'].includes(motivo)) form.elements.motivo.value = motivo;
+    if (['participar', 'propuesta', 'consulta'].includes(motivo)) document.getElementById('motivo').value = motivo;
     form.addEventListener('submit', e => {
       e.preventDefault();
       const result = document.getElementById('form-result');
       if (!form.reportValidity()) { if (result) result.hidden = true; return; }
       if (result) {
-        result.textContent = '✓ Campos correctos. Este formulario aún no está conectado a un servicio de contacto: no se han enviado ni guardado los datos.';
+        result.textContent = 'Campos correctos. Este formulario aún no está conectado a un servicio de contacto: no se han enviado ni guardado los datos.';
         result.hidden = false;
-        result.scrollIntoView({block:'nearest', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+        result.scrollIntoView({block:'nearest', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
       }
     });
   }

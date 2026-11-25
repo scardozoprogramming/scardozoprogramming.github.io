@@ -1,0 +1,17 @@
+actividades.html 360 overflow False broken [] errors []
+actividades.html 768 overflow False broken [] errors []
+actividades.html 1440 overflow False broken [] errors []
+inicio.html 360 overflow False broken [] errors []
+inicio.html 768 overflow False broken [] errors []
+inicio.html 1440 overflow False broken [] errors []
+maquinas.html 360 overflow False broken [] errors []
+maquinas.html 768 overflow False broken [] errors []
+maquinas.html 1440 overflow False broken [] errors []
+que-es-el-club.html 360 overflow False broken [] errors []
+que-es-el-club.html 768 overflow False broken [] errors []
+que-es-el-club.html 1440 overflow False broken [] errors []
+unete.html 360 overflow False broken [] errors []
+unete.html 768 overflow False broken [] errors []
+unete.html 1440 overflow False broken [] errors []
+
+Resultados de renderizado del sitio estático con recursos incorporados antes del cambio de nombres; después del cambio, 135 referencias locales y anclas verificadas sin errores. PHP del tema: 18 archivos sin errores de sintaxis. No probado en WordPress real.
