@@ -12,7 +12,7 @@ todavía conserva. No se han publicado restauraciones en WordPress.
 Material recuperado:
 - 44 páginas Juan.
 - 13 plantillas visuales de Juan Peralta.
-- Fondo original GRID_FONDO.jpg, conservado en la biblioteca de medios.
+- Fondo original GRID_FONDO-9da39a06449f.jpg, conservado en la biblioteca de medios.
 - Cabecera: revisión 6783 de Juan, del 15 de septiembre de 2026.
 - Pie: revisión 6496 de Juan, del 28 de junio de 2025.
 - Press: contenido restituido desde Press_Archivos_Plantilla (4090), porque

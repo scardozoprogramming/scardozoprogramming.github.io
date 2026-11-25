@@ -15,6 +15,6 @@
     "--e-global-color-ac9a8be": "#043E3E",
     "--e-global-color-1360e91": "#2D2D2D"
   },
-  "background": "Assets/Images/GRID_FONDO.jpg",
+  "background": "Assets/Images/GRID_FONDO-9da39a06449f.jpg",
   "note": "Configuration, not a standalone visual page. Its appearance is represented in the previous-version captures."
 }

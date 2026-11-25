@@ -1,0 +1,2184 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070c1b">
+
+  <title>Flynn’s Arcades — Antes y después | SCARDOZO PROGRAMMING</title>
+
+  <meta
+    name="description"
+    content="Caso de estudio de Santiago Cardozo Botero: mejoras frontend y UX/UI de Flynn’s Arcades durante sus prácticas. Comparación entre la versión recibida y la versión mejorada."
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flynn’s Arcades — Antes y después">
+  <meta
+    property="og:description"
+    content="Un caso de estudio sobre búsqueda de videojuegos, filtros, navegación y mejoras frontend."
+  >
+
+  <link
+    rel="icon"
+    href="../../Picture/SCARDOZO_avatar_con_detalles.png"
+    type="image/png"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      color-scheme: dark;
+
+      --bg: #070c1b;
+      --surface: #101c30;
+      --surface-light: #17263e;
+      --text: #f2f7ff;
+      --muted: #bdcadb;
+      --cyan: #54ddf5;
+      --violet: #b3a0ff;
+      --border: #405675;
+
+      --radius: 20px;
+      --max-width: 1160px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 110px;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--text);
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+
+      background:
+        radial-gradient(
+          ellipse at 5% 0%,
+          #16445c65,
+          transparent 35%
+        ),
+        radial-gradient(
+          ellipse at 100% 20%,
+          #4a2b6852,
+          transparent 38%
+        ),
+        var(--bg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4.1rem);
+    }
+
+    h2 {
+      font-size: clamp(1.65rem, 3vw, 2.4rem);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 4px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    .container {
+      width: min(
+        calc(100% - 36px),
+        var(--max-width)
+      );
+
+      margin-inline: auto;
+    }
+
+    /* ACCESIBILIDAD */
+
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 12px;
+      z-index: 1000;
+
+      padding: 12px 16px;
+      border-radius: 8px;
+
+      color: #07121e;
+      background: var(--cyan);
+      font-weight: 800;
+    }
+
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    /* CABECERA */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: #080e1cf2;
+      border-bottom: 1px solid #40567590;
+      backdrop-filter: blur(16px);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      min-height: 82px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .brand small {
+      display: block;
+      margin-top: 3px;
+
+      color: var(--cyan);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* BOTONES */
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      min-height: 44px;
+      padding: 11px 17px;
+
+      border: 1px solid #6986aa;
+      border-radius: 11px;
+
+      color: #e2f4ff;
+      background: #1a2d46;
+
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.4;
+      text-align: center;
+
+      transition:
+        background 0.2s,
+        border-color 0.2s,
+        transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #294663;
+      border-color: var(--cyan);
+      transform: translateY(-1px);
+    }
+
+    .btn.primary {
+      color: #081827;
+      background: linear-gradient(
+        115deg,
+        #62e7f5,
+        #a4adff
+      );
+
+      border-color: #a8eeff;
+    }
+
+    .btn.primary:hover {
+      background: linear-gradient(
+        115deg,
+        #9cf2fc,
+        #c3b7ff
+      );
+    }
+
+    .btn.ghost {
+      background: transparent;
+    }
+
+    .btn[aria-pressed="true"] {
+      color: #081827;
+      background: var(--cyan);
+      border-color: var(--cyan);
+    }
+
+    /* CONTENIDO GENERAL */
+
+    .eyebrow {
+      margin-bottom: 14px;
+
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .panel {
+      overflow: hidden;
+
+      border: 1px solid #405675aa;
+      border-radius: var(--radius);
+
+      background: linear-gradient(
+        145deg,
+        #17263ddc,
+        #0b1426f2
+      );
+
+      box-shadow: 0 18px 50px #00000035;
+    }
+
+    section.content-section {
+      margin-top: 76px;
+      scroll-margin-top: 110px;
+    }
+
+    .section-heading {
+      margin-bottom: 24px;
+    }
+
+    .section-heading p:not(.eyebrow) {
+      max-width: 76ch;
+      margin-top: 14px;
+    }
+
+    /* PORTADA */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      align-items: stretch;
+      gap: 20px;
+
+      padding-top: 48px;
+    }
+
+    .hero-copy {
+      padding: clamp(25px, 4vw, 46px);
+    }
+
+    .hero h1 {
+      max-width: 17ch;
+    }
+
+    .hero-lead {
+      max-width: 57ch;
+      margin-top: 22px;
+
+      font-size: clamp(1rem, 1.6vw, 1.12rem);
+      line-height: 1.85;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 27px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 28px;
+    }
+
+    .tag {
+      padding: 5px 11px;
+
+      border: 1px solid #526c8c;
+      border-radius: 999px;
+
+      color: #dce9fb;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .tag.accent {
+      color: #ddd1ff;
+      border-color: #8071c4;
+    }
+
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+
+      min-height: 410px;
+      padding: 17px;
+
+      background: linear-gradient(
+        145deg,
+        #151f3b,
+        #32204c
+      );
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+
+      border-radius: 14px;
+      background: #15223c;
+    }
+
+    .hero-visual figcaption {
+      padding: 4px;
+
+      color: #cbd8ea;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* DATOS CLAVE */
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+
+      margin-top: 17px;
+    }
+
+    .fact {
+      padding: 18px;
+
+      border: 1px solid #405675;
+      border-radius: 15px;
+      background: #101d31;
+    }
+
+    .fact b {
+      display: block;
+      margin-bottom: 7px;
+
+      color: var(--cyan);
+      font-size: 11px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .fact span {
+      color: #ecf3ff;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    /* COMPARACIÓN ANTES / DESPUÉS */
+
+    .compare-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 18px;
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: 16px;
+    }
+
+    .compare-grid[data-view="before"] {
+      grid-template-columns: 1fr;
+    }
+
+    .compare-grid[data-view="after"] {
+      grid-template-columns: 1fr;
+    }
+
+    .compare-grid[data-view="before"] .after,
+    .compare-grid[data-view="after"] .before {
+      display: none;
+    }
+
+    .compare-card {
+      overflow: hidden;
+      min-width: 0;
+
+      border: 1px solid #435b7b;
+      border-radius: 18px;
+      background: #0d1729;
+    }
+
+    .compare-header {
+      padding: 23px;
+    }
+
+    .compare-header .marker {
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+    }
+
+    .compare-header h3 {
+      margin: 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .compare-header p {
+      min-height: 49px;
+      font-size: 14px;
+    }
+
+    .compare-header .btn {
+      margin-top: 17px;
+    }
+
+    .browser {
+      overflow: hidden;
+      margin: 0 13px 13px;
+
+      border: 1px solid #506684;
+      border-radius: 12px;
+      background: #091526;
+    }
+
+    .browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      padding: 10px 12px;
+
+      color: #cfe1f0;
+      background: #1c304b;
+      border-bottom: 1px solid #405675;
+
+      font-size: 11px;
+    }
+
+    .browser-bar .url {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .dots {
+      display: flex;
+      flex-shrink: 0;
+      gap: 5px;
+    }
+
+    .dots i {
+      display: block;
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background: #ef929b;
+    }
+
+    .dots i:nth-child(2) {
+      background: #eac774;
+    }
+
+    .dots i:nth-child(3) {
+      background: #84dab2;
+    }
+
+    .preview {
+      display: grid;
+      place-items: center;
+
+      height: 440px;
+      background: linear-gradient(
+        145deg,
+        #10203d,
+        #19152d
+      );
+    }
+
+    .preview-placeholder {
+      max-width: 330px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    .preview-placeholder strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .preview-placeholder p {
+      margin-bottom: 19px;
+      font-size: 13px;
+    }
+
+    .preview iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: white;
+    }
+
+    .preview-status {
+      min-height: 1.5em;
+      padding: 0 14px 12px;
+
+      color: #c6dcec;
+      font-size: 12px;
+    }
+
+    .note {
+      margin-top: 17px;
+      padding-left: 14px;
+
+      color: #afc3d8;
+      border-left: 3px solid var(--violet);
+
+      font-size: 13px;
+    }
+
+    /* DIFERENCIAS */
+
+    .difference-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .difference-card {
+      padding: 25px;
+
+      border: 1px solid #425a79;
+      border-radius: 17px;
+      background: #111d31;
+    }
+
+    .difference-card.improved {
+      background: linear-gradient(
+        120deg,
+        #153147,
+        #1b2542
+      );
+
+      border-color: #44869d;
+    }
+
+    .difference-card small {
+      display: block;
+      margin-bottom: 11px;
+
+      color: var(--violet);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+
+    .difference-card.improved small {
+      color: var(--cyan);
+    }
+
+    .difference-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .difference-card p {
+      font-size: 14px;
+    }
+
+    /* MEJORAS PRINCIPALES */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 13px;
+      margin-top: 16px;
+    }
+
+    .feature {
+      min-width: 0;
+      padding: 22px;
+
+      background: #111d31;
+      border: 1px solid #435a78;
+      border-radius: 16px;
+    }
+
+    .feature .number {
+      display: block;
+      margin-bottom: 15px;
+
+      color: var(--violet);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* PROCESO E IMPLEMENTACIÓN */
+
+    .three-columns {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .info-card {
+      padding: 24px;
+
+      border: 1px solid #435b7c;
+      border-radius: 17px;
+      background: #111d31;
+    }
+
+    .info-card .number {
+      display: block;
+      margin-bottom: 14px;
+
+      color: var(--cyan);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+
+    .info-card h3 {
+      margin-bottom: 11px;
+    }
+
+    .info-card p {
+      font-size: 14px;
+    }
+
+    /* RESULTADO */
+
+    .result {
+      padding: clamp(24px, 4vw, 40px);
+
+      border: 1px solid #526a88;
+      border-radius: 20px;
+
+      background: linear-gradient(
+        110deg,
+        #172c40,
+        #211b42
+      );
+    }
+
+    .result h2 {
+      max-width: 27ch;
+    }
+
+    .result p:not(.eyebrow) {
+      max-width: 80ch;
+      margin-top: 18px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      margin-top: 75px;
+      padding: 35px 0 45px;
+
+      border-top: 1px solid #405675;
+      text-align: center;
+    }
+
+    .footer img {
+      width: min(300px, 90%);
+      max-height: 120px;
+      object-fit: contain;
+      margin: 0 auto 18px;
+    }
+
+    .footer p {
+      font-size: 12px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: auto;
+      }
+
+      .hero-visual img {
+        height: 310px;
+      }
+
+      .features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      html {
+        scroll-padding-top: 20px;
+      }
+
+      .header {
+        position: relative;
+      }
+
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+        padding: 15px 0;
+      }
+
+      .nav {
+        width: 100%;
+      }
+
+      .hero {
+        padding-top: 26px;
+      }
+
+      .facts,
+      .three-columns,
+      .difference-grid,
+      .compare-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .compare-header p {
+        min-height: auto;
+      }
+
+      .preview {
+        height: 400px;
+      }
+
+      section.content-section {
+        margin-top: 58px;
+        scroll-margin-top: 25px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: calc(100% - 24px);
+      }
+
+      .brand img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .brand strong {
+        font-size: 12px;
+      }
+
+      .nav .btn {
+        padding: 9px 11px;
+        font-size: 11px;
+      }
+
+      .hero-copy {
+        padding: 24px;
+      }
+
+      .hero-copy .actions .btn {
+        width: 100%;
+      }
+
+      .hero-visual img {
+        height: 230px;
+      }
+
+      .compare-controls {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .compare-controls .btn {
+        padding: 10px 6px;
+        font-size: 11px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .preview {
+        height: 370px;
+      }
+
+      .feature,
+      .difference-card,
+      .info-card {
+        padding: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a
+    href="#main"
+    class="skip-link"
+    data-t="skip"
+  >
+    Saltar al contenido principal
+  </a>
+
+  <!-- CABECERA -->
+
+  <header class="header">
+    <div class="container header-content">
+
+      <a
+        class="brand"
+        href="../../index.html#projects"
+        aria-label="Volver al portafolio SCARDOZO PROGRAMMING"
+      >
+        <img
+          src="../../Picture/SCARDOZO_avatar_con_detalles.png"
+          alt=""
+          width="46"
+          height="46"
+        >
+
+        <span>
+          <strong>Santiago Cardozo Botero</strong>
+          <small>SCARDOZO PROGRAMMING</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación del caso de estudio">
+
+        <a
+          class="btn ghost"
+          href="../../index.html#projects"
+          data-t="back"
+        >
+          Portafolio
+        </a>
+
+        <a
+          class="btn ghost"
+          href="#comparison"
+          data-t="compareNav"
+        >
+          Antes y después
+        </a>
+
+        <button
+          class="btn"
+          id="languageButton"
+          type="button"
+          aria-label="Cambiar idioma a inglés"
+        >
+          English
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+
+    <!-- PORTADA -->
+
+    <div class="hero">
+
+      <section class="panel hero-copy" aria-labelledby="page-title">
+
+        <p class="eyebrow" data-t="eyebrow">
+          CASO DE ESTUDIO · PRÁCTICAS · 05 OCT — 19 NOV 2026
+        </p>
+
+        <h1 id="page-title" data-t="title">
+          De una web existente a un catálogo más fácil de explorar.
+        </h1>
+
+        <p class="hero-lead" data-t="intro">
+          Partí de una versión de Flynn’s Arcades que recibí al comenzar
+          mis prácticas. Mejoré la búsqueda de videojuegos, incorporé
+          filtros por plataforma y añadí información y respuestas más
+          claras en el catálogo.
+        </p>
+
+        <div class="actions">
+
+          <a
+            class="btn primary"
+            href="#comparison"
+            data-t="ctaCompare"
+          >
+            Comparar las versiones
+          </a>
+
+          <a
+            class="btn ghost"
+            href="https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-t="ctaLive"
+          >
+            Explorar mi versión ↗
+          </a>
+
+        </div>
+
+        <div class="tags" aria-label="Tecnologías y disciplinas">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag accent">UX/UI</span>
+          <span class="tag accent">Frontend</span>
+        </div>
+
+      </section>
+
+      <figure class="panel hero-visual">
+
+        <img
+          src="https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Compartido/Images/Sincronizado/hero-arcade-banner-1-6b8af63e812f55.webp"
+          width="780"
+          height="450"
+          alt="Imagen de portada utilizada en la versión mejorada de Flynn’s Arcades"
+          fetchpriority="high"
+          decoding="async"
+        >
+
+        <figcaption data-t="imageCaption">
+          Recurso gráfico de la web publicada. Las marcas y los
+          videojuegos pertenecen a sus respectivos titulares.
+        </figcaption>
+
+      </figure>
+
+    </div>
+
+    <!-- INFORMACIÓN DEL PROYECTO -->
+
+    <div class="facts">
+
+      <div class="fact">
+        <b data-t="factRole">Mi función</b>
+        <span data-t="factRoleText">
+          Desarrollo frontend y mejoras UX/UI
+        </span>
+      </div>
+
+      <div class="fact">
+        <b data-t="factSource">Punto de partida</b>
+        <span data-t="factSourceText">
+          Versión existente recibida durante las prácticas
+        </span>
+      </div>
+
+      <div class="fact">
+        <b data-t="factEvidence">Evidencia</b>
+        <span data-t="factEvidenceText">
+          Dos versiones públicas comparables
+        </span>
+      </div>
+
+    </div>
+
+    <!-- COMPARACIÓN -->
+
+    <section
+      class="content-section"
+      id="comparison"
+      aria-labelledby="comparison-title"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow" data-t="compareEyebrow">
+          01 / ANTES Y DESPUÉS
+        </p>
+
+        <h2 id="comparison-title" data-t="compareTitle">
+          Compara la versión recibida con la que mejoré.
+        </h2>
+
+        <p data-t="compareIntro">
+          Puedes abrir ambas páginas publicadas o cargarlas aquí.
+          Las vistas interactivas se cargan únicamente cuando
+          pulsas el botón correspondiente.
+        </p>
+
+      </div>
+
+      <div
+        class="compare-controls"
+        role="group"
+        aria-label="Seleccionar vistas para comparar"
+      >
+
+        <button
+          class="btn"
+          type="button"
+          data-view="before"
+          aria-pressed="false"
+          aria-controls="comparison-grid"
+          data-t="viewBefore"
+        >
+          Anterior
+        </button>
+
+        <button
+          class="btn"
+          type="button"
+          data-view="both"
+          aria-pressed="true"
+          aria-controls="comparison-grid"
+          data-t="viewBoth"
+        >
+          Ambas
+        </button>
+
+        <button
+          class="btn"
+          type="button"
+          data-view="after"
+          aria-pressed="false"
+          aria-controls="comparison-grid"
+          data-t="viewAfter"
+        >
+          Mejorada
+        </button>
+
+      </div>
+
+      <div
+        class="compare-grid"
+        id="comparison-grid"
+        data-view="both"
+      >
+
+        <!-- VERSIÓN ANTERIOR -->
+
+        <article class="compare-card before">
+
+          <div class="compare-header">
+
+            <span class="marker" data-t="beforeMarker">
+              01 · ANTES
+            </span>
+
+            <h3 data-t="beforeTitle">
+              La versión que recibí
+            </h3>
+
+            <p data-t="beforeDesc">
+              Navegación inicial, categorías por género
+              y catálogo de videojuegos existente.
+            </p>
+
+            <a
+              class="btn ghost"
+              href="https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/versi%C3%B3n%20anterior/Home/HTML/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-t="beforeLink"
+            >
+              Abrir versión anterior ↗
+            </a>
+
+          </div>
+
+          <div class="browser">
+
+            <div class="browser-bar">
+              <span class="dots" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </span>
+
+              <span class="url">
+                Flynn’s Arcades / versión anterior
+              </span>
+            </div>
+
+            <div class="preview">
+
+              <div
+                class="preview-placeholder"
+                id="placeholderBefore"
+              >
+
+                <strong data-t="beforePreviewTitle">
+                  Web anterior publicada
+                </strong>
+
+                <p data-t="previewInfo">
+                  Carga la web auténtica aquí o ábrela
+                  en una pestaña nueva.
+                </p>
+
+                <button
+                  class="btn primary load-site"
+                  type="button"
+                  data-site="before"
+                  aria-controls="frameBefore"
+                  data-t="loadSite"
+                >
+                  Cargar web
+                </button>
+
+              </div>
+
+              <iframe
+                id="frameBefore"
+                title="Versión anterior de Flynn’s Arcades"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                hidden
+              ></iframe>
+
+            </div>
+
+            <p
+              class="preview-status"
+              id="statusBefore"
+              role="status"
+              aria-live="polite"
+            ></p>
+
+          </div>
+
+        </article>
+
+        <!-- VERSIÓN MEJORADA -->
+
+        <article class="compare-card after">
+
+          <div class="compare-header">
+
+            <span class="marker" data-t="afterMarker">
+              02 · DESPUÉS
+            </span>
+
+            <h3 data-t="afterTitle">
+              Mi versión mejorada
+            </h3>
+
+            <p data-t="afterDesc">
+              Búsqueda desde la portada, filtros por género
+              y plataforma, tarjetas informativas y contador
+              de resultados.
+            </p>
+
+            <a
+              class="btn primary"
+              href="https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-t="afterLink"
+            >
+              Abrir versión mejorada ↗
+            </a>
+
+          </div>
+
+          <div class="browser">
+
+            <div class="browser-bar">
+
+              <span class="dots" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </span>
+
+              <span class="url">
+                Flynn’s Arcades / versión mejorada
+              </span>
+
+            </div>
+
+            <div class="preview">
+
+              <div
+                class="preview-placeholder"
+                id="placeholderAfter"
+              >
+
+                <strong data-t="afterPreviewTitle">
+                  Web mejorada publicada
+                </strong>
+
+                <p data-t="previewInfo">
+                  Carga la web auténtica aquí o ábrela
+                  en una pestaña nueva.
+                </p>
+
+                <button
+                  class="btn primary load-site"
+                  type="button"
+                  data-site="after"
+                  aria-controls="frameAfter"
+                  data-t="loadSite"
+                >
+                  Cargar web
+                </button>
+
+              </div>
+
+              <iframe
+                id="frameAfter"
+                title="Versión mejorada de Flynn’s Arcades"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                hidden
+              ></iframe>
+
+            </div>
+
+            <p
+              class="preview-status"
+              id="statusAfter"
+              role="status"
+              aria-live="polite"
+            ></p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <p class="note" data-t="compareNote">
+        Estas vistas muestran las páginas publicadas, no capturas
+        simuladas. Si el navegador bloquea una vista integrada,
+        utiliza el enlace para abrirla directamente.
+      </p>
+
+    </section>
+
+    <!-- CAMBIOS REALIZADOS -->
+
+    <section
+      class="content-section"
+      id="changes"
+      aria-labelledby="changes-title"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow" data-t="changesEyebrow">
+          02 / CAMBIOS COMPROBABLES
+        </p>
+
+        <h2 id="changes-title" data-t="changesTitle">
+          Qué cambió exactamente.
+        </h2>
+
+        <p data-t="changesIntro">
+          El objetivo no era sustituir la identidad visual
+          de Flynn’s Arcades, sino mejorar la forma de
+          descubrir videojuegos dentro de su catálogo.
+        </p>
+
+      </div>
+
+      <div class="difference-grid">
+
+        <article class="difference-card">
+
+          <small data-t="oldMarker">
+            ANTES · EXPERIENCIA ORIGINAL
+          </small>
+
+          <h3 data-t="oldTitle">
+            Exploración por categorías
+          </h3>
+
+          <p data-t="oldText">
+            La versión recibida ya ofrecía navegación,
+            categorías por género, fichas de juegos
+            y títulos destacados.
+          </p>
+
+        </article>
+
+        <article class="difference-card improved">
+
+          <small data-t="newMarker">
+            DESPUÉS · MI CONTRIBUCIÓN
+          </small>
+
+          <h3 data-t="newTitle">
+            Más formas de encontrar videojuegos
+          </h3>
+
+          <p data-t="newText">
+            Incorporé búsqueda, filtros por plataforma,
+            información visible de géneros y sistemas,
+            recuento de resultados y mensajes para
+            búsquedas sin coincidencias.
+          </p>
+
+        </article>
+
+      </div>
+
+      <div class="features">
+
+        <article class="feature">
+          <span class="number">01 / SEARCH</span>
+          <h3 data-t="feature1Title">Búsqueda directa</h3>
+          <p data-t="feature1Text">
+            Encontrar videojuegos por título sin recorrer
+            manualmente todas las tarjetas.
+          </p>
+        </article>
+
+        <article class="feature">
+          <span class="number">02 / FILTER</span>
+          <h3 data-t="feature2Title">Filtros combinables</h3>
+          <p data-t="feature2Text">
+            Explorar el catálogo por género y por plataforma,
+            incluyendo Nintendo Switch, Xbox, PlayStation y PC.
+          </p>
+        </article>
+
+        <article class="feature">
+          <span class="number">03 / CONTENT</span>
+          <h3 data-t="feature3Title">Información visible</h3>
+          <p data-t="feature3Text">
+            Mostrar los géneros y plataformas directamente
+            en las tarjetas de videojuegos.
+          </p>
+        </article>
+
+        <article class="feature">
+          <span class="number">04 / FEEDBACK</span>
+          <h3 data-t="feature4Title">Respuesta del catálogo</h3>
+          <p data-t="feature4Text">
+            Informar del número de juegos encontrados
+            y mostrar un mensaje cuando no hay resultados.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- DECISIONES DE DISEÑO -->
+
+    <section
+      class="content-section"
+      id="process"
+      aria-labelledby="process-title"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow" data-t="processEyebrow">
+          03 / CRITERIO UX/UI
+        </p>
+
+        <h2 id="process-title" data-t="processTitle">
+          Del problema a una solución comprobable.
+        </h2>
+
+      </div>
+
+      <div class="three-columns">
+
+        <article class="info-card">
+
+          <span class="number">01 / PROBLEM</span>
+
+          <h3 data-t="problemTitle">
+            Encontrar juegos requería recorrer el catálogo
+          </h3>
+
+          <p data-t="problemText">
+            Las categorías existentes eran útiles,
+            pero faltaban otras formas rápidas de
+            localizar títulos y filtrar por plataforma.
+          </p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="number">02 / SOLUTION</span>
+
+          <h3 data-t="solutionTitle">
+            Facilitar la exploración
+          </h3>
+
+          <p data-t="solutionText">
+            Integré búsqueda y filtros en la portada
+            y complementé las tarjetas con información
+            descriptiva.
+          </p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="number">03 / RESULT</span>
+
+          <h3 data-t="visibleTitle">
+            Más control para el visitante
+          </h3>
+
+          <p data-t="visibleText">
+            La web permite combinar criterios,
+            consultar resultados y descubrir
+            videojuegos sin abandonar el listado.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- IMPLEMENTACIÓN TÉCNICA -->
+
+    <section
+      class="content-section"
+      id="technical"
+      aria-labelledby="technical-title"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow" data-t="technicalEyebrow">
+          04 / DESARROLLO FRONTEND
+        </p>
+
+        <h2 id="technical-title" data-t="technicalTitle">
+          Qué resolví con cada tecnología.
+        </h2>
+
+        <p data-t="technicalIntro">
+          Estas son las áreas de implementación de la
+          versión mejorada. El caso de estudio explica
+          el trabajo sin exponer directamente el código fuente.
+        </p>
+
+      </div>
+
+      <div class="three-columns">
+
+        <article class="info-card">
+
+          <span class="number">HTML5</span>
+
+          <h3 data-t="htmlTitle">
+            Estructura y contenido
+          </h3>
+
+          <p data-t="htmlText">
+            Navegación, secciones del catálogo,
+            enlaces a videojuegos y datos descriptivos
+            organizados para su consulta.
+          </p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="number">CSS3</span>
+
+          <h3 data-t="cssTitle">
+            Claridad y adaptación visual
+          </h3>
+
+          <p data-t="cssText">
+            Distribución de la portada, presentación
+            de filtros, tarjetas de juegos y ajustes
+            para distintas anchuras de pantalla.
+          </p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="number">JavaScript</span>
+
+          <h3 data-t="jsTitle">
+            Interacción dinámica
+          </h3>
+
+          <p data-t="jsText">
+            Búsqueda de títulos, selección de género
+            y plataforma, recuento de resultados
+            y estados sin coincidencias.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- RESULTADOS -->
+
+    <section
+      class="content-section result"
+      id="result"
+      aria-labelledby="result-title"
+    >
+
+      <p class="eyebrow" data-t="resultEyebrow">
+        05 / RESULTADOS Y APRENDIZAJES
+      </p>
+
+      <h2 id="result-title" data-t="resultTitle">
+        Un proyecto que se puede comprobar,
+        no solo describir.
+      </h2>
+
+      <p data-t="resultText">
+        Mi aportación consistió en ampliar la utilidad
+        de un frontend existente, manteniendo reconocible
+        la identidad original del proyecto.
+
+        Las dos versiones publicadas permiten revisar
+        las diferencias visuales e interactivas.
+      </p>
+
+      <p class="note" data-t="resultNote">
+        No se atribuyen mejoras cuantitativas de
+        rendimiento, conversión o satisfacción de usuarios
+        sin disponer de mediciones comparables.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn primary"
+          href="https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-t="resultVisit"
+        >
+          Visitar la versión mejorada ↗
+        </a>
+
+        <a
+          class="btn ghost"
+          href="../../index.html#projects"
+          data-t="resultBack"
+        >
+          Volver a mis proyectos
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+        <div class="shell">
+
+            <a
+                href="../../index.html"
+                aria-label="Volver al portafolio SCARDOZO PROGRAMMING"
+            >
+                <img
+                    src="../../Picture/Isologo_scardozo_programming.png"
+                    alt="SCARDOZO PROGRAMMING — logotipo completo"
+                    width="360"
+                    height="139"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </a>
+
+            <p>
+                © <span id="year">2026</span>
+                Santiago Cardozo Botero · SCARDOZO PROGRAMMING
+            </p>
+
+        </div>
+    </footer>
+
+  <!-- INTERACTIVIDAD E IDIOMAS -->
+
+  <script>
+    (() => {
+      "use strict";
+
+      const URLs = {
+        before:
+          "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/versi%C3%B3n%20anterior/Home/HTML/index.html",
+
+        after:
+          "https://scardozoprogramming.github.io/Websites/Flynn%20Arcade%20Practicas/Home/HTML/index.html"
+      };
+
+      /* TRADUCCIONES */
+
+      const translations = {
+        es: {
+          skip: "Saltar al contenido principal",
+          back: "Portafolio",
+          compareNav: "Antes y después",
+
+          eyebrow:
+            "CASO DE ESTUDIO · PRÁCTICAS · 05 OCT — 19 NOV 2026",
+
+          title:
+            "De una web existente a un catálogo más fácil de explorar.",
+
+          intro:
+            "Partí de una versión de Flynn’s Arcades que recibí al comenzar mis prácticas. Mejoré la búsqueda de videojuegos, incorporé filtros por plataforma y añadí información y respuestas más claras en el catálogo.",
+
+          ctaCompare: "Comparar las versiones",
+          ctaLive: "Explorar mi versión ↗",
+
+          imageCaption:
+            "Recurso gráfico de la web publicada. Las marcas y los videojuegos pertenecen a sus respectivos titulares.",
+
+          factRole: "Mi función",
+          factRoleText: "Desarrollo frontend y mejoras UX/UI",
+          factSource: "Punto de partida",
+          factSourceText:
+            "Versión existente recibida durante las prácticas",
+          factEvidence: "Evidencia",
+          factEvidenceText: "Dos versiones públicas comparables",
+
+          compareEyebrow: "01 / ANTES Y DESPUÉS",
+          compareTitle:
+            "Compara la versión recibida con la que mejoré.",
+          compareIntro:
+            "Puedes abrir ambas páginas publicadas o cargarlas aquí. Las vistas interactivas se cargan únicamente cuando pulsas el botón correspondiente.",
+
+          viewBefore: "Anterior",
+          viewBoth: "Ambas",
+          viewAfter: "Mejorada",
+
+          beforeMarker: "01 · ANTES",
+          beforeTitle: "La versión que recibí",
+          beforeDesc:
+            "Navegación inicial, categorías por género y catálogo de videojuegos existente.",
+          beforeLink: "Abrir versión anterior ↗",
+
+          afterMarker: "02 · DESPUÉS",
+          afterTitle: "Mi versión mejorada",
+          afterDesc:
+            "Búsqueda desde la portada, filtros por género y plataforma, tarjetas informativas y contador de resultados.",
+          afterLink: "Abrir versión mejorada ↗",
+
+          beforePreviewTitle: "Web anterior publicada",
+          afterPreviewTitle: "Web mejorada publicada",
+
+          previewInfo:
+            "Carga la web auténtica aquí o ábrela en una pestaña nueva.",
+
+          loadSite: "Cargar web",
+
+          compareNote:
+            "Estas vistas muestran las páginas publicadas, no capturas simuladas. Si el navegador bloquea una vista integrada, utiliza el enlace para abrirla directamente.",
+
+          changesEyebrow: "02 / CAMBIOS COMPROBABLES",
+          changesTitle: "Qué cambió exactamente.",
+
+          changesIntro:
+            "El objetivo no era sustituir la identidad visual de Flynn’s Arcades, sino mejorar la forma de descubrir videojuegos dentro de su catálogo.",
+
+          oldMarker: "ANTES · EXPERIENCIA ORIGINAL",
+          oldTitle: "Exploración por categorías",
+          oldText:
+            "La versión recibida ya ofrecía navegación, categorías por género, fichas de juegos y títulos destacados.",
+
+          newMarker: "DESPUÉS · MI CONTRIBUCIÓN",
+          newTitle: "Más formas de encontrar videojuegos",
+          newText:
+            "Incorporé búsqueda, filtros por plataforma, información visible de géneros y sistemas, recuento de resultados y mensajes para búsquedas sin coincidencias.",
+
+          feature1Title: "Búsqueda directa",
+          feature1Text:
+            "Encontrar videojuegos por título sin recorrer manualmente todas las tarjetas.",
+
+          feature2Title: "Filtros combinables",
+          feature2Text:
+            "Explorar el catálogo por género y por plataforma, incluyendo Nintendo Switch, Xbox, PlayStation y PC.",
+
+          feature3Title: "Información visible",
+          feature3Text:
+            "Mostrar los géneros y plataformas directamente en las tarjetas de videojuegos.",
+
+          feature4Title: "Respuesta del catálogo",
+          feature4Text:
+            "Informar del número de juegos encontrados y mostrar un mensaje cuando no hay resultados.",
+
+          processEyebrow: "03 / CRITERIO UX/UI",
+          processTitle:
+            "Del problema a una solución comprobable.",
+
+          problemTitle:
+            "Encontrar juegos requería recorrer el catálogo",
+          problemText:
+            "Las categorías existentes eran útiles, pero faltaban otras formas rápidas de localizar títulos y filtrar por plataforma.",
+
+          solutionTitle: "Facilitar la exploración",
+          solutionText:
+            "Integré búsqueda y filtros en la portada y complementé las tarjetas con información descriptiva.",
+
+          visibleTitle: "Más control para el visitante",
+          visibleText:
+            "La web permite combinar criterios, consultar resultados y descubrir videojuegos sin abandonar el listado.",
+
+          technicalEyebrow: "04 / DESARROLLO FRONTEND",
+          technicalTitle:
+            "Qué resolví con cada tecnología.",
+
+          technicalIntro:
+            "Estas son las áreas de implementación de la versión mejorada. El caso de estudio explica el trabajo sin exponer directamente el código fuente.",
+
+          htmlTitle: "Estructura y contenido",
+          htmlText:
+            "Navegación, secciones del catálogo, enlaces a videojuegos y datos descriptivos organizados para su consulta.",
+
+          cssTitle: "Claridad y adaptación visual",
+          cssText:
+            "Distribución de la portada, presentación de filtros, tarjetas de juegos y ajustes para distintas anchuras de pantalla.",
+
+          jsTitle: "Interacción dinámica",
+          jsText:
+            "Búsqueda de títulos, selección de género y plataforma, recuento de resultados y estados sin coincidencias.",
+
+          resultEyebrow: "05 / RESULTADOS Y APRENDIZAJES",
+
+          resultTitle:
+            "Un proyecto que se puede comprobar, no solo describir.",
+
+          resultText:
+            "Mi aportación consistió en ampliar la utilidad de un frontend existente, manteniendo reconocible la identidad original del proyecto. Las dos versiones publicadas permiten revisar las diferencias visuales e interactivas.",
+
+          resultNote:
+            "No se atribuyen mejoras cuantitativas de rendimiento, conversión o satisfacción de usuarios sin disponer de mediciones comparables.",
+
+          resultVisit: "Visitar la versión mejorada ↗",
+          resultBack: "Volver a mis proyectos",
+
+          loading: "Cargando la página publicada…",
+
+          loaded:
+            "Vista solicitada. Si no se muestra correctamente, abre la web en una pestaña nueva."
+        },
+
+        en: {
+          skip: "Skip to main content",
+          back: "Portfolio",
+          compareNav: "Before & after",
+
+          eyebrow:
+            "CASE STUDY · INTERNSHIP · OCT 05 — NOV 19, 2026",
+
+          title:
+            "From an existing website to a catalogue that's easier to explore.",
+
+          intro:
+            "I started from a version of Flynn’s Arcades provided at the beginning of my internship. I improved game search, added platform filters, and introduced clearer catalogue information and feedback.",
+
+          ctaCompare: "Compare both versions",
+          ctaLive: "Explore my version ↗",
+
+          imageCaption:
+            "Artwork from the published website. Game brands and assets belong to their respective owners.",
+
+          factRole: "My role",
+          factRoleText: "Frontend development and UX/UI improvements",
+          factSource: "Starting point",
+          factSourceText:
+            "Existing version provided during my internship",
+          factEvidence: "Evidence",
+          factEvidenceText: "Two public versions to compare",
+
+          compareEyebrow: "01 / BEFORE & AFTER",
+
+          compareTitle:
+            "Compare the supplied version with my improvements.",
+
+          compareIntro:
+            "You can open both published websites or load them here. The interactive previews load only when you select the corresponding button.",
+
+          viewBefore: "Before",
+          viewBoth: "Both",
+          viewAfter: "Improved",
+
+          beforeMarker: "01 · BEFORE",
+          beforeTitle: "The version I received",
+          beforeDesc:
+            "Original navigation, genre categories and an existing game catalogue.",
+          beforeLink: "Open original version ↗",
+
+          afterMarker: "02 · AFTER",
+          afterTitle: "My improved version",
+          afterDesc:
+            "Homepage search, genre and platform filters, informative cards and result counts.",
+          afterLink: "Open improved version ↗",
+
+          beforePreviewTitle: "Published original website",
+          afterPreviewTitle: "Published improved website",
+
+          previewInfo:
+            "Load the real website here or open it in a new tab.",
+
+          loadSite: "Load website",
+
+          compareNote:
+            "These previews show the real published websites, not simulated screenshots. If your browser blocks an embedded view, open the website directly.",
+
+          changesEyebrow: "02 / VERIFIABLE CHANGES",
+          changesTitle: "What changed exactly.",
+
+          changesIntro:
+            "The goal was not to replace Flynn’s Arcades’ visual identity, but to improve how visitors discover games in its catalogue.",
+
+          oldMarker: "BEFORE · ORIGINAL EXPERIENCE",
+          oldTitle: "Category-based exploration",
+          oldText:
+            "The supplied version already featured navigation, genre categories, individual game pages and highlighted titles.",
+
+          newMarker: "AFTER · MY CONTRIBUTION",
+          newTitle: "More ways to find games",
+          newText:
+            "I added search, platform filters, visible genre and platform information, result counts and no-match feedback.",
+
+          feature1Title: "Direct search",
+          feature1Text:
+            "Find games by title without manually browsing every card.",
+
+          feature2Title: "Combined filters",
+          feature2Text:
+            "Browse games by genre and platform, including Nintendo Switch, Xbox, PlayStation and PC.",
+
+          feature3Title: "Visible information",
+          feature3Text:
+            "Show genres and platforms directly on game cards.",
+
+          feature4Title: "Catalogue feedback",
+          feature4Text:
+            "Display the number of matching games and a message when no results are found.",
+
+          processEyebrow: "03 / UX/UI REASONING",
+
+          processTitle:
+            "From problem to a verifiable solution.",
+
+          problemTitle:
+            "Finding games required browsing the catalogue",
+          problemText:
+            "Existing categories were useful, but there were fewer quick ways to search titles or filter by platform.",
+
+          solutionTitle: "Make discovery easier",
+          solutionText:
+            "I integrated search and filters into the homepage and added descriptive information to game cards.",
+
+          visibleTitle: "More control for visitors",
+          visibleText:
+            "Visitors can combine criteria, view results and discover games without leaving the catalogue.",
+
+          technicalEyebrow: "04 / FRONTEND DEVELOPMENT",
+          technicalTitle:
+            "What I solved with each technology.",
+
+          technicalIntro:
+            "These are the implementation areas of the improved website. This case study explains the work without directly exposing the source code.",
+
+          htmlTitle: "Structure and content",
+          htmlText:
+            "Navigation, catalogue sections, game links and descriptive information organised for browsing.",
+
+          cssTitle: "Visual clarity and adaptability",
+          cssText:
+            "Homepage layout, filter presentation, game cards and adjustments for different screen widths.",
+
+          jsTitle: "Dynamic interaction",
+          jsText:
+            "Title search, genre and platform selection, result counts and empty states.",
+
+          resultEyebrow: "05 / OUTCOME & LEARNINGS",
+
+          resultTitle:
+            "A project you can verify, not just read about.",
+
+          resultText:
+            "My contribution expanded the usefulness of an existing frontend while preserving the project's original identity. Both published versions let visitors inspect the visual and interactive differences.",
+
+          resultNote:
+            "No quantitative performance, conversion or user satisfaction improvements are claimed without comparable measurements.",
+
+          resultVisit: "Visit improved version ↗",
+          resultBack: "Back to my projects",
+
+          loading: "Loading published website…",
+
+          loaded:
+            "Preview requested. If it does not display correctly, open the website in a new tab."
+        }
+      };
+
+      /* GESTIÓN DEL IDIOMA */
+
+      const languageButton =
+        document.getElementById("languageButton");
+
+      const languageKey = "scardozo_case_lang";
+
+      let language = "es";
+
+      try {
+        const savedLanguage =
+          localStorage.getItem(languageKey);
+
+        if (
+          savedLanguage === "es" ||
+          savedLanguage === "en"
+        ) {
+          language = savedLanguage;
+        }
+      } catch (error) {
+        // La página sigue funcionando si el almacenamiento
+        // del navegador no está disponible.
+      }
+
+      function translate() {
+        document.documentElement.lang = language;
+
+        document.querySelectorAll("[data-t]").forEach(
+          element => {
+            const key = element.dataset.t;
+            const value = translations[language][key];
+
+            if (value !== undefined) {
+              element.textContent = value;
+            }
+          }
+        );
+
+        languageButton.textContent =
+          language === "es" ? "English" : "Español";
+
+        languageButton.setAttribute(
+          "aria-label",
+          language === "es"
+            ? "Cambiar idioma a inglés"
+            : "Change language to Spanish"
+        );
+
+        document.title =
+          language === "es"
+            ? "Flynn’s Arcades — Antes y después | SCARDOZO PROGRAMMING"
+            : "Flynn’s Arcades — Before & after | SCARDOZO PROGRAMMING";
+      }
+
+      languageButton.addEventListener("click", () => {
+        language = language === "es" ? "en" : "es";
+
+        try {
+          localStorage.setItem(
+            languageKey,
+            language
+          );
+        } catch (error) {
+          // No es imprescindible almacenar la preferencia.
+        }
+
+        translate();
+      });
+
+      /* COMPARACIÓN INTERACTIVA */
+
+      const comparisonGrid =
+        document.getElementById("comparison-grid");
+
+      const viewButtons =
+        document.querySelectorAll("[data-view]");
+
+      viewButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const selectedView = button.dataset.view;
+
+          comparisonGrid.dataset.view = selectedView;
+
+          viewButtons.forEach(currentButton => {
+            currentButton.setAttribute(
+              "aria-pressed",
+              String(currentButton === button)
+            );
+          });
+        });
+      });
+
+      /* CARGA DIFERIDA DE LAS WEBS */
+
+      document.querySelectorAll(".load-site").forEach(
+        button => {
+          button.addEventListener("click", () => {
+
+            const site = button.dataset.site;
+
+            const suffix =
+              site === "before" ? "Before" : "After";
+
+            const frame =
+              document.getElementById("frame" + suffix);
+
+            const placeholder =
+              document.getElementById(
+                "placeholder" + suffix
+              );
+
+            const status =
+              document.getElementById(
+                "status" + suffix
+              );
+
+            if (frame.hasAttribute("src")) {
+              return;
+            }
+
+            status.textContent =
+              translations[language].loading;
+
+            frame.addEventListener(
+              "load",
+              () => {
+                status.textContent =
+                  translations[language].loaded;
+              },
+              { once: true }
+            );
+
+            frame.src = URLs[site];
+
+            frame.hidden = false;
+            placeholder.hidden = true;
+          });
+        }
+      );
+
+      /* AÑO AUTOMÁTICO */
+
+      document.getElementById("year").textContent =
+        String(new Date().getFullYear());
+
+      /* IDIOMA INICIAL */
+
+      translate();
+
+    })();
+  </script>
+
+</body>
+</html>
