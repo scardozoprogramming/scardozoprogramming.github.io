@@ -3,1128 +3,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Okiyama Website | Web Development Portfolio Project</title>
-  <meta
-    name="description"
-    data-i18n-content="metaDescription"
-    content="Professional web development portfolio project for Okiyama, featuring responsive pages, a product catalog, cart flow, and health-product presentation.">
-
+  <meta name="theme-color" content="#050a1a">
+  <title>Okiyama — Web Development Case Study | SCARDOZO PROGRAMMING</title>
+  <meta name="description" data-i18n-meta="metaDescription" content="Okiyama web development case study by Santiago Cardozo Botero: responsive corporate site, product catalogue, shopping cart, WhatsApp support and checkout preparation.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Okiyama — Web Development Case Study | SCARDOZO PROGRAMMING">
+  <meta property="og:description" content="A professional frontend project: company website, shop, cart logic and clear before/after evidence.">
+  <link rel="icon" type="image/png" href="../../Picture/SCARDOZO_avatar_con_detalles.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #050607;
-      --panel: rgba(10, 18, 16, .88);
-      --card: rgba(255, 255, 255, .055);
-      --text: #e9fff4;
-      --muted: #a8c6ba;
-      --muted-2: #7fa38f;
-      --accent: #00e676;
-      --accent-2: #38d6ff;
-      --border: rgba(0, 230, 118, .24);
-      --shadow: 0 24px 70px rgba(0, 0, 0, .42);
-      --max: 1180px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at top left, rgba(0, 230, 118, .15), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(56, 214, 255, .12), transparent 34%),
-        linear-gradient(180deg, #020403, var(--bg));
-      color: var(--text);
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      background-image:
-        linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
-      background-size: 40px 40px;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), transparent 84%);
-    }
-
-    .wrap {
-      width: min(100% - 32px, var(--max));
-      margin: 0 auto;
-      padding: 28px 0 44px;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      margin-bottom: 42px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px 16px;
-      background: rgba(3, 8, 7, .82);
-      box-shadow: 0 0 35px rgba(0, 230, 118, .16);
-      backdrop-filter: blur(16px);
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 800;
-    }
-
-    .logo {
-      display: grid;
-      width: 48px;
-      height: 48px;
-      place-items: center;
-      border: 1px solid rgba(0, 230, 118, .35);
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(0, 230, 118, .16), rgba(56, 214, 255, .08));
-      color: var(--accent);
-      box-shadow: inset 0 0 18px rgba(0, 230, 118, .15);
-    }
-
-    .btn {
-      display: inline-flex;
-      min-height: 42px;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(0, 230, 118, .4);
-      border-radius: 999px;
-      padding: 0 16px;
-      background: linear-gradient(135deg, rgba(0, 230, 118, .16), rgba(56, 214, 255, .08));
-      color: var(--accent);
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 14px;
-      font-weight: 900;
-      text-decoration: none;
-      transition: transform .22s ease, background .22s ease, color .22s ease, box-shadow .22s ease;
-    }
-
-    .header-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: flex-end;
-    }
-
-    .btn-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      background: var(--accent);
-      color: #001b10;
-      box-shadow: 0 0 26px rgba(0, 230, 118, .30);
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
-      gap: 28px;
-      align-items: stretch;
-      margin-bottom: 26px;
-    }
-
-    .panel {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      background: var(--panel);
-      box-shadow: var(--shadow);
-    }
-
-    .panel::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(135deg, rgba(0, 230, 118, .10), transparent 42%),
-        linear-gradient(225deg, rgba(56, 214, 255, .08), transparent 46%);
-      pointer-events: none;
-    }
-
-    .hero-copy {
-      position: relative;
-      z-index: 1;
-      padding: clamp(28px, 5vw, 48px);
-    }
-
-    .eyebrow {
-      margin: 0 0 12px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0 0 18px;
-      font-size: clamp(40px, 6vw, 72px);
-      line-height: .95;
-    }
-
-    h2 {
-      margin: 0 0 16px;
-      color: var(--accent);
-      font-size: 28px;
-    }
-
-    h3 {
-      margin: 0 0 8px;
-      font-size: 17px;
-    }
-
-    p {
-      margin-top: 0;
-      color: var(--muted);
-    }
-
-    .hero-media {
-      display: grid;
-      gap: 12px;
-      padding: 14px;
-    }
-
-    .hero-media img,
-    .media-grid img {
-      width: 100%;
-      display: block;
-      border: 1px solid rgba(255, 255, 255, .08);
-      border-radius: 18px;
-      background: #020403;
-      object-fit: cover;
-    }
-
-    .hero-media .logo-preview {
-      height: 170px;
-      object-fit: contain;
-      padding: 22px;
-      background: #fff;
-    }
-
-    .hero-media .site-preview {
-      height: 300px;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .stat,
-    .card {
-      position: relative;
-      z-index: 1;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 18px;
-      background: var(--card);
-    }
-
-    .stat strong,
-    .metric strong {
-      display: block;
-      color: var(--accent);
-      font-size: 18px;
-      margin-bottom: 4px;
-    }
-
-    section {
-      margin-top: 24px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .two-column {
-      display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .flow-list,
-    .scope-list {
-      display: grid;
-      gap: 12px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .flow-list li,
-    .scope-list li {
-      border: 1px solid rgba(255, 255, 255, .09);
-      border-radius: 14px;
-      padding: 14px;
-      background: rgba(255, 255, 255, .045);
-    }
-
-    .flow-list strong,
-    .scope-list strong {
-      display: block;
-      color: var(--text);
-      margin-bottom: 4px;
-    }
-
-    .scope-list span,
-    .flow-list span {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 22px;
-    }
-
-    .metric {
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 16px;
-      background: rgba(255, 255, 255, .045);
-    }
-
-    .media-grid {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .media-grid img {
-      height: 100%;
-      min-height: 280px;
-    }
-
-    .showcase-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .comparison-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .comparison-card {
-      overflow: hidden;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: rgba(0, 0, 0, .28);
-    }
-
-    .comparison-card img {
-      display: block;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      background: #020403;
-    }
-
-    .comparison-content {
-      padding: 16px;
-    }
-
-    .comparison-label {
-      display: inline-flex;
-      margin-bottom: 10px;
-      border: 1px solid rgba(0, 230, 118, .34);
-      border-radius: 999px;
-      padding: 6px 10px;
-      background: rgba(0, 230, 118, .08);
-      color: #c7ffdf;
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    .comparison-content p,
-    .comparison-note {
-      margin: 0;
-    }
-
-    .comparison-note {
-      margin-top: 16px;
-      color: var(--muted-2);
-      font-size: 14px;
-    }
-
-    .browser-mock {
-      overflow: hidden;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: rgba(0, 0, 0, .28);
-    }
-
-    .browser-bar {
-      display: flex;
-      gap: 7px;
-      align-items: center;
-      border-bottom: 1px solid rgba(255, 255, 255, .08);
-      padding: 10px 12px;
-      background: rgba(255, 255, 255, .055);
-    }
-
-    .browser-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--accent);
-      opacity: .75;
-    }
-
-    .browser-title {
-      margin-left: 8px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 800;
-    }
-
-    .mock-body {
-      padding: 16px;
-    }
-
-    .mock-hero {
-      min-height: 180px;
-      border-radius: 14px;
-      background:
-        linear-gradient(90deg, rgba(0, 0, 0, .62), rgba(0, 0, 0, .08)),
-        var(--mock-image) center/cover;
-      padding: 20px;
-    }
-
-    .mock-hero strong,
-    .mock-card strong {
-      display: block;
-      color: var(--text);
-      margin-bottom: 8px;
-    }
-
-    .mock-hero span,
-    .mock-card span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .mock-products {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .mock-product {
-      border: 1px solid rgba(255, 255, 255, .08);
-      border-radius: 12px;
-      padding: 10px;
-      background: rgba(255, 255, 255, .045);
-    }
-
-    .mock-product img {
-      width: 100%;
-      height: 92px;
-      object-fit: contain;
-      border-radius: 10px;
-      background: #fff;
-    }
-
-    .mock-card {
-      border: 1px solid rgba(255, 255, 255, .08);
-      border-radius: 14px;
-      padding: 16px;
-      background: rgba(255, 255, 255, .045);
-    }
-
-    .mock-body > img {
-      width: 100%;
-      max-height: 260px;
-      object-fit: contain;
-      border: 1px solid rgba(255, 255, 255, .08);
-      border-radius: 14px;
-      background: #fff;
-      padding: 12px;
-    }
-
-    .mock-lines {
-      display: grid;
-      gap: 8px;
-      margin-top: 12px;
-    }
-
-    .mock-line {
-      height: 12px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, rgba(0, 230, 118, .28), rgba(56, 214, 255, .14));
-    }
-
-    .mock-line:nth-child(2) {
-      width: 72%;
-    }
-
-    .mock-line:nth-child(3) {
-      width: 46%;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-
-    .tag {
-      border: 1px solid rgba(0, 230, 118, .34);
-      border-radius: 999px;
-      padding: 7px 10px;
-      background: rgba(0, 230, 118, .08);
-      color: #c7ffdf;
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    footer {
-      padding-top: 34px;
-      color: var(--muted-2);
-      text-align: center;
-    }
-
-    html {
-      color-scheme: dark;
-    }
-
-    h1,
-    h2,
-    h3,
-    .eyebrow,
-    .btn,
-    .tag,
-    .comparison-label {
-      letter-spacing: 0;
-    }
-
-    .btn:focus-visible,
-    .brand:focus-visible,
-    .comparison-card:focus-within,
-    .browser-mock:focus-within {
-      outline: 3px solid var(--accent-2);
-      outline-offset: 4px;
-    }
-
-    .panel,
-    .stat,
-    .metric,
-    .card,
-    .comparison-card,
-    .browser-mock,
-    .flow-list li,
-    .scope-list li {
-      transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease, background .24s ease;
-    }
-
-    .stat:hover,
-    .metric:hover,
-    .card:hover,
-    .comparison-card:hover,
-    .browser-mock:hover,
-    .flow-list li:hover,
-    .scope-list li:hover {
-      transform: translateY(-4px);
-      border-color: rgba(0, 230, 118, .52);
-      background: rgba(0, 230, 118, .075);
-      box-shadow: 0 18px 42px rgba(0, 0, 0, .28), 0 0 24px rgba(0, 230, 118, .14);
-    }
-
-    .hero .panel {
-      border-color: rgba(0, 230, 118, .34);
-    }
-
-    .grid,
-    .metrics,
-    .showcase-grid,
-    .comparison-grid {
-      align-items: stretch;
-    }
-
-    .card,
-    .metric,
-    .browser-mock,
-    .comparison-card {
-      min-height: 100%;
-    }
-
-    .comparison-card img {
-      border-bottom: 1px solid rgba(0, 230, 118, .18);
-    }
-
-    footer {
-      border-top: 1px solid rgba(0, 230, 118, .18);
-      margin-top: 34px;
-    }
-
-    @media (max-width: 920px) {
-      .hero,
-      .media-grid,
-      .grid,
-      .two-column,
-      .comparison-grid,
-      .showcase-grid,
-      .metrics {
-        grid-template-columns: 1fr;
-      }
-
-      .stats {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .wrap {
-        width: min(100% - 20px, var(--max));
-        padding-top: 18px;
-      }
-
-      header {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .hero-media .site-preview {
-        height: 220px;
-      }
-
-      .mock-products {
-        grid-template-columns: 1fr;
-      }
-    }
+    :root{color-scheme:dark;--bg:#050a1a;--surface:#0c1529;--surface-2:#121e35;--text:#edf5ff;--muted:#b4c5da;--cyan:#38ddf8;--violet:#a18afe;--ok:#52ed96;--line:#415774;--max:1180px;--shadow:0 18px 50px #0004}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:108px}
+    body{margin:0;min-width:320px;color:var(--text);font:16px/1.7 Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(ellipse 46% 24% at 4% 0%,#1648644e,transparent 95%),radial-gradient(ellipse 43% 22% at 100% 24%,#47246c41,transparent 95%),var(--bg)}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(#0007,transparent 88%)}
+    a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}img{display:block;max-width:100%}h1,h2,h3,p,figure{margin:0}p{color:var(--muted)}h1,h2,h3{line-height:1.18;letter-spacing:-.035em}h1{font-size:clamp(2.2rem,5.2vw,4.1rem);max-width:13ch}h2{font-size:clamp(1.65rem,3.1vw,2.45rem)}h3{font-size:1.12rem}
+    :focus-visible{outline:3px solid var(--cyan);outline-offset:4px} [hidden]{display:none!important}
+    .skip{position:fixed;top:-120px;left:12px;z-index:500;padding:10px 16px;border-radius:9px;background:var(--cyan);color:#061326;font-weight:800}.skip:focus{top:12px}
+    .container{width:min(calc(100% - 38px),var(--max));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:80;background:#070e20ee;backdrop-filter:blur(16px);border-bottom:1px solid #344c6dbb}
+    .header-inner{min-height:79px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .brand{display:flex;align-items:center;gap:11px;min-width:0}.brand img{width:46px;height:46px;object-fit:contain;border-radius:10px;flex:none}.brand strong{display:block;font-size:13px;line-height:1.35}.brand small{display:block;color:var(--cyan);font-size:10px;font-weight:900;letter-spacing:.1em;line-height:1.45}
+    .header-actions,.actions,.tags,.switches{display:flex;align-items:center;flex-wrap:wrap;gap:9px}
+    .button{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:45px;padding:11px 16px;border:1px solid #617da0;border-radius:11px;background:#192b46;color:#e9f7ff;font-size:13px;font-weight:800;line-height:1.4;transition:background .2s,border-color .2s,transform .2s}
+    .button:hover{background:#264365;border-color:var(--cyan);transform:translateY(-1px)}.button.primary{background:linear-gradient(110deg,#55e2fa,#a9adff);border-color:#9deefa;color:#071829}.button.primary:hover{background:linear-gradient(110deg,#9af0ff,#d0baff)}.button.ghost{background:transparent;border-color:#4e6481}.button.small{font-size:12px;padding:9px 12px}
+    .eyebrow{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.13em;color:var(--cyan);margin-bottom:15px}.ok-label{color:var(--ok)}
+    .hero{display:grid;grid-template-columns:1.09fr .91fr;gap:20px;align-items:stretch;padding-top:44px}
+    .panel{background:linear-gradient(145deg,#14243bcf,#0c1429e9);border:1px solid #385372bb;border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+    .hero-copy{padding:clamp(26px,4vw,43px)}.hero-copy .lead{font-size:clamp(1rem,1.5vw,1.16rem);line-height:1.82;max-width:57ch;margin-top:21px}.hero-copy .actions{margin-top:25px}
+    .tags{margin-top:28px;gap:8px}.tag{border:1px solid #536b87;border-radius:100px;padding:5px 11px;color:#dceaff;font-size:11px;font-weight:800}.tag.green{border-color:#4b9c78;color:#b3f6d3}
+    .hero-image{display:flex;flex-direction:column;gap:12px;padding:16px;min-height:410px;background:linear-gradient(130deg,#103027,#132c45 59%,#232042)}
+    .hero-image .shot{flex:1;min-height:300px;overflow:hidden;border:1px solid #3f6679;border-radius:14px;background:#15243b}.hero-image .shot img{width:100%;height:100%;min-height:300px;max-height:360px;object-fit:cover}
+    .hero-image figcaption{padding:3px 3px 0;font-size:12px;color:#c7d9eb}
+    .fact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}.fact{padding:17px;border:1px solid #3d5575;border-radius:15px;background:#111e33}.fact b{display:block;color:var(--cyan);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}.fact span{color:#e2eeff;font-size:13px;font-weight:650}
+    .section{margin-top:78px;scroll-margin-top:110px}.section-heading{margin-bottom:23px}.section-heading p:not(.eyebrow){margin-top:14px;max-width:78ch}.section-heading h2{max-width:34ch}
+    .two-up{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.content-card{border:1px solid #425a77;background:#111d32;border-radius:17px;padding:24px;min-width:0}.content-card h3{margin:8px 0 10px}.content-card p{font-size:14px}.content-card.highlight{border-color:#418f89;background:linear-gradient(130deg,#103339,#192341)}
+    .micro{font-size:11px;font-weight:900;letter-spacing:.1em;color:var(--violet);text-transform:uppercase}.content-card.highlight .micro{color:var(--ok)}
+    .switches{margin-bottom:17px}.switch[aria-pressed="true"]{color:#092032;background:var(--cyan);border-color:var(--cyan)}
+    .compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;align-items:start}.compare-grid[data-view="before"],.compare-grid[data-view="after"]{grid-template-columns:1fr}.compare-grid[data-view="before"] .after,.compare-grid[data-view="after"] .before{display:none}
+    .compare-card{border:1px solid #405977;border-radius:17px;overflow:hidden;background:#0e1a2e;min-width:0}.compare-card .copy{padding:20px}.compare-card .copy h3{margin:8px 0}.compare-card .copy p{font-size:13px;line-height:1.65}
+    .media{position:relative;background:#14253b;min-height:200px;overflow:hidden}.media img{width:100%;aspect-ratio:16/9;object-fit:cover}.media:not(:has(img)){min-height:230px}.media-fallback{min-height:225px;padding:25px;text-align:center;display:grid;place-items:center;color:#d0e1f5;background:linear-gradient(140deg,#12383a,#172841);font-size:13px}
+    .note{margin-top:16px;padding-left:14px;border-left:3px solid var(--violet);font-size:12px;color:#bcd0df}
+    .features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.feature{border:1px solid #3e5572;border-radius:16px;background:#111d31;padding:21px}.feature .num{display:block;color:var(--violet);font-size:12px;font-weight:900;margin-bottom:15px}.feature h3{margin-bottom:8px}.feature p{font-size:13px}
+    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.step{border:1px solid #425a79;border-radius:17px;background:#111d31;padding:23px}.step .number{display:block;color:var(--cyan);font-size:12px;font-weight:900;margin-bottom:14px}.step h3{margin-bottom:8px}.step p{font-size:14px}
+    .visit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.visit-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid #425b77;border-radius:17px;background:#111c30;transition:border-color .2s,transform .2s}.visit-card:hover{border-color:var(--cyan);transform:translateY(-3px)}.visit-card .media img{aspect-ratio:4/3;object-fit:cover;max-height:180px}.visit-card .visit-copy{display:flex;flex-direction:column;flex:1;gap:8px;padding:18px}.visit-copy p{font-size:13px;flex:1}.visit-copy .open{color:var(--cyan);font-weight:850;font-size:13px}
+    .closing{padding:clamp(23px,4vw,38px);border:1px solid #526984;border-radius:20px;background:linear-gradient(120deg,#172d43,#211e41)}.closing p:not(.eyebrow){margin-top:15px;max-width:82ch}.closing .actions{margin-top:23px}
+    .footer{margin-top:78px;padding:35px 0 44px;text-align:center;border-top:1px solid #405574}.footer-logo{display:block;width:min(360px,100%);height:auto;object-fit:contain;margin:0 auto 15px}.footer p{font-size:12px}
+    @media(max-width:1000px){.hero{grid-template-columns:1fr}.hero-image{min-height:auto}.hero-image .shot,.hero-image .shot img{min-height:240px}.features{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:760px){html{scroll-padding-top:22px}.site-header{position:relative}.header-inner{flex-direction:column;align-items:flex-start;gap:12px;padding:13px 0}.header-actions{width:100%}.hero{padding-top:25px}.fact-grid,.two-up,.compare-grid,.steps,.visit-grid{grid-template-columns:1fr}.section{margin-top:58px;scroll-margin-top:24px}.compare-grid[data-view="before"],.compare-grid[data-view="after"]{grid-template-columns:1fr}}
+    @media(max-width:520px){.container{width:calc(100% - 24px)}.hero-copy{padding:23px}.hero-copy .actions .button{width:100%}.brand img{width:41px;height:41px}.brand strong{font-size:12px}.header-actions .button{font-size:11px;padding:9px 11px}.switches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.switches .button{padding:9px 6px;font-size:11px}.features{grid-template-columns:1fr}.content-card,.step,.feature{padding:19px}.hero-image .shot img{min-height:200px}.section{margin-top:53px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="../../index.html#projects">
-        <span class="logo">SCB</span>
-        <span>Santiago Cardozo Botero</span>
+  <a class="skip" href="#main" data-t="skip">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../index.html#projects" aria-label="SCARDOZO PROGRAMMING — back to projects" data-aria-t="brandAria">
+        <img src="../../Picture/SCARDOZO_avatar_con_detalles.png" width="46" height="46" alt="">
+        <span><strong>Santiago Cardozo Botero</strong><small>SCARDOZO PROGRAMMING</small></span>
       </a>
-      <div class="header-actions">
-        <a class="btn" href="../../index.html#projects" data-i18n="backPortfolio">Back to portfolio</a>
-        <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
-        <button class="btn" id="langToggle" type="button">Español</button>
+      <nav class="header-actions" aria-label="Case study navigation" data-aria-t="navAria">
+        <a class="button ghost" href="../../index.html#projects" data-t="back">Portfolio</a>
+        <a class="button ghost" href="#comparison" data-t="navCompare">Before &amp; after</a>
+        <button class="button" id="langToggle" type="button" aria-label="Cambiar idioma a español">Español</button>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <div class="hero">
+      <section class="panel hero-copy" aria-labelledby="heroTitle">
+        <p class="eyebrow" data-t="eyebrow">PROFESSIONAL WEB DEVELOPMENT · CASE STUDY</p>
+        <h1 id="heroTitle" data-t="heroTitle">Okiyama: company website and online shop.</h1>
+        <p class="lead" data-t="heroText">I improved an existing company website to make products easier to explore, streamline cart interactions and provide a clearer route to customer support. The payment step was prepared for later integration.</p>
+        <div class="actions">
+          <a class="button primary" href="#comparison" data-t="ctaEvidence">See before &amp; after</a>
+          <a class="button ghost" href="site/index.html" data-t="ctaWeb">Explore website ↗</a>
+        </div>
+        <div class="tags" aria-label="Technologies"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag green">UX/UI</span><span class="tag green" data-t="tagCommerce">E-commerce frontend</span></div>
+      </section>
+      <figure class="panel hero-image">
+        <div class="shot media"><img src="assets/hero-okiyama.jpg" width="780" height="490" fetchpriority="high" decoding="async" alt="Okiyama website hero photograph" data-alt-t="heroAlt"></div>
+        <figcaption data-t="heroCaption">Visual resource from the Okiyama project. The company and product brands belong to their respective owners.</figcaption>
+      </figure>
+    </div>
+    <div class="fact-grid" aria-label="Project facts" data-aria-t="factsAria">
+      <div class="fact"><b data-t="factRole">My role</b><span data-t="factRoleValue">Frontend development and UX/UI improvements</span></div>
+      <div class="fact"><b data-t="factDeliverable">Deliverable</b><span data-t="factDeliverableValue">Company website and shop experience</span></div>
+      <div class="fact"><b data-t="factStatus">Publication status</b><span data-t="factStatusValue">Maintenance version · checkout integration pending</span></div>
+    </div>
+
+    <section class="section" id="overview" aria-labelledby="overviewTitle">
+      <div class="section-heading"><p class="eyebrow" data-t="overviewNo">01 / PROJECT CONTEXT</p><h2 id="overviewTitle" data-t="overviewTitle">What I received and what I contributed.</h2><p data-t="overviewIntro">The goal was to improve the existing experience without replacing the company's visual identity or presenting work in progress as a completed commercial payment system.</p></div>
+      <div class="two-up">
+        <article class="content-card"><span class="micro" data-t="contextBefore">STARTING POINT</span><h3 data-t="contextBeforeTitle">Existing company website</h3><p data-t="contextBeforeText">Okiyama already had its brand and product content. The shopping journey needed clearer navigation, stronger visual consistency and more complete cart interactions.</p></article>
+        <article class="content-card highlight"><span class="micro" data-t="contextAfter">MY CONTRIBUTION</span><h3 data-t="contextAfterTitle">A clearer storefront flow</h3><p data-t="contextAfterText">I worked on responsive layouts, product and shop pages, cart state, quantity and discount calculations, WhatsApp support and preparation of the checkout interface.</p></article>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="panel hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">Professional Web Development Project</p>
-          <h1 data-i18n="heroTitle">Okiyama Website</h1>
-          <p data-i18n="heroText">
-            Improved company website and shop flow for Okiyama, focused on product clarity, cart logic,
-            payment-button preparation, and WhatsApp support.
-          </p>
-          <div class="btn-row">
-            <a class="btn" href="#case-study" data-i18n="readCaseStudy">Read case study</a>
-            <a class="btn" href="#technical" data-i18n="technicalWork">Technical work</a>
-            <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
-            <a class="btn" href="site/tienda-online.html" data-i18n="openShop">Open shop</a>
-          </div>
-          <div class="stats">
-            <div class="stat">
-              <strong data-i18n="statRoleTitle">Role</strong>
-              <span data-i18n="statRoleText">Web Developer</span>
-            </div>
-            <div class="stat">
-              <strong data-i18n="statStackTitle">Stack</strong>
-              <span>HTML, CSS, JavaScript</span>
-            </div>
-            <div class="stat">
-              <strong data-i18n="statTypeTitle">Type</strong>
-              <span data-i18n="statTypeText">Company website + shop</span>
-            </div>
-          </div>
-          <div class="tags">
-            <span class="tag" data-i18n="tagResponsive">Responsive UI</span>
-            <span class="tag" data-i18n="tagCatalog">Product Catalog</span>
-            <span class="tag" data-i18n="tagCart">Cart Flow</span>
-            <span class="tag" data-i18n="tagCookies">Cookie Banner</span>
-            <span class="tag" data-i18n="tagHealthcare">Healthcare Brand</span>
-          </div>
-        </div>
+    <section class="section" id="comparison" aria-labelledby="comparisonTitle">
+      <div class="section-heading"><p class="eyebrow" data-t="compareNo">02 / DOCUMENTED EVIDENCE</p><h2 id="comparisonTitle" data-t="compareTitle">Before and after, without invented results.</h2><p data-t="compareIntro">These screenshots document the visual starting point and the improved maintenance version. They are reference material, not results from an independent usability study.</p></div>
+      <div class="switches" role="group" aria-label="Choose comparison view" data-aria-t="switchesAria">
+        <button type="button" class="button switch" data-view="before" aria-pressed="false" aria-controls="comparisonGrid" data-t="btnBefore">Before</button>
+        <button type="button" class="button switch" data-view="both" aria-pressed="true" aria-controls="comparisonGrid" data-t="btnBoth">Both</button>
+        <button type="button" class="button switch" data-view="after" aria-pressed="false" aria-controls="comparisonGrid" data-t="btnAfter">Improved</button>
+      </div>
+      <div class="compare-grid" id="comparisonGrid" data-view="both">
+        <article class="compare-card before"><div class="media"><img src="assets/okiyama-before-reference.png" width="820" height="461" loading="lazy" decoding="async" alt="Screenshot of the earlier Okiyama website" data-alt-t="beforeAlt"></div><div class="copy"><span class="micro" data-t="beforeLabel">BEFORE · VISUAL REFERENCE</span><h3 data-t="beforeTitle">Previous website</h3><p data-t="beforeText">The earlier interface provided company and product information but showed a less structured route toward the shop and purchase flow.</p></div></article>
+        <article class="compare-card after"><div class="media"><img src="assets/okiyama-after-improved.png" width="820" height="461" loading="lazy" decoding="async" alt="Screenshot of the improved Okiyama maintenance website" data-alt-t="afterAlt"></div><div class="copy"><span class="micro ok-label" data-t="afterLabel">AFTER · IMPROVED MAINTENANCE VERSION</span><h3 data-t="afterTitle">Clearer interface and shopping path</h3><p data-t="afterText">Stronger product presentation, clearer navigation and the frontend cart and checkout-preparation components.</p></div></article>
+      </div>
+      <p class="note" data-t="compareNote">The earlier website is included as a screenshot reference only; the previous domain is not linked here.</p>
+    </section>
 
-        <aside class="panel hero-media">
-          <img class="logo-preview" src="assets/logo-okiyama.jpg" alt="Okiyama logo">
-          <img class="site-preview" src="assets/hero-okiyama.jpg" alt="Okiyama website hero image">
-        </aside>
-      </section>
+    <section class="section" id="scope" aria-labelledby="scopeTitle">
+      <div class="section-heading"><p class="eyebrow" data-t="scopeNo">03 / USER EXPERIENCE</p><h2 id="scopeTitle" data-t="scopeTitle">What became easier to use.</h2><p data-t="scopeIntro">The implementation focuses on concrete user journeys rather than unverified performance or sales metrics.</p></div>
+      <div class="features">
+        <article class="feature"><span class="num">01 / UI</span><h3 data-t="f1Title">Responsive navigation</h3><p data-t="f1Text">Clear paths to company information, products, the online shop and the cart across screen sizes.</p></article>
+        <article class="feature"><span class="num">02 / SHOP</span><h3 data-t="f2Title">Product discovery</h3><p data-t="f2Text">Product cards, information and prices arranged for easier browsing and comparison.</p></article>
+        <article class="feature"><span class="num">03 / CART</span><h3 data-t="f3Title">Cart interactions</h3><p data-t="f3Text">Persistent cart data, quantity updates, calculated totals and discounts in the frontend.</p></article>
+        <article class="feature"><span class="num">04 / TRUST</span><h3 data-t="f4Title">Support and trust</h3><p data-t="f4Text">WhatsApp contact, privacy/legal content and a cookie notice in the site experience.</p></article>
+      </div>
+    </section>
 
-      <section class="panel hero-copy" id="case-study">
-        <p class="eyebrow" data-i18n="overviewEyebrow">Project Overview</p>
-        <h2 data-i18n="overviewTitle">Business-Focused Web Experience</h2>
-        <p data-i18n="overviewText">
-          A responsive business site with product pages, an online shop structure, cart state, legal pages,
-          and a clearer visual system aligned with the company palette.
-        </p>
-        <div class="metrics">
-          <div class="metric">
-            <strong>7+</strong>
-            <span data-i18n="metricPages">Public pages</span>
-          </div>
-          <div class="metric">
-            <strong>3</strong>
-            <span data-i18n="metricProducts">Product presentations</span>
-          </div>
-          <div class="metric">
-            <strong>1</strong>
-            <span data-i18n="metricCart">Cart flow</span>
-          </div>
-          <div class="metric">
-            <strong data-i18n="metricMobile">Mobile</strong>
-            <span data-i18n="metricResponsive">Responsive layout</span>
-          </div>
-        </div>
-      </section>
+    <section class="section" id="implementation" aria-labelledby="implementationTitle">
+      <div class="section-heading"><p class="eyebrow" data-t="technicalNo">04 / TECHNICAL DECISIONS</p><h2 id="implementationTitle" data-t="technicalTitle">How I built the experience.</h2></div>
+      <div class="steps">
+        <article class="step"><span class="number">HTML5</span><h3 data-t="t1Title">Structure and content</h3><p data-t="t1Text">Semantic pages for the company, product details, shop, cart and legal information.</p></article>
+        <article class="step"><span class="number">CSS3</span><h3 data-t="t2Title">Responsive visual system</h3><p data-t="t2Text">Unified brand palette, reusable components, readable cards and adaptive layouts.</p></article>
+        <article class="step"><span class="number">JavaScript</span><h3 data-t="t3Title">Cart and UI state</h3><p data-t="t3Text">Local storage, quantity controls, cart totals, discount logic, form feedback and interface states.</p></article>
+      </div>
+      <p class="note" data-t="paymentNote">The payment-button interface is prepared for integration; this case study does not claim that real payments are currently processed.</p>
+    </section>
 
-      <section class="two-column">
-        <article class="panel hero-copy">
-          <p class="eyebrow" data-i18n="scopeEyebrow">Scope</p>
-          <h2 data-i18n="scopeTitle">What I Built</h2>
-          <ul class="scope-list">
-            <li>
-              <strong data-i18n="scope1Title">Landing and brand pages</strong>
-              <span data-i18n="scope1Text">Home, company information and product-focused sections for a healthcare-oriented brand.</span>
-            </li>
-            <li>
-              <strong data-i18n="scope2Title">Online shop structure</strong>
-              <span data-i18n="scope2Text">Product cards, product detail pages, price display, calls to action and a direct WhatsApp customer-service path.</span>
-            </li>
-            <li>
-              <strong data-i18n="scope3Title">Cart and checkout preparation</strong>
-              <span data-i18n="scope3Text">Local cart storage, quantity controls, totals, cost and discount calculation and form structure prepared for payment-button integration.</span>
-            </li>
-            <li>
-              <strong data-i18n="scope4Title">Compliance and trust pages</strong>
-              <span data-i18n="scope4Text">Legal/privacy pages, cookie banner and clear information architecture for user confidence.</span>
-            </li>
-          </ul>
-        </article>
+    <section class="section" id="preview" aria-labelledby="previewTitle">
+      <div class="section-heading"><p class="eyebrow" data-t="previewNo">05 / EXPLORE THE PROJECT</p><h2 id="previewTitle" data-t="previewTitle">Browse the website, shop and cart.</h2><p data-t="previewIntro">These links lead to the project's published/demo pages within the repository. They do not imply an operational payment service.</p></div>
+      <div class="visit-grid">
+        <a class="visit-card" href="site/index.html"><div class="media"><img src="assets/hero-okiyama.jpg" width="520" height="390" loading="lazy" alt="Okiyama website preview" data-alt-t="siteAlt"></div><div class="visit-copy"><h3 data-t="siteTitle">Company website</h3><p data-t="siteText">Brand introduction and product-focused sections.</p><span class="open" data-t="siteLink">Open website ↗</span></div></a>
+        <a class="visit-card" href="site/tienda-online.html"><div class="media"><img src="assets/turmgel-100.png" width="520" height="390" loading="lazy" alt="Turmgel product presentation" data-alt-t="shopAlt"></div><div class="visit-copy"><h3 data-t="shopTitle">Online shop</h3><p data-t="shopText">Browse product listings and the shopping interface.</p><span class="open" data-t="shopLink">Open shop ↗</span></div></a>
+        <a class="visit-card" href="site/cart.html"><div class="media"><img src="assets/turmgel-info.png" width="520" height="390" loading="lazy" alt="Turmgel product information" data-alt-t="cartAlt"></div><div class="visit-copy"><h3 data-t="cartTitle">Cart interface</h3><p data-t="cartText">Review quantity controls, totals and checkout preparation.</p><span class="open" data-t="cartLink">Open cart ↗</span></div></a>
+      </div>
+    </section>
 
-        <article class="panel hero-copy">
-          <p class="eyebrow" data-i18n="caseEyebrow">Case Study</p>
-          <h2 data-i18n="caseTitle">Problem, Solution, Result</h2>
-          <ul class="flow-list">
-            <li>
-              <strong data-i18n="problemTitle">Problem</strong>
-              <span data-i18n="problemText">Okiyama already had a website, but the visual structure and purchase path were not ready: no payment button, cost and discount calculation, complete cart flow, or direct WhatsApp support.</span>
-            </li>
-            <li>
-              <strong data-i18n="solutionTitle">Solution</strong>
-              <span data-i18n="solutionText">I simplified the navigation, aligned the UI with the company palette, built cart logic with totals and discounts, prepared payment-button integration, and connected customer support through WhatsApp.</span>
-            </li>
-            <li>
-              <strong data-i18n="resultTitle">Result</strong>
-              <span data-i18n="resultText">The maintenance version is cleaner, more consistent and easier to review before the official update, with before/after evidence kept as reference only.</span>
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="grid" id="technical">
-        <article class="card">
-          <h3 data-i18n="tech1Title">Responsive Navigation</h3>
-          <p data-i18n="tech1Text">Mobile menu behavior, sticky header states and clear access to home, company pages, shop and cart.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="tech2Title">Product & Shop Flow</h3>
-          <p data-i18n="tech2Text">Product cards, detail pages, prices, add-to-cart actions and a cart summary prepared for purchase decisions.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="tech3Title">Front-End Logic</h3>
-          <p data-i18n="tech3Text">JavaScript for cart storage, quantity updates, cost and discount calculations, contact form feedback, cookie banner and UI state.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="tech4Title">Cart State</h3>
-          <p data-i18n="tech4Text">Cart data is stored with localStorage so products and quantities persist across the browsing flow.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="tech5Title">Payment Preparation</h3>
-          <p data-i18n="tech5Text">The payment-button area is prepared for integration while keeping the current cart and checkout behavior transparent.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="tech6Title">Accessible UI Patterns</h3>
-          <p data-i18n="tech6Text">Skip links, semantic sections, ARIA labels and readable button states support a clearer user experience.</p>
-        </article>
-      </section>
-
-      <section class="panel hero-copy">
-        <p class="eyebrow" data-i18n="comparisonEyebrow">Before / After Evidence</p>
-        <h2 data-i18n="comparisonTitle">Redesign Reference</h2>
-        <p data-i18n="comparisonIntro">
-          I used the previous public website only as visual reference to document the maintenance work, without turning it into a portfolio link.
-        </p>
-        <div class="comparison-grid">
-          <article class="comparison-card">
-            <img src="assets/okiyama-before-reference.png" alt="Previous Okiyama public website reference screenshot">
-            <div class="comparison-content">
-              <span class="comparison-label" data-i18n="beforeLabel">Before Reference</span>
-              <p data-i18n="beforeCaption">The previous experience had many navigation entries, weaker brand consistency and no complete purchase flow visible from the main path.</p>
-            </div>
-          </article>
-          <article class="comparison-card">
-            <img src="assets/okiyama-after-improved.png" alt="Improved Okiyama maintenance version screenshot">
-            <div class="comparison-content">
-              <span class="comparison-label" data-i18n="afterLabel">Improved Version</span>
-              <p data-i18n="afterCaption">The improved version uses a clearer structure, company palette, stronger product focus, direct contact, cart flow and purchase-preparation features.</p>
-            </div>
-          </article>
-        </div>
-        <p class="comparison-note" data-i18n="comparisonNote">
-          The previous domain is intentionally not linked here; it was used only as reference material for the before/after comparison.
-        </p>
-      </section>
-
-      <section class="panel hero-copy">
-        <p class="eyebrow" data-i18n="evidenceEyebrow">Interface Evidence</p>
-        <h2 data-i18n="evidenceTitle">Website Flow Preview</h2>
-        <div class="showcase-grid">
-          <article class="browser-mock">
-            <div class="browser-bar">
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-title" data-i18n="mockHomeTitle">Home / Brand Landing</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-hero" style="--mock-image: url('assets/hero-okiyama.jpg')">
-                <strong>Okiyama</strong>
-                <span data-i18n="mockHomeText">Healthcare product presentation with clear calls to action.</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="browser-mock">
-            <div class="browser-bar">
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-title" data-i18n="mockShopTitle">Shop / Product Catalog</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-products">
-                <div class="mock-product">
-                  <img src="assets/turmgel-50.png" alt="Turmgel 50 product">
-                </div>
-                <div class="mock-product">
-                  <img src="assets/turmgel-100.png" alt="Turmgel 100 product">
-                </div>
-                <div class="mock-product">
-                  <img src="assets/turmgel-200.png" alt="Turmgel 200 product">
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="browser-mock">
-            <div class="browser-bar">
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-title" data-i18n="mockCartTitle">Cart / Checkout Preparation</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-card">
-                <strong data-i18n="mockCartSummary">Cart Summary</strong>
-                <span data-i18n="mockCartText">Quantity controls, totals and a payment-ready form layout.</span>
-                <div class="mock-lines">
-                  <span class="mock-line"></span>
-                  <span class="mock-line"></span>
-                  <span class="mock-line"></span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="browser-mock">
-            <div class="browser-bar">
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-title" data-i18n="mockProductTitle">Product Information</span>
-            </div>
-            <div class="mock-body">
-              <img src="assets/turmgel-info.png" alt="Turmgel product information">
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel hero-copy">
-        <p class="eyebrow" data-i18n="statusEyebrow">Professional Note</p>
-        <h2 data-i18n="statusTitle">Maintenance in Progress</h2>
-        <p data-i18n="statusText">
-          This maintenance version is included so the improved website, shop and cart flow can be reviewed
-          before official publication.
-        </p>
-        <div class="btn-row">
-          <a class="btn" href="site/index.html" data-i18n="openWebsite">Open website</a>
-          <a class="btn" href="site/tienda-online.html" data-i18n="openShop">Open shop</a>
-          <a class="btn" href="site/cart.html" data-i18n="openCart">Open cart</a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      © Santiago Cardozo Botero
-    </footer>
-  </div>
+    <section class="section closing" id="outcome" aria-labelledby="outcomeTitle"><p class="eyebrow" data-t="outcomeNo">06 / OUTCOME AND ATTRIBUTION</p><h2 id="outcomeTitle" data-t="outcomeTitle">A professional project with verifiable scope.</h2><p data-t="outcomeText">This case study explains my frontend and UX/UI contribution to an existing Okiyama project. The company brand and products remain the property of their respective owners. The available version documents improvements and ongoing checkout preparation, not measured sales or usability gains.</p><div class="actions"><a class="button primary" href="site/index.html" data-t="endWebsite">Explore website ↗</a><a class="button ghost" href="../../index.html#projects" data-t="endBack">Back to my projects</a></div></section>
+  </main>
+  <footer class="footer"><div class="container"><a href="../../index.html" aria-label="SCARDOZO PROGRAMMING — homepage"><img class="footer-logo" src="../../Picture/Isologo_scardozo_programming.png" width="360" height="139" loading="lazy" decoding="async" alt="SCARDOZO PROGRAMMING — full logo"></a><p>© <span id="year">2026</span> Santiago Cardozo Botero · SCARDOZO PROGRAMMING</p></div></footer>
   <script>
-    const texts = {
+  (() => {
+    'use strict';
+    const strings = {
       en: {
-        title: "Okiyama Website | Web Development Portfolio Project",
-        metaDescription: "Professional web development portfolio project for Okiyama, featuring responsive pages, a product catalog, cart flow, and health-product presentation.",
-        backPortfolio: "Back to portfolio",
-        openWebsite: "Open website",
-        openShop: "Open shop",
-        openCart: "Open cart",
-        heroEyebrow: "Professional Web Development Project",
-        heroTitle: "Okiyama Website",
-        heroText: "Improved company website and shop flow for Okiyama, focused on product clarity, cart logic, payment-button preparation, and WhatsApp support.",
-        readCaseStudy: "Read case study",
-        technicalWork: "Technical work",
-        statRoleTitle: "Role",
-        statRoleText: "Web Developer",
-        statStackTitle: "Stack",
-        statTypeTitle: "Type",
-        statTypeText: "Company website + shop",
-        tagResponsive: "Responsive UI",
-        tagCatalog: "Product Catalog",
-        tagCart: "Cart Flow",
-        tagCookies: "Cookie Banner",
-        tagHealthcare: "Healthcare Brand",
-        overviewEyebrow: "Project Overview",
-        overviewTitle: "Business-Focused Web Experience",
-        overviewText: "A responsive business site with product pages, an online shop structure, cart state, legal pages, and a clearer visual system aligned with the company palette.",
-        metricPages: "Public pages",
-        metricProducts: "Product presentations",
-        metricCart: "Cart flow",
-        metricMobile: "Mobile",
-        metricResponsive: "Responsive layout",
-        scopeEyebrow: "Scope",
-        scopeTitle: "What I Built",
-        scope1Title: "Landing and brand pages",
-        scope1Text: "Home, company information and product-focused sections for a healthcare-oriented brand.",
-        scope2Title: "Online shop structure",
-        scope2Text: "Product cards, product detail pages, price display, calls to action and a direct WhatsApp customer-service path.",
-        scope3Title: "Cart and checkout preparation",
-        scope3Text: "Local cart storage, quantity controls, totals, cost and discount calculation and form structure prepared for payment-button integration.",
-        scope4Title: "Compliance and trust pages",
-        scope4Text: "Legal/privacy pages, cookie banner and clear information architecture for user confidence.",
-        caseEyebrow: "Case Study",
-        caseTitle: "Problem, Solution, Result",
-        problemTitle: "Problem",
-        problemText: "Okiyama already had a website, but the visual structure and purchase path were not ready: no payment button, cost and discount calculation, complete cart flow, or direct WhatsApp support.",
-        solutionTitle: "Solution",
-        solutionText: "I simplified the navigation, aligned the UI with the company palette, built cart logic with totals and discounts, prepared payment-button integration, and connected customer support through WhatsApp.",
-        resultTitle: "Result",
-        resultText: "The maintenance version is cleaner, more consistent and easier to review before the official update, with before/after evidence kept as reference only.",
-        tech1Title: "Responsive Navigation",
-        tech1Text: "Mobile menu behavior, sticky header states and clear access to home, company pages, shop and cart.",
-        tech2Title: "Product & Shop Flow",
-        tech2Text: "Product cards, detail pages, prices, add-to-cart actions and a cart summary prepared for purchase decisions.",
-        tech3Title: "Front-End Logic",
-        tech3Text: "JavaScript for cart storage, quantity updates, cost and discount calculations, contact form feedback, cookie banner and UI state.",
-        tech4Title: "Cart State",
-        tech4Text: "Cart data is stored with localStorage so products and quantities persist across the browsing flow.",
-        tech5Title: "Payment Preparation",
-        tech5Text: "The payment-button area is prepared for integration while keeping the current cart and checkout behavior transparent.",
-        tech6Title: "Accessible UI Patterns",
-        tech6Text: "Skip links, semantic sections, ARIA labels and readable button states support a clearer user experience.",
-        comparisonEyebrow: "Before / After Evidence",
-        comparisonTitle: "Redesign Reference",
-        comparisonIntro: "I used the previous public website only as visual reference to document the maintenance work, without turning it into a portfolio link.",
-        beforeLabel: "Before Reference",
-        beforeCaption: "The previous experience had many navigation entries, weaker brand consistency and no complete purchase flow visible from the main path.",
-        afterLabel: "Improved Version",
-        afterCaption: "The improved version uses a clearer structure, company palette, stronger product focus, direct contact, cart flow and purchase-preparation features.",
-        comparisonNote: "The previous domain is intentionally not linked here; it was used only as reference material for the before/after comparison.",
-        evidenceEyebrow: "Interface Evidence",
-        evidenceTitle: "Website Flow Preview",
-        mockHomeTitle: "Home / Brand Landing",
-        mockHomeText: "Healthcare product presentation with clear calls to action.",
-        mockShopTitle: "Shop / Product Catalog",
-        mockCartTitle: "Cart / Checkout Preparation",
-        mockCartSummary: "Cart Summary",
-        mockCartText: "Quantity controls, totals and a payment-ready form layout.",
-        mockProductTitle: "Product Information",
-        statusEyebrow: "Professional Note",
-        statusTitle: "Maintenance in Progress",
-        statusText: "This maintenance version is included so the improved website, shop and cart flow can be reviewed before official publication."
+        metaDescription:'Okiyama web development case study by Santiago Cardozo Botero: company website, product catalogue, cart logic, WhatsApp support and checkout preparation.',
+        skip:'Skip to content',brandAria:'SCARDOZO PROGRAMMING — back to projects',navAria:'Case study navigation',factsAria:'Project facts',switchesAria:'Choose comparison view',back:'Portfolio',navCompare:'Before & after',
+        eyebrow:'PROFESSIONAL WEB DEVELOPMENT · CASE STUDY',heroTitle:'Okiyama: company website and online shop.',heroText:'I improved an existing company website to make products easier to explore, streamline cart interactions and provide a clearer route to customer support. The payment step was prepared for later integration.',ctaEvidence:'See before & after',ctaWeb:'Explore website ↗',tagCommerce:'E-commerce frontend',heroAlt:'Okiyama website hero photograph',heroCaption:'Visual resource from the Okiyama project. The company and product brands belong to their respective owners.',
+        factRole:'My role',factRoleValue:'Frontend development and UX/UI improvements',factDeliverable:'Deliverable',factDeliverableValue:'Company website and shop experience',factStatus:'Publication status',factStatusValue:'Maintenance version · checkout integration pending',
+        overviewNo:'01 / PROJECT CONTEXT',overviewTitle:'What I received and what I contributed.',overviewIntro:'The goal was to improve the existing experience without replacing the company’s visual identity or presenting work in progress as a completed commercial payment system.',contextBefore:'STARTING POINT',contextBeforeTitle:'Existing company website',contextBeforeText:'Okiyama already had its brand and product content. The shopping journey needed clearer navigation, stronger visual consistency and more complete cart interactions.',contextAfter:'MY CONTRIBUTION',contextAfterTitle:'A clearer storefront flow',contextAfterText:'I worked on responsive layouts, product and shop pages, cart state, quantity and discount calculations, WhatsApp support and preparation of the checkout interface.',
+        compareNo:'02 / DOCUMENTED EVIDENCE',compareTitle:'Before and after, without invented results.',compareIntro:'These screenshots document the visual starting point and the improved maintenance version. They are reference material, not results from an independent usability study.',btnBefore:'Before',btnBoth:'Both',btnAfter:'Improved',beforeAlt:'Screenshot of the earlier Okiyama website',afterAlt:'Screenshot of the improved Okiyama maintenance website',beforeLabel:'BEFORE · VISUAL REFERENCE',beforeTitle:'Previous website',beforeText:'The earlier interface provided company and product information but showed a less structured route toward the shop and purchase flow.',afterLabel:'AFTER · IMPROVED MAINTENANCE VERSION',afterTitle:'Clearer interface and shopping path',afterText:'Stronger product presentation, clearer navigation and the frontend cart and checkout-preparation components.',compareNote:'The earlier website is included as a screenshot reference only; the previous domain is not linked here.',
+        scopeNo:'03 / USER EXPERIENCE',scopeTitle:'What became easier to use.',scopeIntro:'The implementation focuses on concrete user journeys rather than unverified performance or sales metrics.',f1Title:'Responsive navigation',f1Text:'Clear paths to company information, products, the online shop and the cart across screen sizes.',f2Title:'Product discovery',f2Text:'Product cards, information and prices arranged for easier browsing and comparison.',f3Title:'Cart interactions',f3Text:'Persistent cart data, quantity updates, calculated totals and discounts in the frontend.',f4Title:'Support and trust',f4Text:'WhatsApp contact, privacy/legal content and a cookie notice in the site experience.',
+        technicalNo:'04 / TECHNICAL DECISIONS',technicalTitle:'How I built the experience.',t1Title:'Structure and content',t1Text:'Semantic pages for the company, product details, shop, cart and legal information.',t2Title:'Responsive visual system',t2Text:'Unified brand palette, reusable components, readable cards and adaptive layouts.',t3Title:'Cart and UI state',t3Text:'Local storage, quantity controls, cart totals, discount logic, form feedback and interface states.',paymentNote:'The payment-button interface is prepared for integration; this case study does not claim that real payments are currently processed.',
+        previewNo:'05 / EXPLORE THE PROJECT',previewTitle:'Browse the website, shop and cart.',previewIntro:'These links lead to the project’s published/demo pages within the repository. They do not imply an operational payment service.',siteAlt:'Okiyama website preview',shopAlt:'Turmgel product presentation',cartAlt:'Turmgel product information',siteTitle:'Company website',siteText:'Brand introduction and product-focused sections.',siteLink:'Open website ↗',shopTitle:'Online shop',shopText:'Browse product listings and the shopping interface.',shopLink:'Open shop ↗',cartTitle:'Cart interface',cartText:'Review quantity controls, totals and checkout preparation.',cartLink:'Open cart ↗',
+        outcomeNo:'06 / OUTCOME AND ATTRIBUTION',outcomeTitle:'A professional project with verifiable scope.',outcomeText:'This case study explains my frontend and UX/UI contribution to an existing Okiyama project. The company brand and products remain the property of their respective owners. The available version documents improvements and ongoing checkout preparation, not measured sales or usability gains.',endWebsite:'Explore website ↗',endBack:'Back to my projects',imageMissing:'Preview asset unavailable. Keep the project’s original assets/ folder beside this HTML.'
       },
       es: {
-        title: "Sitio web Okiyama | Proyecto de portafolio de desarrollo web",
-        metaDescription: "Proyecto profesional de desarrollo web para Okiyama, con páginas adaptables, catálogo de productos, flujo de carrito y presentación de productos de salud.",
-        backPortfolio: "Volver al portafolio",
-        openWebsite: "Abrir sitio",
-        openShop: "Abrir tienda",
-        openCart: "Abrir carrito",
-        heroEyebrow: "Proyecto profesional de desarrollo web",
-        heroTitle: "Sitio web Okiyama",
-        heroText: "Versión mejorada del sitio y del flujo de tienda de Okiyama, centrada en la claridad del producto, el carrito, la preparación del pago y la atención por WhatsApp.",
-        readCaseStudy: "Ver caso de estudio",
-        technicalWork: "Trabajo técnico",
-        statRoleTitle: "Rol",
-        statRoleText: "Desarrollador web",
-        statStackTitle: "Tecnologías",
-        statTypeTitle: "Tipo",
-        statTypeText: "Sitio corporativo + tienda",
-        tagResponsive: "Interfaz adaptable",
-        tagCatalog: "Catálogo de productos",
-        tagCart: "Flujo de carrito",
-        tagCookies: "Banner de cookies",
-        tagHealthcare: "Marca de salud",
-        overviewEyebrow: "Resumen del proyecto",
-        overviewTitle: "Experiencia web enfocada en negocio",
-        overviewText: "Sitio de negocio adaptable con páginas de producto, estructura de tienda, estado de carrito, páginas legales y un sistema visual alineado con la paleta de la empresa.",
-        metricPages: "Páginas públicas",
-        metricProducts: "Presentaciones de producto",
-        metricCart: "Flujo de carrito",
-        metricMobile: "Móvil",
-        metricResponsive: "Diseño adaptable",
-        scopeEyebrow: "Alcance",
-        scopeTitle: "Qué construí",
-        scope1Title: "Página de inicio y páginas de marca",
-        scope1Text: "Inicio, información de empresa y secciones enfocadas en producto para una marca orientada al cuidado de la salud.",
-        scope2Title: "Estructura de tienda online",
-        scope2Text: "Tarjetas de producto, páginas de detalle, visualización de precios, llamadas a la acción y ruta directa de atención al cliente por WhatsApp.",
-        scope3Title: "Preparación de carrito y pago",
-        scope3Text: "Carrito con almacenamiento local, controles de cantidad, totales, cálculo de costes y descuentos y estructura de formulario preparada para integrar el botón de pago.",
-        scope4Title: "Páginas de confianza y cumplimiento",
-        scope4Text: "Páginas legales/privacidad, banner de cookies y arquitectura de información clara para generar confianza.",
-        caseEyebrow: "Caso de estudio",
-        caseTitle: "Problema, solución, resultado",
-        problemTitle: "Problema",
-        problemText: "Okiyama ya tenía una página, pero la estructura visual y el recorrido de compra no estaban listos: faltaba botón de pago, cálculo de costes y descuentos, carrito completo y atención directa por WhatsApp.",
-        solutionTitle: "Solución",
-        solutionText: "Simplifiqué la navegación, alineé la interfaz con la paleta de la empresa, construí el carrito con totales y descuentos, preparé la integración del botón de pago y conecté la atención por WhatsApp.",
-        resultTitle: "Resultado",
-        resultText: "La versión de mantenimiento queda más limpia, consistente y fácil de revisar antes de la actualización oficial, con evidencia antes/después usada solo como referencia.",
-        tech1Title: "Navegación adaptable",
-        tech1Text: "Comportamiento del menú móvil, estados de cabecera fija y acceso claro a inicio, páginas de empresa, tienda y carrito.",
-        tech2Title: "Flujo de producto y tienda",
-        tech2Text: "Tarjetas de producto, páginas de detalle, precios, acciones de añadir al carrito y resumen preparado para decisiones de compra.",
-        tech3Title: "Lógica front-end",
-        tech3Text: "JavaScript para almacenamiento del carrito, actualización de cantidades, cálculo de costes y descuentos, respuesta de formularios, banner de cookies y estados de interfaz.",
-        tech4Title: "Estado del carrito",
-        tech4Text: "Los datos del carrito se almacenan con localStorage para mantener productos y cantidades durante la navegación.",
-        tech5Title: "Preparación de pago",
-        tech5Text: "El área del botón de pago está preparada para su integración, manteniendo claro el comportamiento actual del carrito y del proceso de compra.",
-        tech6Title: "Patrones de interfaz accesibles",
-        tech6Text: "Enlaces de salto, secciones semánticas, etiquetas ARIA y estados legibles de botones apoyan una experiencia de usuario más clara.",
-        comparisonEyebrow: "Evidencia antes / después",
-        comparisonTitle: "Referencia del rediseño",
-        comparisonIntro: "Usé la página pública anterior solo como referencia visual para documentar el trabajo de mantenimiento, sin convertirla en un enlace del portafolio.",
-        beforeLabel: "Referencia anterior",
-        beforeCaption: "La experiencia anterior tenía muchas entradas de navegación, menor consistencia visual con la marca y no mostraba un flujo completo de compra desde el camino principal.",
-        afterLabel: "Versión mejorada",
-        afterCaption: "La versión mejorada utiliza una estructura más clara, paleta de la empresa, mayor enfoque de producto, contacto directo, flujo de carrito y funciones preparadas para compra.",
-        comparisonNote: "El dominio anterior no está enlazado intencionalmente aquí; se usó solo como material de referencia para la comparación antes/después.",
-        evidenceEyebrow: "Evidencia de interfaz",
-        evidenceTitle: "Vista previa del flujo del sitio",
-        mockHomeTitle: "Inicio / página de marca",
-        mockHomeText: "Presentación de producto de salud con llamadas a la acción claras.",
-        mockShopTitle: "Tienda / catálogo de productos",
-        mockCartTitle: "Carrito / preparación del pago",
-        mockCartSummary: "Resumen del carrito",
-        mockCartText: "Controles de cantidad, totales y diseño de formulario preparado para el pago.",
-        mockProductTitle: "Información de producto",
-        statusEyebrow: "Nota profesional",
-        statusTitle: "Mantenimiento en curso",
-        statusText: "Esta versión de mantenimiento se incluye para revisar el sitio mejorado, la tienda y el flujo de carrito antes de la publicación oficial."
+        metaDescription:'Caso de estudio de desarrollo web de Okiyama por Santiago Cardozo Botero: sitio corporativo, catálogo de productos, lógica de carrito, WhatsApp y preparación del pago.',
+        skip:'Saltar al contenido',brandAria:'SCARDOZO PROGRAMMING — volver a los proyectos',navAria:'Navegación del caso de estudio',factsAria:'Datos del proyecto',switchesAria:'Seleccionar vista de comparación',back:'Portafolio',navCompare:'Antes y después',
+        eyebrow:'DESARROLLO WEB PROFESIONAL · CASO DE ESTUDIO',heroTitle:'Okiyama: web corporativa y tienda online.',heroText:'Mejoré una web corporativa existente para facilitar la exploración de productos, simplificar las interacciones del carrito y ofrecer una vía más clara de atención al cliente. El paso de pago quedó preparado para integrarse posteriormente.',ctaEvidence:'Ver antes y después',ctaWeb:'Explorar sitio ↗',tagCommerce:'Frontend de tienda',heroAlt:'Imagen de portada de la web Okiyama',heroCaption:'Recurso visual del proyecto Okiyama. La marca y los productos pertenecen a sus respectivos titulares.',
+        factRole:'Mi función',factRoleValue:'Desarrollo frontend y mejoras UX/UI',factDeliverable:'Entregable',factDeliverableValue:'Web corporativa y experiencia de tienda',factStatus:'Estado de publicación',factStatusValue:'Versión de mantenimiento · integración de pago pendiente',
+        overviewNo:'01 / CONTEXTO DEL PROYECTO',overviewTitle:'Qué recibí y cuál fue mi aportación.',overviewIntro:'El objetivo fue mejorar la experiencia existente sin reemplazar la identidad de la empresa ni presentar el trabajo en curso como un sistema de pagos comerciales terminado.',contextBefore:'PUNTO DE PARTIDA',contextBeforeTitle:'Una web corporativa existente',contextBeforeText:'Okiyama ya disponía de su marca y contenido de productos. El recorrido de compra necesitaba una navegación más clara, mayor coherencia visual e interacciones de carrito más completas.',contextAfter:'MI CONTRIBUCIÓN',contextAfterTitle:'Un recorrido de tienda más claro',contextAfterText:'Trabajé en diseños adaptables, páginas de producto y tienda, estado del carrito, cálculos de cantidad y descuentos, atención por WhatsApp y preparación de la interfaz de pago.',
+        compareNo:'02 / EVIDENCIA DOCUMENTADA',compareTitle:'Antes y después, sin resultados inventados.',compareIntro:'Estas capturas documentan el punto de partida visual y la versión de mantenimiento mejorada. Son material de referencia, no resultados de un estudio independiente de usabilidad.',btnBefore:'Anterior',btnBoth:'Ambas',btnAfter:'Mejorada',beforeAlt:'Captura de la web anterior de Okiyama',afterAlt:'Captura de la versión de mantenimiento mejorada de Okiyama',beforeLabel:'ANTES · REFERENCIA VISUAL',beforeTitle:'Web anterior',beforeText:'La interfaz anterior ofrecía información corporativa y de producto, pero presentaba una ruta menos estructurada hacia la tienda y el proceso de compra.',afterLabel:'DESPUÉS · VERSIÓN DE MANTENIMIENTO MEJORADA',afterTitle:'Una interfaz y compra más claras',afterText:'Mejor presentación de productos, navegación clara y componentes frontend del carrito y preparación del pago.',compareNote:'La web anterior se utiliza únicamente como referencia gráfica; no se incluye el enlace al dominio anterior.',
+        scopeNo:'03 / EXPERIENCIA DE USUARIO',scopeTitle:'Qué se hizo más fácil de utilizar.',scopeIntro:'La implementación se centra en recorridos concretos del usuario, sin atribuir métricas no verificadas de rendimiento o ventas.',f1Title:'Navegación adaptable',f1Text:'Acceso claro a información corporativa, productos, tienda y carrito en distintos tamaños de pantalla.',f2Title:'Exploración de productos',f2Text:'Tarjetas, información y precios organizados para facilitar la consulta y comparación.',f3Title:'Interacciones del carrito',f3Text:'Datos persistentes del carrito, cambios de cantidad, totales y descuentos calculados en el frontend.',f4Title:'Atención y confianza',f4Text:'Contacto por WhatsApp, contenidos legales y de privacidad y aviso de cookies.',
+        technicalNo:'04 / DECISIONES TÉCNICAS',technicalTitle:'Cómo construí la experiencia.',t1Title:'Estructura y contenido',t1Text:'Páginas semánticas de la empresa, fichas de producto, tienda, carrito e información legal.',t2Title:'Sistema visual adaptable',t2Text:'Paleta de marca unificada, componentes reutilizables, tarjetas legibles y distribuciones adaptables.',t3Title:'Estado del carrito y de la interfaz',t3Text:'Almacenamiento local, controles de cantidad, totales, lógica de descuentos, respuesta de formularios y estados de interfaz.',paymentNote:'La interfaz del botón de pago quedó preparada para integración; este caso de estudio no afirma que se procesen pagos reales.',
+        previewNo:'05 / EXPLORA EL PROYECTO',previewTitle:'Visita la web, la tienda y el carrito.',previewIntro:'Estos enlaces llevan a las páginas publicadas/de demostración del proyecto en el repositorio. No implican que exista un servicio de pago operativo.',siteAlt:'Vista previa de Okiyama',shopAlt:'Presentación del producto Turmgel',cartAlt:'Información del producto Turmgel',siteTitle:'Web corporativa',siteText:'Presentación de la marca y secciones centradas en productos.',siteLink:'Abrir sitio ↗',shopTitle:'Tienda online',shopText:'Consulta el catálogo y la interfaz de compra.',shopLink:'Abrir tienda ↗',cartTitle:'Interfaz del carrito',cartText:'Revisa los controles de cantidad, los totales y la preparación del pago.',cartLink:'Abrir carrito ↗',
+        outcomeNo:'06 / RESULTADO Y ATRIBUCIÓN',outcomeTitle:'Un proyecto profesional con alcance verificable.',outcomeText:'Este caso de estudio explica mi aportación frontend y UX/UI a un proyecto existente de Okiyama. La marca y los productos pertenecen a sus respectivos titulares. La versión disponible documenta mejoras y la preparación del pago en curso, no incrementos medidos de ventas o usabilidad.',endWebsite:'Explorar sitio ↗',endBack:'Volver a mis proyectos',imageMissing:'No se pudo cargar la imagen. Conserva la carpeta assets/ original junto al HTML.'
       }
     };
-
-    const DEFAULT_LANGUAGE = "en";
-    const STORAGE_KEY = "language";
-    const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
-    const LANGUAGE_VERSION = "english-default-v3";
-    const langToggle = document.getElementById("langToggle");
-
-    if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
-      localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
-      localStorage.setItem(LANGUAGE_VERSION_KEY, LANGUAGE_VERSION);
+    const $ = (s) => document.querySelector(s);
+    const langBtn = $('#langToggle');
+    const langKeys = ['language','scardozo_case_lang'];
+    let lang = 'en';
+    try {const value = localStorage.getItem(langKeys[0]) || localStorage.getItem(langKeys[1]);if(value && strings[value]) lang=value;}catch(_e){}
+    function translate(){
+      document.documentElement.lang=lang;
+      document.querySelectorAll('[data-t]').forEach(el=>{const v=strings[lang][el.dataset.t];if(v!==undefined)el.textContent=v;});
+      document.querySelectorAll('[data-aria-t]').forEach(el=>{const v=strings[lang][el.dataset.ariaT];if(v!==undefined)el.setAttribute('aria-label',v);});
+      document.querySelectorAll('[data-alt-t]').forEach(el=>{const v=strings[lang][el.dataset.altT];if(v!==undefined)el.alt=v;});
+      document.querySelectorAll('[data-i18n-meta]').forEach(el=>{const v=strings[lang][el.dataset.i18nMeta];if(v!==undefined)el.content=v;});
+      langBtn.textContent=lang==='en'?'Español':'English';
+      langBtn.setAttribute('aria-label',lang==='en'?'Cambiar idioma a español':'Change language to English');
+      document.title=lang==='en'?'Okiyama — Web Development Case Study | SCARDOZO PROGRAMMING':'Okiyama — Caso de estudio de desarrollo web | SCARDOZO PROGRAMMING';
+      document.querySelectorAll('.media-fallback').forEach(el=>el.textContent=strings[lang].imageMissing);
     }
-
-    let currentLang = texts[localStorage.getItem(STORAGE_KEY)] ? localStorage.getItem(STORAGE_KEY) : DEFAULT_LANGUAGE;
-
-    function applyTranslations() {
-      const dictionary = texts[currentLang] || texts[DEFAULT_LANGUAGE];
-      document.documentElement.lang = currentLang;
-      document.title = dictionary.title;
-
-      document.querySelectorAll("[data-i18n]").forEach((element) => {
-        const key = element.dataset.i18n;
-        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
-          element.textContent = dictionary[key];
-        }
-      });
-
-      document.querySelectorAll("[data-i18n-content]").forEach((element) => {
-        const key = element.dataset.i18nContent;
-        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
-          element.setAttribute("content", dictionary[key]);
-        }
-      });
-
-      if (langToggle) {
-        langToggle.textContent = currentLang === "en" ? "Español" : "English";
-        langToggle.setAttribute(
-          "aria-label",
-          currentLang === "en" ? "Cambiar idioma a español" : "Change language to English"
-        );
+    langBtn.addEventListener('click',()=>{lang=lang==='en'?'es':'en';try{langKeys.forEach(k=>localStorage.setItem(k,lang));}catch(_e){}translate();});
+    const grid = $('#comparisonGrid');
+    const switches = Array.from(document.querySelectorAll('button[data-view]'));
+    switches.forEach(button=>button.addEventListener('click',()=>{grid.dataset.view=button.dataset.view;switches.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));
+    document.querySelectorAll('.media img').forEach(img=>{
+      function showFallback(){
+        if(img.parentNode.querySelector('.media-fallback')) return;
+        img.hidden=true;
+        const fallback=document.createElement('div');
+        fallback.className='media-fallback';
+        fallback.textContent=strings[lang].imageMissing;
+        fallback.setAttribute('role','status');
+        img.parentNode.appendChild(fallback);
       }
-    }
-
-    langToggle?.addEventListener("click", () => {
-      currentLang = currentLang === "en" ? "es" : "en";
-      localStorage.setItem(STORAGE_KEY, currentLang);
-      applyTranslations();
+      img.addEventListener('error',showFallback,{once:true});
+      if(img.complete && img.naturalWidth===0) showFallback();
     });
-
-    applyTranslations();
+    $('#year').textContent=String(new Date().getFullYear());
+    translate();
+  })();
   </script>
 </body>
 </html>

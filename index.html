@@ -5,8 +5,17 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Santiago Cardozo Botero — Game, Web, and Interactive Developer Portfolio</title>
-<meta content="Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics, and interactive systems." data-i18n-content="metaDescription" name="description"/>
+<meta content="Portfolio of Santiago Cardozo Botero: Unity/C# gameplay systems, responsive websites, computer graphics and interactive JavaScript projects." data-i18n-content="metaDescription" name="description"/>
 <link href="Picture/SCARDOZO_avatar_con_detalles.png" rel="icon" type="image/png"/>
+<link rel="canonical" href="https://scardozoprogramming.github.io/"/>
+<meta name="theme-color" content="#050a1a"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="SCARDOZO PROGRAMMING"/>
+<meta property="og:url" content="https://scardozoprogramming.github.io/"/>
+<meta property="og:title" content="SCARDOZO PROGRAMMING — Game Programming &amp; Frontend Development"/>
+<meta property="og:description" content="Unity and C# gameplay systems, responsive websites, interactive tools, and published portfolio projects by Santiago Cardozo Botero."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
 <style>
         :root {
@@ -171,7 +180,7 @@
             padding: 84px 0 64px;
         }
 
-        .hero h2 {
+        .hero .hero-kicker {
             color: var(--accent);
             margin: 0 0 12px;
             letter-spacing: .12em;
@@ -302,15 +311,17 @@
             padding: 58px 0;
         }
 
-        h3 {
+        h2 {
             color: var(--accent);
             margin-bottom: 12px;
-            font-size: 28px;
+            font-size: clamp(23px, 3vw, 30px);
+            line-height: 1.25;
         }
 
-        h4 {
+        h3 {
             font-size: 20px;
             margin: 14px 0 8px;
+            line-height: 1.3;
         }
 
         .muted {
@@ -364,17 +375,17 @@
             box-shadow: 0 0 38px rgba(56, 221, 248, .24);
         }
 
-        .card:hover h4 {
+        .card:hover h3 {
             color: var(--accent);
         }
 
-        .card h4::after {
+        .card h3::after {
             content: " →";
             opacity: .7;
             transition: .25s;
         }
 
-        .card:hover h4::after {
+        .card:hover h3::after {
             margin-left: 6px;
             opacity: 1;
         }
@@ -433,14 +444,6 @@
             font-size: 15px;
         }
 
-        .category-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 0 0 24px;
-        }
-
-        .category-filter,
         .project-category {
             display: inline-flex;
             width: fit-content;
@@ -454,35 +457,7 @@
             font-weight: 900;
             text-transform: uppercase;
         }
-
-        .category-filter {
-            appearance: none;
-            font: inherit;
-            cursor: pointer;
-            transition: .25s;
-            gap: 8px;
-        }
-
-        .category-filter strong {
-            display: inline-grid;
-            min-width: 22px;
-            height: 22px;
-            place-items: center;
-            border-radius: 999px;
-            background: rgba(255,255,255,.10);
-            color: inherit;
-            font-size: 11px;
-        }
-
-        .category-filter:hover,
-        .category-filter.is-active {
-            border-color: rgba(56, 221, 248, .75);
-            background: var(--accent);
-            color: #061A29;
-            box-shadow: 0 0 24px rgba(56, 221, 248, .25);
-        }
-
-        .card.is-hidden {
+.card.is-hidden {
             display: none;
         }
 
@@ -534,7 +509,7 @@
             box-shadow: 0 18px 42px rgba(0,0,0,.28), 0 0 28px rgba(56, 221, 248, .15);
         }
 
-        .capability-card h4 {
+        .capability-card h3 {
             margin-top: 10px;
         }
 
@@ -675,10 +650,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .category-filter {
-                flex: 1 1 calc(50% - 8px);
-                justify-content: center;
-            }
+
 
             .hero-actions {
                 flex-direction: column;
@@ -756,6 +728,54 @@
             text-transform: uppercase;
         }
 
+        .brand { min-width: 0; }
+        .brand > div:last-child { min-width: 0; }
+        .brand > div:last-child .muted { display: block; line-height: 1.4; }
+        .logo { flex-shrink: 0; }
+        .footer-logo { max-width: 100%; }
+        /* Portfolio first-visit clarity and keyboard feedback. */
+        .hero-actions .cta { min-height: 46px; }
+        .hero-actions .cta-featured {
+            color: #051522;
+            background: linear-gradient(125deg, var(--accent), #b2a1ff);
+            border-color: #a8ecf8;
+        }
+        .hero-actions .cta-featured:hover {
+            background: linear-gradient(125deg, #9bf0fc, #c8c0ff);
+            color: #061a29;
+        }
+        .hero-actions .cta-subtle {
+            color: #d3e7f5;
+            background: rgba(139, 92, 246, .05);
+            border-color: rgba(166, 188, 212, .42);
+        }
+        .filter-status {
+            min-height: 1.5em;
+            margin: 0 0 16px;
+            color: #bcd0e6;
+            font-size: 13px;
+        }
+        .card:focus-visible { transform: translateY(-3px); border-color: var(--accent); }
+        .hero .hero-kicker { font-weight: 800; }
+        @media (max-width: 700px) {
+            header { align-items: center; gap: 9px; padding: 12px 14px; }
+            .brand { flex: 1 0 100%; }
+            nav {
+                width: auto;
+                flex: 1 1 auto;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 2px;
+            }
+            nav a { flex: initial; padding: 8px 2px; font-size: 11px; white-space: nowrap; }
+            #langToggle { padding: 8px 9px; font-size: 11px; min-height: 38px; }
+            .hero-actions .cta { flex: 1 1 100%; }
+            .hero-proof { gap: 9px; }
+        }
+        @media (max-width: 360px) {
+            nav a { font-size: 10px; padding: 8px 1px; }
+            #langToggle { padding: 8px 6px; font-size: 10px; }
+        }
         /* Keyboard navigation and reduced-motion preferences. */
         .skip-link {
             position: fixed;
@@ -773,7 +793,6 @@
         .cta:focus-visible,
         .card:focus-visible,
         nav a:focus-visible,
-        .category-filter:focus-visible,
         button:focus-visible {
             outline: 3px solid var(--accent);
             outline-offset: 4px;
@@ -784,11 +803,183 @@
             *, *::before, *::after { animation: none !important; transition: none !important; }
             #binaryCanvas { display: none; }
         }
-    </style>
+    
+/* SCARDOZO / V3 — two visual families, with a shared bridge. */
+:root { --specialty-game:#c6adff; --specialty-web:#54ddf5; --specialty-bridge:#a5bbff; }
+.specialty-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:26px 0 20px; }
+.specialty-card { display:flex; align-items:center; gap:16px; min-height:122px; padding:20px; border:1px solid rgba(255,255,255,.20); border-radius:18px; background:#121b30; box-shadow:0 12px 30px #0002; transition:border-color .22s, transform .22s, background .22s; }
+.specialty-card:hover { transform:translateY(-3px); }
+.specialty-card:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+.specialty-game { border-color:rgba(198,173,255,.42); background:linear-gradient(125deg,#251b39,#111a30); }
+.specialty-game:hover { border-color:var(--specialty-game); }
+.specialty-web { border-color:rgba(84,221,245,.42); background:linear-gradient(125deg,#112d3a,#111a30); }
+.specialty-web:hover { border-color:var(--specialty-web); }
+.specialty-symbol { flex:0 0 49px; width:49px; height:49px; display:grid; place-items:center; border-radius:14px; font-size:25px; font-family:ui-monospace,monospace; font-weight:900; background:rgba(255,255,255,.075); }
+.specialty-game .specialty-symbol, .specialty-game .specialty-copy strong { color:var(--specialty-game); }
+.specialty-web .specialty-symbol, .specialty-web .specialty-copy strong { color:var(--specialty-web); }
+.specialty-copy { display:grid; gap:4px; min-width:0; }
+.specialty-copy strong { font-size:16px; line-height:1.35; }
+.specialty-copy > span { color:#c5d2e5; font-size:12px; line-height:1.6; }
+.specialty-count { margin-left:auto; flex-shrink:0; display:grid; gap:0; text-align:center; color:#cbd9ee; font-size:11px; font-weight:800; }
+.specialty-count > span:first-child { font-size:20px; line-height:1.25; color:#fff; }
+.filter-explainer { margin:-1px 0 17px; color:#bccbdf; font-size:13px; }
+/* The code-binary background and brand identity remain shared across the site. */
+.card[data-categories~="game"]:not([data-categories~="web"]) { border-color:rgba(198,173,255,.28); }
+.card[data-categories~="game"]:not([data-categories~="web"]) .project-category { color:#e1d4ff; border-color:rgba(198,173,255,.45); background:rgba(198,173,255,.1); }
+.card[data-categories~="web"]:not([data-categories~="game"]) .project-category { color:#baf1fc; border-color:rgba(84,221,245,.44); }
+.card[data-categories~="game"][data-categories~="web"] { border-color:rgba(166,165,255,.6); background:linear-gradient(130deg,rgba(198,173,255,.075),rgba(84,221,245,.075) 60%),var(--card); }
+.card[data-categories~="game"][data-categories~="web"] .project-category { color:#e0e6ff; border-color:#8f9dd2; background:linear-gradient(110deg,rgba(198,173,255,.16),rgba(84,221,245,.14)); }
+@media(max-width:780px) { .specialty-grid { grid-template-columns:1fr; } }
+@media(max-width:480px) { .specialty-card { padding:15px; gap:12px; min-height:112px; } .specialty-symbol { flex-basis:42px; width:42px; height:42px; font-size:21px; } .specialty-copy strong { font-size:14px; } .specialty-copy > span { font-size:11px; } }
+@media(prefers-reduced-motion:reduce) { .specialty-card:hover { transform:none; } }
+
+/* ================================================================
+   SCARDOZO PROGRAMMING | V4 — IDENTIDAD POR ESPECIALIDAD
+   Videojuegos = morado · Desarrollo web = cian
+   Gráficos por ordenador = morado 50 % + cian 50 %
+   Se usan las categorías EXISTENTES: data-categories="game web".
+   No se modifica ni duplica la lógica de filtros JavaScript.
+   ================================================================ */
+.card[data-categories] {
+    --card-accent: #54ddf5;
+    --card-line: linear-gradient(90deg, #54ddf5, #54ddf5);
+    --card-halo: rgba(84,221,245,.22);
+    --card-border-special: rgba(84,221,245,.42);
+    --card-label-bg: rgba(84,221,245,.12);
+    --card-wash: linear-gradient(155deg,rgba(30,153,183,.18),rgba(8,26,47,.14) 75%);
+    background: var(--card-wash), var(--card);
+    border-color: var(--card-border-special);
+    isolation: isolate;
+}
+/* Línea superior integrada: no afecta a las tarjetas clicables ni a la animación existente. */
+.card[data-categories]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 22px 22px 0 0;
+    background: var(--card-line);
+    z-index: 2;
+    pointer-events: none;
+}
+.card[data-categories]:hover,
+.card[data-categories]:focus-visible {
+    border-color: var(--card-accent);
+    box-shadow: 0 16px 45px rgba(0,0,0,.32), 0 0 32px var(--card-halo);
+}
+.card[data-categories]:focus-visible { outline-color: var(--card-accent); }
+.card[data-categories]:hover h3,
+.card[data-categories]:focus-visible h3,
+.card[data-categories] .project-link { color: var(--card-accent); }
+.card[data-categories] .project-category,
+.card[data-categories] .featured-label {
+    color: var(--card-accent);
+    border-color: var(--card-border-special);
+    background: var(--card-label-bg);
+}
+.card[data-categories] .project-tags span {
+    border-color: var(--card-border-special);
+    background: var(--card-label-bg);
+    color: #e5f1ff;
+}
+/* 4 proyectos de videojuegos — MORADO. */
+.card[data-categories~="game"]:not([data-categories~="web"]) {
+    --card-accent: #c6adff;
+    --card-line: linear-gradient(90deg,#a47aff,#d6adff);
+    --card-halo: rgba(173,118,255,.25);
+    --card-border-special: rgba(198,173,255,.43);
+    --card-label-bg: rgba(167,116,255,.12);
+    --card-wash: linear-gradient(155deg,rgba(142,88,224,.22),rgba(24,17,45,.30) 76%);
+}
+/* 4 proyectos web — CIAN. Incluye Flynn's Arcades. */
+.card[data-categories~="web"]:not([data-categories~="game"]) {
+    --card-accent: #54ddf5;
+    --card-line: linear-gradient(90deg,#28c5e8,#83edff);
+    --card-halo: rgba(84,221,245,.24);
+    --card-border-special: rgba(84,221,245,.43);
+    --card-label-bg: rgba(48,198,231,.12);
+    --card-wash: linear-gradient(155deg,rgba(24,155,189,.20),rgba(12,36,56,.26) 76%);
+}
+/* Computer Graphics — DIVISIÓN EXACTA 50/50. */
+.card[data-categories~="game"][data-categories~="web"] {
+    --card-accent: #aebcff;
+    --card-line: linear-gradient(90deg,#b38cff 0%,#b38cff 50%,#54ddf5 50%,#54ddf5 100%);
+    --card-halo: rgba(153,174,255,.25);
+    --card-border-special: rgba(169,186,255,.57);
+    --card-label-bg: linear-gradient(90deg,rgba(156,109,225,.22) 0%,rgba(156,109,225,.22) 50%,rgba(35,167,194,.20) 50%,rgba(35,167,194,.20) 100%);
+    --card-wash: linear-gradient(90deg,rgba(139,85,205,.22) 0%,rgba(139,85,205,.19) 50%,rgba(26,153,183,.18) 50%,rgba(26,153,183,.21) 100%);
+    background: var(--card-wash), var(--card);
+}
+.card[data-categories~="game"][data-categories~="web"] .project-category,
+.card[data-categories~="game"][data-categories~="web"] .featured-label {
+    color: #f2f7ff;
+    background: var(--card-label-bg);
+}
+/* Textos de la ficha combinada con gradiente legible en Chromium y fallback sólido. */
+@supports (-webkit-background-clip: text) {
+  .card[data-categories~="game"][data-categories~="web"] .project-link {
+      background: linear-gradient(90deg,#d0b5ff 0%,#d0b5ff 50%,#8ef0ff 50%,#8ef0ff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card[data-categories]:hover,
+  .card[data-categories]:focus-visible { transform: none; }
+}
+
+
+/* SCARDOZO V5 · Selector único de especialidades */
+.specialty-card {
+  appearance: none;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+.specialty-card.is-active.specialty-game {
+  border-color: #c6adff;
+  box-shadow: 0 0 0 2px rgba(198,173,255,.20), 0 16px 38px rgba(98,45,161,.20);
+}
+.specialty-card.is-active.specialty-web {
+  border-color: #54ddf5;
+  box-shadow: 0 0 0 2px rgba(84,221,245,.20), 0 16px 38px rgba(12,134,160,.18);
+}
+.specialty-card[aria-pressed="true"] .specialty-symbol {
+  background: rgba(255,255,255,.14);
+}
+.project-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2px 0 14px;
+}
+.project-toolbar .filter-status {
+  min-height: 1.5em;
+  margin: 0;
+}
+#resetProjectFilter[hidden] { display: none !important; }
+#resetProjectFilter {
+  min-height: 39px;
+  padding: 8px 14px;
+  color: #dceafd;
+  background: rgba(255,255,255,.05);
+  border-color: rgba(166,188,212,.42);
+}
+#resetProjectFilter:hover { border-color: var(--accent); background: #21344a; }
+#projects { scroll-margin-top: 100px; }
+@media (max-width: 700px) { #projects { scroll-margin-top: 20px; } }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main" data-i18n="skipLink">Skip to main content</a>
-<canvas id="binaryCanvas"></canvas>
+<canvas id="binaryCanvas" aria-hidden="true"></canvas>
 <div class="wrap">
 <header>
 <div class="brand">
@@ -797,10 +988,10 @@
 </div>
 <div>
 <strong>Santiago Cardozo Botero</strong><br/>
-<span class="muted" data-i18n="role">Game &amp; Web Developer</span>
+<span class="muted" data-i18n="role">Game Programmer · Frontend Developer</span>
 </div>
 </div>
-<nav>
+<nav aria-label="Primary navigation" data-i18n-aria-label="navigationAria">
 <a data-i18n="navHome" href="#home">Home</a>
 <a data-i18n="navProfile" href="#profile">Profile</a>
 <a data-i18n="navProjects" href="#projects">Projects</a>
@@ -811,12 +1002,12 @@
 <main id="main">
 <div class="hero" id="home">
 <div>
-<h2 data-i18n="heroTitle">Game, Web, and Interactive Systems Portfolio</h2>
-<h1 data-i18n="heroSubtitle">Building playable, usable, and polished interactive projects</h1>
+<p class="hero-kicker" data-i18n="heroTitle">Game Programming · Frontend Development</p>
+<h1 data-i18n="heroSubtitle">Building game systems and web experiences that people can use.</h1>
 <p class="lead" data-i18n="heroText">
-                    A focused portfolio across Unity games, responsive websites, technical graphics, and browser-based tools.
+                    I develop gameplay systems in Unity/C# and interactive websites in JavaScript. Explore playable projects, published websites, and technical case studies.
                 </p>
-<div aria-label="Core stack" class="hero-stack">
+<div aria-label="Core technologies" data-i18n-aria-label="stackAria" class="hero-stack">
 <span>Unity</span>
 <span>C#</span>
 <span>JavaScript</span>
@@ -824,17 +1015,17 @@
 <span data-i18n="stackUiSystems">UI Systems</span>
 <span data-i18n="stackInteractive">Interactive Tools</span>
 </div>
-<div class="hero-actions">
-<a class="cta" data-i18n="heroPrimaryCta" href="#projects">View Projects</a>
-<a class="cta" data-i18n="heroSecondaryCta" href="#contact">Contact Me</a>
+<div class="hero-actions" aria-label="Explore the portfolio" data-i18n-aria-label="heroActionsAria">
+<a class="cta cta-featured" data-i18n="heroPrimaryCta" href="#projects">Explore projects</a>
+<a class="cta cta-subtle" data-i18n="heroThirdCta" href="#contact">Contact</a>
 </div>
-<div aria-label="Portfolio proof points" class="hero-proof">
+<div aria-label="Portfolio highlights" data-i18n-aria-label="highlightsAria" class="hero-proof">
 <div class="proof-stat">
 <strong>Games + Web</strong>
 <span data-i18n="proofSystems">Gameplay, UI, and interaction logic</span>
 </div>
 <div class="proof-stat">
-<strong>9 Projects</strong>
+<strong id="projectsTotal">9 Projects</strong>
 <span data-i18n="proofProjects">Games, websites, and technical demos</span>
 </div>
 <div class="proof-stat">
@@ -844,7 +1035,7 @@
 </div>
 </div>
 <aside class="profile-card">
-<img alt="Santiago Cardozo Botero" src="Picture/FotoSantiagoCardozoBotero.jpeg"/>
+<img alt="Santiago Cardozo Botero — retrato profesional" src="Picture/FotoSantiagoCardozoBotero.jpeg" decoding="async" fetchpriority="high"/>
 <div class="meta">
 <div>
 <strong data-i18n="skillsTitle">Skills</strong><br/>
@@ -857,7 +1048,7 @@
 </aside>
 </div>
 <section class="profile-section" id="profile">
-<h3 data-i18n="profileTitle">Developer Profile</h3>
+<h2 data-i18n="profileTitle">Developer Profile</h2>
 <p class="profile-intro" data-i18n="profileIntro">
                 I build interactive systems across Unity and the web, combining gameplay logic, responsive interfaces,
                 and technical prototypes with clear visual presentation.
@@ -865,7 +1056,7 @@
 <div class="capability-grid">
 <article class="capability-card">
 <span class="capability-label" data-i18n="capabilityGameLabel">Game Systems</span>
-<h4 data-i18n="capabilityGameTitle">Gameplay Logic</h4>
+<h3 data-i18n="capabilityGameTitle">Gameplay Logic</h3>
 <p class="muted" data-i18n="capabilityGameText">
                         Unity, C#, player feedback, UI behavior, combat states, and match-flow systems.
                     </p>
@@ -873,7 +1064,7 @@
 </article>
 <article class="capability-card">
 <span class="capability-label" data-i18n="capabilityWebLabel">Web Interfaces</span>
-<h4 data-i18n="capabilityWebTitle">Front-End Implementation</h4>
+<h3 data-i18n="capabilityWebTitle">Front-End Implementation</h3>
 <p class="muted" data-i18n="capabilityWebText">
                         Responsive layouts, JavaScript state, multilingual pages, product flows, and UI polish.
                     </p>
@@ -881,7 +1072,7 @@
 </article>
 <article class="capability-card">
 <span class="capability-label" data-i18n="capabilityToolsLabel">Interactive Tools</span>
-<h4 data-i18n="capabilityToolsTitle">Useful Prototypes</h4>
+<h3 data-i18n="capabilityToolsTitle">Useful Prototypes</h3>
 <p class="muted" data-i18n="capabilityToolsText">
                         Browser tools, animated systems, scoreboards, cart flows, and user-facing interactions.
                     </p>
@@ -889,7 +1080,7 @@
 </article>
 <article class="capability-card">
 <span class="capability-label" data-i18n="capabilityGraphicsLabel">Technical Graphics</span>
-<h4 data-i18n="capabilityGraphicsTitle">Visual Systems</h4>
+<h3 data-i18n="capabilityGraphicsTitle">Visual Systems</h3>
 <p class="muted" data-i18n="capabilityGraphicsText">
                         Lighting, shading models, atmosphere, scene presentation, and render-mode controls.
                     </p>
@@ -898,22 +1089,33 @@
 </div>
 </section>
 <section id="projects">
-<h3 data-i18n="projectsTitle">Selected Work</h3>
+<h2 data-i18n="projectsTitle">Selected Work</h2>
 <p class="projects-intro" data-i18n="projectsIntro">
                 Projects grouped by discipline so the work is easier to scan.
             </p>
-<div aria-label="Portfolio filters" class="category-bar" data-i18n-aria-label="projectFiltersLabel">
-<button aria-controls="projectGrid" aria-pressed="true" class="category-filter is-active" data-filter="all" type="button"><span data-i18n="filterAll">All Work</span> <strong>9</strong></button>
-<button aria-controls="projectGrid" aria-pressed="false" class="category-filter" data-filter="game" type="button"><span data-i18n="categoryGames">Game Development</span> <strong>4</strong></button>
-<button aria-controls="projectGrid" aria-pressed="false" class="category-filter" data-filter="web" type="button"><span data-i18n="categoryWeb">Web Development</span> <strong>4</strong></button>
-<button aria-controls="projectGrid" aria-pressed="false" class="category-filter" data-filter="graphics" type="button"><span data-i18n="categoryGraphics">Computer Graphics</span> <strong>1</strong></button>
+<div class="specialty-grid" aria-label="Explore by professional specialty" data-i18n-aria-label="specialtyGridAria">
+    <button type="button" class="specialty-card specialty-game" data-filter-jump="game" aria-pressed="false" aria-controls="projectGrid">
+      <span class="specialty-symbol" aria-hidden="true">🎮</span>
+      <span class="specialty-copy"><strong data-i18n="specialtyGameTitle">Game programming</strong><span data-i18n="specialtyGameText">Unity, C#, gameplay systems and interactive 3D graphics</span></span>
+      <span class="specialty-count"><span data-specialty-count="game">5</span> <span data-i18n="specialtyProjects">projects</span></span>
+    </button>
+    <button type="button" class="specialty-card specialty-web" data-filter-jump="web" aria-pressed="false" aria-controls="projectGrid">
+      <span class="specialty-symbol" aria-hidden="true">&lt;/&gt;</span>
+      <span class="specialty-copy"><strong data-i18n="specialtyWebTitle">Web development</strong><span data-i18n="specialtyWebText">Frontend, interfaces, UX/UI and interactive 3D experiences</span></span>
+      <span class="specialty-count"><span data-specialty-count="web">5</span> <span data-i18n="specialtyProjects">projects</span></span>
+    </button>
 </div>
+<div class="project-toolbar">
+  <p id="projectFilterStatus" class="filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
+  <button id="resetProjectFilter" class="cta" type="button" data-i18n="showAllProjects" aria-controls="projectGrid" hidden>Show all 9 projects</button>
+</div>
+<p class="filter-explainer" data-i18n="overlapExplanation">Computer Graphics connects both specialties and appears in each selection.</p>
 <div class="cards" id="projectGrid">
 <a class="card" data-categories="web" href="Websites/Okiyama/okiyama.html">
 <img alt="Okiyama website project" decoding="async" loading="lazy" src="Websites/Okiyama/assets/hero-okiyama.jpg"/>
 <span class="project-category" data-i18n="categoryWeb">Web Development</span>
 <span class="featured-label" data-i18n="professionalProject">Professional Project</span>
-<h4>Okiyama Website</h4>
+<h3>Okiyama Website</h3>
 <p class="muted" data-i18n="okiyamaDesc">
                         Responsive company website with shop flow, cart logic, payment prep and WhatsApp support.
                     </p>
@@ -927,7 +1129,7 @@
 <img alt="Volley Beach Santi web development project" decoding="async" loading="lazy" src="Websites/VolleyPlaya/site/assets/hero-beach-volley.png"/>
 <span class="project-category" data-i18n="categoryWeb">Web Development</span>
 <span class="featured-label" data-i18n="interactiveWebProject">Interactive Web Project</span>
-<h4>Volley Beach Santi</h4>
+<h3>Volley Beach Santi</h3>
 <p class="muted" data-i18n="volleyDesc">
                         Interactive training app with animations, tournament tools and live scoreboard logic.
                     </p>
@@ -941,14 +1143,14 @@
 <a aria-label="Open Natalia physiotherapy case study" class="card" data-categories="web" href="Websites/PortafolioFisioNatalia/portafolionatalia.html">
 <img alt="Natru la Fisio: logotipo original, paleta de marca y retrato de Natalia" decoding="async" height="597" loading="lazy" src="Websites/PortafolioFisioNatalia/assets/caso-estudio/natru-miniatura-portafolio.webp" width="1024"/>
 <span class="project-category" data-i18n="categoryWeb">Web Development</span>
-<span class="featured-label" data-i18n="nataliaStatus">Published · In Improvement</span>
-<h4>Portafolio Fisio Natalia</h4>
+<span class="featured-label" data-i18n="nataliaStatus">Brand identity · Web portfolio</span>
+<h3>Portafolio Fisio Natalia</h3>
 <p class="muted" data-i18n="nataliaDesc">I designed the personal logo and professional physiotherapy portfolio, presenting her experience with clear navigation and consistent colors and typography.</p>
 <div class="project-tags">
 <span data-i18n="nataliaRole">Designed &amp; built: logo, personal brand and website</span>
 <span data-i18n="nataliaProof">Consistent palette, typography and navigation</span>
 </div>
-<span class="project-link" data-i18n="viewPublishedSite">View published site</span>
+<span class="project-link" data-i18n="viewCaseStudy">View case study</span>
 </a>
 <!-- Caso de estudio profesional Flynn’s Arcades: imagen original del proyecto y comparación verificable. -->
 <a
@@ -974,7 +1176,7 @@
   </figure>
   <span class="project-category" data-i18n="categoryWeb">Web Development</span>
   <span class="featured-label" data-i18n="flynnStatus">Internship · UX/UI Redesign</span>
-  <h4>Flynn's Arcades</h4>
+  <h3>Flynn's Arcades</h3>
   <p class="muted" data-i18n="flynnDesc">
     Improved game discovery with homepage search, genre and platform filters,
     clearer catalogue details, and result feedback.
@@ -987,9 +1189,9 @@
 </a>
 <a class="card" data-categories="game" href="Videogames/Lobstar/lobstar.html">
 <img alt="LOBSTAR!" decoding="async" loading="lazy" src="Videogames/Lobstar/lobstar-poster.PNG"/>
-<span class="project-category" data-i18n="categoryGames">Game Development</span>
+<span class="project-category" data-i18n="categoryGames">Game Programming</span>
 <span class="featured-label" data-i18n="featuredProject">Featured Project</span>
-<h4>LOBSTAR!</h4>
+<h3>LOBSTAR!</h3>
 <p class="muted" data-i18n="lobstarDesc">
                         Award-winning Unity arcade game with gameplay, UI, and feedback systems.
                     </p>
@@ -1002,8 +1204,8 @@
 </a>
 <a class="card" data-categories="game" href="Videogames/SmackThatRooster/smackthatrooster.html">
 <img alt="Smack That Rooster" decoding="async" loading="lazy" src="Videogames/SmackThatRooster/SmackThatRooster.PNG"/>
-<span class="project-category" data-i18n="categoryGames">Game Development</span>
-<h4>Smack That Rooster</h4>
+<span class="project-category" data-i18n="categoryGames">Game Programming</span>
+<h3>Smack That Rooster</h3>
 <p class="muted" data-i18n="roosterDesc">
                         Multiplayer combat prototype with health, timer, match flow and victory logic.
                     </p>
@@ -1016,8 +1218,8 @@
 </a>
 <a class="card" data-categories="game" href="Videogames/BooImInsideYourWall/BooImInsideYourWall.html">
 <img alt="BOO! I'm Inside Your Walls" decoding="async" loading="lazy" src="./Videogames/BooImInsideYourWall/Poster_Boo.png"/>
-<span class="project-category" data-i18n="categoryGames">Game Development</span>
-<h4>BOO! I'm Inside Your Walls</h4>
+<span class="project-category" data-i18n="categoryGames">Game Programming</span>
+<h3>BOO! I'm Inside Your Walls</h3>
 <p class="muted" data-i18n="BooImInsideYourWallDesc">
                         Stealth puzzle project with ghost abilities, level pacing and clear player goals.
                     </p>
@@ -1030,8 +1232,8 @@
 </a>
 <a class="card" data-categories="game" href="Videogames/OSSMaskProtocol/ossmaskprotocol.html">
 <img alt="OSS Mask Protocol" decoding="async" loading="lazy" src="./Videogames/OSSMaskProtocol/Ilustración_OSS MASK PROTOCOL.png"/>
-<span class="project-category" data-i18n="categoryGames">Game Development</span>
-<h4>OSS Mask Protocol</h4>
+<span class="project-category" data-i18n="categoryGames">Game Programming</span>
+<h3>OSS Mask Protocol</h3>
 <p class="muted" data-i18n="ossmaskDesc">
                         Game jam platformer built around mask mechanics and fast production delivery.
                     </p>
@@ -1042,12 +1244,12 @@
 <span class="project-link" data-i18n="viewCaseStudy">View case study</span>
 <img alt="Unity" class="engine-badge" src="Picture/Unity Logo.png"/>
 </a>
-<a class="card" data-categories="graphics" href="Websites/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html">
-<img alt="Computer Graphics Final Project" decoding="async" loading="lazy" src="./Websites/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"/>
-<span class="project-category" data-i18n="categoryGraphics">Computer Graphics</span>
-<h4>Computer Graphics Final Project</h4>
+<a class="card" data-categories="game web" href="Websites/ProyectoFinalGraficosComputacion/proyectofinalgraficos.html">
+<img alt="Captura del proyecto de gráficos por ordenador: escena 3D y controles de renderizado" decoding="async" loading="lazy" src="./Websites/ProyectoFinalGraficosComputacion/CapturaPantallaInicial.png"/>
+<span class="project-category bridge-category" data-i18n="categoryBridge">Game + Web · 3D Graphics</span>
+<h3>Computer Graphics Final Project</h3>
 <p class="muted" data-i18n="graphicsDesc">
-                        Interactive graphics demo for lighting, shaders, fog and render modes.
+                        Interactive graphics demo bridging games and web: lighting, shaders, fog and real-time rendering.
                     </p>
 <div class="project-tags">
 <span data-i18n="graphicsRole">Built: lighting, shaders and render controls</span>
@@ -1058,7 +1260,7 @@
 </div>
 </section>
 <section id="contact">
-<h3 data-i18n="contactTitle">Contact</h3>
+<h2 data-i18n="contactTitle">Contact</h2>
 <div class="contact-grid">
 <div class="contact-card">
 <p class="muted" data-i18n="contactText">
@@ -1167,44 +1369,72 @@
             cards.forEach(card => card.classList.add("visible"));
         }
 
-        const categoryFilters = document.querySelectorAll(".category-filter");
+        // A single filtering interface: the two specialty cards plus a reset control.
+        const specialtyButtons = [...document.querySelectorAll(".specialty-card[data-filter-jump]")];
+        const resetFilterButton = document.getElementById("resetProjectFilter");
+        const filterStatus = document.getElementById("projectFilterStatus");
+        let activeCategory = "all";
+
+        function categoryCount(filter) {
+            return [...cards].filter(card =>
+                filter === "all" || (card.dataset.categories || "").split(" ").includes(filter)
+            ).length;
+        }
+        function refreshFilterStatus() {
+            const dict = texts[lang] || texts.en;
+            const count = categoryCount(activeCategory);
+            const label = activeCategory === "all" ? dict.filterAll :
+                activeCategory === "game" ? dict.specialtyGameTitle : dict.specialtyWebTitle;
+            filterStatus.textContent = `${count} ${dict.resultsVisible} · ${label}`;
+            resetFilterButton.textContent = `${dict.showAllProjects} (${cards.length})`;
+        }
         function applyProjectFilter(filter) {
+            if (!["all", "game", "web"].includes(filter)) return;
+            activeCategory = filter;
             cards.forEach(card => {
                 const categories = (card.dataset.categories || "").split(" ");
-                const isVisible = filter === "all" || categories.includes(filter);
-                card.classList.toggle("is-hidden", !isVisible);
+                card.classList.toggle("is-hidden", filter !== "all" && !categories.includes(filter));
             });
-
-            categoryFilters.forEach(button => {
-                const isActive = button.dataset.filter === filter;
-                button.classList.toggle("is-active", isActive);
-                button.setAttribute("aria-pressed", isActive ? "true" : "false");
+            specialtyButtons.forEach(button => {
+                const selected = button.dataset.filterJump === filter;
+                button.classList.toggle("is-active", selected);
+                button.setAttribute("aria-pressed", String(selected));
             });
+            resetFilterButton.hidden = filter === "all";
+            refreshFilterStatus();
         }
-
-        categoryFilters.forEach(button => {
-            button.addEventListener("click", () => {
-                applyProjectFilter(button.dataset.filter || "all");
-            });
+        specialtyButtons.forEach(button => {
+            button.addEventListener("click", () => applyProjectFilter(button.dataset.filterJump));
+        });
+        resetFilterButton.addEventListener("click", () => applyProjectFilter("all"));
+        document.querySelectorAll("[data-specialty-count]").forEach(element => {
+            element.textContent = String(categoryCount(element.dataset.specialtyCount));
         });
 
         /* Language */
         const texts = {
             en: {
                 title: "Santiago Cardozo Botero — Game, Web, and Interactive Developer Portfolio",
-                metaDescription: "Developer portfolio by Santiago Cardozo Botero, featuring game development, web projects, Unity, C#, JavaScript, computer graphics, and interactive systems.",
+                metaDescription: "Portfolio of Santiago Cardozo Botero: Unity/C# gameplay systems, responsive websites, computer graphics and interactive JavaScript projects.",
                 skipLink: "Skip to main content",
-                role: "Game & Web Developer",
+                role: "Game Programmer · Frontend Developer",
+                navigationAria: "Primary navigation",
+                stackAria: "Main technologies",
+                heroActionsAria: "Explore the portfolio",
+                highlightsAria: "Portfolio highlights",
+                projectPlural: "Projects",
+                resultsVisible: "projects shown",
                 navHome: "Home",
                 navProfile: "Profile",
                 navProjects: "Projects",
                 navContact: "Contact",
 
-                heroTitle: "Game, Web, and Interactive Systems Portfolio",
-                heroSubtitle: "Building playable, usable, and polished interactive projects",
-                heroText: "A focused portfolio across Unity games, responsive websites, technical graphics, and browser-based tools.",
-                heroPrimaryCta: "View Projects",
-                heroSecondaryCta: "Contact Me",
+                heroTitle: "Game Programming · Frontend Development",
+                heroSubtitle: "Building game systems and web experiences that people can use.",
+                heroText: "I develop gameplay systems in Unity/C# and interactive websites in JavaScript. Explore playable projects, published websites, and technical case studies.",
+                heroPrimaryCta: "Explore projects",
+                heroSecondaryCta: "Web projects",
+                heroThirdCta: "Contact",
                 stackUiSystems: "UI Systems",
                 stackInteractive: "Interactive Tools",
                 proofSystems: "Gameplay, UI, and interaction logic",
@@ -1234,12 +1464,21 @@
                 capabilityGraphicsProof: "Evidence: Computer Graphics Final Project.",
 
                 projectsTitle: "Selected Work",
-                projectsIntro: "Projects grouped by discipline so the work is easier to scan.",
+                projectsIntro: "Choose a specialization. The 3D graphics project connects game programming and web development, so it appears in both filters.",
                 projectFiltersLabel: "Portfolio filters",
-                filterAll: "All Work",
-                categoryGames: "Game Development",
+                filterAll: "All projects",
+                showAllProjects: "Show all",
+                categoryGames: "Game Programming",
                 categoryWeb: "Web Development",
                 categoryGraphics: "Computer Graphics",
+                categoryBridge: "Games + Web · 3D Graphics",
+                overlapExplanation: "Computer Graphics connects both specialties and appears in each selection.",
+                specialtyGridAria: "Explore by professional specialty",
+                specialtyGameTitle: "Game programming",
+                specialtyGameText: "Unity, C#, gameplay systems and interactive 3D graphics",
+                specialtyWebTitle: "Web development",
+                specialtyWebText: "Frontend, interfaces, UX/UI and interactive 3D experiences",
+                specialtyProjects: "projects",
                 categoryInteractive: "Interactive Systems",
 
                 featuredProject: "Featured Project",
@@ -1247,7 +1486,7 @@
                 interactiveWebProject: "Interactive Web Project",
                 okiyamaDesc: "Responsive company website with shop flow, cart logic, payment prep and WhatsApp support.",
                 volleyDesc: "Interactive training app with animations, tournament tools and live scoreboard logic.",
-                nataliaStatus: "Published · In Improvement",
+                nataliaStatus: "Brand identity · Web portfolio",
                 nataliaDesc: "I designed the personal logo and professional physiotherapy portfolio, presenting her experience with clear navigation and consistent colors and typography.",
                 nataliaRole: "Designed & built: logo, personal brand and website",
                 nataliaProof: "Consistent palette, typography and navigation",
@@ -1264,7 +1503,7 @@
                 roosterDesc: "Multiplayer combat prototype with health, timer, match flow and victory logic.",
                 ossmaskDesc: "Game jam platformer built around mask mechanics and fast production delivery.",
                 BooImInsideYourWallDesc: "Stealth puzzle project with ghost abilities, level pacing and clear player goals.",
-                graphicsDesc: "Interactive graphics demo for lighting, shaders, fog and render modes.",
+                graphicsDesc: "Interactive 3D graphics demonstration bridging games and web through lighting, shaders, fog and real-time rendering.",
                 okiyamaRole: "Built: UI, cart and payment preparation",
                 okiyamaProof: "Evidence: case study + before/after reference",
                 volleyRole: "Built: animated tools and scoreboard logic",
@@ -1292,19 +1531,26 @@
 
             es: {
                 title: "Santiago Cardozo Botero — Portafolio de desarrollo web, videojuegos y sistemas interactivos",
-                metaDescription: "Portafolio de Santiago Cardozo Botero con desarrollo de videojuegos, proyectos web, Unity, C#, JavaScript, gráficos por ordenador y sistemas interactivos.",
+                metaDescription: "Portafolio de Santiago Cardozo Botero: programación de videojuegos con Unity/C#, desarrollo frontend, gráficos por ordenador y proyectos JavaScript interactivos.",
                 skipLink: "Saltar al contenido principal",
-                role: "Desarrollador web y de videojuegos",
+                role: "Programador de videojuegos · Desarrollador frontend",
+                navigationAria: "Navegación principal",
+                stackAria: "Tecnologías principales",
+                heroActionsAria: "Explorar el portafolio",
+                highlightsAria: "Datos destacados del portafolio",
+                projectPlural: "Proyectos",
+                resultsVisible: "proyectos mostrados",
                 navHome: "Inicio",
                 navProfile: "Perfil",
                 navProjects: "Proyectos",
                 navContact: "Contacto",
 
-                heroTitle: "Portafolio de juegos, web y sistemas interactivos",
-                heroSubtitle: "Creando proyectos interactivos jugables, claros y pulidos",
-                heroText: "Portafolio enfocado en juegos con Unity, sitios web adaptables, gráficos técnicos y herramientas en navegador.",
+                heroTitle: "Programación de videojuegos · Desarrollo frontend",
+                heroSubtitle: "Desarrollo videojuegos y experiencias web claras, funcionales e interactivas.",
+                heroText: "Programo sistemas de juego en Unity/C# y sitios web interactivos en JavaScript. Aquí encontrarás proyectos jugables, webs publicadas y casos de estudio técnicos.",
                 heroPrimaryCta: "Ver proyectos",
-                heroSecondaryCta: "Contactarme",
+                heroSecondaryCta: "Ver proyectos web",
+                heroThirdCta: "Contacto",
                 stackUiSystems: "Sistemas de interfaz",
                 stackInteractive: "Herramientas interactivas",
                 proofSystems: "Gameplay, interfaz y lógica de interacción",
@@ -1334,12 +1580,21 @@
                 capabilityGraphicsProof: "Evidencia: Computer Graphics Final Project.",
 
                 projectsTitle: "Trabajos seleccionados",
-                projectsIntro: "Proyectos agrupados por disciplina para revisar el trabajo con más claridad.",
+                projectsIntro: "Elige una especialidad o explora los nueve proyectos.",
                 projectFiltersLabel: "Filtros del portafolio",
-                filterAll: "Todo",
-                categoryGames: "Desarrollo de videojuegos",
+                filterAll: "Todos los proyectos",
+                showAllProjects: "Ver todos",
+                categoryGames: "Programación de videojuegos",
                 categoryWeb: "Desarrollo web",
                 categoryGraphics: "Gráficos por ordenador",
+                categoryBridge: "Videojuegos + Web · Gráficos 3D",
+                overlapExplanation: "Computer Graphics conecta ambas especialidades y aparece en las dos selecciones.",
+                specialtyGridAria: "Explorar por especialidad profesional",
+                specialtyGameTitle: "Programación de videojuegos",
+                specialtyGameText: "Unity, C#, sistemas de juego y gráficos 3D interactivos",
+                specialtyWebTitle: "Desarrollo web",
+                specialtyWebText: "Frontend, interfaces, UX/UI y experiencias 3D interactivas",
+                specialtyProjects: "proyectos",
                 categoryInteractive: "Sistemas interactivos",
 
                 featuredProject: "Proyecto destacado",
@@ -1347,7 +1602,7 @@
                 interactiveWebProject: "Proyecto web interactivo",
                 okiyamaDesc: "Sitio corporativo adaptable con tienda, carrito, preparación de pago y atención por WhatsApp.",
                 volleyDesc: "App de entrenamiento con animaciones, torneo y lógica de marcador en vivo.",
-                nataliaStatus: "Publicado · En mejora",
+                nataliaStatus: "Identidad visual · Portafolio web",
                 nataliaDesc: "Diseñé el logo y el portafolio profesional de fisioterapia para presentar su experiencia, con navegación clara y colores y tipografía coherentes.",
                 nataliaRole: "Diseñé y desarrollé: logo, marca personal y web",
                 nataliaProof: "Paleta, tipografía y navegación unificadas",
@@ -1364,7 +1619,7 @@
                 roosterDesc: "Prototipo de combate multijugador con vida, temporizador, flujo y victoria.",
                 ossmaskDesc: "Juego de plataformas de game jam con mecánicas de máscaras y entrega rápida.",
                 BooImInsideYourWallDesc: "Proyecto de sigilo y puzles con habilidades, ritmo y objetivos claros.",
-                graphicsDesc: "Demo gráfica interactiva con iluminación, modelos de sombreado, niebla y modos de renderizado.",
+                graphicsDesc: "Demostración de gráficos 3D que conecta videojuegos y web mediante iluminación, shaders, niebla y renderizado en tiempo real.",
                 okiyamaRole: "Construí: interfaz, carrito y preparación de pago",
                 okiyamaProof: "Evidencia: caso de estudio + referencia antes/después",
                 volleyRole: "Construí: herramientas animadas y marcador",
@@ -1392,16 +1647,15 @@
         };
         const DEFAULT_LANGUAGE = "en";
         const STORAGE_KEY = "language";
-        const LANGUAGE_VERSION_KEY = "languageDefaultVersion";
-        const LANGUAGE_VERSION = "english-default-v3";
+        const CASE_LANGUAGE_KEY = "scardozo_case_lang";
         const btn = document.getElementById("langToggle");
-
-        if (localStorage.getItem(LANGUAGE_VERSION_KEY) !== LANGUAGE_VERSION) {
-            localStorage.setItem(STORAGE_KEY, DEFAULT_LANGUAGE);
-            localStorage.setItem(LANGUAGE_VERSION_KEY, LANGUAGE_VERSION);
+        let lang = DEFAULT_LANGUAGE;
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem(CASE_LANGUAGE_KEY);
+            if (saved && texts[saved]) lang = saved;
+        } catch (error) {
+            // The site remains usable when storage is disabled.
         }
-
-        let lang = texts[localStorage.getItem(STORAGE_KEY)] ? localStorage.getItem(STORAGE_KEY) : DEFAULT_LANGUAGE;
 
         function applyLanguage() {
             const dictionary = texts[lang] || texts[DEFAULT_LANGUAGE];
@@ -1436,6 +1690,8 @@
                 }
             });
 
+            document.getElementById("projectsTotal").textContent = `${cards.length} ${dictionary.projectPlural}`;
+            refreshFilterStatus();
             btn.textContent = lang === "en" ? "Español" : "English";
             btn.setAttribute(
                 "aria-label",
@@ -1445,7 +1701,12 @@
 
         btn.onclick = () => {
             lang = lang === "en" ? "es" : "en";
-            localStorage.setItem(STORAGE_KEY, lang);
+            try {
+                localStorage.setItem(STORAGE_KEY, lang);
+                localStorage.setItem(CASE_LANGUAGE_KEY, lang);
+            } catch (error) {
+                // Local preference storage is optional.
+            }
             applyLanguage();
         };
 
